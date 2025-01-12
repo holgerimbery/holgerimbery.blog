@@ -6,3 +6,4 @@ Copyright © 01.10.23-current date, holgerimbery.blog (Holger Imbery( – All th
 
 License: 
 MIT for the code and [for rest: CC-BY-ND-NC](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+SPDX-License-Identifier: MIT AND CC-BY-ND-NC
