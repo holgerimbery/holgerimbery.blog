@@ -13,6 +13,9 @@ toc: false
 
 Suppose you have upgraded to the enhanced voice experience (vNext) in Dynamics 365 Customer Service / Contact Center. In that case, you can empower your representatives to consult with or transfer voice calls to Microsoft Teams subject matter experts (SMEs). This advanced feature is facilitated through Azure Communication Services Call Automation. By leveraging this capability, SMEs can seamlessly join customer service conversations directly from Microsoft Teams, eliminating the need to configure a separate phone number. Any Teams user within your tenant who appears in the Teams search box can receive calls from your customer service representatives. This integration ensures your team can collaborate efficiently and provide timely customer assistance, enhancing the overall service experience.
 
+![transfer and consult experience in Agent Workspace](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/upgit_20250119_1737296027.png)
+*transfer and consult experience in Agent Workspace*
+
 {: .important }
 To allow the representatives to consult with Microsoft Teams users, enable the External Microsoft Teams users in Consult and Transfer settings in the voice channel section of the voice workstream.
 
@@ -49,6 +52,12 @@ You must use enterprise voice in Microsoft Teams to enable the consult and trans
 * **Teams and Azure Communication Services federation**  for a Teams tenant must be enabled, and the Azure Communication Services resources that can connect to Teams must be specified. 
 
     * Get the immutable resource ID of the Azure Communications Service resource
+    ![select the resource in portal.azure.com](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/upgit_20250119_1737296459.png)
+    *select the resourse in portal.azure.com*
+
+    ![find the immutable resource ID in the displayed json file](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/upgit_20250119_1737296657.png)
+    *find the immutable resource ID in the displayed json file*
+
     * Check for the PowerShell modules for Microsoft Teams with `Get-module *teams*`; if not installed, install it with the following commands
    
    
@@ -69,8 +78,9 @@ new Teams Azure Communications Service allow list.
 ```
 
 
-
-
+{: .important }
+**generative AI transparency note:**
+Utilizing AI-supervised content allows me to expand the material for my scenarios. It enables me to offer a broader range of examples across various programming languages, delve into solutions with more depth, and address new scenarios more swiftly. As a non-native speaker, it enables me to write in proper English and avoid grammatical and orthographic mistakes. I use [Github Copilot](https://github.com/features/copilot) and [grammarly](https://www.grammarly.com) to support me in this task. 
 
 
 
