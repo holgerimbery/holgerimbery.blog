@@ -11,4 +11,7 @@ pinterest:
 mastodon: 
 youtube:
 tiktok:
+linkedin: https://www.linkedin.com/in/holgerimbery/
+bluesky: https://bsky.app/profile/holgerimbery.bsky.social
+github: https://github.com/holgerimbery/
 ---
