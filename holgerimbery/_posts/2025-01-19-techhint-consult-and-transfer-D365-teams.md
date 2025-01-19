@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tech Hint - Consult and transfer from Dynamics 365 Customer Service / Contact Center to Microsoft Teams - a step-by-step guide for the Voice Channel 
+title: Tech Hint - Consult and transfer from Dynamics 365 Customer Service or Contact Center to Microsoft Teams - a step-by-step guide for the Voice Channel 
 description: 
 date: 2025-01-19
 author: admin
