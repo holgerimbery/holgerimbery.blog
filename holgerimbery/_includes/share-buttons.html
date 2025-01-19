@@ -24,5 +24,11 @@
         onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
         title="Share on LinkedIn" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a>
     </li>
+    <li class="share__item">
+      <a class="share__link share__bluesky"
+        href="https://bsky.app/intent/compose?text={{ page.title | uri_escape }}%20%F0%9F%A6%8B%0A{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+        title="Share on bluesky" rel="nofollow"><i class="fa-brands fa-square-bluesky"></i></a>
+    </li>
   </ul>
 </div>
