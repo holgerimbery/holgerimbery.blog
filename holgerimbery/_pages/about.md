@@ -28,4 +28,4 @@ Discover how individuals and businesses are transforming their operations with t
 Get insider knowledge on optimizing your interaction for maximum efficiency.
 
 ### generative AI transparency note
-Utilizing AI-generated content allows me to expand the material for my scenarios. It enables me to offer a broader range of examples across various programming languages, delve into solutions with more depth, and address new scenarios more swiftly. As a non-native speaker, it enables me to write in proper English and avoid grammatical and orthographic mistakes.
+Utilizing AI-supervisioned content allows me to expand the material for my scenarios. It enables me to offer a broader range of examples across various programming languages, delve into solutions with more depth, and address new scenarios more swiftly. As a non-native speaker, it enables me to write in proper English and avoid grammatical and orthographic mistakes. I use [Github Copilot](https://github.com/features/copilot) and [grammarly](https://www.grammarly.com) to support me in this task. 

@@ -73,7 +73,18 @@ By choosing the appropriate purchasing option, organizations can effectively con
 ## Selecting the Appropriate Tool
 While both tools are designed to enhance productivity, they cater to different user needs. Copilot Chat is ideal for users who prefer a conversational interface and require assistance with a wide range of tasks through chat. Conversely, Copilot for Microsoft 365 is suited for those who seek an integrated AI assistant within their Microsoft 365 applications to streamline daily workflows. With both tools, users can leverage AI to achieve more efficiently and effectively in their work environments and integrate additional data sources to enhance their capabilities. 
 
+{: .important }
+There is no need to choose between the two tools for all users. Based on the persona of your users, you can start with Copilot Chat and give some later the full experience of Copilot for Microsoft 365. By combining the strengths of both tools, organizations can optimize their workflows and achieve better outcomes by maintaining the costs.
 
 
 ## Conclusion
 In conclusion, both Copilot Chat and Copilot for Microsoft 365 offer powerful AI-driven productivity enhancements tailored to different user needs. Copilot Chat provides conversational assistance and task automation through an intuitive chat interface, making it ideal for users who require versatile support across various tasks. It comes free with a pay-as-you-go extensibility model. On the other hand, Copilot for Microsoft 365 integrates seamlessly with Microsoft 365 applications, offering robust productivity features and automation directly within familiar tools like Word, Excel, PowerPoint, and Outlook. By understanding each tool's unique capabilities and use cases, users can select the most appropriate solution to optimize their workflows, enhance productivity, and achieve better outcomes in their professional environments.
+
+## Links
+* [Copilot Chat](http://m365copilot.com/)
+* [Learn about Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio)
+* [Copilot Studio Agent Builder](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build)
+
+{: .important }
+**generative AI transparency note:**
+Utilizing AI-supervisioned content allows me to expand the material for my scenarios. It enables me to offer a broader range of examples across various programming languages, delve into solutions with more depth, and address new scenarios more swiftly. As a non-native speaker, it enables me to write in proper English and avoid grammatical and orthographic mistakes. I use [Github Copilot](https://github.com/features/copilot) and [grammarly](https://www.grammarly.com) to support me in this task. 
