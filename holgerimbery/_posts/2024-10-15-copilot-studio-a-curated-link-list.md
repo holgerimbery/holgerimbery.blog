@@ -7,7 +7,7 @@ author: admin
 image: ./images/copilot-studio-a-curated-link-list.jpeg
 image_caption: 'Photo by <a href="https://unsplash.com/@rawkkim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">rawkkim</a> on <a href="https://unsplash.com/photos/people-sitting-on-wooden-chairs-BW6IojhaiDU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 tags: [copilotstudio]
-featured: true
+featured: false
 toc: true
 
 ---
