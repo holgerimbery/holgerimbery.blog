@@ -117,6 +117,7 @@ social:
 - {icon: "fa-brands fa-bluesky", name: "bluesky", link: "https://bsky.app/profile/holgerimbery.bsky.social"}
 - {icon: "fa-brands fa-dev", name: "dev.to", link: "https://dev.to/holgerimbery"}
 - {icon: "fa-brands fa-medium", name: "medium", link: "https://medium.com/@holgerimbery"}
+- {icon: "fa-brands fa-hashnode", name: "hashnode", link: "https://holgerimbery.hashnode.dev"}
 # Example of adding a new link to the footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube.com"}
 # Other icons can be found at https://fontawesome.com/icons
 
