@@ -70,7 +70,7 @@ Example 2: Chat Interface with link to own data
 
 ![](https://holgerimbery.blog/images/cm3k9tbfa000609l7aviqe8tx.md/d850505d-f561-4231-adb8-121a1de8f035.png)
 
-![]()https://holgerimbery.blog/images/cm3k9tbfa000609l7aviqe8tx.md/352f854b-c4e7-4c3b-890d-1f3b4272f71b.png)
+![](https://holgerimbery.blog/images/cm3k9tbfa000609l7aviqe8tx.md/352f854b-c4e7-4c3b-890d-1f3b4272f71b.png)
 
 ![](https://holgerimbery.blog/images/cm3k9tbfa000609l7aviqe8tx.md/3bd0a8a4-e6f8-4b3d-ab01-626e226b3235.png)
 
