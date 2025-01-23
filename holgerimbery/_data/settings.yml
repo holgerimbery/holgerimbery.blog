@@ -126,7 +126,7 @@ social:
 # Contact Settings
 contact:
   form_id: meoopkwg # Add your form_id
-  title: Contact Us
+  title: Contact Me
   description: Interested in a direct communication, send my a note
   button_text: Send now
 
