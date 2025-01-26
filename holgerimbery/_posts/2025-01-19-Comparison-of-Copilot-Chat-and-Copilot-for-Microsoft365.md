@@ -4,8 +4,7 @@ title: Comparison of Copilot Chat and Copilot for Microsoft 365
 date: 2025-01-19 10:28 
 author: admin
 image: ./images/2025/01/jason-goodman-nF0nQuqBsrI-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@jasongoodman_youxventures?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jason Goodman</a> on <a href="https://unsplash.com/photos/two-women-sitting-in-front-of-white-table-nF0nQuqBsrI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
+image_caption: 'Photo by <a href="https://unsplash.com/@jasongoodman_youxventures?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jason Goodman</a> on <a href="https://unsplash.com/photos/two-women-sitting-in-front-of-white-table-nF0nQuqBsrI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 tags: [copilot, copilotstudio]
 summary: 
 featured: false
