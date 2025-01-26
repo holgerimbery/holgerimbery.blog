@@ -98,14 +98,17 @@ And you can log in to the instance.
 ![upgit_20250126_1737893476.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/upgit_20250126_1737893476.png)
 
 * You can see the instance is ready to use.
+
+
 ### Create a Connector Action in Copilot Studio
+
 To integrate ServiceNow with Microsoft 365 Copilot, we will create a connector action that retrieves incident information from ServiceNow and displays it in Copilot.
 
 * **Create a New Agent**: Create a new agent for the ServiceNow integration in Copilot Studio.
 
 * **Add Connector Action**: Navigate to the Actions tab and select "+ Add Action."
 
-![upgit_20Createtps://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/upgit_20250126_1737893728.png)
+![upgit_20Create](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/upgit_20250126_1737893728.png)
 
 * **Choose Connector**: Select "Connector" from the list of available action types.
 
