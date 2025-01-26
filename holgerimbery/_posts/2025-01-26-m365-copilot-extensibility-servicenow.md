@@ -121,7 +121,7 @@ To integrate ServiceNow with Microsoft 365 Copilot, we will create a connector a
 
 ![upgit_20250126_1737894432.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/upgit_20250126_1737894432.png)
 
-* ** Please fill in the missing details** to prepare the action.
+* **Please fill in the missing details** to prepare the action.
 
 ![upgit_20250126_1737894707.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/upgit_20250126_1737894707.png)
 
