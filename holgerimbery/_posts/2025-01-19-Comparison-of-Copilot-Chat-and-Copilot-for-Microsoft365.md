@@ -8,7 +8,7 @@ image_caption: Photo by <a href="https://unsplash.com/@jasongoodman_youxventures
       
 tags: [copilot, copilotstudio]
 summary: 
-featured: true
+featured: false
 toc: true
 ---
 
