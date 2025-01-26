@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/imagesmages/2025/01/linkedin-sales-navigator-46bom4lObsA-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@linkedinsalesnavigator?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LinkedIn Sales Solutions</a> on <a href="https://unsplash.com/photos/two-women-sitting-at-a-table-looking-at-a-computer-screen-46bom4lObsA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
-tags: [copilot studio, m365 copilot, service now, copilot extensibility]
+tags: [copilotstudio, copilot, servicenow, copilot extensibility]
 featured: true
 toc: true
 ---
