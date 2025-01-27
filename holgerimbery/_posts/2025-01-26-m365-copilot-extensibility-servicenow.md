@@ -10,6 +10,15 @@ featured: true
 toc: true
 ---
 
+## Summary for fast readers
+
+{: .note}
+Extending Copilot for M365 with Copilot Studio gives you the ability to create tailored solutions that meet your specific needs and improve overall efficiency. As an example, we will integrate ServiceNow into Copilot using a connector action.  
+**Benefit**: Your users can interact with Service Now without the need to leave the Microsoft 365 environment, and IT team can solve issues faster by leveraging the power of Copilot and ServiceNow.
+
+<p><iframe src="https://www.youtube.com/embed/9ChwOzltqgI" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+
+## Motivation 
 Microsoft 365 Copilot is a versatile tool that uses AI to boost productivity and streamline tasks. With Copilot Studio, users can now customize and extend the capabilities of Microsoft 365 Copilot to better fit their needs. This article explores the various ways to extend Copilot using Copilot Studio, including creating actions with connectors, conversational prompts, and flows.
 
 ## Copilot Studio Overview
