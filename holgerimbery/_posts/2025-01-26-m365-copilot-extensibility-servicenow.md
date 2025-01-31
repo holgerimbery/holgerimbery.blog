@@ -3,7 +3,7 @@ layout: post
 title: Extending Microsoft 365 Copilot with Copilot Studio with ServiceNow as an example 
 date: 2025-01-26
 author: admin
-image: https://holgerimbery.blog/images/2025/01/linkedin-sales-solutions-46bom4lObsA-unsplash.jpg
+image: ./images/2025-01-26-m365-copilot-extensibility-servicenow.jpg
 image_caption: 'Photo by <a href="https://unsplash.com/@linkedinsalesnavigator?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LinkedIn Sales Solutions</a> on <a href="https://unsplash.com/photos/two-women-sitting-at-a-table-looking-at-a-computer-screen-46bom4lObsA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'     
 tags: [copilotstudio, copilot, servicenow, copilot extensibility]
 featured: true
