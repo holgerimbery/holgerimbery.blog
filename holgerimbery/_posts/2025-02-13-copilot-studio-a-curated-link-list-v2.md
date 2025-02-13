@@ -18,7 +18,7 @@ toc: false
 
 Microsoft Copilot Studio is a graphical, low-code tool designed to help users create and customize AI agents for various scenarios and channels. It allows users to build automation with Power Automate or extend existing Copilot Solutions like Microsoft 365 Copilot with enterprise data and scenarios. Copilot Studio connects to other data sources using prebuilt or custom plugins, creating sophisticated logic for powerful and intuitive agent experiences. You should use Copilot Studio when creating agents to perform tasks, interact with customers, or answer common employee questions. It is available as both a standalone web app and a discrete app within Teams.
 
-The low-code/no-code approach offers several benefits, including quicker turnaround times, improved productivity, and reduced errors. It allows business users to create applications without extensive programming knowledge, empowering them to become citizen developers. This approach is important because it democratizes software development, enabling standard business users to build and launch applications up to 80% faster. Organizations can innovate more rapidly and efficiently by enabling citizen developers, reducing the strain on IT resources.
+The low-code/no-code approach offers several benefits, including quicker turnaround times, improved productivity, and reduced errors. It allows business users to create applications without extensive programming knowledge, empowering them to become citizen developers. This approach is essential because it democratizes software development, enabling standard business users to build and launch applications up to 80% faster. Organizations can innovate more rapidly and efficiently by enabling citizen developers, reducing the strain on IT resources.
 
 Copilot Studio provides extensibility for various copilots, including Microsoft 365 Copilot and Microsoft Dynamics 365 Customer Service Copilot. You can customize Microsoft 365 Copilot by building declarative agents and adding actions and knowledge with plugins and Microsoft Graph connectors. In Dynamics 365 Customer Service, Copilot can be extended to automate actions and workflows, providing real-time AI assistance to help agents handle cases efficiently. Additionally, Copilot Studio allows you to extend other copilots with over 1,100 prebuilt and custom connectors, eliminating the need for expensive IT resources.
 
@@ -41,12 +41,12 @@ The Copilot Studio in a Day Workshop is an intensive, instructor-led training de
 
 ![icon](../images/2025/02/1.svg) **Plan Your First Agent**
 
-In this module, you begin building your Microsoft Power Platform solution, starting with a basic agent. This lesson covers the initial planning and design of your agent, ensuring it meets your specific needs and objectives.
+In this module, you build your Microsoft Power Platform solution, starting with a basic agent. This lesson covers your agent's initial planning and design, ensuring it meets your specific needs and objectives.
 [Link](https://learn.microsoft.com/en-us/training/modules/plan-first-chatbot-online-workshop/)
 
 ![icon](../images/2025/02/3.svg) **Create Your First Agent in Microsoft Copilot Studio**
 
-Learn how to create your first agent in Microsoft Copilot Studio. This lesson guides you through setting up your agent, configuring its basic functionalities, and deploying it.
+Learn how to create your first agent in Microsoft Copilot Studio. This lesson guides you through setting up your agent, configuring its essential functionalities, and deploying it.
 
 [Link](https://learn.microsoft.com/en-us/training/modules/power-virtual-agents-create-online-workshop/)
 
@@ -58,7 +58,7 @@ This module teaches the fundamentals of message and question nodes, familiarizes
 
 ![icon](../images/2025/02/4.svg) **Add Knowledge Sources to an Agent**
 
-Enhance your agent with Copilot Studio by integrating external data, selecting intent recognition models, enabling Generative AI orchestration, and allowing the agent to use its own general knowledge. This lesson focuses on making your agent more versatile and effective by leveraging various data sources and AI capabilities.
+Enhance your agent with Copilot Studio by integrating external data, selecting intent recognition models, enabling Generative AI orchestration, and allowing the agent to use its own general knowledge. This lesson focuses on making your agent more versatile and practical by leveraging various data sources and AI capabilities.
 
 [Link](https://learn.microsoft.com/en-us/training/modules/add-knowledge-copilots-online-workshop/)
 
@@ -121,28 +121,28 @@ The workshop provides resources and documents to guide participants through each
       
 ## Continue your Journey
 ### Overview of Building Agents
-Learn about the best practices, methodologies, and practical tips for building agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/building-agents-overview).
+Learn the best practices, methodologies, and practical tips for building agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/building-agents-overview).
 
 ### Best Practices for Topics
-Discover the best practices and methodologies for creating effective topics. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/topics-best-practices).
+You can find the best practices and methodologies for creating compelling topics. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/topics-best-practices).
 
 ### Optimal Trigger Phrases
 Understand how to craft optimal trigger phrases to enhance agent interactions. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/trigger-phrases-best-practices).
 
 ### Effective Slot Filling Techniques
-Explore techniques for effective slot filling to improve agent responses. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/slot-filling-best-practices).
+Explore techniques for practical slot filling to improve agent responses. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/slot-filling-best-practices).
 
 ### Transferring Agent Ownership
-Learn how to transfer agent ownership efficiently. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/reassign-copilot-to-a-new-owner).
+You can learn how to transfer agent ownership efficiently. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/reassign-copilot-to-a-new-owner).
 
 ### Displaying Array Data
-Find out how to display array data effectively within your agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/display-data-from-arrays).
+You can find out how to display array data effectively within your agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/display-data-from-arrays).
 
 ### Incorporating Feedback in Responses
 Discover methods to incorporate feedback into agent responses. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/add-feedback-for-every-response).
 
 ### Passing Context Variables from Webpages
-Learn how to pass context variables from web pages to your agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/pass-context-variables-from-your-webpage-to-an-agent).
+You can learn how to pass context variables from web pages to your agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/pass-context-variables-from-your-webpage-to-an-agent).
 
 ### Web Analytics Tracking ID Integration
 Understand how to integrate web analytics tracking IDs with your agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/pass-web-analytics-tracking-id-from-a-webpage).
@@ -151,34 +151,34 @@ Understand how to integrate web analytics tracking IDs with your agents. [Read m
 Get an introduction to designing conversational experiences. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/introduction-to-conversational-experiences).
 
 ### Designing the Ideal Experience
-Learn how to design the ideal conversational experience for your users. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/design-the-ideal-experience).
+You can learn how to design the ideal conversational experience for your users. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/design-the-ideal-experience).
 
 ### Practical Tips for Conversational Design
-Explore practical tips for effective conversational design. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/practical-tips-for-designing-a-conversational-experience).
+You can find more practical tips for effective conversational design. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/practical-tips-for-designing-a-conversational-experience).
 
 ### Engagement Measurement
-Discover how to measure user engagement with your agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/measuring-engagement).
+You can find out how to measure user engagement with your agents. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/measuring-engagement).
 
 ### Outcome Measurement
-Learn about measuring the outcomes of your agent interactions. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/measuring-outcomes).
+You can learn about measuring the outcomes of your agent interactions. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/measuring-outcomes).
 
 ### Optimizing Deflection
-Find out how to optimize deflection in your agent interactions. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/deflection-optimization).
+You can find out how to optimize deflection in your agent interactions. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/deflection-optimization).
 
 ### Custom Analytics Strategies
-Explore strategies for custom analytics in your agent projects. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-analytics-strategy).
+You can explore the strategies for custom analytics in your agent projects. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-analytics-strategy).
 
 ### Best Practices for Projects
-Learn the best practices for managing agent projects. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/projects-best-practices).
+You can learn the best practices for managing agent projects. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/projects-best-practices).
 
 ### Getting Started with Projects
-Get started with your agent projects using these guidelines. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/project-getting-started).
+You can start your agent projects using these guidelines. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/project-getting-started).
 
 ### Building a Project Team
 Understand how to build an effective project team for your agent projects. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/building-a-team).
 
 ### Planning Your Project
-Learn how to plan your agent projects effectively. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/project-planning).
+You can learn how to plan your agent projects effectively. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/project-planning).
 
 ***
 ![chapter separator](../images/2025/02/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg)
@@ -219,7 +219,7 @@ These resources showcase real-world use cases, customer stories, and practical a
 A collection of stories and case studies demonstrates how various organizations have successfully implemented Copilot Studio.
 
 #### [Best Practices and Common Use Cases](https://microsoft.github.io/copilot-studio-resources/)
-An overview of common use cases and best practices for using Copilot Studio, helping users understand how to apply the tool effectively in different scenarios.
+An overview of everyday use cases and best practices for using Copilot Studio, helping users understand how to apply the tool effectively in different scenarios.
 
 ### Newsletters
 These newsletters provide updates, insights, and tips on Copilot Studio, informing users about the latest developments and best practices.
