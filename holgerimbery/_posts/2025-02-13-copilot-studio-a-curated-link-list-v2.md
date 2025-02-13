@@ -2,7 +2,7 @@
 layout: post
 title: Copilot Studio - a curated link list
 description: 
-date: 2025-02-15
+date: 2025-02-13
 author: admin
 image: ./images/copilot-studio-a-curated-link-list.jpeg
 image_caption: 'Photo by <a href="https://unsplash.com/@rawkkim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">rawkkim</a> on <a href="https://unsplash.com/photos/people-sitting-on-wooden-chairs-BW6IojhaiDU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
@@ -11,10 +11,8 @@ featured: true
 toc: false
 
 ---
-
 {: .note}
-A curated list of links will help you get started with Copilot Studio. If you are a business user looking to create conversational AI applications without extensive programming knowledge, this will empower you to become a "citizen developer".
-
+**summary lede**: Discover how Microsoft Copilot Studio empowers business users to create and customize AI agents with ease. This curated guide offers a comprehensive overview, hands-on workshops, and essential resources to help you become a citizen developer and leverage the full potential of Copilot Studio.
 
 ## Background and Overview
 
