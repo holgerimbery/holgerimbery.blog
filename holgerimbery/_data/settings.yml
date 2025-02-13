@@ -1,0 +1,144 @@
+#-------------------------------
+# Site Settings
+title: Holger Imbery
+description: a blog for those who want to look behind the curtain.
+logo: # You can add own logo. For example "/images/logo.png".
+logo_dark:
+color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+
+
+#-------------------------------
+# Navigation Settings
+menu_settings:
+  menu_items:
+    - title: "Home"
+      url: "/"
+    - title: "Latest"
+      url: "/latest/"
+#    - title: "Authors"
+#      url: "/authors/"
+    - title: "Resources"
+      submenu:
+#      - url: "/videos/"
+#        title: "Videos"
+      - url: "/featured/"
+        title: "Featured"
+#      - url: "/elements/"
+#        title: "Elements"
+      - url: "/tags/"
+        title: "Topics"
+    - title: "About"
+      url: "/about/"
+    - title: "Impressum"
+      url: "/impressum/"
+    - title: "Privacy"
+      url: "https://www.freeprivacypolicy.com/live/9afc0ae9-b134-4b97-bf0f-dcb242d1b03a"
+
+# Call to action button
+cta_button:
+  enable: true
+  cta_button_link: '/contact/'
+  cta_button_text: Get in touch
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  enable: true
+  hero_title: Stories, Journeys, and Ideas for the crazy ones.
+  hero_description: | 
+    Join me on a journey where every post brings a fresh perspective. This blog is for those who are driven by curiosity and a desire to learn.
+
+hero_authors:
+  enable: false
+  hero_authors_description: Meet the author
+
+
+#-------------------------------
+# Blog Section Settings
+blog:
+  enable: true
+  blog_title: Latest
+
+
+#-------------------------------
+# Recommended Section Settings
+recommended:
+  enable: false
+  recommended_title: Recommended
+  recommended_tag: "Copilot Studio"
+
+
+#-------------------------------
+# About Section Settings
+about:
+  enable: true
+  about_title: Hello, I’m Holger
+  about_subtitle: Microsoft MVP & MCT | Low Code Hacker | Copilot, Copilot Studio, Power Platform & Azure Architect
+  about_description: |
+    I specialize in conversational AI, robotic process automation, Microsoft Power Platform with focus on Copilot Studio, delving into the intricate details that keep architects up at night. I highly value your feedback on my articles and would love to invite you to a professional discussion. As a Principal Architect at NTT DATA, my focus is on Microsoft Power Platform and Azure.
+  about_image: "/images/01.jpg"
+  about_image_alt: Holger Imbery
+  about_button_text: Meet me
+  about_button_link: "/about/"
+
+
+#-------------------------------
+# Authors Section Settings
+authors:
+  enable: false
+  authors_title: Top authors
+
+
+#-------------------------------
+# Newsletter Settings
+mailchimp:
+  enable: false
+  mailchimp_title: Stay Inspired. My Friendly Dose of Tips & Insights!
+  mailchimp_description: Every Sunday, I deliver actionable tips for enhancing productivity, practical life advice, and top-notch insights gathered from various sources, right to your email inbox.
+  mailchimp_identifier: gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
+  mailchimp_input_text: Your email address
+  mailchimp_button_text: Subscribe
+
+
+#-------------------------------
+# Footer Settings
+footer_description: Join me on a journey where every post brings a fresh perspective. This blog is for those who are driven by curiosity and a desire to learn.
+
+
+# Social Links
+social:
+- {icon: "fa-brands fa-linkedin", name: "Linkedin", link: "https://www.linkedin.com/in/holgerimbery/"}
+- {icon: "fa-brands fa-github", name: "Github", link: "https://github.com/holgerimbery/"}
+#- {icon: "fa-brands fa-tiktok", name: "Tiktok", link: "https://www.tiktok.com"}
+#- {icon: "fa-brands fa-instagram", name: "Instagram", link: "https://instagram.com"}
+#- {icon: "fa-brands fa-mastodon", name: "Mastodon", link: "https://me.dm/@thecognitiveservicesninja"}
+#- {icon: "fa-brands fa-dribbble", name: "Dribbble", link: "https://www.dribbble.com"}
+- {icon: "fa-brands fa-bluesky", name: "bluesky", link: "https://bsky.app/profile/holger.imbery.name"}
+- {icon: "fa-brands fa-dev", name: "dev.to", link: "https://dev.to/holgerimbery"}
+- {icon: "fa-brands fa-medium", name: "medium", link: "https://medium.com/@holgerimbery"}
+- {icon: "fa-brands fa-hashnode", name: "hashnode", link: "https://holgerimbery.hashnode.dev"}
+- {icon: "fa-solid fa-bullhorn", name: "sessionize", link: "https://sessionize.com/holgerimbery/"}
+# Example of adding a new link to the footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube.com"}
+# Other icons can be found at https://fontawesome.com/icons
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  form_id: meoopkwg # Add your form_id
+  title: Contact Me
+  description: Interested in a direct communication, send my a note
+  button_text: Send now
+
+# NOTE
+# Nomod theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus_identifier: holgerimberyblog # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+#-------------------------------
+# Google Analytics
+#google_analytics: G-NVQGVXE3C8 # Add your GA Tracking Id
