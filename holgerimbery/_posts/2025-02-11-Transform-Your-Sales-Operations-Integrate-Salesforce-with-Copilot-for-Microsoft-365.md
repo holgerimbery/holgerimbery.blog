@@ -10,15 +10,11 @@ tags: [copilotstudio, copilot, salesforce, copilot extensibility]
 featured: true
 toc: true
 ---
+{: .note }
+**summary lede**: Integrating Salesforce with Copilot for Microsoft 365 revolutionizes sales operations by automating repetitive tasks and providing real-time insights. This powerful integration enhances team collaboration and leverages AI-driven analytics to personalize customer interactions. By streamlining workflows and utilizing predictive analytics, sales teams can stay ahead of trends and make informed decisions. Seamless access to Salesforce data within Microsoft 365 allows the team to focus on high-value activities without switching platforms. Ultimately, this integration drives productivity and success in sales operations.
 
-## Summary for fast readers
-
-{: .note}
-Integrating Salesforce with Copilot for Microsoft 365 can revolutionize your sales operations by automating repetitive tasks, providing real-time insights, and enhancing team collaboration. This integration leverages AI-driven analytics to personalize customer interactions, streamline workflows, and utilize predictive analytics to stay ahead of sales trends. 
-With Copilot for Microsoft 365, your sales team can work smarter and more efficiently without leaving the Microsoft 365 environment. The integration allows seamless access to Salesforce data or other 3rd party data directly within Microsoft Teams or Copilot chat in your browser, eliminating the need to switch between platforms. This unified approach ensures that your team can focus on high-value activities like customer engagement and closing deals, driving productivity and success. 
-
-{: .important}
-Chat on your Salesforce Data without leaving your Microsoft 365 environment.
+{: .important }
+Chat on your Salesforce Data without leaving your Microsoft 365 environment (video without sound)
 <p><iframe src="https://www.youtube.com/embed/KLxzZPQReos" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 
 
