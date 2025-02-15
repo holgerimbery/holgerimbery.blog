@@ -197,7 +197,7 @@ A learning path designed to help users prepare for Exam PL-200: Microsoft Power 
 ### Community Support
 These resources offer community-driven support, forums, and opportunities to engage with other Copilot Studio users.
 
-#### [Microsoft Copilot Studio Community Forums](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-support)
+#### [Microsoft Copilot Studio Community Forums](https://community.powerplatform.com/t5/Power-Virtual-Agents-Community/ct-p/PVACommunity)
 A platform where users can ask questions, share tips, and get help from other Copilot Studio users. It also provides options to submit ideas and provide product feedback.
 
 #### [Discussions – MS Copilot UG – Dynamics Communities](https://dynamicscommunities.com/community/groups/ms-copilot/forum/topic/microsoft-copilot-studio-resources/)
