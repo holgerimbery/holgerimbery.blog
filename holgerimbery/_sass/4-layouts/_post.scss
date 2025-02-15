@@ -359,12 +359,31 @@
     color: var(--heading-font-color);
 
     &::after {
-      content: "💡";
       position: absolute;
       top: 32px;
       left: 32px;
       display: block;
     }
+  }
+
+  .note::after {
+    content: "🌟";
+  }
+
+  .tip::after {
+    content: "💡";
+  }
+
+  .important::after {
+    content: "❗";
+  }
+
+  .warning::after {
+    content: "⚠️";
+  }
+
+  .caution::after {
+    content: "⚠️";
   }
 
   .note {
