@@ -4,7 +4,7 @@ title: Copilot Studio - a curated link list
 description: 
 date: 2025-02-15
 author: admin
-image: ./images/copilot-studio-a-curated-link-list.jpeg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/copilot-studio-a-curated-link-list.jpeg
 image_caption: 'Photo by <a href="https://unsplash.com/@rawkkim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">rawkkim</a> on <a href="https://unsplash.com/photos/people-sitting-on-wooden-chairs-BW6IojhaiDU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 tags: [copilotstudio, curatedlist]
 featured: true
@@ -25,13 +25,13 @@ Copilot Studio provides extensibility for various copilots, including Microsoft 
 Agents and autonomous agents are AI systems designed to perform tasks independently. An agent is a powerful AI companion that can handle a range of interactions and tasks, from resolving issues requiring complex conversations to autonomously determining the best action to take based on its instructions and context. On the other hand, autonomous agents are computational systems that inhabit complex dynamic environments, sense and act autonomously, and realize a set of goals or tasks for which they are designed. These agents can improve productivity by performing tasks to assist users and organizations, engaging with customers and employees across various channels.
 
 ***
-![chapter separator](../images/2025/02/hanson-lu-oP_2c31ZwPM-unsplash.jpg)
+![chapter separator](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/hanson-lu-oP_2c31ZwPM-unsplash.jpg)
 *Photo by <a href="https://unsplash.com/@hansonluu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hanson Lu</a> on <a href="https://unsplash.com/photos/the-inside-of-an-airplane-with-a-control-panel-oP_2c31ZwPM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*
       
 ## Where to start
 ### Copilot Studio in a Day Workshop
 
-![icon](../images/2025/02/0.svg) Overview
+![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/0.svg) Overview
 
 The Copilot Studio in a Day Workshop is an intensive, instructor-led training designed to equip participants with the knowledge and hands-on experience necessary to use Microsoft Copilot Studio effectively. This workshop focuses on creating and customizing AI agents using Microsoft Power Platform, specifically Microsoft Copilot Studio and Power Automate.  
 
@@ -39,30 +39,30 @@ The Copilot Studio in a Day Workshop is an intensive, instructor-led training de
 
 #### Summary of Lessons:
 
-![icon](../images/2025/02/1.svg) **Plan Your First Agent**
+![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/1.svg) **Plan Your First Agent**
 
 In this module, you build your Microsoft Power Platform solution, starting with a basic agent. This lesson covers your agent's initial planning and design, ensuring it meets your specific needs and objectives.
 [Link](https://learn.microsoft.com/en-us/training/modules/plan-first-chatbot-online-workshop/)
 
-![icon](../images/2025/02/3.svg) **Create Your First Agent in Microsoft Copilot Studio**
+![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/3.svg) **Create Your First Agent in Microsoft Copilot Studio**
 
 Learn how to create your first agent in Microsoft Copilot Studio. This lesson guides you through setting up your agent, configuring its essential functionalities, and deploying it.
 
 [Link](https://learn.microsoft.com/en-us/training/modules/power-virtual-agents-create-online-workshop/)
 
-![icon](../images/2025/02/4.svg) **Authoring 101: Writing in Unified Authoring**
+![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/4.svg) **Authoring 101: Writing in Unified Authoring**
 
 This module teaches the fundamentals of message and question nodes, familiarizes you with system topics, and shows you how to use variables. It is essential for creating compelling and interactive agents.
 
 [Link](https://learn.microsoft.com/en-us/training/modules/unified-authoring-online-workshop/)
 
-![icon](../images/2025/02/4.svg) **Add Knowledge Sources to an Agent**
+![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/4.svg) **Add Knowledge Sources to an Agent**
 
 Enhance your agent with Copilot Studio by integrating external data, selecting intent recognition models, enabling Generative AI orchestration, and allowing the agent to use its own general knowledge. This lesson focuses on making your agent more versatile and practical by leveraging various data sources and AI capabilities.
 
 [Link](https://learn.microsoft.com/en-us/training/modules/add-knowledge-copilots-online-workshop/)
 
-![icon](../images/2025/02/5.svg) **Build Power Automate Flows for Your Agent**
+![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/5.svg) **Build Power Automate Flows for Your Agent**
 
 Microsoft Copilot Studio connects with Power Automate, allowing you to pass variables from user responses, retrieve data from different sources, perform complex operations, and return the data to Copilot Studio. This lesson covers integrating Power Automate flows to enhance your agent's functionality.
 
@@ -86,7 +86,7 @@ The workshop provides resources and documents to guide participants through each
 [Link](aka.ms/CopilotStudioWorkshop)
 
 ***
-![chapter separator](../images/2025/02/jon-tyson--xcojCHOSTU-unsplash.jpg)
+![chapter separator](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/jon-tyson--xcojCHOSTU-unsplash.jpg)
 *Photo by <a href="https://unsplash.com/@jontyson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jon Tyson</a> on <a href="https://unsplash.com/photos/blue-and-black-arrow-signage--xcojCHOSTU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*
       
 
@@ -116,7 +116,7 @@ The workshop provides resources and documents to guide participants through each
 
   
 *** 
-![chapter separator](../images/2025/02/alev-takil-x6HpdNQ-iEM-unsplash.jpg)
+![chapter separator](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/alev-takil-x6HpdNQ-iEM-unsplash.jpg)
 *Photo by <a href="https://unsplash.com/@alevtakil?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alev Takil</a> on <a href="https://unsplash.com/photos/black-2-din-car-stereo-x6HpdNQ-iEM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*
       
 ## Continue your Journey
@@ -181,7 +181,7 @@ Understand how to build an effective project team for your agent projects. [Read
 You can learn how to plan your agent projects effectively. [Read more](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/project-planning).
 
 ***
-![chapter separator](../images/2025/02/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg)
+![chapter separator](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg)
 *Photo by <a href="https://unsplash.com/@brookecagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brooke Cagle</a> on <a href="https://unsplash.com/photos/three-people-sitting-in-front-of-table-laughing-together-g1Kr4Ozfoac?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*
       
 ## Community Ressources
