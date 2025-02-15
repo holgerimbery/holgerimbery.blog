@@ -12,7 +12,9 @@ featured: false
 toc: true
 ---
 {: .note }
-**summary lede**: This article explores how to create an intelligent agent for Microsoft Copilot Chat using SharePoint as a knowledge source. By leveraging SharePoint's robust document management capabilities, you can enhance information retrieval, automate responses, and improve overall efficiency in your organization.
+**summary lede**:  
+This article explores how to create an intelligent agent for Microsoft Copilot Chat using SharePoint as a knowledge source. By leveraging SharePoint's robust document management capabilities, you can enhance information retrieval, automate responses, and improve overall efficiency in your organization.
+
 ## Why Should Business Users Read This Article?
 
 - **Centralized Knowledge Management**: Learn how to centralize your organization's knowledge, making it easier for employees to find and access critical information.
