@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exploring Copilot Studio Features - Classic Orchestration and Generative Orchestration
-description: we explore the features of Copilot Studio, focusing on classic and generative orchestration methods. This article is for you if you are a new user of Copilot Studio and want to learn about the fundamentals of the tool or if you are a seasoned user and want a recap on the functionality.
+description: exploring the features of Copilot Studio, focusing on classic and generative orchestration methods. This article is for you if you are a new user of Copilot Studio and want to learn about the fundamentals of the tool or if you are a seasoned user and want a recap on the functionality.
 date: 2025-02-15
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/larisa-birta-slbOcNlWNHA-unsplash.jpg
@@ -56,11 +56,19 @@ Here’s when to use knowledge:
     * For a query like "What is the return policy?", if no specific topic matches, the agent can search the knowledge base and provide detailed information about the return policy, including conditions and timeframes.
 
 ## Generative Orchestration
+
+
+{: .caution}
+Generative Orchestration is a preview features, this features aren't meant for production use and may have restricted functionality. 
+
+{: .warning}
+Enabling generative orchestration can impact how billing is calculated.
+
 Generative orchestration is a powerful feature in Copilot Studio that enhances agents' ability to manage conversations more naturally and fluidly. The agent can choose the best actions, knowledge, and topics to answer user queries or respond to event triggers.   
 Here’s when to use generative orchestration:
 * **Create Natural Conversations**: Generative orchestration enables the agent to fill in inputs using details from the conversation history, making interactions more seamless. For example, if a user asks about the nearest store in Berlin and then asks for the weather there, the agent infers that the user wants the weather in Berlin.
 * **Chain Multiple Actions or Topics**: The agent can combine multiple actions or topics to provide comprehensive responses. For instance, if a user says, "I need to get store hours and find my nearest store," the agent can handle both requests in a single interaction.
-Ask Follow-Up Questions: When the agent is unsure about details, it can ask follow-up questions to clarify and gather the necessary information.
+Ask Follow-Up Questions: When the agent is unsure about details, it can ask follow-up questions to clarify and gather the necessary information.  
 **Example**: 
     * If a user asks, "Can you help me find a store and tell me the store hours?", generative orchestration allows the agent to find the nearest store and then provide the store hours, even if these tasks are handled by different topics or actions.
     * If a user starts with "I need help with my order" and then asks, "Can I return it?", generative orchestration can seamlessly transition from an "Order Status" topic to a "Returns and Refunds" topic, ensuring the user gets comprehensive assistance without needing to repeat themselves.
@@ -89,7 +97,8 @@ To enable generative orchestration in Copilot Studio, follow these steps:
 Simple and Direct Interactions: Use classic orchestration for straightforward interactions where user queries can be easily matched to specific topics using trigger phrases.
 Controlled Responses: Classic orchestration is ideal if you need precise control over the conversation flow and responses, as it relies on predefined triggers and actions.
 Limited Scope: For agents with a limited scope of topics and actions, classic orchestration ensures that each query is directed to the most relevant topic without unnecessary complexity.  
-** Examples**:
+
+**Examples**:
 * FAQ Bots:
 Scenario: A bot designed to answer frequently asked questions about a product or service.
 Example: "What is your return policy?" or "How do I reset my password?" These queries can be matched to specific, predefined responses.
