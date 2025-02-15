@@ -2,7 +2,7 @@
 layout: post
 title: Exploring Copilot Studio Features - Classic Orchestration and Generative Orchestration
 description: exploring the features of Copilot Studio, focusing on classic and generative orchestration methods. This article is for you if you are a new user of Copilot Studio and want to learn about the fundamentals of the tool or if you are a seasoned user and want a recap on the functionality.
-date: 2025-02-15
+date: 2025-02-22
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/larisa-birta-slbOcNlWNHA-unsplash.jpg
 image_caption: 'Photo by <a href="https://unsplash.com/@larisabirta?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Larisa Birta</a> on <a href="https://unsplash.com/photos/people-playing-violin-inside-dim-room-slbOcNlWNHA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
