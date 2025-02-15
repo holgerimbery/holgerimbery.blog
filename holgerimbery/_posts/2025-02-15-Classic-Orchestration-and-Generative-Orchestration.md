@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Exploring Copilot Studio Features: Classic Orchestration and Generative Orchestration
+title: Exploring Copilot Studio Features - Classic Orchestration and Generative Orchestration
 description: we explore the features of Copilot Studio, focusing on classic and generative orchestration methods. This article is for you if you are a new user to Copilot Studio and want to learn about the fundamentals of the tool, or if you are a seasoned user and want a recap on the functionality.
 date: 2025-02-15
 author: admin
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/larisa-birta-slbOcNlWNHA-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@larisabirta?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Larisa Birta</a> on <a href="https://unsplash.com/photos/people-playing-violin-inside-dim-room-slbOcNlWNHA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
-tags: []
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/development/holgerimbery/images/2025/02/larisa-birta-slbOcNlWNHA-unsplash.jpg
+image_caption: 'Photo by <a href="https://unsplash.com/@larisabirta?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Larisa Birta</a> on <a href="https://unsplash.com/photos/people-playing-violin-inside-dim-room-slbOcNlWNHA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+tags: [copilotstudio]
 featured: false
 toc: true
 ---
 {: .note }
-Summary lede: In this article, we explore the features of Copilot Studio, focusing on classic and generative orchestration methods. This article is for you if you are a new user to Copilot Studio and want to learn about the fundamentals of the tool, or if you are a seasoned user and want a recap on the functionality. Classic orchestration relies on predefined triggers, topics, and actions to guide conversations, making it suitable for straightforward interactions. Generative orchestration, on the other hand, uses AI to dynamically manage conversations, allowing for more natural and comprehensive responses. We discuss the use of triggers, topics, actions, and knowledge in both methods and provide guidelines on when to use each orchestration type. By understanding these features, you can create efficient and engaging conversational agents in Copilot Studio.
+Summary lede:  
+In this article, we explore the features of Copilot Studio, focusing on classic and generative orchestration methods. This article is for you if you are a new user to Copilot Studio and want to learn about the fundamentals of the tool, or if you are a seasoned user and want a recap on the functionality. Classic orchestration relies on predefined triggers, topics, and actions to guide conversations, making it suitable for straightforward interactions. Generative orchestration, on the other hand, uses AI to dynamically manage conversations, allowing for more natural and comprehensive responses. We discuss the use of triggers, topics, actions, and knowledge in both methods and provide guidelines on when to use each orchestration type. By understanding these features, you can create efficient and engaging conversational agents in Copilot Studio.
 
 
 Copilot Studio offers a range of features designed to create robust and responsive conversational agents. Two key orchestration methods available in Copilot Studio are classic orchestration and generative orchestration. Understanding the differences between these methods and how to effectively use triggers, topics, actions, and knowledge is essential for building an efficient conversational agent. This article delves into these features, providing detailed explanations and examples.
@@ -25,6 +25,7 @@ Here’s when to use triggers:
 **For example**, if a user asks, "Where can I find the nearest store?", a trigger phrase like "nearest store" can activate a topic that provides store locations.
 * **Ensure Relevant Responses**: By defining specific phrases, you can guide the conversation towards the most relevant topic. For instance, a trigger phrase "order status" can direct the user to a topic that helps them check their order status.  
 **Example**: Suppose you have a topic called "Store Locations". You can set trigger phrases such as "find a store", "store near me", or "nearest store". When a user types any of these phrases, the "Store Locations" topic is triggered, and the agent provides the necessary information.
+
 ## Topics
 Topics are the core of the conversation in Copilot Studio. They guide the flow based on the user's needs and can be selected based on the description of their purpose.   
 Here’s when to use topics:
@@ -34,6 +35,7 @@ Here’s when to use topics:
 **Example**: 
     * If a user asks, "How can I return a product?", the agent can match this query to a topic called "Returns and Refunds". This topic would then guide the user through the process of returning a product, providing step-by-step instructions.
     * For a topic called "Product Information", you could have trigger phrases like "tell me about product X" or "features of product Y". When a user asks, "What are the features of product Y?", the "Product Information" topic is activated, and the agent provides detailed information about the product.
+
 ## Actions
 Actions are specific tasks that the agent can perform within a topic. They can only be called explicitly from within a topic.   
 Here’s when to use actions:  
@@ -43,6 +45,7 @@ Here’s when to use actions:
 **Example**: 
     * In a topic called "Order Status", you might have an action that retrieves the current status of an order from your database. When the user provides their order number, the action is called, and the agent returns the status of the order.
     * In a topic called "Appointment Scheduling", you could have an action that checks available time slots in a calendar system. When a user asks to schedule an appointment, the action retrieves available slots and presents them to the user for selection.
+
 ## Knowledge
 Knowledge serves as a fallback or supplementary resource. It can be used when no topics match a user's query or can be called explicitly from within a topic.  
 Here’s when to use knowledge:
@@ -51,6 +54,7 @@ Here’s when to use knowledge:
 **Example**:
     * If a user asks a question that doesn't match any predefined topics, such as "What are the store hours on holidays?", the agent can search the knowledge base for information on holiday hours and provide the user with an accurate answer.
     * For a query like "What is the return policy?", if no specific topic matches, the agent can search the knowledge base and provide detailed information about the return policy, including conditions and timeframes.
+
 ## Generative Orchestration
 Generative orchestration is a powerful feature in Copilot Studio that enhances the agent's ability to manage conversations more naturally and fluidly. It allows the agent to choose the best actions, knowledge, and topics to answer user queries, or respond to event triggers.   
 Here’s when to use generative orchestration:
@@ -60,11 +64,11 @@ Ask Follow-Up Questions: When the agent is unsure about details, it can ask foll
 **Example**: 
     * If a user asks, "Can you help me find a store and tell me the store hours?", generative orchestration allows the agent to first find the nearest store and then provide the store hours, even if these tasks are handled by different topics or actions.
     * If a user starts with "I need help with my order" and then asks "Can I return it?", generative orchestration can seamlessly transition from an "Order Status" topic to a "Returns and Refunds" topic, ensuring the user gets comprehensive assistance without needing to repeat themselves.
+
 ## Comparing Classic and Generative Orchestration
 To better understand the differences between classic and generative orchestration, let's compare their behaviors:
 
 
-```
 | Behavior | Classic Orchestration | Generative Orchestration |
 |----------|-----------------------|--------------------------|
 | Topics | Topics are selected based on matching a user query with trigger phrases | Topics are selected based on the description of their purpose |
@@ -73,20 +77,19 @@ To better understand the differences between classic and generative orchestratio
 | Use of Multiple Topics, Actions, Knowledge Sources | Agent tries to select a single topic to respond to the user, falling back to knowledge if configured | The agent can use a combination of topics, actions, and knowledge |
 | Asking Users for Input | You must use question nodes in topics to author messages prompting the user for any required information | The agent can automatically generate questions to prompt users for any missing information required to fill inputs for topics and actions |
 | Responding to a User | You must use message nodes in topics to author messages responding to the user (or call an action from a topic) | The agent automatically generates a response, using the available information from topics, actions, and knowledge that it has called |
-```
-
 
 ## Enabling Generative Orchestration
 To enable generative orchestration in Copilot Studio, follow these steps:
 * **Navigate to Your Agent**: Open Copilot Studio and select the agent you want to configure.
 * **Access Settings**: Go to the settings menu for your agent.
 * **Enable Generative Mode**: Find the option to enable generative orchestration and toggle it on. This setting allows your agent to use generative AI to orchestrate between topics, actions, and knowledge sources.
+
 ## Guidelines for Using Classic and Generative Orchestration
-### When to Use Classic Orchestration:
+### When to Use Classic Orchestration
 Simple and Direct Interactions: Use classic orchestration for straightforward interactions where user queries can be easily matched to specific topics using trigger phrases.
 Controlled Responses: If you need precise control over the conversation flow and responses, classic orchestration is ideal as it relies on predefined triggers and actions.
-Limited Scope: For agents with a limited scope of topics and actions, classic orchestration ensures that each query is directed to the most relevant topic without unnecessary complexity.
-#### Examples:
+Limited Scope: For agents with a limited scope of topics and actions, classic orchestration ensures that each query is directed to the most relevant topic without unnecessary complexity.  
+** Examples**:
 * FAQ Bots:
 Scenario: A bot designed to answer frequently asked questions about a product or service.
 Example: "What is your return policy?" or "How do I reset my password?" These queries can be matched to specific, predefined responses.
@@ -97,12 +100,12 @@ Example: "I want to book a doctor's appointment for next Monday." The bot can us
 Scenario: A bot that provides order status updates.
 Example: "Where is my order?" or "Has my package shipped?" The bot can match these queries to specific responses based on the order status.
 
-
-### When to Use Generative Orchestration:
+### When to Use Generative Orchestration
 Complex and Dynamic Interactions: Use generative orchestration for more complex interactions where user queries may span multiple topics or require dynamic responses.
 Natural Conversations: If you want the agent to handle conversations more naturally, filling in details from the conversation history and asking follow-up questions, generative orchestration is the better choice.
 Comprehensive Responses: For agents that need to provide comprehensive responses by combining multiple topics, actions, and knowledge sources, generative orchestration offers greater flexibility.
-#### Examples:
+
+**Examples**:
 * Customer Support:
 Scenario: A bot that handles complex customer support queries.
 Example: A user describes an issue with their product that involves multiple steps to troubleshoot. The bot can dynamically generate responses based on the conversation history and provide a comprehensive solution.
