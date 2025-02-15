@@ -102,17 +102,17 @@ The workshop provides resources and documents to guide participants through each
   
 * [requirements gathering sheet](https://github.com/MicrosoftDocs/mslearn-developer-tools-power-platform/blob/master/in-a-day/PVA/PVA_Req_Template_Contoso_Coffee.zip)
 
-* [Official blog](https:///CopilotStudioBlog)
+* [Official blog](https://aka.ms/CopilotStudioBlog)
 
-* [Community forum](https:///CopilotStudioCommunity)
+* [Community forum](https://aka.ms/CopilotStudioCommunity)
 
-* [Product documentation](https:///CopilotStudioDocs)
+* [Product documentation](https://aka.ms/CopilotStudioDocs)
 
-* [GitHub repository of samples](https:///CopilotStudioSamples)
+* [GitHub repository of samples](https://aka.ms/CopilotStudioSamples)
 
-* [Demo Copilot Studio](https:///CopilotStudioDemo)
+* [Demo Copilot Studio](https://aka.ms/CopilotStudioDemo)
 
-* [Try Copilot Studio](https:///TryCopilotStudio)
+* [Try Copilot Studio](https://aka.ms/TryCopilotStudio)
 
   
 *** 
