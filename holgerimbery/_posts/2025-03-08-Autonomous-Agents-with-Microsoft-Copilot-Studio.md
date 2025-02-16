@@ -19,7 +19,7 @@ In today's dynamic business landscape, automating intricate tasks and improving 
 
 **Enhanced Efficiency and Productivity**: Autonomous agents handle repetitive tasks, allowing employees to focus on strategic activities, thus increasing overall productivity.
 
-**Improved Decision-Making**: These agents analyze large datasets in real-time, offering actionable insights that enhance decision-making and responsiveness to market changes.
+**Improved Decision-Making**: These agents analyze large datasets in real time, offering actionable insights that enhance decision-making and responsiveness to market changes.
 
 **Cost Reduction**: Automating tasks reduces labor costs and minimizes errors, leading to significant cost savings and better resource allocation.
 
@@ -42,12 +42,12 @@ Organizations like Pets at Home and Thomson Reuters have successfully implemente
 
 **Thomson Reuters**:
 - **Agent Purpose**: Developed an agent to speed up the legal due diligence workflow.
-- **Function**: The agent automates the review and analysis of legal documents, extracting relevant information and identifying key issues, which accelerates the due diligence process.
+- **Function**: The agent automates the review and analysis of legal documents, extracting relevant information and identifying key issues, accelerating the due diligence process.
 - **Impact**:
     - **Time Reduction**: Task completion time reduced by half.
     - **Productivity**: Significantly boosted efficiency in legal processes.
 
-These examples highlight the transformative impact autonomous agents can have on business operations, driving cost savings, and enhancing productivity.
+These examples highlight autonomous agents' transformative impact on business operations, driving cost savings and enhancing productivity.
 
 ## Building Autonomous Agents with Copilot Studio
 
@@ -56,26 +56,26 @@ Creating autonomous agents with Copilot Studio is straightforward, using a user-
 ## Steps to Build Autonomous Agents
 
 * **Define the Agent's Purpose**:
-    - Clearly outline what tasks the agent will perform and the problems it will solve.
+    - Clearly outline the tasks the agent will perform and the problems it solves.
 
 * **Set Up the Environment**:
     - Access Microsoft Copilot Studio and create a new project.
     - Choose the appropriate template or start from scratch.
 ![create a new agent](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/upgit_20250216_1739706521.png)
-*create a new agent*
+*Create a new agent*
 
 * **Describe Agent Behavior**:
     - Use natural language to describe the agent's actions and responses.
     - Specify triggers and conditions for the agent's operations.
 ![describe behavior](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/upgit_20250216_1739706655.png)
-*describe behavior*
+*Describe behavior*
 
 * **Choose triggers**:
     - Select triggers that will activate the agent based on specific events.
     - Configure triggers to respond to data entries, emails, time-based events, or user interactions (see below)
 
-![configure orchestration, add knowledge source an tiggers](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/upgit_20250216_1739706859.png)
-*configure orchestration, add knowledge source an tiggers*
+![configure orchestration, add knowledge source and triggers](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/upgit_20250216_1739706859.png)
+*Configure orchestration, add knowledge source and triggers*
 
 ![upgit_20250216_1739706994.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/upgit_20250216_1739706994.png)
 
@@ -89,24 +89,24 @@ Creating autonomous agents with Copilot Studio is straightforward, using a user-
     - Manually configure specific actions the agent should take.
     - Integrate with necessary data sources and APIs.
 
-![choose from the library](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/upgit_20250216_1739707220.png)
-*choose from the library, and configure actions*
+![Choose from the library](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/upgit_20250216_1739707220.png)
+*Choose from the library and configure actions*
 
 * **Test the Agent**:
     - Run simulations to ensure the agent behaves as expected.
     - Adjust configurations based on test results.
 
 * **Deploy the Agent**:
-    - Once satisfied with the agent's performance, deploy it to the desired environment.
+    - Once the agent's performance is satisfied, deploy it to the desired environment.
     - Monitor its operations and make adjustments as needed.
 
 ## Triggers for Autonomous Agents:
 
 Triggers are essential for autonomous agents, allowing them to act based on specific events. Here are some common triggers you can use:
 
-- **Data Entry**: Trigger actions when new data is entered into a system.
+- **Data Entry**: Trigger actions when new data enters a system.
 - **Email Receipt**: Activate the agent upon receiving specific types of emails.
-- **Time-Based**: Schedule actions to occur at specific times or intervals.
+- **Time-Based**: Schedule actions at specific times or intervals.
 - **User Interaction**: Respond to user inputs or commands.
 - **System Events**: Trigger based on system status changes or alerts.
 - **API Calls**: Initiate actions when specific API calls are made.
@@ -132,11 +132,11 @@ You can find more ready-made agents and additional information on the [Microsoft
 
 ## Costs for Autonomous Agents
 
-Deployment costs for autonomous agents in Microsoft Copilot Studio are based on a metered model, calculated by the number of actions performed by the agents. Organizations can choose between prepaid capacity packs or pay-as-you-go billing options, providing flexibility in managing expenses. For detailed pricing information, refer to the [Microsoft Copilot Studio pricing page](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/enabling-agents-in-microsoft-365-copilot-chat/?msockid=3f6b995950606d311da58c0351ac6c26).
+Deployment costs for autonomous agents in Microsoft Copilot Studio are based on a metered model, calculated by the number of actions the agents perform. Organizations can choose between prepaid capacity packs or pay-as-you-go billing options, providing flexibility in managing expenses. For detailed pricing information, refer to the [Microsoft Copilot Studio pricing page](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/enabling-agents-in-microsoft-365-copilot-chat/?msockid=3f6b995950606d311da58c0351ac6c26).
 
-Usage of agents is measured in “messages” and total cost is calculated based on the sum of messages used by your organization. You can purchase messages though the Copilot Studio meter in [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account/search?ef_id=_k_20a9a241b9021b97a234c5c70cba9e80_k_&OCID=AIDcmm5edswduu_SEM__k_20a9a241b9021b97a234c5c70cba9e80_k_&msclkid=20a9a241b9021b97a234c5c70cba9e80), a pay-as-you-go option, for ($/€) 0.01/message, or via pre-paid message packs priced at ($/€) 200 for 25,000 messages/month.  
+The usage of agents is measured in "messages", and the total cost is calculated based on the sum of messages used by your organization. You can purchase messages through the Copilot Studio meter in [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account/search?ef_id=_k_20a9a241b9021b97a234c5c70cba9e80_k_&OCID=AIDcmm5edswduu_SEM__k_20a9a241b9021b97a234c5c70cba9e80_k_&msclkid=20a9a241b9021b97a234c5c70cba9e80), a pay-as-you-go option, for ($/€) 0.01/message, or via pre-paid message packs priced at ($/€) 200 for 25,000 messages/month.  
 
-The Microsoft Power Platform admin center is used to set up billing and assign message capacity to Copilot Chat and individual agents. Agent message usage varies with an agent’s complexity, frequency, and the use of specific features. These features have been categorized into five groups, including three new ones introduced today. 
+The Microsoft Power Platform admin center sets up billing and assigns message capacity to Copilot Chat and individual agents. Agent message usage varies with an agent’s complexity, frequency, and the use of specific features. These features have been categorized into five groups, including three new ones introduced today. 
 
 | Copilot Studio feature                | Consumption rate |
 |---------------------------------------|------------------|
@@ -149,4 +149,4 @@ The Microsoft Power Platform admin center is used to set up billing and assign m
 
 ## Conclusion
 
-In conclusion, Microsoft Copilot Studio provides a robust, low-code platform for developing autonomous agents that can significantly enhance business operations. By automating repetitive tasks, improving decision-making, and offering personalized customer experiences, these agents drive efficiency and innovation. The examples of Pets at Home and Thomson Reuters demonstrate the tangible benefits and transformative impact of implementing autonomous agents. With straightforward, low-code steps to build and deploy these agents, businesses can quickly leverage this technology to gain a competitive edge and achieve substantial cost savings. Embrace the future of automation with Microsoft Copilot Studio and unlock new possibilities for your organization.
+In conclusion, Microsoft Copilot Studio provides a robust, low-code platform for developing autonomous agents that can significantly enhance business operations. These agents drive efficiency and innovation by automating repetitive tasks, improving decision-making, and offering personalized customer experiences. The examples of Pets at Home and Thomson Reuters demonstrate the tangible benefits and transformative impact of implementing autonomous agents. With straightforward, low-code steps to build and deploy these agents, businesses can quickly leverage this technology to gain a competitive edge and achieve substantial cost savings. Embrace the future of automation with Microsoft Copilot Studio and unlock new possibilities for your organization.
