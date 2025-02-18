@@ -83,7 +83,7 @@ The Microsoft Copilot Studio Hands-On Workshop is designed to help participants 
 * **Advanced generative orchestration**: Dive deeper into generative AI orchestration.
 
 The workshop provides resources and documents to guide participants through each lab, ensuring a comprehensive learning experience
-[Link](aka.ms/CopilotStudioWorkshop)
+[Link](https://aka.ms/CopilotStudioWorkshop)
 
 ***
 ![chapter separator](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/jon-tyson--xcojCHOSTU-unsplash.jpg)
