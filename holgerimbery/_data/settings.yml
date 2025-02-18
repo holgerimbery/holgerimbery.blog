@@ -33,7 +33,7 @@ menu_settings:
       url: "/impressum/"
     - title: "Privacy"
       url: "https://www.freeprivacypolicy.com/live/9afc0ae9-b134-4b97-bf0f-dcb242d1b03a"
-    - title: "Sponsor"
+    - title: "&hearts; Sponsor"
       url: "https://github.com/sponsors/holgerimbery"
 
 # Call to action button
