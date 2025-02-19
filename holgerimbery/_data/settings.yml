@@ -33,7 +33,7 @@ menu_settings:
       url: "/impressum/"
     - title: "Privacy"
       url: "https://www.freeprivacypolicy.com/live/9afc0ae9-b134-4b97-bf0f-dcb242d1b03a"
-    - title: "&hearts; Sponsor"
+    - title: "&hearts; Sponsors"
       url: "https://github.com/sponsors/holgerimbery"
 
 # Call to action button
@@ -121,6 +121,8 @@ social:
 - {icon: "fa-brands fa-medium", name: "medium", link: "https://medium.com/@holgerimbery"}
 - {icon: "fa-brands fa-hashnode", name: "hashnode", link: "https://holgerimbery.hashnode.dev"}
 - {icon: "fa-solid fa-bullhorn", name: "sessionize", link: "https://sessionize.com/holgerimbery/"}
+- {icon: "fa-solid fa-heart", name: "Github Sponsors", link: "https://github.com/sponsors/holgerimbery"}
+- {icon: "fa-solid fa-mug-saucer", name: "Buy me a coffee", link: "https://buymeacoffee.com/holgerimbery"}
 # Example of adding a new link to the footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube.com"}
 # Other icons can be found at https://fontawesome.com/icons
 
