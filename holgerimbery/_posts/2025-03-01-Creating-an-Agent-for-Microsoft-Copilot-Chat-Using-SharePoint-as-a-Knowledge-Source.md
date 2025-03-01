@@ -41,7 +41,7 @@ Setting Up SharePoint as a Knowledge Source
 
 Ensure your SharePoint site is well-organized and contains all necessary documents and information.
 Use modern SharePoint pages and supported file types such as Word documents, PowerPoint presentations, and PDFs.
-Remember to set permissions and access levels to ensure the agent can retrieve information correctly and does not share sensitive information. Consider using Microsoft Purvue to secure your data by setting up sensitivity labels.
+Remember to set permissions and access levels to ensure the agent can retrieve information correctly and not share sensitive information. Consider using Microsoft Purview to secure your data by setting up sensitivity labels.
 
 ## Understanding Microsoft Purview and Sensitivity Labels
 
@@ -78,7 +78,7 @@ Once satisfied, publish your agent to make it available to users. You can deploy
 
 ## Understanding Pay-As-You-Go for Microsoft Copilot Chat
 
-Microsoft Copilot Chat offers a pay-as-you-go model for agents, allowing you to only pay for what you use.  
+Microsoft Copilot Chat offers a pay-as-you-go model for agents, allowing you to pay only for what you use.  
 Here's how it works:
 
 * Metered Billing:
@@ -103,7 +103,7 @@ Integrating SharePoint with Copilot Studio to create an intelligent agent for Mi
 
 Understanding the importance of Microsoft Purview and sensitivity labels is crucial for maintaining data security and compliance. Microsoft Purview provides comprehensive data governance solutions, ensuring your data is managed, protected, and utilized in compliance with regulatory requirements. Sensitivity labels further enhance data security by classifying and protecting sensitive information, ensuring that only authorized users have access.
 
-Creating an agent in Copilot Studio involves describing your agent using natural language, configuring its behavior, and adding SharePoint as a knowledge source. This process ensures that your agent can effectively retrieve and provide information stored in SharePoint. Testing and publishing your agent ensures it performs as expected and is ready for deployment in environments like Microsoft Teams or a web app.
+Creating an agent in Copilot Studio involves describing your agent using natural language, configuring its behavior, and adding SharePoint as a knowledge source. This process ensures your agent can effectively retrieve and provide information stored in SharePoint. Testing and publishing your agent ensures it performs as expected and is ready for deployment in environments like Microsoft Teams or a web app.
 
 The pay-as-you-go model for Microsoft Copilot Chat offers a cost-effective solution that charges based on actual usage. This model ensures that you only pay for the agents' interactions and tasks, making it a financially efficient option for businesses. Monitoring and managing usage through the Copilot Control System helps optimize performance and control expenses.
 
