@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/larisa-birta-slbOcNlWNHA-unsplash.jpg
 image_caption: 'Photo by <a href="https://unsplash.com/@larisabirta?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Larisa Birta</a> on <a href="https://unsplash.com/photos/people-playing-violin-inside-dim-room-slbOcNlWNHA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 tags: [copilotstudio]
-featured: true
+featured: false
 toc: true
 ---
 {: .note }
