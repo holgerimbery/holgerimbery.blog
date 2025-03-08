@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: 'Photo by <a href="https://unsplash.com/@teapowered?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrick Robert Doyle</a> on <a href="https://unsplash.com/photos/interior-building-OvXht_wi5Ew?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
       
 tags: [copilotstudio, MicrosoftCopilotChat, sharepoint, knowledgemanagement]
-featured: true
+featured: false
 toc: true
 ---
 {: .note }
