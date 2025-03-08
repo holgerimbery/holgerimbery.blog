@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autonomous Agents with Microsoft Copilot Studio - an overview
-description: An article tailored for business leaders, IT professionals, and developers who are keen on leveraging AI to enhance their operations. Whether you're a seasoned developer looking to explore new tools or a business leader aiming to streamline processes, this guide will provide valuable insights into creating autonomous agents using Microsoft Copilot Studio.
+description: An article tailored for business leaders, IT professionals, and developers keen on leveraging AI to enhance their operations. Whether you're a seasoned developer looking to explore new tools or a business leader aiming to streamline processes, this guide will provide valuable insights into creating autonomous agents using Microsoft Copilot Studio.
 date: 2025-03-08
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/mathew-schwartz-sb7RUrRMaC4-unsplash.jpg
@@ -134,13 +134,13 @@ You can find more ready-made agents and additional information on the [Microsoft
 
 Deployment costs for autonomous agents in Microsoft Copilot Studio are based on a metered model, calculated by the number of actions the agents perform. Organizations can choose between prepaid capacity packs or pay-as-you-go billing options, providing flexibility in managing expenses. For detailed pricing information, refer to the [Microsoft Copilot Studio pricing page](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/enabling-agents-in-microsoft-365-copilot-chat/?msockid=3f6b995950606d311da58c0351ac6c26).
 
-The usage of agents is measured in "messages", and the total cost is calculated based on the sum of messages used by your organization. You can purchase messages through the Copilot Studio meter in [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account/search?ef_id=_k_20a9a241b9021b97a234c5c70cba9e80_k_&OCID=AIDcmm5edswduu_SEM__k_20a9a241b9021b97a234c5c70cba9e80_k_&msclkid=20a9a241b9021b97a234c5c70cba9e80), a pay-as-you-go option, for ($/€) 0.01/message, or via pre-paid message packs priced at ($/€) 200 for 25,000 messages/month.  
+The usage of agents is measured in "messages", and the total cost is calculated based on the sum of messages used by your organization. You can purchase messages through the Copilot Studio meter in [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account/search?ef_id=_k_20a9a241b9021b97a234c5c70cba9e80_k_&OCID=AIDcmm5edswduu_SEM__k_20a9a241b9021b97a234c5c70cba9e80_k_&msclkid=20a9a241b9021b97a234c5c70cba9e80), a pay-as-you-go option, for (USD/Euro) 0.01/message, or via pre-paid message packs priced at (USD/Euro) 200 for 25,000 messages/month.  
 
 The Microsoft Power Platform admin center sets up billing and assigns message capacity to Copilot Chat and individual agents. Agent message usage varies with an agent’s complexity, frequency, and the use of specific features. These features have been categorized into five groups, including three new ones introduced today. 
 
 | Copilot Studio feature                | Consumption rate |
 |---------------------------------------|------------------|
-| Web grounded answers (new)            | 0 messages       |
+| Web-grounded answers (new)            | 0 messages       |
 | Classic answers                       | 1 message        |
 | Generative answers                    | 2 messages       |
 | Tenant Graph grounding for messages (new) | 30 messages      |
