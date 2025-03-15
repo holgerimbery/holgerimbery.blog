@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_alt: Time-lapse photography of tunnel
 image_caption: 'Photo by <a href="https://unsplash.com/@cadop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mathew Schwartz</a> on <a href="https://unsplash.com/photos/time-lapse-photography-of-tunnel-sb7RUrRMaC4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>' 
 tags: [copilotstudio, autonomousagents]
-featured: true
+featured: false
 toc: true
 ---
 {: .note }
