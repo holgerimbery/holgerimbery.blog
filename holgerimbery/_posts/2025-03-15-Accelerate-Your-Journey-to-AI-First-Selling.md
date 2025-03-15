@@ -62,7 +62,7 @@ Adopting Microsoft's AI solutions has already improved the sales cycles and cust
 ## Availability
 The AI Accelerator for Sales program will be available to eligible customers starting April 1, 2025. 
 
-## More agents to come: 
+## More agents to come 
 In addition, Customer Intent, Customer Knowledge Management, Case Management,
 
 <p><iframe src="https://www.youtube.com/embed/zZwA3cnNi2A" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
