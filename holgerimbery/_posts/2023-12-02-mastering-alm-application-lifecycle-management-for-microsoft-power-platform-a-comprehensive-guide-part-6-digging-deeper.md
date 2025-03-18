@@ -177,7 +177,7 @@ In your GitHub Actions script, [define the following parameters as environment v
 * Tenant ID: `TENANT_ID:<your tenant id>`
     
 
-The client secret will be stored as a GitHub secret and referenced from within the action script using a parameter like a client secret: ${{secrets.APPLICATION\_ID}}.
+The client secret will be stored as a GitHub secret and referenced from within the action script using a parameter like a client secret: ${{secrets.APPLICATION_ID}}.
 
 Example export and branch a solution:
 
