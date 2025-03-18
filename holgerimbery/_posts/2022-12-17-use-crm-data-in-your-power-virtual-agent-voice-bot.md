@@ -1,19 +1,14 @@
 ---
 layout: post
 title: Use CRM Data in your Power Virtual Agent Voice Bot
-description: 
+description:  Use CRM data to make automated voice bot conversations more personal and relevant to your customer.
 date: 2022-12-17
 author: admin
 image: ./images/archive.jpg
 tags: [archive]
 featured: false
 toc: true
-
 ---
-
-# Use CRM Data in your Power Virtual Agent Voice Bot
-
-> You might have read my beginner level step-by-step kick-starters [to create your first (voice-) bot](https://the.cognitiveservices.ninja/build-your-first-voice-bot-with-microsoft-power-virtual-agent-3e71f8531c3a) and might have implemented [Caller ID detection](https://the.cognitiveservices.ninja/give-your-bots-a-voice) in your bot. Then this article is here to dig a little bit deeper and demonstrate how to use CRM data to personalize the customer journey within the bot.
 
 ## Motivation
 
@@ -25,7 +20,7 @@ In this guide, I will use a simple SharePoint list as a data source for your bot
 
 Create a simple list with the following columns:
 
-```plaintext
+```
 title, name, surname, phonenumber, customernumber
 ```
 
@@ -61,11 +56,11 @@ Figure 5: Get data from the SharePoint list
 
 The Filter Query is to select the data of the calling customer. We use the phone number as an index.
 
-```c
+```
 phonenumber eq 'phonenumber'
 ```
 
-```json
+```
  "value": [
       {
         "@odata.etag": "\"2\"",
