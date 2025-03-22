@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/03/clay-banks-LjqARJaJotc-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@claybanks?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Clay Banks</a> on <a href="https://unsplash.com/photos/five-human-hands-on-brown-surface-LjqARJaJotc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>   
 tags: [copilotstudio, sales, agents, dynamics365]
-featured: true
+featured: false
 toc: true
 ---
 {: .note }
