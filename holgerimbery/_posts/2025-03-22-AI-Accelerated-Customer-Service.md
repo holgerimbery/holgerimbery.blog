@@ -41,7 +41,7 @@ The key functionality of the Customer Intent Agent includes:
 
 * **Efficiency in Operations**: The agent presents a curated list of questions and suggested solutions in the chat response box, enhancing support representative efficiency and reducing the need for manual typing. This results in quicker issue resolution and improved operational efficiency.
 
-### Knowledge Management Agents
+### Knowledge Management Agent
 The Knowledge Management Agent is a sophisticated AI-driven tool that continuously gathers and updates knowledge from resolved cases in real-time. As service representatives close cases, this agent captures valuable insights and transforms them into actionable knowledge. This process eliminates the traditional delays associated with lengthy knowledge lifecycle updates, ensuring that your contact center is equipped with the latest information to address emerging issues promptly. By leveraging AI, the Knowledge Management Agent automatically extracts and disseminates relevant knowledge, empowering your contact center agents to respond to new challenges within minutes rather than waiting for weeks or months. This real-time knowledge management capability significantly enhances the efficiency and responsiveness of your customer service operations.
 Here are some key functionalities:
 
