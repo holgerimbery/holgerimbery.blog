@@ -12,6 +12,7 @@ tags: [copilotstudio, mcp, modelcontextprotocol, ai, openai, azureopenai]
 featured: true
 toc: true
 ---
+
 {: .note }
 **Summary lede**: The article introduces the Model Context Protocol (MCP) and its integration with Copilot Studio. MCP is an open protocol designed to standardize how applications provide context to large language models (LLMs). It enables seamless connections to data sources and tools through a client-server architecture, offering features like pre-built integrations, flexibility, security, extensibility, and interoperability.
 
