@@ -17,21 +17,21 @@ toc: true
 
 
 ## Copilot Studio and the Model Context Protocol (MCP)
-Model Context Protocol (MCP) enables users to seamlessly integrate with existing knowledge servers and data sources directly within Copilot Studio. By connecting to an MCP server, users can unlock a wide range of capabilities. These integrations allow Copilot Studio to dynamically interact with the MCP server, ensuring that users can leverage the latest tools. This connection simplifies workflows, enhances productivity, and provides a standardized approach to managing AI-driven tasks within the Studio environment.
+Model Context Protocol (MCP) enables users to integrate with existing knowledge servers and data sources directly within Copilot Studio. Users can unlock a wide range of capabilities by connecting to an MCP server. These integrations allow Copilot Studio to dynamically interact with the MCP server, ensuring that users can leverage the latest tools. This connection simplifies workflows, enhances productivity, and provides a standardized approach to managing AI-driven tasks within the Studio environment.
 
-Connecting to an MCP server provides access to a variety of resources and tools. These include:
+Connecting to an MCP server provides access to various resources and tools. These include:
 
 - **Resources**: File-like data that client applications can read, such as API responses or file contents.
-- **Tools**: Functions that a language model can call to perform specific tasks.
+- **Tools**: A language model can call functions to perform specific tasks.
 - **Prompts**: Predefined templates designed to accomplish particular objectives efficiently.
 
 {: .note }
 Currently, Copilot Studio supports only tools, and this functionality is still in the preview stage as of the original publication date. To utilize MCP, Generative Orchestration must be activated.
 
 ## Overview of the Model Context Protocol (MCP)
-The Model Context Protocol (MCP) is an open and versatile protocol specifically designed to standardize how applications provide context to large language models (LLMs). Imagine MCP as the AI equivalent of a USB-C port—a universal connector that simplifies and unifies the way AI applications interact with various data sources and tools. Just as USB-C enables seamless connections between devices and peripherals, MCP provides a consistent and reliable framework for integrating AI models with diverse resources.
+The Model Context Protocol (MCP) is an open and versatile protocol designed to standardize how applications provide context to large language models (LLMs). Imagine MCP as the AI equivalent of a USB-C port—a universal connector that simplifies and unifies how AI applications interact with various data sources and tools. As USB-C enables seamless connections between devices and peripherals, MCP provides a consistent and reliable framework for integrating AI models with diverse resources.
 
-By adopting MCP, developers and organizations can eliminate the complexities of managing multiple, incompatible integrations. MCP ensures that AI applications can access the right context, whether it comes from local files, databases, APIs, or other external services. This standardization not only streamlines workflows but also enhances the flexibility, security, and scalability of AI-driven solutions. MCP is a game-changer for those looking to harness the full potential of LLMs in a structured and efficient manner.
+By adopting MCP, developers and organizations can eliminate the complexities of managing multiple, incompatible integrations. MCP ensures that AI applications can access the right context, whether from local files, databases, APIs, or other external services. This standardization streamlines workflows and enhances the flexibility, security, and scalability of AI-driven solutions. MCP is a game-changer for those looking to harness the full potential of LLMs in a structured and efficient manner.
 
 ### Core Architecture
 At its foundation, the Model Context Protocol (MCP) operates on a client-server framework, enabling seamless interaction between applications and data sources. The architecture is composed of the following components:
@@ -40,7 +40,7 @@ At its foundation, the Model Context Protocol (MCP) operates on a client-server 
 
 **MCP Clients**: Protocol clients that establish and maintain one-to-one connections with MCP servers.
 
-**MCP Servers**: Lightweight applications that expose specific functionalities and resources through the standardized MCP framework.
+**MCP Servers**: Lightweight applications that use a standardized MCP framework to expose specific functionalities and resources.
 
 **Local Data Sources**: Files, databases, and services stored on your local machine that MCP servers can securely access and utilize.
 
@@ -50,10 +50,10 @@ At its foundation, the Model Context Protocol (MCP) operates on a client-server 
 MCP provides several unique values that make it a powerful tool for integrating AI models with various data sources and tools:
 
 - **Built-in Integrations**: MCP includes a variety of ready-to-use integrations, enabling your LLM to connect with data sources effortlessly. This minimizes the setup and maintenance workload.
-- **Adaptability**: MCP supports seamless transitions between different LLM providers and platforms, giving you the freedom to select the most suitable options for your requirements.
+- **Adaptability**: MCP supports seamless transitions between different LLM providers and platforms, allowing you to select the most suitable options for your requirements.
 - **Data Security**: MCP adheres to industry-standard security practices, ensuring that your data remains protected within your infrastructure while being accessed by AI systems.
-- **Unified Approach**: MCP offers a consistent framework for linking AI models to data sources, simplifying development and ensuring compatibility across diverse tools and systems.
-- **Customizability**: MCP is built to be customizable, allowing developers to design unique integrations and tools that align with the protocol. This ensures MCP evolves alongside the needs of AI applications.
+- **Unified Approach**: MCP offers a consistent framework for linking AI models to data sources, simplifying development, and ensuring compatibility across diverse tools and systems.
+- **Customizability**: MCP is built to be customizable, allowing developers to design unique integrations and tools that align with the protocol. This ensures that  MCP evolves alongside the needs of AI applications.
 - **Cross-Compatibility**: MCP fosters seamless interaction between various AI models, tools, and data sources, eliminating compatibility challenges within your AI ecosystem.
 - **Community-Driven Development**: As an open protocol, MCP thrives on contributions and feedback from the developer community, ensuring it remains relevant and practical for real-world applications.
 - **Comprehensive Resources**: MCP offers detailed documentation and robust support to help developers implement the protocol efficiently, enabling faster adoption and utilization.
@@ -61,19 +61,19 @@ MCP provides several unique values that make it a powerful tool for integrating 
 
 
 ## How does MCP work in combination with Copilot Studio?
-Each tool published by the MCP server is automatically added as an action in Copilot Studio. Name, description, inputs, and outputs are inherited from the server. As tools are updated or removed on the MCP server, Copilot Studio dynamically reflects these changes, ensuring users always have the latest versions and that obsolete tools are removed. A single MCP server can integrate and manage multiple tools, each accessible as an action within Copilot Studio.
+Each tool published by the MCP server is automatically added as an action in Copilot Studio. Names, descriptions, inputs, and outputs are inherited from the server. Copilot Studio dynamically reflects these changes as tools are updated or removed on the MCP server, ensuring that servers always have the latest versions and that obsolete tools are removed. A single MCP server can integrate and manage multiple tools, each accessible as an action within Copilot Studio.
 
 ## Supported transports
-In MCP, transports are the foundation for client-server communication. Transports handle the mechanics of sending and receiving messages. Currently, Copilot Studio only supports the Server-Sent Events (SSE) transport. The feature is currently in environments in preview regions with plans to make it available across all environments shortly.
+In MCP, transports are the foundation for client-server communication. They handle the mechanics of sending and receiving messages. Currently, Copilot Studio only supports the Server-Sent Events (SSE) transport. The feature is currently in preview in environments in preview regions and will soon be available across all environments.
 
 ## Create a custom MCP connector
-With your MCP server configured, the next step involves setting up a custom connector using Power Apps or Power Automate. This connector acts as a bridge, enabling seamless communication between your MCP server and Copilot Studio. To create this custom connector, you will need an OpenAPI specification YAML file that defines the API of your MCP server.
+With your MCP server configured, the next step involves setting up a custom connector using Power Apps or Power Automate. This connector is a bridge, enabling seamless communication between your MCP server and Copilot Studio. To create this custom connector, you will need an OpenAPI specification YAML file that defines the API of your MCP server.
 
 Follow these steps to configure the custom connector:
 
 1. Navigate to the **Agents** section in the left-hand navigation menu of Copilot Studio.
 
-2. From the list of available agents, select the agent you wish to configure.
+2. Select the agent you wish to configure from the list of available agents.
 
 3. Open the **Actions** tab for the selected agent.
 
@@ -94,11 +94,11 @@ Follow these steps to configure the custom connector:
 
 For detailed guidance on creating custom connectors in Power Apps, refer to the official documentation: [Import the OpenAPI definition](https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition).
 
-By completing these steps, your custom connector will be ready for use in Copilot Studio, enabling smooth integration with your MCP server and its associated tools.
+Completing these steps will make your custom connector ready for use in Copilot Studio, enabling smooth integration with your MCP server and its associated tools.
 
 
 {. note}
-Make sure your custom connector includes the tags, Agentic, and McpSse, so that they appear in Copilot Studio after creation.
+Ensure your custom connector includes the tags "Agentic" and "McpSse" so they appear in Copilot Studio after creation.
 
 
 ### example schema file
@@ -160,26 +160,26 @@ To integrate an existing MCP action into an agent within Copilot Studio, follow 
 
 1. Navigate to the **Agents** section in the left-hand navigation menu.
 
-2. From the list of available agents, select the specific agent you wish to configure.
+2. Select the specific agent you wish to configure from the list of available agents.
 
 3. Access the **Actions** tab for the chosen agent.
 
 4. Click on **Add an action** to begin the process.
 
-5. Choose the **Connector** option. This will display a list of available connectors, including those based on MCP.
+5. Choose the **Connector** option. This will display a list of available connectors, including MCP ones.
 
 
 6. Locate and select the desired MCP connector from the list of options.
 
-7. Complete the authorization process by providing any required credentials or configuration details.
+7. Complete the authorization process by providing the required credentials or configuration details.
 
-8. Once the connection is successfully authorized, click **Next** to finalize the integration.
+8. Click **Next** to finalize the integration once the connection is authorized.
 
-By completing these steps, the selected MCP action will be added to your agent, enabling seamless interaction with the MCP server and its associated tools.
+Completing these steps will add the selected MCP action to your agent, enabling seamless interaction with the MCP server and its associated tools.
 
 
 ## Conclusion
-The Model Context Protocol (MCP) represents a significant step forward in standardizing how AI applications interact with data sources and tools. Its integration with Copilot Studio unlocks new possibilities for developers and organizations, enabling seamless workflows, enhanced productivity, and a unified approach to managing AI-driven tasks. By leveraging MCP, users can simplify complex integrations, ensure data security, and future-proof their AI solutions.
+The Model Context Protocol (MCP) represents a significant step in standardizing how AI applications interact with data sources and tools. Its integration with Copilot Studio unlocks new possibilities for developers and organizations, enabling seamless workflows, enhanced productivity, and a unified approach to managing AI-driven tasks. By leveraging MCP, users can simplify complex integrations, ensure data security, and future-proof their AI solutions.
 
 ## Additional Resources
 For more information on MCP and its integration with Copilot Studio, explore the following resources:
