@@ -12,8 +12,8 @@ featured: false
 toc: true
 ---
 
-{.note}
-**summry lede: 
+{.note } 
+**summry lede**: 
 Integrating AI capabilities into business processes is becoming increasingly essential. 
 Microsoft Copilot Studio offers a powerful platform for building intelligent agents that can streamline workflows and enhance productivity. One of the key features of Copilot Studio is the ability to integrate AI Builder prompts, which leverage natural language understanding and generative AI models to perform specific tasks. 
 This article will guide you through the process of integrating AI Builder prompts into a Copilot Studio agent.
