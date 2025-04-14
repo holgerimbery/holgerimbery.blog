@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/03/arlington-research-kN_kViDchA0-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@arlington_research?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arlington Research</a> on <a href="https://unsplash.com/photos/rectangular-brown-wooden-table-kN_kViDchA0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: [copilotstudio, sales, agents, dynamics365]
-featured: true
+featured: false
 toc: true
 ---
 {: .note }
