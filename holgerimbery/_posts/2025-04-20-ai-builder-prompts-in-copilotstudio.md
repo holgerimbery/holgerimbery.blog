@@ -32,7 +32,7 @@ Incorporating these prompts into your Copilot Studio agent expands its capabilit
 
 ## Steps to Incorporate AI Builder Prompts
 
-### example sentiment analysis and response generation 
+### Example - sentiment analysis and response generation 
 Our goal is to use Generative AI to draft a comprehensive and contextually appropriate response to the user based on the issue raised in a ticket, email, or other forms of communication. By leveraging the capabilities of AI Builder prompts, we aim to ensure that the response is accurate, empathetic, and aligned with the user's expectations.
 
 The process involves analyzing the sentiment and content of the user's input to determine the appropriate tone and structure of the response. For instance, if the issue raised indicates dissatisfaction or a negative experience, the AI-generated response will include an apology and a clear acknowledgment of the problem. Additionally, it will inform the user that a ticket has been created and that the team is actively working to resolve the issue.
