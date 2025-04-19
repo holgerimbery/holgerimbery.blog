@@ -2,7 +2,7 @@
 layout: post
 title: Integrating AI Builder Prompts into a Copilot Studio Agent
 description: Learn how to integrate AI Builder prompts into Microsoft Copilot Studio agents to enhance workflows and productivity.
-date: 2025-04-20
+date: 2025-04-19
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/04/callum-hill-oamw52SCGi0-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@inkyhills?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Callum Hill</a> on <a href="https://unsplash.com/photos/person-in-black-leather-jacket-holding-brown-and-black-hiking-shoes-oamw52SCGi0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
