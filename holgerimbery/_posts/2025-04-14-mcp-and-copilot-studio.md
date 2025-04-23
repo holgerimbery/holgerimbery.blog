@@ -9,7 +9,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@resumegenius?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Resume Genius</a> on <a href="https://unsplash.com/photos/a-woman-shaking-hands-with-another-woman-sitting-at-a-table-IESB4iFVuzA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, mcp, modelcontextprotocol, ai, openai, azureopenai]
-featured: true
+featured: false
 toc: true
 ---
 
