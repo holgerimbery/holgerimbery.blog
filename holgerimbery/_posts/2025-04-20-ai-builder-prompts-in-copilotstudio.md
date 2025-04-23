@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@inkyhills?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Callum Hill</a> on <a href="https://unsplash.com/photos/person-in-black-leather-jacket-holding-brown-and-black-hiking-shoes-oamw52SCGi0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, aibuilder]
-featured: false
+featured: true
 toc: true
 ---
 
