@@ -121,5 +121,4 @@ Implementing a pay-as-you-go payment model for Copilot Studio agents and Agent f
 The PAYG model particularly benefits organizations with variable workloads or those just beginning their AI journey. The transparent billing based on actual usage allows for precise budgeting and cost attribution across departments or projects. The seamless integration with an Azure subscription also provides a familiar framework for organizations already operating within the Microsoft ecosystem.
 
 As AI capabilities continue to evolve, PAYG's flexibility ensures organizations can quickly adapt to new features and usage patterns without renegotiating licensing terms. By monitoring consumption patterns and understanding the different message scenarios, businesses can make informed decisions about their AI investments and potentially transition to message packs when usage stabilizes at predictable levels.
-
 Ultimately, the PAYG model democratizes access to advanced AI capabilities, enabling businesses of all sizes to leverage Copilot Studio's powerful agents and Agent flows to drive innovation and operational efficiency in a financially sustainable manner.
