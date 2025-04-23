@@ -11,14 +11,18 @@ tags: [copilotstudio, pay-as-you-go, copilotstudioagentflow, azure, subscription
 featured: true
 toc: true
 ---
-{: .important}
-Content for IT decision makers - Level 100
-{: .note}
-Summary lede: Implementing a pay-as-you-go (PAYG) payment model for Copilot Studio agents and agent flows offers a cost-effective and flexible approach to managing AI-driven workloads. This article explores the economic advantages of the PAYG model, such as cost efficiency, scalability, and accessibility, making it an ideal choice for organizations with dynamic or variable demands. Additionally, it provides practical guidance on setting up PAYG payment, including linking to an Azure subscription, configuring the PAYG meter, and monitoring usage effectively.
-By adopting the PAYG model, businesses can optimize resource allocation, reduce upfront costs, and maintain operational continuity. The article also highlights key implementation steps and tools to help organizations seamlessly integrate PAYG payment into their Copilot Studio environment, ensuring transparency and control over expenses while leveraging advanced AI capabilities.
+{: .important} 
+**Content Classification**   
+Content for IT decision makers - Level 100  (Background knowledge)    
+Content for IT professionals - Level 100 (Implemantation knowledge)   
+Content for IT architects - Level 100 (Background and Implementation knowledge)   
+
+{: .note } 
+**Summary lede**   
+ Implementing a pay-as-you-go (PAYG) payment model for Copilot Studio agents and agent flows offers a cost-effective and flexible approach to managing AI-driven workloads. This article explores the economic advantages of the PAYG model, such as cost efficiency, scalability, and accessibility, making it an ideal choice for organizations with dynamic or variable demands. Additionally, it provides practical guidance on setting up PAYG payment, including linking to an Azure subscription, configuring the PAYG meter, and monitoring usage effectively. By adopting the PAYG model, businesses can optimize resource allocation, reduce upfront costs, and maintain operational continuity. The article also highlights key implementation steps and tools to help organizations seamlessly integrate PAYG payment into their Copilot Studio environment, ensuring transparency and control over expenses while leveraging advanced AI capabilities.
 
 
-## Why implemented a pay-as-you-go payment model?
+## Why to implement a pay-as-you-go payment model?
 The PAYG payment model offers several advantages:
 
 - **Cost Efficiency**:
