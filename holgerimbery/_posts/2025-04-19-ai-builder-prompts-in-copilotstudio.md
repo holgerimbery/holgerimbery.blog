@@ -106,7 +106,7 @@ select "Text" and give the variable a name and an example value.
 
 - Test your prompt 
 
-- Intigrate the prompt into the agent by defining the input and output.
+- Integrate the prompt into the agent by defining the input and output.
 ![upgit_20250414_1744629760.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/04/upgit_20250414_1744629760.png)
 
 
