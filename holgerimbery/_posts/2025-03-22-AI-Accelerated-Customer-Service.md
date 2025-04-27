@@ -56,7 +56,7 @@ Here are some key functionalities:
 * **Template Utilization**: Knowledge articles can be created using templates that include prepopulated fields. This ensures consistency in branding, language, and structure across all articles.
 
 ### Short demonstration
-<p><iframe src="https://www.youtube.com/embed/zZwA3cnNi2A" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/zZwA3cnNi2A" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 *Customer Intent, Customer Knowledge Management, Case Management  - source Microsoft* 
 
 ## Streamlining Operations with AI
