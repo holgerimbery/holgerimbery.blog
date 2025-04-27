@@ -1,4 +1,4 @@
----
+https://www.youtube-nocookie.com/embed/---
 layout: post
 title: Extending Microsoft 365 Copilot with Copilot Studio with ServiceNow as an example 
 description: Extending Copilot for M365 with Copilot Studio gives you the ability to create tailored solutions that meet your specific needs and improve overall efficiency.
