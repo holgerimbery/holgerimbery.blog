@@ -4,7 +4,7 @@ title: Implementing Copilot Studio Agent flows
 description: Agent flows are a powerful way to automate repetitive tasks and integrate your apps and services. These intelligent automation workflows can be triggered manually, by other automated events or agents, or based on a schedule, providing flexible options for process automation. By leveraging agent flows, organizations can streamline operations, reduce manual intervention, and ensure consistent execution of business processes.
 date: 2025-05-03
 author: admin
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/05/stackie-jia-12ea-y_1-UE-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/stackie-jia-12ea-y_1-UE-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@stackia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Stackie Jia</a> on <a href="https://unsplash.com/photos/timelapse-photography-of-vehicle-tailights-in-street-with-lighted-post-beside-buildings-at-daytime-12ea-y_1-UE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, agentflows, automation, powerautomate]
