@@ -70,10 +70,11 @@ Before initiating the migration process, several important factors must be addre
 ### Step-by-Step Migration Process
 
 1. Navigate to the [Power Automate portal](https://make.powerautomate.com/) and access the specific cloud flow's detail page
-
+![upgit_20250502_1746169844.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250502_1746169844.png)
 2. Verify solution containment and environment compatibility as outlined in the prerequisites
 3. Select the "Edit" option to modify flow properties
 4. Locate the plan configuration section and change the selection from current plan to "Copilot Studio"
+![upgit_20250502_1746170045.pn](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250502_1746170045.png)
 5. Save the configuration changes
 6. Review and confirm the conversion prompt that appears
 7. Validate the successful transition by verifying the flow now appears in your Copilot Studio interface
