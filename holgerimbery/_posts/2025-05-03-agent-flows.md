@@ -13,7 +13,8 @@ toc: true
 ---
 
 {: .important} 
-**Content Classification**   
+**Content Classification**  
+Content for IT decision makers - null (not necessary)
 Content for IT professionals - Level 100 (Implementation knowledge)   
 Content for IT architects - Level 100 (Background and Implementation knowledge)   
 
