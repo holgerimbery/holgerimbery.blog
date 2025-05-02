@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/05/stackie-jia-12ea-y_1-UE-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@stackia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Stackie Jia</a> on <a href="https://unsplash.com/photos/timelapse-photography-of-vehicle-tailights-in-street-with-lighted-post-beside-buildings-at-daytime-12ea-y_1-UE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
-tags: []
+tags: [copilotstudio, agentflows, automation, powerautomate]
 featured: false
 toc: true
 ---
@@ -18,7 +18,7 @@ Content for IT professionals - Level 100 (Implemantation knowledge)
 Content for IT architects - Level 100 (Background and Implementation knowledge)   
 
 {: .note } 
-**Summary lede** 
+**Summary lede**  
 Agent flows are a powerful way to automate repetitive tasks and integrate your apps and services. These intelligent automation workflows can be triggered manually, by other automated events or agents, or based on a schedule, providing flexible options for process automation. By leveraging agent flows, organizations can streamline operations, reduce manual intervention, and ensure consistent execution of business processes. It's important to note that agent flows consume Copilot Studio capacity for each agent flow action they execute, making capacity management an essential consideration when implementing these automation solutions. This article explores the economic benefits, technical implementation, and strategic advantages of incorporating agent flows into your business operations.
 
 ## Economic impact of Agent Flows
@@ -97,7 +97,7 @@ To maximize the value of agent flows, organizations should:
 By thoughtfully implementing agent flows as part of a comprehensive automation strategy, organizations can achieve significant improvements in operational efficiency, employee satisfaction, and business agility—creating a foundation for sustained competitive advantage in an increasingly digital business landscape.
 
 ## Additional Information
-Frequently Asked Questions about Copilot in cloud workflows
-Frequently Asked Questions for Copilot's expression helper
-Frequently Asked Questions on generative actions within cloud workflows
-Frequently Asked Questions for Power Automate for desktop natural language to code in scripting actions
+* [Frequently Asked Questions about Copilot in cloud workflows](https://learn.microsoft.com/en-us/power-automate/faqs-copilot)
+* [Frequently Asked Questions for Copilot's expression assistant](https://learn.microsoft.com/en-us/power-automate/faqs-copilot-expression-assistant)
+* [Frequently Asked Questions on generative actions within cloud workflows](https://learn.microsoft.com/en-us/power-automate/faqs-generative-actions)
+* [Frequently Asked Questions for Power Automate for desktop natural language to code in scripting actions](https://learn.microsoft.com/en-us/power-automate/faqs-copilot-nl-to-code)
