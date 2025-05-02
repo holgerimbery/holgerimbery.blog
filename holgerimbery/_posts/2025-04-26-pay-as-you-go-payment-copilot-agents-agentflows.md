@@ -14,7 +14,7 @@ toc: true
 {: .important} 
 **Content Classification**   
 Content for IT decision makers - Level 100  (Background knowledge)    
-Content for IT professionals - Level 100 (Implemantation knowledge)   
+Content for IT professionals - Level 100 (Implementation knowledge)   
 Content for IT architects - Level 100 (Background and Implementation knowledge)   
 
 {: .note } 

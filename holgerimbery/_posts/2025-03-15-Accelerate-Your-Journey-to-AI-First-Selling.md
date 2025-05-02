@@ -28,7 +28,7 @@ Key components include:
 * **Dynamics 365 Sales**: A comprehensive tool to manage customer accounts and drive sales from lead to close.
 * **White-Glove Engagement**: Personalized support from Microsoft's AI experts.
 
-<p><iframe src="https://www.youtube.com/embed/S8PkHL2nO44" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/S8PkHL2nO44" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 *sales research agent - source Microsoft*
 
 ## New Sales Agents for Enhanced Sales Capabilities
@@ -38,7 +38,7 @@ Two new agents, Sales Agent and Sales Chat, are introduced to enhance the abilit
 ### **Sales Agent**
 is designed to transform contacts into highly qualified leads, enabling your sales representatives to focus on closing the most significant deals while ensuring that no potential lead is overlooked. This intelligent agent operates autonomously around the clock, continuously working to expand your sales pipeline by researching leads, scheduling meetings, and proactively reaching out to customers. For low-impact leads, the Sales Agent can even complete the sale independently. The agent can personalize every interaction by leveraging data from your CRM, company resources such as price sheets, and information available on the web, along with Microsoft 365 data, including emails and meetings. This comprehensive approach ensures that each response is tailored to the specific needs and context of the customer, ultimately driving more effective and efficient sales processes.
 
-<p><iframe src="https://www.youtube.com/embed/8y6PmBQBgOs" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/8y6PmBQBgOs" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 *Sales Agent - source Microsoft*
 
 ### **Sales Chat** 
@@ -48,7 +48,7 @@ With Sales Chat, sales reps can use simple, natural language prompts to access t
 
 By integrating seamlessly with existing sales tools and data sources, Sales Chat ensures that sales reps have all the information they need at their fingertips, enabling them to make informed decisions and drive sales success. This powerful tool not only enhances productivity but also improves the overall effectiveness of the sales team, leading to better customer relationships and increased revenue.
 
-<p><iframe src="https://www.youtube.com/embed/aq_-PVXFtGc" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/aq_-PVXFtGc" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 *Sales Chat - source Microsoft*
 
 ## Customer Success Stories
@@ -67,15 +67,15 @@ The AI Accelerator for Sales program will be available to eligible customers sta
 ## More agents to come 
 In addition, Customer Intent, Customer Knowledge Management, Case Management,
 
-<p><iframe src="https://www.youtube.com/embed/zZwA3cnNi2A" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/zZwA3cnNi2A" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 *Customer Intent, Customer Knowledge Managment, Case Management  - source Microsoft* 
 
 Scheduling Operations,
-<p><iframe src="https://www.youtube.com/embed/FsYVCyW8J1M" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/FsYVCyW8J1M" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 *Scheduling Operations Agent for Fieldservice - source Microsoft*
 
 and Sales Order agents
-<p><iframe src="https://www.youtube.com/embed/6icbmbLc_Og" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/6icbmbLc_Og" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 *Sales Order Agent - source Microsoft*
 
 for Microsoft Dynamics 365 will be available now in March 2025. 
