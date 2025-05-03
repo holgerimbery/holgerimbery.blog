@@ -8,7 +8,8 @@
     // Configure properties specific to VS Code.
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
-      "extensions": ["dedsec727.jekyll-run","rohgarg.jekyll-post"]
+      "extensions": ["dedsec727.jekyll-run","rohgarg.jekyll-post","
+pluveto.upgit"]
     }
   },
 	"features": {
