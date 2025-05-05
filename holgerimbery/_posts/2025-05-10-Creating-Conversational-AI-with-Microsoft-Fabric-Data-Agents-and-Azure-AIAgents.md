@@ -50,10 +50,15 @@ Before diving into the creation process, ensure you have:
 ### Step 1: Create a New Data Agent
 
 1. Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com)
+![upgit_20250505_1746446650]https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250505_1746446650.png
 2. Navigate to your workspace
-3. Click the **+ New** button
-4. Select **Data Agent** from the menu options
-5. Provide a name for your agent in the creation dialog
+3. Click the **+ New Workspace** button
+![upgit_20250505_1746446755](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250505_1746446755.png)
+3. Click the **+ New Item** button
+5. Select **Data Agent** from the menu options
+![upgit_20250505_1746447089](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250505_1746447089.png)
+
+6. Provide a name for your agent in the creation dialog
 
 ### Step 2: Configure Data Sources
 
@@ -109,8 +114,9 @@ Azure AI Agents leverage the capabilities of Azure OpenAI Service, enabling deve
 * **Customizable Workflows**: Developers can create custom workflows and logic to handle specific user queries and scenarios.
 * **Multi-Channel Support**: Azure AI Agents can be deployed across various channels, including web, mobile, and messaging platforms.
 
-## Integrating with Azure AI Agents
-The Azure AI Agent service enhances this experience by orchestrating interactions between users and the Fabric Data Agent. It determines when to invoke the Fabric agent based on the user’s query and uses Identity Passthrough to ensure secure, role-based access to data.
+## Integrating with Azure AI Agents and Microsoft Fabric Data Agents
+The integration of Microsoft Fabric Data Agents with Azure AI Agents allows organizations to create conversational AI applications that can interact with enterprise data in real-time. This integration enables users to ask questions in natural language and receive instant answers, making it easier to access and analyze data.
+The Fabric Data Agent acts as a bridge between the user and the underlying data sources, translating user queries into SQL and retrieving relevant data. This process is seamless and secure, ensuring that users only access data they are authorized to view.
 
 Integration Workflow:
 * Create and publish a Fabric Data Agent.
@@ -127,7 +133,20 @@ This integration supports multiple SDKs (Python, C#, JavaScript) and REST APIs, 
 * **Conversational Interfaces**: Build chatbots or virtual assistants that can interact with users and provide data-driven insights.
 
 
+## Microsoft Fabric + Copilot Studio
+Microsoft Fabric also integrates with Copilot Studio, a low-code/no-code platform that allows users to create conversational interfaces over enterprise data. This integration simplifies the process of building conversational AI applications, making it accessible to business users and non-technical teams.
+Copilot Studio provides a user-friendly interface for creating conversational flows, enabling users to design and deploy chatbots without writing code. This approach is ideal for organizations looking to quickly prototype and deploy conversational AI solutions without extensive development resources.
+
+## Key Features:
+* **Low-Code/No-Code Interface**: Users can create conversational flows using a visual interface, reducing the need for coding skills.
+* **Integration with Microsoft Fabric**: Seamlessly connect to Microsoft Fabric data sources and leverage their capabilities.
+* **Real-Time Data Access**: Enable users to query enterprise data in real-time and receive instant answers.
+* **Pre-built Templates**: Access a library of pre-built templates for common use cases, accelerating development time.
+* **Collaboration Tools**: Facilitate collaboration between business users and IT teams, ensuring that solutions meet organizational needs.
+
+
 ## Comparison: Fabric Data Agent + Azure AI Agent vs. Fabric + Copilot Studio
+
 <div class="table-container">
   <table>
  <th>Feature</th><th>Fabric + Azure AI Agent</th><th>Fabric + Copilot Studio</th>
@@ -143,6 +162,9 @@ While both approaches leverage Microsoft Fabric’s powerful data capabilities, 
 
 ## Conclusion
 The combination of Microsoft Fabric Data Agents and Azure AI Agents provides a powerful framework for building conversational AI applications. By leveraging the capabilities of both platforms, organizations can create intelligent agents that empower users to interact with data in natural language, driving insights and decision-making across the enterprise.
-This integration not only enhances user experience but also democratizes data access, enabling users at all levels to harness the power of AI-driven insights.
+
+For teams seeking a more streamlined approach, integrating Copilot Studio with Microsoft Fabric offers a significantly easier implementation path, particularly for business-focused use cases that don't require extensive customization. This low-code alternative accelerates development while still delivering powerful conversational capabilities over enterprise data.
+
+Regardless of which integration path you choose, these technologies democratize data access, enabling users at all levels to harness the power of AI-driven insights without needing deep technical expertise. The key is selecting the approach that best aligns with your team's technical capabilities, customization requirements, and long-term objectives.
 
 
