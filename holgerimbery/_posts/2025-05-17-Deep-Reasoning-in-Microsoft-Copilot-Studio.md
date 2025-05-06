@@ -36,8 +36,16 @@ These models are ideal for scenarios where agents must:
 ## How It Works
 To activate deep reasoning, developers must:
 
+![upgit_20250506_1746528482.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250506_1746528482.png)
+
 - Enable Generative Mode in the agent settings.
+
+![upgit_20250506_1746528560.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250506_1746528560.png)
+
 - Turn on Deep Reasoning Models under the Generative AI tab.
+
+![upgit_20250506_1746528616.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250506_1746528616.png)
+
 - Use the keyword reason in the agent’s instructions to trigger deep reasoning for specific tasks or steps.
 
 For example, an agent might be instructed to:
@@ -61,5 +69,5 @@ As of now, deep reasoning features are in preview and available only in select r
 
 ## Conclusion
 
-By integrating deep reasoning into Copilot Studio, Microsoft is pushing the boundaries of what AI agents can do. This feature empowers developers to build agents that are not just reactive, but proactive, analytical, and insightful—capable of supporting real-world decision-making in meaningful ways.
+Microsoft's integration of deep reasoning capabilities into Copilot Studio represents a significant evolution in AI agent development. These models transform virtual agents from basic query responders into sophisticated reasoning systems capable of nuanced analysis and contextual problem-solving. By strategically incorporating deep reasoning, organizations can develop AI solutions that deliver more meaningful business insights, support complex decision-making processes, and adapt to intricate business scenarios with greater intelligence. As this technology matures beyond its preview stage, it promises to redefine the role of AI agents across industries—from reactive information providers to proactive strategic partners in business operations.
 
