@@ -32,12 +32,12 @@ When you combine TTS avatars with Azure AI Studio, you unlock even more possibil
 5. **Integration with Other AI Services**: Azure AI Studio allows you to integrate TTS avatars with other AI services, such as Azure OpenAI and Azure AI Search. This enables you to build more sophisticated and intelligent applications that leverage multiple AI capabilities.
    
 
-But let one of them speak for her own:
+But let one of them speak for her own: 
 
-<p><iframe src="https://www.youtube.com/embed/c5vEU68iQ4M" loading="lazy" frameborder="0" allowfullscreen></iframe></p> 
+<p><iframe src="https://www.youtube-nocookie.com/embed/c5vEU68iQ4M" loading="lazy" frameborder="0" allowfullscreen></iframe></p> 
 
 And give you even a more technical inside:
-<p><iframe src="https://www.youtube.com/embed/0F6zQ-HtpAo" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/0F6zQ-HtpAo" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 
 ## How to start
 
@@ -79,7 +79,7 @@ Example 2: Chat Interface with link to own data
 Sometimes, you have to ask for challenging things :-)  
 Trust me, this is much more enjoyable than reading the Dynamics 365 Licensing Guide.
 
-<p><iframe src="https://www.youtube.com/embed/Bk6EXZfVkPc" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/Bk6EXZfVkPc" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 
 ## Conclusion
 
