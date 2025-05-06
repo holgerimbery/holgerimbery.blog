@@ -59,7 +59,7 @@ Additionally, you can choose the level of content moderation for the bot from th
 
 Time to check the implementation and ask your bot some questions not covered by topics.
 
-<p><iframe src="https://www.youtube.com/embed/_QLckAWJC0I" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/_QLckAWJC0I" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 
 
 ## Hints
