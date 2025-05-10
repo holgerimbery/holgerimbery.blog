@@ -1,4 +1,4 @@
-https://www.youtube-nocookie.com/embed/---
+---
 layout: post
 title: Transform Your Sales Operations - Integrate Salesforce with Copilot for Microsoft 365 
 description: Integrating Salesforce with Copilot for Microsoft 365 can revolutionize your sales operations. It automates repetitive tasks, provides real-time insights, and enhances collaboration across your team.
@@ -15,7 +15,7 @@ toc: true
 
 {: .important }
 Chat on your Salesforce Data without leaving your Microsoft 365 environment (video without sound)
-<p><iframe src="https://www.youtube.com/embed/KLxzZPQReos" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube-nocookie.com/embed/KLxzZPQReos" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 
 
 ## A comparison of Microsoft 365 Copilot combined with a Connector to Salesforce and pure Salesforce with Agentforce.

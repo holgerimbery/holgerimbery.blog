@@ -1,4 +1,4 @@
-https://www.youtube-nocookie.com/embed/---
+---
 layout: post
 title: Easy Steps to Create Multilingual IVRs with Copilot Studio in Dynamics 365 Customer Service or ContactCenter
 description: 
@@ -65,7 +65,7 @@ You can create a bot for your Voice Channel in one language and utilize SSML tag
     Once saved and published, the final result should mirror the dialogue in the attachment, noting that sound is absent between seconds 18 and 20.
     
 
-<p><iframe src="https://www.youtube.com/embed/ndv2lBOfBc4" loading="lazy" frameborder="0" allowfullscreen></iframe></p> 
+<p><iframe src="https://www.youtube-nocookie.com/embed/ndv2lBOfBc4" loading="lazy" frameborder="0" allowfullscreen></iframe></p> 
 
     
 
