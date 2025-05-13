@@ -50,7 +50,7 @@ Before diving into the creation process, ensure you have:
 ### Step 1: Create a New Data Agent
 
 1. Sign in to [Microsoft Fabric](https://app.fabric.microsoft.com)
-![upgit_20250505_1746446650]https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250505_1746446650.png
+![upgit_20250505_1746446650](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250505_1746446650.png)
 2. Navigate to your workspace
 3. Click the **+ New Workspace** button
 ![upgit_20250505_1746446755](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/upgit_20250505_1746446755.png)
