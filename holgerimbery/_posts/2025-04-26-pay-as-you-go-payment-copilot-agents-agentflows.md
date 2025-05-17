@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@blakewisz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Blake Wisz</a> on <a href="https://unsplash.com/photos/woman-holding-magnetic-card-q3o_8MteFM0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, pay-as-you-go, copilotstudioagentflow, azure, subscription]
-featured: true
+featured: false
 toc: true
 ---
 {: .important} 
