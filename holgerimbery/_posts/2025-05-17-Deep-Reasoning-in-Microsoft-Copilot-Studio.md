@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/sarah-lee-QURU8IY-RaI-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@hisarahlee?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sarah Lee</a> on <a href="https://unsplash.com/photos/photography-of-blue-water-QURU8IY-RaI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: [copilotstudio]
-featured: publish
+featured: true
 toc: true
 ---
 {: .important} 
