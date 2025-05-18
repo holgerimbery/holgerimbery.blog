@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@stackia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Stackie Jia</a> on <a href="https://unsplash.com/photos/timelapse-photography-of-vehicle-tailights-in-street-with-lighted-post-beside-buildings-at-daytime-12ea-y_1-UE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, agentflows, automation, powerautomate]
-featured: true
+featured: false
 toc: true
 ---
 
