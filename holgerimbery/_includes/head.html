@@ -18,7 +18,6 @@
   <!-- Facebook OpenGraph -->
   <meta property="og:title" content="{% if page.url == "/" %}{{ site.data.settings.title }}{% else %}{{ page.title }} – {{ site.data.settings.title }}{% endif %}">
   <meta property="og:description" content="{% if page.url == "/" %}{{ site.data.settings.description | strip_html | xml_escape }}{% elsif page.description %}{{ page.description | strip_html | xml_escape }}{% else %}{{ page.excerpt | strip_html | xml_escape }}{% endif %}">
-  <meta name="author" content="{{ site.data.settings.title }}">
   <meta property="og:image" content="{{ page.image | absolute_url }}">
 
   <!-- Fonts -->
@@ -38,7 +37,9 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
 
 <noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/">Free Privacy Policy Generator</a></noscript>
 <!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+<!-- Goatcounter-->
 <script data-goatcounter="https://holgerimbery.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<!-- Goatcounter End-->
   <script>
     {% if site.data.settings.color_scheme == "auto" %}
     if (localStorage.getItem("theme") === "dark") {
@@ -59,10 +60,5 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
     {% endif %}
   </script>
 
-  <style>
-  {% capture include_to_scssify %}
-    {% include main.scss %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
-  </style>
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
 </head>
