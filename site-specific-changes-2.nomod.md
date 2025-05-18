@@ -7,7 +7,9 @@ _includes/header.html:
 themesselector - light dark mode
 
 _includes/footer.html:  
-cookie preferences
+added cookie preferences  
+removed themeselector - light dark mode
+
 
 _layouts/authors.html:  
 added more social media links
