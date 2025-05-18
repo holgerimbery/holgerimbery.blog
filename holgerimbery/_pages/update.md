@@ -6,6 +6,8 @@ permalink: /updates/
 image: '/images/01.jpg'
 image_caption: 
 ---
+## 2025-05-18 - code change
+css instead of sass, add copy button to code block, removed "buy me a coffee"
 
 ## 2025-03-17 - Search Functionality
 The search functionality has been reenabled. You can now search for articles using the search bar of the blog.
