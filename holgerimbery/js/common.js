@@ -179,6 +179,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   /* =======================
+  // Copy Code Button
+  ======================= */
+  document.querySelectorAll('.post__content pre.highlight, .page__content pre.highlight')
+  .forEach(function (pre) {
+    const button = document.createElement('button');
+    const copyText = 'Copy';
+    button.type = 'button';
+    button.ariaLabel = 'Copy code to clipboard';
+    button.innerText = copyText;
+    button.addEventListener('click', function () {
+      let code = pre.querySelector('code').innerText;
+      try {
+        code = code.trimEnd();
+      } catch (e) {
+        code = code.trim();
+      }
+      navigator.clipboard.writeText(code);
+      button.innerText = 'Copied!';
+      setTimeout(function () {
+        button.blur();
+        button.innerText = copyText;
+      }, 2e3);
+    });
+    pre.appendChild(button);
+  });
+
+
+  /* =======================
   // Scroll Top Button
   ======================= */
   btnScrollToTop.addEventListener("click", function () {

@@ -359,31 +359,12 @@
     color: var(--heading-font-color);
 
     &::after {
+      content: "\1F4A1";
       position: absolute;
       top: 32px;
       left: 32px;
       display: block;
     }
-  }
-
-  .note::after {
-    content: "🌟";
-  }
-
-  .tip::after {
-    content: "💡";
-  }
-
-  .important::after {
-    content: "❗";
-  }
-
-  .warning::after {
-    content: "⚠️";
-  }
-
-  .caution::after {
-    content: "⚠️";
   }
 
   .note {

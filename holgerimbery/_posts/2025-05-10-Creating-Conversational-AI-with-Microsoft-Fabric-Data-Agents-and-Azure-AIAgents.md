@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/birmingham-museums-trust-vgTENcD9TvE-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@birminghammuseumstrust?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Birmingham Museums Trust</a> on <a href="https://unsplash.com/photos/grayscale-photo-of-industrial-machine-vgTENcD9TvE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: [fabric, dataagent]
-featured: true
+featured: false
 toc: true
 ---
 
