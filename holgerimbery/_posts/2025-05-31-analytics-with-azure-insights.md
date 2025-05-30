@@ -24,19 +24,10 @@ This article explores how Microsoft Copilot Studio integrates with Azure Applica
 The first step toward meaningful improvement is measurement. Whether refining an agent, enhancing a product, or optimizing a service, data-driven insights are essential. Without measurement, teams are left to guess what works and what doesn’t. Telemetry—automated data collection about system behavior and user interactions—provides the foundation for informed decision-making. It helps identify pain points, track performance, and validate changes, ensuring that improvements are both targeted and effective.
 
 ## Capturing Telemetry in Microsoft Copilot Studio
-Microsoft Copilot Studio allows developers to build intelligent agents using a low-code interface. For more advanced scenarios, it integrates seamlessly with the Azure AI Foundry, which supports a deeper level of customization and control. One of the key features of Copilot Studio is its built-in telemetry capabilities, which enable developers to capture detailed insights into how users interact with their bots.
-Telemetry is the backbone of understanding user behavior, system performance, and overall bot effectiveness. In Copilot Studio, telemetry is automatically collected for various events, including user messages, bot responses, and system errors. This data can be invaluable for debugging, performance tuning, and enhancing user experience.
-
-## Understanding Telemetry 
-
-Telemetry in this context refers to the automatic logging of events, user interactions, and system behaviors. Developers can use the TelemetryClient class to log custom events, exceptions, and traces. This data is invaluable for debugging, performance monitoring, and understanding user journeys.
-
-
-## Azure Application Insights: What It Is and Why It Matters
-Azure Application Insights is a powerful monitoring service within Azure Monitor. It provides real-time analytics on application performance, usage patterns, and exceptions. When integrated with Copilot Studio bots, it becomes a central hub for all telemetry data.
+Microsoft Copilot Studio allows developers to build intelligent agents using a low-code interface. It integrates seamlessly with the Azure AI Foundry for more advanced scenarios, which supports a deeper level of customization and control. One of the key features of Copilot Studio is its built-in telemetry capabilities, which enable developers to capture detailed insights into how users interact with their bots.must firsture Application Insights is a powerful monitoring service within Azure Monitor. It provides real-time analytics on application performance, usage patterns, and exceptions. When integrated with Copilot Studio bots, it becomes a central hub for all telemetry data.
 
 ### Key Features of Application Insights
-* **Live Metrics**: Monitor bot activity and performance in real time.
+* **Live Metrics**: Monitor bot activity and real-time performance.
 * **Custom Dashboards**: Visualize key metrics like user engagement, dialog completion rates, and error frequency.
 * **Smart Detection**: Automatically identifies anomalies and performance issues.
 * **Query Language (KQL)**: Use powerful queries to analyze telemetry data and generate reports.
@@ -69,7 +60,7 @@ Once you've entered the connection string, click Save to apply the changes.
 
 Optionally, you can choose to enable one of the following settings.
 
-* **Log activities** : If enabled, details of incoming/outgoing messages and events are logged.
+* **Log activities**: If enabled, details of incoming/outgoing messages and events are logged.
 
 * **Log sensitive Activity properties**: If enabled, the values of certain properties that could be considered sensitive on incoming/outgoing messages and events are included in logs. The properties that are considered potentially sensitive are userid, name, text and speak (text and speak properties only apply to messages).
 * **Log node tools**: if enabled, an event is logged each time a node in a topic is executed
@@ -78,20 +69,20 @@ Optionally, you can choose to enable one of the following settings.
 ## Analyze bot telemetry with Application Insights
 After you've connected your bot to Application Insights, telemetry data is logged when users interact with the bot, including testing within Copilot Studio. To see the logged telemetry data, navigate to the Logs section of your Application Insights resource in Azure.
 
-From here, you can use Kusto queries to query and analyze your data.  
+You can use Kusto queries to query and analyze your data from here.  
 See example queries.
 
 ## Example Queries for Analyzing Bot Telemetry
 
-After connecting your Copilot Studio agent with Application Insights, you'll want to extract meaningful insights from the collected telemetry data. This is where Kusto Query Language (KQL) becomes an invaluable tool for data exploration and analysis.
+After connecting your Copilot Studio agent with Application Insights, you'll want to extract meaningful insights from the collected telemetry data. This is where Kusto Query Language (KQL) becomes an invaluable data exploration and analysis tool.
 
 ### Understanding Kusto Query Language (KQL)
 
-Kusto Query Language is a powerful query language designed specifically for analyzing large volumes of data in Azure's data analytics services. With KQL, you can filter, aggregate, and visualize your telemetry data to uncover patterns and insights about your bot's performance and user interactions.
+Kusto Query Language is a powerful query language explicitly designed for analyzing large volumes of data in Azure's data analytics services. With KQL, you can filter, aggregate, and visualize your telemetry data to uncover patterns and insights about your bot's performance and user interactions.
 
 ### Introduction to Kusto Query Language
 Kusto Query Language (KQL) is a read-only request language.
-KQL features a syntax that's both powerful and approachable, combining elements familiar to SQL users with unique capabilities for working with semi-structured data and time series. The language is optimized for ad-hoc data exploration, pattern matching, and time-based analytics—making it ideal for telemetry analysis.
+KQL features a syntax that's both powerful and approachable. It combines elements familiar to SQL users with unique capabilities for working with semi-structured data and time series. The language is optimized for ad hoc data exploration, pattern matching, and time-based analytics, making it ideal for telemetry analysis.
 
 Key characteristics of KQL include:
 
@@ -101,14 +92,14 @@ Key characteristics of KQL include:
 - **Dynamic data handling**: Native support for JSON-like nested data structures
 - **Performance optimization**: Designed for querying billions of records with minimal latency
 
-For Copilot Studio telemetry analysis, KQL serves as your primary tool to transform raw data into actionable insights about user behavior, bot performance, and conversation patterns.
+For Copilot Studio telemetry analysis, KQL is the primary tool for transforming raw data into actionable insights about user behavior, bot performance, and conversation patterns.
 
 
 ### Essential Query Examples
 
 #### User Activity Trends
 
-The following query generates a time-series visualization showing distinct user interactions with your bot over a two-week period:
+The following query generates a time-series visualization showing distinct user interactions with your bot over two weeks:
 
 ```kusto
 // Define the time range parameters
@@ -126,7 +117,7 @@ customEvents
 
 This query:
 - Establishes a 14-day lookback period with daily aggregation intervals
-- Filters the `customEvents` table to this time period
+- Filters the `customEvents` table to this period
 - Uses `dcount()` (distinct count) to calculate unique users per day
 - Groups results into daily bins using the `bin()` function
 - Renders the results as a time-series chart for visual trend analysis
@@ -155,7 +146,7 @@ customEvents
     p90Duration = p90Duration / 60
 ```
 
-This more advanced query:
+This is a more advanced query:
 - Calculates the duration of each conversation in the past week
 - Filters out suspicious outliers (conversations lasting over an hour)
 - Computes average, median, and 90th percentile conversation lengths in minutes
@@ -173,7 +164,7 @@ customEvents
 | where isnotempty(topicName)
 | summarize count() by topicName
 | order by count_ desc
-| render barchart
+| render bar chart
 ```
 
 This visualization helps identify:
@@ -217,7 +208,7 @@ Different integration channels also capture varying levels of contextual metadat
 
 - **Microsoft Teams**: Generally provides rich user profile information and consistent identity tracking
 - **Webchat**: May offer limited user context unless custom authentication is implemented
-- **SMS/Voice Channels**: Often identify users by phone number but with limited additional context
+- **SMS/Voice Channels**: Often identify users by phone number, but with limited additional context
 - **Third-party Integrations**: Metadata quality depends entirely on what the external platform provides
 
 Understanding these channel-specific data characteristics is crucial when designing analytics dashboards and interpreting telemetry results, particularly when your Copilot implementation spans multiple communication channels simultaneously.
