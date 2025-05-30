@@ -101,7 +101,7 @@ For Copilot Studio telemetry analysis, KQL is the primary tool for transforming 
 
 The following query generates a time-series visualization showing distinct user interactions with your bot over two weeks:
 
-```kusto
+```
 // Define the time range parameters
 let queryStartDate = ago(14d);
 let queryEndDate = now();
@@ -126,7 +126,7 @@ This query:
 
 To understand how long users typically engage with your bot:
 
-```kusto
+```
 customEvents
 | where timestamp > ago(7d)
 | extend sessionId = session_Id
@@ -156,7 +156,7 @@ This is a more advanced query:
 
 To understand which bot topics or intents are most frequently triggered:
 
-```kusto
+```
 customEvents
 | where timestamp > ago(30d)
 | where name == "BotMessageSend" 
@@ -231,7 +231,7 @@ Fortunately, Copilot Studio automatically tags all telemetry with environment co
 
 The following Kusto query demonstrates how to exclude all test canvas interactions from your telemetry analysis:
 
-```kusto
+```
 customEvents
 | extend environmentType = customDimensions['designMode']
 | where environmentType == "False" // Only include production conversations
@@ -239,7 +239,7 @@ customEvents
 
 For more targeted analysis, you could also specifically focus on test environment data by reversing the condition:
 
-```kusto
+```
 customEvents
 | extend environmentType = customDimensions['designMode']
 | where environmentType == "True" // Only analyze test conversations
@@ -259,14 +259,14 @@ Custom dimensions significantly enhance your ability to filter, segment, and ana
 
 In Kusto Query Language (KQL), you can access any custom dimension using the bracket notation:
 
-```kusto
+```
 customEvents
 | extend dimensionValue = customDimensions['dimensionName']
 ```
 
 The extensibility of this approach means you can extract and work with multiple dimensions simultaneously:
 
-```kusto
+```
 customEvents
 | extend channelType = customDimensions['channelId']
 | extend userLocale = customDimensions['locale']
