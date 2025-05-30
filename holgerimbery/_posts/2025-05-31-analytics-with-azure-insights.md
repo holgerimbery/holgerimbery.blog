@@ -35,11 +35,11 @@ Telemetry in this context refers to the automatic logging of events, user intera
 ## Azure Application Insights: What It Is and Why It Matters
 Azure Application Insights is a powerful monitoring service within Azure Monitor. It provides real-time analytics on application performance, usage patterns, and exceptions. When integrated with Copilot Studio bots, it becomes a central hub for all telemetry data.
 
-### Key Features of Application Insights:
+### Key Features of Application Insights
 * **Live Metrics**: Monitor bot activity and performance in real time.
-* **Custom Dashboards: Visualize key metrics like user engagement, dialog completion rates, and error frequency.
-* **Smart Detection: Automatically identifies anomalies and performance issues.
-* **Query Language (KQL): Use powerful queries to analyze telemetry data and generate reports.
+* **Custom Dashboards**: Visualize key metrics like user engagement, dialog completion rates, and error frequency.
+* **Smart Detection**: Automatically identifies anomalies and performance issues.
+* **Query Language (KQL)**: Use powerful queries to analyze telemetry data and generate reports.
 
 ## Why Use Application Insights?
 Centralized Monitoring: Consolidate logs, metrics, and traces in one place.
@@ -78,7 +78,8 @@ Optionally, you can choose to enable one of the following settings.
 ## Analyze bot telemetry with Application Insights
 After you've connected your bot to Application Insights, telemetry data is logged when users interact with the bot, including testing within Copilot Studio. To see the logged telemetry data, navigate to the Logs section of your Application Insights resource in Azure.
 
-From here, you can use Kusto queries to query and analyze your data. See example queries.
+From here, you can use Kusto queries to query and analyze your data.  
+See example queries.
 
 ## Example Queries for Analyzing Bot Telemetry
 
@@ -105,7 +106,7 @@ For Copilot Studio telemetry analysis, KQL serves as your primary tool to transf
 
 ### Essential Query Examples
 
-#### 1. User Activity Trends
+#### User Activity Trends
 
 The following query generates a time-series visualization showing distinct user interactions with your bot over a two-week period:
 
@@ -130,7 +131,7 @@ This query:
 - Groups results into daily bins using the `bin()` function
 - Renders the results as a time-series chart for visual trend analysis
 
-#### 2. Conversation Duration Analysis
+#### Conversation Duration Analysis
 
 To understand how long users typically engage with your bot:
 
@@ -160,7 +161,7 @@ This more advanced query:
 - Computes average, median, and 90th percentile conversation lengths in minutes
 - Helps identify if most conversations are brief interactions or longer engagements
 
-#### 3. Topic and Intent Distribution
+#### Topic and Intent Distribution
 
 To understand which bot topics or intents are most frequently triggered:
 
