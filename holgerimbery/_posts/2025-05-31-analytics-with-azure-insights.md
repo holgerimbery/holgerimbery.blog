@@ -38,6 +38,30 @@ Proactive Debugging: Detect and resolve issues before they impact users.
 User Behavior Analysis: Understand how users interact with your bot to improve UX.
 Scalability: Monitor bots at scale across multiple environments and regions.
 
+## Build in Analytics Copilot Studio Analytics
+These include:
+
+* **Agent Effectiveness**: Measures user satisfaction, engagement, and resolution rates.
+* **Agent Health**: Tracks handoffs, errors, and fallbacks.
+* **Consumption Analytics**: Monitors message volume, channel usage, and billing.
+* **Topic Analytics**: Shows topic triggers, completion rates, and drop-offs.
+
+Best for Business users or product owners.
+Quick insights into bot performance and user behavior.
+Monitoring adoption, usage trends, and optimization opportunities.
+It is Complementary, Not Redundant to use an additional analytics tooling like azure application insights
+
+
+| Use Case	| Built-in Analytics |	Azure Insights |
+|-----------------------------------|-----|-----------------------------|
+| Track topic usage and completion |  yes	| yes (with custom events) |
+| Understand user satisfaction	|yes	| yes (if instrumented) |
+| Debug dialog transitions	| no |	yes |
+| Monitor API latency or errors |	no |	yes |
+| Visualize trends over time |	yes (limited) |	yes (custom dashboards) |
+| Correlate with external systems |	no |	yes |
+| Alerting and anomaly detection |	no |	yes |
+
 ## Best Practices for Telemetry and Insights
 To get the most out of telemetry and Application Insights, consider the following best practices:
 
