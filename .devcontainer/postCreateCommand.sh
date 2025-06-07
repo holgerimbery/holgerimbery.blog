@@ -1,2 +1,2 @@
 cd holgerimbery
-bundle install
+bundler install
