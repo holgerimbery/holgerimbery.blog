@@ -8,8 +8,7 @@
     // Configure properties specific to VS Code.
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
-      "extensions": ["dedsec727.jekyll-run","rohgarg.jekyll-post","
-pluveto.upgit"]
+      "extensions": ["dedsec727.jekyll-run","rohgarg.jekyll-post","pluveto.upgit"]
     }
   },
 	"features": {
@@ -25,7 +24,7 @@ pluveto.upgit"]
 	// "forwardPorts": [],
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+	//"postCreateCommand": "./.devcontainer/postCreateCommand.sh",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
