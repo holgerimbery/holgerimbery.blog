@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@ymoran?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yucel Moran</a> on <a href="https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-wooden-desk-onSPwKgLltg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, azureapplicationinsights]
-featured: true
+featured: false
 toc: true
 ---
 {: .important} 
