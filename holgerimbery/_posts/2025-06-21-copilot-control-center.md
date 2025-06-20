@@ -135,10 +135,15 @@ The Copilot Control Center is rapidly evolving, with Microsoft delivering new fe
   
 In summary, the Copilot Control Center is on a fast innovation track. Microsoft's roadmap emphasizes continuous governance improvement, driven by technology advances and user feedback. Organizations can expect the controls to become even more granular and intelligent — for example, automatically recommending a policy because the system noticed an emerging risk, or enabling a new type of audit as AI regulations tighten. Keeping an eye on the product updates and engaging with Microsoft's Copilot documentation (and community) will help administrators stay ahead of the curve.
 
-
 ## Conclusion
 The Copilot Control Center (CCS) represents a critical leap forward in how enterprises can confidently embrace AI copilots and agents. Providing a unified command center for security, management, and insights addresses the top concerns organizations have — data protection, control over AI usage, and measurable value. We explored how CCS empowers different personas: end users get a reliable AI assistant that respects corporate policies, IT admins gain fine-grained control and oversight, IT pros can safely extend AI's capabilities, IT decision-makers obtain the data and assurances needed to expand AI adoption, and business leaders see tangible impact on their KPIs. Crucially, the control center is not a static solution; it's evolving with AI innovation, as seen in the product roadmap, which introduces features for cost management, deeper analytics, and advanced agent governance.
 
 Organizations implementing Copilot and similar AI solutions should leverage these capabilities and follow best practices—starting small, involving cross-functional stakeholders (through a Center of Excellence), and iterating with continuous monitoring and feedback. With the Copilot Control Center, Microsoft essentially provides the playbook and toolkit for responsible AI at scale. Compared to other market offerings, CCS stands out for its enterprise-grade integration and breadth of control, though every solution has its strengths. 
 
 In conclusion, governing AI in the workplace is now just as important as deploying it. The Copilot Control Center illustrates how governance can be a powerful enabler: instilling trust and accountability frees the organization to accelerate AI-powered transformation rather than fear it. Business and IT leaders can work hand-in-hand via this platform to ensure Copilot and its agents are *securely managed, compliant with policies, cost-effective, and delivering real business value*. Armed with such a holistic system, companies can confidently scale up their Copilot usage, turning the promise of AI copilots into productivity gains and innovation, all underpinned by sound administration. Copilot, under control, can truly become a competitive advantage for enterprises in the modern era of AI.  
+
+
+## Whats next
+
+{: .info}
+**video deep dive course**: To dive even deeper, you can watch a series of videos from [Microsodt Community Learning](https://www.youtube.com/playlist?list=PLR9nK3mnD-OU3EgBl8GzkOGKAePQrzc3-)
