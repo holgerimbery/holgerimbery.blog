@@ -144,5 +144,5 @@ In conclusion, governing AI in the workplace is now just as important as deployi
 
 ## What's next
 
-{: .info}
+{: .tip }
 **video deep dive course**: To dive even deeper, you can watch a series of videos from [Microsoft Community Learning](https://www.youtube.com/playlist?list=PLR9nK3mnD-OU3EgBl8GzkOGKAePQrzc3-)
