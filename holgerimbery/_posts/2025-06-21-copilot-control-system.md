@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Copilot control system - Governing and Administering Copilot and AI Agents
+title: Copilot Control System - Governing and Administering Copilot and AI Agents
 description: The Copilot control system is an enterprise governance framework for managing AI assistants at scale. It provides comprehensive tools for securing AI data, administering copilots and agents, and measuring business impact. With this unified control system, organizations can confidently deploy Microsoft Copilot while maintaining compliance with security standards, managing permissions, and tracking adoption metrics. This article explores how different stakeholders—from IT admins to business leaders—use the control system to enable responsible AI innovation while mitigating risks 
 date: 2025-06-21
 author: admin
@@ -142,7 +142,7 @@ Organizations implementing Copilot and similar AI solutions should leverage thes
 In conclusion, governing AI in the workplace is now just as important as deploying it. The Copilot control system illustrates how governance can be a powerful enabler: instilling trust and accountability frees the organization to accelerate AI-powered transformation rather than fear it. Business and IT leaders can work hand-in-hand via this platform to ensure Copilot and its agents are *securely managed, compliant with policies, cost-effective, and delivering real business value*. Armed with such a holistic system, companies can confidently scale up their Copilot usage, turning the promise of AI copilots into productivity gains and innovation, all underpinned by sound administration. Copilot, under control, can truly become a competitive advantage for enterprises in the modern era of AI.  
 
 
-## Whats next
+## What's next
 
 {: .info}
-**video deep dive course**: To dive even deeper, you can watch a series of videos from [Microsodt Community Learning](https://www.youtube.com/playlist?list=PLR9nK3mnD-OU3EgBl8GzkOGKAePQrzc3-)
+**video deep dive course**: To dive even deeper, you can watch a series of videos from [Microsoft Community Learning](https://www.youtube.com/playlist?list=PLR9nK3mnD-OU3EgBl8GzkOGKAePQrzc3-)
