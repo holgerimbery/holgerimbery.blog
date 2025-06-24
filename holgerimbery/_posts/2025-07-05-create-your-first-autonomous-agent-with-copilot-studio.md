@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to Build an Autonomous Email Response Agent with Copilot Studio
-description: Learn how to build an autonomous email response agent using Microsoft Copilot Studio, integrating Dynamics 365 systems, and automating support tasks.
-date: 2025-07-05
-
+title: Add User Authentication to Topics
+description: Learn how to add user authentication to specific topics in Microsoft Copilot Studio, enhancing security for sensitive information access.
+date: 2025-06-28
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/ed-hardie-RMIsZlv8qv4-unsplash.jpg
+image_caption:Photo by <a href="https://unsplash.com/@edhardie?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ed Hardie</a> on <a href="https://unsplash.com/photos/a-screenshot-of-a-phone-RMIsZlv8qv4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+category: [copilotstudio, agent, authentication]
 author: admin
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/
-image_caption: 
-tags: []
-featured: false
+featured: true
 toc: true
 ---
+
 ## How to Build an Autonomous Email Response Agent with Copilot Studio
 
 **Introduction**  
