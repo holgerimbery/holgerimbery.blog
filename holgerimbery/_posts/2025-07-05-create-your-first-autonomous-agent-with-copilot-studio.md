@@ -2,7 +2,7 @@
 layout: post
 title: How to Build an Autonomous Email Response Agent with Copilot Studio
 description: Learn how to build an autonomous email response agent using Microsoft Copilot Studio, integrating Dynamics 365 systems, and automating support tasks.
-date: 2025-06-28
+date: 2025-07-05
 
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/
