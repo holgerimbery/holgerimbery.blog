@@ -2,7 +2,7 @@
 layout: post
 title: Create your first autonomous agents with copilot studio
 description: 
-date: 2025-06-28
+date: 2025-07-28
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/ed-hardie-RMIsZlv8qv4-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@edhardie?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ed Hardie</a> on <a href="https://unsplash.com/photos/a-screenshot-of-a-phone-RMIsZlv8qv4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 category: [copilotstudio, agent, authentication]
