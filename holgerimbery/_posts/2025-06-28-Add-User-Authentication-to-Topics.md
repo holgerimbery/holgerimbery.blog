@@ -27,12 +27,12 @@ As organizations increasingly rely on conversational AI to streamline operations
 
 In Microsoft Copilot Studio, authentication mechanisms can be configured at two distinct levels: agent-level and topic-level. This dual-layered approach to security allows organizations to tailor access controls based on the sensitivity of the information being handled and the specific business processes involved.
 
-* **Agent-Level Authentication**: Securing the Entire Agent Experience
+### **Agent-Level Authentication**: Securing the Entire Agent Experience
 Agent-level authentication is applied globally across the entire copilot. This means that users must authenticate themselves before interacting with any part of the bot. This is particularly useful in scenarios where the entire bot is designed to handle sensitive or proprietary information.
 
 **Example**: In a financial services firm, a copilot designed to assist investment advisors might require agent-level authentication to ensure only authorized personnel can access the bot. This bot might provide access to client portfolios, market analysis tools, and internal investment strategies. By enforcing authentication at the agent level, the organization ensures that all interactions are traceable and secure, aligning with regulatory requirements such as FINRA or MiFID II.
 
-* **Topic-Level Authentication**: Granular Access Control for Sensitive Workflows
+### **Topic-Level Authentication**: Granular Access Control for Sensitive Workflows
 Topic-level authentication, on the other hand, allows for selective security enforcement. Users can interact with general topics freely, but are prompted to authenticate when they attempt to access specific, sensitive issues. This approach is ideal for bots that serve a broad range of use cases, only some of which involve confidential data.
 
 **Example 1**: HR Copilot In a Human Resources copilot, general queries like "What's the company holiday policy?" or "How do I apply for parental leave?" can be accessed without authentication. However, when a user asks to "View my latest payslip" or "Update my bank account details," the bot triggers topic-level authentication. This ensures that only the rightful employee can access or modify personal financial data, supporting compliance with GDPR and internal data governance policies.
@@ -96,25 +96,24 @@ You must select Authenticate manually to add user authentication to a custom top
 
 ## Manual authentication fields
 The following are all the fields you can see when configuring manual authentication. Which fields you see depends on your choice of service provider.
-.
-| Field name | Description |
-|------------|-------------|
-| Authorization URL template | The URL template for authorization, as defined by your identity provider. For example, https://login.microsoftonline.com/common/oauth2/v2.0/authorize |
-| Authorization URL query string template | The query template for authorization, as provided by your identity provider. Keys in the query string template vary, depending on the identity provider (?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}). |
-| Client ID | Your client ID was obtained from the identity provider. |
-| Client secret | Your client secret was obtained when you created the identity provider app registration. |
-| Refresh body template | The template for the refresh body (refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}). |
-| Refresh URL query string template | The refresh URL query string separator for the token URL is usually a question mark (?). |
-| Refresh URL template | The URL template for refresh; for example, https://login.microsoftonline.com/common/oauth2/v2.0/token. |
-| Scope list delimiter | The separator character for the scope list. Empty spaces aren't supported in this field.1 |
-| Scopes | The list of scopes you want users to have after signing in. Use the Scope list delimiter to separate multiple scopes. 1. Only set necessary scopes and follow the least privilege access control principle. |
-| Service provider | The service provider you want to use for authentication. For more information, see OAuth generic providers. |
-| Tenant ID | Your Microsoft Entra ID tenant ID. You can refer to Use an existing Microsoft Entra ID tenant to learn how to find your tenant ID. |
-| Token body template | The template for the token body. (code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}) |
-| Token exchange URL (required for SSO) | This optional field is used when configuring single sign-on. |
-| Token URL template | The URL template for tokens, as provided by your identity provider; for example, https://login.microsoftonline.com/common/oauth2/v2.0/token. |
-| Token URL query string template | The query string separator for the token URL is usually a question mark (?). |
 
+| **Field Name**                         | **Description**                                                                                                                                                                                                                      |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authorization URL template             | The URL template for authorization, as defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`.                                                                             |
+| Authorization URL query string template | The query template for authorization, as provided by your identity provider. Keys in the query string template vary, depending on the identity provider (`?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`). |
+| Client ID                              | Your client ID obtained from the identity provider.                                                                                                                                                                                  |
+| Client secret                          | Your client secret obtained when you created the identity provider app registration.                                                                                                                                                 |
+| Refresh body template                  | The template for the refresh body (`refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}`).                                                           |
+| Refresh URL query string template      | The refresh URL query string separator for the token URL, usually a question mark (`?`).                                                                                                                                             |
+| Refresh URL template                   | The URL template for refresh; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.                                                                                                                             |
+| Scope list delimiter                   | The separator character for the scope list. Empty spaces aren't supported in this field.                                                                                                                                             |
+| Scopes                                 | The list of scopes you want users to have after signing in. Use the Scope list delimiter to separate multiple scopes. Only set necessary scopes and follow the least privilege access control principle.                            |
+| Service provider                       | The service provider you want to use for authentication. For more information, see OAuth generic providers.                                                                                                                          |
+| Tenant ID                              | Your Microsoft Entra ID tenant ID. You can refer to "Use an existing Microsoft Entra ID tenant" to learn how to find your tenant ID.                                                                                                |
+| Token body template                    | The template for the token body (`code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}`).                                                                         |
+| Token exchange URL (required for SSO)  | This optional field is used when configuring single sign-on.                                                                                                                                                                         |
+| Token URL template                     | The URL template for tokens, as provided by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.                                                                                       |
+| Token URL query string template        | The query string separator for the token URL, usually a question mark (`?`).                                                                                                                                                         |
 
 ## Conclusion
 Incorporating user authentication into Microsoft Copilot Studio agents is critical for safeguarding sensitive information and ensuring compliance with industry regulations. By leveraging agent-level and topic-level authentication, organizations can create a secure yet user-friendly environment for their conversational AI applications.
