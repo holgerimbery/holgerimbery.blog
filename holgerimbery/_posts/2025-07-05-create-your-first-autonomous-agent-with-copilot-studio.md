@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ACreate your first autonomous agents with copilot studio
+title: Create your first autonomous agents with copilot studio
 description: 
 date: 2025-06-28
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/ed-hardie-RMIsZlv8qv4-unsplash.jpg
