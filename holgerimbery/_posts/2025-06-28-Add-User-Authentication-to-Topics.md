@@ -13,8 +13,6 @@ toc: true
 
 {: .important}
 **Content Classification**  
-Content for IT decision makers - Level 100 (Background knowledge)  
-Content for IT professionals - Level 100 (Background & Integration knowledge)   
 Content for IT architects - Level 100 (Background & Integration knowledge)
 
 {: .important}
