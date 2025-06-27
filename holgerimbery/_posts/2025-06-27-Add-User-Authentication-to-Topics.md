@@ -55,7 +55,7 @@ Before implementing authentication, you must establish the foundation by setting
 
 Microsoft Entra ID integration enables your agent to leverage enterprise-grade authentication mechanisms, including support for multi-factor authentication, conditional access policies, and comprehensive user management capabilities that align with your organization's security requirements.
 
-For detailed implementation instructions and step-by-step guidance, refer to the official Microsoft documentation on configuring user authentication with Microsoft Entra ID for Copilot Studio (Configure user authentication with Microsoft Entra ID)[https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-authentication-azure-ad].
+For detailed implementation instructions and step-by-step guidance, refer to the official Microsoft documentation on configuring user authentication with Microsoft Entra ID for Copilot Studio [Configure user authentication with Microsoft Entra ID](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-authentication-azure-ad).
 
 ## Add user authentication with the Sign in system topic
 When you create an agent, Copilot Studio automatically adds a system topic called Sign in. You'll need to set your agent's authentication to manual and require users to sign in to use it. When a customer starts a conversation with the agent, the Sign in topic triggers and prompts the user to sign in. You can customize the Sign-in topic to suit your agent.
@@ -90,7 +90,7 @@ You must select Authenticate manually to add user authentication to a custom top
 
 * Select **Topics** at the top of the page.
 
-* Select **Add node + ** > Advanced > Authenticate.
+* Select **Add node +** > Advanced > Authenticate.
 
 ## Manual authentication fields
 The following are all the fields you can see when configuring manual authentication. Which fields you see depends on your choice of service provider.
