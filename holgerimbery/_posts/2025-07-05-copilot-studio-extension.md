@@ -82,6 +82,8 @@ By providing this tight integration, the extension transforms VS Code into a dev
 To edit any component, open the corresponding file and make the desired changes. Since Visual Studio Code natively supports YAML files, the Copilot Studio extension supports IntelliSense code completion and can provide guided tips.
 You can also find new elements that are not yet visible in the web interface.
 
+![upgit_20250628_1751111262.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/upgit_20250628_1751111262.png)
+
 ### Sync your changes
 The Copilot Studio extension uses the same source control features as Visual Studio Code. **Fetch changes**, **Pull changes**, and **Push changes** icons are available in the Explorer and Source Control panels of Visual Studio Code.
 
@@ -90,6 +92,18 @@ The Copilot Studio extension uses the same source control features as Visual Stu
 * To push your local changes from Visual Studio Code to Copilot Studio, use **Push changes**.
 
 When you push changes, they are saved directly to Copilot Studio. This is different from having a local agent instance, which you would then deploy to Copilot Studio. The extension provides a live editing experience of a cloud resource.
+
+## Installation hints
+If you have installed the extension, but it is not working, you should check your dependencies. The extension requires the following dependencies to be installed:
+.NET runtime
+
+* click on *View* > *Output* in Visual Studio Code   
+and check the output for the Copilot Studio Language Server.
+
+If you see an error message like "The Copilot Studio Language Server requires the .NET runtime to be installed", you need to install the .NET runtime.
+The download link is available in the error message, or you can find it on the [.NET download page](https://dotnet.microsoft.com/download/dotnet).
+
+
 
 ## Conclusion
 The Copilot Studio extension for Visual Studio Code streamlines working with cloud-hosted agents. By integrating familiar source control features, it allows developers to easily clone, edit, and sync their changes in real time. This eliminates the need for separate deployment steps, making managing and updating cloud resources directly from the code editor simpler.
