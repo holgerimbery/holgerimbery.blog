@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Copilot Studio Extension for VS Code - Enhancing AI Agent Development
-description: 
-date: 2025-07-05
+title: Copilot Studio Extension for VS Code - Enhancing AI Agent Development with an additional code view
+description: Copilot Studio (Preview) is a Visual Studio Code extension developed by Microsoft to streamline creating and managing custom agents within the VS Code environment. By integrating with Microsoft Copilot Studio, this extension lets developers work on AI agent components using VS Code's powerful editing features.
+date: 2025-07-04
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/ferenc-almasi--FHIdRVGets-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@flowforfrank?utm_content=creditCopyText&utm_medium=reBringingsource=unsplash">Ferenc Almasi</a> on <a href="https://unsplash.com/photos/a-computer-screen-with-a-bunc-buttons-on-it--FHIdRVGets?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
@@ -17,7 +17,7 @@ Content for IT architects - Level 100 (Background & Integration knowledge)
 
 {: .important}
 **Summary Lede**
-The Copilot Studio extension for VS Code enables developers to create, edit, and manage AI agents directly in their favorite code editor. Bringing features like IntelliSense, version control integration, and cloud synchronization to agent development bridges the gap between traditional software development and conversational AI creation, making the process more efficient and accessible to technical teams.
+The Copilot Studio extension for VS Code enables developers to create, edit, and manage AI agents directly in their favorite code editor. Bringing features like IntelliSense, version control integration, and cloud synchronization to agent development bridges the gap between traditional software development and conversational AI creation, making the process more efficient and accessible to technical teams. This helps streamline the development with a codeview.
 
 
 Copilot Studio (Preview) is a Visual Studio Code extension developed by Microsoft to streamline creating and managing custom agents within the VS Code environment. By integrating with Microsoft Copilot Studio (the platform for building and orchestrating agents), this extension lets developers work on AI agent components (such as knowledge sources, actions, topics, and triggers) using VS Code's powerful editing features.
