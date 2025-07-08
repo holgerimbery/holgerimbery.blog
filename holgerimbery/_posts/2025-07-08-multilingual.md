@@ -15,5 +15,5 @@ toc: true
 
 * Select your prefered language on with the selector on the top left side / wählen Sie Ihre Sprache mit dem Menü in der oberen linken Ecke
 
-  [](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/upgit_20250708_1751957089.png)
+  ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/upgit_20250708_1751957089.png)
 
