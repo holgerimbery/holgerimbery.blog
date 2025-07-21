@@ -8,7 +8,7 @@
   {% if site.data.settings.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
-<div id="google_translate_element"></div>
+<!-- <div id="google_translate_element"></div>
 
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -17,6 +17,12 @@ function googleTranslateElementInit() {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+-->
+
+<div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"wrapper_selector":".gtranslate_wrapper","switcher_vertical_position":"top","float_switcher_open_direction":"bottom","alt_flags":{"en":"usa"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
 
   <!-- begin global wrap -->
   <div class="global-wrap">
