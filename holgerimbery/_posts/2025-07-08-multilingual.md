@@ -7,8 +7,8 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@antoine_schibler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Antoine Schibler</a> on <a href="https://unsplash.com/photos/a-bunch-of-flags-that-are-flying-in-the-air-KF3Ty-K6NVA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>      
 category: [announcement]
 author: admin
-featured: true
-toc: true
+featured: false
+toc: false
 ---
 
 ## How to display the blog in your language - wie stellen Sie die Sprache des Blogs um

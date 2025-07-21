@@ -2,7 +2,7 @@
 layout: post
 title: Application Lifecycle Management und Environment Strategy in Microsoft Copilot Studio
 description: a structured approach to building and deploying AI agents
-date: 2025-07-22
+date: 2025-07-21
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/artur-voznenko-rwPIQQPz1ew-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@voznenko_artur?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Artur Voznenko</a> on <a href="https://unsplash.com/photos/a-view-of-a-factory-with-smoke-coming-out-of-the-stacks-rwPIQQPz1ew?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
@@ -118,7 +118,7 @@ To use these features, an admin (with proper roles, such as Power Platform Admin
 ## Benefits of Managed Environments
 Managed Environments offer numerous benefits that address common challenges in administering multiple development environments:  
 **Stronger Governance & Control**: Managed Environments enable administrators to enforce guardrails easily. For example, the limit sharing feature allows an admin to ensure that a Canvas app or Copilot agent isn’t arbitrarily shared with the entire company without oversight. They can restrict sharing to specific security groups or cap the number of people an app can be shared with. This prevents the proliferation of unapproved apps and ensures that critical solutions receive proper review before mass usage. Essentially, it fosters a governed citizen development where makers have freedom to create, but within sensible limits set by IT.  
-**Enhanced Visibility and Insights**: One key pain point for IT teams is identifying what users are building on these platforms and how those apps are utilized. Managed Environments address this by providing weekly usage insights. These are automatic email digests that summarize key metrics of that environment: how many apps and flows are active, who the top makers are, and which resources haven't been used in a while. For instance, an admin might learn that new apps were created this month, or that a particular agent hasn't been used in 60 days (indicating it could be cleaned up). This level of insight helps prevent sprawl (i.e., numerous orphaned or unused apps) and enables administrators to manage resources proactively. It builds better visibility - admins see not just problems after they occur, but get information to act before something becomes an issue (like capacity running out or too many unused apps cluttering an environment).
+**Enhanced Visibility and Insights**: One key pain point for IT teams is identifying what users are building on these platforms and how those apps are utilized. Managed Environments address this by providing weekly usage insights. These are automatic email digests that summarize key metrics of that environment: how many apps and flows are active, who the top makers are, and which resources haven't been used in a while. For instance, an admin might learn that new apps were created this month, or that a particular agent hasn't been used in 60 days (indicating it could be cleaned up). This level of insight helps prevent sprawl (i.e., numerous orphaned or unused apps) and enables administrators to manage resources proactively. It builds better visibility - admins see not just problems after they occur, but get information to act before something becomes an issue (like capacity running out or too many unused apps cluttering an environment).  
 **Streamlined ALM with Built-in Pipelines**: Managed Environments significantly simplify the ALM process by incorporating Power Platform Pipelines as a built-in feature. Traditionally, to implement ALM, one might use Azure DevOps or GitHub Actions to move solutions from development to production. Now, with pipelines in the platform, even non-developers can set up a deployment pipeline via a simple interface. By enabling the pipeline feature, makers can easily push a solution from one environment to another with minimal effort, thereby reducing the risk of errors during deployment and accelerating the release cycle. It also encourages the use of multiple environments (since moving changes between them is easier than ever). It should be noted that both source and target environments in a pipeline need to be managed for this to work, incentivizing organizations to manage all their ALM environments.
 Additionally, the Solution Checker integration enables the platform to automatically run static analysis each time a solution is imported (as part of a pipeline or manually). This analysis helps catch common issues and bad practices, issuing warnings to the team or even blocking the import if serious problems are found. This ensures higher quality solutions are promoted through your ALM pipeline.  
 **Improved Security & Compliance**: Managed Environments incorporate additional security measures that are essential for enterprise scenarios. For example, an administrator can set up an IP firewall to restrict access to the environment's data, allowing only requests from specific IP addresses or network locations. This is useful if your organization wants to ensure that only users on the corporate network (or VPN) can use the apps/agents in that environment. There's also support for customer-managed encryption keys and features like Lockbox (which provides an audit trail and control if Microsoft support accesses your environment for troubleshooting, ensuring they have approval). These features collectively mean that environments can be locked down to meet strict compliance requirements—essential for industries such as finance or healthcare. Data policies (DLP) can be applied more granularly with visibility per environment, which helps in multi-environment setups to enforce that, say, no one can connect a social media connector in the production environment that contains customer data. In short, Managed Environments help maintain data boundaries and security standards automatically across the board.  
@@ -129,19 +129,19 @@ Additionally, the Solution Checker integration enables the platform to automatic
 ## Integrating Managed Environments into Your ALM Process
 To maximize the benefits of Copilot Studio, organizations should integrate an ALM process and environment strategy with the capabilities of Managed Environments. Here's how you can integrate these elements step by step:
 
-**Step 1**: Plan Your Environment Architecture
+**Step 1: Plan Your Environment Architecture**  
 Begin by defining your environment strategy. Identify how many environments you need (dev, test, prod, etc.), and decide which teams or projects will use which environments. Also determine if specific agents require dedicated environments. This planning should align with your ALM stages – e.g., a Dev environment for building, a Test environment for QA, and a Prod environment for releases. Establish naming conventions and access roles for each climate (who will be admins, who will be makers).
 
-**Step 2**: Enable Managed Environments
+**Step 2: Enable Managed Environments**  
 For each critical environment in your strategy (especially those used for production and testing), enable the Managed Environments feature. Typically, you'd turn it on for your Test and Prod environments first to gain governance on the ones that matter most. You can also enable it on Dev to get insights into development activity. Please ensure that you have the necessary admin roles and licensing in place (Copilot Studio users typically have this available). Once enabled, please verify that the environment now displays the Managed Environment options in the Power Platform Admin Center.
 
-**Step 3**: Configure Governance Settings
+**Step 3: Configure Governance Settings**  
 After enabling Managed Environments, configure its features to suit your policies. Set up Limit Sharing rules on production environments to prevent makers from oversharing agents or apps without approval. Configure Data Policies for each environment (for example, allowing connectors that are blocked in Production). Add any additional admin recipients for the weekly insights email so the right people get the usage reports. Also, decide on Solution Checker enforcement: do you want to warn on potential issues, or block solutions with critical issues from being imported to prod? Tailor the managed environment settings so they align with your organization's compliance and quality standards.
 
-**Step 4**: Implement ALM Pipelines
+**Step 4: Implement ALM Pipelines**  
 Now integrate ALM automation. Could you set up Power Platform Pipelines or another release mechanism to automate the flow between your environments? Because your environments are managed, you can use the friendly pipeline UI in Copilot Studio or Power Platform to deploy agents from Dev to Test to Prod. Ensure that solutions are used for all Copilot agents, allowing for deployment through pipelines. Test the pipeline with a sample solution to ensure it moves components and that the solution checker runs as expected. This step builds the bridge in your ALM process, making promotions consistent and documented.
 
-**Step 5**: Train the Team and Refine
+**Step 5: Train the Team and Refine**  
 Introduce these practices to your development team and citizen developers. Provide training or documentation on how they should package their Copilot agents into solutions, and how the promotion process works (so they don't just hit "Publish" in Dev without following ALM). Also educate them on any new limits (for example, if they attempt to share an app and encounter a limit due to Managed Environments, they should be aware that it's not an error but instead by design). Over time, utilize the insights from Managed Environments to refine your strategy. If you notice many unused artifacts, adjust your governance; if you encounter capacity issues, consider adding another environment or increasing storage; if the policies are too strict and hinder necessary work, consider tuning them. ALM and environment management is a continuous improvement cycle – gather feedback and evolve the process.
 
 
@@ -170,8 +170,8 @@ You can use a descriptive, project-based name.
 
 * Create a publisher  
 If this is your first solution, click + New publisher to create one.
-Tip
 
+{: .important}
 You can use your organization's name if you like.
 While the Display name may contain spaces, the Name can't contain special characters and spaces.
 Define a short prefix for use in technical names.
@@ -179,7 +179,7 @@ Define a short prefix for use in technical names.
 {: .important}
 Please don't use the default publisher or the default solution. Custom publishers ensure cleaner component names and better ALM hygiene.
 
-* Set and create
+* Set and create  
 Select "Set as your preferred solution" (so that any new component is added to it by default).
 
 * Click Create.
@@ -190,7 +190,7 @@ Select "Set as your preferred solution" (so that any new component is added to i
 
 * If not already signed in, log in
 
-* Select Join Visual Studio Dev Essentials
+* Select "Join Visual Studio Dev Essentials"
 
 * Confirm
 
@@ -198,13 +198,13 @@ Select "Set as your preferred solution" (so that any new component is added to i
 
 * Select Azure DevOps to open the [Azure DevOps portal](https://aex.dev.azure.com/).
 
-* In the Benefits tab, for Azure DevOps, select Get started.
+* In the Benefits tab, for Azure DevOps, select "Get started".
 
 * When prompted, select Continue.
 
 * Name your organization (you can leave the default name) and select Continue.'
 
-* Create a new project by setting a project name. For example Agents
+* Create a new project by setting a project name. For example "Agents".
 
 * Select + Create project.
 
@@ -217,7 +217,7 @@ Select "Set as your preferred solution" (so that any new component is added to i
 * Go back to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com) and open the Solutions page.
 
 
-* In the menu, select Connect to Git.
+* In the menu, select "Connect to Git".
 
 ![upgit_20250721_1753092397.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/upgit_20250721_1753092397.png)
 
@@ -227,7 +227,7 @@ Select "Set as your preferred solution" (so that any new component is added to i
 
 * Choose your organization and your newly created project and repository.
 
-* Set the Root GiSolution to "Solutions".
+* Set the Root Git Folder to "Solutions".
 
 * Select Next, then pick the solution created before.
 
@@ -240,14 +240,14 @@ See how the various components you have added to your solution are now committed
 
 * When ready, select "Commit", add a comment describing the changes you're introducing
 
-![upgit_20250721_1753093123.png](https://rawSolutionsercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/upgit_20250721_1753093123.png)
+![upgit_20250721_1753093123.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/upgit_20250721_1753093123.png)
 
 ### Access Power Platform pipelines
-* Navigate to the Copilot Studio home page at https://copilotstudio.microsoft.com/
+* Navigate to the [Copilot Studio home page](https://copilotstudio.microsoft.com/)
 
-* Go to the Solutions menu  of your DEV environment
+* Go to the Solutions menu of your DEV environment
 
-* Select the solution you had created previously for your labs
+* Select the solution you had created previously
 
 * In the left navigation, select Pipelines.
 
@@ -263,7 +263,7 @@ See how the various components you have added to your solution are now committed
 * Save the pipeline configuration.
 
 ### Set up deployment stages
-* In the command bar, select Add stage to create the first stage.
+* In the command bar, select "Add stage" to create the first stage.
 
 * Name it PROD and select the PROD environment.
 
@@ -276,16 +276,13 @@ See how the various components you have added to your solution are now committed
 * Repeat the operation for the PROD stage.
 
 In Copilot Studio, switch to either the TEST or PROD environment.
-
 See what the agents look like in each environment. When entering a change, see how customizations are locked because the Solution is managed.
 
 
 ### additional links
-[Documentation and Additional Training Links](https://learn.microsoft.com/power-platform/alm/pipelines)  
-[Overview of pipelines in Power Platform](https://learn.microsoft.com/microsoft-copilot-studio/authoring-solutions-import-export)  
-[Export and import agents using solutions](https://learn.microsoft.com/power-platform/alm/extend-pipelines)  
-[Extend pipelines in Power Platform]()
-[Managed environments and governance](https://learn.microsoft.com/power-platform/admin/managed-environment-overview)  
+[Overview of pipelines in Power Platform](https://learn.microsoft.com/power-platform/alm/pipelines)  
+[Export and import agents using solutions](https://learn.microsoft.com/microsoft-copilot-studio/authoring-solutions-import-export)  
+[Extend pipelines in Power Platform](https://learn.microsoft.com/power-platform/alm/extend-pipelines)  
 [Overview of Git integration in Power Platform](https://learn.microsoft.com/en-us/power-platform/alm/git-integration/overview)  
 
 

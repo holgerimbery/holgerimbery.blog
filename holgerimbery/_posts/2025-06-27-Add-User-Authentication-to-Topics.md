@@ -7,7 +7,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@edhardie?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ed Hardie</a> on <a href="https://unsplash.com/photos/a-screenshot-of-a-phone-RMIsZlv8qv4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 category: [copilotstudio, agent, authentication]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 
