@@ -145,7 +145,7 @@ Now integrate ALM automation. Could you set up Power Platform Pipelines or anoth
 Introduce these practices to your development team and citizen developers. Provide training or documentation on how they should package their Copilot agents into solutions, and how the promotion process works (so they don't just hit "Publish" in Dev without following ALM). Also educate them on any new limits (for example, if they attempt to share an app and encounter a limit due to Managed Environments, they should be aware that it's not an error but instead by design). Over time, utilize the insights from Managed Environments to refine your strategy. If you notice many unused artifacts, adjust your governance; if you encounter capacity issues, consider adding another environment or increasing storage; if the policies are too strict and hinder necessary work, consider tuning them. ALM and environment management is a continuous improvement cycle – gather feedback and evolve the process.
 
 
-## Kick starter Kit for Copilot Studio ALM
+## Kick-Starter-Kit for Copilot Studio ALM
 ### Setup the Basics
 
 * Go to the [copilotstudio.microsoft.com](https://copilotstudio.microsoft.com)
