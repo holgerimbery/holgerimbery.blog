@@ -13,13 +13,13 @@ toc: true
 ---
 
 {: .q-left }
-**Content Classification**  
+> **Content Classification**  
 Content for IT decision makers - Level 100 (Background knowledge)  
 Content for IT professionals - Level 100 (Background & Integration knowledge)   
 Content for IT architects - Level 100 (Background & Integration knowledge)
 
 {: .q-left }
-**Summary Lede**  
+> **Summary Lede**  
 Building and deploying AI agents in Microsoft Copilot Studio requires a structured approach to development and deployment. This article examines how Application Lifecycle Management (ALM) principles and environment strategy collaborate in Copilot Studio. We'll explore the stages of ALM, best practices for environment configuration, and how Managed Environments can strengthen governance while streamlining administration—helping teams balance innovation with control. In the second half of the article, you will find a step-by-step guide to set up your Copilot Studio environment for ALM and Managed Environments with Azure DevOps.
 
 ## Understanding Application Lifecycle Management (ALM)
