@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@novemberwong?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">November Wong</a> on <a href="https://unsplash.com/photos/a-stage-set-up-for-a-concert-with-purple-lighting-Y1GkRjPajAg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilot, copilotstudio, ai, governance, administration]
-featured: true
+featured: false
 toc: true
 ---
 

@@ -6,6 +6,9 @@ permalink: /updates/
 image: '/images/01.jpg'
 image_caption: 
 ---
+## 2025-07-08 - translation
+added google translate to serve multilingual content  
+
 ## 2025-05-18 - code change
 css instead of sass, add copy button to code block, removed "buy me a coffee"
 
