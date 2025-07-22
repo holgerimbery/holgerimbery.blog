@@ -57,9 +57,9 @@ When every team member knows which environment to use for a given task and what 
 ## Environment strategy in the Power Platform (Copilot Studio context)
 Copilot Studio is built on Microsoft Power Platform, a low-code environment that heavily leverages the concept of environments. In Power Platform, an environment is a container for apps, flows, data (Dataverse), and now Copilot Studio agents. This means your Copilot agents live in a specific environment. A best practice for Power Platform (and thus Copilot Studio) is to separate development from production environments. 
 For example, you might have:
-* **A Copilot Dev environment** where new agents and updates are built and unit-tested.
-* **A Copilot Test (or UAT) environment** where agents are imported for broader testing or user acceptance testing.
-* **A Copilot Production environment** where only thoroughly tested, approved agents run for end-users or the business.
+* **An Agent Dev environment** where new agents and updates are built and unit-tested.
+* **A Agent Test (or UAT) environment** where agents are imported for broader testing or user acceptance testing.
+* **A Agent Production environment** where only thoroughly tested, approved agents run for end-users or the business.
 
 Such separation aligns with ALM stages (build in Dev, validate in Test, release in Prod). It prevents a situation where someone's experimental agent update immediately affects real users. Microsoft explicitly recommends moving Copilot agents out of the default environment and into dedicated environments for proper deployment. The default environment in Power Platform is a shared space where every user has maker permissions by default, which is risky for production use. A good strategy is to reserve the default environment for personal productivity or experimentation, and not use it for critical agents. Real deployments should occur in well-governed environments that are explicitly designated for production.
 
