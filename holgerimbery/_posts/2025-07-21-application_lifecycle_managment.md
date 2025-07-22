@@ -269,7 +269,7 @@ See how the various components you have added to your solution are now committed
 
 * Save the stage configuration.
 
-![upgit_20250721_1753094178.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/upgit_20250721_1753094178.png)
+![upgit_20250722_1753171113.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/upgit_20250722_1753171113.png)
 
 ### Test your pipeline
 * In the TEST card, select Deploy here.
