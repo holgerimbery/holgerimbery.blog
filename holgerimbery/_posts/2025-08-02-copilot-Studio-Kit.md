@@ -22,7 +22,11 @@ Content for IT architects - Level 100 (Background & Integration knowledge)
 Copilot Studio Kit enhances Microsoft Copilot Studio with powerful tools for testing, monitoring, and optimizing AI agents. This solution enables organizations to measure agent performance through automated testing, conversation analytics, and advanced monitoring, allowing data-driven improvements to custom AI solutions. By providing robust quality assurance and governance capabilities, the Kit helps ensure AI agents deliver reliable, high-quality responses while meeting enterprise requirements for scalability and compliance.
 
 ## Introduction
-Copilot Studio Kit expands Microsoft Copilot Studio with additional tools for creating, testing, and refining custom AI agents. Developed by Microsoft's Power CAT team, this toolkit supplements the core platform with automated testing capabilities, analytical functions, and management utilities. This document examines how the Copilot Studio Kit delivers value through its business advantages, technical capabilities, and core functionalities.
+The Copilot Studio Kit is an extension of Microsoft Copilot Studio that provides additional tools to support the development and management of custom AI agents. Created by Microsoft’s Power CAT team, the kit adds functionality that goes beyond the core platform, including tools for automated testing, performance analysis, and agent lifecycle management.
+
+This document outlines the main components of the Copilot Studio Kit and explains how they can be used to improve the reliability and maintainability of AI agents. It covers the technical features, practical use cases, and potential benefits for teams working with Copilot Studio.
+
+At the end of the document, you’ll find a step-by-step installation guide to help you set up the Copilot Studio Kit and begin using its tools in your own environment
 
 
 ## Business Benefits of Copilot Studio Kit
@@ -231,6 +235,7 @@ In practice, SharePoint Synchronization ensures that:
 - The agent's knowledge base remains up-to-date with the latest company information
 - Performance is maintained when retrieving information during conversations
 - The agent can utilize a broader and richer set of enterprise knowledge 
+
 ### Prompt Design and User Experience Tools
 **Prompt Advisor**: 
 
