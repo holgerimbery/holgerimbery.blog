@@ -34,39 +34,294 @@ Copilot Studio Kit expands Microsoft Copilot Studio with additional tools for cr
 
 ## Technical Benefits of Copilot Studio Kit
 
-**Robust Automated Testing Framework:** From a technical perspective, one of the most significant advantages of the Copilot Studio Kit is its comprehensive test automation framework. Developers can configure test cases and entire test sets to run against their agents using Copilot Studio APIs.   
-The kit supports multiple test types, including response matching, attachment presence, topic coverage, and even generative answer correctness, to cover a wide range of scenarios. It also supports multi-turn testing, allowing for the end-to-end validation of complex conversational exchanges, which is critical for verifying that an AI agent performs well throughout a dialogue. Test runs produce detailed results, including logs of observed responses, latency measurements, and aggregate success metrics, providing developers with granular insight into performance and correctness. All these capabilities make it much easier to ensure an AI agent meets its requirements and performance targets before deployment.  
-**Seamless Integration and Scalability:** The Copilot Studio Kit is designed to work seamlessly within the broader Microsoft Power Platform and Azure ecosystem, which brings notable technical benefits in integration and scalability. Test result data and conversation analytics are stored in Microsoft Dataverse, allowing them to scale to enterprise data volumes and be easily queried or integrated with other business data. The kit integrates with Azure Application Insights to enrich test results with runtime telemetry, helping developers correlate AI behavior with system metrics.   
-It also provides SharePoint integration for knowledge base content: unlike the default approach of linking a SharePoint site as a data source, the kit's SharePoint synchronization feature brings documents (including large files, PDFs, and even SharePoint pages) directly into the AI agent's knowledge base with improved indexing. This expanded content support not only improves the agent's knowledge reach but also ensures better performance in retrieving answers (since more file types are indexed and searchable).  
-Furthermore, the kit supports Power Platform Pipelines for automated deployments, introducing CI/CD practices to  agent development. Before an agent is promoted to a production environment, pipeline-integrated tests can automatically validate it; only agents that pass the required test thresholds are deployed forward. This type of DevOps integration ensures that the solution can scale across development teams and multiple environments with consistency and control, effectively adding a "quality gate" to AI agent deployment for enterprise-grade scalability and reliability.  
-**Built-In AI Guidance for Prompt Engineering:** Another technical benefit is the inclusion of AI-assisted design tools, particularly the Prompt Advisor. Crafting effective prompts is crucial for getting good results from generative AI, and the Prompt Advisor in the kit helps makers do this in a scientifically informed way. It utilizes a large language model to assess the quality or confidence of a given prompt and provides a detailed rationale for its score, highlighting potential issues. It then suggests refined prompts or variations, employing proven prompt engineering techniques, which the developer can iteratively select and test. This guided prompt optimization enables even non-expert developers to enhance their agent's instructions, resulting in improved AI performance. Technically, this closes the loop between prompt design and outcome validation by providing immediate feedback and recommendations, thereby accelerating the tuning process and enhancing the model's responses without the need for external tools.  
-**Comprehensive Monitoring and Analytics:** The Copilot Studio Kit introduces enhanced analytics that go beyond those provided by the base Copilot Studio. Specifically, it adds Conversation KPIs – a set of metrics that aggregate conversation outcomes (such as resolution rates, escalation rates, and user satisfaction signals) for the AI agents. These KPIs are recorded in Dataverse and presented in dashboards, sparing developers from having to manually parse through raw conversation transcripts to understand how their agents are performing. In technical terms, the conversation data is pre-processed into meaningful metrics, making performance monitoring much more accessible. Additionally, the kit's Conversation Analyzer tool allows developers to run custom analyses on conversation logs using prompts – essentially applying AI to analyze AI, which can uncover deeper insights or extract specific information from interactions. This capability can be used to spot trends, identify user needs, or debug complex interactions by asking questions of the conversation data itself. Together, these analytics features provide a richer monitoring ecosystem, helping maintain and improve the AI agents over time with data-driven insights.  
-**Customizable User Experience Components:** While the focus of Copilot Studio Kit is often on backend and testing features, it also offers technical benefits for the user interface and experience design.   
-The Webchat Playground is a tool that enables makers to easily customize the UI of the chat interface where the  agent interacts with users. Through a straightforward GUI, developers can easily tweak colors, fonts, avatars (thumbnails/initials), and other style elements to match their company's branding or the desired user experience.   
+**Robust Automated Testing Framework:**
+
+From a technical perspective, one of the most significant advantages of the Copilot Studio Kit is its comprehensive test automation framework. Developers can configure test cases and entire test sets to run against their agents using Copilot Studio APIs.
+
+The kit supports multiple test types:
+- Response matching
+- Attachment presence
+- Topic coverage
+- Generative answer correctness
+
+It also supports multi-turn testing, allowing for the end-to-end validation of complex conversational exchanges, which is critical for verifying that an AI agent performs well throughout a dialogue.
+
+Test runs produce detailed results, including:
+- Logs of observed responses
+- Latency measurements
+- Aggregate success metrics
+
+This provides developers with granular insight into performance and correctness. All these capabilities make it much easier to ensure an AI agent meets its requirements and performance targets before deployment.  
+
+**Seamless Integration and Scalability:** 
+
+The Copilot Studio Kit is designed to work seamlessly within the broader Microsoft Power Platform and Azure ecosystem, which brings notable technical benefits in integration and scalability.
+
+- **Data Storage and Integration**:
+    - Test result data and conversation analytics are stored in Microsoft Dataverse
+    - Scales to enterprise data volumes and can be easily queried or integrated with other business data
+    - Integrates with Azure Application Insights to enrich test results with runtime telemetry
+    - Helps developers correlate AI behavior with system metrics
+
+- **Enhanced SharePoint Integration**:
+    - Unlike the default approach of linking a SharePoint site as a data source
+    - The kit's SharePoint synchronization feature brings documents directly into the AI agent's knowledge base
+    - Supports large files, PDFs, and even SharePoint pages with improved indexing
+    - Expands content support and ensures better performance in retrieving answers
+
+- **DevOps Integration**:
+    - Supports Power Platform Pipelines for automated deployments
+    - Introduces CI/CD practices to agent development
+    - Pipeline-integrated tests automatically validate agents before promotion to production
+    - Only agents that pass required test thresholds are deployed forward
+    - Adds a "quality gate" to AI agent deployment
+    - Ensures consistent scalability across development teams and multiple environments  
+
+**Built-In AI Guidance for Prompt Engineering:**
+
+Another technical benefit is the inclusion of AI-assisted design tools, particularly the Prompt Advisor. Crafting effective prompts is crucial for getting good results from generative AI, and the Prompt Advisor in the kit helps makers do this in a scientifically informed way.
+
+The Prompt Advisor:
+- Utilizes a large language model to assess prompt quality
+- Provides detailed rationale for confidence scores
+- Highlights potential issues in the prompt
+- Suggests refined prompts using proven techniques
+- Enables iterative selection and testing
+
+This guided prompt optimization enables even non-expert developers to enhance their agent's instructions, resulting in improved AI performance. Technically, this closes the loop between prompt design and outcome validation by providing immediate feedback and recommendations, thereby:
+- Accelerating the tuning process
+- Enhancing model responses
+- Eliminating the need for external tools  
+
+**Comprehensive Monitoring and Analytics:**
+
+The Copilot Studio Kit introduces enhanced analytics that go beyond those provided by the base Copilot Studio. Specifically, it adds:
+
+- **Conversation KPIs**
+    - Aggregates conversation outcomes (resolution rates, escalation rates, user satisfaction)
+    - Records metrics in Dataverse and presents them in dashboards
+    - Spares developers from manually parsing raw conversation transcripts
+    - Pre-processes conversation data into meaningful metrics
+
+- **Conversation Analyzer Tool**
+     - Allows developers to run custom analyses on conversation logs using prompts
+    - Applies AI to analyze AI interactions
+    - Uncovers deeper insights or extracts specific information
+    - Can spot trends, identify user needs, or debug complex interactions
+
+Together, these analytics features provide a richer monitoring ecosystem, helping maintain and improve AI agents over time with data-driven insights. 
+
+**Customizable User Experience Components:** 
+
+While the focus of Copilot Studio Kit is often on backend and testing features, it also offers technical benefits for the user interface and experience design.   
+
+The Webchat Playground is a tool that enables makers to easily customize the UI of the chat interface where the agent interacts with users. Through a straightforward GUI, developers can easily tweak:
+- Colors
+- Fonts
+- Avatars (thumbnails/initials)
+- Other style elements to match their company's branding or the desired user experience
+
 The tool then automatically generates the corresponding HTML/CSS for the chat widget.  
+
 Similarly, the Adaptive Cards Gallery offers a collection of 12 pre-built adaptive card templates for common scenarios, showcasing how dynamic content can be presented within conversations.  
-These templates not only accelerate the development of rich, interactive responses (saving developers from designing cards from scratch) but also demonstrate advanced techniques, such as data binding in cards, which developers can emulate and extend in their own solutions.  
-Technically, these features ensure that custom  agents are not just functionally powerful but also capable of delivering a polished user experience with minimal effort. This extensibility and ease of customization are a technical boon for developers who want to integrate  agents into various channels (such as Teams and the web) with a consistent look and feel and interactivity.
+
+These templates:
+- Accelerate the development of rich, interactive responses (saving developers from designing cards from scratch)
+- Demonstrate advanced techniques, such as data binding in cards, which developers can emulate and extend in their own solutions
+
+Technically, these features ensure that custom agents are not just functionally powerful but also capable of delivering a polished user experience with minimal effort. This extensibility and ease of customization are a technical boon for developers who want to integrate agents into various channels (such as Teams and the web) with a consistent look and feel and interactivity.
 
 ## Key Features of Copilot Studio Kit
 The Copilot Studio Kit comprises multiple features and tools that collectively enhance the Copilot Studio platform. The key features are outlined below, each addressing specific aspects of development, testing, content integration, or governance for AI  agents:
 ### Testing and Quality Tools  
-**Testing Capabilities**: Enables the configuration and execution of batch test sets against  agents. Makers can define various test cases and automatically verify if agent responses meet expectations. Test results include detailed data—such as response content, latency measurements, and aggregate success metrics—to help debug and improve agent performance. The testing framework supports various test types (e.g., exact response match, attachment presence, topic coverage). It utilizes AI-based evaluation for generative answers, where an AI Builder model compares the agent's answer to a sample or criteria for correctness. Notably, Copilot Studio Kit supports multi-turn testing, allowing for the end-to-end validation of multi-step conversational flows, which is key to ensuring complex dialogues work as intended.  
-**Automated Testing with Power Platform Pipelines**: Introduces integration with Power Platform ALM (Application Lifecycle Management) pipelines to automate the testing and deployment of agents. This feature enables a continuous integration/continuous deployment (CI/CD) approach: whenever an agent is moved to a new environment (e.g., from development to production), a suite of automated tests can run first. Only if the agent passes all required tests will the pipeline allow the deployment to proceed. This adds a "quality gate" in the release process, ensuring that only agents meeting quality standards go live, thereby increasing reliability and reducing manual verification efforts. It's an advanced feature for organizations looking to operationalize their AI agents with the same rigor as other software deployments.
+**Testing Capabilities**: 
+
+Enables the configuration and execution of batch test sets against agents. Makers can define various test cases and automatically verify if agent responses meet expectations. Test results include detailed data—such as:
+
+- Response content
+- Latency measurements
+- Aggregate success metrics
+
+This helps debug and improve agent performance. The testing framework supports various test types:
+- Exact response match
+- Attachment presence
+- Topic coverage
+
+It utilizes AI-based evaluation for generative answers, where an AI Builder model compares the agent's answer to a sample or criteria for correctness. 
+
+Notably, Copilot Studio Kit supports multi-turn testing, allowing for the end-to-end validation of multi-step conversational flows, which is key to ensuring complex dialogues work as intended.  
+
+**Automated Testing with Power Platform Pipelines**: 
+
+Introduces integration with Power Platform ALM (Application Lifecycle Management) pipelines to automate the testing and deployment of agents. This feature enables a continuous integration/continuous deployment (CI/CD) approach:
+- Whenever an agent is moved to a new environment (e.g., from development to production), a suite of automated tests can run first
+- Only if the agent passes all required tests will the pipeline allow the deployment to proceed
+
+This adds a "quality gate" in the release process, ensuring that only agents meeting quality standards go live, thereby:
+- Increasing reliability
+- Reducing manual verification efforts
+
+It's an advanced feature for organizations looking to operationalize their AI agents with the same rigor as other software deployments.
+
 ### Analytics and Insight Tools
-**Conversation KPIs**: Offers built-in key performance indicators (KPIs) to track how custom agents are performing in conversations. This feature aggregates data, such as conversation outcomes, resolutions, escalations, and customer satisfaction signals, into Dataverse records for reporting purposes. It complements Copilot Studio's existing analytics by providing pre-calculated metrics that are easier to consume at a glance. Instead of combing through raw conversation logs, developers and stakeholders can quickly see trends and statistics (for example, success rate of the AI in answering questions, average turn count per conversation, etc.) on a dashboard. This simplification helps in understanding and improving conversation outcomes without requiring deep manual analysis of transcripts.  
-**Conversation Analyzer**: A tool (currently in preview) that allows makers to perform deeper analysis on conversation transcripts using natural language queries. Essentially, it lets you ask questions or apply custom prompts to the stored conversation data to derive additional insights. For example, a developer could prompt the analyzer to find all cases where the user's issue was not resolved, or summarize how users are asking about a particular product. This feature leverages AI to analyze AI interactions, giving a powerful way to debug or research patterns in the dialogues. It provides flexibility beyond the predefined KPIs, enabling exploratory analysis of conversations to drive improvements in the agent's knowledge and behavior.  
-**Agent Value Summary Dashboard**: A strategic analysis tool (new in the kit) that helps classify and evaluate all  agents within an organization based on their type, behavior, and value contribution. The Agent Value component collects attributes of each agent (for instance, whether it's customer-facing or internal, informational or transactional, etc.) and measures its usage and impact. It then presents a dashboard that visualizes each agent's value and alignment with business objectives. This helps organizations identify which agents are delivering the most value, which might need reinvestment or improvement, and how each agent fits into the overall strategy. In other words, it treats AI agents as portfolio assets that can be measured and compared.  
+**Conversation KPIs**: 
+Offers built-in key performance indicators (KPIs) to track how custom agents are performing in conversations. This feature:
+
+- Aggregates data such as conversation outcomes, resolutions, escalations, and customer satisfaction signals
+- Stores metrics in Dataverse records for reporting purposes
+- Complements Copilot Studio's existing analytics with pre-calculated metrics
+- Presents trends and statistics on a dashboard, including:
+    - Success rate of AI in answering questions
+    - Average turn count per conversation
+    - Other key performance metrics
+
+Instead of combing through raw conversation logs, developers and stakeholders can quickly visualize performance trends. This simplification helps in understanding and improving conversation outcomes without requiring deep manual analysis of transcripts. 
+
+**Conversation Analyzer**: 
+
+A tool (currently in preview) that allows makers to perform deeper analysis on conversation transcripts using natural language queries. This feature:
+
+- Lets you ask questions or apply custom prompts to stored conversation data
+- Derives additional insights beyond standard metrics
+- Enables developers to find specific cases (e.g., unresolved issues)
+- Helps summarize how users are asking about particular products
+
+Essentially, it leverages AI to analyze AI interactions, providing a powerful way to:
+- Debug conversation patterns
+- Research trends in dialogues
+- Explore beyond predefined KPIs
+- Drive improvements in the agent's knowledge and behavior
+
+This exploratory analysis capability helps makers continuously refine their agents based on actual conversation data. 
+
+### Governance and Management Tools (continued)
+
+**Agent Value Summary Dashboard**: 
+
+A strategic analysis tool (new in the kit) that helps classify and evaluate all agents within an organization based on their type, behavior, and value contribution. The Agent Value component:
+
+- Collects attributes of each agent:
+    - Whether it's customer-facing or internal
+    - Informational or transactional in nature
+    - Other classification metrics
+- Measures usage and impact metrics
+- Presents a dashboard that visualizes:
+    - Each agent's value contribution
+    - Alignment with business objectives
+
+This helps organizations:
+- Identify which agents are delivering the most value
+- Determine which might need reinvestment or improvement
+- Understand how each agent fits into the overall strategy
+
+In essence, it treats AI agents as portfolio assets that can be measured and compared for strategic decision-making. 
 ### Knowledge Integration and Content Management
-**SharePoint Synchronization**: Enables the selective, periodic synchronization of content from SharePoint into the custom agent's knowledge base as files. Rather than relying on a live SharePoint connector at runtime, which may have limitations, this feature retrieves documents from specified SharePoint locations and ingests them into the Copilot's Dataverse storage. It supports larger files and more file formats than the out-of-the-box method, including improved handling of PDF files and even content from SharePoint pages (.aspx pages). This means an agent can utilize a broader and richer set of enterprise knowledge. Improved indexing of documents leads to better answer retrieval performance and accuracy, as the content is processed in an optimized manner. In practice, SharePoint Synchronization ensures that the agent's knowledge base remains up-to-date with the latest company information while maintaining high performance in retrieving that information during conversations.  
+**SharePoint Synchronization**: 
+
+Enables the selective, periodic synchronization of content from SharePoint into the custom agent's knowledge base as files. This feature:
+
+- Retrieves documents from specified SharePoint locations and ingests them into the Copilot's Dataverse storage
+- Serves as an alternative to the live SharePoint connector at runtime, which may have limitations
+- Supports larger files and more file formats than the out-of-the-box method, including:
+    - Improved handling of PDF files
+    - Content from SharePoint pages (.aspx pages)
+- Provides improved indexing of documents for better answer retrieval performance and accuracy
+
+In practice, SharePoint Synchronization ensures that:
+- The agent's knowledge base remains up-to-date with the latest company information
+- Performance is maintained when retrieving information during conversations
+- The agent can utilize a broader and richer set of enterprise knowledge 
 ### Prompt Design and User Experience Tools
-**Prompt Advisor**: An interactive prompt engineering assistant that helps makers craft more effective prompts for their AI agent. Within the Copilot Studio Kit, the Prompt Advisor enables developers to input a draft of a prompt (the instructions or query that the agent uses under the hood) and then utilizes a large language model to analyze it, providing a confidence score along with detailed reasoning. For instance, it might highlight if the prompt is too vague or potentially ambiguous. It also generates a list of suggested improvements or alternative phrasings, applying best practices in prompt design (such as adding context and specifying format). The maker can experiment with these suggestions and immediately test them out. This feature effectively trains makers in AI prompt writing while directly improving the agent's performance by refining its instructions.  
-**Webchat Playground**: A design tool to customize the appearance and behavior of the  agent's chat interface. Through an easy-to-use graphical interface, makers can adjust visual elements such as the chat window's color scheme, font styles, avatar icons (thumbnails/initials), and other UI settings to match their brand or desired user experience. As changes are made, the Webchat Playground generates the corresponding HTML/CSS configuration that implements those styles in the actual copilot web chat component. This saves developers from manually coding the UI and allows quick previews of the look and feel. Ultimately, it ensures that deploying a  agent doesn't compromise on user experience or branding – organizations can deliver an AI assistant that is both smart and visually consistent with their applications.  
-**Adaptive Cards Gallery**: Provides a collection of pre-designed Adaptive Card templates within the Copilot Studio Kit for use in agent responses. Adaptive Cards are reusable UI snippets that bots can send to present information with rich formatting (like images, buttons, and text). The gallery in this kit includes a dozen templates for various scenarios (e.g., FAQs, ticket status updates, form inputs). These templates demonstrate advanced card designs and how to bind dynamic data to them – for example, showing how an agent can display the result of a user query in a formatted card. Makers can use these out-of-the-box cards to quickly add sophisticated response formats to their agents or as inspiration to build their cards. This feature highlights the extensibility of the  agent's UI. It provides sample code/structures on the agent side to handle card interactions, thereby speeding up the development of complex conversational interfaces.
+**Prompt Advisor**: 
+
+An interactive prompt engineering assistant that helps makers craft more effective prompts for their AI agent. Within the Copilot Studio Kit, the Prompt Advisor:
+
+- Enables developers to input a draft prompt (instructions/query that the agent uses)
+- Utilizes a large language model to analyze the prompt
+- Provides a confidence score with detailed reasoning
+    - For example, highlighting if the prompt is too vague or potentially ambiguous
+- Generates suggested improvements or alternative phrasings
+    - Applies best practices in prompt design (adding context, specifying format)
+- Allows makers to experiment with suggestions and immediately test them
+
+This feature effectively trains makers in AI prompt writing while directly improving the agent's performance by refining its instructions.  
+
+**Webchat Playground**: 
+A design tool to customize the appearance and behavior of the agent's chat interface. Through an easy-to-use graphical interface, makers can:
+
+- Adjust visual elements such as:
+    - Chat window's color scheme
+    - Font styles
+    - Avatar icons (thumbnails/initials)
+    - Other UI settings to match their brand
+
+As changes are made, the Webchat Playground generates the corresponding HTML/CSS configuration that implements those styles in the actual copilot web chat component. This:
+
+- Saves developers from manually coding the UI
+- Allows quick previews of the look and feel
+
+Ultimately, it ensures that deploying a agent doesn't compromise on user experience or branding – organizations can deliver an AI assistant that is both smart and visually consistent with their applications. 
+
+**Adaptive Cards Gallery**: 
+
+A collection of pre-designed Adaptive Card templates within the Copilot Studio Kit for use in agent responses. Adaptive Cards are reusable UI snippets that bots can send to present information with rich formatting. The gallery includes:
+
+- A dozen templates for various scenarios (e.g., FAQs, ticket status updates, form inputs)
+- Advanced card designs with dynamic data binding examples
+- Ready-to-use cards that demonstrate how an agent can display query results in formatted layouts
+
+Makers can:
+- Use these out-of-the-box cards to quickly add sophisticated response formats
+- Learn from the templates to build their own custom cards
+- Access sample code/structures on the agent side to handle card interactions
+
+This feature highlights the extensibility of the agent's UI while speeding up the development of complex conversational interfaces.
 
 ### Governance and Management Tools
-**Agent Inventory**: A management feature that provides administrators with a tenant-wide view of all Copilot Studio custom agents deployed within their organization. The Agent Inventory aggregates details about each agent, such as which features it's using (e.g., which of the above capabilities are enabled), its authentication method, connected knowledge sources, orchestration mode (how it processes user input), and more. This information is presented in a dashboard format and can also be exported, which is immensely valuable for larger organizations that may have multiple AI agents developed by different teams. With Agent Inventory, an admin or Center of Excellence can quickly audit the AI landscape. For example, they can identify the number of agents in production, ensure they meet compliance standards (by checking settings such as authentication), or even discover duplicate efforts. It serves as an inventory and audit tool, supporting governance and helping to avoid sprawl as AI usage expands within the enterprise.  
-**Agent Review Tool**: A solution quality analyzer that reviews the configuration of a  agent and flags potential issues or anti-patterns. When run, it examines the agent's solution (topics, prompts, actions, etc.) for known pitfalls that could affect performance or security. For instance, it might detect if an agent's topic overlaps might cause confusion, or if there are any setup mistakes. The findings are reported with severity levels and recommended fixes. This is analogous to a code analysis or linting tool, but for AI agent setups. By using the Agent Review Tool, developers can identify misconfigurations or suboptimal designs early in the development process, ensuring that the deployed agent adheres to best practices. This feature, therefore, improves the robustness and security of custom agents by preventing avoidable issues and guiding makers to remediate them before going live.
+**Agent Inventory**: 
+
+A management feature that provides administrators with a tenant-wide view of all Copilot Studio custom agents deployed within their organization. The Agent Inventory:
+
+- Aggregates details about each agent, including:
+    - Which features it's using (e.g., which capabilities are enabled)
+    - Authentication method
+    - Connected knowledge sources
+    - Orchestration mode (how it processes user input)
+    - And more
+
+- Presents information in a dashboard format that can also be exported
+
+This is especially valuable for larger organizations with multiple AI agents developed by different teams. With Agent Inventory, an admin or Center of Excellence can:
+
+- Quickly audit the AI landscape
+- Identify the number of agents in production
+- Ensure agents meet compliance standards (by checking settings such as authentication)
+- Discover duplicate efforts
+
+It serves as both an inventory and audit tool, supporting governance and helping to avoid sprawl as AI usage expands within the enterprise.
+
+**Agent Review Tool**: 
+
+A solution quality analyzer that reviews the configuration of a agent and flags potential issues or anti-patterns. This tool:
+
+- Examines the agent's solution (topics, prompts, actions, etc.) for known pitfalls
+- Detects issues that could affect performance or security
+- Identifies problems like overlapping topics that might cause confusion
+- Flags common setup mistakes
+
+Findings are reported with:
+- Clear severity levels
+- Recommended fixes for each issue
+
+This is analogous to a code analysis or linting tool, but specifically for AI agent setups. By using the Agent Review Tool, developers can:
+
+- Identify misconfigurations or suboptimal designs early
+- Ensure deployed agents adhere to best practices
+- Improve robustness and security of custom agents
+- Prevent avoidable issues before going live
+- Follow guided remediation steps to fix problems
+
+This feature ultimately helps ensure quality and consistency across AI agent implementations.
 
 ## Installation Guide
 The Power CAT Copilot Studio Kit offers two deployment options: through AppSource marketplace or direct download from GitHub. Before proceeding with installation, several prerequisites must be met to ensure proper functionality. This solution leverages Power Platform components and requires appropriate licensing arrangements.
