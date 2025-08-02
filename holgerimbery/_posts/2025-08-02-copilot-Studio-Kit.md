@@ -468,6 +468,7 @@ To properly configure the embedded Conversation KPIs dashboard, you must update 
 * Click on the Apps section in the navigation menu
 * Search for and select "Power CAT Copilot Studio Kit" from the list of available apps
 * Click the "Play" button to launch the application
+  
 ### Configuring User Access for Power CAT Copilot Studio Kit
 
 Once you've completed the Power CAT Copilot Studio Kit installation process, you'll need to assign appropriate security roles to users who will work with the system to design agents and execute tests.
