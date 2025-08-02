@@ -22,11 +22,11 @@ Content for IT architects - Level 100 (Background & Integration knowledge)
 Copilot Studio Kit enhances Microsoft Copilot Studio with powerful tools for testing, monitoring, and optimizing AI agents. This solution enables organizations to measure agent performance through automated testing, conversation analytics, and advanced monitoring, allowing data-driven improvements to custom AI solutions. By providing robust quality assurance and governance capabilities, the Kit helps ensure AI agents deliver reliable, high-quality responses while meeting enterprise requirements for scalability and compliance.
 
 ## Introduction
-The Copilot Studio Kit is an extension of Microsoft Copilot Studio that provides additional tools to support the development and management of custom AI agents. Created by Microsoft’s Power CAT team, the kit adds functionality that goes beyond the core platform, including tools for automated testing, performance analysis, and agent lifecycle management.
+The Copilot Studio Kit is an extension of Microsoft Copilot Studio, providing additional tools to support the development and management of custom AI agents. Created by Microsoft's Power CAT team, the kit adds functionality that goes beyond the core platform, including tools for automated testing, performance analysis, and agent lifecycle management.
 
-This document outlines the main components of the Copilot Studio Kit and explains how they can be used to improve the reliability and maintainability of AI agents. It covers the technical features, practical use cases, and potential benefits for teams working with Copilot Studio.
+This document outlines the primary components of the Copilot Studio Kit and explains how they can be utilized to enhance the reliability and maintainability of AI agents. It covers the technical features, practical use cases, and potential benefits for teams working with Copilot Studio.
 
-At the end of the document, you’ll find a step-by-step installation guide to help you set up the Copilot Studio Kit and begin using its tools in your own environment
+At the end of the document, you'll find a step-by-step installation guide to help you set up the Copilot Studio Kit and begin using its tools in your environment.
 
 
 ## Business Benefits of Copilot Studio Kit
