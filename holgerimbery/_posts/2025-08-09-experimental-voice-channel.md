@@ -63,7 +63,7 @@ By leveraging these tools, organizations can build customized voice experiences 
 
 
 
-## ACSforMCS - Azure Communication Services for Microsoft Copilot Studio - an experimental approach
+## ACSforMCS - Azure Communication Services for Microsoft Copilot Studio
 
 I started an open-source project called [ACSforMCS](https://github.com/HolgerImbery/ACSforMCS) to explore the integration of Azure Communication Services with Microsoft Copilot Studio. This project aims to provide an alternative way to create voice channels for customer interactions without relying on a full Dynamics 365 Contact Center solution. The project is still in its early stages, but it has the potential to offer a lightweight, cost-effective solution for organizations looking to enhance their customer engagement through voice and you can use it with MIT License.
 
