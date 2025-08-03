@@ -86,7 +86,8 @@ ACSforMCS bridges these platforms through a modular architecture that:
 
 ### Deployment Flexibility
 
-One of the core principles of ACSforMCS is deployment flexibility. Organizations can:
+One of the core principles of ACSforMCS is deployment flexibility.  
+Organizations can:   
 
 - Start with a local development environment for testing and proof of concept
 - Deploy to Azure for production scenarios with automated scaling
