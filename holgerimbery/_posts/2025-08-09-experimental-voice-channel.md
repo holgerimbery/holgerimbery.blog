@@ -36,7 +36,7 @@ For organizations seeking to deliver truly customer-centric service experiences,
 
 ### Why Telephony Still Matters
 
-Voice calls enable customer service representatives to resolve issues more efficiently, foster rapport, and tailor the customer experience. In regulated industries or high-stakes scenarios, a phone call can be the most secure and efficient means of communication. But traditional contact centers often struggle with siloed systems, outdated infrastructure, and limited scalability.
+Voice calls enable customer service representatives to resolve issues more efficiently, foster a sense of rapport, and tailor the customer experience. In regulated industries or high-stakes scenarios, a phone call can be the most secure and efficient means of communication. But traditional contact centers often struggle with siloed systems, outdated infrastructure, and limited scalability.
 
 The immediacy of voice interaction creates opportunities for meaningful connection that text-based channels cannot replicate. When a customer service representative can hear frustration, confusion, or relief in a caller's voice, they can adjust their approach accordingly—slowing down their explanation, offering additional reassurance, or celebrating a resolution with appropriate enthusiasm. These subtle human touches have a significant impact on customer satisfaction and loyalty.
 
@@ -54,12 +54,12 @@ With the latest updates, Dynamics 365 Contact Center now supports full Teams Pho
 ### AI-Powered Voice Agents: The New Frontier
 Recent innovations showcased at events - Agents, agents, agents! They highlight how AI voice agents are transforming the delivery of services. Custom agents and autonomous agents are now capable of handling up to 80% of everyday service tasks, offering proactive, personalized, and scalable support.
 
-These agents are built using platforms like Copilot Studio, which allow organizations to define specialized roles, integrate Azure AI models, and fine-tune responses for accuracy and relevance.
+These agents are built using platforms like Copilot Studio, which allow organizations to define specialized roles, integrate Azure AI models, fine-tune responses for accuracy and relevance, and hand over to a human when needed.
 
 ## An Alternative Approach for Voice Interaction with Customers and Copilot Studio
 Sometimes, a full-fledged contact center solution is not needed. In these cases, you can use Copilot Studio and Azure Communication Services to create a voice channel that allows customers to interact with your business via voice calls. This approach is beneficial for small businesses or specific use cases where a complete contact center solution would be overkill.
 
-By leveraging these tools, organizations can create customized voice experiences that meet their unique needs without the complexity and cost associated with a traditional contact center.
+By leveraging these tools, organizations can create customized voice experiences that meet their unique needs, without the complexity and cost associated with traditional contact centers.
 
 
 
@@ -70,7 +70,7 @@ I started an open-source project called [ACSforMCS](https://github.com/HolgerImb
 
 ### Project Background
 
-The genesis of this project came from observing a gap in the market. While enterprise-level solutions like Dynamics 365 Contact Center offer comprehensive features, many organizations, tiny to medium-sized businesses, educational institutions, or specific departments within larger companies, need voice interaction capabilities without the overhead of a complete contact center deployment.
+The genesis of this project came from observing a gap in the market. While enterprise-level solutions like Dynamics 365 Contact Center offer comprehensive features, many organizations, such as tiny to medium-sized businesses, educational institutions, or specific departments within larger companies, need voice interaction capabilities without the overhead of a complete contact center deployment.
 
 Azure Communication Services (ACS) provides a robust foundation for communication capabilities, offering voice, video, and chat functionality through reliable APIs. Meanwhile, Microsoft Copilot Studio excels at creating conversational AI experiences with its intuitive low-code interface and powerful natural language processing capabilities. The combination of these technologies creates an opportunity to build scalable, cost-effective voice solutions that leverage the best of both worlds.
 
