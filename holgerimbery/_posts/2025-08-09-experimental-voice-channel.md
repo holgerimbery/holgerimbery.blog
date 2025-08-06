@@ -65,7 +65,7 @@ By leveraging these tools, organizations can create customized voice experiences
 
 ## ACSforMCS - Azure Communication Services for Microsoft Copilot Studio
 
-I started an open-source project called [ACSforMCS](https://github.com/HolgerImbery/ACSforMCS) to explore the integration of Azure Communication Services with Microsoft Copilot Studio. This project aims to provide an alternative approach to creating voice channels for customer interactions, without relying on a comprehensive Dynamics 365 Contact Center solution. The project is still in its early stages, but it has the potential to offer a lightweight, cost-effective solution for organizations seeking to enhance customer engagement through voice. You can use it under the MIT License.
+I started an open-source project called [ACSforMCS](https://github.com/HolgerImbery/ACSforMCS) to explore the integration of Azure Communication Services with Microsoft Copilot Studio. This project aims to provide an alternative approach to creating voice channels for customer interactions, without relying on a comprehensive Dynamics 365 Contact Center solution. The project is still in its early stages, but it has the potential to offer a lightweight, cost-effective solution for organizations seeking to enhance customer engagement through voice. You can use it under the MIT License. 
 
 
 ### Project Background
@@ -74,6 +74,15 @@ The genesis of this project came from observing a gap in the market. While enter
 
 Azure Communication Services (ACS) provides a robust foundation for communication capabilities, offering voice, video, and chat functionality through reliable APIs. Meanwhile, Microsoft Copilot Studio excels at creating conversational AI experiences with its intuitive low-code interface and powerful natural language processing capabilities. The combination of these technologies creates an opportunity to build scalable, cost-effective voice solutions that leverage the best of both worlds.
 
+### Bridging the Technology Gap
+
+The ACSforMCS project positions itself as a transitional solution for organizations eager to explore and implement voice interaction capabilities while awaiting a fully integrated first-party voice channel within Microsoft Copilot Studio. This experimental bridge addresses an immediate need in the market, allowing businesses to test, refine, and deploy voice-enabled AI assistants without waiting for official product roadmap developments.
+
+By providing this intermediate pathway, the project enables forward-thinking organizations to gain valuable experience with AI-powered voice technologies, collect user feedback, and develop internal expertise. This practical knowledge will prove invaluable when first-party solutions eventually become available, positioning early adopters to make informed decisions about migration and implementation strategies.
+
+The experimental nature of the project also encourages innovation and community-driven development, with each deployment potentially contributing insights that could inform the direction of official solutions. For Microsoft partners and customers invested in the Copilot Studio ecosystem, ACSforMCS represents an opportunity to extend platform capabilities while maintaining alignment with the broader Microsoft AI and communication technology stack.
+
+
 ### Technical Approach
 
 ACSforMCS bridges these platforms through a modular architecture that:
@@ -81,6 +90,7 @@ ACSforMCS bridges these platforms through a modular architecture that:
 1. **Establishes inbound telephony** via Azure Communication Services phone numbers
 2. **Processes voice interactions** using Azure Speech Services for speech-to-text and text-to-speech
 3. **Route conversations** to the appropriate Copilot Studio bots based on customer intent
+4. **Handover to a human** using a simple transfer mechanism by sending a special formated message
 4. **Manages session state** to maintain context throughout customer interactions
 
 
