@@ -120,6 +120,7 @@ You can start slowly to build confidence in the technology and then scale up as 
 
 ### Getting Started with ACSforMCS
 Check the [GitHub repository](https://github.com/HolgerImbery/ACSforMCS) for detailed documentation and setup instructions.
+The code is heavily commented to help you understand the integration points and how to customize the solution for your specific needs.
 
 ## Conclusion
 The ACSforMCS project represents an exciting opportunity to explore the intersection of voice communication and AI-driven customer service. By leveraging Azure Communication Services and Microsoft Copilot Studio, organizations can create tailored voice experiences that enhance customer engagement without the complexity of traditional contact center solutions.
