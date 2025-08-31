@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Webchat Playground Tool in Copilot Studio Kit - easy customization of Copilot webchat UI
-description: The Webchat Playground in the Copilot Studio Kit is a practical utility for customizing the user interface of Copilot agent webchats. It streamlines the design process by offering a visual editor, live preview, and export capabilities. For developers working with Microsoft Copilot Studio, this tool provides a structured and efficient way to align chat interfaces with organizational branding and accessibility standards.
+description: The Webchat Playground in the Copilot Studio Kit is a practical utility for customizing the user interface of agent webchats. It streamlines the design process by offering a visual editor, live preview, and export capabilities. For developers working with Microsoft Copilot Studio, this tool provides a structured and efficient way to align chat interfaces with organizational branding and accessibility standards.
 
-date: 2025-09-01
+date: 2025-08-31
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/08/dave-sherrill-HjEKj1yMAdQ-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@daveatjude3?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dave Sherrill</a> on <a href="https://unsplash.com/photos/white-and-brown-wooden-bench-near-body-of-water-during-daytime-HjEKj1yMAdQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 category: [copilotstudio, webchat, copilotstudiokit]
@@ -14,13 +14,13 @@ toc: true
 
 # Webchat Playground Tool in Copilot Studio Kit
 
-The Copilot Studio Kit, developed by Microsoft's Power CAT (Customer Advisory Team), includes the Webchat Playground tool that extends Microsoft Copilot Studio functionality. This utility enables customization of the webchat interface for Copilot agents, providing value for developers, solution architects, and UI designers who need to customize chat experiences according to branding requirements, accessibility standards, and usability guidelines.
+The Copilot Studio Kit, developed by Microsoft's Power CAT (Customer Advisory Team), includes the Webchat Playground tool that extends Microsoft Copilot Studio functionality. This utility enables customization of the webchat interface for agents, providing value for developers, solution architects, and UI designers who need to customize chat experiences according to branding requirements, accessibility standards, and usability guidelines.
 
 ## Tool Overview
 
 As referenced in my [previous article on the Copilot Studio Kit](https://holgerimbery.blog/copilot-studio-kit) from August 2, 2025, this toolkit demonstrates Microsoft's development of enterprise customization options for AI solutions. The Webchat Playground specifically addresses the user interface component of an agent implementation.
 
-The Webchat Playground offers a graphical interface for configuring the visual elements and behavior of Copilot agent webchat environments. It eliminates the need for direct CSS or HTML editing through a structured UI for theme creation and modification. This reduces development time while maintaining consistency. The tool exports configurations in both JSON and HTML formats for integration with existing webchat implementations.
+The Webchat Playground offers a graphical interface for configuring the visual elements and behavior of agent webchat environments. It eliminates the need for direct CSS or HTML editing through a structured UI for theme creation and modification. This reduces development time while maintaining consistency. The tool exports configurations in both JSON and HTML formats for integration with existing webchat implementations.
 
 ### Key Benefits
 
@@ -163,6 +163,8 @@ The tool supports an impressive range of UI parameters for detailed control over
 ## Why Use the Playground Over Manual Modifications
 
 The Webchat Playground significantly simplifies the customization process compared to manual code editing, offering substantial advantages for teams of all technical levels. **Modifying the webchat control manually requires extensive knowledge of CSS, HTML, and the underlying component structure — a technical barrier that can delay implementation and increase development costs. ** With the Playground's intuitive visual interface, what would typically take hours of coding and debugging can be accomplished in minutes through simple point-and-click operations. The tool eliminates common pitfalls, such as syntax errors, cross-browser compatibility issues, and accessibility oversights, that frequently plague manual implementations. Perhaps most valuable is the immediate visual feedback loop, where changes appear instantly in the preview pane, eliminating the traditional cycle of edit-save-refresh-test that characterizes manual development. This streamlined approach democratizes webchat customization, enabling business stakeholders and designers to participate directly in the process without relying on developers, ultimately leading to the  faster deployment of brand-aligned, accessible chat experiences.
+
+For those interested in more advanced customization, the Webchat Playground can be complemented with manual adjustments. The exported JSON and HTML files serve as solid foundations that can be further refined by developers familiar with web technologies. This hybrid approach allows teams to leverage the efficiency of the Playground for initial setup while retaining the flexibility to implement unique features or complex behaviors through direct code modifications. For guidance on combining both approaches, refer to Microsoft's documentation on   
 [Manual cutomisation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/customize-default-canvas)
 
 ## Conclusion
