@@ -8,7 +8,7 @@ image_caption: Photo by <a href="https://unsplash.com/@voznenko_artur?utm_conten
       
 category: [copilotstudio, applicationlifecyclemanagement]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 

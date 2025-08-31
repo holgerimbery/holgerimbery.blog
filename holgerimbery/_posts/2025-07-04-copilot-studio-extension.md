@@ -8,7 +8,7 @@ image_caption: Photo by <a href="https://unsplash.com/@flowforfrank?utm_content=
       
 category: [copilotstudio, agent, vscode]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 {: .important}
