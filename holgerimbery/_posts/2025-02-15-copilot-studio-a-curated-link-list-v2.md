@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/copilot-studio-a-curated-link-list.jpeg
 image_caption: 'Photo by <a href="https://unsplash.com/@rawkkim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">rawkkim</a> on <a href="https://unsplash.com/photos/people-sitting-on-wooden-chairs-BW6IojhaiDU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 tags: [copilotstudio, curatedlist]
-featured: true
+featured: false
 toc: false
 
 ---
@@ -29,44 +29,21 @@ Agents and autonomous agents are AI systems designed to perform tasks independen
 *Photo by <a href="https://unsplash.com/@hansonluu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hanson Lu</a> on <a href="https://unsplash.com/photos/the-inside-of-an-airplane-with-a-control-panel-oP_2c31ZwPM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*
       
 ## Where to start
-### Copilot Studio in a Day Workshop
+### Agent in a Day Workshop
 
 ![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/0.svg) Overview
 
-The Copilot Studio in a Day Workshop is an intensive, instructor-led training designed to equip participants with the knowledge and hands-on experience necessary to use Microsoft Copilot Studio effectively. This workshop focuses on creating and customizing AI agents using Microsoft Power Platform, specifically Microsoft Copilot Studio and Power Automate.  
 
-[Link](https://learn.microsoft.com/en-us/training/paths/power-virtual-agents-workshop/)
+### Agent in a Day Workshop
 
-#### Summary of Lessons:
+![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/0.svg) Overview
 
-![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/1.svg) **Plan Your First Agent**
+This immersive workshop provides participants with hands-on experience in constructing and personalizing intelligent agents within both Microsoft 365 Copilot Chat and Microsoft Copilot Studio environments. Throughout the session, attendees will progress through creating a declarative agent in Microsoft 365 Copilot Chat before advancing to Microsoft Copilot Studio to develop and refine a custom engine agent. The practical exercises include building a Contoso support agent that leverages various sophisticated capabilities such as agent knowledge repositories, integrated tools, agent workflows, generative orchestration techniques, and autonomous functionalities.
 
-In this module, you build your Microsoft Power Platform solution, starting with a basic agent. This lesson covers your agent's initial planning and design, ensuring it meets your specific needs and objectives.
-[Link](https://learn.microsoft.com/en-us/training/modules/plan-first-chatbot-online-workshop/)
+Designed specifically for business professionals, citizen developers, and information technology specialists seeking to enhance their understanding of AI agent development, this workshop delivers a thorough introduction to the platform's extensive capabilities. Participants will gain valuable insights into creating their own customized agents and extending existing Copilot solutions through structured, practical learning experiences that build technical competency and confidence with the technology.
 
-![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/3.svg) **Create Your First Agent in Microsoft Copilot Studio**
+[Link](https://aka.ms/AgentInADay)
 
-Learn how to create your first agent in Microsoft Copilot Studio. This lesson guides you through setting up your agent, configuring its essential functionalities, and deploying it.
-
-[Link](https://learn.microsoft.com/en-us/training/modules/power-virtual-agents-create-online-workshop/)
-
-![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/4.svg) **Authoring 101: Writing in Unified Authoring**
-
-This module teaches the fundamentals of message and question nodes, familiarizes you with system topics, and shows you how to use variables. It is essential for creating compelling and interactive agents.
-
-[Link](https://learn.microsoft.com/en-us/training/modules/unified-authoring-online-workshop/)
-
-![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/4.svg) **Add Knowledge Sources to an Agent**
-
-Enhance your agent with Copilot Studio by integrating external data, selecting intent recognition models, enabling Generative AI orchestration, and allowing the agent to use its own general knowledge. This lesson focuses on making your agent more versatile and practical by leveraging various data sources and AI capabilities.
-
-[Link](https://learn.microsoft.com/en-us/training/modules/add-knowledge-copilots-online-workshop/)
-
-![icon](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/5.svg) **Build Power Automate Flows for Your Agent**
-
-Microsoft Copilot Studio connects with Power Automate, allowing you to pass variables from user responses, retrieve data from different sources, perform complex operations, and return the data to Copilot Studio. This lesson covers integrating Power Automate flows to enhance your agent's functionality.
-
-[Link](https://learn.microsoft.com/en-us/training/modules/build-flows-chatbot-online-workshop/)
 
 ### Copilot Studio Hands-On Training
 
