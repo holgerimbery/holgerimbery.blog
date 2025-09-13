@@ -14,6 +14,10 @@ toc: true
 {: .q-left }
 > **Summary Lede**: This article provides a detailed technical comparison between Copilot Studio Agent Builder (part of Microsoft 365 Copilot) and Microsoft Copilot Studio (part of Power Platform). It explores their differences in target users, ease of use, technical capabilities, integration options, customization flexibility, deployment channels, governance features, and licensing models. The goal is to help organizations understand which tool best fits their specific AI assistant development needs.
 
+{: .note }
+Copilot Studio Agent Builder is now Copilot Studio lite, but for clarity, this article retains the original naming conventions. The comparison focuses on the technical aspects of both platforms as of September 2025 and the renaming does not affect the described functionalities.
+
+
 ## Background and Evolution
 
 Microsoft's Copilot ecosystem has evolved to provide organizations with tools for creating customized AI assistants ("agents") that address specific business requirements. Copilot Studio Agent Builder and Copilot Studio represent two distinct solutions within this ecosystem, developed as components of Microsoft's broader AI and productivity framework.
