@@ -11,16 +11,13 @@ author: admin
 featured: true
 toc: true
 ---
-
-{: .q-left }
-> **Content Classification**  
-Content for IT decision makers - Level 100 (Background knowledge)  
-Content for IT professionals - Level 100 (Background & Integration knowledge)   
-Content for IT architects - Level 100 (Background & Integration knowledge)
-
 {: .q-left }
 > **Summary Lede** 
 ACSforMCS bridges Azure Communication Services with Microsoft Copilot Studio, providing an open-source, experimental alternative to traditional contact center solutions for voice interactions. This lightweight integration enables organizations of all sizes to implement AI-powered voice capabilities without the complexity and cost of complete Dynamics 365 Contact Center implementations. Ideal for small to medium-sized businesses, educational institutions, or specific use cases requiring voice automation, the project provides a flexible and scalable foundation for creating intelligent voice channels that connect customers with the AI-powered assistance they need.
+
+{: .note }
+Update 2025-09-13: ACSforMCS is working stable as a Azure Web App. For Details and Deployment Options check the [GitHub repositories Wiki pages](https://github.com/holgerimbery/ACSforMCS/wiki). It offers Production and Development modes while running as a Wab App with exposed monitoring endpoints while running in Development mode (Secured via API Key).
+
 
 ## The Power of Telephony in Customer Service
 
