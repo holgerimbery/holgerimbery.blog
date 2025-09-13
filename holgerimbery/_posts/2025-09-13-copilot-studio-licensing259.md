@@ -44,7 +44,7 @@ There are two main licensing models for Copilot Studio and a usage rights option
 - Each credit pack provides 25,000 Copilot Credits per month.
 - Pricing: $200 per pack per month.
 - It is recommended to set up the pay-as-you-go meter as a backup in case of overages.
-- To build and manage agents, a Copilot Studio User License (at no additional cost) is required for each user. It is recommended to acquire tenant and user licenses together to simplify onboarding.
+- To build and manage agents, a Copilot Studio User License (at no additional cost) is required for each user. It is recommended to acquire tenant and user licenses together to simplify the onboarding process.
 
 ### Microsoft 365 Copilot License
 
@@ -85,7 +85,7 @@ The credit consumption model is designed to reflect the actual resource utilizat
 - The sophistication of the AI models being leveraged
 - The computational resources required for completion
 
-This granular approach to resource measurement allows organizations to pay specifically for what they use, rather than arbitrary user or transaction counts. Credits provide a standardized currency across all Copilot Studio capabilities, creating a consistent way to measure and compare different types of agent activities regardless of their technical implementation.
+This granular approach to resource measurement enables organizations to pay specifically for what they use, rather than relying on arbitrary user or transaction counts. Credits provide a standardized currency across all Copilot Studio capabilities, creating a consistent way to measure and compare different types of agent activities regardless of their technical implementation.
 
 For planning purposes, organizations should consider that more complex tasks—such as those requiring extensive reasoning, multiple data sources, or sophisticated generative AI capabilities—will typically consume more credits than simpler informational responses or basic data retrievals.
 
@@ -110,7 +110,7 @@ The pay-as-you-go licensing option provides organizations with maximum flexibili
 - Organizations are billed at the end of each monthly billing cycle based on the actual number of Copilot Credits consumed during that period. This eliminates the need for estimating usage in advance.
 - There is no up-front financial commitment required, allowing organizations to scale their usage according to immediate needs without pre-purchasing capacity.
 - Users who need to create, modify, or manage Copilot Studio agents must be assigned the Copilot Studio Author role through the Power Platform Admin Center. This role assignment does not incur any additional licensing costs.
-- This consumption-based model is particularly beneficial for organizations with variable AI agent usage patterns or those in the early stages of implementation when usage patterns may be difficult to predict.
+- This consumption-based model is particularly beneficial for organizations with variable AI agent usage patterns or those in the early stages of implementation, when usage patterns may be challenging to predict.
 
 #### Credit Pack Subscription
 
@@ -119,7 +119,7 @@ The Credit Pack Subscription model offers organizations a predictable approach t
 - Organizations can acquire Copilot Credits in predefined packages, with each pack containing 25,000 credits that are valid for one month. This approach provides cost predictability for financial planning purposes.
 - The subscription model is particularly beneficial for organizations that can reasonably forecast their monthly usage patterns and prefer a consistent monthly expenditure rather than variable billing.
 - If actual usage exceeds the quantity of credits purchased through subscription packs in a given month, the system automatically transitions to using the pay-as-you-go meter to cover the overage. This ensures service continuity while maintaining accurate usage accounting.
-- Each user who needs to build, modify, or manage Copilot Studio agents must be assigned a Copilot Studio User License. While these user licenses do not incur additional costs beyond the credit packs, they must be properly allocated to ensure appropriate access controls and usage tracking.
+- Each user who needs to build, modify, or manage Copilot Studio agents must be assigned a Copilot Studio User License. While these user licenses do not incur additional costs beyond the credit packs, they must be allocated appropriately to ensure appropriate access controls and usage tracking.
 - This hybrid approach of subscriptions with pay-as-you-go overflow capability provides both the benefits of advance purchasing and the flexibility to accommodate unexpected usage spikes without service interruption.
 
 ### Tracking and Managing Credit Consumption
@@ -158,7 +158,7 @@ Credits are consumed for most agent activities that involve responding to users,
 
 - Admins can view detailed usage reports in the Power Platform Admin Center.
 - Permissions can be set to control who can share or publish agents.
-- Publishing of agents using generative AI features can be disabled at the tenant level.
+- Publishing of agents using generative AI features can be turned off at the tenant level.
 
 ### Capacity Enforcement
 
@@ -169,30 +169,28 @@ Credits are consumed for most agent activities that involve responding to users,
 
 
 ## Dataverse for Copilot Studio
- Microsoft Dataverse is a secure, scalable, and cloud-based data platform that enables users to store, manage, and model business data used in applications across the Microsoft ecosystem. It is the foundational data layer for the Microsoft Power Platform, including Copilot Studio, Power Apps, Power Automate, Power BI, and it also underlies Dynamics 365 applications. Furthermore, Dataverse allows integration with Outlook and SharePoint. Learn more.  
- ### Dataverse default and accrued subscription capacity entitlements
-   Copilot Studio default subscription capacity leverages the same tenant and infrastructure and will accrue across one tenant. Every tenant with a Copilot Studio license receives default capacity.  
+Microsoft Dataverse is a secure, scalable, and cloud-based data platform that enables users to store, manage, and model business data used in applications across the Microsoft ecosystem. It is the foundational data layer for the Microsoft Power Platform, including Copilot Studio, Power Apps, Power Automate, Power BI, and it also underlies Dynamics 365 applications. Furthermore, Dataverse allows integration with Outlook and SharePoint. Learn more.  
 
-  | Copilot Studio capacity per tenant | Default per tenant |
-  |-----------------------------------|-------------------|
-  | Dataverse Database capacity | 5 GB |
-  | Dataverse File capacity | 20 GB |
-  | Dataverse Log capacity | 2 GB |
-   
-   Copilot Studio, Power Apps, Power Automate, Power Pages and Dynamics 365 Sales, Customer Service, and Field Service applications leverage the same tenant and infrastructure. Dataverse capacity (Dataverse Database, Dataverse File, and Dataverse Log) is accrued across the tenant and shared among relevant application workloads.  
-   
+### Dataverse default and accrued subscription capacity entitlements
+Copilot Studio's default subscription capacity leverages the same tenant and infrastructure and will accrue across a single tenant. Every tenant with a Copilot Studio license receives default capacity.  
 
+| Copilot Studio capacity per tenant | Default per tenant |
+|-----------------------------------|-------------------|
+| Dataverse Database capacity | 5 GB |
+| Dataverse File capacity | 20 GB |
+| Dataverse Log capacity | 2 GB |
    
+Copilot Studio, Power Apps, Power Automate, Power Pages, and Dynamics 365 Sales, Customer Service, and Field Service applications leverage the same tenant and infrastructure. Dataverse capacity (Dataverse Database, Dataverse File, and Dataverse Log) is accrued across the tenant and shared among relevant application workloads.  
    
 ### Dataverse capacity types and purposes
 
 | Dataverse Capacity Type | Purpose |
 |-------------------------|---------|
 | Database | Stores and manages table definitions and data |
-| File | Stores attachments to notes or emails in Power Apps, Dynamics 365 Sales, Customer Service, and Field Service applications. These include documents, image files, videos, PDF files and other crucial files needed in an organization. |
+| File | Stores attachments to notes or emails in Power Apps, Dynamics 365 Sales, Customer Service, and Field Service applications. These include documents, offline files, videos, PDF files, and other essential files required by an organization. |
 | Log | Records table and column data changes over time for use in analysis and reporting purposes. Log capacity is designed to help organizations meet their auditing, compliance, and governance policies. |
       
-The first Power Apps or Power Automate or Copilot Studio or Power Pages or Dynamics 365 Sales, Customer Service, and Field Service subscription provides the one-time default capacity entitlement for the tenant. For example, if a new customer purchases Power Apps Premium, the tenant will receive 10 GB of default Dataverse Database capacity. Additional subscriptions do not add to the tenant’s default capacity. When additional subscriptions are added to the tenant, additional Dataverse capacity may accrue to the tenant.  Example: Assume that a new customer purchases 10 Power Apps Premium licenses and 20 Power Apps per app licenses. The total tenant wide pooled capacity will be as follows (note 1 GB = 1,024MB):
+The first Power Apps, Power Automate, Copilot Studio, Power Pages, or Dynamics 365 Sales, Customer Service, and Field Service subscription provides the one-time default capacity entitlement for the tenant. For example, if a new customer purchases Power Apps Premium, the tenant will receive 10 GB of default Dataverse Database capacity. Additional subscriptions do not add to the tenant's default capacity. When additional subscriptions are added to the tenant, additional Dataverse capacity may accrue to the tenant.  Example: Assume that a new customer purchases 10 Power Apps Premium licenses and 20 Power Apps per app licenses. The total tenant-wide pooled capacity will be as follows (note 1 GB = 1,024MB):
        
 ### Default and Accrued Capacity Allocation
 | Capacity Type | Default/tenant | Accrued/10 Enterprise USL | Total Tenant-wide capacity |
@@ -210,11 +208,11 @@ Managed Environments functionality is bundled with these Power Platform licenses
 - Copilot Studio complete license
 - Power Apps per app consumption meter² and Copilot Studio consumption meter
 - Copilot Studio entitlements via Microsoft 365 Copilot license (restricted to Copilot Studio-related capabilities)
-- Dynamics 365 Premium, Enterprise, and Team Members comprehensive licenses
+- Dynamics 365 Premium, Enterprise, and Team Members' comprehensive licenses
 
-¹*Full licenses refers to complete Power Apps, Power Automate and Copilot Studio licenses, excluding the restricted Power Apps and Power Automate capabilities included with certain Dynamics 365 licenses.*
+¹*Full licenses refer to complete Power Apps, Power Automate, and Copilot Studio licenses, excluding the restricted Power Apps and Power Automate capabilities included with certain Dynamics 365 licenses.*
 
-²*While the Power Apps per app consumption meter fulfills the requirement for Power Apps usage in the environment, it only covers Power Apps activities. Any Power Automate workflows must be separately licensed through dedicated Power Automate licenses.*
+²*While the Power Apps per-app consumption meter fulfills the requirement for Power Apps usage in the environment, it only covers Power Apps activities. Any Power Automate workflows must be separately licensed through dedicated Power Automate licenses.*
 
 ## additional Resources as of September 2025
 - [Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995)
