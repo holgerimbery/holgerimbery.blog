@@ -193,12 +193,13 @@ Copilot Studio, Power Apps, Power Automate, Power Pages, and Dynamics 365 Sales,
 The first Power Apps, Power Automate, Copilot Studio, Power Pages, or Dynamics 365 Sales, Customer Service, and Field Service subscription provides the one-time default capacity entitlement for the tenant. For example, if a new customer purchases Power Apps Premium, the tenant will receive 10 GB of default Dataverse Database capacity. Additional subscriptions do not add to the tenant's default capacity. When additional subscriptions are added to the tenant, additional Dataverse capacity may accrue to the tenant.  Example: Assume that a new customer purchases 10 Power Apps Premium licenses and 20 Power Apps per app licenses. The total tenant-wide pooled capacity will be as follows (note 1 GB = 1,024MB):
        
 ### Default and Accrued Capacity Allocation
+
 | Capacity Type | Default/tenant | Accrued/10 Enterprise USL | Total Tenant-wide capacity |
 |---------------|----------------|---------------------------|----------------------------|
-| Dataverse Database capacity | 10 GB | 10*250MB + 20*50MB = 3.5GB | 10GB + 3.5GB = 13.5GB |
-| Dataverse File capacity | 20 GB | 10*2GB + 20*400MB = 28GB | 20GB + 28GB = 48GB |
+| Dataverse Database capacity | 10 GB | 10\*250MB + 20\*50MB = 3.5GB | 10GB + 3.5GB = 13.5GB |
+| Dataverse File capacity | 20 GB | 10\*2GB + 20\*400MB = 28GB | 20GB + 28GB = 48GB |
 | Dataverse Log capacity | 2 GB | NA | 2GB |
-| Managed Environments | 1 | NA | 1 |  
+| Managed Environments | 1 | NA | 1 |
 
 ### Managed Environments 
 Managed Environments provide enhanced governance and control capabilities for organizations using the Power Platform, including Copilot Studio. These environments allow administrators to enforce policies, manage resources, and monitor usage across multiple environments within a single tenant.   
