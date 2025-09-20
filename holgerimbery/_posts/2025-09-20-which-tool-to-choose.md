@@ -201,7 +201,7 @@ _Impact_:
 Tip: For high-volume or compute-intensive tasks (e.g., document summarization, image processing), Azure AI Foundry is more cost-efficient and scalable.
 
 ## Microsoft Resources to Explore
-- Resource Links
+
 - [Copilot Studio Overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
 - [Azure AI Foundry Docs](https://learn.microsoft.com/en-us/azure/ai-foundry/)
 - [Copilot Studio Pricing](https://powerplatform.microsoft.com/en-us/pricing/)
