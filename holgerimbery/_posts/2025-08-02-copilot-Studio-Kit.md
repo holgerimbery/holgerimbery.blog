@@ -7,7 +7,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@wanderfleur?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wander Fleur</a> on <a href="https://unsplash.com/photos/clear-acrylic-ruler-on-white-paper-4i2crgbc0Gs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 category: [copilotstudio, copilotstudio-kit, applicationlifecyclemanagement, agents, testing, monitoring, optimization]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 

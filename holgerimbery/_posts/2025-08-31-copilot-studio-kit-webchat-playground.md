@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@daveatjude3?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dave Sherrill</a> on <a href="https://unsplash.com/photos/white-and-brown-wooden-bench-near-body-of-water-during-daytime-HjEKj1yMAdQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 category: [copilotstudio, webchat, copilotstudiokit]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 
