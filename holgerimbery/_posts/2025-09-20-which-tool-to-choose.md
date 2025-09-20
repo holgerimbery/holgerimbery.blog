@@ -3,7 +3,7 @@ layout: post
 title: Choosing Between Microsoft Copilot Studio and Azure AI Foundry - A Comprehensive Guide
 description: A detailed comparison of Microsoft Copilot Studio and Azure AI Foundry, highlighting their strengths, ideal use cases, and how they can be combined for powerful AI solutions. 
 
-date: 2025-09-21
+date: 2025-09-20
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/sue-winston-68mRGAs7tnQ-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@winniepix?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sue Winston</a> on <a href="https://unsplash.com/photos/a-table-filled-with-lots-of-different-types-of-cakes-68mRGAs7tnQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
@@ -19,6 +19,8 @@ As enterprises accelerate their AI adoption, Microsoft offers two powerful but d
 
 
 ## Choosing Between Microsoft Copilot Studio and Azure AI Foundry: A Comprehensive Guide
+![upgit_20250920_1758357013.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/upgit_20250920_1758357013.png)
+
 **Microsoft Copilot Studio** is a low‑code platform for designing, testing, and publishing conversational agents tightly integrated with Microsoft 365. Its browser-based visual canvas lets authors compose dialog flows and generate answers, configure data sources, and define actions without extensive coding. 
 
 Core capabilities include:
@@ -37,6 +39,8 @@ Enterprise features span:
 - Role‑based governance
 - Audit logging
 - Tenant policies for safe rollout 
+
+![upgit_20250920_1758357124.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/upgit_20250920_1758357124.png)
 
 **Azure AI Foundry** is a code‑first and studio experience for building scalable AI applications and agents with complete control of models, prompts, tools, and data. Its interface combines:
 
@@ -68,6 +72,9 @@ Enterprise features span:
 | Combined Use | End-to-end AI workflows | Seamless integration, advanced reasoning + user-friendly UI | Cross-functional teams |
 
 > **Recommendation**: Use Copilot Studio for front-end user interaction and Azure AI Foundry for backend intelligence, especially in complex enterprise scenarios.
+
+**Example** in the tool section of copilot studio, while creating a custom ai prompt.
+![upgit_20250920_1758357331.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/upgit_20250920_1758357331.png)
 
 
 ## How Copilot Studio and Azure AI Foundry Work Together
