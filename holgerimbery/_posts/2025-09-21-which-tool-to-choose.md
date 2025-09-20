@@ -7,7 +7,7 @@ date: 2025-09-21
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/sue-winston-68mRGAs7tnQ-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@winniepix?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sue Winston</a> on <a href="https://unsplash.com/photos/a-table-filled-with-lots-of-different-types-of-cakes-68mRGAs7tnQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-category: [copilotstudio, aifoundry]]
+category: [copilotstudio, aifoundry]
 author: admin
 featured: true
 toc: true
