@@ -71,7 +71,8 @@ Enterprise features span:
 | Azure AI Foundry | Scalable, multimodal AI agent development | Full model control, orchestration, enterprise-grade AI | Developers, data scientists |
 | Combined Use | End-to-end AI workflows | Seamless integration, advanced reasoning + user-friendly UI | Cross-functional teams |
 
-> **Recommendation**: Use Copilot Studio for front-end user interaction and Azure AI Foundry for backend intelligence, especially in complex enterprise scenarios.
+**Recommendation**: Use Copilot Studio for front-end user interaction and Azure AI Foundry for backend intelligence, especially in complex enterprise scenarios.
+
 
 **Example** in the tool section of copilot studio, while creating a custom ai prompt.
 ![upgit_20250920_1758357331.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/upgit_20250920_1758357331.png)
@@ -162,6 +163,7 @@ _Impact_:
 
 
 ## Technical Comparison
+
 | Capability | Copilot Studio | Azure AI Foundry |
 |------------|----------------|-------------------|
 | Interface | Low-code, visual designer | Code-first (SDK, CLI, VS Code) |
@@ -171,10 +173,11 @@ _Impact_:
 | Security | Microsoft 365 DLP, Purview, Entra ID | Azure RBAC, VNETs, Key Vault, Purview |
 | Deployment | Teams, Outlook, Web, Mobile | Web apps, APIs, Edge, Containers |
 | Monitoring | Power Platform Admin Center | Azure Monitor, Application Insights |
-| Compliance | Microsoft 365 compliance center | 100+ certifications (HIPAA, GDPR, ISO) | 
+| Compliance | Microsoft 365 compliance center | 100+ certifications (HIPAA, GDPR, ISO) |
 
 
 ## Feature Comparison Table
+
 | Layer | Copilot Studio | Azure AI Foundry |
 |-------|----------------|-------------------|
 | Frontend | Chat UI, Teams, Outlook, Web | — |
