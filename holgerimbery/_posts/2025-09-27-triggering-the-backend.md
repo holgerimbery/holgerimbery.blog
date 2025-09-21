@@ -16,18 +16,18 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**: 
-> This article explores the integration of Azure AI Foundry models into Microsoft Copilot Studio, providing practical implementation strategies for enhancing custom agents with advanced AI capabilities. It covers two main integration approaches—using Azure Functions with Agent Flows for complex scenarios and direct model integration for simpler use cases—along with three detailed use case examples: email classification, visual issue detection in IT support, and legal document summarization.
+> This article explores the integration of Azure AI Foundry models into Microsoft Copilot Studio, providing practical implementation strategies for enhancing custom agents with advanced AI capabilities. It covers two main integration approaches—using Azure Functions with Agent Flows for complex scenarios and direct model integration for simpler use cases—along with three detailed use case examples: email classification, visual issue detection in (IT) support, and (legal) document summarization.
 
 
 In my [previous article](https://holgerimbery.blog/which-tool-to-choose), I explored the distinct advantages of two powerful platforms for custom agent development. Today, I'll delve deeper into the practical implementation of integrating AI Foundry capabilities into Copilot Studio, examining three distinct use case scenarios that demonstrate this powerful combination.
 
-Throughout this technical exploration, I'll provide schematic representations of the integration pathways rather than exhaustive step-by-step tutorials. My intention is to illustrate the architectural patterns and key connection points that enable these systems to work together effectively. This approach will give you a comprehensive understanding of the underlying mechanics without becoming mired in platform-specific implementation details that may change over time.
+Throughout this technical exploration, I'll provide schematic representations of the integration pathways rather than exhaustive step-by-step tutorials. I intend to illustrate the architectural patterns and key connection points that enable these systems to work together effectively. This approach will provide you with a comprehensive understanding of the underlying mechanics without becoming entangled in platform-specific implementation details that may change over time.
 
 By focusing on the conceptual framework, you'll gain transferable knowledge that can be applied across various environments and adapted as these technologies continue to evolve.
 
 ## Enhancing Copilot Studio with Azure AI Foundry Integration
 
-The synergy between Copilot Studio and Azure AI Foundry creates a powerful ecosystem for developing intelligent agents with advanced capabilities. This integration unlocks sophisticated AI functionalities while maintaining the user-friendly interface of Copilot Studio.
+The combination of Copilot Studio and Azure AI Foundry creates a robust ecosystem for developing intelligent agents with advanced capabilities. This integration unlocks sophisticated AI functionalities while maintaining the user-friendly interface of Copilot Studio.
 
 ### Integration Methodologies
 
@@ -38,13 +38,13 @@ There are two principal approaches for incorporating Azure AI Foundry models int
     - Orchestrate interactions via agent flow
     - Enable complex processing pipelines and custom business logic
     - Facilitate more sophisticated error handling and retry mechanisms
-    see excurse 1 below the article
+    *Take a look at the excursion one below the article.*
 
 1. **Direct Model Integration (BYOM)** (the easy way)
     - Leverage Azure AI Foundry models directly within Copilot Studio prompts
     - Maintain simplicity while accessing advanced model capabilities
     - Streamlined implementation with minimal middleware
-    see excurse 2 below the article
+    *Please take a look at the excursion two below the article.*
 
 
 ## Use Case 1: Email Classification with Azure AI Foundry Model
@@ -57,14 +57,14 @@ Automates triage of incoming emails (e.g., support, sales, HR) by classifying th
 * Expose via Azure Function
 * Use sample code to wrap the model in a Function App.
 * Create Agent Flow
-* Build autonomous Copilot Studio Agent
+* Build an autonomous Copilot Studio Agent
 
 
 ## Use Case 2: Visual Issue Detection in IT Support
 **Business Benefit**
 Automates triage of IT tickets with screenshots. Uses vision models to detect UI errors, reducing manual analysis and speeding up resolution.
 
-**Implementation Steps** (see excurse 1 below the article for details)
+**Implementation Steps** (see excursion one below the article for details)
 
 * Deploy a vision model in Azure AI Foundry (e.g., OCR + layout classification).
 * Expose via Azure Function
@@ -75,12 +75,12 @@ Automates triage of IT tickets with screenshots. Uses vision models to detect UI
 ## Use Case 3: Legal Document Summarization
 ** Business Benefit** 
 Accelerates legal review by summarizing long contracts or compliance documents using domain-specific LLMs.
-**Implementation Steps** (see excurse 2 below the article for details)
+**Implementation Steps** (see excursion two below the article for details)
 
 * Deploy summarization model in Azure AI Foundry.
-* note down endpoint and deployment name.
+* Note down the endpoint and deployment name.
 * Create a Prompt with the Prompt Tool in Copilot Studio.
-* Write summarization prompt
+* Write a summarization prompt
 * Select model from Foundry.
 * Add document upload node 
 * Pass document to model.
@@ -108,7 +108,7 @@ Full Documentation for advanced readers with heavy links and code samples
 
 ### Encapsulate an Azure AI Foundry Model with an Azure Function for Use by a Copilot Studio Agent (via Agent Flow)
 
-Below is a **field‑tested, enterprise‑grade pattern** to encapsulate an **Azure AI Foundry** model behind an **Azure Function** and expose it to a **Microsoft Copilot Studio** agent via an **agent flow**. The guide includes step‑by‑step instructions, security options, code samples, and documentation links for every major step. Asume that the code is an example and may need adjustments for your scenario.
+Below is a **field‑tested, enterprise‑grade pattern** to encapsulate an **Azure AI Foundry** model behind an **Azure Function** and expose it to a **Microsoft Copilot Studio** agent via an **agent flow**. The guide includes step‑by‑step instructions, security options, code samples, and documentation links for every significant step. Assume that the code is an example and may need adjustments for your scenario.
 
 ### Target Architecture
 
@@ -261,7 +261,7 @@ public class InvokeModel
 
 ### Step 3 — Secure the Function Endpoint
 
-Common options (you can combine them):
+Standard options (you can combine them):
 
 1. **Function keys (fastest):** Keep the default `AuthorizationLevel.Function` and pass the `code=` query string from your agent flow HTTP action. Simple, but **per‑app/shared secret**. See [HTTP trigger docs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger).
 2. **Microsoft Entra ID (recommended for enterprise):** Turn on **App Service Authentication** on the Function App and require **Entra ID** tokens. Then use a **Power Platform custom connector** (OAuth 2.0) or an HTTP action with OAuth to obtain tokens when the flow runs. See [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts) and Microsoft’s blog on [Calling AAD‑protected Azure Functions using a Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-functions-using-a-custom-connector/).
@@ -354,7 +354,7 @@ Related learning content: [Make HTTP requests to connect to an API (exercise)](h
   - [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts)
 
 - **Power Platform custom connector with AAD**
-  - [Calling AAD‑protected Azure Functions using a Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-functions-using-a-custom-connector/)
+  - [Calling AAD‑protected Azure Functions using a Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-f,unctions-using-a-custom-connector/)
 
 - **(Optional) API Management front‑door**
   - [Expose Azure AI Foundry endpoints via API Management](https://www.beneathabstraction.com/post/expose-ai-endpoints-via-api-management/)
@@ -381,6 +381,6 @@ Note the endpoint URL and the required authentication method (typically Azure Ac
 7. Save your changes.
 
 ### Use the Tool in Your Agent Flow
-1. generate a prompt that utilizes the connected model.
-2. add the tool to your agent
+1. Generate a prompt that utilizes the connected model.
+2. Add the tool to your agent
 
