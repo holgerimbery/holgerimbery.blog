@@ -1,9 +1,9 @@
 ---
 layout: post
-titlee: A Comparison - Agents in Omnichannel ContactCenter Scenarios, comparing Microsoft Copilot Studio and Parloa Voicebots
+title: A Comparison - Agents in Omnichannel ContactCenter Scenarios, comparing Microsoft Copilot Studio and Parloa Voicebots
 description: This article provides an in-depth comparison of Microsoft Copilot Studio Agents and Parloa Voicebots for enterprise contact centers, examining their features, pricing, integration, and suitability for various customer service needs. 
 
-date: 2025-10-04
+date: 2030-10-04
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/d-z-SHxBwSiPdTU-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@metacrypto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">D Z</a> on <a href="https://unsplash.com/photos/two-orange-eggs-sitting-on-top-of-a-table-SHxBwSiPdTU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
