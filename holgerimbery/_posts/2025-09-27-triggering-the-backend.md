@@ -3,7 +3,7 @@ layout: post
 title: Triggering the Backend - Integrating Azure AI Foundry with Microsoft Copilot Studio
 description: Exploring the integration of Azure AI Foundry models into Microsoft Copilot Studio for enhanced custom agent capabilities.
 
-date: 2025-09-20
+date: 2025-09-27
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/anton-dmitriev-kBKOaghy8mU-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@adamanium?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anton Dmitriev</a> on <a href="https://unsplash.com/photos/shallow-focus-photo-of-man-fixing-steel-cable-kBKOaghy8mU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
@@ -39,21 +39,21 @@ There are two principal approaches for incorporating Azure AI Foundry models int
     - Enable complex processing pipelines and custom business logic
     - Facilitate more sophisticated error handling and retry mechanisms
 
-    [Take a look at the excursion one below the article](https://holgerimbery.blog/triggering-the-backend#excurse-1-bring-your-own-model-to-microsoft-copilot-studio-using-azure-functions-and-agent-flows-the-robust-way)
+    [Take a look at the excursion one below the article](https://holgerimbery.blog/triggering-the-backend#excursion-1-bring-your-own-model-to-microsoft-copilot-studio-using-azure-functions-and-agent-flows-the-robust-way)
 
 1. **Direct Model Integration (BYOM)** (the easy way)
     - Leverage Azure AI Foundry models directly within Copilot Studio prompts
     - Maintain simplicity while accessing advanced model capabilities
     - Streamlined implementation with minimal middleware
 
-    [Please take a look at the excursion two below the article](https://holgerimbery.blog/triggering-the-backend#excurse-2-using-azure-ai-foundry-models-directly-in-copilot-studio-the-easy-way).
+    [Please take a look at the excursion two below the article](https://holgerimbery.blog/triggering-the-backend#excursion-2-using-azure-ai-foundry-models-directly-in-copilot-studio-the-easy-way).
 
 
 ## Use Case 1: Email Classification with Azure AI Foundry Model
 **Business Benefit**  
 Automates triage of incoming emails (e.g., support, sales, HR) by classifying them into categories and routing them to the correct department. Reduces manual workload and improves response time.
 
-**Implementation Steps** (see excurse 1 below the article for details)
+**Implementation Steps** (see excursion 1 below the article for details)
 
 * Deploy Model in Azure AI Foundry
 * Expose via Azure Function
@@ -105,9 +105,10 @@ By focusing on the architectural concepts rather than platform-specific details,
 
 
 ---
-Full Documentation for advanced readers heavy enriched with links and code samples
 
-## Excurse 1: Bring your own Model to Microsoft Copilot Studio using Azure Functions and Agent Flows (the robust way)
+Comprehensive documentation for advanced readers, extensively enriched with links and code samples.
+
+## Excursion 1: Bring your own Model to Microsoft Copilot Studio using Azure Functions and Agent Flows (the robust way)
 
 
 ### Encapsulate an Azure AI Foundry Model with an Azure Function for Use by a Copilot Studio Agent (via Agent Flow)
@@ -268,7 +269,7 @@ public class InvokeModel
 Standard options (you can combine them):
 
 1. **Function keys (fastest):** Keep the default `AuthorizationLevel.Function` and pass the `code=` query string from your agent flow HTTP action. Simple, but **per‑app/shared secret**. See [HTTP trigger docs](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger).
-2. **Microsoft Entra ID (recommended for enterprise):** Turn on **App Service Authentication** on the Function App and require **Entra ID** tokens. Then use a **Power Platform custom connector** (OAuth 2.0) or an HTTP action with OAuth to obtain tokens when the flow runs. See [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts) and Microsoft’s blog on [Calling AAD‑protected Azure Functions using a Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-functions-using-a-custom-connector/).
+2. **Microsoft Entra ID (recommended for enterprise):** Turn on **App Service Authentication** on the Function App and require **Entra ID** tokens. Then use a **Power Platform custom connector** (OAuth 2.0) or an HTTP action with OAuth to obtain tokens when the flow runs. See [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts) and Microsoft’s blog on [Calling Entra ID‑protected Azure Functions using a Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-functions-using-a-custom-connector/).
 3. **Front with API Management** for throttling, quotas, and per‑consumer subscription keys; point the agent flow to APIM instead of the Function. See [Exposing Azure AI Foundry endpoints with APIM](https://www.beneathabstraction.com/post/expose-ai-endpoints-via-api-management/).
 
 Additional platform guidance: [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts).
@@ -293,7 +294,7 @@ Related learning content: [Make HTTP requests to connect to an API (exercise)](h
 {: .tip }
 **When to choose which?**  
 **Agent flow**: easiest, handles transformations and branching; great for orchestration and retries. See [Call an agent flow](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-flow).  
-**Custom connector / REST tool**: best when you want **direct tool use** without a flow or when you need **OAuth 2.0** against your **AAD‑protected Function**. See [Add tools to custom agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-plugin-actions) and the AAD custom connector blog above.
+**Custom connector / REST tool**: best when you want **direct tool use** without a flow or when you need **OAuth 2.0** against your **Entra ID‑protected Function**. See [Add tools to custom agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-plugin-actions) and the Entra ID custom connector blog above.
 
 
 ### Step 5 — Suggested Request/Response Contracts
@@ -330,7 +331,7 @@ Related learning content: [Make HTTP requests to connect to an API (exercise)](h
 ### Security & Operations Checklist
 
 - **Prefer Entra ID + Managed Identity** from Function → model endpoint; avoid persisting model API keys. See [Managed identity guidance](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/how-to/managed-identity.md) and [Authentication options](https://learn.microsoft.com/en-us/azure/ai-services/authentication).
-- **App Service Authentication** on the Function to require OAuth; use a **custom connector** with OAuth for Copilot Studio if you need per‑user consent/authorization. See [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts) and [AAD‑protected Functions via Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-functions-using-a-custom-connector/).
+- **App Service Authentication** on the Function to require OAuth; use a **custom connector** with OAuth for Copilot Studio if you need per‑user consent/authorization. See [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts) and [Entra ID‑protected Functions via Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-functions-using-a-custom-connector/).
 - **Observability**: Add Application Insights telemetry; consider **API Management** for token/quota governance across consumers. See [APIM front‑door example](https://www.beneathabstraction.com/post/expose-ai-endpoints-via-api-management/).
 - **Network**: If you must use private endpoints, plan how **Power Platform** will reach them (e.g., APIM with VNet or hybrid connectivity); otherwise keep the Function public but locked via OAuth and IP restrictions as needed. See [APIM article](https://www.beneathabstraction.com/post/expose-ai-endpoints-via-api-management/).
 
@@ -353,13 +354,13 @@ Related learning content: [Make HTTP requests to connect to an API (exercise)](h
   - [HTTP trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger)
   - [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts)
 
-- **Power Platform custom connector with AAD**
-  - [Calling AAD‑protected Azure Functions using a Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-f,unctions-using-a-custom-connector/)
+- **Power Platform custom connector with Entra ID**
+  - [Calling Entra ID‑protected Azure Functions using a Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-f,unctions-using-a-custom-connector/)
 
 - **(Optional) API Management front‑door**
   - [Expose Azure AI Foundry endpoints via API Management](https://www.beneathabstraction.com/post/expose-ai-endpoints-via-api-management/)
 
-## Excurse 2: Using Azure AI Foundry Models Directly in Copilot Studio (the easy way)
+## Excursion 2: Using Azure AI Foundry Models Directly in Copilot Studio (the easy way)
 To integrate an Azure AI Foundry model into the Copilot Studio Prompt Tool, you need to connect your deployed AI Foundry model as an external endpoint and then reference it within your Copilot Studio prompt flow. 
 
 ### Deploy Your AI Foundry Model as an Endpoint
