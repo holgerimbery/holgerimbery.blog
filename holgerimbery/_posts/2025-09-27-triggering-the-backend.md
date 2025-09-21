@@ -3,7 +3,7 @@ layout: post
 title: Triggering the Backend - Integrating Azure AI Foundry with Microsoft Copilot Studio
 description: Exploring the integration of Azure AI Foundry models into Microsoft Copilot Studio for enhanced custom agent capabilities.
 
-date: 2025-09-20
+date: 2025-09-27
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/anton-dmitriev-kBKOaghy8mU-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@adamanium?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anton Dmitriev</a> on <a href="https://unsplash.com/photos/shallow-focus-photo-of-man-fixing-steel-cable-kBKOaghy8mU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
