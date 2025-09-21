@@ -15,7 +15,7 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**: 
-> This article tries to provide an in-depth analysis of two leading AI agent solutions for enterprise contact centers. Microsoft Copilot Studio Agents excel within the Microsoft ecosystem with consumption-based pricing, while Parloa Voicebots offer sophisticated voice capabilities and vendor-neutral integration. The article examine their key differences in platform architecture, omnichannel capabilities, AI orchestration, pricing, and enterprise readiness to help organizations select the optimal solution for their unique customer service requirements.
+> This article tries to provide an in-depth analysis of two leading AI agent solutions for enterprise contact centers. Microsoft Copilot Studio Agents excel within the Microsoft ecosystem with consumption-based pricing, while Parloa Voicebots offer sophisticated voice capabilities and vendor-neutral integration. The article examines their key differences in platform architecture, omnichannel capabilities, AI orchestration, pricing, and enterprise readiness to help organizations select the optimal solution for their unique customer service requirements. This article is not a "shoot out"; it tries to compare and highlight features. Both platforms are leading when it comes to their strengths.
 
 {: .important }
 >**Disclaimer**:   
@@ -23,7 +23,7 @@ toc: true
 
 ## Overview
 
-This article provides a comprehensive, enterprise-focused comparison of **Microsoft Copilot Studio Agents** (used in Dynamics 365 Customer Service/Contact Center environments) and **Parloa Voicebots** (a third-party AI contact center platform). I tried to examine features, pricing/licensing, maturity, integration and extensibility, unified agent experience, and recommendations for enterprise integration scenarios.
+This article provides a comprehensive, enterprise-focused comparison of **Microsoft Copilot Studio Agents** (used in Dynamics 365 Customer Service/Contact Center environments) and **Parloa Voicebots** (a third-party AI contact center platform). I examined features, pricing/licensing, maturity, integration, and extensibility, as well as unified agent experience and recommendations for enterprise integration scenarios.
 
 ## Comparison Table
 
