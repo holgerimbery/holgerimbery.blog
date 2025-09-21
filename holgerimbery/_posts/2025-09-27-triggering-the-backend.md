@@ -112,13 +112,8 @@ Below is a **field‑tested, enterprise‑grade pattern** to encapsulate an **Az
 
 ### Target Architecture
 
-```
-Copilot Studio Agent
-   └─► Agent Flow (Power Automate)
-         └─► HTTP action  ─►  Azure Function (HTTP trigger, secured)
-                                 └─► Calls Azure AI Foundry model endpoint
-                                         (Azure AI Model Inference or Azure OpenAI)
-```
+![upgit_20250921_1758438210.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/upgit_20250921_1758438210.png)
+
 
 - Copilot Studio invokes a **published agent flow** as a tool. The flow issues an HTTP call to your Azure Function and returns the model result to the conversation. See [Call an agent flow from an agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-flow) and [Use agent flows with your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow).
 - The Function acts as a **thin façade** that standardizes request/response, handles auth, guardrails, logging, and retries, and then calls the **Azure AI Foundry** inference endpoint (serverless or managed) using either an API key or **Microsoft Entra ID** (preferred). See [How to use Models inference endpoints](https://learn.microsoft.com/azure/ai-foundry/foundry-models/how-to/inference) and [Endpoints for Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/endpoints).
