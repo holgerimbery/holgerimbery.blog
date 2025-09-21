@@ -102,9 +102,10 @@ By focusing on the architectural concepts rather than platform-specific details,
 
 
 ---
+Full Documentation for advanced readers heavy enriched with links and code samples
 
 ## Excurse 1: Bring your own Model to Microsoft Copilot Studio using Azure Functions and Agent Flows (the robust way)
-Full Documentation for advanced readers with heavy links and code samples
+
 
 ### Encapsulate an Azure AI Foundry Model with an Azure Function for Use by a Copilot Studio Agent (via Agent Flow)
 
