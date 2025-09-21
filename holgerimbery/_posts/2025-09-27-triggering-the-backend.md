@@ -38,7 +38,7 @@ There are two principal approaches for incorporating Azure AI Foundry models int
     - Orchestrate interactions via agent flow
     - Enable complex processing pipelines and custom business logic
     - Facilitate more sophisticated error handling and retry mechanisms
-    *Take a look at the excursion one below the article.*[ ](triggering-the-backend#excurse-1-bring-your-own-model-to-microsoft-copilot-studio-using-azure-functions-and-agent-flows-the-robust-way)
+    *Take a look at the excursion one below the article.*
 
 1. **Direct Model Integration (BYOM)** (the easy way)
     - Leverage Azure AI Foundry models directly within Copilot Studio prompts
