@@ -19,7 +19,7 @@ toc: true
 > This article explores the integration of Azure AI Foundry models into Microsoft Copilot Studio, providing practical implementation strategies for enhancing custom agents with advanced AI capabilities. It covers two main integration approaches—using Azure Functions with Agent Flows for complex scenarios and direct model integration for simpler use cases—along with three detailed use case examples: email classification, visual issue detection in (IT) support, and (legal) document summarization.
 
 
-In my [previous article](https://holgerimbery.blog/which-tool-to-choose), I explored the distinct advantages of two powerful platforms for custom agent development. Today, I'll delve deeper into the practical implementation of integrating AI Foundry capabilities into Copilot Studio, examining three distinct use case scenarios that demonstrate this powerful combination.
+In my [previous article](https://holgerimbery.blog/which-tool-to-choose), I explored the distinct advantages of mixing Copilot Studio and Azure AI Foundry for custom agent development. Keep in mind this is a option, there is no need to mix and match, if you, as an enterprise, can work in Copilot Studio only. In this article, I'll delve deeper into the practical implementation of integrating AI Foundry capabilities into Copilot Studio, examining three distinct use case scenarios that demonstrate this powerful combination.
 
 Throughout this technical exploration, I'll provide schematic representations of the integration pathways rather than exhaustive step-by-step tutorials. I intend to illustrate the architectural patterns and key connection points that enable these systems to work together effectively. This approach will provide you with a comprehensive understanding of the underlying mechanics without becoming entangled in platform-specific implementation details that may change over time.
 
@@ -106,16 +106,16 @@ By focusing on the architectural concepts rather than platform-specific details,
 
 ---
 
-Comprehensive documentation for advanced readers, extensively enriched with links and code samples.
+## Background Information for advanced readers, extensively enriched with links and code samples.
 
-## Excursion 1: Bring your own Model to Microsoft Copilot Studio using Azure Functions and Agent Flows (the robust way)
+### Excursion 1: Bring your own Model to Microsoft Copilot Studio using Azure Functions and Agent Flows (the robust way)
 
 
-### Encapsulate an Azure AI Foundry Model with an Azure Function for Use by a Copilot Studio Agent (via Agent Flow)
+#### Encapsulate an Azure AI Foundry Model with an Azure Function for Use by a Copilot Studio Agent (via Agent Flow)
 
 Below is a **field‑tested, enterprise‑grade pattern** to encapsulate an **Azure AI Foundry** model behind an **Azure Function** and expose it to a **Microsoft Copilot Studio** agent via an **agent flow**. The guide includes step‑by‑step instructions, security options, code samples, and documentation links for every significant step. Assume that the code is an example and may need adjustments for your scenario.
 
-### Target Architecture
+#### Target Architecture
 
 ![upgit_20250921_1758438210.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/upgit_20250921_1758438210.png)
 
@@ -123,20 +123,20 @@ Below is a **field‑tested, enterprise‑grade pattern** to encapsulate an **Az
 - Copilot Studio invokes a **published agent flow** as a tool. The flow issues an HTTP call to your Azure Function and returns the model result to the conversation. See [Call an agent flow from an agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-flow) and [Use agent flows with your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow).
 - The Function acts as a **thin façade** that standardizes request/response, handles auth, guardrails, logging, and retries, and then calls the **Azure AI Foundry** inference endpoint (serverless or managed) using either an API key or **Microsoft Entra ID** (preferred). See [How to use Models inference endpoints](https://learn.microsoft.com/azure/ai-foundry/foundry-models/how-to/inference) and [Endpoints for Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/endpoints).
 
-### Prerequisites
+#### Prerequisites
 
 1. **A deployed model in Azure AI Foundry** (e.g., serverless “Models inference endpoint” or Azure OpenAI deployment). See [Models inference endpoints](https://learn.microsoft.com/azure/ai-foundry/foundry-models/how-to/inference).
 2. **An Azure Function App** with HTTP trigger (any language; example below shows .NET isolated). See [Azure Functions HTTP trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger).
 3. **Copilot Studio** environment with permission to create **agent flows** and add tools. See [Use agent flows with your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow).
 
 
-### Step 1 — Get or Deploy a Model Endpoint in Azure AI Foundry
+#### Step 1 — Get or Deploy a Model Endpoint in Azure AI Foundry
 
 - Azure AI Foundry provides a **uniform inference API** through the **Models inference endpoint** (e.g., `https://<resource>.services.ai.azure.com/models`). You pass the **deployment name** (or model) in the request payload; the service routes to the right model. See [How to use Models inference endpoints](https://learn.microsoft.com/azure/ai-foundry/foundry-models/how-to/inference).
 - You can also use **Azure OpenAI** endpoints (e.g., `https://<resource>.openai.azure.com/openai/deployments/<deployment>`) if your scenario uses OpenAI models. See [How to use Models inference endpoints](https://learn.microsoft.com/azure/ai-foundry/foundry-models/how-to/inference).
 - Official SDKs (**Azure AI Inference**) are available if you prefer a typed client; otherwise, use REST with either **API key** or **Entra ID** token. See the SDK [README](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-inference/README.md) and [PyPI package](https://pypi.org/project/azure-ai-inference/).
 
-### Step 2 — Wrap the Model Behind an Azure Function (HTTP)
+#### Step 2 — Wrap the Model Behind an Azure Function (HTTP)
 
 Create a **Function** that:
 - Accepts a normalized JSON payload from Agent (e.g., `prompt`, `system`, `temperature`).
@@ -146,7 +146,7 @@ Create a **Function** that:
 
 **Why a Function?** It gives you a single, governed surface for **policy**, **observability**, **rate limiting** (optionally via API Management), and **schema stability**, insulating your Agent from model churn. See [Azure Functions HTTP trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger) and [Expose AI endpoints via API Management](https://www.beneathabstraction.com/post/expose-ai-endpoints-via-api-management/).
 
-### Example: .NET 8 Isolated Azure Function (HTTP Trigger)
+#### Example: .NET 8 Isolated Azure Function (HTTP Trigger)
 
 **App settings (Configuration)**
 - `AI_ENDPOINT` — e.g., `https://<resource>.services.ai.azure.com/models` (Foundry inference) **or** the Azure OpenAI deployment URL. See [How to use Models inference endpoints](https://learn.microsoft.com/azure/ai-foundry/foundry-models/how-to/inference).
@@ -264,7 +264,7 @@ public class InvokeModel
 - For **Managed Identity** with Azure OpenAI/Foundry resources, use the `cognitiveservices.azure.com` scope; see the guidance [here](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/how-to/managed-identity.md) and [here](https://stackoverflow.com/questions/79570023/using-managed-identity-to-call-azure-openai-endpoint-instead-of-azure-openai-key).
 
 
-### Step 3 — Secure the Function Endpoint
+#### Step 3 — Secure the Function Endpoint
 
 Standard options (you can combine them):
 
@@ -275,11 +275,11 @@ Standard options (you can combine them):
 Additional platform guidance: [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts).
 
 
-### Step 4 — Create the Agent Flow That Calls Your Function
+#### Step 4 — Create the Agent Flow That Calls Your Function
 
 There are two good ways to connect Copilot Studio to your Function:
 
-#### Option A (most common): Agent flow (Power Automate) + HTTP action
+##### Option A (most common): Agent flow (Power Automate) + HTTP action
 1. In **Tools**, create a **agent low** that accepts inputs (e.g., `prompt`, `system`, `temperature`).
 2. Add an **HTTP** action to call your Function URL; configure auth as per Step 3 (Function key or OAuth).
 3. Parse the JSON response and output a simplified object (`answer`, `usage`, `latency`).
@@ -288,7 +288,7 @@ There are two good ways to connect Copilot Studio to your Function:
 
 Related learning content: [Make HTTP requests to connect to an API (exercise)](https://microsoft.github.io/TechExcel-Designing-your-own-copilot-using-copilot-studio/docs/Ex04/Ex04.html).
 
-#### Option B (direct): Add a REST API tool or Custom Connector
+##### Option B (direct): Add a REST API tool or Custom Connector
 - In Copilot Studio, you can add tools via a **REST API connection** (direct endpoint definition) or a **Custom connector** you created in Power Platform (ideal for OAuth / Entra ID). See [Add tools to custom agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-plugin-actions) and [Use connectors in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors).
 
 {: .tip }
@@ -297,7 +297,7 @@ Related learning content: [Make HTTP requests to connect to an API (exercise)](h
 **Custom connector / REST tool**: best when you want **direct tool use** without a flow or when you need **OAuth 2.0** against your **Entra ID‑protected Function**. See [Add tools to custom agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-plugin-actions) and the Entra ID custom connector blog above.
 
 
-### Step 5 — Suggested Request/Response Contracts
+#### Step 5 — Suggested Request/Response Contracts
 
 **Request from agent flow to Function**
 ```json
@@ -321,14 +321,14 @@ Related learning content: [Make HTTP requests to connect to an API (exercise)](h
 - Azure AI Foundry’s **Models inference endpoint** accepts **OpenAI‑compatible** message arrays and a top‑level **`model`** parameter for routing. See [How to use Models inference endpoints](https://learn.microsoft.com/azure/ai-foundry/foundry-models/how-to/inference).
 
 
-### Step 6 — End‑to‑End Test
+#### Step 6 — End‑to‑End Test
 
 1. **Test the Function** in Postman or `curl` with either API key or Bearer token (Managed Identity via a dev tool or user token). See [Managed identity guidance](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/how-to/managed-identity.md).
 2. **Test the agent flow** manually: provide a sample prompt; confirm HTTP 200 and response shape. See [HTTP request exercise](https://microsoft.github.io/TechExcel-Designing-your-own-copilot-using-copilot-studio/docs/Ex04/Ex04.html).
 3. **Attach the flow as a tool** to your agent and test in Copilot Studio; verify that the orchestrator picks the tool when relevant. See [Call an agent flow from an agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-flow).
 
 
-### Security & Operations Checklist
+#### Security & Operations Checklist
 
 - **Prefer Entra ID + Managed Identity** from Function → model endpoint; avoid persisting model API keys. See [Managed identity guidance](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/how-to/managed-identity.md) and [Authentication options](https://learn.microsoft.com/en-us/azure/ai-services/authentication).
 - **App Service Authentication** on the Function to require OAuth; use a **custom connector** with OAuth for Copilot Studio if you need per‑user consent/authorization. See [Securing Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts) and [Entra ID‑protected Functions via Custom Connector](https://www.microsoft.com/en-us/power-platform/blog/power-apps/calling-azure-ad-protected-azure-functions-using-a-custom-connector/).
@@ -336,7 +336,7 @@ Related learning content: [Make HTTP requests to connect to an API (exercise)](h
 - **Network**: If you must use private endpoints, plan how **Power Platform** will reach them (e.g., APIM with VNet or hybrid connectivity); otherwise keep the Function public but locked via OAuth and IP restrictions as needed. See [APIM article](https://www.beneathabstraction.com/post/expose-ai-endpoints-via-api-management/).
 
 
-### Useful Documentation & References
+#### Useful Documentation & References
 
 - **Copilot Studio (tools, flows, connectors)**
   - [Call an agent flow from an agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-flow)
@@ -360,15 +360,15 @@ Related learning content: [Make HTTP requests to connect to an API (exercise)](h
 - **(Optional) API Management front‑door**
   - [Expose Azure AI Foundry endpoints via API Management](https://www.beneathabstraction.com/post/expose-ai-endpoints-via-api-management/)
 
-## Excursion 2: Using Azure AI Foundry Models Directly in Copilot Studio (the easy way)
+### Excursion 2: Using Azure AI Foundry Models Directly in Copilot Studio (the easy way)
 To integrate an Azure AI Foundry model into the Copilot Studio Prompt Tool, you need to connect your deployed AI Foundry model as an external endpoint and then reference it within your Copilot Studio prompt flow. 
 
-### Deploy Your AI Foundry Model as an Endpoint
+#### Deploy Your AI Foundry Model as an Endpoint
 
 Publish your trained model in Azure AI Foundry as a REST API endpoint.
 Note the endpoint URL and the required authentication method (typically Azure Active Directory token or API key).
 
-### Connect the Model in Copilot Studio
+#### Connect the Model in Copilot Studio
 
 1. Open your agent in Copilot Studio.
 2. Navigate to tools and select "Add Tool".
@@ -381,7 +381,7 @@ Note the endpoint URL and the required authentication method (typically Azure Ac
 6. Enter the endpoint URL, deployment name, and authentication details (API key or token).
 7. Save your changes.
 
-### Use the Tool in Your Agent Flow
+#### Use the Tool in Your Agent Flow
 1. Generate a prompt that utilizes the connected model.
 2. Add the tool to your agent
 
