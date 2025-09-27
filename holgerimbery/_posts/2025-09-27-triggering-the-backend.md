@@ -19,7 +19,7 @@ toc: true
 > This article explores the integration of Azure AI Foundry models into Microsoft Copilot Studio, providing practical implementation strategies for enhancing custom agents with advanced AI capabilities. It covers two main integration approaches—using Azure Functions with Agent Flows for complex scenarios and direct model integration for simpler use cases—along with three detailed use case examples: email classification, visual issue detection in (IT) support, and (legal) document summarization.
 
 
-In my [previous article](https://holgerimbery.blog/which-tool-to-choose), I explored the distinct advantages of mixing Copilot Studio and Azure AI Foundry for custom agent development. Keep in mind this is a option, there is no need to mix and match, if you, as an enterprise, can work in Copilot Studio only. In this article, I'll delve deeper into the practical implementation of integrating AI Foundry capabilities into Copilot Studio, examining three distinct use case scenarios that demonstrate this powerful combination.
+In my [previous article](https://holgerimbery.blog/which-tool-to-choose), I explored the distinct advantages of mixing Copilot Studio and Azure AI Foundry for custom agent development. Keep in mind this is an option; there is no need to mix and match. If you, as an enterprise, can work in Copilot Studio only. In this article, I'll delve deeper into the practical implementation of integrating AI Foundry capabilities into Copilot Studio, examining three distinct use case scenarios that demonstrate this powerful combination.
 
 Throughout this technical exploration, I'll provide schematic representations of the integration pathways rather than exhaustive step-by-step tutorials. I intend to illustrate the architectural patterns and key connection points that enable these systems to work together effectively. This approach will provide you with a comprehensive understanding of the underlying mechanics without becoming entangled in platform-specific implementation details that may change over time.
 
@@ -51,9 +51,9 @@ There are two principal approaches for incorporating Azure AI Foundry models int
 
 ## Use Case 1: Email Classification with Azure AI Foundry Model
 **Business Benefit**  
-Automates triage of incoming emails (e.g., support, sales, HR) by classifying them into categories and routing them to the correct department. Reduces manual workload and improves response time.
+Automates triage of incoming emails (e.g., support, sales, HR) by classifying them and routing them to the correct department. Reduces manual workload and improves response time.
 
-**Implementation Steps** (see excursion 1 below the article for details)
+**Implementation Steps** (see excursion one below the article for details)
 
 * Deploy Model in Azure AI Foundry
 * Expose via Azure Function
@@ -64,7 +64,7 @@ Automates triage of incoming emails (e.g., support, sales, HR) by classifying th
 
 ## Use Case 2: Visual Issue Detection in IT Support
 **Business Benefit**  
-Automates triage of IT tickets with screenshots. Uses vision models to detect UI errors, reducing manual analysis and speeding up resolution.
+Automates triage of IT tickets with screenshots. Utilizes vision models to identify UI errors, thereby reducing manual analysis and accelerating resolution.
 
 **Implementation Steps** (see excursion one below the article for details)
 
