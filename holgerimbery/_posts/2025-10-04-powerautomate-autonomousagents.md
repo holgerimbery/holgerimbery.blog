@@ -20,7 +20,27 @@ toc: true
 {: .important }>**Disclaimer**:
 > This comparison is based on publicly available information as of October 2025 and my own analysis. 
 
+## In short
+Use **Power Automate for deterministic, rule-based workflows** with predictable outcomes, where triggers, conditions, and actions are clearly defined and integration across systems is structured. Use **Autonomous Agents for adaptive, goal-driven scenarios** involving complex decision-making, dynamic paths, and contextual reasoning, where the agent must act autonomously and handle uncertainty.
 
+## Longer explanation
+### Use Power Automate when:
+
+The process is rule-based, predictable, and follows a fixed sequence of steps.
+You can define clear triggers, conditions, and actions.
+The logic is deterministic — meaning the same input always produces the same output.
+You need to integrate across Microsoft 365, Dynamics 365, or third-party services using connectors.
+Human interaction is minimal or structured (e.g., approvals, form submissions).
+You want to orchestrate RPA (Robotic Process Automation) for legacy systems
+
+### Use Autonomous Agents when:
+
+The process involves complex decision-making, uncertain paths, or multiple goals.
+You need the system to adapt based on user input, external data, or changing context.
+The logic is non-deterministic — meaning the agent may take different actions depending on evolving conditions.
+You want to build multi-turn conversations, task automation, or goal-driven behavior.
+The agent needs to reason, plan, and act autonomously across systems.
+You’re building intelligent copilots that can handle exceptions, learn from feedback, or operate with partial information.
 
 ## What each product is
 
@@ -106,14 +126,14 @@ Choose **Copilot Studio autonomous agents** when you need to:
 
 **Power Automate (list pricing)**  
 - **Premium (per user)**: **$15/user/month**—cloud flows (DPA), **attended** desktop flows (RPA), and process/task mining entitlements. 
-- **Process (per bot)**: **$150/bot/month**—adds **unattended RPA**. 
-- **Hosted Process (per bot)**: **$215/bot/month**—unattended RPA with a **Microsoft‑hosted VM**. 
+- **Process (per process)**: **$150/process/month**—adds **unattended RPA**. 
+- **Hosted Process (per process)**: **$215/process/month**—unattended RPA with a **Microsoft‑hosted VM**. 
 
 
 ## Practical cost framing
 
 - **Agent‑led experiences**: Size your **monthly baseline** using one or more **25k‑credit packs** ($200 each), then attach **PAYG** at $0.01/credit to absorb spikes—keeping the agent always available. 
-- **Flow‑heavy backends**: Use **per‑user** seats where many people author/run personal or team automations; use **per‑bot** where you centralize unattended RPA workloads (fewer bots, higher duty cycle). 
+- **Flow‑heavy backends**: Use **per‑user** seats where many people author/run personal or team automations; use **per‑process** where you centralize unattended RPA workloads (fewer proceses, higher duty cycle). 
 
 
 ## Comparison summary
@@ -124,7 +144,7 @@ Choose **Copilot Studio autonomous agents** when you need to:
 | Best for | Schedules, system‑to‑system, high‑reliability RPA | Self‑service help, guided workflows, goal‑seeking tasks across apps |
 | Orchestration | Flow designer (conditions, loops, retries) | Generative orchestration (planning + action chaining) |
 | Channels | Headless/background (with notifications) | Teams/M365/web and other channels |
-| Licensing | $15/user; $150–$215/bot | Packs ($200/25k credits) + $0.01/credit PAYG |
+| Licensing | $15/user; $150–$215/process | Packs ($200/25k credits) + $0.01/credit PAYG |
 
 ## Key takeaways
 
@@ -147,7 +167,7 @@ Choose **Copilot Studio autonomous agents** when you need to:
 **Remember: Power Platform's true strength emerges when these tools work together**—autonomous agents providing the reasoning, natural language understanding, and goal orientation, while Power Automate delivers the reliable, transactional backbone your business processes demand. This complementary approach creates experiences that are both intelligent and dependable. 
 
 
-## additional resoruces
+## additional resources
 
 [Microsoft Power Automate pricing and capabilities](https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing)  
 [Microsoft Copilot Studio 2025 Release Wave 1 overview (agents, orchestration, governance)](https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave1/microsoft-copilot-studio/)  
