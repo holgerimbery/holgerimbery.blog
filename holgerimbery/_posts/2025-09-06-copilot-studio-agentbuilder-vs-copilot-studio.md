@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@danist07?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danist Soh</a> on <a href="https://unsplash.com/photos/low-angle-photography-of-cranes-on-top-of-building-8Gg2Ne_uTcM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 category: [copilotstudio, copilotstudioagentbuilder]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 {: .q-left }
