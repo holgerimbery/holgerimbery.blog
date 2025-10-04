@@ -15,11 +15,11 @@ toc: true
 
 
 {: .q-left }
-> **Summary Lede**: 
+> **Summary Lede**:   
 > This article compares Microsoft Power Automate and Microsoft Copilot Studio autonomous agents, highlighting their differences in architecture, use cases, licensing, and implementation patterns. Power Automate is ideal for deterministic, event-driven automation running in the background, while Copilot Studio agents provide goal-oriented experiences that can reason and act across systems. The article guides when to use each product individually or in combination.
 
 {: .important }
-> **Disclaimer**:
+> **Disclaimer**:   
 > This comparison is based on publicly available information as of October 2025 and my own analysis. 
 
 ## In short
@@ -124,8 +124,8 @@ Choose **Copilot Studio autonomous agents** when you need to:
 - **Meter update**: **From Sept 1, 2025**, agents moved from *messages* to **Copilot Credits** as the common currency. 
 - **Maker access**: Admin assigns a **Copilot Studio user license (free)** to authors; a tenant credit pack is required to enable it. 
 
-{: .information}
-> Regional pricing varies. Validate in your Microsoft 365 Admin Center.
+{: .important }
+Regional pricing varies. Validate in your Microsoft 365 Admin Center.
 
 **Power Automate (list pricing)**  
 - **Premium (per user)**: **$15/user/month**—cloud flows (DPA), **attended** desktop flows (RPA), and process/task mining entitlements. 
