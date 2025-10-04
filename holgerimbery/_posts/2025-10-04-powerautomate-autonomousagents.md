@@ -18,7 +18,8 @@ toc: true
 > **Summary Lede**: 
 > This article compares Microsoft Power Automate and Microsoft Copilot Studio autonomous agents, highlighting their differences in architecture, use cases, licensing, and implementation patterns. Power Automate is ideal for deterministic, event-driven automation running in the background, while Copilot Studio agents provide goal-oriented experiences that can reason and act across systems. The article guides when to use each product individually or in combination.
 
-{: .important }>**Disclaimer**:
+{: .important }
+> **Disclaimer**:
 > This comparison is based on publicly available information as of October 2025 and my own analysis. 
 
 ## In short
