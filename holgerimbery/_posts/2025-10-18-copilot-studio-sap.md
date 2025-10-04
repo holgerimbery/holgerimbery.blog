@@ -12,7 +12,8 @@ featured: true
 toc: true
 ---
 
-{: .q-left }> **Summary Lede**: 
+{: .q-left }
+> **Summary Lede**:  
 > Enterprise systems often operate in silos, forcing users to switch contexts and applications to complete business tasks. By connecting SAP's robust business processes with Microsoft Copilot Studio agents, organizations can now bring critical operational data and transactions directly into Microsoft 365 and Teams—where people already collaborate. This integration enables AI-driven, conversational interactions with SAP systems, eliminating the need to switch applications and accelerating decision-making and productivity across the enterprise.
 
 
