@@ -13,7 +13,8 @@ featured: true
 toc: true
 ---
 
-{: .q-left }> **Summary Lede**: 
+{: .q-left }
+> **Summary Lede**:   
 > Microsoft has released Agent Framework, combining the best of Semantic Kernel and AutoGen into a unified open-source platform for building, orchestrating, and governing multi-agent AI systems. With Python and .NET support, open standards for interoperability, enterprise-grade reliability features, and seamless transition from local development to cloud deployment, Agent Framework creates a coherent path from prototype to production for businesses building agentic AI solutions.
 
 
