@@ -124,6 +124,7 @@ Choose **Copilot Studio autonomous agents** when you need to:
 - **Meter update**: **From Sept 1, 2025**, agents moved from *messages* to **Copilot Credits** as the common currency. 
 - **Maker access**: Admin assigns a **Copilot Studio user license (free)** to authors; a tenant credit pack is required to enable it. 
 
+{: .information}
 > Regional pricing varies. Validate in your Microsoft 365 Admin Center.
 
 **Power Automate (list pricing)**  
