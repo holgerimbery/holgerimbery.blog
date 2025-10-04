@@ -23,7 +23,7 @@ toc: true
 > This comparison is based on publicly available information as of October 2025 and my own analysis. 
 
 ## In short
-Use **Power Automate for deterministic, rule-based workflows** with predictable outcomes, where triggers, conditions, and actions are clearly defined and integration across systems is structured and seamless. Utilize **Autonomous Agents ** for adaptive, goal-driven scenarios that involve complex decision-making, dynamic paths, and contextual reasoning, where the agent must act autonomously and handle uncertainty.
+Use **Power Automate for deterministic, rule-based workflows** with predictable outcomes, where triggers, conditions, and actions are clearly defined and integration across systems is structured and seamless. Utilize **Autonomous Agents** for adaptive, goal-driven scenarios that involve complex decision-making, dynamic paths, and contextual reasoning, where the agent must act autonomously and handle uncertainty.
 
 ## Longer explanation
 ### Use Power Automate when:
