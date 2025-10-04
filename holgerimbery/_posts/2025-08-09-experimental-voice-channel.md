@@ -8,7 +8,7 @@ image_caption: Photo by <a href="https://unsplash.com/@struvictoryart?utm_conten
       
 category: [copilotstudio, voicechannel, telephony, customerservice]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 {: .q-left }
