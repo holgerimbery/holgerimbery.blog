@@ -15,7 +15,7 @@ toc: true
 
 
 {: .q-left }> **Summary Lede**: 
-> This article compares Microsoft Power Automate and Microsoft Copilot Studio autonomous agents, highlighting their differences in architecture, use cases, licensing, and implementation patterns. Power Automate is ideal for deterministic, event-driven automation running in the background, while Copilot Studio agents provide conversational, goal-oriented experiences that can reason and act across systems. The article guides when to use each product individually or in combination.
+> This article compares Microsoft Power Automate and Microsoft Copilot Studio autonomous agents, highlighting their differences in architecture, use cases, licensing, and implementation patterns. Power Automate is ideal for deterministic, event-driven automation running in the background, while Copilot Studio agents provide goal-oriented experiences that can reason and act across systems. The article guides when to use each product individually or in combination.
 
 {: .important }>**Disclaimer**:
 > This comparison is based on publicly available information as of October 2025 and my own analysis. 
@@ -44,7 +44,7 @@ You’re building intelligent copilots that can handle exceptions, learn from fe
 
 ## What each product is
 
-**Power Automate** is a low‑code automation platform for cloud flows (DPA), desktop flows (RPA) — attended and unattended — and hosted RPA, backed by hundreds of connectors. It’s ideal for **repeatable**, **trigger‑based** work (HTTP/webhook, Dataverse, email, schedules) and for bridging to legacy apps via RPA, with per‑user and per‑bot licensing. 
+**Power Automate** is a low‑code automation platform for cloud flows (DPA), desktop flows (RPA) — attended and unattended — and hosted RPA, backed by hundreds of connectors. It's ideal for **repeatable**, **trigger-based** work (HTTP/webhook, Dataverse, email, schedules) and for bridging to legacy apps via RPA, with per-user and per-process licensing. 
 
 **Copilot Studio (autonomous agents)** lets you build AI agents that converse, **reason/plan**, ground on enterprise knowledge, and **execute actions** (including Power Automate/agent flows) to achieve user or organizational goals. You design, test, and publish agents to Teams/Microsoft 365 or external channels, with enterprise governance (Purview/Sentinel, tenant inventory). Since September 1, 2025, usage is billed in Copilot Credits (packs and PAYG). 
 
@@ -91,7 +91,7 @@ Choose **Copilot Studio autonomous agents** when you need to:
 
 2) **Finance invoice posting for a legacy ERP**  
    - *Flow*: Unattended **RPA** extracts data from PDFs and posts into the ERP nightly.  
-   - *Agent*: Employees ask "what's the status of PO 45001234?"; the agent queries the ledger and responds with next steps.  
+   - *Agent*: Employees ask (even via email) "what's the status of PO 45001234?"; the agent queries the ledger and responds with next steps.  
    - *Why this split*: RPA reliability + human‑friendly status checking. 
 
 3) **Employee onboarding**  
