@@ -9,7 +9,7 @@ image_caption: Photo by <a href="https://unsplash.com/@igalness?utm_content=cred
 
 category: [copilotstudio]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 {: .q-left }
