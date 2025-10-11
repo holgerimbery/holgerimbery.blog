@@ -149,9 +149,9 @@ These samples demonstrate the symmetrical developer experience across Python and
 Microsoft Agent Framework represents a significant evolution in the enterprise AI landscape, unifying the strengths of Semantic Kernel and AutoGen into a single, open-source platform for building, orchestrating, and governing multi-agent systems. By supporting both Python and .NET, embracing open standards, and providing enterprise-grade features like observability and governance, Agent Framework creates a coherent path from local prototyping to scalable cloud deployment via Azure AI Foundry. This integration, combined with Copilot Studio and the Microsoft 365 Agents SDK, enables organizations to innovate faster, govern more effectively, and deliver AI-powered experiences across their digital workplace. Businesses, low-code makers, and pro-code developers alike can leverage this unified ecosystem to drive adoption and realize the full potential of agentic AI. 
 
 ## additional resources
-[Microsoft Agent Framework](https://aka.ms/AgentFramework)
-[Azure AI Foundry](https://aka.ms/AzureAIFoundry)
-[Copilot Studio](https://aka.ms/CopilotStudio)
-[Microsoft 365 Agents SDK](https://aka.ms/M365AgentsSDK)
-[OpenTelemetry](https://opentelemetry.io/)
-[Documentation](https://aka.ms/AgentFramework/docs)
+[Microsoft Agent Framework](https://aka.ms/AgentFramework)   
+[Azure AI Foundry](https://aka.ms/AzureAIFoundry)   
+[Copilot Studio](https://aka.ms/CopilotStudio)   
+[Microsoft 365 Agents SDK](https://aka.ms/M365AgentsSDK)   
+[OpenTelemetry](https://opentelemetry.io/)   
+[Documentation](https://aka.ms/AgentFramework/docs)   
