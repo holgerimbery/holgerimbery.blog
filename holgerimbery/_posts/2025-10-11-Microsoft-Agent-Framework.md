@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft Agent Framework - The open‑source engine for agentic AI — why it matters for businesses, low‑code makers, and pro‑code developers
-description: Microsoft has open‑sourced Agent Framework, a unified SDK and runtime for building, orchestrating, and operating multi‑agent AI systems across Python and .NET, with open standards (MCP, A2A, OpenAPI), graph‑based workflows, observability via OpenTelemetry, and enterprise‑grade durability and governance. It consolidates the strengths of Semantic Kernel and AutoGen so teams can prototype locally, then ship to Azure AI Foundry Agent Service and surface agents across Microsoft 365 endpoints—without rewriting code.
+description: Microsoft has open‑sourced Agent Framework, a unified SDK and runtime for building, orchestrating, and operating multi‑agent AI systems across Python and .NET, with open standards (MCP, A2A, OpenAPI), graph‑based workflows, observability via OpenTelemetry, and enterprise‑grade durability and governance. It consolidates the strengths of Semantic Kernel and AutoGen, enabling teams to prototype locally and then ship to Azure AI Foundry Agent Service, where agents are surfaced across Microsoft 365 endpoints—without the need to rewrite code.
 date: 2025-10-11
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/thisisengineering-iQqRM0XJvn8-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@thisisengineering?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ThisisEngineering</a> on <a href="https://unsplash.com/photos/woman-in-black-and-white-jacket-sitting-in-front-of-computer-monitor-iQqRM0XJvn8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -111,13 +111,13 @@ var agent = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
 Console.WriteLine(await agent.RunAsync("Write a haiku about Microsoft Agent Framework."));
 ```
 
-These samples demonstrate the symmetrical developer experience across Python and .NET.
+These samples demonstrate the symmetrical developer experience across Python and  .NET.
 
 
 
 ## Integration Path: From Local Development to Enterprise Rollout
 
-1. **Start Locally:** Use VS Code with the Agent Framework SDK and DevUI to build and visualize agent graphs and tools.
+1. **Start Locally:** Use VS Code with the Agent Framework SDK and DevUI to build and visualize architectures and tools.
 2. **Add Tools and Data:** Integrate via OpenAPI specs and MCP servers; connect enterprise systems (Graph, SharePoint, Fabric, Oracle, Bedrock, MongoDB, Logic Apps).
 3. **Model State and Memory:** Employ pluggable stores (Redis, Pinecone, Qdrant, Weaviate, Elasticsearch, Postgres) and define policies declaratively (YAML/JSON).
 4. **Choose Orchestration:** Select Agent Orchestration for open-ended reasoning or Workflow Orchestration for deterministic processes with checkpointing and approvals.
@@ -128,8 +128,8 @@ These samples demonstrate the symmetrical developer experience across Python and
 
 ## What Changes with Agent Framework vs. Previous Stacks
 
-- **Unified Abstractions:** A single mental model across experimentation and production reduces hand-offs and divergence between prototypes and deployed systems.
-- **Consolidated Roadmap:** Future feature investment centers on Agent Framework, with AutoGen and Semantic Kernel moving to maintenance—clarifying the long-term platform choice.
+- **Unified Abstractions:** A single mental model across experimentation and production reduces handoffs and divergence between prototypes and deployed systems.
+- **Consolidated Roadmap:** Future feature investment centers on Agent Framework, with whoGen and Semantic Kernel moving to maintenance—clarifying the long-term platform choice.
 
 
 
@@ -142,7 +142,7 @@ These samples demonstrate the symmetrical developer experience across Python and
 - Use declarative agent configs and Copilot Studio connectors for rapid composition; escalate specialized tasks to pro-code agents via the shared runtime and Microsoft 365 Agents SDK.
 
 **For Pro-Code Teams:**
-- Establish workflow templates (sequential, concurrent, handoff, “Magentic”), standard memory adapters, and a middleware catalog (auth, PII redaction, retries). Measure with OpenTelemetry and publish sample graphs for reuse.
+- Establish workflow templates (sequential, concurrent, handoff, "Magentic"), standard memory adapters, and a middleware catalog (auth, PII redaction, retries). Measure with OpenTelemetry and publish sample graphs for reuse.
 
 
 ## Conclusion
