@@ -2,10 +2,11 @@
 layout: post
 title: Microsoft Agent Framework - The open‑source engine for agentic AI — why it matters for businesses, low‑code makers, and pro‑code developers
 description: Microsoft has open‑sourced Agent Framework, a unified SDK and runtime for building, orchestrating, and operating multi‑agent AI systems across Python and .NET, with open standards (MCP, A2A, OpenAPI), graph‑based workflows, observability via OpenTelemetry, and enterprise‑grade durability and governance. It consolidates the strengths of Semantic Kernel and AutoGen, enabling teams to prototype locally and then ship to Azure AI Foundry Agent Service, where agents are surfaced across Microsoft 365 endpoints—without the need to rewrite code.
+
 date: 2025-10-11
+
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/thisisengineering-iQqRM0XJvn8-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@thisisengineering?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ThisisEngineering</a> on <a href="https://unsplash.com/photos/woman-in-black-and-white-jacket-sitting-in-front-of-computer-monitor-iQqRM0XJvn8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
 
 category: [copilotstudio, aifoundry, agents]
 author: admin
