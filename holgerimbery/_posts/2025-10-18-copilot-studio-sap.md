@@ -17,7 +17,9 @@ toc: true
 > Enterprise systems often operate in silos, forcing users to switch contexts and applications to complete business tasks. By connecting SAP's robust business processes with Microsoft Copilot Studio agents, organizations can now bring critical operational data and transactions directly into Microsoft 365 and Teams—where people already collaborate. This integration enables AI-driven, conversational interactions with SAP systems, eliminating the need to switch applications and accelerating decision-making and productivity across the enterprise.
 
 
-Bringing SAP data and actions directly into Copilot Studio agents puts your operational truth in the same place people already collaborate—Microsoft 365 and Teams—so users don't have to switch tools or context when they need to look up a sales order, check ATP, raise a vendor query, or submit an approval. This "in‑the‑flow‑of‑work" approach is now practical thanks to: (1) SAP APIs (OData, RFC/BAPI) made accessible and governable via SAP Integration Suite API Management and/or Azure API Management, and (2) native SAP connectors and agent publishing pipelines in Copilot Studio and Microsoft 365 Copilot.   
+Bringing SAP data and actions directly into Copilot Studio agents puts your operational truth in the same place people already collaborate — Microsoft 365 and Teams — so users don't have to switch tools or context when they need to look up a sales order, check ATP, raise a vendor query, or submit an approval. This "in‑the‑flow‑of‑work" approach is now practical thanks to:  
+(1) SAP APIs (OData, RFC/BAPI) made accessible and governable via SAP Integration Suite API Management and/or Azure API Management, and   
+(2) native SAP connectors and agent publishing pipelines in Copilot Studio and Microsoft 365 Copilot.   
 
 Integrating SAP with Copilot Studio agents is straightforward using first‑party connectors (SAP OData and SAP ERP) that support secure, scalable connectivity patterns (including Entra ID SSO and on‑premises data gateway). By exposing SAP APIs through API Management, you can enforce security policies, apply principal propagation to preserve SAP authorizations, and avoid overloading core systems. Once connected, you can build low-code agent flows that call SAP tools and publish agents to Teams and Microsoft 365 Copilot for easy user access. This approach reduces friction, improves adoption, and accelerates decision-making by keeping users in their primary collaboration environment.
 
@@ -25,7 +27,7 @@ Integrating SAP with Copilot Studio agents is straightforward using first‑part
 
 ### Keep people in the flow of work (no app‑switching)
 
-Publishing your Copilot Studio agents into Microsoft 365 Copilot and Teams enables business users to ask questions like “Show undelivered sales orders for Contoso this week” directly in chats, channels, or Copilot Chat—without needing to open SAP GUI or a separate portal. This reduces friction, improves adoption, and shortens cycle time for everyday decisions.
+Publishing your Copilot Studio agents into Microsoft 365 Copilot and Teams enables business users to ask questions like "Show undelivered sales orders for Contoso this week" directly in chats, channels, or Copilot Chat—without needing to open SAP GUI or a separate portal. This reduces friction, improves adoption, and shortens cycle time for everyday decisions.
 
 
 ### Use enterprise‑grade connectors and governance—safely
@@ -68,7 +70,7 @@ Microsoft's reference architectures show how both patterns coexist alongside cus
 
 ## Security and identity (SSO and principal propagation)
 
-Establish Entra ID ↔ SAP trust using SAP Cloud Identity Services (IAS/IPS) and OAuth/SAML flows; for OData behind SAP APIM or Azure APIM, apply principal propagation so the end‑user identity is mapped to their named SAP user—preserving SAP authorizations. [SAP Documentation](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-service-with-microsoft-azure-ad)
+Establish Entra ID <-> SAP trust using SAP Cloud Identity Services (IAS/IPS) and OAuth/SAML flows; for OData behind SAP APIM or Azure APIM, apply principal propagation so the end‑user identity is mapped to their named SAP user—preserving SAP authorizations. [SAP Documentation](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-service-with-microsoft-azure-ad)
 
 Microsoft and SAP provide step-by-step guides for Entra ID SSO to SAP BTP, as well as scenarios where Azure API Management fronts SAP OData, including direct OData import and production-ready policy patterns. Documentation [Read more a](https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-btp-provisioning-tutorial),[b](https://learn.microsoft.com/en-us/azure/api-management/sap-api),[c](https://community.sap.com/t5/technology-blog-posts-by-members/up-level-your-sap-odata-apis-with-azure-api-management/ba-p/13563562)
 
@@ -118,12 +120,10 @@ Microsoft and SAP provide step-by-step guides for Entra ID SSO to SAP BTP, as we
 ## Design choices and trade‑offs
 
 - **OData vs. RFC/BAPI**: Prefer OData for read scenarios and modern S/4HANA services with API management and OAuth; use RFC/BAPI when deep SAP functions are required and you can deploy the on‑premises gateway.   
-- **SAP APIM vs. Azure APIM**: Both are viable; some customers run both and catalog APIs centrally (avoid "API sprawl"). Choose based on network topology, governance tooling, and where you want the enforcement point.   
+- **SAP APIM vs. Azure APIM**: Both are viable; some customers run both and catalog APIs centrally (avoid "API sprawl"). Choose based on network topology, governance tooling, and the desired enforcement point.   
 - **Identity**: Align on Entra ID as the primary IdP with SAP IAS as proxy for SAP cloud services; implement principal propagation so SAP authorizations remain intact.   
 - **Knowledge vs. actions**: For read‑only analytical Q&A on curated datasets, HANA knowledge sources can be efficient; for transactional workflows, use tools/actions via connectors. 
-
-
-## Checklist to get started (both roles)
+to get started (both roles)
 
 **Business owner**
 - Prioritize 2–3 high‑impact questions (e.g., "What's shipping late today?"). Keep scope tight for your first agent.  
