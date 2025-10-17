@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practical Governance for Microsoft Copilot Studio and the Power Platform
-description:
+description: Practical strategies for IT and business managers to implement effective governance frameworks that balance innovation with security in Microsoft Copilot Studio and the Power Platform.
 date: 2025-10-25
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/masaaki-komori-we0BQQewBo-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@gaspanik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Masaaki Komori</a> on <a href="https://unsplash.com/photos/gray-steel-gate-closed-with-padlock-_we0BQQewBo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
