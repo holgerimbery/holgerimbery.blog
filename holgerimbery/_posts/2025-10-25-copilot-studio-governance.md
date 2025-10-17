@@ -38,20 +38,20 @@ Microsoft Copilot Studio is fully integrated within the Power Platform ecosystem
 
 1. **Environment strategy first:** Establishing a comprehensive environment architecture is the foundation of effective governance. Create distinct environments that separate *personal productivity workspaces*, *departmental development and testing areas*, and *production systems* to maintain clear boundaries. Each environment type should have appropriate Data Loss Prevention policies and access controls specifically tailored to its purpose and risk profile. This separation creates natural guardrails that allow innovation while protecting critical systems and data.
 
-2. **Default‑deny exfiltration, allow by design:** Implement a security posture that prevents unauthorized data movement by default, while enabling approved pathways. Leverage Data Loss Prevention (DLP) policies with clear categorization of connectors into business, non-business, and blocked groups. Apply granular endpoint and action restrictions to limit what specific connectors can access and what operations they can perform. Establish tenant isolation as a baseline control, supplemented with explicit allow-lists for legitimate cross-tenant scenarios such as subsidiaries, mergers and acquisitions, or strategic partnerships.
+2. **Default‑deny exfiltration, allow by design:** Implement a security posture that prevents unauthorized data movement by default, while enabling approved pathways. Leverage Data Loss Prevention (DLP) policies with precise categorization of connectors into business, non-business, and blocked groups. Apply granular endpoint and action restrictions to limit the specific connectors that can access and perform certain operations. Establish tenant isolation as a baseline control, supplemented with explicit allow-lists for legitimate cross-tenant scenarios such as subsidiaries, mergers and acquisitions, or strategic partnerships.
 
-3. **Automate change management:** Formalize the development lifecycle by standardizing on **Power Platform pipelines** for application lifecycle management. Configure these pipelines with *approval-based delegated deployments* to ensure that all changes to production environments undergo appropriate review while still enabling maker empowerment. This approach balances innovation speed with necessary governance controls by keeping development agile while ensuring production stays secure and stable.
+3. **Automate change management:** Formalize the development lifecycle by standardizing on **Power Platform pipelines** for application lifecycle management. Configure these pipelines with *approval-based delegated deployments* to ensure that all changes to production environments undergo appropriate review while still enabling maker empowerment. This approach strikes a balance between innovation speed and necessary governance controls, keeping development agile while ensuring production remains secure and stable.
 
-4. **Visibility and iteration:** Deploy and maintain the **Center of Excellence (CoE) Starter Kit** to create comprehensive inventory of all assets, track key metrics, and implement automated governance workflows. Complement this with Microsoft Purview and Microsoft Sentinel auditing integrations specifically for Copilot Studio makers and agents. Since Copilot Studio is fully integrated within the Power Platform, these monitoring capabilities provide unified visibility across all low-code assets. This observability enables continuous improvement of governance policies based on actual usage patterns and emerging risks.
+4. **Visibility and iteration:** Deploy and maintain the **Center of Excellence (CoE) Starter Kit** to create a comprehensive inventory of all assets, track key metrics, and implement automated governance workflows. Complement this with Microsoft Purview and Microsoft Sentinel auditing integrations specifically for Copilot Studio makers and agents. Since Copilot Studio is fully integrated within the Power Platform, these monitoring capabilities provide unified visibility across all low-code assets. This observability enables continuous improvement of governance policies based on actual usage patterns and emerging risks.
 
-5. **Nurture the maker community:** Foster a thriving, responsible maker community by publishing clear rules of engagement, offering regular training opportunities, and maintaining accessible support channels. Implement informative welcome content that greets makers when they access the platform, and develop a centralized Power Platform hub that guides users to appropriate environments and approved development patterns. Remember that building a culture of responsible innovation is just as important as technical controls—when makers understand the "why" behind governance policies, they become active partners in maintaining security and compliance. 
+5. **Nurture the maker community:** Foster a thriving, responsible maker community by publishing clear rules of engagement, offering regular training opportunities, and maintaining accessible support channels. Implement informative welcome content that greets makers upon accessing the platform, and develop a centralized Power Platform hub that guides users to appropriate environments and approved development patterns. Remember that building a culture of responsible innovation is just as important as technical controls. When makers understand the "why" behind governance policies, they become active partners in maintaining security and compliance. 
 
 
 ## Guidance specifically for IT managers
 
 - **Own the platform guardrails and establish comprehensive security boundaries**:  
-    - Define and implement a structured **environment topology** that includes personal developer environments for individual experimentation, department or project-specific development and testing environments, and properly secured shared production environments. Leverage **environment routing** capabilities to automatically direct makers to their personal developer environment when they access make.powerapps.com or copilotstudio.microsoft.com, ensuring they start in appropriate sandboxed spaces.
-    - Activate **tenant isolation** as a fundamental security control to prevent unauthorized cross-tenant data movement across your organization's boundaries. Create and maintain explicit allow-lists only for legitimate business scenarios where cross-tenant interaction is required. Document all exceptions thoroughly with business justifications and review them periodically. Be aware of the current limitation regarding the Azure DevOps connector within the tenant isolation framework.
+    - Define and implement a structured **environment topology** that includes personal developer environments for individual experimentation, department or project-specific development and testing environments, and adequately secured shared production environments. Leverage **environment routing** capabilities to automatically direct makers to their personal developer environment when they access make.powerapps.com or copilotstudio.microsoft.com, ensuring they start in appropriate sandboxed spaces.
+    - Activate **tenant isolation** as a fundamental security control to prevent unauthorized cross-tenant data movement across your organization's boundaries. Create and maintain explicit allow-lists only for legitimate business scenarios where cross-tenant interaction is required. Document all exceptions thoroughly with business justifications and review them periodically. Be aware of the current limitations regarding the Azure DevOps connector within the tenant isolation framework.
     - Design and deploy comprehensive **Data Loss Prevention (DLP) policies** at both tenant and environment levels, creating appropriate security layers. Implement granular connector **endpoint and action filtering** for high-risk connectors such as HTTP, SQL, and SharePoint external sites to precisely control what data can be accessed and what operations can be performed.
     - Enable and configure **Managed Environments** for all production environments and other contexts containing sensitive data to gain advanced monitoring capabilities, enhanced sharing controls, and deeper operational insights into application usage and data flows.
     - Standardize application lifecycle management through **pipelines** with structured *approval-based delegated deployments* for promoting solutions into production environments. This ensures all releases are properly audited and appropriately reviewed before deployment.
@@ -64,7 +64,7 @@ Microsoft Copilot Studio is fully integrated within the Power Platform ecosystem
 
 - **Define comprehensive outcome-based guardrails rather than focusing on technical restrictions.** Create and maintain clear documentation that specifies which *data sources* have been approved for integration, which *connectors* are permitted for business use, and which *channels* (Teams, web, mobile, etc.) are appropriate for agent publication. Establish a lightweight approval process for handling exceptions to these guidelines, ensuring that legitimate business needs can still be addressed while maintaining governance standards. This approach gives teams clear boundaries while preserving flexibility for valid use cases.
 
-- **Establish transparency as a fundamental organizational norm for all low-code development.** Require that each solution and AI agent has clearly documented elements including: a designated business owner who maintains accountability, a purpose statement that articulates the business problem being solved, appropriate data classification based on sensitivity, and a defined lifecycle management plan specifying conditions for ongoing maintenance or eventual retirement/archiving. Regularly leverage the Center of Excellence dashboards to review platform adoption metrics and identify potential risk hotspots that may require additional governance attention or training interventions.
+- **Establish transparency as a fundamental organizational norm for all low-code development.** Require that each solution and AI agent have clearly documented elements, including: a designated business owner who maintains accountability, a purpose statement that articulates the business problem being solved, appropriate data classification based on sensitivity, and a defined lifecycle management plan specifying conditions for ongoing maintenance or eventual retirement/archiving. Regularly leverage the Center of Excellence dashboards to review platform adoption metrics and identify potential risk hotspots that may require additional governance attention or training interventions.
 
 ## Securing the **Default environment**
 
@@ -98,7 +98,7 @@ A multi‑environment topology reduces blast radius and makes governance enforce
   - **Department/Project Dev** → **Test/UAT** → **Production** (with increasing controls).  
   Use **environment routing** to automatically place makers into their personal developer environment by default.  
 - **How to give users their own developer environment**:  
-  - Allow **Developer environment** creation for a defined security group; or pre‑provision via admin center.  
+  - Allow **Developer environment** creation for a defined security group, or pre‑provision via the admin center.  
   - Combine with environment routing so new makers land in *their* sandbox and not the default environment.  
 - **Apply ALM with pipelines**: Makers deploy solutions forward via **pipelines** that you configured, with approvals before higher environments.  
 
@@ -116,7 +116,7 @@ Copilot Studio now exposes security/governance levers equivalent to the rest of 
 
 ## Minimizing risk while keeping agent momentum high
 
-- **Standardize an agent lifecycle** (Discovery → Design → Build → Test → Publish → Monitor): Microsoft’s agent governance guidance breaks this into phases with environment strategy, ALM, and security at each step. Bake this into your CoE operating model.  
+- **Standardize an agent lifecycle** (Discovery → Design → Build → Test → Publish → Monitor): Microsoft's agent governance guidance breaks this into phases with environment strategy, ALM, and security at each step. Bake this into your CoE operating model.  
 - **Guardrails by default**:  
   - Agents must live inside solutions; connectors must comply with DLP and tenant isolation; only approved channels can be enabled.  
   - Makers get **security warnings** pre‑publish; production publish requires **approvals**.  
@@ -132,7 +132,7 @@ Use **Power Platform pipelines** and (for agents) **advanced approvals** in agen
    - Test→Prod requires an approver (e.g., environment admin or product owner).  
    - Approvals and audit logs are stored automatically.  
 2. **Agent publication approvals** (Copilot Studio):  
-   - Add an “approval gate” before enabling new channels (e.g., Teams org‑wide) or changing auth from Entra‑based to “No authentication.”  
+   - Add an "approval gate" before enabling new channels (e.g., Teams org‑wide) or changing auth from Entra‑based to "No authentication".  
    - Use **advanced/multistage approvals** (now GA) for complex stakeholder chains (Security → Data Owner → Product Owner).  
 
 *Result*: fast inner loop (dev/test) with high confidence for production releases and channel exposure.
@@ -159,7 +159,7 @@ Use **Power Platform pipelines** and (for agents) **advanced approvals** in agen
 
 ## Quick policy defaults (you can tighten/relax later)
 
-- **Default environment**: Restrictive DLP; Managed Environment on; no production data; welcome content pointing to request form for project environments.  
+- **Default environment**: Restrictive DLP; Managed Environment on; no production data; welcome content pointing to the request form for project environments.  
 - **DEV**: DLP allows required business connectors; block public/social and generic HTTP except explicit endpoints; tenant isolation **On**.  
 - **TEST**: Same as DEV plus stricter endpoint/action filters; pipelines required.  
 - **PROD**: Managed Environment; pipelines with approvals; only managed solutions; tight DLP; no anonymous channels for agents.  
