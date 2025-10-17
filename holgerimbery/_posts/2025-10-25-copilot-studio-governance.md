@@ -16,7 +16,9 @@ toc: true
 > **Summary Lede**:  
 > With the rapid adoption of Microsoft Copilot Studio and the broader Power Platform, organizations face the dual challenge of empowering citizen developers while maintaining robust governance over data and applications. This guide provides practical strategies for IT and business managers to implement effective governance frameworks that balance innovation with security.
 
-Effective Power Platform governance strategically **enables** citizen developers while **protecting** organizational data assets. Traditional IT approaches that implement a "full lockdown" (blocking app/flow/agent creation or overly restricting connectors) rarely achieve their intended risk reduction goals; instead, they inadvertently push development activities toward spreadsheets, shadow IT solutions, and ungoverned tools—creating environments where security teams have significantly less visibility and control over data movement. Microsoft's current enterprise guidance strongly favors implementing **guardrails over gates**: establishing a comprehensive environment strategy, deploying granular data loss prevention policies (DLP), enforcing tenant isolation boundaries, implementing Managed Environments with appropriate controls, utilizing deployment pipelines with structured approvals, and maintaining continuous monitoring through the Center of Excellence (CoE) Starter Kit alongside robust audit integrations. This balanced approach preserves innovation velocity while ensuring appropriate security, compliance, and operational excellence.
+Effective Power Platform governance strategically **enables** citizen developers while **protecting** organizational data assets. Traditional IT approaches that implement a "full lockdown" (blocking app/flow/agent creation or overly restricting connectors) rarely achieve their intended risk reduction goals; instead, they inadvertently push development activities toward spreadsheets, shadow IT solutions, and ungoverned tools—creating environments where security teams have significantly less visibility and control over data movement. 
+
+Microsoft's current enterprise guidance strongly favors implementing **guardrails over gates**: establishing a comprehensive environment strategy, deploying granular data loss prevention policies (DLP), enforcing tenant isolation boundaries, implementing Managed Environments with appropriate controls, utilizing deployment pipelines with structured approvals, and maintaining continuous monitoring through the Center of Excellence (CoE) Starter Kit alongside robust audit integrations. This balanced approach preserves innovation velocity while ensuring appropriate security, compliance, and operational excellence.
 
 **How to enable business-led innovation without compromising security, privacy, or compliance**
 
@@ -76,8 +78,6 @@ The default environment is for **personal productivity and learning**, not produ
 3. **Enable Managed Environments** for insights, sharing limits, and governance actions in the default environment; continuously **track connectors** used here and redirect riskier scenarios to proper dev/test environments.  
 4. **Control who can create environments** (Production/Trial/Developer) through tenant settings; pair with PIM/JIT for admin roles.  
 
----
-
 ## Connector governance and DLP
 
 **Connectors are the primary data egress vector.** Use policies that are precise enough to protect data without stalling development:
@@ -86,8 +86,6 @@ The default environment is for **personal productivity and learning**, not produ
 - **Tenant‑wide policy**: maintain a baseline that blocks high‑risk connectors and combinations; **environment‑level policies** add or tighten rules for production vs. dev/test.  
 - **Tenant isolation**: block cross‑tenant connections for Entra‑ID‑based connectors; add allow‑lists where business requires, noting current product limitations.  
 - **Complementary controls**: IP firewalls for environments and Conditional Access to restrict access from unmanaged devices and locations.  
-
----
 
 ## Why you need **multiple environments** (and how to give every user a safe dev space)
 
