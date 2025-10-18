@@ -50,10 +50,10 @@ Microsoft highlights customers building SAP‑aware copilots to accelerate routi
 
 2) **Product and ATP lookups**: Search by category, price, or material; confirm availability; propose substitutions. (OData entity sets from SAP Gateway or S/4HANA).   
 3) **Business partner and supplier checks**: Find suppliers/customers by name, city, or role; fetch contact details.   
-4) **Approvals and postings**: Kick off approvals or post to SAP via BAPIs (e.g., create SO, post time) using the SAP ERP connector through the on‑premises data gateway. 
-5) **Analytics on HANA as knowledge**: For read‑only Q&A on curated HANA data sets, use Copilot Studio's SAP HANA knowledge source (real‑time reasoning without copying data). 
-6) **Incident and ticket management**: Integrate with SAP Solution Manager or ITSM systems to create, update, or query tickets.
-7) **HR and expense queries**: Access SuccessFactors or Concur data for leave balances, expense status, etc. (OData services).
+4) **Approvals and postings**: Kick off approvals or post to SAP via BAPIs (e.g., create SO, post time) using the SAP ERP connector through the on‑premises data gateway.  
+5) **Analytics on HANA as knowledge**: For read‑only Q&A on curated HANA data sets, use Copilot Studio's SAP HANA knowledge source (real‑time reasoning without copying data).  
+6) **Incident and ticket management**: Integrate with SAP Solution Manager or ITSM systems to create, update, or query tickets.  
+7) **HR and expense queries**: Access SuccessFactors or Concur data for leave balances, expense status, etc. (OData services).  
 8) **Custom workflows**: Build tailored processes that combine SAP data with Microsoft 365 actions (e.g., notify a team in Teams when a high‑value order is delayed).
 
 
