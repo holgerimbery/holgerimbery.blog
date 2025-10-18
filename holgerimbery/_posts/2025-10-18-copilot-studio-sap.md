@@ -142,13 +142,13 @@ to get started (both roles)
 
 ## Additional resources
 
-- [**Field demo** — "Simplifying SAP Access with Gen AI" (Aditheos): end‑to‑end pattern, agent flows, Teams channel.](https://aditheos.com/2025/06/26/simplifying-sap-access-with-gen-ai-built-on-copilot-studio-integrated-via-sap-btp-azure-apim-delivered-in-teams-copilot/)  
+- [**Field demo** — "Simplifying SAP Access with Gen AI" (Aditheos): end‑to‑end pattern, agent flows, Teams channel](https://aditheos.com/2025/06/26/simplifying-sap-access-with-gen-ai-built-on-copilot-studio-integrated-via-sap-btp-azure-apim-delivered-in-teams-copilot/)  
 - [**SAP OData connector** and **SAP ERP connector** docs (auth options, gateway, setup)](https://learn.microsoft.com/en-us/power-platform/sap/connect/sap-erp-connector)  
-- [**Azure API Management** — Import SAP OData metadata directly; policy‑based governance.](https://learn.microsoft.com/en-us/azure/api-management/sap-api)  
-- [**SAP Integration Suite API Management** — API gateway, products, policies, lifecycle.](https://help.sap.com/docs/sap-btp-guidance-framework/integration-architecture-guide/applying-api-management)  
-- [**Principal propagation** patterns (Entra ID ↔ SAP).](https://community.sap.com/t5/technology-blog-posts-by-sap/principal-propagation-between-azure-ad-and-an-on-premise-sap-system-through/ba-p/13503731)  
-- [**Publish agents to Teams/M365 Copilot** and **Copilot extensibility**.](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/)  
-- [**Architecture references** for SAP + Power Platform/Copilot Studio.](https://learn.microsoft.com/en-us/power-platform/architecture/reference-architectures/arch-pattern-sap)
+- [**Azure API Management** — Import SAP OData metadata directly; policy‑based governance](https://learn.microsoft.com/en-us/azure/api-management/sap-api)  
+- [**SAP Integration Suite API Management** — API gateway, products, policies, lifecycle](https://help.sap.com/docs/sap-btp-guidance-framework/integration-architecture-guide/applying-api-management)  
+- [**Principal propagation** patterns (Entra ID ↔ SAP)](https://community.sap.com/t5/technology-blog-posts-by-sap/principal-propagation-between-azure-ad-and-an-on-premise-sap-system-through/ba-p/13503731)  
+- [**Publish agents to Teams/M365 Copilot** and **Copilot extensibility**](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/)  
+- [**Architecture references** for SAP + Power Platform/Copilot Studio](https://learn.microsoft.com/en-us/power-platform/architecture/reference-architectures/arch-pattern-sap)
 
 
 ## Conclusion
