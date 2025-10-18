@@ -126,7 +126,7 @@ Microsoft and SAP provide step-by-step guides for Entra ID SSO to SAP BTP, as we
 to get started (both roles)
 
 **Business owner**
-- Prioritize 2–3 high‑impact questions (e.g., "What's shipping late today?"). Keep scope tight for your first agent.  
+- Prioritize 2–3 high‑impact questions (e.g., "What's shipping late today?"). Keep the scope tight for your first agent.  
 - Decide the channel (Teams/M365 Copilot) and audiences for rollout and testing. 
 
 **Developer/architect**
