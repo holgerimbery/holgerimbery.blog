@@ -79,7 +79,8 @@ Microsoft and SAP provide step-by-step guides for Entra ID SSO to SAP BTP, as we
 
 ### A) For business users — "Sales operations in Teams, no context‑switch"
 
-**Scenario**: A sales manager asks in Teams: *"List undelivered sales orders for Contoso placed this week, and show header + top 5 items."* The Copilot Studio agent (published to Teams/M365 Copilot) resolves intent, calls an SAP OData tool, returns a table, and offers quick actions (share to channel, export, kick off an email) without leaving Teams—impact: fewer clicks, faster status checks, and less time hunting through SAP GUI or reports. 
+**Scenario**: A sales manager asks in Teams: *"List undelivered sales orders for Contoso placed this week, and show header + top 5 items."*  
+The Copilot Studio agent (published to Teams/M365 Copilot) resolves intent, calls an SAP OData tool, returns a table, and offers quick actions (share to channel, export, kick off an email) without leaving Teams—impact: fewer clicks, faster status checks, and less time hunting through SAP GUI or reports. 
 
 ### B) For developers — "Guided implementation"
 
