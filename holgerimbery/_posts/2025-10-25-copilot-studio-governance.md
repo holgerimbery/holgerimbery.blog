@@ -131,7 +131,7 @@ Use **Power Platform pipelines** and (for agents) **advanced approvals** in agen
    - Approvals and audit logs are stored automatically.  
 2. **Agent publication approvals** (Copilot Studio):  
    - Add an "approval gate" before enabling new channels (e.g., Teams org‑wide) or changing auth from Entra‑based to "No authentication".  
-   - Use **advanced/multistage approvals** (now GA) for complex stakeholder chains (Security → Data Owner → Product Owner).  
+   - Use **advanced/multistage approvals** for complex stakeholder chains (Security → Data Owner → Product Owner).  
 
 *Result*: fast inner loop (dev/test) with high confidence for production releases and channel exposure.
 
