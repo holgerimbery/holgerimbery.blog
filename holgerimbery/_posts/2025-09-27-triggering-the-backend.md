@@ -10,7 +10,7 @@ image_caption: Photo by <a href="https://unsplash.com/@adamanium?utm_content=cre
 
 category: [copilotstudio, aifoundry]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 
