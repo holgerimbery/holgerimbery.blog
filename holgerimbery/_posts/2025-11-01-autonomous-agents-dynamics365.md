@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft First‑Party Autonomous Agents for Dynamics 365 Customer Service and Sales
-description:
+description: Technical overview and configuration guide for Microsoft first‑party autonomous agents for Dynamics 365 Customer Service, Contact Center, and Sales, including purpose, scope, expected outcomes, prerequisites, enablement steps, key configuration choices, and guardrails.
 date: 2025-11-01
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/mcharlesdeluvio-Lks7vei-eAg-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/photos/man-using-macbook-Lks7vei-eAg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
