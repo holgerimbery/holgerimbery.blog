@@ -9,7 +9,7 @@ image_caption: Photo by <a href="https://unsplash.com/@christophe_myr?utm_conten
 
 category: [copilotstudio, powerautomate, autonomousagents, agents]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 
