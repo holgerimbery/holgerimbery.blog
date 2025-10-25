@@ -10,7 +10,7 @@ image_caption: Photo by <a href="https://unsplash.com/@thisisengineering?utm_con
 
 category: [copilotstudio, aifoundry, agents]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 
