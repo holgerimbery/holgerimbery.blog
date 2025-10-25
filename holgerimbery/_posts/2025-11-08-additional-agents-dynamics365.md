@@ -86,36 +86,36 @@ It integrates with Project Operations policy artifacts for rates, approvals, and
 
 ## Activation & configuration (environment‑centric, step‑by‑step)
 
-> **Pre‑flight common to all agents.**  
-> - Validate **licensing and app footprint** (e.g., Dynamics 365 Sales, Business Central, Field Service, Project Operations). Confirm preview eligibility and region availability for each agent in your tenant.  
-> - Prepare **Dev/Test/Prod** environments and plan a **staged rollout** per team/territory. Maintain configuration as managed solutions where possible for reversibility.  
-> - Decide your **automation level** per agent, favoring assistive (human‑in‑the‑loop) pilots before moving to fully autonomous operation.
+**Pre‑flight common to all agents.**  
+- Validate **licensing and app footprint** (e.g., Dynamics 365 Sales, Business Central, Field Service, Project Operations). Confirm preview eligibility and region availability for each agent in your tenant.  
+- Prepare **Dev/Test/Prod** environments and plan a **staged rollout** per team/territory. Maintain configuration as managed solutions where possible for reversibility.  
+- Decide your **automation level** per agent, favoring assistive (human‑in‑the‑loop) pilots before moving to fully autonomous operation.
 
 ### Sales Qualification Agent — enablement and setup  
-1) **Enable the agent in Dynamics 365 Sales** under *App Settings → Copilot → Agents (preview)* and scope to one sales team first. Provide your **ideal customer profile** (industry, employee count, revenue, geo, roles).  
-2) **Connect knowledge sources** using Copilot Studio where needed (pricing sheets, product one‑pagers, FAQs) to improve outreach accuracy and objection handling.  
-3) **Select automation level:** start with research/drafting only and require seller approval; graduate to **autonomous follow‑ups** for a bounded long‑tail segment once quality meets thresholds.  
-4) **Observe telemetry** (response rates, handoff quality) and adjust ICP criteria, outreach frequency, and guardrails.
+- **Enable the agent in Dynamics 365 Sales** under *App Settings → Copilot → Agents (preview)* and scope to one sales team first. Provide your **ideal customer profile** (industry, employee count, revenue, geo, roles).  
+- **Connect knowledge sources** using Copilot Studio where needed (pricing sheets, product one‑pagers, FAQs) to improve outreach accuracy and objection handling.  
+- **Select automation level:** start with research/drafting only and require seller approval; graduate to **autonomous follow‑ups** for a bounded long‑tail segment once quality meets thresholds.  
+- **Observe telemetry** (response rates, handoff quality) and adjust ICP criteria, outreach frequency, and guardrails.
 
 ### Sales Order Agent — enablement and setup  
-1) **Turn on the agent** in *Business Central → Copilot/Agents settings* and connect intake channels (shared mailboxes, portal, EDI). Define **validation rules** (mandatory fields, pricing, credit checks).  
-2) **Configure exception paths** (when data is incomplete or mismatched) and specify **customer communication templates** for confirmations or clarifications.  
-3) **Pilot with a limited SKU/catalog** and a single region to baseline exception ratios before expanding scope.
+- **Turn on the agent** in *Business Central → Copilot/Agents settings* and connect intake channels (shared mailboxes, portal, EDI). Define **validation rules** (mandatory fields, pricing, credit checks).  
+- **Configure exception paths** (when data is incomplete or mismatched) and specify **customer communication templates** for confirmations or clarifications.  
+- **Pilot with a limited SKU/catalog** and a single region to baseline exception ratios before expanding scope.
 
 ### Scheduling Operations Agent — enablement and setup  
-1) **Enable the agent** within **Field Service** and import optimization defaults for **skills, territories, SLAs, travel weights**, and maximum reschedule frequency.  
-2) **Run shadow optimization** for a week (suggest only, no auto‑apply) and compare proposed vs. actual schedules for hit rate and travel deltas.  
-3) **Move to auto‑apply** for low‑risk work orders (routine maintenance) before including break/fix SLAs.
+- **Enable the agent** within **Field Service** and import optimization defaults for **skills, territories, SLAs, travel weights**, and maximum reschedule frequency.  
+- **Run shadow optimization** for a week (suggest only, no auto‑apply) and compare proposed vs. actual schedules for hit rate and travel deltas.  
+- **Move to auto‑apply** for low‑risk work orders (routine maintenance) before including break/fix SLAs.
 
 ### Supplier Communications Agent — enablement and setup  
-1) **Activate in Supply Chain Management** and associate it with **supplier scorecards** and ASN/confirmation data sources.  
-2) Define **delay thresholds** and **escalation actions** (e.g., alternative supplier check, reschedule downstream work orders, notify dispatch).  
-3) Configure **Teams notifications** for buyers and service ops when risk events trigger.
+- **Activate in Supply Chain Management** and associate it with **supplier scorecards** and ASN/confirmation data sources.  
+- Define **delay thresholds** and **escalation actions** (e.g., alternative supplier check, reschedule downstream work orders, notify dispatch).  
+- Configure **Teams notifications** for buyers and service ops when risk events trigger.
 
 ### Time and Expense Agent — enablement and setup  
-1) **Enable in Project Operations** and align with **approval hierarchies** and engagement rules (e.g., travel policies, caps, project codes).  
-2) **Turn on proactive nudges** (weekly reminders, close‑of‑month enforcement) and **validation rules** (missing PO, outside work window, non‑billable categories).  
-3) **Track compliance and invoice cycle time** in a pilot portfolio before widening scope across practices.
+- **Enable in Project Operations** and align with **approval hierarchies** and engagement rules (e.g., travel policies, caps, project codes).  
+- **Turn on proactive nudges** (weekly reminders, close‑of‑month enforcement) and **validation rules** (missing PO, outside work window, non‑billable categories).  
+- **Track compliance and invoice cycle time** in a pilot portfolio before widening scope across practices.
 
 
 ## Governance, security, and rollout guidance
@@ -126,15 +126,15 @@ It integrates with Project Operations policy artifacts for rates, approvals, and
 
 ## Pilot recipes tailored to Sales and Service organizations
 
-1) **Long‑tail lead coverage (Sales Qualification Agent).** Start with a backlog of unworked MQLs older than 30 days. Run the agent in draft‑only mode for two weeks, review email quality with sales ops, and then enable autonomous follow‑ups with clear handoff rules (meeting booked, pricing requested). Measure reply rates and qualified meeting set rate against a control group.
+-  **Long‑tail lead coverage (Sales Qualification Agent).** Start with a backlog of unworked MQLs older than 30 days. Run the agent in draft‑only mode for two weeks, review email quality with sales ops, and then enable autonomous follow‑ups with clear handoff rules (meeting booked, pricing requested). Measure reply rates and qualified meeting set rate against a control group.
 
-2) **Frictionless order intake (Sales Order Agent).** Choose one small catalog (≤50 SKUs) and a single region. Map top five error patterns, configure validation rules for those, and monitor exception rates and average order cycle time before/after. Expand the catalog only after exception ratios stay below an agreed threshold.
+- **Frictionless order intake (Sales Order Agent).** Choose one small catalog (≤50 SKUs) and a single region. Map top five error patterns, configure validation rules for those, and monitor exception rates and average order cycle time before/after. Expand the catalog only after exception ratios stay below an agreed threshold.
 
-3) **Dynamic dispatch for routine maintenance (Scheduling Operations Agent).** Restrict auto‑apply to preventive maintenance jobs for one territory. Compare total travel minutes/technician/day and SLA adherence over a 4‑week period to your historic baseline. If stable, widen to low‑complexity break/fix.
+- **Dynamic dispatch for routine maintenance (Scheduling Operations Agent).** Restrict auto‑apply to preventive maintenance jobs for one territory. Compare total travel minutes/technician/day and SLA adherence over a 4‑week period to your historic baseline. If stable, widen to low‑complexity break/fix.
 
-4) **Supplier delay mitigations for parts‑dependent service (Supplier Communications Agent).** Bind the agent to the top three suppliers by ticket impact. Set conservative thresholds (e.g., warn at T‑48h, escalate at T‑24h). Track avoided truck rolls and rescheduled jobs with customer notice windows met.
+- **Supplier delay mitigations for parts‑dependent service (Supplier Communications Agent).** Bind the agent to the top three suppliers by ticket impact. Set conservative thresholds (e.g., warn at T‑48h, escalate at T‑24h). Track avoided truck rolls and rescheduled jobs with customer notice windows met.
 
-5) **Fast close for T&M projects (Time and Expense Agent).** Enable weekly nudges and validation for one practice. Measure time‑submission compliance and invoice cycle time; then layer expense automation. Roll out to other practices once compliance stabilizes above your target.
+- **Fast close for T&M projects (Time and Expense Agent).** Enable weekly nudges and validation for one practice. Measure time‑submission compliance and invoice cycle time; then layer expense automation. Roll out to other practices once compliance stabilizes above your target.
 
 
 ## Troubleshooting & operational guardrails
@@ -148,24 +148,22 @@ It integrates with Project Operations policy artifacts for rates, approvals, and
 
 ## Link list — next steps & documentation
 
-- Microsoft Dynamics 365 blog (introduction of **ten** autonomous agents for Sales, Service, Finance, Supply Chain):  
-  https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes/  
+- [Microsoft Dynamics 365 blog (introduction of **ten** autonomous agents for Sales, Service, Finance, Supply Chain)](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes/)  
 
-- Overview and catalog of agents summarized by Microsoft partners and press:  
-  Bridgeall summary of 10 agents: https://www.bridgeall.com/2024/12/05/microsoft-launches-10-new-ai-agents-for-dynamics-365/  
-  CX Today coverage: https://www.cxtoday.com/crm/microsoft-makes-its-agentic-ai-move-announces-ten-pre-built-agents-for-dynamics/  
-  VentureBeat analysis: https://venturebeat.com/ai/microsofts-10-new-ai-agents-strengthen-its-enterprise-automation-lead/  
+- [Overview and catalog of agents summarized by Microsoft partners and press](https://www.bridgeall.com/2024/12/05/microsoft-launches-10-new-ai-agents-for-dynamics-365/)  
+  [CX Today coverage](https://www.cxtoday.com/crm/microsoft-makes-its-agentic-ai-move-announces-ten-pre-built-agents-for-dynamics/)  
+  [VentureBeat analysis](https://venturebeat.com/ai/microsofts-10-new-ai-agents-strengthen-its-enterprise-automation-lead/)  
 
 - Sales Qualification Agent — rollout and autonomy update:  
-  M365 admin summary: https://m365admin.handsontek.net/dynamics-365-sales-sales-qualification-agent-now-fully-autonomous/  
-  Netwise blog (setup pointers): https://netwiseglobal.com/blog/crm-in-the-age-of-autonomous-agents/  
+  [M365 admin summary](https://m365admin.handsontek.net/dynamics-365-sales-sales-qualification-agent-now-fully-autonomous/)  
+  [Netwise blog (setup pointers)](https://netwiseglobal.com/blog/crm-in-the-age-of-autonomous-agents/)  
 
 - Field Service/Project Operations context for Scheduling & Time/Expense agents (ecosystem overviews):  
-  Alphabold overview: https://www.alphabold.com/autonomous-agents-in-copilot-studio-and-dynamics-365/  
+  [Alphabold overview](https://www.alphabold.com/autonomous-agents-in-copilot-studio-and-dynamics-365/)  
 
 - Copilot Studio (governance and extensibility for knowledge sources, guardrails, and triggers):  
-  Copilot Studio blog (agent capabilities): https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/unlocking-autonomous-agent-capabilities-with-microsoft-copilot-studio/  
-  Power Platform community post (agent governance concepts): https://community.powerplatform.com/blogs/post/?postid=994b012d-1790-ef11-ac20-7c1e5215a0d6  
+  [Copilot Studio blog (agent capabilities)](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/unlocking-autonomous-agent-capabilities-with-microsoft-copilot-studio/)  
+  [Power Platform community post (agent governance concepts)](https://community.powerplatform.com/blogs/post/?postid=994b012d-1790-ef11-ac20-7c1e5215a0d6)  
 
 ## Conclusion
 

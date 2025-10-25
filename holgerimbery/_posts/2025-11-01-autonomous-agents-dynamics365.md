@@ -3,7 +3,7 @@ layout: post
 title: Microsoft First‑Party Autonomous Agents for Dynamics 365 Customer Service and Sales
 description: Technical overview and configuration guide for Microsoft first‑party autonomous agents for Dynamics 365 Customer Service, Contact Center, and Sales, including purpose, scope, expected outcomes, prerequisites, enablement steps, key configuration choices, and guardrails.
 date: 2025-11-01
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/mcharlesdeluvio-Lks7vei-eAg-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/charlesdeluvio-Lks7vei-eAg-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/photos/man-using-macbook-Lks7vei-eAg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 category: [dynamics365, sales, customerservice, copilotstudio, agents]
 author: admin
@@ -27,7 +27,8 @@ toc: true
 - **Sales Agent** (Microsoft 365 Copilot for Sales, works with Dynamics 365 Sales or Salesforce): Researches leads, drafts outreach, follows up, can operate autonomously to qualify and hand off.
 
 {: .important }
-> **Status note** Customer Service/Contact Center agents and Sales Agent capabilities referenced here include preview features with staged regional rollout. Treat preview features accordingly in production planning.
+**Status note** 
+Customer Service/Contact Center agents and Sales Agent capabilities referenced here include preview features with staged regional rollout. Treat preview features accordingly in production planning.
 
 
 ## Abstracts: purpose and benefits by persona
@@ -76,68 +77,61 @@ Provides a first-party integration that connects directly to the organization's 
 
 ## Activation & configuration (environment‑centric)
 
-> **Pre‑flight for all agents (recommended).**
-> - Use a **non‑production** environment first; plan Dev/Test/Prod with solution‑aware ALM for customizations.
-> - Confirm **data residency** and **compliance** allowances for generative AI features in your tenant.
-> - Where required, link an **Azure subscription** for **Power Platform pay‑as‑you‑go** consumption and consider the setting to move data across regions for copilots/generative features.
-> - Use the preview **Agent hub** to plan and monitor adoption with rollout plans and insights.
+**Pre‑flight for all agents (recommended).**
+- Use a **non‑production** environment first; plan Dev/Test/Prod with solution‑aware ALM for customizations.
+- Confirm **data residency** and **compliance** allowances for generative AI features in your tenant.
+- Where required, link an **Azure subscription** for **Power Platform pay‑as‑you‑go** consumption and consider the setting to move data across regions for copilots/generative features.
+- Use the preview **Agent hub** to plan and monitor adoption with rollout plans and insights.
 
 ### Customer Intent Agent
-**Prerequisites.**
+#### Prerequisites
 - Dynamics 365 Customer Service or Dynamics 365 Contact Center environment.
 - Channel setup for targeted channels (chat/voice) if using real‑time conversation capabilities.
 
-**Enable & configure.**
-1) Open the admin experience and locate **Customer Intent Agent**.  
-2) **Seed the intent library** from historical cases and conversations; review discovered intents and attributes.  
-3) **Self‑service integration:** connect **Copilot Studio** customer‑facing agents to the intent library so the copilot can detect intents, ask follow‑ups (slot filling), and query knowledge.  
-4) **Assisted service integration:** enable intent‑based suggestions in the agent desktop so reps get next questions/solutions and see intent changes mid‑conversation.  
-5) **Govern rollout:** use **rollout plans** in Agent hub to scope to selected intents/queues; monitor handle time and suggestion acceptance.
-
-**Operational notes.** Preview feature; validate language/channel coverage and regional availability before broad rollout.
+#### Enable & configure  
+- Open the admin experience and locate **Customer Intent Agent**.  
+- **Seed the intent library** from historical cases and conversations; review discovered intents and attributes.  
+- **Self‑service integration:** connect **Copilot Studio** customer‑facing agents to the intent library so the copilot can detect intents, ask follow‑ups (slot filling), and query knowledge.  
+- **Assisted service integration:** enable intent‑based suggestions in the agent desktop so reps get next questions/solutions and see intent changes mid‑conversation.  
+- **Govern rollout:** use **rollout plans** in Agent hub to scope to selected intents/queues; monitor handle time and suggestion acceptance.
 
 ### Case Management Agent
-**Prerequisites.**
+#### Prerequisites
 - Dynamics 365 Customer Service.  
 - For autonomous creation from conversations: **authenticated chat/voice**, **workstreams**, and **queues** configured. For email, **automatic record creation and update (ARC) rules**. Enable AI form‑fill assistance and, if applicable, consumption billing.
 
-**Enable & configure (creation & update).**
-1) In **Copilot Service admin center** → **Case settings** → **Case Management Agent** (**Manage**), enable **Autonomous case creation** (per channel) and **Autonomous case updates**. Map conversation/email context to target case fields.  
-2) Configure field mappings, prediction targets, and thresholds; validate on representative chats/emails.
+#### Enable & configure (creation & update)
+- In **Copilot Service admin center** → **Case settings** → **Case Management Agent** (**Manage**), enable **Autonomous case creation** (per channel) and **Autonomous case updates**. Map conversation/email context to target case fields.  
+- Configure field mappings, prediction targets, and thresholds; validate on representative chats/emails.
 
-**Enable & configure (resolution).**
-3) In **Global settings** for Case Management Agent, set the **Application user** for outbound email, default templates, and usage of **Copilot template recommendations**.  
-4) Per **line of business**, set **automation level**:  
+#### Enable & configure (resolution)
+- In **Global settings** for Case Management Agent, set the **Application user** for outbound email, default templates, and usage of **Copilot template recommendations**.  
+- Per **line of business**, set **automation level**:  
    - *Semi‑autonomous*: draft resolution emails for human approval.  
    - *Full*: AI agent sends emails and closes the case when conditions are satisfied.
-
-**Integration & extension.**  
+#### Integration & extension
 - Trigger enrichment/resolution programmatically via the business event **`msdyn_invokeCaseProcessingAgent`** (HTTP) to handle custom scenarios (e.g., portal cases or custom tables).
-
-**Operational notes.** Track GA timing and feature evolution in release plans; keep pilots scoped until you verify quality, identity, and compliance settings.
 
 
 ### Customer Knowledge Management Agent
-**Prerequisites.**
+#### Prerequisites
 - Dynamics 365 knowledge management configured; Copilot access to internal knowledge base enabled. Connection references for the real‑time flow configured if required.
 
-**Enable & configure.**
-1) In **Copilot Service admin center** → **Support experience** → **Knowledge** → **Customer Knowledge Management Agent (preview)** → **Manage**. Enable **Real‑time creation** for **Cases** and/or **Conversations** (triggered on case resolution or chat close).  
-2) Define **scoping rules** (which resolved cases/conversations trigger article creation).  
-3) Enable **Historical creation** to mine past cases; configure compliance filters (e.g., PII scrubbing) and publishing behavior.  
-4) Set up **review workflows** (approve/edit/split & publish) and enable **knowledge insights** dashboards to track quality and usage.
-
-**Operational notes.** Clarify authorship and publishing responsibilities; maintain policies for sensitive content and retention of drafts.
+#### Enable & configure
+- In **Copilot Service admin center** → **Support experience** → **Knowledge** → **Customer Knowledge Management Agent (preview)** → **Manage**. Enable **Real‑time creation** for **Cases** and/or **Conversations** (triggered on case resolution or chat close).  
+- Define **scoping rules** (which resolved cases/conversations trigger article creation).  
+- Enable **Historical creation** to mine past cases; configure compliance filters (e.g., PII scrubbing) and publishing behavior.  
+- Set up **review workflows** (approve/edit/split & publish) and enable **knowledge insights** dashboards to track quality and usage.
 
 
 ### Sales Agent (Microsoft 365 Copilot for Sales)
-**Prerequisites.**
+#### Prerequisites
 - Copilot for Sales enabled and connected to **Dynamics 365 Sales** or **Salesforce**.
 
-**Enable & configure.**
-1) Access **Sales Agent** in Copilot for Sales; confirm CRM connection and lead sources.  
-2) Provide **knowledge** (company/product value propositions, pricing sheets) and define **behavior** (tone, follow‑up cadence, handover criteria).  
-3) Start in **assistive mode** (seller in the loop) to validate research quality and email drafts, then pilot **autonomous** engagement for long‑tail leads with strict guardrails.
+#### Enable & configure
+- Access **Sales Agent** in Copilot for Sales; confirm CRM connection and lead sources.  
+- Provide **knowledge** (company/product value propositions, pricing sheets) and define **behavior** (tone, follow‑up cadence, handover criteria).  
+- Start in **assistive mode** (seller in the loop) to validate research quality and email drafts, then pilot **autonomous** engagement for long‑tail leads with strict guardrails.
 
 **Operational notes.** Treat autonomous outreach like any outbound automation: enforce opt‑out, suppression lists, DKIM/SPF alignment, and CRM hygiene.
 
@@ -152,13 +146,13 @@ Provides a first-party integration that connects directly to the organization's 
 
 ## Pilot recipes you can implement this week
 
-1) **Accelerate case admin (no code).** Enable Case Management Agent for **autonomous updates** only; keep creation/resolution manual. Map the 5–8 most error‑prone fields; audit predictions on a 50‑conversation/email sample.
+- **Accelerate case admin (no code).** Enable Case Management Agent for **autonomous updates** only; keep creation/resolution manual. Map the 5–8 most error‑prone fields; audit predictions on a 50‑conversation/email sample.
 
-2) **Seed an intent library for peak drivers.** Turn on Customer Intent Agent; ingest 3–6 months of cases/chats; review top 20 intents and attributes. Roll out to one queue with Agent hub controls.
+- **Seed an intent library for peak drivers.** Turn on Customer Intent Agent; ingest 3–6 months of cases/chats; review top 20 intents and attributes. Roll out to one queue with Agent hub controls.
 
-3) **Evergreen knowledge on a hot topic.** Enable Customer Knowledge Management Agent (real‑time) scoped to one product and an “outage” intent; route drafts to a single reviewer; monitor knowledge insights.
+- **Evergreen knowledge on a hot topic.** Enable Customer Knowledge Management Agent (real‑time) scoped to one product and an “outage” intent; route drafts to a single reviewer; monitor knowledge insights.
 
-4) **Autonomous long‑tail lead nurture.** Configure Sales Agent with strict guardrails to engage unassigned leads from a CSV; hand off on positive reply; monitor conversions.
+- **Autonomous long‑tail lead nurture.** Configure Sales Agent with strict guardrails to engage unassigned leads from a CSV; hand off on positive reply; monitor conversions.
 
 
 ## Troubleshooting & operational guardrails
@@ -172,28 +166,28 @@ Provides a first-party integration that connects directly to the organization's 
 ## Link list — next steps & documentation
 
 **Customer Service & Contact Center (autonomous agents)**
-- Autonomous service agents (overview): https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/autonomous-agents-overview
-- Agent hub (preview): https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-agent-hub
-- Customer Intent Agent (overview & setup): https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-customer-intent-agent
-- Case Management Agent – set up creation/update: https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-autonomous-case-agents
-- Case Management Agent – use creation/update: https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-case-creation-agent
-- Case Management Agent – set up resolution: https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent
-- Case Management Agent – developer trigger (`msdyn_invokeCaseProcessingAgent`): https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/use-case-processing-agent
-- Customer Knowledge Management Agent – manage: https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent
-- Customer Knowledge Management Agent – knowledge insights: https://learn.microsoft.com/en-us/dynamics365/customer-service/use/admin-km-agent-insights
-- Customer Knowledge Management Agent – review drafts: https://learn.microsoft.com/en-us/dynamics365/customer-service/use/admin-km-agent-review
+- [Autonomous service agents (overview)](https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/autonomous-agents-overview)
+- [Agent hub (preview)](https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-agent-hub)
+- [Customer Intent Agent (overview & setup)](https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-customer-intent-agent)
+- [Case Management Agent – set up creation/update](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-autonomous-case-agents)
+- [Case Management Agent – use creation/update](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-case-creation-agent)
+- [Case Management Agent – set up resolution](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent)
+- [Case Management Agent – developer trigger (`msdyn_invokeCaseProcessingAgent`)](https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/use-case-processing-agent)
+- [Customer Knowledge Management Agent – manage](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent)
+- [Customer Knowledge Management Agent – knowledge insights](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/admin-km-agent-insights)
+- [Customer Knowledge Management Agent – review drafts](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/admin-km-agent-review)
 - Release plan entries (timelines):
-  - Case Management Agent: https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/automate-case-lifecycle-tasks-case-management-agent
-  - Customer Knowledge Management Agent: https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/use-customer-knowledge-management-agent-update-knowledge-base
+  - [Case Management Agent](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/automate-case-lifecycle-tasks-case-management-agent)
+  - [Customer Knowledge Management Agent](https://learn.microsoft.com/en-us/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/use-customer-knowledge-management-agent-update-knowledge-base)
 
 **Sales**
-- Sales Agent (overview/preview): https://learn.microsoft.com/en-us/microsoft-sales-copilot/sales-agent-overview
-- Microsoft announcement (access & context): https://www.microsoft.com/en-us/microsoft-365/blog/2025/03/05/new-sales-agents-accessible-in-microsoft-365-copilot-help-teams-close-more-deals-faster/
-- Release plan note (autonomous Sales Agent): https://learn.microsoft.com/en-us/copilot/release-plan/2025wave2/copilot-sales/autonomously-grow-qualified-pipeline-sales-agent
+- [Sales Agent (overview/preview)](https://learn.microsoft.com/en-us/microsoft-sales-copilot/sales-agent-overview)
+- [Microsoft announcement (access & context)](https://www.microsoft.com/en-us/microsoft-365/blog/2025/03/05/new-sales-agents-accessible-in-microsoft-365-copilot-help-teams-close-more-deals-faster/)
+- [Release plan note (autonomous Sales Agent)](https://learn.microsoft.com/en-us/copilot/release-plan/2025wave2/copilot-sales/autonomously-grow-qualified-pipeline-sales-agent)
 
 **Copilot Studio**
-- Build an autonomous agent (training): https://learn.microsoft.com/en-us/training/modules/autonomous-agent/
-- Copilot Studio agent capabilities (context): https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/unlocking-autonomous-agent-capabilities-with-microsoft-copilot-studio/
+- [Build an autonomous agent (training)](https://learn.microsoft.com/en-us/training/modules/autonomous-agent/)
+- [Copilot Studio agent capabilities (context)](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/unlocking-autonomous-agent-capabilities-with-microsoft-copilot-studio/)
 
 ## Conclusion
 
