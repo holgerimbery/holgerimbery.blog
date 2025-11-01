@@ -110,6 +110,7 @@ Provides a first-party integration that connects directly to the organization's 
 - Per **line of business**, set **automation level**:  
    - *Semi‑autonomous*: draft resolution emails for human approval.  
    - *Full*: AI agent sends emails and closes the case when conditions are satisfied.
+     
 #### Integration & extension
 - Trigger enrichment/resolution programmatically via the business event **`msdyn_invokeCaseProcessingAgent`** (HTTP) to handle custom scenarios (e.g., portal cases or custom tables).
 
