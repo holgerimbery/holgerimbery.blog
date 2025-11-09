@@ -25,7 +25,7 @@ toc: true
 - **Sales Qualification Agent** (Dynamics 365 Sales). Automates lead research, prioritization, and, under controlled autonomy, multi‑touch outreach and handoffs to sellers.  
 - **Sales Order Agent** (Dynamics 365 Business Central with CRM integration). Processes inbound orders across channels, validates data, handles confirmations, and escalates exceptions.  
 - **Scheduling Operations Agent** (Dynamics 365 Field Service). Continuously optimizes technician assignments when conditions change (skills, SLAs, travel, cancellations).  
-- **Supplier Communications Agent** (Dynamics 365 Supply Chain Management; relevant for service delivery dependencies). Tracks supplier commitments, confirms deliveries, and triggers mitigations when delays are detected.  
+- **Supplier Communications Agent** (Dynamics 365 Supply Chain Management; relevant for service delivery dependencies). Tracks supplier commitments, confirms deliveries, and triggers mitigations when delays are detected. 
 - **Time and Expense Agent** (Dynamics 365 Project Operations). Automates time entry reminders, validations, and expense approvals to accelerate billing for service work.  
 
 
