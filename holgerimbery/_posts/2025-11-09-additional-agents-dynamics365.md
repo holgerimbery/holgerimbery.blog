@@ -13,7 +13,7 @@ toc: true
 ---
 
 
-*Technical overview and configuration guide (October 2025)*
+*Technical overview and configuration guide (November 2025)*
 
 {: .q-left }
 > **Summary Lede**:  
