@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@rocinante_11?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mick Haupt</a> on <a href="https://unsplash.com/photos/green-and-red-chili-pepper-REqGEwTeFZ4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
        
-category: [Dynamics365, copilotstudio, agents]
+category: [Dynamics365, Sales, copilotstudio, agents]
 author: admin
 featured: true
 toc: true
@@ -17,7 +17,7 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**  
-**Connecting AI agents to Dynamics 365 Sales through Model Context Protocol enables automated lead prioritization based on real-time engagement signals and CRM data**. This article describes an integration that eliminates manual lead triage, surfaces high-conversion opportunities automatically, and accelerates qualification workflows—reducing seller cognitive load while improving pipeline quality. By leveraging standardized MCP tools for data access, AI analysis, and workflow automation, organizations can boost response times and conversion rates without custom integration code.
+**Connecting AI agents to Dynamics 365 Sales through Model Context Protocol enables automated lead prioritization based on real-time engagement signals and CRM data**. This article describes an integration that eliminates manual lead triage, automatically surfaces high-conversion opportunities, and accelerates qualification workflows—reducing seller cognitive load while improving pipeline quality. By leveraging standardized MCP tools for data access, AI analysis, and workflow automation, organizations can boost response times and conversion rates without custom integration code.
 
 ## What is Model Context Protocol?
 Model Context Protocol is an open standard that provides a unified interface for AI models to interact with external tools, APIs, and data sources. In the context of Dynamics 365 Sales, MCP acts as a bridge between AI agents and CRM data, enabling:
@@ -67,7 +67,7 @@ Supported tools include:
    - A sandbox environment for pilot rollout.
 
 2. **Security roles and permissions**
-   - Setup requires **System Administrator** (or equivalent) in Dynamics 365 and Dataverse.
+   - Setup requires a **System Administrator** (or equivalent) in Dynamics 365 and Dataverse.
    - AI agents use a service principal/managed identity with least‑privilege access to **Lead** and related entities.
 
 3. **Foundational MCP components**
@@ -124,13 +124,13 @@ You can implement either with **Microsoft Copilot Studio** (low-code) or a **cod
 ### Email Outreach (Optional)
 
 1. **Draft and send**: where available, use Sales MCP tools for email generation and sending in conjunction with Copilot in Sales; capabilities vary by release stage.
-2. **Human approval**: require seller sign‑off with a short rationale and personalization points.
+2. **Human approval**: requires the seller to sign off with a short rationale and personalization points.
 
 ### Hardening for Production
 
 1. **Least privilege**: scope permissions to required entities/operations only.
 2. **Data boundaries**: enforce security roles and field-level security across business units.
-3. **Fallbacks**: provide graceful degradation (e.g., rank and summarize only if qualify fails) with clear errors.
+3. **Fallbacks**: provide graceful degradation (e.g., rank and summarize only if the qualification fails) with clear errors.
 4. **Performance**: monitor latency of MCP tool calls and optimize filters to reduce payload size.
 
 ### Rollout Plan
@@ -158,7 +158,7 @@ Goal: Help sellers prioritize and act on hot leads.
    - score weight 0.5
    - recency weight 0.3
    - interaction count weight 0.2
-   - Provide transparent rationale per lead.
+   - Provide a transparent rationale per lead.
 
 4. Present a table:
    - Lead, Company, Score, Last Activity, Rationale, Recommended Action.
@@ -167,7 +167,7 @@ Goal: Help sellers prioritize and act on hot leads.
    - Call D365_Sales_QualifyLeadToOpportunity with createAccount=true/createContact=true/createOpportunity=true.
    - Return new record IDs and next steps.
 
-Safety: Never qualify or send email without explicit seller confirmation.
+Safety: Never qualify or send an email without explicit seller confirmation.
 ```
 
 ## Notes and Considerations
