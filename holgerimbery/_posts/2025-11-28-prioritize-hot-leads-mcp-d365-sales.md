@@ -16,8 +16,8 @@ toc: true
 
 
 {: .q-left }
-> **Summary Lede**:  
-> **Connecting AI agents to Dynamics 365 Sales through Model Context Protocol enables automated lead prioritization based on real-time engagement signals and CRM data**. This article describes an integration that eliminates manual lead triage, surfaces high-conversion opportunities automatically, and accelerates qualification workflows—reducing seller cognitive load while improving pipeline quality. By leveraging standardized MCP tools for data access, AI analysis, and workflow automation, organizations can boost response times and conversion rates without custom integration code.
+> **Summary Lede**  
+**Connecting AI agents to Dynamics 365 Sales through Model Context Protocol enables automated lead prioritization based on real-time engagement signals and CRM data**. This article describes an integration that eliminates manual lead triage, surfaces high-conversion opportunities automatically, and accelerates qualification workflows—reducing seller cognitive load while improving pipeline quality. By leveraging standardized MCP tools for data access, AI analysis, and workflow automation, organizations can boost response times and conversion rates without custom integration code.
 
 ## What is Model Context Protocol?
 Model Context Protocol is an open standard that provides a unified interface for AI models to interact with external tools, APIs, and data sources. In the context of Dynamics 365 Sales, MCP acts as a bridge between AI agents and CRM data, enabling:
@@ -36,9 +36,9 @@ The workflow for prioritizing hot leads using MCP and Dynamics 365 Sales involve
 3. **Surface Prioritized Leads:** Sellers receive a curated list of high-value leads, reducing guesswork and accelerating outreach.
 
 Supported tools include:
-- **D365_Sales_ListLeads:** Retrieves organizational lead lists or specific leads by attributes.
-- **D365_Sales_QualifyLeadToOpportunity:** Converts a lead into an opportunity, optionally creating related records.
-- **D365_Sales_InvokeLeadSummary:** Generates a concise summary of a lead using Copilot in Dynamics 365 Sales.
+- **D365_Sales_ListLeads** Retrieves organizational lead lists or specific leads by attributes.
+- **D365_Sales_QualifyLeadToOpportunity** Converts a lead into an opportunity, optionally creating related records.
+- **D365_Sales_InvokeLeadSummary** Generates a concise summary of a lead using Copilot in Dynamics 365 Sales.
 
 ## Benefits by Role
 
