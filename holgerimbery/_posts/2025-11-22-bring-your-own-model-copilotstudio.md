@@ -21,20 +21,20 @@ toc: true
 
 ## Why BYOM matters
 ### For business leaders
-- **Domain fit and output quality.** Off‑the‑shelf models are generalists. BYOM lets you select or fine‑tune models that better match your domain (for example, legal risk signals, support taxonomies, multilingual content). In practice this increases answer accuracy and reduces rework.  
-- **Agility without new app development.** You can trial alternative models (reasoning‑focused, vision‑capable, concise output, etc.) and switch them in Copilot Studio **at the prompt level**—avoiding rebuilds of your agent and keeping iteration cycles short.  
-- **Broader scenario coverage.** BYOM unlocks models beyond the default set, including multimodal options (for images/documents), enabling scenarios like screenshot triage or document understanding inside everyday channels like Teams and SharePoint.  
+- **Domain fit and output quality.** Off‑the‑shelf models are generalists. BYOM allows you to select or fine-tune models that better match your domain (for example, legal risk signals, support taxonomies, or multilingual content). In practice, this increases answer accuracy and reduces the need for rework.  
+- **Agility without new app development.** You can trial alternative models (reasoning-focused, vision-capable, concise output, etc.) and switch them in Copilot Studio at the prompt level—avoiding rebuilds of your agent and keeping iteration cycles short. **  
+- **Broader scenario coverage.** BYOM unlocks models beyond the default set, including multimodal options (for images/documents), enabling scenarios such as screenshot triage or document understanding within everyday channels like Teams and SharePoint.   
 
 ### For IT managers and platform owners
-- **Governance that fits Power Platform controls.** Azure AI Foundry models are connected into Copilot Studio via a **governed connector** (“Azure AI Foundry”). You can apply **DLP policies** and manage connections centrally in the Power Platform admin center.  
+- **Governance that fits Power Platform controls.** Azure AI Foundry models are connected into Copilot Studio via a **governed connector** ("Azure AI Foundry"). You can apply **DLP policies** and manage connections centrally in the Power Platform admin center.  
 - **Separation of duties and lifecycle management.** Model deployment, keys, and endpoint access remain in Azure AI Foundry, while agent composition and testing occur in Copilot Studio. This keeps model governance and agent governance aligned but distinct.  
-- **Road‑map alignment.** Microsoft’s release plan adds the ability to use your model not only in prompts and tools, but also as the **primary response model** at agent level (preview on the product roadmap). You can plan for standardized response behavior as this matures.  
+- **Road‑map alignment.** Microsoft's release plan adds the ability to use your model not only in prompts and tools, but also as the **primary response model** at the agent level (preview on the product roadmap). You can plan for standardized response behavior as this matures.  
 - **Scale and extensibility.** BYOM coexists with other extensibility points—**custom connectors, REST APIs, Model Context Protocol (MCP)**, and **generative answers using Azure OpenAI + Azure AI Search**—so you can design agents that combine your model with grounded enterprise data and external systems.  
 
 
 ## What BYOM in Copilot Studio actually is
 
-At its core, BYOM is a **first‑class option inside the Prompt tool**. When you add a Prompt as a tool in an agent, you pick a model from a dropdown. In addition to the built‑in managed models, there is a “**Connect a model from Azure AI Foundry**” path, where you paste **endpoint URI, deployment name, and API key** from a model you have deployed in Azure AI Foundry’s model catalog. Once connected, that model becomes selectable for any prompt you build. No code is required.
+At its core, BYOM is a first-class option within the Prompt tool. When you add a Prompt as a tool in an agent, you pick a model from a dropdown. In addition to the built‑in managed models, there is a "**Connect a model from Azure AI Foundry**" path, where you paste **endpoint URI, deployment name, and API key** from a model you have deployed in Azure AI Foundry's model catalog. Once connected, that model becomes selectable for any prompt you build. No code is required.
 
 ## What you can (and cannot) do today
 ### Supported patterns
@@ -53,16 +53,16 @@ At its core, BYOM is a **first‑class option inside the Prompt tool**. When you
    - Agents can call **custom connectors, REST APIs, Power Automate agent flows, and MCP servers** in the same topic or via generative orchestration—BYOM is not exclusive; it is one tool among many.  
    - For grounding on enterprise data with generative answers, Copilot Studio also supports **Azure OpenAI on your data** with Azure AI Search (preview), which can live alongside BYOM prompts when you need retrieval.  
 
-5. **Road‑map: BYOM for primary response generation.**  
-   - Feature plan indicates you’ll be able to **replace the default response model** in agent settings with a custom model (AI Foundry deployment), then configure response instructions and variables at agent level (public preview per release plan). Treat this as forward‑looking during rollout.  
+5. **Roadmap: BYOM for primary response generation.**  
+   - Feature plan indicates you'll be able to **replace the default response model** in agent settings with a custom model (AI Foundry deployment), then configure response instructions and variables at the agent level (public preview per release plan). Treat this as forward‑looking during rollout.  
 
 6. **Larger agent ecosystems.**  
    - Multi‑agent orchestration lets Copilot Studio agents collaborate, and announcements emphasize deeper integration with Azure AI Foundry models and fine‑tuning—useful for designing model‑specialist agents orchestrated together.  
 
 ### Current constraints to keep in mind
 
-- **Model type matters.** Only **chat‑completion** style deployments show up for prompts in Copilot Studio today; verify your model type in Azure AI Foundry before connecting.  
-- **Networking.** Copilot Studio connects to your Azure AI Foundry **endpoint**. If you require private networking/VNET isolation, plan the network architecture accordingly; community discussions show makers encountering connection issues when endpoints are not reachable from the service boundary. Validate your chosen network pattern (public endpoint with controls versus private access patterns) early in design.  
+- **Model type matters. Just so you know, only chat-completion style deployments** are currently visible for prompts in Copilot Studio; verify your model type in Azure AI Foundry before connecting.  
+- **Networking.** Copilot Studio connects to your Azure AI Foundry **endpoint**. If you require private networking/VNET isolation, plan the network architecture accordingly; community discussions show makers encountering connection issues when endpoints are not reachable from the service boundary. Validate your chosen network pattern (public endpoint with controls versus private access patterns) early in the design process.  
 - **Feature maturity and preview status.** Some capabilities (for example, **generative answers with Azure OpenAI on your data**, **primary response model BYOM**) are in **preview/road‑map**—use dev/test environments and ALM discipline before production.  
 
 ## Roles, prerequisites, and environment setup
@@ -80,7 +80,7 @@ This walk‑through assumes you already have a model deployed in Azure AI Foundr
 
 ### Create or open your agent in Copilot Studio
 
-- Go to **copilotstudio.microsoft.com → Agents → New agent** (or open an existing agent). If you want the agent to rely only on your controlled tools and knowledge, **turn off “Use general knowledge”** in **Settings → Generative AI**.  
+- Go to **copilotstudio.microsoft.com → Agents → New agent** (or open an existing agent). If you want the agent to rely only on your controlled tools and knowledge, **turn off "Use general knowledge"** in **Settings → Generative AI**.  
 
 ### Add a Prompt tool and connect your model
 - In **Tools → Add a tool → Prompt**, provide a name and author your instructions.  
@@ -97,12 +97,12 @@ This walk‑through assumes you already have a model deployed in Azure AI Foundr
 
 ## Feature deep‑dive: Where BYOM fits among Copilot Studio capabilities
 
-- **Prompt‑level model choice.** The primary BYOM surface today is the Prompt tool, enabling very granular “use this model for this sub‑task” control. This is valuable when different parts of a conversation need different model characteristics (reasoning vs. creative vs. compact).  
-- **Agent‑level response model (road‑map).** Upcoming capability to set the **primary response model** in agent settings with a custom AI Foundry deployment gives you system‑wide consistency—useful for compliance‑grade summarization or tone control. Track preview timelines before standardizing.  
+- **Prompt‑level model choice.** The primary BYOM surface today is the Prompt tool, enabling very granular “use this model for this sub‑task” control. This is valuable when different parts of a conversation require different model characteristics (e.g., reasoning vs. creative vs. compact).  
+- **Agent‑level response model (road‑map). The upcoming capability to set the primary response model in agent settings with a custom AI Foundry deployment provides system-wide consistency—ideal for compliance-grade summarization or tone control—enabling you to track preview timelines before standardizing.  
 - **Multimodal prompts.** If your scenario accepts **images or documents**, the model list narrows to those that support these inputs, reducing trial‑and‑error and avoiding runtime errors.  
 - **Grounding via Azure OpenAI on your data.** For retrieval‑augmented generation in Copilot Studio, configure **generative answers** with **Azure AI Search** and Azure OpenAI. This is separate from (and complementary to) using BYOM in prompts.  
 - **Orchestration across tools.** Use **custom connectors, REST APIs, Power Automate agent flows, and MCP servers** with the same agent; BYOM fits as one tool step. This pattern stays no‑code/low‑code in the Copilot Studio UI.  
-- **Scaling patterns.** As multi‑agent orchestration rolls out, consider smaller, specialized agents each with their own BYOM prompts, coordinated to solve broader tasks.  
+- **Scaling patterns.** As multi-agent orchestration rolls out, consider smaller, specialized agents, each with its own BYOM prompts, coordinated to solve broader tasks. **  
 
 
 ## Operational and governance considerations
