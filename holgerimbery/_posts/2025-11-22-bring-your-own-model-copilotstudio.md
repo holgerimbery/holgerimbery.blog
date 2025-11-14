@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bring Your Own Model (BYOM) to Microsoft Copilot Studio — A Practical, No‑Code Guide
-description: 
+description: Unlock the power of specialized AI models in Microsoft Copilot Studio with a omplete Bring Your Own Model (BYOM) guide! Connect GPT-4.5, Llama, or your fine-tuned models directly into agents—no coding required. From setup to governance, learn how to build domain-specific, compliant AI solutions in just 10-15 minutes. 
 
 date: 2025-11-22
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/oliver-hale--vMnQkiIPeo-unsplash.jpg
