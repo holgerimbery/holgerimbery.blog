@@ -125,4 +125,4 @@ Use No-Code Actions
 
 
 ## Conclusion
-Integrating the Outlook Model Context Protocol server with Copilot Studio agents unlocks, e.g., powerful no-code email automation capabilities. By leveraging MCP, business users can create context-aware workflows that respond intelligently to email events, all while adhering to Microsoft's security standards. This integration simplifies the development process, reduces complexity, and accelerates the deployment of email-driven automation solutions.
+Integrating the Outlook Model Context Protocol server with Copilot Studio agents unlocks, e.g., powerful no-code email automation capabilities. By leveraging MCP, business users can create context-aware workflows that respond intelligently to email events, all while adhering to Microsoft's security standards and best practices. This integration simplifies the development process, reduces complexity, and accelerates the deployment of email-driven automation solutions.
