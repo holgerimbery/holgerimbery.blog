@@ -7,7 +7,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/photos/man-using-macbook-Lks7vei-eAg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 category: [dynamics365, sales, customerservice, copilotstudio, agents]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 
