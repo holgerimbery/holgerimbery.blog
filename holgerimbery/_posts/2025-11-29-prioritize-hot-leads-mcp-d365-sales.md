@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prioritize Hot Leads with AI - Connect to Dynamics 365 Sales Using Model Context Protocol
-description: Learn how to leverage Model Context Protocol (MCP) to connect AI agents with Dynamics 365 Sales for automated lead prioritization, improving sales efficiency and pipeline quality.
+description: Learn how to leverage Model Context Protocol (MCP) to connect AI agents with Dynamics 365 Sales for automated lead prioritization, improving sales efficiency, and pipeline quality.
 
 date: 2025-11-29
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/mick-haupt-REqGEwTeFZ4-unsplash.jpg
