@@ -13,7 +13,7 @@ toc: true
 ---
 
 {: .q-left }
-> **Summary Lede** 
+> **Summary Lede**  
 **Microsoft Copilot Studio's multi‑agent orchestration lets you build AI solutions where specialized agents collaborate across systems—using embedded (child) agents for tightly scoped tasks, connected agents for reusable, independently operated capabilities, and the Model Context Protocol (MCP) for standards‑based tool integration.** This article walks IT professionals and business owners through the architectural trade‑offs, governance implications, and practical implementation patterns so you can choose the right orchestration approach, scale your agent ecosystem with confidence, and deliver higher‑quality outcomes faster.
 
 **Read on to learn:**
@@ -27,7 +27,7 @@ toc: true
 
 **Multi‑agent orchestration** coordinates multiple agents—often spanning Copilot Studio, Microsoft 365 Agents SDK, Azure AI Agents, and Microsoft Fabric Data Agents—so they delegate and collaborate toward a single user or business goal. Typical flows include a “parent” agent selecting specialized “child” or “connected” agents based on user intent, then aggregating results and continuing the conversation.
 
-A practical example is a sales proposal workflow: a Copilot Studio agent fetches CRM data, passes the request to a Microsoft 365 agent to draft a document, and triggers scheduling via Outlook—each step executed by the agent most qualified for it, without the user managing the hand‑offs.
+A practical example is a sales proposal workflow: a Copilot Studio agent fetches CRM data, passes the request to an other agent to draft a document, and triggers scheduling via Outlook—each step executed by the agent most qualified for it, without the user managing the hand‑offs.
 
 ## Embedded (Child) Agents vs. Connected Agents
 ### Embedded Agents (Child Agents)
