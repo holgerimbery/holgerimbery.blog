@@ -15,7 +15,7 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**  
-High-volume inbound channels—emails, chats, and calls—drain service and sales teams when most queries are routine. A multi-agent system in **Microsoft Copilot Studio** can autonomously handle product lookups, quote generation, troubleshooting, and recruiting guidance, escalating only the exceptions to human reps. This article shows you how to architect, deploy, and govern specialized agents that integrate with Dynamics 365 Customer Service and Sales, cutting response times and freeing your teams for high-value work.
+High-volume inbound channels — emails, chats, and calls — drain service and sales teams when most queries are routine. A multi-agent system in **Microsoft Copilot Studio** can autonomously handle product lookups, quote generation, troubleshooting, and recruiting guidance, escalating only the exceptions to human reps. This article shows you how to architect, deploy, and govern specialized agents that integrate with Dynamics 365 Customer Service and Sales, cutting response times and freeing your teams for high-value work.
 
 **Read this if** you want a practical blueprint for building autonomous email and message automation—complete with routing logic, grounding controls, and a phased rollout plan.
 
@@ -38,7 +38,7 @@ When these capabilities are applied in real-world enterprise scenarios, they ena
 ### Core Agents
 
 1. **Intake & Intent Router (Autonomous)**  
-   - **Trigger**: “When an Email Arrives (V3)” or omnichannel events (web chat, voice IVR, social).  
+   - **Trigger**: "When an Email Arrives (V3)" or omnichannel events (web chat, voice IVR, social).  
    - **Tasks**: Parse subject/body, extract entities (order ID, SKU, job role), detect intent (sales quote, receipt, product failure, usage question, job application).  
    - **Routing**: Dispatch to specialized agents via topics/skills; attach classification metadata to the Dataverse transcript.  
    - **Channels**: Email, chat, voice—integrated through Dynamics 365 Contact Center without channel‑specific code.
@@ -49,7 +49,7 @@ When these capabilities are applied in real-world enterprise scenarios, they ena
    - **Capabilities**: Drafts emails with Copilot; attaches generated PDFs; updates CRM records; escalates complex pricing to a rep.
 
 3. **Customer Service Agent**  
-   - **Tasks**: Troubleshooting product failures, “how to use” guidance, warranty checks, and RMA initiation.  
+   - **Tasks**: Troubleshooting product failures, "how to use" guidance, warranty checks, and RMA initiation.  
    - **Systems**: Dynamics 365 Customer Service (cases), Knowledge Base, Field Service scheduling.  
    - **Capabilities**: Suggests knowledge articles, summarizes case history, proposes next best actions, drafts emails or IVR responses, and arranges technician appointments when warranted.
 
@@ -122,10 +122,10 @@ Why? Centralizing intake ensures consistent classification and prevents context 
 ### Step 2 — Topic & Entity Design
 Define topics within **main domain agents**, not subagents. Topics are conversational entry points and must reside where dialog context is managed. Placing topics in subagents would require complex cross-agent transfers and state synchronization, increasing orchestration overhead.
 
-Subagents should act as **execution units**, invoked by main agent topics as actions or skills. For example, the Sales Agent might have a topic called **“Generate Quote”**, which internally calls a Quote Generation subagent or Power Automate flow. This design keeps conversations centralized while allowing subagents to remain lightweight and reusable.
+Subagents should act as **execution units**, invoked by main agent topics as actions or skills. For example, the Sales Agent might have a topic called **"Generate Quote"**, which internally calls a Quote Generation subagent or Power Automate flow. This design keeps conversations centralized while allowing subagents to remain lightweight and reusable.
 
 ### Step 3 — Sales Support Agent
-The Sales Agent should orchestrate all sales-related conversations. It owns topics like **“Request a Quote”**, **“Order Status”**, and **“Receipt Reissue”**. Each topic:
+The Sales Agent should orchestrate all sales-related conversations. It owns topics like **"Request a Quote"**, **"Order Status"**, and **"Receipt Reissue"**. Each topic:
 - Maintains CRM context (customer account, opportunity ID).
 - Invokes subagents or flows for atomic tasks (e.g., quote generation, receipt retrieval).
 - Uses Copilot email drafting with grounded templates for responses.
@@ -133,7 +133,7 @@ The Sales Agent should orchestrate all sales-related conversations. It owns topi
 Why? Keeping orchestration in the primary agent ensures continuity and auditability, while subagents handle execution without managing dialog.
 
 ### Step 4 — Customer Service Agent
-This agent manages troubleshooting, usage guidance, and warranty/RMA flows. Topics include **“Product Failure”**, **“How to Use”**, and **“Warranty Claim”**. Each topic:
+This agent manages troubleshooting, usage guidance, and warranty/RMA flows. Topics include **"Product Failure"**, **"How to Use"**, and **"Warranty Claim"**. Each topic:
 - Pulls KB articles for grounded responses.
 - Creates or updates cases in Dynamics 365.
 - Invokes subagents for specialized tasks (e.g., RMA initiation, Field Service scheduling).
