@@ -37,14 +37,43 @@ layout: default
 
       <div class="post__meta">
         <div class="post__author">
-          {% assign author = site.authors | where: 'username', page.author | first %}
-          {% if author %}
-          <a href="{{ author.url | relative_url }}" class="post__author__image">
-            <img class="lazy" data-src="{{ author.image | relative_url }}" alt="{{ author.name }}">
-          </a>
+          {% assign author_usernames = page.author | split: ',' %}
+          {% assign post_authors = '' | split: '' %}
+          {% for author_username in author_usernames %}
+            {% assign trimmed_username = author_username | strip %}
+            {% assign author = site.authors | where: 'username', trimmed_username | first %}
+            {% if author %}
+              {% assign post_authors = post_authors | push: author %}
+            {% endif %}
+          {% endfor %}
+          
+          {% if post_authors.size > 0 %}
+          <!-- Display author images -->
+          {% if post_authors.size == 2 %}
+            <a href="{{ post_authors[0].url | relative_url }}" class="post__author__image">
+              <img class="lazy" data-src="{{ post_authors[0].image | relative_url }}" alt="{{ post_authors[0].name }}">
+            </a>
+            <a href="{{ post_authors[1].url | relative_url }}" class="post__author__image">
+              <img class="lazy" data-src="{{ post_authors[1].image | relative_url }}" alt="{{ post_authors[1].name }}">
+            </a>
+          {% else %}
+            <a href="{{ post_authors[0].url | relative_url }}" class="post__author__image">
+              <img class="lazy" data-src="{{ post_authors[0].image | relative_url }}" alt="{{ post_authors[0].name }}">
+            </a>
+          {% endif %}
           <div class="post__author__bottom">
             <span>Written by</span>
-            <a class="post__author__name" href="{{ author.url | relative_url }}">{{ author.name }}</a>
+            {% for author in post_authors %}
+              {% if forloop.first %}
+                <a class="post__author__name" href="{{ author.url | relative_url }}">{{ author.name }}</a>
+              {% elsif forloop.last and post_authors.size == 2 %}
+                <span> and </span><a class="post__author__name" href="{{ author.url | relative_url }}">{{ author.name }}</a>
+              {% elsif forloop.last %}
+                <span>, and </span><a class="post__author__name" href="{{ author.url | relative_url }}">{{ author.name }}</a>
+              {% else %}
+                <span>, </span><a class="post__author__name" href="{{ author.url | relative_url }}">{{ author.name }}</a>
+              {% endif %}
+            {% endfor %}
           </div>
           {% endif %}
         </div>
@@ -95,8 +124,9 @@ layout: default
 </div>
 
 
-{% if author %}
+{% if post_authors.size > 0 %}
 <div class="container">
+  {% for author in post_authors %}
   <div class="card-author">
     <div class="card-author__media">
       {% if author.image %}
@@ -107,7 +137,15 @@ layout: default
     </div>
 
     <div class="card-author__content">
-      <div class="card-author__role">Written by</div>
+      <div class="card-author__role">
+        {% if post_authors.size == 1 %}
+          Written by
+        {% elsif forloop.first %}
+          Written by
+        {% else %}
+          Also by
+        {% endif %}
+      </div>
         {% if author.name %}
         <h3 class="card-author__name"><a href="{{ author.url }}" class="card-author__link">{{ author.name }}</a></h3>
         {% endif %}
@@ -116,6 +154,7 @@ layout: default
         {% endif %}
     </div>
   </div>
+  {% endfor %}
 </div>
 {% endif %}
 

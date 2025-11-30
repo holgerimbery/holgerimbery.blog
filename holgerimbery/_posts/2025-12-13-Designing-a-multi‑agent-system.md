@@ -3,7 +3,7 @@ layout: post
 title: Designing a Multi‑Agent System in Copilot Studio for Dynamics 365 Customer Service & Sales
 description: A pragmatic architecture and operating model for automating inbound email and message handling using specialized agents in Microsoft Copilot Studio, integrated with Dynamics 365 Customer Service and Sales. Automating inbound queries from customers, prospects, and job seekers—end to end   
 date: 2025-12-13
-author: admin
+author: admin, jennifer
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/goffredo-crollalanza-joDP04dvSBM-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@goffpix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">goffredo crollalanza</a> on <a href="https://unsplash.com/photos/people-gather-to-look-at-the-chanel-store-joDP04dvSBM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
