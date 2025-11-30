@@ -21,7 +21,7 @@ High-volume inbound channels—emails, chats, and calls—drain service and sale
 
 ## Why Multi‑Agent Architecture Is Essential for Modern Enterprise Operations
 
-The traditional approach of deploying a single, monolithic chatbot to handle the full spectrum of enterprise email inquiries has consistently proven inadequate for organizations operating at scale. What is required instead is a carefully orchestrated collection of specialized agents, where each individual agent maintains a tightly focused scope of responsibility and operates with a clearly delineated set of tools and capabilities. These agents must be coordinated through a sophisticated orchestration layer that possesses the ability to accurately interpret the underlying intent of each incoming message and subsequently route the work to the appropriate specialized handler.
+The traditional approach of deploying a single, monolithic chatbot to handle the full spectrum of enterprise email inquiries has consistently proven inadequate for organizations operating at scale. What is required instead is a carefully orchestrated collection of specialized agents, each with a tightly focused scope of responsibility and a clearly delineated set of tools and capabilities. These agents must be coordinated through a sophisticated orchestration layer that accurately interprets the intent of each incoming message and routes the work to the appropriate specialized handler.
 
 The current architectural guidance published by Microsoft for agents built within Copilot Studio places particular emphasis on several foundational principles that enable this multi-agent approach to succeed in production environments:
 
@@ -49,7 +49,7 @@ When these capabilities are applied in real-world enterprise scenarios, they ena
    - **Capabilities**: Drafts emails with Copilot; attaches generated PDFs; updates CRM records; escalates complex pricing to a rep.
 
 3. **Customer Service Agent**  
-   - **Tasks**: Troubleshooting product failures, “how to use” guidance, warranty checks, RMA initiation.  
+   - **Tasks**: Troubleshooting product failures, “how to use” guidance, warranty checks, and RMA initiation.  
    - **Systems**: Dynamics 365 Customer Service (cases), Knowledge Base, Field Service scheduling.  
    - **Capabilities**: Suggests knowledge articles, summarizes case history, proposes next best actions, drafts emails or IVR responses, and arranges technician appointments when warranted.
 
@@ -71,14 +71,14 @@ When these capabilities are applied in real-world enterprise scenarios, they ena
 ## End‑to‑End Workflows
 ### Information Requests (Products, Features, Availability)
 
-1. **Intake** identifies “information request,” extracts the product SKU or feature name.  
+1. **Intake** identifies "information request," extracts the product SKU or feature name.  
 2. **Routing** to Customer Service Agent.  
 3. **Response Generation**: Pull relevant KB articles; generate a concise, brand‑standard answer; embed links; offer escalation.  
 4. **Delivery**: Email or chat reply; transcript stored in Dataverse; sentiment monitored on supervisor dashboard.
 
 ### Sales Requests (Quotes, Pricing, Order Status, Receipts)
 
-1. **Intake** classifies “sales.”  
+1. **Intake** classifies "sales."  
 2. **Sales Support Agent** queries Sales/ERP for pricing; generates quote from a template; attaches PDF.  
 3. **Order Status**: Fetches order details; composes delivery ETA update; when asked, **re‑issues receipts** by pulling the correct document from ERP and sending securely.  
 4. **Compliance**: If pricing requires approval, the agent creates a task for the sales rep and drafts a holding message using Copilot email features.
@@ -91,13 +91,13 @@ When these capabilities are applied in real-world enterprise scenarios, they ena
 
 ### Job Seekers (Guidance to Careers Portal)
 
-1. **Intake** detects recruiting intent (“jobs,” “careers,” “apply”).  
-2. **Recruiting Guidance Agent**: Provides tailored instructions to the job portal; outlines application steps, required documents, and timelines; offers accessibility guidance.  
+1. **Intake** detects recruiting intent ("jobs", "careers," "apply").  
+3. **Recruiting Guidance Agent**: Provides tailored instructions to the job portal; outlines application steps, required documents, and timelines; offers accessibility guidance.  
 
 
 ## Design Principles
 ### Narrow Skills, Clear Tools
-Each agent should have a small, well‑bounded skill set (e.g., “quote generation” or “receipt retrieval”). This supports reliability and auditable behavior.
+Each agent should have a small, well‑bounded skill set (e.g., "quote generation" or "receipt retrieval"). This supports reliability and auditable behavior.
 
 ### Strong Grounding
 Use the **knowledge grounding** feature for email drafting, restricted to vetted KB articles and trusted sites.
@@ -112,29 +112,78 @@ Design once, deploy across email, chat, and voice.
 ## Implementation Blueprint
 
 ### Step 1 — Intake Agent
-Create a Copilot agent in **Copilot Studio** with a mailbox trigger and omnichannel connectors.
+Create a **global intake agent** as the first point of contact for all inbound messages (email, chat, and voice). This agent should:
+- Detect intent using generative orchestration and entity extraction.
+- Maintain conversation context (customer identity, case history, or job seeker details) from the start.
+- Route requests to the appropriate **leading domain agent** (Sales, Service, Recruiting, Attachments) without performing execution tasks itself.
+
+Why? Centralizing intake ensures consistent classification and prevents context fragmentation across multiple agents.
 
 ### Step 2 — Topic & Entity Design
-Define topics for *Sales*, *Service*, *Recruiting*, and *Attachments*.
+Define topics within **main domain agents**, not subagents. Topics are conversational entry points and must reside where dialog context is managed. Placing topics in subagents would require complex cross-agent transfers and state synchronization, increasing orchestration overhead.
+
+Subagents should act as **execution units**, invoked by main agent topics as actions or skills. For example, the Sales Agent might have a topic called **“Generate Quote”**, which internally calls a Quote Generation subagent or Power Automate flow. This design keeps conversations centralized while allowing subagents to remain lightweight and reusable.
 
 ### Step 3 — Sales Support Agent
-Connect to Dynamics 365 Sales for quotes/opportunities.
+The Sales Agent should orchestrate all sales-related conversations. It owns topics like **“Request a Quote”**, **“Order Status”**, and **“Receipt Reissue”**. Each topic:
+- Maintains CRM context (customer account, opportunity ID).
+- Invokes subagents or flows for atomic tasks (e.g., quote generation, receipt retrieval).
+- Uses Copilot email drafting with grounded templates for responses.
+
+Why? Keeping orchestration in the primary agent ensures continuity and auditability, while subagents handle execution without managing dialog.
 
 ### Step 4 — Customer Service Agent
-Link to the **KB** and case APIs; enable **email drafting** and **knowledge suggestions**.
+This agent manages troubleshooting, usage guidance, and warranty/RMA flows. Topics include **“Product Failure”**, **“How to Use”**, and **“Warranty Claim”**. Each topic:
+- Pulls KB articles for grounded responses.
+- Creates or updates cases in Dynamics 365.
+- Invokes subagents for specialized tasks (e.g., RMA initiation, Field Service scheduling).
+
+Why? Centralizing dialog in the primary agent avoids context loss and simplifies escalation to human reps when needed.
 
 ### Step 5 — Attachment/Document Agent
-Implement parsing/validation; save artifacts to SharePoint.
+This agent handles document parsing and validation. It should:
+- Be invoked by main agents when attachments are detected.
+- Extract data, validate against CRM/ERP, and store files in SharePoint.
+- Return structured results to the calling agent for inclusion in the conversation.
+
+Why? Keeping document logic separate improves modularity and compliance without complicating conversational flows.
 
 ### Step 6 — Recruiting Guidance Agent
-Load careers FAQs; define steps for applying.
+This agent covers topics such as **"Job Application Help"** and **"Career Portal Guidance"**. It:
+- Provides step-by-step instructions for applying.
+- Invokes subagents for tasks like sending follow-up emails or capturing candidate details.
+- Maintains dialog continuity for HR escalation when needed.
+
+Why? Job seeker interactions often require multiple steps; keeping orchestration in the primary agent ensures clarity and a positive candidate experience.
 
 ### Step 7 — Supervision & Analytics
-Enable **Dataverse transcripts** and the **supervisor dashboard** for real‑time monitoring.
+Enable **Dataverse transcripts** and the **supervisor dashboard** for all main agents. This provides:
+- Real-time monitoring of sentiment and volume by topic.
+- Full audit trails for compliance.
+- Insights for continuous improvement.
+
+Why? Observability is critical for trust in autonomous systems and for refining orchestration logic over time.
+
+## Design Principle: Topics vs. Subagents
+
+**Topics** in Copilot Studio are conversational entry points—they manage dialog flow, maintain context, and determine how the conversation progresses. For this reason, topics should always reside in **main domain agents** (Sales, Service, Recruiting, Attachments), where full context such as customer identity, case history, or job seeker details can be preserved.
+
+**Subagents**, on the other hand, are execution units. They perform atomic tasks like generating a quote, retrieving a receipt, or parsing an attachment. Subagents should never own topics because they are not responsible for dialog orchestration. Instead, they are invoked by main agent topics as **actions or skills**, often through Power Automate flows or API calls.
+
+### Why This Matters
+- **Context Continuity**: Keeping topics in main agents ensures that all conversation data remains centralized, simplifying escalation and audit.
+- **Modularity**: Subagents remain lightweight and reusable across multiple workflows.
+- **Governance**: Easier to enforce compliance and monitor interactions when dialog orchestration is centralized.
+
+### Best Practices
+1. Define topics only in main agents.
+2. Use subagents for execution, not conversation.
+3. Pass necessary parameters from the main agent to subagents for task completion.
+4. Maintain a clear orchestration hierarchy: **Intake Agent → Main Agent → Subagent (Action)**.
 
 ## Governance, Security, and Risk Controls
 
-The implementation of autonomous agent systems within an enterprise environment necessitates the establishment of rigorous governance frameworks and security protocols that ensure both operational reliability and regulatory compliance. The following controls represent the minimum necessary safeguards that organizations must put in place when deploying multi-agent architectures at scale.
+Implementing autonomous agent systems in an enterprise environment requires rigorous governance frameworks and security protocols to ensure operational reliability and regulatory compliance. The following controls represent the minimum necessary safeguards that organizations must put in place when deploying multi-agent architectures at scale.
 
 ### Data Location and Processing Sovereignty
 
@@ -142,7 +191,7 @@ Organizations must make deliberate decisions regarding where their natural langu
 
 ### Knowledge Source Controls and Content Governance
 
-The knowledge grounding capabilities that enable agents to draft contextually appropriate email responses must be subject to explicit administrative controls. Organizations should implement a formal approval process that determines which knowledge articles, documentation repositories, and external information sources are permitted to serve as grounding material for agent-generated content. The platform provides administrators with the ability to explicitly enable or disable knowledge grounding on a per-agent basis, and this capability should be exercised with care. Only those information sources that have undergone proper review for accuracy, currency, and brand alignment should be authorized for use in automated email drafting workflows. This ensures that the responses generated by autonomous agents remain consistent with organizational standards and do not inadvertently propagate outdated or incorrect information to customers.
+The knowledge grounding capabilities that enable agents to draft contextually appropriate email responses must be subject to explicit administrative controls. Organizations should implement a formal approval process to determine which knowledge articles, documentation repositories, and external information sources may serve as grounding material for agent-generated content. The platform provides administrators with the ability to enable or disable knowledge grounding on a per-agent basis explicitly, and this capability should be exercised with care. Only those information sources that have undergone proper review for accuracy, currency, and brand alignment should be authorized for use in automated email drafting workflows. This ensures that the responses generated by autonomous agents remain consistent with organizational standards and do not inadvertently propagate outdated or incorrect information to customers.
 
 ### Templates and Consistency of Organizational Voice
 
@@ -150,32 +199,32 @@ To maintain consistency in tone, terminology, and formatting across all automate
 
 ### Supervised Autonomy and Escalation Protocols
 
-While the agents are designed to operate autonomously and to resolve the majority of routine inquiries without human intervention, the system must incorporate well-defined escalation protocols that ensure human representatives become involved whenever the situation warrants their judgment or expertise. Agents should be configured to execute their assigned tasks independently within the bounds of their defined capabilities and authorities, but they must also be equipped with the logic necessary to recognize scenarios that fall outside those bounds. When an agent encounters a query that involves ambiguous intent, when a customer expresses dissatisfaction or makes a complaint, when a pricing request exceeds pre-approved thresholds, or when regulatory or compliance considerations arise, the agent must immediately initiate a contextual transfer to an appropriate human representative. The handoff mechanism must preserve the complete conversation history and must provide the receiving representative with all relevant context, including the agent's analysis of the situation, any actions that have already been taken, and a clear explanation of why human involvement has been requested. This supervised autonomy model ensures that automation delivers efficiency gains while simultaneously protecting the organization from the risks associated with fully unsupervised decision-making in complex or sensitive scenarios.
+While the agents are designed to operate autonomously and to resolve the majority of routine inquiries without human intervention, the system must incorporate well-defined escalation protocols that ensure human representatives become involved whenever the situation warrants their judgment or expertise. Agents should be configured to execute their assigned tasks independently within the bounds of their defined capabilities and authorities. Still, they must also be equipped with the logic necessary to recognize scenarios that fall outside those bounds. When an agent encounters a query with ambiguous intent, a customer expresses dissatisfaction or makes a complaint, a pricing request exceeds pre-approved thresholds, or regulatory or compliance considerations arise, the agent must immediately initiate a contextual transfer to an appropriate human representative. The handoff mechanism must keep the complete conversation history and provide the receiving representative with all relevant context, including the agent's analysis of the situation, any actions already taken, and a clear explanation of why human involvement has been requested. This supervised autonomy model ensures that automation delivers efficiency gains while simultaneously protecting the organization from the risks associated with fully unsupervised decision-making in complex or sensitive scenarios.
 
 
 ## Operating Model: From Pilot to Production
 
-The successful deployment of a multi-agent system within an enterprise environment requires a methodical and deliberate approach to implementation that proceeds through a series of carefully orchestrated phases, each of which builds upon the learnings and capabilities established in the preceding stage. This phased implementation methodology reduces risk, enables iterative refinement of agent behaviors, and ensures that the organization develops the necessary operational competencies before committing to full-scale production deployment.
+The successful deployment of a multi-agent system within an enterprise environment requires a methodical, deliberate approach that proceeds through a series of carefully orchestrated phases, each of which builds on the learnings and capabilities established in the preceding stage. This phased implementation methodology reduces risk, enables iterative refinement of agent behaviors, and ensures that the organization develops the necessary operational competencies before committing to full-scale production deployment.
 
 ### Discovery and Requirements Analysis
 
-The first phase of the implementation journey involves conducting a comprehensive audit of the organization's existing inbound communication volumes across all relevant channels. This audit must systematically examine the historical record of emails, chat messages, voice interactions, and social media inquiries that the organization has received over a representative time period, typically spanning at least six months to capture seasonal variations and business cycle effects. The purpose of this analysis is to establish a clear understanding of the actual distribution of inquiry types that the organization encounters in its day-to-day operations. Each communication must be classified according to its underlying intent—whether it represents a request for product information, a sales inquiry seeking pricing or quotations, a customer service issue requiring troubleshooting or warranty support, a document-related request such as receipt reissuance, or a recruiting inquiry from a prospective job applicant. This classification exercise produces quantitative data that reveals which categories of inquiries consume the greatest volume of staff time and which represent the highest-value opportunities for automation. The findings from this discovery phase inform the prioritization decisions that will guide the subsequent implementation work and ensure that development resources are allocated to the areas where they will deliver the greatest operational impact.
+The first phase of the implementation journey involves conducting a comprehensive audit of the organization's existing inbound communication volumes across all relevant channels. This audit must systematically examine the historical record of emails, chat messages, voice interactions, and social media inquiries the organization has received over a representative period, typically spanning at least 6 months to capture seasonal variations and business cycle effects. The purpose of this analysis is to establish a clear understanding of the actual distribution of inquiry types encountered in the organization's day-to-day operations. Each communication must be classified according to its underlying intent—whether it represents a request for product information, a sales inquiry seeking pricing or quotations, a customer service issue requiring troubleshooting or warranty support, a document-related request such as receipt reissuance, or a recruiting inquiry from a prospective job applicant. This classification exercise produces quantitative data that reveals which categories of inquiries consume the most staff time and which represent the highest-value opportunities for automation. The findings from this discovery phase inform prioritization decisions that will guide subsequent implementation work and ensure that development resources are allocated to areas that will deliver the most significant operational impact.
 
 ### Sandbox Environment Construction and Initial Agent Development
 
-Once the discovery phase has established clear priorities and identified the specific use cases that will deliver the most significant value, the implementation team proceeds to construct a dedicated sandbox environment where the initial agent development work will take place. Within this isolated testing environment, the team implements the four core agents that form the foundation of the multi-agent architecture: the intake and intent router, the sales support agent, the customer service agent, and the document processing agent. Each of these agents is configured with its appropriate connections to the relevant backend systems—Dynamics 365 Sales and Finance for the sales support agent, Dynamics 365 Customer Service and the organizational knowledge base for the customer service agent, and SharePoint and document management systems for the document processing agent. During this phase, the team enables and configures the email drafting capabilities that allow agents to generate contextually appropriate responses, and they establish the knowledge grounding controls that determine which information sources are authorized to serve as the basis for agent-generated content. The sandbox environment allows the development team to experiment with different routing logic, to refine the language understanding models, and to test the end-to-end workflows without any risk of impact to actual customer communications or production data. This phase typically involves multiple iterations of testing, adjustment, and refinement as the team works to ensure that the agents perform reliably across the full range of scenarios they are expected to handle.
+Once the discovery phase establishes clear priorities and identifies the specific use cases that will deliver the most significant value, the implementation team proceeds to build a dedicated sandbox environment for the initial agent development work. Within this isolated testing environment, the team implements the four core agents that form the foundation of the multi-agent architecture: the intake and intent router, the sales support agent, the customer service agent, and the document processing agent. Each of these agents is configured with its appropriate connections to the relevant backend systems—Dynamics 365 Sales and Finance for the sales support agent, Dynamics 365 Customer Service and the organizational knowledge base for the customer service agent, and SharePoint and document management systems for the document processing agent. During this phase, the team enables and configures email drafting capabilities that allow agents to generate contextually appropriate responses, and establishes the knowledge grounding controls that determine which information sources are authorized to serve as the basis for agent-generated content. The sandbox environment allows the development team to experiment with different routing logic, refine language understanding models, and test end-to-end workflows without risking impact on actual customer communications or production data. This phase typically involves multiple iterations of testing, adjustment, and refinement as the team works to ensure that the agents perform reliably across the full range of scenarios they are expected to handle.
 
 ### Controlled Rollout to a Limited Scope
 
-After the sandbox testing has demonstrated that the agents are capable of handling their assigned responsibilities with acceptable accuracy and reliability, the implementation proceeds to a controlled rollout phase in which the agents are deployed to handle a carefully limited subset of production traffic. This controlled scope might be defined geographically, with the agents initially handling inquiries originating from a single region or market, or it might be defined by product line, with the agents initially addressing questions and requests related to a specific category of products or services. The purpose of this controlled rollout is to validate that the agents perform as expected when confronted with real customer communications in actual production conditions, while simultaneously limiting the potential impact of any issues or deficiencies that may not have been apparent during sandbox testing. Throughout this phase, the organization maintains close supervision of agent performance through the supervisor dashboard and transcript analytics, and human representatives remain available to intervene whenever the agents encounter scenarios that exceed their capabilities. The organization collects detailed metrics on agent accuracy, customer satisfaction, resolution rates, and escalation frequencies, and these metrics inform the decision about whether and when to proceed with broader deployment.
+After sandbox testing demonstrates that the agents can handle their assigned responsibilities with acceptable accuracy and reliability, the implementation proceeds to a controlled rollout phase in which the agents are deployed to handle a carefully limited subset of production traffic. This controlled scope might be defined geographically, with agents initially handling inquiries originating from a single region or market, or it might be represented by product line, with agents initially addressing questions and requests related to a specific product or service category. The purpose of this controlled rollout is to validate that the agents perform as expected when confronted with real customer communications in actual production conditions, while simultaneously limiting the potential impact of any issues or deficiencies that may not have been apparent during sandbox testing. Throughout this phase, the organization maintains close supervision of agent performance through the supervisor dashboard and transcript analytics, and human representatives remain available to intervene when agents encounter scenarios beyond their capabilities. The organization collects detailed metrics on agent accuracy, customer satisfaction, resolution rates, and escalation frequencies, which inform decisions about whether and when to proceed with broader deployment.
 
 ### Scale-Out and Channel Expansion
 
-Once the controlled rollout has successfully demonstrated that the agents deliver reliable performance and acceptable business outcomes within their initial limited scope, the implementation enters a scale-out phase in which the agents' responsibilities are progressively expanded. This expansion may proceed along multiple dimensions simultaneously. The geographic or product-line scope may be broadened to encompass additional regions, markets, or product categories until the agents are handling the full range of inquiries across the entire organization. Additional specialized actions and capabilities may be developed and deployed to address edge cases or to support more sophisticated workflows that were not included in the initial implementation. The system may be extended to support additional communication channels beyond email, such as voice-based IVR systems that allow customers to interact with the agents through telephone calls, or social media channels that enable interactions through platforms such as Facebook Messenger or Twitter. Each of these expansions is undertaken in a deliberate and controlled manner, with appropriate testing and validation to ensure that the addition of new capabilities or channels does not degrade the performance or reliability of the existing functionality. Throughout this scale-out phase, the organization continues to monitor performance metrics closely and remains prepared to pause or roll back expansions if issues arise.
+Once the controlled rollout has successfully demonstrated that the agents deliver reliable performance and acceptable business outcomes within their initial limited scope, the implementation enters a scale-out phase in which the agents' responsibilities are progressively expanded. This expansion may proceed along multiple dimensions simultaneously. The geographic or product-line scope may be broadened to encompass additional regions, markets, or product categories until the agents are handling the full range of inquiries across the entire organization. Additional specialized actions and capabilities may be developed and deployed to address edge cases or support more sophisticated workflows not included in the initial implementation. The system may be extended to support additional communication channels beyond email, such as voice-based IVR systems that allow customers to interact with agents by phone, or social media channels that enable interactions via platforms such as Facebook Messenger or Twitter. Each of these expansions is undertaken deliberately and in a controlled manner, with appropriate testing and validation to ensure that adding new capabilities or channels does not degrade the performance or reliability of the existing functionality. Throughout this scale-out phase, the organization continues to monitor performance metrics closely and remains prepared to pause or roll back expansions if issues arise.
 
 ### Continuous Improvement and Operational Maintenance
 
-The deployment of a multi-agent system is not a one-time project that concludes when the agents reach production status; rather, it represents the beginning of an ongoing operational commitment to continuous improvement and active maintenance. As the agents operate in production and handle increasing volumes of customer communications, the organization accumulates valuable data about which types of inquiries are being handled successfully and which are generating escalations or customer dissatisfaction. This data must be systematically reviewed on a regular cadence to identify opportunities for improvement. The knowledge base articles that serve as grounding sources for agent responses must be kept current and accurate, with outdated information retired and new content added to address emerging product features or changing business policies. The response templates used for common scenarios must be periodically reviewed and updated to ensure that they continue to reflect current brand standards, legal requirements, and customer expectations. The guardrails and escalation rules that govern when agents hand off to human representatives must be refined based on observed patterns of successful and unsuccessful autonomous resolutions. The intent classification models must be retrained periodically to maintain their accuracy as customer language and inquiry patterns evolve over time. This continuous improvement process ensures that the multi-agent system remains effective and continues to deliver value as the business environment changes and as customer needs evolve.
+The deployment of a multi-agent system is not a one-time project that concludes once the agents reach production; instead, it marks the beginning of an ongoing operational commitment to continuous improvement and active maintenance. As agents operate in production and handle increasing volumes of customer communications, the organization accumulates valuable data on which types of inquiries are managed successfully and which generate escalations or customer dissatisfaction. This data must be systematically reviewed at regular intervals to identify opportunities for improvement. The knowledge base articles that serve as grounding sources for agent responses must be kept current and accurate, with outdated information retired and new content added to address emerging product features or changing business policies. The response templates used for common scenarios must be periodically reviewed and updated to ensure that they continue to reflect current brand standards, legal requirements, and customer expectations. The guardrails and escalation rules that govern when agents hand off to human representatives must be refined based on observed patterns of successful and unsuccessful autonomous resolutions. The intent classification models must be retrained periodically to maintain their accuracy as customer language and inquiry patterns evolve. This continuous improvement process ensures that the multi-agent system remains effective and continues to deliver value as the business environment changes and as customer needs evolve.
 
 
 ### Further Reading
