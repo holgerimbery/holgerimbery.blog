@@ -27,24 +27,24 @@ toc: true
 
 **Multi‑agent orchestration** coordinates multiple agents—often spanning Copilot Studio, Microsoft 365 Agents SDK, Azure AI Agents, and Microsoft Fabric Data Agents—so they delegate and collaborate toward a single user or business goal. Typical flows include a “parent” agent selecting specialized “child” or “connected” agents based on user intent, then aggregating results and continuing the conversation.
 
-A practical example is a sales proposal workflow: a Copilot Studio agent fetches CRM data, passes the request to an other agent to draft a document, and triggers scheduling via Outlook—each step executed by the agent most qualified for it, without the user managing the hand‑offs.
+A practical example is a sales proposal workflow: a Copilot Studio agent fetches CRM data, passes the request to another agent to draft a document, and triggers scheduling via Outlook—each step executed by the agent most qualified for it, without the user managing the hand‑offs.
 
 ## Embedded (Child) Agents vs. Connected Agents
 ### Embedded Agents (Child Agents)
 
-An **embedded agent** is a lightweight child created inside a parent agent. It inherits the parent’s environment and is ideal when you want logical modularization without separate deployment, authentication, or reuse. Embedded agents are recommended for single intents (e.g., “create a ticket,” “check a status,” “book a flight”), centralized ownership, and small, cohesive teams.
+An **embedded agent** is a lightweight child created inside a parent agent. It inherits the parent's environment and is ideal when you want logical modularization without separate deployment, authentication, or reuse. Embedded agents are recommended for single intents (e.g., "create a ticket," “check a status," “book a flight"), centralized ownership, and small, cohesive teams.
 
 Key characteristics:
 
 - **Tight coupling to the parent:** tools, instructions, and knowledge grouped as sub‑agents; no independent publishing or reuse.
 - **Operational simplicity:** shared authentication and configuration; reduced governance surface.
-- **Performance predictability:** recommended when the main agent’s choice set is still small and does not degrade planning.
+- **Performance predictability:** recommended when the primary agent's choice set is still small and does not degrade planning.
 
-Community examples show parent/child patterns where the parent coordinates tasks such as reading an Excel expense report while child agents check duplicates or validate accounting codes.
+Community examples show parent/child patterns in which the parent coordinates tasks, such as reading an Excel expense report, while child agents check for duplicates or validate accounting codes.
 
 ### Connected Agents
 
-**Connected agents** are independently built and operated agents that your parent agent can call. Use them when you need separate ownership, deployment, authentication, or reuse across scenarios—or when the parent agent’s “tool choice set” grows beyond ~30–40 actions and starts to degrade orchestration quality.
+**Connected agents** are independently built and operated agents that your parent agent can call. Use them when you need separate ownership, deployment, authentication, or reuse across scenarios—or when the parent agent's "tool choice set" grows beyond ~30–40 actions and starts to degrade orchestration quality.
 
 Typical connected options include:
 
@@ -52,7 +52,7 @@ Typical connected options include:
 - Fabric Data Agents (preview), which bring governed, schema‑aware enterprise data into agentic workflows.
 - Agents from Azure AI Agents Service or Microsoft 365 Agents SDK, combined via orchestration patterns.
 
-Community walk‑throughs illustrate “master” agents that intelligently route HR vs. IT queries to specialized connected agents while preserving conversation context when configured to pass history.
+Community walk‑throughs illustrate "master" agents that intelligently route HR vs. IT queries to specialized connected agents while preserving conversation context when configured to pass history.
 
 ## Where MCP Fits—and How It Differs from Connected Agents
 
@@ -60,12 +60,12 @@ Community walk‑throughs illustrate “master” agents that intelligently rout
 
 **Model Context Protocol (MCP)** is an open standard that standardizes how AI agents connect to external tools, data, and prompts via MCP servers and clients. It uses JSON‑RPC, supports resources/tools/prompts, and includes evolving specs for capability negotiation, sampling, and enterprise‑grade security.
 
-Microsoft introduced MCP support in Copilot Studio so makers can add MCP servers as agent actions with enterprise connector governance (VNet, DLP, authentication). MCP is also landing at the Windows platform level with an on‑device registry (ODR) and built‑in MCP agent connectors (e.g., File Explorer, Settings), plus a secure Agent Workspace—evidence of Microsoft’s broader strategy to make MCP the standard connector layer for agent capabilities.
+Microsoft introduced MCP support in Copilot Studio so makers can add MCP servers as agent actions with enterprise connector governance (VNet, DLP, authentication). MCP is also landing at the Windows platform level with an on‑device registry (ODR) and built‑in MCP agent connectors (e.g., File Explorer, Settings), plus a secure Agent Workspace—evidence of Microsoft's broader strategy to make MCP the standard connector layer for agent capabilities.
 
 ### MCP vs. Connected Agents in Copilot Studio
 
-- **Scope of integration:** Connected agents integrate other agents into your orchestration graph; MCP integrates capabilities and data exposed by MCP servers into your agent’s toolset.
-- **Governance model:** Connected agents carry independent lifecycles and identities; MCP uses Copilot Studio’s connector infrastructure so MCP tools inherit enterprise security and DLP controls.
+- **Scope of integration:** Connected agents integrate other agents into your orchestration graph; MCP integrates capabilities and data exposed by MCP servers into your agent's toolset.
+- **Governance model:** Connected agents carry independent lifecycles and identities; MCP uses Copilot Studio's connector infrastructure, so MCP tools inherit enterprise security and DLP controls.
 - **Standardization and portability:** MCP gives you a vendor‑neutral way to publish tools once and consume them across multiple agent hosts (GitHub Copilot, Claude, Windows, Copilot Studio).
 
 
@@ -86,17 +86,17 @@ Microsoft introduced MCP support in Copilot Studio so makers can add MCP servers
 
 ## Architecture and Design Considerations
 
-When planning your multi-agent orchestration strategy, you should adopt a deliberate approach to architectural evolution that balances immediate delivery requirements with long-term maintainability and scalability concerns. The following design principles represent established patterns that have proven effective across enterprise implementations and should guide your decision-making process as you build and refine your agent ecosystem.
+When planning your multi-agent orchestration strategy, you should adopt a deliberate approach to architectural evolution that balances immediate delivery requirements with long-term maintainability and scalability. The following design principles represent established patterns that have proven effective across enterprise implementations and should guide your decision-making process as you build and refine your agent ecosystem.
 
-**Begin with embedded agents and migrate to connected agents as system complexity increases.** During the initial phases of your agent development, you should implement specialized capabilities as embedded child agents within a single parent orchestration context. This approach allows you to validate your functional requirements, refine your agent interactions, and establish clear domain boundaries without incurring the operational overhead of managing multiple independent agent deployments. As your implementation matures and you observe opportunities for cross-functional reuse, performance degradation due to expanding action sets, or organizational requirements for independent ownership and deployment cycles, you should extract these embedded capabilities into connected agents. This graduated approach ensures that you only introduce architectural complexity when it provides measurable value in terms of reusability, performance, or operational flexibility.
+**Begin with embedded agents and migrate to connected agents as system complexity increases.** During the initial phases of your agent development, you should implement specialized capabilities as embedded child agents within a single parent orchestration context. This approach allows you to validate your functional requirements, refine your agent interactions, and establish clear domain boundaries without incurring the operational overhead of managing multiple independent agent deployments. As your implementation matures and you observe opportunities for cross-functional reuse, performance degradation due to expanding action sets, or organizational requirements for independent ownership and deployment cycles, you should extract these embedded capabilities into connected agents. This graduated approach ensures you introduce GitHub's complexity only when it delivers measurable value in terms of reusability, performance, or operational flexibility.
 
-**Adopt the Model Context Protocol as your standard method for integrating external capabilities and data sources.** Rather than developing custom integration code for each tool or data source your agents require, you should leverage MCP servers wherever standardized implementations are available or can be developed with reasonable effort. This investment in standards-based integration will reduce your long-term maintenance burden by creating portable tool definitions that can be consumed across multiple agent platforms without platform-specific adaptation. When evaluating whether to build a custom Copilot Studio connector or an MCP server for a particular capability, you should favor MCP when you anticipate consumption across multiple agent hosts, when vendor-neutral portability is strategically important, or when community-maintained MCP servers already exist for your required functionality.
+**Adopt the Model Context Protocol as your standard method for integrating external capabilities and data sources.** Rather than developing custom integration code for each tool or data source your agents require, you should leverage MCP servers wherever standardized implementations are available or can be designed with reasonable effort. This investment in standards-based integration will reduce your long-term maintenance burden by creating portable tool definitions that can be consumed across multiple agent platforms without platform-specific adaptation. When evaluating whether to build a custom Copilot Studio connector or an MCP server for a particular capability, you should favor MCP when you anticipate consumption across multiple agent hosts, when vendor-neutral portability is strategically essential, or when community-maintained MCP servers already exist for your required functionality.
 
-**Ensure that your agents retrieve information exclusively from governed, authoritative data sources by integrating Fabric Data Agents and enterprise-grade connectors.** The reliability and trustworthiness of your agent's outputs depend fundamentally on the quality and governance of the underlying data they access during the grounding process. You should establish clear data governance policies that specify which data sources are authoritative for particular domains, implement proper source-level permissions that enforce least-privilege access principles, and validate that your agents respect organizational data classification and sensitivity boundaries. When connecting to data platforms such as Microsoft Fabric, you should leverage native Data Agent capabilities that provide schema-aware access with built-in permission enforcement rather than implementing custom data access patterns that may bypass established governance controls.
+**Ensure that your agents retrieve information exclusively from governed, authoritative data sources by integrating Fabric Data Agents and enterprise-grade connectors.** The reliability and trustworthiness of your agent's outputs depend fundamentally on the quality and governance of the underlying data they access during the grounding process. You should establish clear data governance policies that specify which data sources are authoritative for specific domains, implement source-level permissions that enforce least-privilege access principles, and verify that your agents respect organizational data classification and sensitivity boundaries. When connecting to data platforms such as Microsoft Fabric, you should leverage native Data Agent capabilities that provide schema-aware access with built-in permission enforcement rather than implementing custom data access patterns that may bypass established governance controls.
 
 **Design your orchestration flows to support seamless channel transitions and human escalation pathways.** While autonomous agent operation is desirable for routine scenarios, your architecture must accommodate situations where complexity exceeds agent capabilities or where human judgment is required for high-stakes decisions. You should implement clear escalation criteria that trigger hand-offs to human agents or subject matter experts, preserve conversation context across these transitions to avoid forcing users to repeat information, and provide your support staff with sufficient context about prior agent interactions to enable informed decision-making. Your channel strategy should also account for scenarios where users begin interactions in one modality—such as a Teams chat—and need to transition to another channel—such as a phone call or email thread—without losing the benefits of prior agent assistance.
 
-**Incorporate device-level capabilities through the Windows On-Device Registry when building agents that interact with local system resources.** For scenarios where your agents need to access or manipulate resources on the user's local device—such as files, system settings, or installed applications—you should leverage the Windows ODR and its associated MCP infrastructure rather than developing custom local integration code. This approach provides your agents with secure, governed access to local capabilities while maintaining the isolation and security boundaries that Windows enforces for sensitive system operations. When designing agents for knowledge workers who use Windows devices as their primary computing environment, you should evaluate which local capabilities—such as file management, calendar access, or application automation—would enhance productivity and implement these capabilities through ODR-registered MCP servers that adhere to established security and privacy policies.
+**Incorporate device-level capabilities through the Windows On-Device Registry when building agents that interact with local system resources.** For scenarios where your agents need to access or manipulate resources on the user's local device—such as files, system settings, or installed applications—you should leverage the Windows ODR and its associated MCP infrastructure rather than developing custom local integration code. This approach provides your agents with secure, governed access to local capabilities while maintaining the isolation and security boundaries that Windows enforces for sensitive system operations. When designing agents for knowledge workers who use Windows devices as their primary computing environment, you should evaluate which local capabilities—such as file management, calendar access, or application automation—would enhance productivity, and implement them through ODR-registered MCP servers that adhere to established security and privacy policies.
 
 ## Practical Implementation Examples
 
@@ -112,7 +112,7 @@ Steps:
 
 ### B. Connected Agents Within Copilot Studio
 
-**Scenario:** “Master” agent that delegates HR vs. IT queries.
+**Scenario:** "Master" agent that delegates HR vs. IT queries.
 
 Steps:
 1. Publish specialized agents independently.
