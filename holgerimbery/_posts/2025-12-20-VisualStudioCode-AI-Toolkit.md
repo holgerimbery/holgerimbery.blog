@@ -34,7 +34,7 @@ Local debugging, hosted agent playgrounds, unified visualization, and single‑c
 The toolchain supports structured evaluation (metrics, tasks, datasets) and integrates tracing and graph visualization for multi‑agent workflows. This makes quality assessment and incident response more systematic, improving confidence in releases and reducing operational risk. 
 
 **Model Choice and Portability**
-The model catalog spans hosted providers and local runtimes (ONNX, Ollama), and includes recent Anthropic models. Organizations can align model selection to privacy constraints, latency targets, and cost envelopes without changing development surfaces. 
+The model catalog spans hosted providers and local runtimes (ONNX, Ollama) and includes recent Anthropic models. Organizations can align model selection to privacy constraints, latency targets, and cost envelopes without changing development surfaces. 
 
 **Incremental Adoption**
 YAML‑based declarative workflows can be converted into code aligned with the Microsoft Agent Framework—enabling teams to start simple and progressively customize. This staged path mitigates the risk of over‑engineering early while preserving the option to extend later. 
@@ -42,16 +42,16 @@ YAML‑based declarative workflows can be converted into code aligned with the M
 
 
 ## A Detailed Overview of the VS Code AI Toolkit Extension
-The extension exposes a structured VS Code view with distinct sections that map cleanly to an AI app’s lifecycle. Below is a technical tour of the major components.
+The extension exposes a structured VS Code view with distinct sections that map cleanly to an AI app's lifecycle. Below is a technical tour of the major components.
 ### Resources
 
 Models: Lists deployed and available models you can use in projects. It is the anchor for selecting runtime backends before entering playgrounds or builders. 
-Agents: Displays agents you have created or deployed through the toolkit. This centralizes agent artifacts used by downstream tools like bulk run and tracing. 
-MCP Servers: Enumerates Model Context Protocol servers you’ve added, which provide tool‑use capabilities (databases, APIs, services). This turns agents from pure language generators into action‑taking systems. 
+Agents: Displays agents you have created or deployed through the toolkit. This centralizes agent artifacts used by downstream tools such as bulk runs and tracing. 
+MCP Servers: Enumerates Model Context Protocol servers you've added, which provide tool‑use capabilities (databases, APIs, services). This turns agents from pure language generators into action‑taking systems. 
 ## Model Tools
 
 Model Catalog: A unified browser over models from GitHub, ONNX, Ollama, OpenAI, Anthropic, Google, and others. Engineers can compare options and evaluate tradeoffs before binding a model to an agent. The Ignite update explicitly calls out Anthropic Claude variants now accessible here. 
-Model Playground: An interactive chat/test surface for prompts, parameters, and multimodal inputs. It’s designed for rapid hypothesis testing—ideal before formalizing agent instructions. 
+Model Playground: An interactive chat/test surface for prompts, parameters, and multimodal inputs. It's designed for rapid hypothesis testing—ideal before formalizing agent instructions. 
 Conversion: Utilities for converting, quantizing, and optimizing pretrained models for local execution (CPU/GPU/NPU). This aids portability and cost control, particularly for edge scenarios. 
 Fine‑tuning: Workflows to adapt foundation models using custom datasets either locally (GPU) or in Azure Container Apps (GPU). This allows domain specialization without abandoning the VS Code environment. 
 ### Agent & Workflow Tools
@@ -65,19 +65,19 @@ Tracing: Runtime telemetry over reasoning steps, tool calls, and latency hotspot
 Add MCP Server / Create New MCP Server: Discover featured MCP servers, validate local Node/Python environments, and scaffold new servers. This extends agents with secure, composable capabilities to query systems, invoke APIs, and manipulate external state. 
 ### Visualization and Round‑Trip Development
 
-Graph Visualizer: The Ignite update introduces interactive visualization of multi‑agent workflows, illuminating node execution and connections. This makes debugging and comprehension of complex orchestration feasible within editor context. 
+Graph Visualizer: The Ignite update introduces interactive visualization of multi‑agent workflows, illuminating node execution and connections. This makes debugging and understanding complex orchestration feasible within the editor. 
 Local‑to‑Cloud Roundtrip: Seamless switching between VS Code and the Foundry portal for YAML workflows, playgrounds, and templates—plus single‑click deployment. This aligns dev, ops, and evaluation artifacts without format drift. 
 
 
 ## Development Workflow: From YAML to Code and Back
-A pragmatic pattern for teams is to begin with declarative YAML workflows in Foundry for clarity and quick iteration. When customization demands increase—e.g., custom tool‑use, advanced control flow, or instrumentation—convert YAML to Agent Framework code and continue in Agent Builder. GitHub Copilot scaffolding assists in producing maintainable code with tracing hooks and test scaffolds. This reduces context switching and preserves lineage from declarative prototypes to code‑first implementations. 
+A pragmatic pattern for teams is to begin with declarative YAML workflows in Foundry for clarity and quick iteration. When customization demands increase—e.g., custom tool‑use, advanced control flow, or instrumentation—convert YAML to Agent Framework code and continue in Agent Builder. GitHub Copilot scaffolding helps produce maintainable code with tracing hooks and test scaffolding. This reduces context switching and preserves lineage from declarative prototypes to code‑first implementations. 
 
 
 ## Evaluation, Quality, and Operability
-Robust AI systems demand measurable quality. The toolkit’s Evaluation module standardizes dataset‑based comparisons and metric computation, and the Tracing module surfaces runtime behaviors, tool invocations, and timing. In multi‑agent setups, the graph visualizer further supports operational debugging. Collectively, these capabilities enable repeatable tests, incident triage, and performance baselining before and after deployment. 
+Robust AI systems demand measurable quality. The toolkit's Evaluation module standardizes dataset‑based comparisons and metric computation, and the Tracing module surfaces runtime behaviors, tool invocations, and timing. In multi‑agent setups, the graph visualizer further supports operational debugging. Collectively, these capabilities enable repeatable tests, incident triage, and performance baselining before and after deployment. 
 
 ## Model Strategy and Local Execution
-The extension’s catalog allows mixing hosted providers with local execution via ONNX and Ollama. Local modes are valuable for privacy (data residency), latency (edge), and cost (avoiding per‑token charges for certain workloads). Where domain‑specific performance is needed, fine‑tuning in local GPUs or Azure Container Apps helps align responses to proprietary data without a wholesale platform shift. Model conversion ensures the operational footprint matches target hardware, including NPU acceleration paths. 
+The extension's catalog allows mixing hosted providers with local execution via ONNX and Ollama. Local modes are valuable for privacy (data residency), latency (edge), and cost (avoiding per‑token charges for specific workloads). Where domain‑specific performance is needed, fine‑tuning in local GPUs or Azure Container Apps helps align responses to proprietary data without a wholesale platform shift. Model conversion ensures the operational footprint matches target hardware, including NPU acceleration paths. 
 
 
 ## Practical Onboarding
@@ -85,11 +85,11 @@ Installation is straightforward through the Marketplace; once installed, the AI 
 
 
 ## YAML to Code Example: Customer Support Agent with MCP Tools
-A minimal, illustrative example that shows how a declarative YAML workflow (as you’d author in Microsoft Foundry and open in VS Code) can be “converted” into code-first agent implementation in Python using the same concepts—model selection, agent instructions, tool use via MCP servers, tracing, and structured outputs.
+A minimal, illustrative example that shows how a declarative YAML workflow (as you'd author in Microsoft Foundry and open in VS Code) can be "converted" into a code-first agent implementation in Python using the same concepts—model selection, agent instructions, tool use via MCP servers, tracing, and structured outputs.
 
 {: .important }
 **Note**: 
-The YAML schema for Foundry agent workflows can evolve; the sample below is intentionally simplified to make the mapping clear. In practice, you’d open YAML workflows in VS Code and iterate or move to code using the AI Toolkit’s Agent Builder with Copilot-assisted scaffolding. The latest update explicitly highlights YAML workflows and code-first customization, as well as MCP tool integration and multi-agent visualization. 
+The YAML schema for Foundry agent workflows can evolve; the sample below is intentionally simplified to make the mapping clear. In practice, you'd open YAML workflows in VS Code and iterate or move to code using the AI Toolkit's Agent Builder with Copilot-assisted scaffolding. The latest update explicitly highlights YAML workflows and code-first customization, as well as MCP tool integration and multi-agent visualization. 
 
 
 ### YAML (declarative) — simplified agent workflow
@@ -199,7 +199,7 @@ These elements align with the AI Toolkit guidance around agent instructions, MCP
 
 ### Equivalent code (Python) — agent, tools, tracing, structured output
 
-Below is a conceptual Python implementation that mirrors the YAML’s behavior. It registers tools (including MCP-backed actions), defines agent instructions, handles orchestration, and returns a typed result. In VS Code, you’d typically scaffold this in Agent Builder and refine it with Copilot. 
+Below is a conceptual Python implementation that mirrors the YAML's behavior. It registers tools (including MCP-backed actions), defines agent instructions, handles orchestration, and returns a typed result. In VS Code, you’d typically scaffold this in Agent Builder and refine it with Copilot. 
 
 ```python
 # file: customer_support_agent.py
@@ -341,7 +341,7 @@ if __name__ == "__main__":
 Key takeaways:
 
 The system instructions and runtime params (model, temperature, tracing) map directly from YAML to code constructor/state.
-MCP tools in YAML become server objects with actions you dispatch to programmatically; VS Code’s Agent Builder validates the environment and helps configure featured MCP servers. 
+MCP tools in YAML become server objects with actions you dispatch programmatically; VS Code's Agent Builder validates the environment and helps configure featured MCP servers. 
 The orchestration steps in YAML become explicit method calls with ordered execution, culminating in an LLM invocation that composes context from tool results.
 The output schema maps to a typed AgentOutput dataclass, enforcing structure at the boundary.
 
@@ -352,11 +352,11 @@ Open the YAML workflow in VS Code (via Foundry extension) and review steps, tool
 Use Agent Builder to scaffold an agent: paste the system instructions, set model/runtime, and attach MCP servers (featured MCP servers are discoverable and validated). 
 Translate steps: for each YAML step, create corresponding code functions/method calls. Copilot can generate the scaffolds and function signatures aligned with best‑practice patterns. 
 Run locally with tracing and iterate in the Hosted Agents Playground. Use the graph visualizer to understand multi‑agent flows and debug step execution. 
-Evaluate using datasets and metrics (relevance, similarity, coherence or task‑specific). When the agent meets acceptance criteria, deploy to Foundry to manage orchestration and enterprise hosting. 
+Evaluate using datasets and metrics (relevance, similarity, coherence, or task‑specific). When the agent meets acceptance criteria, deploy to Foundry to manage orchestration and enterprise hosting. 
 
 
 ### Optional: C# skeleton for the same agent
-If your runtime preference is .NET, here’s a skeleton showing the same mapping. In VS Code, you’d choose the language when scaffolding the agent.
+If your runtime preference is .NET, here's a skeleton showing the exact mapping. In VS Code, you'd choose the language when scaffolding the agent.
 ```csharp
 // file: CustomerSupportAgent.cs (conceptual)
 public sealed class CustomerSupportAgent
