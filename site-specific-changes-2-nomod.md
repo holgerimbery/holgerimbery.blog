@@ -10,9 +10,12 @@ _includes/footer.html:
 added cookie preferences  
 removed themeselector - light dark mode
 
-
 _layouts/authors.html:  
 added more social media links
+
+_layouts/author.html:
+added code to show more than one author
+
 
 disqus-comments.html:  
 add <script type="text/plain" data-cookie-consent="functionality"> to use with cookie consent
