@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Intelligent, Agentic Applications in VS Code: A Technical Deep Dive into the AI Toolkit Extension Pack
+title: Building Intelligent, Agentic Applications in VS Code - A Technical Deep Dive into the AI Toolkit Extension Pack
 description: Explore how the Visual Studio Code AI Toolkit Extension Pack enables seamless development of intelligent, agentic applications from local prototyping to cloud deployment with Microsoft Foundry. This article provides a technical deep dive into model selection, agent orchestration, MCP tool integration, evaluation pipelines, and runtime tracing, complete with YAML-to-code examples in Python and C#.
 date: 2025-12-20
 author: admin
