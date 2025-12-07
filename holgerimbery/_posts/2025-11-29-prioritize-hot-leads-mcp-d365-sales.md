@@ -10,7 +10,7 @@ image_caption: Photo by <a href="https://unsplash.com/@rocinante_11?utm_source=u
        
 category: [Dynamics365, Sales, copilotstudio, agents]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 

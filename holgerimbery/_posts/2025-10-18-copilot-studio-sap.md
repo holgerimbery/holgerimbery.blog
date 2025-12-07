@@ -8,7 +8,7 @@ image_caption: Photo by <a href="https://unsplash.com/@petermiranda?utm_content=
 
 category: [copilotstudio, SAP, agents]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 

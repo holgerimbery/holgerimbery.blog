@@ -9,7 +9,7 @@ image_caption: Photo by <a href="https://unsplash.com/@4themorningshoot?utm_sour
        
 category: [AIFoundry, copilotstudio, agents]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 

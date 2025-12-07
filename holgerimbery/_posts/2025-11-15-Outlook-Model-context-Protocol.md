@@ -9,7 +9,7 @@ image_caption: Photo by <a href="https://unsplash.com/@mathyaskurmann?utm_source
       
 category: [MCP, copilotstudio, agents]
 author: admin
-featured: true
+featured: fasle
 toc: true
 ---
 

@@ -8,7 +8,7 @@ image_caption: Photo by <a href="https://unsplash.com/@gaspanik?utm_source=unspl
       
 category: [copilotstudio, governance, agents]
 author: admin
-featured: true
+featured: false
 toc: true
 ---
 
