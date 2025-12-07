@@ -31,11 +31,13 @@ jobs:
       # Installs Jekyll and other dependencies defined in Gemfile
       - name: Install Dependencies
         run: bundle install
+        working-directory: ./holgerimbery
 
       # Builds the Jekyll site
       - name: Build Site
         run: |
           bundle exec jekyll build --future
+        working-directory: ./holgerimbery
         env:
           JEKYLL_ENV: production # Ensures production configuration is used
 
