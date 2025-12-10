@@ -6,7 +6,7 @@ layout: default
 <section class="section author">
 
   <div class="container">
-    {% assign post_count = site.posts | where: 'author', page.username %}
+    {% assign post_count = site.posts | posts_by_author: page.username %}
     <div class="author__content">
 
       <div class="author__image">
@@ -22,7 +22,7 @@ layout: default
         </span> •
         {% endif %}
         <span class="post-count">
-          {{ post_count.size }}{% if post_count.size < 2 %}Post{% else %} posts{% endif %}
+          {{ post_count.size }}{% if post_count.size < 2 %} post{% else %} posts{% endif %}
         </span>
       </div>
 

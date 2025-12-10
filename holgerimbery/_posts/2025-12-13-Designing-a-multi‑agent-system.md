@@ -34,8 +34,9 @@ The current architectural guidance published by Microsoft for agents built withi
 When these capabilities are applied in real-world enterprise scenarios, they enable the construction of a multi-agent topology that consists of one **centralized intake agent** that maintains continuous monitoring of the inbound mailbox and serves as the primary point of contact, supported by a constellation of specialized agents that handle distinct functional domains: Sales Support operations, Customer Service inquiries, Attachment and Document Processing workflows, and Recruiting Guidance interactions. Each of these specialized agents operates with its own dedicated set of integration points to relevant systems and its own curated collection of data sources that are pertinent to its particular domain of responsibility.
 
 
-## Reference Architecture
-{: .important } 
+## Reference Architecture  
+
+{: .important }
 Domain agents are connected agents, meaning they operate as independent entities that can interact with other systems or services through defined connectors and APIs.
 Sub-agents, on the other hand, are embedded agents that reside within a domain agent. They do not function as standalone entities; instead, they extend the capabilities of the parent domain agent by handling specialized tasks or workflows internally.
 
