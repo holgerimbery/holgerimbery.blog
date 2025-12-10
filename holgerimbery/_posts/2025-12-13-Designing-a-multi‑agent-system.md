@@ -16,9 +16,9 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**  
-High-volume inbound channels — emails, chats, and calls — drain service and sales teams when most queries are routine. A multi-agent system in **Microsoft Copilot Studio** can autonomously handle product lookups, quote generation, troubleshooting, and recruiting guidance, escalating only the exceptions to human reps. This article shows you how to architect, deploy, and govern specialized agents that integrate with Dynamics 365 Customer Service and Sales, cutting response times and freeing your teams for high-value work.
+High-volume inbound channels — emails, chats, and calls — drain service and sales teams when most queries are routine. A multi-agent system in **Microsoft Copilot Studio** can autonomously handle product lookups, quote generation, troubleshooting, and recruiting guidance, escalating only the exceptions to human reps. This article shows you how to build, deploy, and govern specialized agents that integrate with Dynamics 365 Customer Service and Sales, cutting response times and freeing your teams for high-value work.
 
-**Read this if** you want a practical blueprint for building autonomous email and message automation — complete with routing logic, grounding controls, and a phased rollout plan.
+**Read this if** you want a practical blueprint for building a multi agent system to autonomous email and message automation — complete with routing logic, grounding controls, and a phased rollout plan.
 
 ## Why Multi‑Agent Architecture Is Essential for Modern Enterprise Operations
 
@@ -30,7 +30,7 @@ The current architectural guidance published for agents built within Copilot Stu
   
 - Organizations can choose between **NLU and NLU+ processing options**, which gives them granular control over the question of where natural language understanding workloads are actually executed—either within the Copilot Studio infrastructure itself or within the Dynamics 365 environment—and the platform supports **contextual transfer mechanisms** that enable the system to hand off conversations to human service representatives whenever the situation demands human judgment or expertise.
   
-- The Customer Service module includes **email drafting features** that enable agents to generate responses that are both consistent in tone and terminology and deeply informed by the specific context of each conversation, with the additional option to ground these responses in authenticated knowledge articles and explicitly trusted information sources to ensure accuracy and reliability.
+- The multi agent system includes **email (drafting) features** that enable agents to generate responses that are both consistent in tone and terminology and deeply informed by the specific context of each conversation, with the additional option to ground these responses in authenticated knowledge articles and explicitly trusted information sources to ensure accuracy and reliability.
 
 When these capabilities are applied in real-world enterprise scenarios, they enable the construction of a multi-agent topology that consists of one **centralized intake agent** that maintains continuous monitoring of the inbound mailbox and serves as the primary point of contact, supported by a constellation of specialized agents that handle distinct functional domains: Sales Support operations, Customer Service inquiries, Attachment and Document Processing workflows, and Recruiting Guidance interactions. Each of these specialized agents operates with its own dedicated set of integration points to relevant systems and its own curated collection of data sources that are pertinent to its particular domain of responsibility.
 
@@ -189,7 +189,7 @@ Why? Observability is critical for trust in autonomous systems and for refining 
 1. Define topics only in the main agents.
 2. Use subagents for execution, not conversation.
 3. Pass necessary parameters from the main agent to subagents for task completion.
-4. Maintain a clear orchestration hierarchy: **Intake Agent → Main Agent → Subagent (Action)**.
+4. Maintain a clear orchestration hierarchy: **Intake Agent → Main (Domain) Agent → Subagent (Action)**.
 
 ## Governance, Security, and Risk Controls
 
