@@ -24,6 +24,14 @@ google-analytics.html:
 add <script type="text/plain" data-cookie-consent="tracking"> to use with cookie consent
 comment - google analytics is not used anymore
 
+_include/article.html  
+_layouts/author.html  
+_pages/authors.html  
+_plugins/simple_search_filter.rd  
+_css/_3-modules/article.scss:  
+multiauthor 
+
+
 ## changes to pages
 _pages/about.md,   
 _pages/impressum.md,  
