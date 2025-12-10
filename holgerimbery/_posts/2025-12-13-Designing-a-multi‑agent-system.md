@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Designing a Multi‑Agent System in Copilot Studio for Dynamics 365 Customer Service & Sales
-description: A pragmatic architecture and operating model for automating inbound email and message handling using specialized agents in Microsoft Copilot Studio, integrated with Dynamics 365 Customer Service and Sales. Automating inbound queries from customers, prospects, and job seekers—end to end   
+description: High-volume inbound channels — emails, chats, and calls — drain service and sales teams when most queries are routine. A multi-agent system in Microsoft Copilot Studio can autonomously handle product lookups, quote generation, troubleshooting, and recruiting guidance, escalating only the exceptions to human reps. This article shows you how to architect, deploy, and govern specialized agents that integrate with Dynamics 365 Customer Service and Sales, cutting response times and freeing your teams for high-value work.
+
 date: 2025-12-13
 author: admin, jennifer
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/goffredo-crollalanza-joDP04dvSBM-unsplash.jpg
@@ -17,13 +18,13 @@ toc: true
 > **Summary Lede**  
 High-volume inbound channels — emails, chats, and calls — drain service and sales teams when most queries are routine. A multi-agent system in **Microsoft Copilot Studio** can autonomously handle product lookups, quote generation, troubleshooting, and recruiting guidance, escalating only the exceptions to human reps. This article shows you how to architect, deploy, and govern specialized agents that integrate with Dynamics 365 Customer Service and Sales, cutting response times and freeing your teams for high-value work.
 
-**Read this if** you want a practical blueprint for building autonomous email and message automation—complete with routing logic, grounding controls, and a phased rollout plan.
+**Read this if** you want a practical blueprint for building autonomous email and message automation — complete with routing logic, grounding controls, and a phased rollout plan.
 
 ## Why Multi‑Agent Architecture Is Essential for Modern Enterprise Operations
 
 The traditional approach of deploying a single, monolithic chatbot to handle the full spectrum of enterprise email inquiries has consistently proven inadequate for organizations operating at scale. What is required instead is a carefully orchestrated collection of specialized agents, each with a tightly focused scope of responsibility and a clearly delineated set of tools and capabilities. These agents must be coordinated through a sophisticated orchestration layer that accurately interprets the intent of each incoming message and routes the work to the appropriate specialized handler.
 
-The current architectural guidance published by Microsoft for agents built within Copilot Studio places particular emphasis on several foundational principles that enable this multi-agent approach to succeed in production environments:
+The current architectural guidance published for agents built within Copilot Studio places particular emphasis on several foundational principles that enable this multi-agent approach to succeed in production environments:
 
 - The platform provides **generative orchestration** capabilities that allow the system to interpret the intent expressed by users, to select the most appropriate actions from those available, and to route conversations seamlessly across multiple communication channels without requiring developers to write channel-specific integration code for each medium.
   
@@ -64,6 +65,8 @@ Sub-agents, on the other hand, are embedded agents that reside within a domain a
 5. **Recruiting Guidance Agent**  
    - **Tasks**: Guides job seekers to the careers portal, answers FAQs about roles, eligibility, and timelines; provides tailored application instructions; captures contact info for Talent.  
    - **Channels**: Email, web chat, and voice IVR; hands off to HR when a candidate requests human contact.
+
+
 
 ### Orchestration & Data
 
