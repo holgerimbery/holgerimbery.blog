@@ -44,8 +44,6 @@ staticwebapp.config.json
 404.html  
 _authors/*  
 
-## posts
-*  
 
 
 
