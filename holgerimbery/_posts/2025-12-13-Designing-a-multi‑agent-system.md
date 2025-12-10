@@ -4,7 +4,7 @@ title: Designing a Multi-Agent System in Copilot Studio for Dynamics 365 Custome
 description: High-volume inbound channels — emails, chats, and calls — drain service and sales teams when most queries are routine. A multi-agent system in Microsoft Copilot Studio can autonomously handle product lookups, quote generation, troubleshooting, and recruiting guidance, escalating only the exceptions to human reps. This article shows you how to architect, deploy, and govern specialized agents that integrate with Dynamics 365 Customer Service and Sales, cutting response times and freeing your teams for high-value work.
 
 date: 2025-12-13
-author: admin, jennifer
+author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/goffredo-crollalanza-joDP04dvSBM-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@goffpix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">goffredo crollalanza</a> on <a href="https://unsplash.com/photos/people-gather-to-look-at-the-chanel-store-joDP04dvSBM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
