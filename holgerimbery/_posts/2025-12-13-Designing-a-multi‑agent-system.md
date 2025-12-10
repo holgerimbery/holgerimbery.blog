@@ -41,6 +41,8 @@ When these capabilities are applied in real-world enterprise scenarios, they ena
 Domain agents are connected agents, meaning they operate as independent entities that can interact with other systems or services through defined connectors and APIs.
 Sub-agents, on the other hand, are embedded agents that reside within a domain agent. They do not function as standalone entities; instead, they extend the capabilities of the parent domain agent by handling specialized tasks or workflows internally.
 
+![upgit_20251210_1765365666.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/upgit_20251210_1765365666.png)
+
 ### Core Agents
 
 1. **Intake & Intent Router (Autonomous)**  
