@@ -29,7 +29,7 @@ _layouts/author.html
 _pages/authors.html  
 _plugins/simple_search_filter.rd  
 _css/_3-modules/article.scss:  
-multiauthor 
+added multiauthor capabilities
 
 
 ## changes to pages
