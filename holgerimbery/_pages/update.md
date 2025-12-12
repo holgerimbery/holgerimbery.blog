@@ -6,6 +6,10 @@ permalink: /updates/
 image: '/images/01.jpg'
 image_caption: 
 ---
+
+## 2025-12-12 - multiple authors
+The blog now supports multiple authors. If you are interested in contributing articles or collaborating on content, please reach out to me via the contact form.
+
 ## 2025-07-21 - translation via GTranslate
 The blog now supports multilingual content through Google Translate via GTranslate. This feature allows readers to view articles in their preferred language, enhancing accessibility and user experience. The translation option is available via a floating button on the bottom left corner of the page.
 ## 2025-07-08 - translation
