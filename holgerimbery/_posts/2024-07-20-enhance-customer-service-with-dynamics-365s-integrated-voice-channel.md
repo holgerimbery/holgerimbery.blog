@@ -5,7 +5,7 @@ description:
 date: 2024-07-20
 author: admin
 image: ./images/enhance-customer-service-with-dynamics-365s-integrated-voice-channel.jpeg
-tags: [dynamics365, contact-center]
+tags: [dynamics365, contactcenter]
 featured: false
 toc: true
 
