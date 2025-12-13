@@ -5,7 +5,7 @@ description:
 date: 2024-07-27
 author: admin
 image: ./images/the-new-voice-capabilities-of-copilot-studio-a-comprehensive-overview.jpeg
-tags: [copilot, dynamics365, copilotstudio, contact-center]
+tags: [copilot, dynamics365, copilotstudio, contactcenter]
 featured: false
 toc: true
 
