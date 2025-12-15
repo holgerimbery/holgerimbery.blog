@@ -8,7 +8,7 @@ date: 2025-10-11
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/thisisengineering-iQqRM0XJvn8-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@thisisengineering?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ThisisEngineering</a> on <a href="https://unsplash.com/photos/woman-in-black-and-white-jacket-sitting-in-front-of-computer-monitor-iQqRM0XJvn8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-category: [copilotstudio, aifoundry, agents]
+tags: [copilotstudio, aifoundry, agents]
 author: admin
 featured: false
 toc: true

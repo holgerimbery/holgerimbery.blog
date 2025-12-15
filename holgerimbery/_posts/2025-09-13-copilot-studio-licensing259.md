@@ -7,7 +7,7 @@ date: 2025-09-13
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/igal-ness-9wY2ofzQ9Us-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@igalness?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Igal Ness</a> on <a href="https://unsplash.com/photos/person-holding-fan-of-100-us-dollar-bill-9wY2ofzQ9Us?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-category: [copilotstudio]
+tags: [copilotstudio]
 author: admin
 featured: false
 toc: true

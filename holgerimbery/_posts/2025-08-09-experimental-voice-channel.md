@@ -6,7 +6,7 @@ date: 2025-08-09
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/08/victoria-strukovskaya-UkEN39LOTw8-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@struvictoryart?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Victoria Strukovskaya</a> on <a href="https://unsplash.com/photos/gray-telephone-UkEN39LOTw8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
-category: [copilotstudio, voicechannel, telephony, customerservice]
+tags: [copilotstudio, voicechannel, telephony, customerservice]
 author: admin
 featured: false
 toc: true

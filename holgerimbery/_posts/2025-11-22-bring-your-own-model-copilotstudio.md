@@ -7,7 +7,7 @@ date: 2025-11-22
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/oliver-hale--vMnQkiIPeo-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@4themorningshoot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oliver Hale</a> on <a href="https://unsplash.com/photos/strawberries-in-bucket--vMnQkiIPeo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
        
-category: [AIFoundry, copilotstudio, agents]
+tags: [AIFoundry, copilotstudio, agents]
 author: admin
 featured: false
 toc: true

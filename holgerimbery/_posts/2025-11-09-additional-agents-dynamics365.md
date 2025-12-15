@@ -6,7 +6,7 @@ description: Technical overview and configuration guide for additional Microsoft
 date: 2025-11-09
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/headway-5QgIuuBxKwM-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@headwayio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Headway</a> on <a href="https://unsplash.com/photos/black-smartphone-near-person-5QgIuuBxKwM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-category: [dynamics365, sales, operations, copilotstudio, agents]
+tags: [dynamics365, sales, operations, copilotstudio, agents]
 author: admin
 featured: false
 toc: true

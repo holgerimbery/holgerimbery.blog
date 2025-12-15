@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@rocinante_11?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mick Haupt</a> on <a href="https://unsplash.com/photos/green-and-red-chili-pepper-REqGEwTeFZ4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
        
-category: [Dynamics365, Sales, copilotstudio, agents]
+tags: [Dynamics365, Sales, copilotstudio, agents]
 author: admin
 featured: false
 toc: true

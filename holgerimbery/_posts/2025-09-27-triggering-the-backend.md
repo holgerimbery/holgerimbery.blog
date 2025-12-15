@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@adamanium?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anton Dmitriev</a> on <a href="https://unsplash.com/photos/shallow-focus-photo-of-man-fixing-steel-cable-kBKOaghy8mU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 
-category: [copilotstudio, aifoundry]
+tags: [copilotstudio, aifoundry]
 author: admin
 featured: false
 toc: true

@@ -8,7 +8,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/goffredo-crollalanza-joDP04dvSBM-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@goffpix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">goffredo crollalanza</a> on <a href="https://unsplash.com/photos/people-gather-to-look-at-the-chanel-store-joDP04dvSBM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
-category: [copilot, dynamics365, automation, agents, multiagent, sales, customerservice]
+tags: [copilot, dynamics365, automation, agents, multiagent, sales, customerservice]
 featured: true
 toc: true
 ---
