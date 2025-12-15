@@ -7,7 +7,7 @@ date: 2025-11-15
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/mathyas-kurmann-fb7yNPbT0l8-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@mathyaskurmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathyas Kurmann</a> on <a href="https://unsplash.com/photos/six-assorted-color-mail-boxes-fb7yNPbT0l8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
-tags: [MCP, copilotstudio, agents]
+tags: [modelcontextprotocol, copilotstudio, agents]
 author: admin
 featured: fasle
 toc: true
