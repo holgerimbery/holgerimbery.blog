@@ -72,13 +72,13 @@ blog:
 recommended:
   enable: false
   recommended_title: Recommended
-  recommended_tag: "Copilot Studio"
+  recommended_tag: "CopilotStudio"
 
 
 #-------------------------------
 # About Section Settings
 about:
-  enable: false
+  enable: true
   about_title: Hello, I’m Holger
   about_subtitle: Microsoft MVP & MCT | Low Code Hacker | Copilot, Copilot Studio, Power Platform & Azure Architect
   about_description: |
