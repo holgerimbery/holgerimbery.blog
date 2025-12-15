@@ -78,7 +78,7 @@ recommended:
 #-------------------------------
 # About Section Settings
 about:
-  enable: true
+  enable: false
   about_title: Hello, I’m Holger
   about_subtitle: Microsoft MVP & MCT | Low Code Hacker | Copilot, Copilot Studio, Power Platform & Azure Architect
   about_description: |
