@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 
+title: "${title}"
 description: 
-date: 
+date: ${date}
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/
 image_caption: 
 tags: []
-featured: false
+featured: true
 toc: true
 ---
