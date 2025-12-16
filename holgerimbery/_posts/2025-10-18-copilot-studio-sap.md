@@ -6,7 +6,7 @@ date: 2025-10-18
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/peter-miranda-fTw24pNs21w-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@petermiranda?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Peter Miranda</a> on <a href="https://unsplash.com/photos/man-in-blue-and-black-cap-looking-at-silver-imac-fTw24pNs21w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-tags: [copilotstudio, SAP, agents]
+tags: [copilotstudio, sap, agents]
 author: admin
 featured: false
 toc: true

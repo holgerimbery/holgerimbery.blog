@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/igor-omilaev-gVQLAbGVB6Q-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@omilaev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Igor Omilaev</a> on <a href="https://unsplash.com/photos/two-hands-touching-each-other-in-front-of-a-pink-background-gVQLAbGVB6Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
-tags: [copilotstudio, agenticai, autonomousagents]
+tags: [copilotstudio, agenticai, autonomousagents, agents, automation]
 featured: false
 toc: true
 ---

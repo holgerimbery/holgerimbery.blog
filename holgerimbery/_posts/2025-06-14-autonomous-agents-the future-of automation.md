@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/daulet-turubayev-RAwn1QFwfss-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@dauletrb?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daulet Turubayev</a> on <a href="https://unsplash.com/photos/two-men-working-on-a-machine-in-a-factory-RAwn1QFwfss?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
-tags: [copilotstudio, autonomousagents]
+tags: [copilotstudio, autonomousagents, agents, automation]   
 featured: false
 toc: true
 ---

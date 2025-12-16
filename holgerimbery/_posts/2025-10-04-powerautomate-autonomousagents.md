@@ -7,7 +7,7 @@ date: 2025-10-04
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/christophe-meyer-MQS4vbJdiMI-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@christophe_myr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christophe Meyer</a> on <a href="https://unsplash.com/photos/man-in-white-t-shirt-and-white-shorts-standing-on-white-wall-MQS4vbJdiMI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-tags: [copilotstudio, powerautomate, autonomousagents, agents]
+tags: [copilotstudio, powerautomate, cloudflow, automation, autonomousagents, agents]
 author: admin
 featured: false
 toc: true

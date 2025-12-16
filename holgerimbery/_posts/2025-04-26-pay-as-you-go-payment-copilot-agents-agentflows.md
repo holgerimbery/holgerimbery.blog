@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/04/blake-wisz-q3o_8MteFM0-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@blakewisz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Blake Wisz</a> on <a href="https://unsplash.com/photos/woman-holding-magnetic-card-q3o_8MteFM0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
-tags: [copilotstudio, pay-as-you-go, copilotstudioagentflow, azure, subscription]
+tags: [copilotstudio, pay-as-you-go, agentflow, azure, subscription]
 featured: false
 toc: true
 ---
