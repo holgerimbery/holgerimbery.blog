@@ -42,7 +42,8 @@ YAML‑based declarative workflows can be converted into code aligned with the M
 
 
 ## A Detailed Overview of the VS Code AI Toolkit Extension
-The extension exposes a structured VS Code view with distinct sections that map cleanly to an AI app's lifecycle. Below is a technical tour of the major components.
+The [extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio) exposes a structured VS Code view with distinct sections that map cleanly to an AI app's lifecycle. Below is a technical tour of the major components.
+
 ### Resources
 
 Models: Lists deployed and available models you can use in projects. It is the anchor for selecting runtime backends before entering playgrounds or builders. 
@@ -81,7 +82,7 @@ The extension's catalog allows mixing hosted providers with local execution via 
 
 
 ## Practical Onboarding
-Installation is straightforward through the Marketplace; once installed, the AI Toolkit icon appears in the Activity Bar. The Get Started walkthrough introduces playground usage and navigates you through key views. From there, the usual order of operations is: pick a model in the Catalog, validate prompts in the Playground, construct an agent in Agent Builder (adding MCP tools where necessary), test at scale with Bulk Run, evaluate with datasets and metrics, trace runtime behavior, and finally deploy to Foundry for managed orchestration and visualization.
+Installation is straightforward through the Marketplace; once installed, the AI Toolkit icon appears in the Activity Bar. The Get Started walkthrough introduces you to playground usage and guides you through key views. From there, the usual order of operations is: pick a model in the Catalog, validate prompts in the Playground, construct an agent in Agent Builder (adding MCP tools where necessary), test at scale with Bulk Run, evaluate with datasets and metrics, trace runtime behavior, and finally deploy to Foundry for managed orchestration and visualization.
 
 
 ## YAML to Code Example: Customer Support Agent with MCP Tools
@@ -89,7 +90,7 @@ A minimal, illustrative example that shows how a declarative YAML workflow (as y
 
 {: .important }
 **Note**: 
-The YAML schema for Foundry agent workflows can evolve; the sample below is intentionally simplified to make the mapping clear. In practice, you'd open YAML workflows in VS Code and iterate or move to code using the AI Toolkit's Agent Builder with Copilot-assisted scaffolding. The latest update explicitly highlights YAML workflows and code-first customization, as well as MCP tool integration and multi-agent visualization. 
+The YAML schema for Foundry agent workflows can evolve; the sample below is intentionally simplified to make the mapping clear. In practice, you'd open YAML workflows in VS Code and iterate or move to code using the AI Toolkit's Agent Builder with Copilot-assisted scaffolding. The latest update explicitly highlights YAML workflows and code-first customization, MCP tool integration, and multi-agent visualization. 
 
 
 ### YAML (declarative) — simplified agent workflow
