@@ -27,7 +27,7 @@ jobs:
           bundler-cache: true
         working-directory: ./holgerimbery
       
-      - name: Install dependencies
+      - name: Install dependencies with dir
         run: bundle install
         working-directory: ./holgerimbery
       
@@ -59,4 +59,5 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_HILL_0809FD603 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "close"
+
 
