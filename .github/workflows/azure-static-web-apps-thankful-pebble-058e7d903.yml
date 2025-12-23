@@ -1,3 +1,5 @@
+name: preview.holgerimbery.blog
+
 on:
   push:
     branches:
