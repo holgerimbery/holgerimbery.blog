@@ -25,12 +25,15 @@ jobs:
         with:
           ruby-version: '3.1'
           bundler-cache: true
+        working-directory: ./holgerimbery
       
       - name: Install dependencies
         run: bundle install
+        working-directory: ./holgerimbery
       
       - name: Build Jekyll site
         run: bundle exec jekyll build --future
+        working-directory: ./holgerimbery
       
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
