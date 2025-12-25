@@ -99,7 +99,7 @@ authors:
 #-------------------------------
 # Newsletter Settings
 mailchimp:
-  enable: true
+  enable: false
   mailchimp_title: Stay Inspired!
   mailchimp_description: Every Sunday, I deliver the latest article right to your email inbox.
   mailchimp_identifier: imbery.us16.list-manage.com/subscribe/post?u=fc497ce96b0c8c7641ebd32df&amp;id=fa85f66ee0 # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
