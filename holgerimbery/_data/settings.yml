@@ -99,12 +99,20 @@ authors:
 #-------------------------------
 # Newsletter Settings
 mailchimp:
-  enable: false
+  enable: true
   mailchimp_title: Stay Inspired!
   mailchimp_description: Every Sunday, I deliver the latest article right to your email inbox.
-  mailchimp_identifier: imbery.us16.list-manage.com/subscribe/post?u=fc497ce96b0c8c7641ebd32df&amp;id=fa85f66ee0 # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
+  # Full Mailchimp form action URL - replace with your actual form URL
+  action_url: "https://imbery.us16.list-manage.com/subscribe/post?u=fc497ce96b0c8c7641ebd32df&id=fa85f66ee0&f_id=003472e0f0"
+  # Bot protection field name - replace with your actual bot field name
+  bot_field: "b_fc497ce96b0c8c7641ebd32df_fa85f66ee0"
   mailchimp_input_text: Your email address
   mailchimp_button_text: Subscribe
+  # Optional settings
+  show_mailchimp_branding: true # Set to false to hide Mailchimp branding
+  enable_validation: true # Set to false to disable client-side validation
+  # Legacy setting for backward compatibility
+  mailchimp_identifier: imbery.us16.list-manage.com/subscribe/post?u=fc497ce96b0c8c7641ebd32df&amp;id=fa85f66ee0
 
 
 #-------------------------------
