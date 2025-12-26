@@ -16,6 +16,11 @@ toc: true
 > **Summary Lede**
 Moving your agents from Copilot Studio light (aka Agent Builder) — the simplified creation tool embedded in Microsoft 365 Copilot — to the full-featured Copilot Studio environment represents a significant step forward in how you manage and deploy conversational AI within your organization. While Agent Builder excels at helping teams quickly prototype and launch straightforward agents for internal use, Copilot Studio provides the comprehensive tooling required when those agents need to mature into reliable, enterprise-scale solutions.
 
+**Why read it?**
+Are you looking to scale your Copilot agents from small-team tools to enterprise-ready solutions? This article explains the compelling benefits, migration process, and critical considerations—so you can confidently elevate your agent strategy.
+
+## Introduction
+
 The migration process itself is relatively straightforward: you essentially create a copy of your existing agent in a Power Platform environment where Copilot Studio operates. However, the real value lies in what becomes available after migration. You gain access to proper version control mechanisms that let you track changes over time, stage updates across multiple environments, and roll back to previous configurations if something goes wrong. Analytics capabilities expand dramatically, giving you detailed insights into how users interact with your agents, where conversations succeed or fail, and which knowledge sources prove most valuable.
 
 From a governance perspective, the difference is substantial. Copilot Studio integrates with Power Platform's security model, allowing you to implement role-based access controls, enforce data loss prevention policies, and maintain detailed audit trails of who changed what and when. You can configure connectors to external systems with appropriate guardrails, manage how agents access sensitive data, and ensure everything complies with your organization's compliance requirements.
@@ -26,9 +31,6 @@ This article walks through the practical aspects of performing this migration: u
 
 {: .important }
 This feature is not yet available for all users.
-
-**Why read it?**
-Are you looking to scale your Copilot agents from small-team tools to enterprise-ready solutions? This article explains the compelling benefits, migration process, and critical considerations—so you can confidently elevate your agent strategy.
 
 
 ## Why Migrate?
@@ -45,11 +47,25 @@ Copilot Studio is designed for these needs—making it the scalable, secure next
 
 
 ## What Transfers in the Migration
+
 ## Understanding the Migration Mechanism
 
-When you've developed an agent using Agent Builder within Microsoft 365 Copilot and reach the point where you require capabilities that exist only in the full Copilot Studio platform, Microsoft provides a direct migration path through the **Copy to Copilot Studio** function. You'll find this option in the More options (…) menu when viewing your agent in Agent Builder. The purpose of this function is to create a duplicate of your existing agent within a Power Platform environment where Copilot Studio operates, eliminating the need to manually reconstruct your agent from scratch.
+When you've developed an agent using Agent Builder within Microsoft 365 Copilot and reach the point where you require capabilities that exist only in the full Copilot Studio platform, Microsoft provides a direct migration path through the **Copy to Copilot Studio** function. 
 
-It's important to understand that this is a copy operation, not a move or synchronization. Your original agent in Agent Builder remains untouched and continues to function exactly as it did before. What you get is an independent snapshot of that agent's configuration at the moment you initiated the copy process. Any subsequent changes you make to either version—the original in Agent Builder or the copy in Copilot Studio—will not affect the other. This design allows you to continue using the Agent Builder version while you configure and test the Copilot Studio version, ensuring no disruption to users who depend on the existing agent.
+### How to Initiate the Copy
+
+You'll find this option in the **More options (…)** menu when viewing your agent in Agent Builder. The purpose of this function is to create a duplicate of your existing agent within a Power Platform environment where Copilot Studio operates, eliminating the need to manually reconstruct your agent from scratch.
+
+### Important: This Is a Copy, Not a Move
+
+It's important to understand that this is a **copy operation**, not a move or synchronization. Your original agent in Agent Builder remains untouched and continues to function exactly as it did before. 
+
+What you get is an independent snapshot of that agent's configuration at the moment you initiated the copy process. Any subsequent changes you make to either version—the original in Agent Builder or the copy in Copilot Studio—will not affect the other. 
+
+This design allows you to:
+- Continue using the Agent Builder version while you configure and test the Copilot Studio version
+- Ensure no disruption to users who depend on the existing agent
+- Validate the migrated version before fully transitioning
 
 ## What Gets Transferred Automatically
 
