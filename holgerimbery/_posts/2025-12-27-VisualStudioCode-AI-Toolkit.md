@@ -13,16 +13,42 @@ toc: true
 
 
 {: .q-left }
-> **Summary Lede** 
-The Visual Studio Code AI Toolkit Extension Pack now delivers a complete local-to-cloud development workflow for intelligent, agentic applications—from interactive prototyping and multi-agent visualization to single-click deployment on Microsoft Foundry. Recent updates expand the model catalog (including Anthropic Claude variants), introduce graph-based workflow visualization, and enable seamless conversion between declarative YAML and code-first agent implementations. Combined with integrated tracing, evaluation frameworks, and MCP tool support, the toolkit transforms VS Code into a production-grade environment for building AI systems that are observable, testable, and operationally ready.
+The Visual Studio Code AI Toolkit Extension Pack now delivers a complete local-to-cloud development workflow for intelligent, agentic applications—from interactive prototyping and multi-agent visualization to single-click deployment on Microsoft Foundry.
+
+Recent updates expand the model catalog (including Anthropic Claude variants), introduce graph-based workflow visualization, and enable seamless conversion between declarative YAML and code-first agent implementations.
+
+Combined with integrated tracing, evaluation frameworks, and MCP tool support, the toolkit transforms VS Code into a production-grade environment for building AI systems that are observable, testable, and operationally ready.
 
 **Why read this article?**  
-If you're building AI agents or intelligent applications, this deep dive shows you how to move from local experimentation to production deployment without changing tools or rewriting workflows. You'll learn the technical architecture behind model selection, agent orchestration, MCP tool integration, evaluation pipelines, and runtime tracing—with concrete YAML-to-code examples in Python and C#. Whether you're prototyping your first agent or scaling multi-agent systems, this guide maps the capabilities that reduce friction, improve quality assurance, and accelerate time-to-value.
+If you're building AI agents or intelligent applications, this deep dive shows you how to move from local experimentation to production deployment without changing tools or rewriting workflows.
+
+You'll learn the technical architecture behind:
+- Model selection
+- Agent orchestration
+- MCP tool integration
+- Evaluation pipelines
+- Runtime tracing
+
+Complete with concrete YAML-to-code examples in Python and C#.
+
+Whether you're prototyping your first agent or scaling multi-agent systems, this guide maps the capabilities that reduce friction, improve quality assurance, and accelerate time-to-value.
 
 
 ## Why This Matters Technologically
-Modern intelligent applications are rarely monolithic; they are composed of multiple agents, external tools, datasets, and evaluation loops. The latest update explicitly targets this reality by enabling local-to-cloud continuity: developers can author agents, run and trace them locally in VS Code, and then deploy to Microsoft Foundry with one click—preserving workflow context for orchestration, visualization, and evaluation in the cloud. This unification reduces friction between prototyping and production, so the same artifacts (YAML workflows, agent code, test scaffolds, traces) remain coherent across environments. 
-The Intelligent Apps documentation complements that with a detailed breakdown of Model Tools, Agent & Workflow Tools, and MCP Workflow, making it clear how the extension organizes resources (models, agents, MCP servers) and operations (playground, bulk runs, evaluation, fine‑tuning, conversion, tracing). The effect is a predictable, composable development experience built on VS Code conventions, so teams can adopt AI features without retooling their entire stack. 
+Modern intelligent applications are rarely monolithic; they are composed of multiple agents, external tools, datasets, and evaluation loops. The latest update explicitly targets this reality by enabling **local-to-cloud continuity**: developers can author agents, run and trace them locally in VS Code, and then deploy to Microsoft Foundry with one click—preserving workflow context for orchestration, visualization, and evaluation in the cloud.
+
+This unification reduces friction between prototyping and production, so the same artifacts (YAML workflows, agent code, test scaffolds, traces) remain coherent across environments.
+
+The Intelligent Apps documentation complements that with a detailed breakdown of:
+- **Model Tools**
+- **Agent & Workflow Tools**
+- **MCP Workflow**
+
+This makes it clear how the extension organizes:
+- **Resources** (models, agents, MCP servers)
+- **Operations** (playground, bulk runs, evaluation, fine‑tuning, conversion, tracing)
+
+The effect is a predictable, composable development experience built on VS Code conventions, so teams can adopt AI features without retooling their entire stack.
 
 
 ## Business Benefits: From Experimentation to Operability
@@ -441,4 +467,11 @@ Compose an actionable answer. Include citations and confidence score.";
 | `output_schema` | Dataclass/DTO enforcing structured return types |
 
 ## Conclusion
-The VS Code AI Toolkit Extension Pack, especially with the latest update, provides a comprehensive environment for building intelligent, agentic applications that span local experimentation to cloud deployment. By supporting declarative YAML workflows alongside code-first implementations in Python and C#, it offers flexibility for teams at different maturity levels. The integration of MCP tools, tracing, evaluation, and multi-agent visualization addresses key challenges in operability and quality assurance. This deep dive illustrated how to leverage these capabilities effectively, empowering developers to create robust AI systems with confidence and efficiency.
+
+The VS Code AI Toolkit Extension Pack, especially with the latest update, provides a comprehensive environment for building intelligent, agentic applications that span local experimentation to cloud deployment.
+
+By supporting declarative YAML workflows alongside code-first implementations in Python and C#, it offers flexibility for teams at different maturity levels.
+
+The integration of MCP tools, tracing, evaluation, and multi-agent visualization addresses key challenges in operability and quality assurance.
+
+This deep dive illustrated how to leverage these capabilities effectively, empowering developers to create robust AI systems with confidence and efficiency.
