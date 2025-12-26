@@ -189,13 +189,14 @@ outputs:
 
 What this conveys:
 
-Model/runtime settings (model name, temperature, tracing).
-Inputs the agent needs (user query, user id).
-System instructions guiding behavior.
-Tools (two MCP servers + an HTTP tool) and action signatures.
-Orchestration that calls tools, then composes a final LLM answer with a structured schema.
-Policies for grounding and PII handling.
-These elements align with the AI Toolkit guidance around agent instructions, MCP tool use, and structured outputs; YAML workflows are explicitly highlighted in the Ignite update for easy editing and conversion to code-first customization. 
+- Model/runtime settings (model name, temperature, tracing).
+- Inputs the agent needs (user query, user id).
+- System instructions guiding behavior.
+- Tools (two MCP servers + an HTTP tool) and action signatures.
+- Orchestration that calls tools, then composes a final LLM answer with a structured schema.
+- Policies for grounding and PII handling.
+
+These elements align with the AI Toolkit guidance around agent instructions, MCP tool use, and structured outputs; YAML workflows are explicitly highlighted in the latest update for easy editing and conversion to code-first customization. 
 
 
 ### Equivalent code (Python) — agent, tools, tracing, structured output
@@ -338,22 +339,41 @@ if __name__ == "__main__":
     print(output)
 
 ```
+## Key Takeaways
 
-Key takeaways:
+**System Instructions and Runtime Configuration**  
+The system instructions and runtime parameters (model selection, temperature, tracing) translate directly from YAML declarations into code constructor arguments or instance state.
 
-The system instructions and runtime params (model, temperature, tracing) map directly from YAML to code constructor/state.
-MCP tools in YAML become server objects with actions you dispatch programmatically; VS Code's Agent Builder validates the environment and helps configure featured MCP servers. 
-The orchestration steps in YAML become explicit method calls with ordered execution, culminating in an LLM invocation that composes context from tool results.
-The output schema maps to a typed AgentOutput dataclass, enforcing structure at the boundary.
+**MCP Tool Integration**  
+MCP tools defined in YAML become instantiated server objects with callable actions in your code. VS Code's Agent Builder validates the execution environment and assists with configuring featured MCP servers.
+
+**Orchestration Flow**  
+The orchestration steps declared in YAML map to explicit, ordered method calls in code. These calls retrieve context from tool results and ultimately compose an LLM invocation.
+
+**Structured Output Enforcement**  
+The YAML output schema corresponds to a typed data structure (such as an `AgentOutput` dataclass in Python or record in C#), ensuring type safety and schema compliance at the agent boundary.
 
 
 ### How you’d do this inside VS Code AI Toolkit
 
-Open the YAML workflow in VS Code (via Foundry extension) and review steps, tools, and instructions. The latest update enables round‑trip editing and single‑click deployment between VS Code and Foundry. 
-Use Agent Builder to scaffold an agent: paste the system instructions, set model/runtime, and attach MCP servers (featured MCP servers are discoverable and validated). 
-Translate steps: for each YAML step, create corresponding code functions/method calls. Copilot can generate the scaffolds and function signatures aligned with best‑practice patterns. 
-Run locally with tracing and iterate in the Hosted Agents Playground. Use the graph visualizer to understand multi‑agent flows and debug step execution. 
-Evaluate using datasets and metrics (relevance, similarity, coherence, or task‑specific). When the agent meets acceptance criteria, deploy to Foundry to manage orchestration and enterprise hosting. 
+1. **Open the YAML workflow in VS Code** (via Foundry extension) and review steps, tools, and instructions. The latest update enables round‑trip editing and single‑click deployment between VS Code and Foundry.
+
+2. **Use Agent Builder to scaffold an agent**:
+  - Paste the system instructions
+  - Set model/runtime parameters
+  - Attach MCP servers (featured MCP servers are discoverable and validated)
+
+3. **Translate orchestration steps**:
+  - For each YAML step, create corresponding code functions/method calls
+  - Copilot can generate the scaffolds and function signatures aligned with best‑practice patterns
+
+4. **Run locally with tracing** and iterate in the Hosted Agents Playground:
+  - Use the graph visualizer to understand multi‑agent flows
+  - Debug step execution with integrated tracing
+
+5. **Evaluate using datasets and metrics**:
+  - Test relevance, similarity, coherence, or task‑specific criteria
+  - When the agent meets acceptance criteria, deploy to Foundry to manage orchestration and enterprise hosting 
 
 
 ### Optional: C# skeleton for the same agent
