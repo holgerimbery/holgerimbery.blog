@@ -55,7 +55,7 @@ The [extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-a
 
 **Model Catalog**: A unified browser over models from GitHub, ONNX, Ollama, OpenAI, Anthropic, Google, and others. Engineers can compare options and evaluate tradeoffs before binding a model to an agent. The Ignite update explicitly calls out Anthropic Claude variants now accessible here.  
 
-![upgit_20251226_1766741165.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/upgit_20251226_1766741165.png
+![upgit_20251226_1766741165.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/upgit_20251226_1766741165.png)
 
 **Model Playground**: An interactive chat/test surface for prompts, parameters, and multimodal inputs. It's designed for rapid hypothesis testing—ideal before formalizing agent instructions.   
 
