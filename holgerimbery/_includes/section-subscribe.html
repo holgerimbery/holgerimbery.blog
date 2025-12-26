@@ -175,9 +175,10 @@
                              class="button" 
                              value="{% if site.data.settings.mailchimp.mailchimp_button_text %}{{ site.data.settings.mailchimp.mailchimp_button_text }}{% else %}Subscribe{% endif %}">
                       {% if site.data.settings.mailchimp.preference_button_enable %}
-                      <a href="{% if site.data.settings.mailchimp.preference_button_url %}{{ site.data.settings.mailchimp.preference_button_url }}{% else %}#{% endif %}" 
+                      <a href="#" 
+                         id="mc-preference-link"
                          class="button button--outline" 
-                         target="_blank"
+                         onclick="openPreferences(); return false;"
                          style="margin-left: 10px; display: inline-block; background: transparent !important; border: 2px solid var(--primary-color, #007cba) !important; color: var(--primary-color, #007cba) !important; text-decoration: none !important;">
                         {% if site.data.settings.mailchimp.preference_button_text %}{{ site.data.settings.mailchimp.preference_button_text }}{% else %}Update Preferences{% endif %}
                       </a>
@@ -210,6 +211,38 @@
                 ftypes[0] = 'email';
               }(jQuery));
               var $mcj = jQuery.noConflict(true);
+              
+              // Function to open preferences with email
+              function openPreferences() {
+                var email = document.getElementById('mce-EMAIL').value;
+                var baseUrl = '{% if site.data.settings.mailchimp.preference_button_url %}{{ site.data.settings.mailchimp.preference_button_url }}{% else %}https://imbery.us16.list-manage.com/profile?u=fc497ce96b0c8c7641ebd32df{% endif %}';
+                
+                if (email && email.includes('@')) {
+                  // Append email parameter to the URL
+                  var separator = baseUrl.includes('?') ? '&' : '?';
+                  var preferenceUrl = baseUrl + separator + 'e=' + encodeURIComponent(email);
+                  window.open(preferenceUrl, '_blank');
+                } else {
+                  alert('Please enter a valid email address first.');
+                }
+              }
+            </script>
+            {% else %}
+            <script type="text/javascript">
+              // Function to open preferences with email
+              function openPreferences() {
+                var email = document.getElementById('mce-EMAIL').value;
+                var baseUrl = '{% if site.data.settings.mailchimp.preference_button_url %}{{ site.data.settings.mailchimp.preference_button_url }}{% else %}https://imbery.us16.list-manage.com/profile?u=fc497ce96b0c8c7641ebd32df{% endif %}';
+                
+                if (email && email.includes('@')) {
+                  // Append email parameter to the URL
+                  var separator = baseUrl.includes('?') ? '&' : '?';
+                  var preferenceUrl = baseUrl + separator + 'e=' + encodeURIComponent(email);
+                  window.open(preferenceUrl, '_blank');
+                } else {
+                  alert('Please enter a valid email address first.');
+                }
+              }
             </script>
             {% endif %}
           </div>
