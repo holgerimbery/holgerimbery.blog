@@ -46,18 +46,28 @@ The [extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-a
 
 ### Resources
 
-**Models**: Lists deployed and available models you can use in projects. It is the anchor for selecting runtime backends before entering playgrounds or builders.  
-**Agents**: Displays agents you have created or deployed through the toolkit. This centralizes agent artifacts used by downstream tools such as bulk runs and tracing.   
+**Models**: Lists deployed and available models you can use in projects. It is the anchor for selecting runtime backends before entering playgrounds or builders.
+
+**Agents**: Displays agents you have created or deployed through the toolkit. This centralizes agent artifacts used by downstream tools such as bulk runs and tracing.  
+
 **MCP Servers**: Enumerates Model Context Protocol servers you've added, which provide tool‑use capabilities (databases, APIs, services). This turns agents from pure language generators into action‑taking systems.   
 ## Model Tools
 
 **Model Catalog**: A unified browser over models from GitHub, ONNX, Ollama, OpenAI, Anthropic, Google, and others. Engineers can compare options and evaluate tradeoffs before binding a model to an agent. The Ignite update explicitly calls out Anthropic Claude variants now accessible here.  
+
+![upgit_20251226_1766741165.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/upgit_20251226_1766741165.png
+
 **Model Playground**: An interactive chat/test surface for prompts, parameters, and multimodal inputs. It's designed for rapid hypothesis testing—ideal before formalizing agent instructions.   
+
+![upgit_20251226_1766741269.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/upgit_20251226_1766741269.png)
+
 **Conversion**: Utilities for converting, quantizing, and optimizing pretrained models for local execution (CPU/GPU/NPU). This aids portability and cost control, particularly for edge scenarios.   
 **Fine‑tuning**: Workflows to adapt foundation models using custom datasets either locally (GPU) or in Azure Container Apps (GPU). This allows domain specialization without abandoning the VS Code environment.   
 ### Agent & Workflow Tools
 
 **Agent Builder**: Previously known as Prompt Builder, this now emphasizes agent construction—authoring instructions, integrating tools (MCP servers), and emitting production‑ready code with structured outputs. Engineers can scaffold agents in Python or .NET, add function/tool calls, and iterate interactively.   
+
+![upgit_20251226_1766741356.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/upgit_20251226_1766741356.png)
 **Bulk Run**: Batch execution across multiple models or prompts to compare outputs at scale. This is essential for regression testing and prompt robustness analysis.  
 **Evaluation**: Dataset‑driven assessment using metrics such as relevance, similarity, coherence, and task‑specific criteria. It complements bulk runs to form a measurable confidence baseline.  
 **Tracing**: Runtime telemetry over reasoning steps, tool calls, and latency hotspots. When paired with multi‑agent visualization, tracing enables efficient root‑cause analysis and performance tuning.   
