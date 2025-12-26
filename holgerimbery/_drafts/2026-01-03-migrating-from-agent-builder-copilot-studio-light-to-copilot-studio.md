@@ -12,6 +12,8 @@ featured: true
 toc: true
 ---
 
+*Technical overview and configuration guide (January 2026)*
+
 {: .q-left }
 > **Summary Lede**
 Moving your agents from Copilot Studio light (aka Agent Builder) — the simplified creation tool embedded in Microsoft 365 Copilot — to the full-featured Copilot Studio environment represents a significant step forward in how you manage and deploy conversational AI within your organization. While Agent Builder excels at helping teams quickly prototype and launch straightforward agents for internal use, Copilot Studio provides the comprehensive tooling needed when those agents mature into reliable, enterprise-scale solutions.
