@@ -99,25 +99,12 @@ authors:
 #-------------------------------
 # Newsletter Settings
 mailchimp:
-  enable: true
-  mailchimp_title: Stay Inspired!
-  mailchimp_description: Every Sunday, I deliver the latest article right to your email inbox.
-  # Full Mailchimp form action URL - replace with your actual form URL
-  action_url: "https://imbery.us16.list-manage.com/subscribe/post?u=fc497ce96b0c8c7641ebd32df&id=fa85f66ee0&f_id=003472e0f0"
-  # Bot protection field name - replace with your actual bot field name
-  bot_field: "b_fc497ce96b0c8c7641ebd32df_fa85f66ee0"
+  enable: false
+  mailchimp_title: Stay Inspired. My Friendly Dose of Tips & Insights!
+  mailchimp_description: Every Sunday, I deliver actionable tips for enhancing productivity, practical life advice, and top-notch insights gathered from various sources, right to your email inbox.
+  mailchimp_identifier: gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
   mailchimp_input_text: Your email address
   mailchimp_button_text: Subscribe
-  # Preference management button
-  preference_button_enable: true
-  preference_button_text: Update Preferences
-  preference_button_url: "https://imbery.us16.list-manage.com/profile?u=fc497ce96b0c8c7641ebd32df"
-  # Optional settings
-  show_mailchimp_branding: true # Set to false to hide Mailchimp branding
-  enable_validation: true # Set to false to disable client-side validation
-  # Legacy setting for backward compatibility
-  mailchimp_identifier: imbery.us16.list-manage.com/subscribe/post?u=fc497ce96b0c8c7641ebd32df&amp;id=fa85f66ee0
-
 
 #-------------------------------
 # Footer Settings
