@@ -13,11 +13,9 @@ toc: true
 
 
 {: .q-left }
-The Visual Studio Code AI Toolkit Extension Pack now delivers a complete local-to-cloud development workflow for intelligent, agentic applications—from interactive prototyping and multi-agent visualization to single-click deployment on Microsoft Foundry.
-
-Recent updates expand the model catalog (including Anthropic Claude variants), introduce graph-based workflow visualization, and enable seamless conversion between declarative YAML and code-first agent implementations.
-
-Combined with integrated tracing, evaluation frameworks, and MCP tool support, the toolkit transforms VS Code into a production-grade environment for building AI systems that are observable, testable, and operationally ready.
+> **Summary Lede** The Visual Studio Code AI Toolkit Extension Pack now delivers a complete local-to-cloud development workflow for intelligent, agentic applications—from interactive prototyping and multi-agent visualization to single-click deployment on Microsoft Foundry.  
+Recent updates expand the model catalog (including Anthropic Claude variants), introduce graph-based workflow visualization, and enable seamless conversion between declarative YAML and code-first agent implementations.  
+Combined with integrated tracing, evaluation frameworks, and MCP tool support, the toolkit transforms VS Code into a production-grade environment for building AI systems that are observable, testable, and operationally ready.  
 
 **Why read this article?**  
 If you're building AI agents or intelligent applications, this deep dive shows you how to move from local experimentation to production deployment without changing tools or rewriting workflows.
