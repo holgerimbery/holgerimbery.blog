@@ -9,31 +9,105 @@
             <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
             <style type="text/css">
               #mc_embed_signup {
-                background: #fff;
+                background: transparent !important;
                 clear: left;
-                font: 14px Helvetica, Arial, sans-serif;
+                font: inherit;
                 width: 100%;
                 max-width: 600px;
-                margin: 0 auto;
+                margin: 2rem auto 0;
               }
               .subscribe__content {
                 margin-bottom: 2rem;
               }
               #mc_embed_signup .button {
-                background-color: var(--button-color, #007cba);
+                background-color: var(--primary-color, #007cba) !important;
+                color: var(--white, #ffffff) !important;
+                border: none !important;
+                padding: 12px 32px !important;
+                border-radius: 60px !important;
+                font-size: 16px !important;
+                font-weight: 600 !important;
+                cursor: pointer !important;
+                transition: all 0.25s ease !important;
+                display: inline-block !important;
+                text-decoration: none !important;
+                min-width: 120px !important;
               }
               #mc_embed_signup .button:hover {
-                background-color: var(--button-hover-color, #005a87);
+                background-color: var(--primary-color-hover, #005a87) !important;
+                transform: translateY(-2px) !important;
               }
-              .mc-field-group {
-                margin-bottom: 1rem;
+              #mc_embed_signup .button--outline {
+                background: transparent !important;
+                border: 2px solid var(--primary-color, #007cba) !important;
+                color: var(--primary-color, #007cba) !important;
+                padding: 10px 30px !important;
+                border-radius: 60px !important;
+                font-size: 16px !important;
+                font-weight: 600 !important;
+                cursor: pointer !important;
+                transition: all 0.25s ease !important;
+                display: inline-block !important;
+                text-decoration: none !important;
+                min-width: 120px !important;
               }
-              .optionalParent {
-                margin-top: 1rem;
+              #mc_embed_signup .button--outline:hover {
+                background-color: var(--primary-color, #007cba) !important;
+                color: var(--white, #ffffff) !important;
+                transform: translateY(-2px) !important;
+              }
+              #mc_embed_signup .mc-field-group {
+                margin-bottom: 1rem !important;
+              }
+              #mc_embed_signup .mc-field-group label {
+                display: block !important;
+                margin-bottom: 8px !important;
+                font-weight: 600 !important;
+                color: var(--heading-font-color, #333) !important;
+              }
+              #mc_embed_signup .mc-field-group input[type="email"] {
+                width: 100% !important;
+                height: 54px !important;
+                padding: 16px 20px !important;
+                font-size: 16px !important;
+                border: 2px solid var(--border-color, #ddd) !important;
+                border-radius: 60px !important;
+                background-color: var(--background-color, #fff) !important;
+                color: var(--text-color, #333) !important;
+                outline: none !important;
+                transition: border-color 0.25s ease !important;
+              }
+              #mc_embed_signup .mc-field-group input[type="email"]:focus {
+                border-color: var(--primary-color, #007cba) !important;
+              }
+              #mc_embed_signup .indicates-required {
+                margin-bottom: 1rem !important;
+                font-size: 14px !important;
+                color: var(--text-alt-color, #666) !important;
+              }
+              #mc_embed_signup .asterisk {
+                color: var(--primary-color, #007cba) !important;
+              }
+              #mc_embed_signup .optionalParent {
+                margin-top: 1.5rem !important;
+              }
+              #mc_embed_signup .clear.foot {
+                text-align: center !important;
               }
               @media (max-width: 768px) {
                 #mc_embed_signup {
-                  width: 100%;
+                  width: 100% !important;
+                  margin-top: 1rem;
+                }
+                #mc_embed_signup .button {
+                  width: 100% !important;
+                  padding: 16px 32px !important;
+                  margin-bottom: 10px !important;
+                }
+                #mc_embed_signup .button--outline {
+                  width: 100% !important;
+                  margin-left: 0 !important;
+                  margin-bottom: 10px !important;
                 }
               }
             </style>
@@ -90,6 +164,14 @@
                              id="mc-embedded-subscribe" 
                              class="button" 
                              value="{% if site.data.settings.mailchimp.mailchimp_button_text %}{{ site.data.settings.mailchimp.mailchimp_button_text }}{% else %}Subscribe{% endif %}">
+                      {% if site.data.settings.mailchimp.preference_button_enable %}
+                      <a href="{% if site.data.settings.mailchimp.preference_button_url %}{{ site.data.settings.mailchimp.preference_button_url }}{% else %}#{% endif %}" 
+                         class="button button--outline" 
+                         target="_blank"
+                         style="margin-left: 10px; display: inline-block; background: transparent !important; border: 2px solid var(--primary-color, #007cba) !important; color: var(--primary-color, #007cba) !important; text-decoration: none !important;">
+                        {% if site.data.settings.mailchimp.preference_button_text %}{{ site.data.settings.mailchimp.preference_button_text }}{% else %}Update Preferences{% endif %}
+                      </a>
+                      {% endif %}
                       {% if site.data.settings.mailchimp.show_mailchimp_branding != false %}
                       <p style="margin: 0px auto;">
                         <a href="http://eepurl.com/i7fkz-" title="Mailchimp - email marketing made easy and fun">
