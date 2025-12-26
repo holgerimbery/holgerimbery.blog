@@ -27,16 +27,16 @@ The Intelligent Apps documentation complements that with a detailed breakdown of
 
 ## Business Benefits: From Experimentation to Operability
 
-**Faster Time-to-Value**
+**Faster Time-to-Value**:  
 Local debugging, hosted agent playgrounds, unified visualization, and single‑click deployment shorten the path from experimentation to a hosted, observable agent system. This reduces handoffs and rework, which are typical cost centers in AI projects transitioning to production. 
 
-**Governance and Evaluability**
+**Governance and Evaluability**:  
 The toolchain supports structured evaluation (metrics, tasks, datasets) and integrates tracing and graph visualization for multi‑agent workflows. This makes quality assessment and incident response more systematic, improving confidence in releases and reducing operational risk. 
 
-**Model Choice and Portability**
+**Model Choice and Portability**:  
 The model catalog spans hosted providers and local runtimes (ONNX, Ollama) and includes recent Anthropic models. Organizations can align model selection to privacy constraints, latency targets, and cost envelopes without changing development surfaces. 
 
-**Incremental Adoption**
+**Incremental Adoption**:  
 YAML‑based declarative workflows can be converted into code aligned with the Microsoft Agent Framework—enabling teams to start simple and progressively customize. This staged path mitigates the risk of over‑engineering early while preserving the option to extend later. 
 
 
@@ -46,29 +46,29 @@ The [extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-a
 
 ### Resources
 
-Models: Lists deployed and available models you can use in projects. It is the anchor for selecting runtime backends before entering playgrounds or builders. 
-Agents: Displays agents you have created or deployed through the toolkit. This centralizes agent artifacts used by downstream tools such as bulk runs and tracing. 
-MCP Servers: Enumerates Model Context Protocol servers you've added, which provide tool‑use capabilities (databases, APIs, services). This turns agents from pure language generators into action‑taking systems. 
+**Models**: Lists deployed and available models you can use in projects. It is the anchor for selecting runtime backends before entering playgrounds or builders. 
+**Agents**: Displays agents you have created or deployed through the toolkit. This centralizes agent artifacts used by downstream tools such as bulk runs and tracing. 
+**MCP Servers**: Enumerates Model Context Protocol servers you've added, which provide tool‑use capabilities (databases, APIs, services). This turns agents from pure language generators into action‑taking systems. 
 ## Model Tools
 
-Model Catalog: A unified browser over models from GitHub, ONNX, Ollama, OpenAI, Anthropic, Google, and others. Engineers can compare options and evaluate tradeoffs before binding a model to an agent. The Ignite update explicitly calls out Anthropic Claude variants now accessible here. 
-Model Playground: An interactive chat/test surface for prompts, parameters, and multimodal inputs. It's designed for rapid hypothesis testing—ideal before formalizing agent instructions. 
-Conversion: Utilities for converting, quantizing, and optimizing pretrained models for local execution (CPU/GPU/NPU). This aids portability and cost control, particularly for edge scenarios. 
-Fine‑tuning: Workflows to adapt foundation models using custom datasets either locally (GPU) or in Azure Container Apps (GPU). This allows domain specialization without abandoning the VS Code environment. 
+**Model Catalog**: A unified browser over models from GitHub, ONNX, Ollama, OpenAI, Anthropic, Google, and others. Engineers can compare options and evaluate tradeoffs before binding a model to an agent. The Ignite update explicitly calls out Anthropic Claude variants now accessible here. 
+**Model Playground**: An interactive chat/test surface for prompts, parameters, and multimodal inputs. It's designed for rapid hypothesis testing—ideal before formalizing agent instructions. 
+**Conversion**: Utilities for converting, quantizing, and optimizing pretrained models for local execution (CPU/GPU/NPU). This aids portability and cost control, particularly for edge scenarios. 
+**Fine‑tuning**: Workflows to adapt foundation models using custom datasets either locally (GPU) or in Azure Container Apps (GPU). This allows domain specialization without abandoning the VS Code environment. 
 ### Agent & Workflow Tools
 
-Agent Builder: Previously known as Prompt Builder, this now emphasizes agent construction—authoring instructions, integrating tools (MCP servers), and emitting production‑ready code with structured outputs. Engineers can scaffold agents in Python or .NET, add function/tool calls, and iterate interactively. 
-Bulk Run: Batch execution across multiple models or prompts to compare outputs at scale. This is essential for regression testing and prompt robustness analysis. 2
-Evaluation: Dataset‑driven assessment using metrics such as relevance, similarity, coherence, and task‑specific criteria. It complements bulk runs to form a measurable confidence baseline. 
-Tracing: Runtime telemetry over reasoning steps, tool calls, and latency hotspots. When paired with multi‑agent visualization, tracing enables efficient root‑cause analysis and performance tuning. 
-### MCP Workflow
+**Agent Builder**: Previously known as Prompt Builder, this now emphasizes agent construction—authoring instructions, integrating tools (MCP servers), and emitting production‑ready code with structured outputs. Engineers can scaffold agents in Python or .NET, add function/tool calls, and iterate interactively. 
+**Bulk Run**: Batch execution across multiple models or prompts to compare outputs at scale. This is essential for regression testing and prompt robustness analysis. 2
+**Evaluation**: Dataset‑driven assessment using metrics such as relevance, similarity, coherence, and task‑specific criteria. It complements bulk runs to form a measurable confidence baseline. 
+**Tracing**: Runtime telemetry over reasoning steps, tool calls, and latency hotspots. When paired with multi‑agent visualization, tracing enables efficient root‑cause analysis and performance tuning. 
 
-Add MCP Server / Create New MCP Server: Discover featured MCP servers, validate local Node/Python environments, and scaffold new servers. This extends agents with secure, composable capabilities to query systems, invoke APIs, and manipulate external state. 
+### MCP Workflow
+**Add MCP Server / Create New MCP Server**: Discover featured MCP servers, validate local Node/Python environments, and scaffold new servers. This extends agents with secure, composable capabilities to query systems, invoke APIs, and manipulate external state. 
+
 ### Visualization and Round‑Trip Development
 
-Graph Visualizer: The Ignite update introduces interactive visualization of multi‑agent workflows, illuminating node execution and connections. This makes debugging and understanding complex orchestration feasible within the editor. 
-Local‑to‑Cloud Roundtrip: Seamless switching between VS Code and the Foundry portal for YAML workflows, playgrounds, and templates—plus single‑click deployment. This aligns dev, ops, and evaluation artifacts without format drift. 
-
+**Graph Visualizer**: The Ignite update introduces interactive visualization of multi‑agent workflows, illuminating node execution and connections. This makes debugging and understanding complex orchestration feasible within the editor. 
+**Local‑to‑Cloud Roundtrip**: Seamless switching between VS Code and the Foundry portal for YAML workflows, playgrounds, and templates—plus single‑click deployment. This aligns dev, ops, and evaluation artifacts without format drift. 
 
 ## Development Workflow: From YAML to Code and Back
 A pragmatic pattern for teams is to begin with declarative YAML workflows in Foundry for clarity and quick iteration. When customization demands increase—e.g., custom tool‑use, advanced control flow, or instrumentation—convert YAML to Agent Framework code and continue in Agent Builder. GitHub Copilot scaffolding helps produce maintainable code with tracing hooks and test scaffolding. This reduces context switching and preserves lineage from declarative prototypes to code‑first implementations. 
@@ -402,11 +402,13 @@ Compose an actionable answer. Include citations and confidence score.";
 
 ### Mapping cheat‑sheet (YAML → Code)
 
-runtime.model, temperature, max_tokens, trace → LLM constructor/fields. 
-instructions.role: system / content → Agent’s system prompt string passed as system. 
-tools.type: mcp and actions → MCP server objects with callable actions. 
-orchestration.steps → Ordered function/method calls culminating in llm.invoke(...). 
-output_schema → Dataclass/DTO enforcing structured return types. 
+| YAML Element | Code Mapping |
+|--------------|--------------|
+| `runtime.model`, `temperature`, `max_tokens`, `trace` | LLM constructor/fields |
+| `instructions.role: system` / `content` | Agent's system prompt string passed as `system` |
+| `tools.type: mcp` and `actions` | MCP server objects with callable actions |
+| `orchestration.steps` | Ordered function/method calls culminating in `llm.invoke(...)` |
+| `output_schema` | Dataclass/DTO enforcing structured return types |
 
 ## Conclusion
 The VS Code AI Toolkit Extension Pack, especially with the latest update, provides a comprehensive environment for building intelligent, agentic applications that span local experimentation to cloud deployment. By supporting declarative YAML workflows alongside code-first implementations in Python and C#, it offers flexibility for teams at different maturity levels. The integration of MCP tools, tracing, evaluation, and multi-agent visualization addresses key challenges in operability and quality assurance. This deep dive illustrated how to leverage these capabilities effectively, empowering developers to create robust AI systems with confidence and efficiency.
