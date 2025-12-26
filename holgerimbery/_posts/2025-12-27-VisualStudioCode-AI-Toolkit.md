@@ -226,18 +226,18 @@ outputs:
 What this conveys:
 
 - Model/runtime settings (model name, temperature, tracing).
-- Inputs the agent needs (user query, user id).
+- Inputs the agent needs (user query, user ID).
 - System instructions guiding behavior.
 - Tools (two MCP servers + an HTTP tool) and action signatures.
 - Orchestration that calls tools, then composes a final LLM answer with a structured schema.
 - Policies for grounding and PII handling.
 
-These elements align with the AI Toolkit guidance around agent instructions, MCP tool use, and structured outputs; YAML workflows are explicitly highlighted in the latest update for easy editing and conversion to code-first customization. 
+These elements align with the AI Toolkit guidance on agent instructions, MCP tool use, and structured outputs; YAML workflows are explicitly highlighted in the latest update to facilitate easy editing and conversion for code-first customization. 
 
 
 ### Equivalent code (Python) — agent, tools, tracing, structured output
 
-Below is a conceptual Python implementation that mirrors the YAML's behavior. It registers tools (including MCP-backed actions), defines agent instructions, handles orchestration, and returns a typed result. In VS Code, you’d typically scaffold this in Agent Builder and refine it with Copilot. 
+Below is a conceptual Python implementation that mirrors the YAML's behavior. It registers tools (including MCP-backed actions), defines agent instructions, handles orchestration, and returns a typed result. In VS Code, you'd typically scaffold this in Agent Builder and refine it with Copilot. 
 
 ```python
 # file: customer_support_agent.py
@@ -390,7 +390,7 @@ The orchestration steps declared in YAML map to explicit, ordered method calls i
 The YAML output schema corresponds to a typed data structure (such as an `AgentOutput` dataclass in Python or record in C#), ensuring type safety and schema compliance at the agent boundary.
 
 
-### How you’d do this inside VS Code AI Toolkit
+### How you'd do this inside VS Code AI Toolkit
 
 1. **Open the YAML workflow in VS Code** (via Foundry extension) and review steps, tools, and instructions. The latest update enables round‑trip editing and single‑click deployment between VS Code and Foundry.
 
