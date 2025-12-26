@@ -32,7 +32,7 @@ jobs:
         working-directory: ./holgerimbery
       
       - name: Build Jekyll site
-        run: bundle exec jekyll build --future
+        run: bundle exec jekyll build --future --drafts
         working-directory: ./holgerimbery
       
       - name: Deploy to Azure Static Web Apps
