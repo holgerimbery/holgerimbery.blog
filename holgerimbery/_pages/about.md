@@ -12,8 +12,8 @@ My goal is to make AI concepts and Microsoft technologies easier to understand a
 I work as a Principal Architect and Microsoft MVP, focusing on designing and implementing agentic AI systems that support autonomous decision-making and intelligent process automation in enterprise environments. My work centers on creating secure, scalable, and well-governed solutions using Microsoft Azure, Power Platform, and Copilot Studio. This includes building autonomous agents, cognitive services, and conversational AI systems that integrate into existing business processes. I also have experience delivering RPA solutions with Power Automate that improve efficiency and reduce costs.  
 In addition to solution design, I lead adoption programs and technical workshops, such as "Agent in a Day", to help teams understand and implement AI-driven workflows.    
 I also work to align technical architectures with organizational goals and ensure responsible AI practices are followed.  
-Technical areas I focus on include:  
 
+Technical areas I focus on include:  
 Copilot Studio for agentic workflows and autonomous (multi- ) agent systems  
 Power Automate, Power Virtual Agents, Power Apps  
 Azure Functions, Logic Apps, API Management  
