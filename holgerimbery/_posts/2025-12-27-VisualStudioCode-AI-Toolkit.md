@@ -2,7 +2,7 @@
 layout: post
 title: Building Intelligent, Agentic Applications in VS Code - A Technical Deep Dive into the AI Toolkit Extension Pack
 description: Explore how the Visual Studio Code AI Toolkit Extension Pack enables seamless development of intelligent, agentic applications from local prototyping to cloud deployment with Microsoft Foundry. This article provides a technical deep dive into model selection, agent orchestration, MCP tool integration, evaluation pipelines, and runtime tracing, complete with YAML-to-code examples in Python and C#.
-date: 2025-12-27
+date: 2025-12-27 06:38:53 +0100
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/barn-images-t5YUoHW6zRo-unsplash.jpg
 image_caption: Visual Studio Code AI Toolkit
@@ -47,7 +47,7 @@ This makes it clear how the extension organizes:
 - **Resources** (models, agents, MCP servers)
 - **Operations** (playground, bulk runs, evaluation, fine‑tuning, conversion, tracing)
 
-The effect is a predictable, composable development experience built on VS Code conventions, so teams can adopt AI features without retooling their entire stack.
+The effect is a predictable, composable development experience built on VS Code conventions, so teams can adopt AI features without retooling their entire stack.[Download the extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)[extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 
 ## Business Benefits: From Experimentation to Operability
