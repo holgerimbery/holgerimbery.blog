@@ -47,7 +47,7 @@ This makes it clear how the extension organizes:
 - **Resources** (models, agents, MCP servers)
 - **Operations** (playground, bulk runs, evaluation, fine‑tuning, conversion, tracing)
 
-The effect is a predictable, composable development experience built on VS Code conventions, so teams can adopt AI features without retooling their entire stack.[Download the extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)[extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
+The effect is a predictable, composable development experience built on VS Code conventions, so teams can adopt AI features without retooling their entire stack.[Download the extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 
 
 ## Business Benefits: From Experimentation to Operability
