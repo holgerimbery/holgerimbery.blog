@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 In my previous articles, I focused on the how, and here I will switch the perspective and dig deeper into the why.
 
 To bring us to standard wording:

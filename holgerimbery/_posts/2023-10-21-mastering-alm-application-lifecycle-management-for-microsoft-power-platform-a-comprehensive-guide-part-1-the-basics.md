@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 Low-code development is a contemporary method in software development that allows developers to construct applications with minimal coding by utilizing graphical interfaces and pre-built components. Low-code platforms provide numerous advantages, including quicker delivery, reduced costs, enhanced quality, and increased flexibility. Nevertheless, low-code development also presents particular challenges, such as guaranteeing application consistency, security, scalability, and maintainability. To address these issues, it is crucial to implement lifecycle management practices in low-code projects.

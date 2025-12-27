@@ -11,6 +11,9 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
+
 # Power Virtual Agents - a low-code platform for conversational assistants
 
  Power Virtual Agents are part of Microsofts Power Platform and an ideal start for developing conversational (voice-)bots.  

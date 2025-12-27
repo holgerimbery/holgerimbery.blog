@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 Imagine you are working on a Power Virtual Agents project and wish for an experienced colleague to consult with and receive guidance from. You are in luck, as the editing canvas will come with an integrated expert on Power Virtual Agents, still in preview but in the door. You will have access to deep knowledge and expertise, ensuring that you never find yourself at a loss. This incredible resource is readily available to help you take your bot project to the next level.  

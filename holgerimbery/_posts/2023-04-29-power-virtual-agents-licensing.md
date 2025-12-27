@@ -11,6 +11,8 @@ toc: true
 # 2023-04-29-power-virtual-agents-licensing
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 I do Power Virtual Agents in a Day Workshop with many participants every month.  

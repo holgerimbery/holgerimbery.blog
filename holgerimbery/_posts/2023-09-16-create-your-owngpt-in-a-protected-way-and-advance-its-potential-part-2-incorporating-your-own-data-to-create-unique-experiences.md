@@ -12,6 +12,9 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
+
  second part of a series  
  [part 1](https://the.cognitiveservices.ninja/create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-1) (the basics and installing the gui) of the series was publish a week earlier
 

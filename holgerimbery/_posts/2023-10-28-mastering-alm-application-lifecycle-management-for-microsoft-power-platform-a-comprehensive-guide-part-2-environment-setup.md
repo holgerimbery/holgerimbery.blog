@@ -12,6 +12,8 @@ toc: true
  
 ---
 
+*Archived post - content may be outdate*
+
 This is the second part of a series of articles, [part 1 (basics and background)](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-1-the-basics) was published before.
 
 ## Reminder: **Environment strategy**

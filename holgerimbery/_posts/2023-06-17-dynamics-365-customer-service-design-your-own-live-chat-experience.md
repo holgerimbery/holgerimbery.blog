@@ -11,6 +11,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 As an escalation point, live chat is a critical aspect of text chatbots, providing a human touch to the interaction. While chatbots can handle basic inquiries, they may lack the capacity to manage complex or emotionally charged situations. By incorporating live chat options, customers can be directed to a human representative who can offer personalized assistance and address their concerns more effectively. This guarantees that customers receive the help they need and are likelier to have a positive experience with the company. Furthermore, live chat allows businesses to gain feedback from clients in real-time, which can inform improvements in their bot's capabilities and overall customer service strategy.

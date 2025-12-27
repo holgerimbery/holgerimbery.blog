@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 This is a first article of a series on Azure OpenAI Services. This article describes how to start and brings you directly to [Azure OpenAI Service Studio](https://oai.azure.com/).
 
 ![Figure: OpenAI on Azure Studio]({{site.baseurl}}/images/clg7w9yjb0bizuonvaprjcpm3.md/ddcbe3b1-aa6c-44ac-a073-7c7ddb03ce6a.png)

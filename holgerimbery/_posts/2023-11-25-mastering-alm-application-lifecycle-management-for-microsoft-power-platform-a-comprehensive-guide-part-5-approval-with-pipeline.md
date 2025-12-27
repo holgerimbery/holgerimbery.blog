@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+  
  ***This is the fifth part of a series of articles,*** [***part 1 (basics and background***](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-1-the-basics) ***&*** [***part 2 (preparing your environments***](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-2-environment-setup)***) &*** [***part 3 (working with solutions***](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-3-working-with-solutions)***) &*** [***part 4 (working with pipelines)***](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-4-working-with-pipelines) ***were published before.***
 
 Incorporating an approval process into a pipeline before deploying a Power Platform solution to a production environment is crucial for several reasons:

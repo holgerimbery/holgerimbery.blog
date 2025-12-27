@@ -11,6 +11,7 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
 
 # Extend Power Virtual Agent with Azure Cognitive Services
 

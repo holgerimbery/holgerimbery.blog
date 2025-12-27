@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 In the digital world, ensuring the security and integrity of user data is paramount. One of the key ways to achieve this is through user authentication in text and voice chats and the use of One-Time Passwords (OTPs). Let's delve into the benefits of these security measures.

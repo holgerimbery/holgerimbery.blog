@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 Learn how to generate or manipulate text using Azure OpenAI service. This powerful tool provides various models with an easy-to-use and efficient text-in, text-out interface. The model can accurately **cre**ate a completion that reflects the context or pattern provided by inputting a text prompt. Explore the capabilities of completions with [Azure OpenAI Studio's Playground](https://oai.azure.com/), and discover how to control the variance by adjusting the temperature setting. Follow the guidelines to create effective prompts for content creation, classification, and conversation tasks.
 
  If you missed it, how to get [onboarded to Azure OpenAi Service](https://the.cognitiveservices.ninja/azure-openai-services-getting-started) is the first article of this series.

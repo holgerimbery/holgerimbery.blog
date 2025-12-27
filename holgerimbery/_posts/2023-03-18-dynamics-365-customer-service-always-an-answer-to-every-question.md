@@ -11,6 +11,8 @@ toc: true
 # 2023-03-18-dynamics-365-customer-service-always-an-answer-to-every-question
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 Envision every agent provide your customer with precise and compliant answers to their inquiries that are in line with your corporate policies. To facilitate this, we can implement a knowledge base with frequent questions and answers. This is just the initial step; customers will still need to wait for an available agent to resolve their query, even if a knowledgebase article has already answered it. To maximize efficiency, why not replace the human agent with a (voice-) bot and free up the human agent to focus on complex queries that require a human touch? Always provide a route to a human agent if any unexpected issues arise.

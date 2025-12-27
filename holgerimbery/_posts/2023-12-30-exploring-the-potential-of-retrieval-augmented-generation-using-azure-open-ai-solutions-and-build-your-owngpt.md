@@ -11,6 +11,8 @@ toc: true
 # 2023-12-30-exploring-the-potential-of-retrieval-augmented-generation-using-azure-open-ai-solutions-and-build-your-owngpt
 ---
 
+*Archived post - content may be outdate*
+
 In the realm of artificial intelligence (AI), Retrieval-Augmented Generation (RAG) is a groundbreaking approach that enhances the output of large language models (LLMs). It achieves this by referencing a reliable external knowledge base, separate from its original training data sources, before generating a response.
 
 LLMs, the technological foundation of AI, are trained on vast volumes of data and use billions of parameters to generate unique output for tasks such as answering questions, translating languages, and completing sentences. RAG takes the already remarkable capabilities of LLMs a step further, extending their reach to specific domains or an organization's internal knowledge base without retraining the model. This makes RAG a cost-effective strategy for improving LLM output, ensuring it remains relevant, accurate, and valuable across various contexts.

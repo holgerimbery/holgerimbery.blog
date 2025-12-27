@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 Integrating a Microsoft CoPilot Studio Copilot into a Microsoft SharePoint site can significantly enhance user experience and productivity. This assistant can provide real-time assistance to users, guiding them through the site, answering their questions, and helping them complete tasks more efficiently.
 
 One way to integrate the CoPilot into your SharePoint site is to use a SharePoint SPFx component. Within a Microsoft GitHub Repository, you will find the SharePointSSOComponent project, a code sample for a SharePoint SPFx component (an Application Customizer) displaying a copilot at the bottom of all pages on a specific site. This SPFx component uses the MSAL library to perform a silent login and shares the user's token with Microsoft CoPilot Studio, providing a seamless single sign-on experience.

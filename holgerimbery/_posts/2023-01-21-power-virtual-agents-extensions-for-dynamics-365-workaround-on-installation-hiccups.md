@@ -11,6 +11,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 # Power Virtual Agents extensions for Dynamics 365 (workaround on installation hiccups)
 
 ## Situation

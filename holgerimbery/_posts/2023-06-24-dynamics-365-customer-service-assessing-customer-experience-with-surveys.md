@@ -11,6 +11,8 @@ toc: true
 # 2023-06-24-dynamics-365-customer-service-assessing-customer-experience-with-surveys
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 A pre-survey and a post-survey in a customer service scenario can provide valuable information about the customer's expectations before and after interacting with the service provider. The pre-survey can help identify any potential issues or concerns that the customer may have, allowing the service provider to prepare accordingly and address those concerns during their interaction. The post-survey provides feedback on how well those concerns were addressed and overall satisfaction with the service. This feedback can improve future interactions with customers, ensuring that their needs are met and their experience is positive.

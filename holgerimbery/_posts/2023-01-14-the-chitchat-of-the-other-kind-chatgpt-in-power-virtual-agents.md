@@ -11,7 +11,7 @@ toc: true
 
 ---
 
-
+*Archived post - content may be outdate*
 
 # The Chitchat of the other kind - ChatGPT in Power Virtual Agents
 

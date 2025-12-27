@@ -11,6 +11,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 # Multilingual IVR Replacement for Dynamics 365 Customer Service (Voice Bot)
 
  ***Imagine serving your customers and employees immediately in their native language, without waiting in Contact Center Queues, 24/7, with your new self-service voice bot factory. Always with a human agent as an escalation target.***

@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 Customer service is a crucial aspect of any business, influencing whether customers will return or opt for a competitor. In today's world of intense competition and heightened customer expectations, companies must seek ways to improve their customer service experience.

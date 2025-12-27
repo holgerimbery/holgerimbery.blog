@@ -13,6 +13,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 Power Virtual Agents is a virtual digital assistant SaaS Solution that uses Natural Language Understanding (NLU) to comprehend user intentions. NLU enables the bot to detect trigger phrases and identify entities within a user interaction, from phone numbers to zip codes and even names. Power Virtual Agents offers pre-constructed entities for commonly used data, such as ages, colors, numbers, and names, and allows for creating custom entities using closed list entities or regular expression entities. In addition, slot filling, a natural language understanding concept that saves an extracted entity to an object, which helps the bot provide more personalized and accurate responses based on the user's specific needs, can be used.
 
 ## Prebuild entities

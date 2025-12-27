@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## **Motivation**
 
 With Azure OpenAI services enhanced by your data, robust language models and Azure Cognitive Search work together to index your data and provide responses following your organization's policies. This ensures the protection of your intellectual property, as your data and access to it remain securely in your control.

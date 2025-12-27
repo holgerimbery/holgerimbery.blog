@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 When designing and creating a chatbot with Power Virtual Agents, a situation can occur that users may ask questions that your bot does not have an answer for.  

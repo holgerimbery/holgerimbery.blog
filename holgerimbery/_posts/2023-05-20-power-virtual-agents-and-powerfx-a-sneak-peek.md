@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 Power Virtual Agents and PowerFX are two powerful tools that can create complex logic for bots to manipulate data. With these tools, you can create bots with more complex logic without the need for extensive development. PowerFx is a low-code language that allows users to set the value of a variable, parse strings, and use expressions in conditions. In this article, we take a sneak peek at the capabilities and applications of Power Virtual Agents and PowerFX, including how to use variables and literal values in formulas and how to use PowerFX to set a variable as a condition.
 
 Please refer to the [comprehensive overview](https://learn.microsoft.com/en-us/power-platform/power-fx/overview) and [formula reference](https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference).

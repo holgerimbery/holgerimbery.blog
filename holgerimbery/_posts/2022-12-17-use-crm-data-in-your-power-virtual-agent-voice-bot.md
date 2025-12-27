@@ -10,6 +10,8 @@ featured: false
 toc: true
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 With the integration capabilities of Power Automate, your Power Virtual Agents-based (voice-) bots can take the next step in your digital customer service journey. Using CRM data can be used to make automated voice bot conversations more personal and relevant to your customer. There is no need to annoy your customer and ask for details you already know. Automating repetitive processes frees human experts to take care of more complex tasks and customer interactions. Power Virtual Agents is not just another chatbot platform. It is part of a whole ecosystem with frontend, backend, and middleware layers to help you to do #morewithless and to speed up your digitalization journey.

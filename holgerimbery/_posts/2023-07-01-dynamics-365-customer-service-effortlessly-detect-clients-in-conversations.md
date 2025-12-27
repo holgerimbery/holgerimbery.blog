@@ -11,6 +11,8 @@ toc: true
 # 2023-07-01-dynamics-365-customer-service-effortlessly-detect-clients-in-conversations
 ---
 
+*Archived post - content may be outdate*
+
 You can better assist customers by automatically identifying them and viewing their account and case details on the Active Conversation page. One way to achieve this is by setting up pre-conversation questions in the appropriate chat widgets. See here my blog article "[Assessing Customer Experience with Surveys](https://the.cognitiveservices.ninja/dynamics-365-customer-service-assessing-customer-experience-with-surveys)".
 
 The utilization of customer responses can be leveraged to execute detailed searches within records and display the corresponding results. The search operation is conducted for an account or contact using the Name, Email, or Phone Number fields. Concerning accounts, the Phone Number refers to the Phone field on the Account Summary page; for contacts, it relates to the Mobile Number field on the Contact Summary page. In cases where an active case is being handled, a search is performed using the Case Number field.

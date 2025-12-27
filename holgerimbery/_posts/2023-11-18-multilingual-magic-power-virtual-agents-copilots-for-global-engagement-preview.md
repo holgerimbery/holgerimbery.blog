@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 Multilingual bots are chatbots capable of communicating with customers in various languages while maintaining all content within a single bot. Often, they can automatically detect the preferred language and respond accordingly, offering customers a more personalized and engaging experience. This long-awaited feature is now on the horizon for Power Virtual Agents / Copilot Studio as a preview feature. There is no need to develop a separate bot for each required language.
 
  Disclaimer: This is a preview feature. Preview features are not intended for production use and may have limited functionality. Multilingual bots are not supported in the following scenarios:

@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 Bots are handy tools in today's fast-paced digital world, serving as virtual assistants to help users accomplish various tasks. These bots primarily perform two essential functions: answering user queries or completing actions by calling backend APIs. In the past, both experiences had to be painstakingly crafted using hand-built dialogues. Bot builders would have to anticipate every possible question or action a user might request and then construct specific conversations to address each.
 
 However, with the advent of generative AI and Power Virtual Agents, bot building has become much simpler and more efficient. Now, instead of manually creating complex dialogues for each potential interaction with a user, developers can point their bots towards a knowledge source - an internal SharePoint site or external website - from which the bot can draw upon generative answers that provide rich multi-turn chat experiences.

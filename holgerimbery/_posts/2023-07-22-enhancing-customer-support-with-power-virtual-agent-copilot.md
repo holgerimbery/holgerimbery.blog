@@ -13,6 +13,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 By harnessing the power of AI large language models, Power Virtual Agents revolutionizes chatbot development, enhancing their utility and significantly minimizing manual authoring and configuration requirements.
 
 You can:

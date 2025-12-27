@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Introduction
 
 In the digital age, customer service has evolved beyond traditional call centers. Today, businesses leverage advanced technologies to create digital contact centers that provide seamless, omnichannel customer experiences. One such technology is Microsoft's Dynamics 365 Customer Service, a powerful tool transforming how businesses interact with customers.

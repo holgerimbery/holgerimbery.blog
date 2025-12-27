@@ -11,6 +11,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 # Dynamics 365 customer service: configure call recording and transcription for voice bots and agent dialogues
 
 drive service improvements with data

@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
  Note:  
  This article showcases a preview feature. Preview features are not intended for production use and may possess limited functionality. These features are made available prior to an official release, allowing customers to gain early access and offer feedback.
 

@@ -11,6 +11,7 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
 
 # Dynamics 365 Customer Service Voice Channel
 

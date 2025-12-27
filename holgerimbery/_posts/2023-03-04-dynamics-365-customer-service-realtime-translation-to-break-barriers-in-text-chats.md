@@ -13,6 +13,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Prerequisites
 
 * You must add a web resource and ensure the required language translation services are configured.

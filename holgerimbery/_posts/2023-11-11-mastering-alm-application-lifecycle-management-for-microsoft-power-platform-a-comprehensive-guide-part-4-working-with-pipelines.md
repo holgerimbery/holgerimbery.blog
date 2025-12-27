@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
  This is the fourth part of a series of articles, [part 1 (basics and background](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-1-the-basics) & [part 2 (preparing your environments](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-2-environment-setup)) & [part 3 (working with solutions)](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-3-working-with-solutions) were published before.
 
 Pipelines in the Power Platform strive to make application lifecycle management (ALM) more accessible for Power Platform and Dynamics 365 customers by incorporating ALM automation, continuous integration, and continuous delivery (CI/CD) capabilities into the service in a way that is user-friendly for all creators, administrators, and developers.

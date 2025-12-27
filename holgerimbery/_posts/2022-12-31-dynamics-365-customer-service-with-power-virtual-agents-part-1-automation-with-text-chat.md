@@ -11,6 +11,9 @@ toc: true
 
 ---
 
+
+*Archived post - content may be outdate*
+
 # Dynamics 365 Customer Service with Power Virtual Agents - Part 1 (automation with text chat)
 
  This article is the first part of a Kickstarter of two pieces and part of my ["Dynamics 365 automation with bots/voice bots 101"](https://the.cognitiveservices.ninja/series/101-d365) series; in this article and in the second part, I will focus on Power Virtual Agent in combination with Dynamics 365 Customer Service. The first article focuses on a text chat virtual agent with a handover option to a human agent, aka live chat. The second will demonstrate how to voice enable D365 and use voice bots.  

@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 You want your "ChatGPT" to operate in a secure environment, ensuring all data and interactions with your "bot" remain private.

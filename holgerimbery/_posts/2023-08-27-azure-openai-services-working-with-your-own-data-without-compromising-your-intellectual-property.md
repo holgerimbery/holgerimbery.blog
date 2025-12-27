@@ -11,6 +11,8 @@ toc: true
 # 2023-08-27-azure-openai-services-working-with-your-own-data-without-compromising-your-intellectual-property
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation  
 
 With Azure OpenAI services enhanced by your data, robust language models and Azure Cognitive Search work together to index your data and provide responses following your organization's policies. This ensures the protection of your intellectual property, as your data and access to it remain securely in your control.

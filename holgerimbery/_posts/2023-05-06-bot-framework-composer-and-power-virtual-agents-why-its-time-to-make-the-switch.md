@@ -11,6 +11,8 @@ toc: true
 # 2023-05-06-bot-framework-composer-and-power-virtual-agents-why-its-time-to-make-the-switch
 
 ---
+*Archived post - content may be outdate*
+
 
  Important!  
  This article contains information about features that are currently in preview.  

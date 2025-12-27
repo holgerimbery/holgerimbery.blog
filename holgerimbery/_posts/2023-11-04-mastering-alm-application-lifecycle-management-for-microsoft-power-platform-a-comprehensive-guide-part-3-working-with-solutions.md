@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 This is the third part of a series of articles, [part 1 (basics and background](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-1-the-basics) & [part 2 (preparing your environments)](https://the.cognitiveservices.ninja/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-2-environment-setup) were published before.
 
 **Solutions** are a key feature of Power Platform that allows users to transport apps, bots, and components from one environment to another or apply customizations to existing apps.

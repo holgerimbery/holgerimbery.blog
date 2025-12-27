@@ -12,6 +12,8 @@ toc: true
 
 ---
 
+*Archived post - content may be outdate*
+
 ## Motivation
 
 When giving a "Power Virtual Agents in a Day" workshop, we start by creating topics and custom entities with the participants. While we are defining trigger phrases and synonyms for the closed lists in the custom entities, we often get asked the same question: "How can we find enough variations to help our bot?" Fortunately, there is a satisfactory answer to this: supporting the model behind the NLU in Power Virtual Agents with another model - text-davinci-003 from OpenAI.
