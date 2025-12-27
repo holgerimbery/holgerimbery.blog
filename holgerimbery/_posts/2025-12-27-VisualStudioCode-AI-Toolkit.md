@@ -11,7 +11,7 @@ featured: true
 toc: true
 ---
 
-*Technical overview and configuration guide (December 2026)*
+*Technical overview and configuration guide (December 2025)*
 
 {: .q-left }
 > **Summary Lede** The Visual Studio Code AI Toolkit Extension Pack now delivers a complete local-to-cloud development workflow for intelligent, agentic applications—from interactive prototyping and multi-agent visualization to single-click deployment on Microsoft Foundry.  
