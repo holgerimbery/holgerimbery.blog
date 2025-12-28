@@ -9,7 +9,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@goffpix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">goffredo crollalanza</a> on <a href="https://unsplash.com/photos/people-gather-to-look-at-the-chanel-store-joDP04dvSBM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [copilot, dynamics365, automation, agents, multiagent, sales, customerservice]
-featured: true
+featured: false
 toc: true
 ---
 
