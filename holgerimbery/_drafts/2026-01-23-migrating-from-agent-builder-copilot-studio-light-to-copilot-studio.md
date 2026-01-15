@@ -2,7 +2,7 @@
 layout: post
 title: "Migrating from Agent Builder (Copilot Studio Light) to Copilot Studio"
 description: "A comprehensive guide to transitioning your conversational agents from the simplified Agent Builder within Microsoft 365 Copilot to the full-featured Copilot Studio environment, unlocking advanced capabilities for enterprise-scale AI solutions."
-date: 2026-01-10
+date: 2026-01-23
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/yoel-winkler-iPPukR_eMcY-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@yoel100?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yoel Winkler</a> on <a href="https://unsplash.com/photos/a-flock-of-birds-flying-through-a-blue-sky-iPPukR_eMcY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
