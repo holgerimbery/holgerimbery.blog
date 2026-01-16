@@ -44,6 +44,7 @@ Power Fx in Copilot Studio is fully integrated into the authoring canvas and can
 * Action nodes
 * Adaptive Card logic
 * Question behavior configurations
+* and last but not least in Agents Flows
 
 This allows you to compute values, evaluate conditions, transform user input, and shape how your agent responds. The placement of Power Fx within these specific nodes reflects a deliberate architectural decision: computational logic resides at the points where data enters the system, transforms during processing, or influences routing decisions. Rather than scattering imperative code throughout the conversational design, Power Fx expressions encapsulate discrete computational operations within well-defined boundaries, making the agent's behavior more comprehensible during both initial development and subsequent maintenance.
 
@@ -123,11 +124,7 @@ Agent flows in Copilot Studio represent the execution layer where autonomous age
 
 Specifically, Power Fx expressions within agent flows address several technical requirements:
 
-<<<<<<< HEAD
 - **Data validation before action execution.** Before invoking an external API or updating a database record, the agent must verify that input parameters meet expected formats, fall within acceptable ranges, and satisfy business constraints. Power Fx expressions embedded in condition nodes or within action input configurations evaluate these constraints, preventing invalid data from reaching external systems. For example, validating that a submitted order total matches the sum of line items, or confirming that a date falls within an acceptable scheduling window.
-=======
-**Data validation before action execution.** Before invoking an external API or updating a database record, the agent must verify that input parameters meet expected formats, fall within acceptable ranges, and satisfy business constraints. Power Fx expressions embedded in condition nodes or within action input configurations evaluate these constraints, preventing invalid data from reaching external systems, and, for example, validating that a submitted order total matches the sum of line items or confirming that a date falls within an acceptable scheduling window.
->>>>>>> 8334a23962ec5d0d970f153aa619d4ba5a997461
 
 - **Parameter computation for system integrations.** External actions often require specific data formats, calculated identifiers, or transformed values. Power Fx formulas prepare these parameters by concatenating strings into required formats, converting data types, performing mathematical operations on numeric inputs, or extracting subsets of structured data. This transformation occurs within the agent flow itself, reducing the need for intermediate services or custom code.
 
