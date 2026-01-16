@@ -219,9 +219,9 @@ The following table lists data types and Power Fx formulas you can use with each
 
 ### Copilot Studio usage tips (quick)
 
-**Variables**: Always prefix (System., Global., Topic.). 
-Example in a condition:
-If(Global.TotalSales > 100000, "High", "Normal")
+**Variables**: Always prefix (System., Global., Topic.).   
+Example in a condition:  
+If(Global.TotalSales > 100000, "High", "Normal")  
 **Literals**: Enter values in the proper literal format (strings in quotes, tables in [ ], records in { }).
 **Number formatting**: Remember US decimal and comma separators when entering parameters and numeric literals.  
 
