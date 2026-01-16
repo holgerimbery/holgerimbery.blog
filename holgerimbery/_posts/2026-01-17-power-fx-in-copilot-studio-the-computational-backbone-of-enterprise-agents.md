@@ -116,6 +116,116 @@ The following table lists data types and Power Fx formulas you can use with each
 | **Blank** | [Blank, Coalesce, IsBlank, and IsEmpty functions](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-isblank-isempty)<br>[Error, IfError, IsError, IsBlankOrError functions](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror) |
 
 
+## Power Fx (Copilot Studio) Cheat Sheet
+### Numbers & Math
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| Abs | Absolute value of a number | Abs(-55) → 55 |
+| Round | Round to the specified number of digits | Round(3.14159, 2) → 3.14 |
+| RoundDown | Round down to the specified digits | RoundDown(3.9, 0) → 3 |
+| RoundUp | Round up to the specified digits | RoundUp(3.1, 0) → 4 |
+| Trunc | Truncate a number toward zero | Trunc(-3.9) → -3 |
+| Int | Integer part of a number | Int(7.8) → 7 |
+| Value | Convert text to number | Value("42") → 42 |
+| Decimal | Convert string to decimal number | Decimal("12.5") → 12.5 |
+| Average | Average of a table expression or set of numbers | Average([1,2,3,4]) → 2.5 |
+| Degrees / Acos / Asin / Atan / Atan2 / Cos / Cot | Trig functions (radians) and conversions | Degrees(Acos(0.5)) → 60 |
+
+### Text
+
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| Concatenate / Concat | Join strings or project and join from a table. | Concatenate("Hello ", "Holger") → "Hello Holger" |
+| Text | Convert values (like numbers/dates) to text with formatting. | Text(1234.5, "[$-en-US]#,##0.00") → "1,234.50" |
+| Len | Length of a string. | Len("Copilot") → 7 |
+| Lower / Upper / Proper | Case conversion. | Proper("microsoft copilot") → "Microsoft Copilot" |
+| Find | Find substring position (1‑based). | Find("pilot","Copilot") → 3 |
+| Replace / Substitute | Replace text by position or substring. | Substitute("a-b-c","-","/") → "a/b/c" |
+| StartsWith / EndsWith | Prefix/suffix check. | StartsWith("Copilot","Co") → true |
+| EncodeUrl / EncodeHTML | URL/HTML escape text. | EncodeUrl("a b") → "a%20b" |
+| Char | Return character from code. | Char(10) → "\n" (newline) |
+
+**Regex/Match** note: Some community posts mention gaps for Match/MatchAll support in Copilot Studio; validate in your environment. 
+
+### Logical & Conditional
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| And / Or / Not | Boolean logic (&& also supported for And). | And(5>3, 2<1) → false |
+| If | If/elseif/else branching. (Power Fx general) | If(Score>=50,"pass","fail") → "pass" (when Score=80) |
+| Switch | Multi-branch by matching a value. (Power Fx general) | Switch("B","A",1,"B",2,0) → 2 |
+| Coalesce | First non‑blank value. | Coalesce(Blank(), "fallback") → "fallback" |
+| Boolean | Convert text/number/dynamic to Boolean. | Boolean("true") → true |
+| Blank | Produce a blank (NULL-like) value. | Blank() → blank |
+
+### Date & Time
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| Now / Today / UTCNow / UTCToday | Current local/UTC date-time or date. (Power Fx general) | Text(UTCNow(), "yyyy-mm-ddTHH:MMZ") → e.g., "2026-01-16T13:11Z" |
+| Date / DateTime / Time | Construct date/time values. | Date(2026,1,16) → 2026-01-16 |
+| DateValue / TimeValue / DateTimeValue | Parse date/time from text. | DateTimeValue("May 10, 2022 5:00 PM") → 2022-05-10 17:00 |
+| Day / Month / Year / Hour / Minute / Second / Weekday | Extract parts of a date-time. | Year(Date(2026,1,16)) → 2026 |
+| DateAdd | Add days/months/quarters/years. | DateAdd(Date(2026,1,16), 30, Days) → 2026-02-15 |
+| DateDiff | Difference between two dates in a unit. | DateDiff(Date(2026,1,1), Date(2026,1,16), Days) → 15 |
+| EDate | Add/subtract months, preserving day-of-month when possible. | EDate(Date(2026,1,31), 1) → 2026-02-29 (leap handling varies by calendar) |
+| TimeZoneOffset | Minutes difference from UTC. (Power Fx general) | TimeZoneOffset(Now()) → e.g., 60 for CET winter. |
+
+### Tables, Records & Collections
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| AddColumns | Return a table with computed columns added. | AddColumns([1,2,3], "Squared", Value*Value) → [{Value:1,Squared:1}, …] |
+| DropColumns | Remove one or more columns. | DropColumns(Table, "Temp") → table without Temp |
+| Count / CountA / CountIf / CountRows | Count numbers, non‑blank, conditional, or rows. | CountIf([1,2,3,4], Value>2) → 2 |
+| Filter | Filter records by a predicate. (Power Fx general) | Filter(Orders, Amount>1000) → high‑value orders |
+| Search | Full/partial text search on columns. (Power Fx general) | Search(Products, "pro", "Name") → matching rows |
+| LookUp | First record matching a condition. (Power Fx general) | LookUp(Users, Email="a@b.com") → record or blank |
+| Distinct | Unique values from a column/table. | Distinct([1,1,2]) → [{Value:1},{Value:2}] |
+| First / Last / FirstN / LastN / Index | Access first/last/Nth items. (Power Fx general) | Index([10,20,30],2) → 20 |
+| ForAll | Iterate over a table and evaluate an expression. (Power Fx general) | ForAll([1,2,3], Value*2) → [2,4,6] |
+| AsType | Treat a record reference as a specific table type. | AsType(AnyRecord, MySchema) → typed record |
+| Column / ColumnNames | Retrieve column names/values from a Dynamic value. | ColumnNames(DynamicVar) → ["Col1","Col2",…] |
+
+### JSON & Dynamic
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| JSON | Convert a value to a JSON text string. (Power Fx general) | JSON({a:1}) → "{"a":1}" |
+| ParseJSON | Parse JSON text to an untyped object. (Power Fx general) | ParseJSON("{\"x\":5}") → dynamic with x=5 |
+
+### Colors (useful for UI-rich responses or cards)
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| ColorValue | Parse CSS name or hex color. | ColorValue("#0078D4") → color value |
+| ColorFade | Fade a color by a percentage. | ColorFade(ColorValue("#000000"), 0.5) → 50% lighter |
+
+### Web/Encoding Utilities
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| EncodeUrl | URL-encode special characters. | EncodeUrl("a+b c") → "a%2Bb%20c" |
+| EncodeHTML | Escape characters for HTML context. | EncodeHTML("<b>") → "&lt;b&gt;" |
+
+### Conversions & Misc
+
+| Function | Description | Example → Result |
+|----------|-------------|------------------|
+| Dec2Hex | Convert number to hexadecimal string. | Dec2Hex(255) → "FF" |
+| Boolean | Convert text/number/dynamic to true/false. | Boolean(1) → true |
+
+### Copilot Studio usage tips (quick)
+
+**Variables**: Always prefix (System., Global., Topic.). 
+Example in a condition:
+If(Global.TotalSales > 100000, "High", "Normal")
+**Literals**: Enter values in the proper literal format (strings in quotes, tables in [ ], records in { }).
+**Number formatting**: Remember US decimal and comma separators when entering parameters and numeric literals.  
+
+
 ## Why Power Fx Complements the LLM
 As discussed throughout this article, the architectural relationship between Power Fx and the large language model in Copilot Studio reflects a deliberate separation of concerns that addresses the distinct computational requirements of conversational agents in production environments.
 
