@@ -14,11 +14,11 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**  
-> **Building production-ready conversational agents in Microsoft Copilot Studio requires mastering a critical architectural principle: the LLM handles the words, Power Fx handles the computation.** While large language models excel at understanding natural language and generating human-like responses, they cannot guarantee the deterministic, auditable calculations that enterprise automation demands. This article reveals how Power Fx functions as the computational backbone of your agents—providing repeatable calculations, precise data transformations, and enforceable business rules—while the LLM manages conversational flow.   
-Whether you're implementing financial workflows, compliance-sensitive processes, or complex agent flows that integrate with Dataverse and Azure AI, understanding this separation of concerns transforms experimental chatbots into reliable enterprise automation. 
+> **Building production-ready (conversational) agents in Microsoft Copilot Studio requires mastering a critical architectural principle: the LLM handles the words, Power Fx handles the computation.** While large language models excel at understanding natural language and generating human-like responses, they cannot guarantee the deterministic, auditable calculations that enterprise automation demands. This article reveals how Power Fx functions as the computational backbone of your agents—providing repeatable calculations, precise data transformations, and enforceable business rules—while the LLM manages conversational flow.   
+Whether you're implementing financial workflows, compliance-sensitive processes, or complex agent flows that integrate with Dataverse and Azure AI, understanding this separation of concerns transforms experimental chatbots into reliable enterprise automation.  
 **Read on** to discover the practical formulas, variable scoping rules, and architectural patterns that make Power Fx essential for anyone building autonomous agents in the Microsoft ecosystem.
 
-As autonomous agents and agent flows in Microsoft Copilot Studio become more capable and increasingly central to enterprise automation, understanding Power Fx is no longer optional—it is essential. The landscape of enterprise software development has undergone a fundamental transformation in recent years, with conversational interfaces and intelligent automation moving from experimental features to core components of business operations. Within this evolving ecosystem, Power Fx serves a critical architectural role that extends far beyond simple formula evaluation.
+As autonomous agents and agent flows in Microsoft Copilot Studio become more capable and increasingly central to enterprise automation, understanding Power Fx is no longer optional—it is **essential**. The landscape of enterprise software development has undergone a fundamental transformation in recent years, with conversational interfaces and intelligent automation moving from experimental features to core components of business operations. Within this evolving ecosystem, Power Fx serves a critical architectural role that extends far beyond simple formula evaluation.
 
 Power Fx acts as the deterministic backbone of your agent's logic, providing the predictable, rule‑based execution layer that complements the reasoning and language interpretation performed by the underlying large language model. This relationship between Power Fx and the LLM represents a carefully considered architectural pattern: the language model excels at interpreting natural language, understanding context, and generating human-like responses, while Power Fx handles the precise computational work—calculations, data transformations, conditional logic, and state management—that demands absolute consistency and auditability.
 
@@ -49,7 +49,6 @@ This allows you to compute values, evaluate conditions, transform user input, an
 
 Copilot Studio supports a subset of Power Fx functions rather than the complete function library available in Power Apps. This distinction matters for practitioners migrating existing formulas or designing complex computational logic. Many core table, text, date, and conditional functions behave identically to their Power Apps counterparts, which allows experienced Power Platform developers to transfer their existing knowledge directly into agent development contexts. Functions governing table manipulation—such as Filter, ForAll, and AddColumns—generally operate as expected. Similarly, text processing functions including Concatenate, Left, Right, and Text formatting operations maintain their familiar semantics. Date and time calculations through functions like DateAdd, DateDiff, and Now provide consistent behavior across the platform.
 
-However, certain advanced functions exhibit limited support or documented inconsistencies within the Copilot Studio environment. Pattern matching functions such as Match and MatchAll, which prove invaluable for extracting structured information from unstructured text input, have been reported by community practitioners as behaving unpredictably or remaining unavailable in specific node contexts. These limitations stem from the underlying execution environment and security constraints governing agent runtime behavior. When designing agents that require regular expression functionality, thorough testing within the target environment becomes essential, as behavior may vary across different node types or deployment configurations. The absence or inconsistency of such functions occasionally necessitates alternative approaches—preprocessing text through external actions, implementing validation logic through multiple simpler conditions, or restructuring the conversational flow to gather information in more constrained formats.
 
 ## Example: Using Power Fx to Modify and Display Dates
 A foundational example from Microsoft’s documentation shows how Power Fx can improve user-facing output. 
@@ -76,6 +75,7 @@ These prefixes are crucial for correct data access. They indicate the variable's
 * `Topic.` for topic-level variables (e.g., `Topic.UserMessage`)
 * `System.` for system-level variables (e.g., `System.CurrentDateTime`)
 * `Global.` for agent-level variables (e.g., `Global.AgentName`)
+
 These prefixes make the flow of state inside an agent explicit, which is essential for multi‑step logic and orchestrations.
 
 ## Use literal values in a formula
@@ -93,7 +93,7 @@ When working with Power Fx formulas, you are not restricted to referencing varia
 
 
 ## Common Power Fx formulas
-The following table lists data types and Power Fx formulas you can use with each data type.
+The following table lists data types and Power Fx formulas you can use with each data type. Links point directly to Microsofts official documentation for further reference.
 
 | Type | Power Fx formulas |
 |------|-------------------|
