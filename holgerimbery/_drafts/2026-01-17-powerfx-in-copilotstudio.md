@@ -48,7 +48,7 @@ Power Fx in Copilot Studio is fully integrated into the authoring canvas and can
 
 This allows you to compute values, evaluate conditions, transform user input, and shape how your agent responds. The placement of Power Fx within these specific nodes reflects a deliberate architectural decision: computational logic resides at the points where data enters the system, transforms during processing, or influences routing decisions. Rather than scattering imperative code throughout the conversational design, Power Fx expressions encapsulate discrete computational operations within well-defined boundaries, making the agent's behavior more comprehensible during both initial development and subsequent maintenance.
 
-Copilot Studio supports a subset of Power Fx functions, not the full Power Apps function library. This distinction matters for practitioners migrating existing formulas or designing complex computational logic. Many core table, text, date, and conditional functions behave identically to their Power Apps counterparts, which allows experienced Power Platform developers to transfer their existing knowledge directly into agent development contexts. Functions governing table manipulation—such as Filter, ForAll, and AddColumns—generally operate as expected. Similarly, text processing functions, including Concatenate, Left, Right, and Text formatting operations, maintain their familiar semantics. Date and time calculations through functions such as DateAdd, DateDiff, and Now provide consistent behavior across the platform.
+Copilot Studio supports a subset of Power Fx functions, not the complete Power Apps function library. This distinction matters for practitioners migrating existing formulas or designing complex computational logic. Many core table, text, date, and conditional functions behave identically to their Power Apps counterparts, which allows experienced Power Platform developers to transfer their existing knowledge directly into agent development contexts. Functions governing table manipulation—such as Filter, ForAll, and AddColumns—generally operate as expected. Similarly, text processing functions, including Concatenate, Left, Right, and Text formatting operations, maintain their familiar semantics. Date and time calculations through functions such as DateAdd, DateDiff, and Now provide consistent behavior across the platform.
 
 
 ## Example: Using Power Fx to Modify and Display Dates
@@ -94,7 +94,7 @@ When working with Power Fx formulas, you are not restricted to referencing varia
 
 
 ## Common Power Fx formulas
-The following table lists data types and Power Fx formulas you can use with each data type. Links point directly to Microsoft's official documentation for further reference.
+The following table lists data types and Power Fx formulas you can use with each data type. Links point directly to Microsoft's official documentation for your reference.
 
 | Type | Power Fx formulas |
 |------|-------------------|
