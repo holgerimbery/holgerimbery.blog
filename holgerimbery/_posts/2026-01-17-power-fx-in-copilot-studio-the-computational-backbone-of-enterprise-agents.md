@@ -3,7 +3,6 @@ layout: post
 title: "Power Fx in Copilot Studio - The Computational Backbone of Enterprise Agents"
 description: "Building production-ready conversational agents in Microsoft Copilot Studio requires mastering a critical architectural principle: the LLM handles the words, Power Fx handles the computation."
 date: 2026-01-17
-author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/microsoft-365-oUbzU87d1Gc-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@microsoft365?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Microsoft 365</a> on <a href="https://unsplash.com/photos/a-person-sitting-at-a-table-with-a-laptop-oUbzU87d1Gc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
