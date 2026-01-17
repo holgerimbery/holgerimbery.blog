@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/yoel-winkler-iPPukR_eMcY-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@yoel100?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yoel Winkler</a> on <a href="https://unsplash.com/photos/a-flock-of-birds-flying-through-a-blue-sky-iPPukR_eMcY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
-tags: [copilot, copilotstudio, agentbuilder, migration, powerplatform, agents]
+tags: [copilot, copilotstudio, agentbuilder, migration, powerplatform, agents,enterpriseagents]
 featured: true
 toc: true
 ---
@@ -30,9 +30,6 @@ From a governance perspective, the difference is substantial. Copilot Studio int
 The migration also opens up possibilities for more sophisticated agent behaviors. You can implement conditional logic that routes conversations based on context, integrate with external APIs and services beyond what Agent Builder supports, and leverage Dataverse as a structured data layer for your agent's knowledge and state management. If your organization runs separate development, testing, and production environments—as most enterprises do — Copilot Studio's multi-environment support becomes essential for maintaining stable operations while continuously improving your agents.
 
 This article walks through the practical aspects of performing this migration: understanding which components transfer automatically versus those that require manual reconfiguration, meeting the licensing and environment prerequisites, and establishing a workflow that minimizes disruption to users who depend on your existing agents.
-
-{: .important }
-This feature is not yet available for all users.
 
 
 ## Why Migrate?
