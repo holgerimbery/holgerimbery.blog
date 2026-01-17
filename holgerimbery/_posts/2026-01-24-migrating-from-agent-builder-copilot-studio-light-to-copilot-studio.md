@@ -74,7 +74,14 @@ This design allows you to:
 
 ## What Gets Transferred Automatically
 
-The copy operation handles a specific subset of your agent's configuration. Understanding exactly what transfers automatically helps you plan the remaining setup work after migration.
+The copy operation handles a specific subset of your agent's configuration, not everything is copied over, especially uploaded files. Understanding exactly what transfers automatically helps you plan the remaining setup work after migration.
+
+![upgit_20260117_1768669522.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/upgit_20260117_1768669522.png)
+
+
+Select the target environment for your Copilot Studio agent during the copy process.
+![upgit_20260117_1768669598.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/upgit_20260117_1768669598.png)
+
 
 **Basic identification and behavior elements** that copy over include the agent's name, the description that appears to users, and the core instructions that define how the agent should respond and behave. These static text fields form the foundational definition of your agent's personality and purpose. The suggested prompts you configured to help users get started with the agent also transfer, maintaining that initial user experience guidance.
 
