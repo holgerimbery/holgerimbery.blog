@@ -2,7 +2,7 @@
 layout: post
 title: "Migrating from Agent Builder (Copilot Studio Light) to Copilot Studio"
 description: "A comprehensive guide to transitioning your conversational agents from the simplified Agent Builder within Microsoft 365 Copilot to the full-featured Copilot Studio environment, unlocking advanced capabilities for enterprise-scale AI solutions."
-date: 2026-01-23
+date: 2026-01-24
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/yoel-winkler-iPPukR_eMcY-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@yoel100?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yoel Winkler</a> on <a href="https://unsplash.com/photos/a-flock-of-birds-flying-through-a-blue-sky-iPPukR_eMcY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -27,7 +27,7 @@ The migration process itself is straightforward: you essentially create a copy o
 
 From a governance perspective, the difference is substantial. Copilot Studio integrates with Power Platform's security model, allowing you to implement role-based access controls, enforce data loss prevention policies, and maintain detailed audit trails of who changed what and when. You can configure connectors to external systems with appropriate guardrails, manage how agents access sensitive data, and ensure everything complies with your organization's compliance requirements.
 
-The migration also opens up possibilities for more sophisticated agent behaviors. You can implement conditional logic that routes conversations based on context, integrate with external APIs and services beyond what Agent Builder supports, and leverage Dataverse as a structured data layer for your agent's knowledge and state management. If your organization runs separate development, testing, and production environments—as most enterprises do—Copilot Studio's multi-environment support becomes essential for maintaining stable operations while continuously improving your agents.
+The migration also opens up possibilities for more sophisticated agent behaviors. You can implement conditional logic that routes conversations based on context, integrate with external APIs and services beyond what Agent Builder supports, and leverage Dataverse as a structured data layer for your agent's knowledge and state management. If your organization runs separate development, testing, and production environments—as most enterprises do — Copilot Studio's multi-environment support becomes essential for maintaining stable operations while continuously improving your agents.
 
 This article walks through the practical aspects of performing this migration: understanding which components transfer automatically versus those that require manual reconfiguration, meeting the licensing and environment prerequisites, and establishing a workflow that minimizes disruption to users who depend on your existing agents.
 
@@ -57,6 +57,9 @@ When you've developed an agent using Agent Builder within Microsoft 365 Copilot 
 ### How to Initiate the Copy
 
 You'll find this option in the **More options (…)** menu when viewing your agent in Agent Builder. The purpose of this function is to create a duplicate of your existing agent in the Power Platform environment where Copilot Studio operates, eliminating the need to recreate it manually.
+
+
+![upgit_20260117_1768669061.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/upgit_20260117_1768669061.png)
 
 ### Important: This Is a Copy, Not a Move
 
