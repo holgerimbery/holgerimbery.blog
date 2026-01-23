@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Migrating from Agent Builder (Copilot Studio Light) to Copilot Studio"
+title: "Migrating from Agent Builder (Copilot Studio Lite) to Copilot Studio"
 description: "A comprehensive guide to transitioning your conversational agents from the simplified Agent Builder within Microsoft 365 Copilot to the full-featured Copilot Studio environment, unlocking advanced capabilities for enterprise-scale AI solutions."
 date: 2026-01-24
 author: admin
@@ -16,10 +16,15 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**
-Moving your agents from Agent Builder(aka Copilot Studio light) — the simplified creation tool embedded in Microsoft 365 Copilot — to the full-featured Copilot Studio environment represents a significant step forward in how you manage and deploy conversational AI within your organization. While Agent Builder excels at helping teams quickly prototype and launch straightforward agents for internal use, Copilot Studio provides the comprehensive tooling needed when those agents mature into reliable, enterprise-scale solutions.
+Moving your agents from Agent Builder(aka Copilot Studio lite) — the simplified creation tool embedded in Microsoft 365 Copilot — to the full-featured Copilot Studio environment represents a significant step forward in how you manage and deploy conversational AI within your organization. While Agent Builder excels at helping teams quickly prototype and launch straightforward agents for internal use, Copilot Studio provides the comprehensive tooling needed when those agents mature into reliable, enterprise-scale solutions.
 
 **Why read it?**
 Are you looking to scale your Copilot agents from small-team tools to enterprise-ready solutions? This article explains the compelling benefits, migration process, and critical considerations—so you can confidently elevate your agent strategy.
+
+{: .important }
+This article isuses using the terms "Agent Builder" and "Copilot Studio Lite" interchangeably to refer to the same simplified agent creation tool within Microsoft 365 Copilot.
+The full-featured environment is referred to as "Copilot Studio." Microsoft is continusly changing naming conventions, so please refer to the latest official documentation for the most current terminology.
+
 
 ## Introduction
 
