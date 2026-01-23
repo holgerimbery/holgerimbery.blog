@@ -16,7 +16,7 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**
-Moving your agents from Copilot Studio light (FYA Agent Builder) — the simplified creation tool embedded in Microsoft 365 Copilot — to the full-featured Copilot Studio environment represents a significant step forward in how you manage and deploy conversational AI within your organization. While Agent Builder excels at helping teams quickly prototype and launch straightforward agents for internal use, Copilot Studio provides the comprehensive tooling needed when those agents mature into reliable, enterprise-scale solutions.
+Moving your agents from Agent Builder(aka Copilot Studio light) — the simplified creation tool embedded in Microsoft 365 Copilot — to the full-featured Copilot Studio environment represents a significant step forward in how you manage and deploy conversational AI within your organization. While Agent Builder excels at helping teams quickly prototype and launch straightforward agents for internal use, Copilot Studio provides the comprehensive tooling needed when those agents mature into reliable, enterprise-scale solutions.
 
 **Why read it?**
 Are you looking to scale your Copilot agents from small-team tools to enterprise-ready solutions? This article explains the compelling benefits, migration process, and critical considerations—so you can confidently elevate your agent strategy.
