@@ -57,11 +57,11 @@ To better understand how these agents function in practical situations, consider
 
 Agent 365 is the administrative and governance layer that supports AI agents across an enterprise.
 
-### 3.1 Key Capabilities
+### Key Capabilities
 
 - **Agent Discovery and Inventory Management:** Agent 365 maintains a comprehensive record and catalog of all AI agents operating within an organization. This inventory function allows administrators and operators to understand which agents exist, where they are deployed, what purposes they serve, and their operational status at any given time. Rather than having agents scattered across the organization with no central visibility, this inventory system provides a unified view of the agent ecosystem.
 
-- **Identity-Based Resource Access Controls:** Agent 365 works in conjunction with Entra ID (Azure's identity management system) to establish which specific resources, data sources, and systems that individual agents are allowed to access. Instead of agents having unlimited access across an organization's systems, Agency 365 enforces granular permission boundaries that ensure each agent can access only the specific data, applications, and services necessary to perform its assigned functions. This principle of least privilege prevents an agent from inadvertently or maliciously accessing sensitive data or systems outside its defined scope.
+- **Identity-Based Resource Access Controls:** Agent 365 works in conjunction with Entra ID (Azure's identity management system) to establish which specific resources, data sources, and systems that individual agents are allowed to access. Instead of agents having unlimited access across an organization's systems, Agent 365 enforces granular permission boundaries that ensure each agent can access only the specific data, applications, and services necessary to perform its assigned functions. This principle of least privilege prevents an agent from inadvertently or maliciously accessing sensitive data or systems outside its defined scope.
 
 - **Standardized Integration Interfaces and Development Kits:** Agent 365 provides standardized software development kits (SDKs) and application programming interfaces (APIs) that establish consistent patterns for how new agents can be built and integrated with existing organizational systems. Rather than having each agent built in isolation using different approaches, these standardized interfaces ensure that agents built by different teams or vendors can work together and communicate in predictable ways following established patterns.
 
