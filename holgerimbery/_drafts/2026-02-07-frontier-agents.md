@@ -97,6 +97,8 @@ Administrators must:
 
 1. Confirm licensing prerequisites.
 2. Enable Frontier in the Admin Center.
+![upgit_20260124_1769262371.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/upgit_20260124_1769262371.png)
+
 3. Assign Frontier access to users.
 4. Use Agent 365 tools to manage lifecycle, visibility, and compliance.
 5. Provide SDK access for development.
