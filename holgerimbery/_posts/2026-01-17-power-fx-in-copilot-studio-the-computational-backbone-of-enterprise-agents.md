@@ -7,7 +7,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@microsoft365?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Microsoft 365</a> on <a href="https://unsplash.com/photos/a-person-sitting-at-a-table-with-a-laptop-oUbzU87d1Gc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [copilotstudio, automation, powerfx, lowcode, enterprise, llm, azureai, dataverse]
-featured: true
+featured: false
 toc: true
 ---
 
