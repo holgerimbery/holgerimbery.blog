@@ -39,7 +39,13 @@ The Copilot Studio Kit is a comprehensive, installable testing framework built o
 The Kit operates through a structured workflow: you define test cases within **Agents**, organize them into **Test Sets**, and execute these sets as **Test Runs** on demand or via scheduled processes. Test execution occurs through the **Direct Line API**, which simulates authentic user interactions with your published agent. Results are enriched with telemetry from **Application Insights** and **Dataverse**, capturing detailed diagnostic information such as which topics were invoked, confidence scores for intent matching, and end-to-end latency measurements. This multi-layer instrumentation enables root-cause analysis of test failures and performance anomalies.
 
 **Test types:**  
-The Kit supports multiple validation approaches to accommodate different agent behaviors. *Response Match* tests verify that agent outputs match expected text or patterns. *Attachment/Adaptive Card* tests validate that rich response elements (cards, files, structured outputs) are generated correctly. *Topic Match* tests confirm that conversations trigger the intended dialog flows. *Generative Answers* tests assess responses from generative models embedded in agents. Beyond single-turn exchanges, the Kit handles **Multi‑turn** conversations—sequences of user inputs and agent responses within a single session—and **Plan validation**, which verifies that generative orchestration components select and invoke the correct tools, actions, and connected agents in the proper sequence.
+The Kit supports multiple validation approaches to accommodate different agent behaviors.   
+*Response Match* tests verify that agent outputs match expected text or patterns.  
+*Attachment/Adaptive Card* tests validate that rich response elements (cards, files, structured outputs) are generated correctly.   
+*Topic Match* tests confirm that conversations trigger the intended dialog flows.   
+*Generative Answers* tests assess responses from generative models embedded in agents.   
+
+Beyond single-turn exchanges, the Kit handles **Multi‑turn** conversations—sequences of user inputs and agent responses within a single session—and **Plan validation**, which verifies that generative orchestration components select and invoke the correct tools, actions, and connected agents in the proper sequence.
 
 **Run management:**  
 Once you execute a Test Run, the Kit provides tools for iterative validation work. You can duplicate previous runs to establish baselines, re-run enrichment steps (regenerating Application Insights correlations and Dataverse transcripts) without re-executing the entire test, and analyze aggregate pass/fail statistics or drill down into individual case results to identify failure patterns and trends.
