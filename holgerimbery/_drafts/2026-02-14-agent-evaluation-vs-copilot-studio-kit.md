@@ -14,10 +14,10 @@ toc: true
 
 {: .q-left }
 > **Summary Lede**  
-> Copilot Studio agents deserve testing at scale - but which tool fits your team? **Agent Evaluation** brings lightweight, AI-powered checks into the Studio authoring UI for rapid iteration, while **Copilot Studio Kit** delivers enterprise-grade multi-turn validation, plan verification, and telemetry for production gates. This guide cuts through the hype and shows you exactly when to reach for each tool - and why the best teams use both together.
+> Copilot Studio agents deserve testing at scale—but which tool fits your team? **Agent Evaluation** brings lightweight, AI-powered checks into the Studio authoring UI for rapid iteration, while **Copilot Studio Kit** delivers enterprise-grade multi-turn validation, plan verification, and telemetry for production gates. This guide cuts through the hype and shows you exactly when to reach for each tool—and why the best teams use both together.
 
 **Why Read This**
-Choosing the right testing tool can make or break your Copilot Studio agent quality strategy. **This article goes deeper** into how Copilot Studio Kit and Agent Evaluation complement - and differ in - their testing approaches. If you've read my earlier piece on [*Ship Copilot Studio Agents with Confidence: Master Automated Testing with the Copilot Studio Kit*](./ship-copilot-studio-agents-with-confidence-master-automated-testing-with-the-copilot-studio-kit) (2026-01-31), which focused on Kit capabilities alone, this comparison will help you decide *when* to use Kit, *when* to use Agent Evaluation, and *when* to use both together. Perfect for teams scaling from dev iteration to production release gates.
+Choosing the right testing tool can make or break your Copilot Studio agent quality strategy. **This article goes deeper** into how Copilot Studio Kit and Agent Evaluation complement—and differ in—their testing approaches. If you've read my earlier piece on [*Ship Copilot Studio Agents with Confidence: Master Automated Testing with the Copilot Studio Kit*](./ship-copilot-studio-agents-with-confidence-master-automated-testing-with-the-copilot-studio-kit) (2026-01-31), which focused on Kit capabilities alone, this comparison will help you decide *when* to use Kit, *when* to use Agent Evaluation, and *when* to use both together. Perfect for teams scaling from dev iteration to production release gates.
 
 
 Microsoft provides two complementary approaches to test Copilot Studio agents:
