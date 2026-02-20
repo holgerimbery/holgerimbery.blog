@@ -37,8 +37,8 @@ menu_settings:
       url: "https://github.com/sponsors/holgerimbery"
     - title: "instruo365"
       url: "https://instruo365.de"
-    - title: "ACSforMCS"
-      url: "https://github.com/holgerimbery/ACSforMCS/wiki"
+    - title: "MAAJ Project"
+      url: "https://github.com/holgerimbery/MaaJforMCS"
 
 # Call to action button
 cta_button:
