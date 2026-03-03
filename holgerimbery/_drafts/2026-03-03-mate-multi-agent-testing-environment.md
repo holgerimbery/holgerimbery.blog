@@ -38,6 +38,9 @@ Link to [MATE Wiki](https://github.com/holgerimbery/mate/wiki)
 
 **Modular Agent Testing Environment (MATE)** is an internal project and framework designed to provide **automated, comprehensive testing** for AI agents, initially focusing on Microsoft Copilot Studio agents. MATE was created to address the challenges above by combining **enterprise-grade tooling with a modular, extensible architecture**. In essence, MATE allows developers and testers to **connect to a running Copilot Studio agent, simulate conversations, evaluate the agent’s responses against expected outcomes using AI, and produce detailed metrics and reports** – all in an automated fashion.
 
+<p><iframe src="https://www.youtube.com/embed/iQjUIwJGqfs" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+
+
 MATE’s approach can be seen as bringing many of the benefits of the Copilot Studio Kit into a **standalone, code-first testing environment**. Rather than a Power App solution, MATE is a **pure .NET 9** application  that you can run on your machine or in a container. This design choice means MATE operates outside the constraints of the Power Platform, giving developers more flexibility in how and where they run their tests.
 
 Let’s break down how MATE works and how it addresses key testing challenges:
