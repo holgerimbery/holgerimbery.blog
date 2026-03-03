@@ -108,6 +108,12 @@ As seen above, **MATE and Copilot Studio Kit share the same goal – improving a
 
 From a Microsoft perspective, the **Copilot Studio Kit** was a bridge solution to empower agent creators with testing capabilities before deeper platform features were available. Now, with **Agent Evaluation built directly into Copilot Studio** (currently in preview), some capabilities of the kit are being absorbed into the product itself – for instance, AI-generated test queries and built-in execution of test sets. Still, the Kit provides additional tooling (like dashboards, inventory, governance features) that are useful in complex environments.
 
+{: .important }
+see articles:  
+ [Ship Copilot Studio Agents with Confidence: Master Automated Testing with the Copilot Studio Kit](https://preview.holgerimbery.blog/ship-copilot-studio-agents-with-confidence-master-automated-testing-with-the-copilot-studio-kit)  
+[Testing Copilot Studio Agents: Copilot Studio Kit vs. Agent Evaluation (Preview)](https://preview.holgerimbery.blog/testing-copilot-studio-agents-copilot-studio-kit-vs-agent-evaluation-preview)
+
+
 MATE, on the other hand, is an **independent effort to provide a robust testing harness** that can evolve fast and go beyond what the closed-source product features offer. It is not limited by Power Platform’s boundaries (for example, one could imagine integrating MATE with other LLM evaluation criteria, or hooking it up to monitor backend APIs invoked by the agent). Additionally, MATE’s modular nature means it could incorporate **other agent types** into the same testing dashboard. For example, if you have a fleet of different AI bots – some built in Copilot Studio, some using Azure OpenAI Orchestration, some third-party – MATE could theoretically be extended to test them all in one place, whereas the Copilot Studio Kit is only for Copilot Studio agents.
 
 **When to use which?** If you are a **Power Platform maker or IT admin** who wants a straightforward, supported way to test Copilot Studio agents and you’re already comfortable with Power Apps and Dataverse, the **Copilot Studio Kit** is a solid choice. It integrates nicely with the environment (and your data, logs, etc.) and doesn’t require coding to use. However, you’ll need the necessary licenses and some patience to configure the environment, and you won’t be able to easily customize how tests are evaluated beyond what Microsoft provides.
