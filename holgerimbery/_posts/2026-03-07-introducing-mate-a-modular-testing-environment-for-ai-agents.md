@@ -1,4 +1,5 @@
 ---
+date: 2026-03-07
 layout: post
 title: "Introducing MATE: A Modular Testing Environment for AI Agents"
 description: "As AI agents become integral to business processes, reliable and repeatable testing is essential for confidence in deployment. This article introduces the Multi-Agent Test Environment (MATE) – an enterprise-grade framework for automated testing of AI agents across platforms and frameworks – and explains how its modular design addresses key challenges in agent testing. We explore why testing AI agents is critical, delve into MATE's architecture and features, compare MATE with alternative testing approaches, and outline MATE's roadmap including red-team testing, enhanced cloud deployment, and support for emerging agent frameworks."
@@ -6,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/03/helena-lopes-PGnqT0rXWLs-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@helenalopesph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Helena Lopes</a> on <a href="https://unsplash.com/photos/four-person-hands-wrap-around-shoulders-while-looking-at-sunset-PGnqT0rXWLs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
-tags: [copilotstudio, aiagents, agentevaluation, testing]
+tags: [copilotstudio, agents, agentevaluation, testing]
 featured: true
 toc: true
 ---
