@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@testalizeme?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Testalize.me</a> on <a href="https://unsplash.com/photos/green-pink-and-purple-plastic-bottles-0jE8ynV4mis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [copilotstudio, powerplatform, agentevaluation, ai, llm, testing, governance, devops, copilotstudiokit]
-featured: true
+featured: false
 toc: true
 ---
 {: .q-left }
