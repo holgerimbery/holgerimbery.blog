@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@dmey503?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Meyers</a> on <a href="https://unsplash.com/photos/body-of-water-near-mountain-during-sunset-aGLFozyvXsQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [copilotstudio, frontier, microsoft365, agents, enterpriseai, agent365, m365copilot]
-featured: true
+featured: false
 toc: true
 ---
 
