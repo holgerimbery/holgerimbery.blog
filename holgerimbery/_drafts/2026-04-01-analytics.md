@@ -1,11 +1,12 @@
 ---
 layout: post
-title: ""
-description: ""
+title: "Connecting Azure Application Insights to Microsoft Copilot Studio: Unlocking Deep Analytics for Agentic Systems"
+description:
 date: 2026-04-04
 author: admin
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/kevin-ache-2JJ3wBHu4_0-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@kevinache?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ache</a> on <a href="https://unsplash.com/photos/a-rack-of-servers-in-a-server-room-2JJ3wBHu4_0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/deng-xiang--WXQm_NTK0U-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@dengxiangs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Deng Xiang</a> on <a href="https://unsplash.com/photos/graphical-user-interface--WXQm_NTK0U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
       
       
 tags: []
