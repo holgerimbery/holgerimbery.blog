@@ -23,7 +23,7 @@ As agentic systems grow in complexity and autonomy, visibility becomes critical.
 
 ## Benefits of Connecting Azure Application Insights to Copilot Studio
 
-Connecting **Azure Application Insights** to **Microsoft Copilot Studio** agents significantly extends your monitoring, diagnostics, and analytics capabilities far beyond the native tooling provided by Copilot Studio alone. Application Insights, a powerful component of the broader **Azure Monitor** platform, functions as a fully extensible Application Performance Management (APM) service designed to accommodate enterprise-scale requirements. This service captures granular message-level telemetry, topic trigger events, interaction latency measurements, custom domain-specific events, and comprehensive error details in near real-time, enabling immediate visibility into agent behavior. By establishing this integration, organizations gain access to both fine-grained technical observability that empowers engineering teams to debug and optimize agent performance, and strategic usage intelligence that informs business stakeholders about adoption patterns, user satisfaction trends, and operational efficiency metrics.
+Connecting **Azure Application Insights** to **Microsoft Copilot Studio** agents significantly extends your monitoring, diagnostics, and analytics capabilities far beyond the native tooling provided by Copilot Studio alone. Application Insights, a powerful component of the broader **Azure Monitor** platform, is a fully extensible Application Performance Management (APM) service designed to meet enterprise-scale requirements. This service captures granular message-level telemetry, topic trigger events, interaction latency measurements, custom domain-specific events, and comprehensive error details in near real-time, enabling immediate visibility into agent behavior. By establishing this integration, organizations gain access to both fine-grained technical observability, which empowers engineering teams to debug and optimize agent performance, and strategic usage intelligence, which informs business stakeholders about adoption patterns, user satisfaction trends, and operational efficiency metrics.
 
 ![upgit_20260401_1775031491.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/upgit_20260401_1775031491.png)
 
@@ -44,7 +44,7 @@ Connecting **Azure Application Insights** to **Microsoft Copilot Studio** agents
 
 Setting up Application Insights for your Copilot Studio agents involves configuring where and how telemetry data flows. The process is straightforward but requires understanding key configuration options and prerequisites. Here's what you need to know to get started:
 
-*   **Per-agent configuration**: There is no tenant-wide switch. Each agent must be individually connected to Application Insights.
+*   **Per-agent configuration**: There is no tenant-wide switch. Each agent must be connected to Application Insights individually.
 *   **Setup**: Add the Application Insights connection string in `Settings → Advanced → Application Insights` within Copilot Studio.
 *   **Azure Subscription**: Required to use Application Insights.
 *   **Logging Options**:
@@ -171,7 +171,7 @@ In regulated industries and enterprises subject to data governance requirements,
 
 Implementing a robust telemetry strategy requires discipline and intentionality. The following best practices will help you maximize the value of Application Insights while minimizing operational overhead and ensuring data quality:
 
-*   **Log Meaningful Events**: When instrumenting your Copilot Studio agents, focus exclusively on capturing events that provide actionable intelligence. This includes clear indicators of user intent (such as topic invocations or explicit requests), documented dialog outcomes (successful resolutions, escalations, or abandonment), and comprehensive error context. By avoiding noise and focusing on signal, you reduce data volume while improving analysis quality and reducing query latency.
+*   **Log Meaningful Events**: When instrumenting your Copilot Studio agents, focus exclusively on capturing events that provide actionable intelligence. This includes clear indicators of user intent (such as topic invocations or explicit requests), documented dialog outcomes (successful resolutions, escalations, or abandonment), and comprehensive error context. By avoiding noise and focusing on the signal, you reduce data volume while improving analysis quality and reducing query latency.
 
 *   **Use Correlation IDs**: Implement correlation identifiers to link related activities across multiple services, dialogs, and organizational boundaries. This practice is essential in distributed systems where a user's interaction may involve multiple agents, backend APIs, and cloud services. Correlation IDs enable end-to-end tracing of requests, making it significantly easier to diagnose complex failures and understand latency across the entire interaction pipeline.
 
@@ -181,13 +181,13 @@ Implementing a robust telemetry strategy requires discipline and intentionality.
 
 ## Connect your Copilot Studio agent to Application Insights
 
-Establishing a connection between your Copilot Studio agent and Azure Application Insights requires careful configuration to ensure telemetry data flows correctly to your monitoring environment. This section provides comprehensive guidance on the setup process, prerequisite requirements, and optional configuration settings that influence what data is captured and transmitted.
+Establishing a connection between your Copilot Studio agent and Azure Application Insights requires careful configuration to ensure telemetry data flows correctly to your monitoring environment. This section provides comprehensive guidance on the setup process, prerequisites, and optional configuration settings that affect which data is captured and transmitted.
 
 ### Prerequisites and Initial Setup
 
-Before you can establish a successful connection between your Copilot Studio agent and Application Insights, ensure that you have an active Azure subscription with an existing Application Insights resource provisioned. The connection process relies on authentication credentials stored in your agent's configuration, so you will need administrative access to both your Copilot Studio environment and your Azure resources.
+Before you can establish a successful connection between your Copilot Studio agent and Application Insights, ensure that you have an active Azure subscription and an existing Application Insights resource. The connection process relies on authentication credentials stored in your agent's configuration so that you will need administrative access to both your Copilot Studio environment and your Azure resources.
 
-To initiate the connection process, navigate to the **Settings** page for your agent within Copilot Studio. From the Settings page, locate and select the **Advanced** tab. This tab contains configuration options that are not exposed in the standard settings interface and are typically reserved for operational and monitoring configurations.
+To initiate the connection process, navigate to the **Settings** page for your agent within Copilot Studio. From the Settings page, locate and select the **Advanced** tab. This tab contains configuration options not exposed in the standard settings interface and typically reserved for operational and monitoring settings.
 
 ### Configuring the Application Insights Connection String
 
@@ -195,11 +195,11 @@ To initiate the connection process, navigate to the **Settings** page for your a
 
 Within the Advanced settings tab, you will find a dedicated **Application Insights** section. In this section, locate the **Connection string** field and populate it with the connection string obtained from your Azure Application Insights resource.
 
-The connection string serves as the authentication and routing credential that enables your agent to securely transmit telemetry data to your specific Application Insights instance. Refer to the [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) for comprehensive instructions on locating and retrieving your connection string from your Application Insights resource in the Azure portal.
+The connection string serves as the authentication and routing credential that enables your agent to transmit telemetry data to your specific Application Insights instance securely. Refer to the [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) for comprehensive instructions on locating and retrieving your connection string from your Application Insights resource in the Azure portal.
 
 ### Optional Logging Configuration
 
-In addition to basic connectivity, Application Insights offers two optional configuration flags that allow you to control the scope and sensitivity level of captured telemetry data. These settings provide flexibility to balance comprehensive monitoring with privacy and compliance considerations.
+In addition to basic connectivity, Application Insights offers two optional configuration flags that let you control the scope and sensitivity of captured telemetry data. These settings provide flexibility to balance comprehensive monitoring with privacy and compliance considerations.
 
 **Log Activities**: When this setting is enabled, Application Insights captures comprehensive details of all incoming and outgoing messages exchanged between users and your agent, as well as all event notifications triggered during agent operation. This option provides maximum visibility into agent behavior and user interactions, enabling detailed diagnostics and comprehensive audit trails. However, enabling this option increases telemetry volume and may have cost implications for higher-traffic agents.
 
@@ -212,8 +212,8 @@ By default, this setting is **disabled** due to data privacy and compliance cons
 
 Connecting your Copilot Studio agents to Azure Application Insights represents a fundamental shift in how you approach agent observability and operational excellence. By moving beyond built-in analytics, you gain enterprise-grade monitoring capabilities that illuminate every aspect of agent behavior—from granular message-level telemetry to high-level strategic insights about adoption and ROI.
 
-The integration delivers immediate practical benefits: faster issue detection and resolution, performance optimization grounded in real data, and comprehensive audit trails that satisfy regulatory requirements. Equally important, it transforms your organization's relationship with agentic systems from speculative to evidence-driven, enabling confident scaling and continuous improvement.
+The integration delivers immediate practical benefits: faster issue detection and resolution, performance optimization grounded in real data, and comprehensive audit trails that satisfy regulatory requirements. It also turns your organization's relationship with agentic systems from speculative to evidence-driven, so you can scale confidently and keep improving.
 
 Whether your priority is reducing support costs, accelerating time-to-resolution, or demonstrating measurable business value to stakeholders, Application Insights provides the visibility and analytical power to achieve those goals. Start with the fundamentals—configure the connection string, enable appropriate logging, and establish a dashboard review cadence. As your telemetry practice matures, layer in custom events, automated alerts, and deeper correlation across your broader system ecosystem.
 
-The investment in telemetry infrastructure pays dividends immediately and compounds over time as your teams develop data-driven habits and your agents become progressively more reliable, responsive, and aligned with business objectives.
+Telemetry infrastructure pays off right away and grows over time as your teams build data-driven habits, and your agents become more reliable, responsive, and aligned with business goals.
