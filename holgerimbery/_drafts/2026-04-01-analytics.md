@@ -13,7 +13,7 @@ toc: true
 ---
 
 > **Summary Lede**  
->Agentic systems demand visibility. By connecting Azure Application Insights to your Copilot Studio agents, you gain enterprise-grade monitoring that goes far beyond built-in analytics—enabling real-time diagnostics, performance optimization, and strategic business insights in a single integrated platform.
+> Agentic systems demand visibility. By connecting Azure Application Insights to your Copilot Studio agents, you gain enterprise-grade monitoring that goes far beyond built-in analytics—enabling real-time diagnostics, performance optimization, and strategic business insights in a single integrated platform.
 
 **Why read this**: You'll discover how to unlock faster issue detection and resolution, measure and improve user experience, demonstrate ROI to stakeholders, and establish the telemetry foundation that separates high-performing teams from those operating blindly. This guide walks through prerequisites, configuration steps, and best practices to help you implement a mature observability strategy immediately.
 
