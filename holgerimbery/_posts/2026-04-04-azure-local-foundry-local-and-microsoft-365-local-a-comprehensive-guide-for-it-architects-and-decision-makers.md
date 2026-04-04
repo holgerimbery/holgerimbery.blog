@@ -2,7 +2,7 @@
 layout: post
 title: "Azure Local, Foundry Local, and Microsoft 365 Local: A Comprehensive Guide for IT Architects and Decision-Makers"
 description: "Azure Local is Microsoft's distributed infrastructure solution that extends Azure capabilities to customer-owned environments. This article provides a comprehensive overview of Azure Local, Foundry Local, and Microsoft 365 Local, their use cases, deployment options, and best practices for IT architects and decision-makers considering on-premises Azure solutions. With an appendix on agentic AI use cases on Azure Local and Foundry Local."
-date: 2026-04-04
+date: 2026-04-04 06:38:17 +0200
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/kevin-ache-2JJ3wBHu4_0-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@kevinache?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ache</a> on <a href="https://unsplash.com/photos/a-rack-of-servers-in-a-server-room-2JJ3wBHu4_0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
