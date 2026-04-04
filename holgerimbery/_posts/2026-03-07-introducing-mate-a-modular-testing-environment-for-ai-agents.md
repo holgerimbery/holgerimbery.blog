@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@helenalopesph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Helena Lopes</a> on <a href="https://unsplash.com/photos/four-person-hands-wrap-around-shoulders-while-looking-at-sunset-PGnqT0rXWLs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [copilotstudio, agents, agentevaluation, testing]
-featured: true
+featured: false
 toc: true
 ---
 

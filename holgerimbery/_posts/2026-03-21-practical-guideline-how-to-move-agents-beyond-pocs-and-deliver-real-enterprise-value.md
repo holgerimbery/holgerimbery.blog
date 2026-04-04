@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@h4x0r3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thao LEE</a> on <a href="https://unsplash.com/photos/group-of-martial-artists-sitting-on-the-grounds-yYSY93clr4w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [CopilotStudio, Agents, AIFoundry, AIAdoption, EnterpriseAI, FrontierFirm, Implementation, Governance, Value]
-featured: true
+featured: false
 toc: true
 ---
 {: .q-left }

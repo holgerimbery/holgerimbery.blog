@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@lukeheibert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luke Heibert</a> on <a href="https://unsplash.com/photos/a-lot-of-brown-boxes-that-are-open-gthSas4oYC0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [Microsoft 365, E7, Enterprise Licensing, agents, Agent365, Copilot]
-featured: true
+featured: false
 toc: true
 ---
 
