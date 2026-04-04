@@ -251,7 +251,9 @@ Azure Local manages VMs as Azure resources through the Azure Arc Resource Bridge
 This information is based on the documented VM deployment process for Azure Local environments.
 
 * **Image management**: Custom VM images (VHDs) can be uploaded or imported as templates. Preparing golden images — pre-hardened with security agents, configurations, and required software — streamlines consistent provisioning across the fleet.
-### Security for VM Workloads
+
+
+### Security for VM Workloads   
 
 * **Trusted Launch**: Supported for Azure Local VMs, enabling secure boot and virtual TPM (vTPM). The vTPM state automatically transfers within a cluster, and attestation confirms whether the VM started in a known-good state.   
 * **Microsoft Defender for Cloud**: Can assess and improve the security posture of both the Azure Local instance and individual VMs.   
