@@ -122,15 +122,15 @@ With that context, we can move from “why” to “how.”
 
 ### Phase 0 — Define boundaries: agent vs workflow, and what “done” means
 
-1.  **Write the outcome in business terms.**  
+1. **Write the outcome in business terms.**  
     Define success in measurable outcomes, not in model features. Examples include reduced downtime, faster triage, fewer escalations, shorter handling time, or improved compliance auditability.
 
-2.  **Classify steps as agent or workflow.**
+2. **Classify steps as agent or workflow.**
 
-*   Use an **agent** for open-ended interpretation, conversational assistance, flexible tool use, and summarization.
-*   Use a **workflow** for deterministic steps, routing, approvals, checkpoints, and auditable state transitions.
+* Use an **agent** for open-ended interpretation, conversational assistance, flexible tool use, and summarization.
+* Use a **workflow** for deterministic steps, routing, approvals, checkpoints, and auditable state transitions.
 
-3.  **Produce a tool inventory and trust boundary map.**  
+3. **Produce a tool inventory and trust boundary map.**  
     For each tool, define authentication, authorization, validation, allowed destinations, and audit requirements.
 
 **Operational gotcha:** Teams often prototype by giving agents broad access “to move fast.” That security debt becomes expensive later. Start with constrained proxies and allow-lists from day one.
