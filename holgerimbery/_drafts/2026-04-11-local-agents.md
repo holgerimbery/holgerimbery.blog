@@ -1,6 +1,6 @@
 ---
 layout: 
-title: "# Building On‑Prem AI Agents with Azure Local, Foundry Local, and Microsoft Agent Framework"
+title: "Building On‑Prem AI Agents with Azure Local, Foundry Local, and Microsoft Agent Framework"
 description: "A practical architecture and implementation guide for deploying AI agents on-premises using Azure Local, Foundry Local, and Microsoft Agent Framework."
 date: 2026-04-11
 author: admin
