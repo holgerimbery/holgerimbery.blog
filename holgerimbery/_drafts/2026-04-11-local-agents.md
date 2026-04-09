@@ -16,7 +16,7 @@ toc: true
 {: .q-left }
 > **Summary Lede**   
 > Cloud-native architecture belongs on-premises too   
-On-premises and cloud-native are not contradictions—they are complementary. While enterprises have spent years building cloud-native practices in the cloud, those same principles—containerization, orchestration, API-driven integration, and infrastructure-as-code—deliver even greater value when deployed on-premises. This guide shows you how to build production AI agents that run locally using Azure Local, Foundry Local, and Microsoft Agent Framework, proving that cloud-native excellence is not constrained by your network boundary.   
+On-premises and cloud-native are not contradictions — they are complementary. While enterprises have spent years building cloud-native practices in the cloud, those same principles—containerization, orchestration, API-driven integration, and infrastructure-as-code—deliver even greater value when deployed on-premises. This guide shows you how to build production AI agents that run locally using Azure Local, Foundry Local, and Microsoft Agent Framework, proving that cloud-native excellence is not constrained by your network boundary.   
 If you operate in regulated industries, manage constrained connectivity, or face data residency requirements, this architecture gives you the operational consistency of the cloud without leaving your premises.
 
 {: .note}
