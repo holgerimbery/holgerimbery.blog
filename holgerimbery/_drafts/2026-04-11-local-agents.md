@@ -21,7 +21,8 @@ If you operate in regulated industries, manage constrained connectivity, or face
 
 {: .note}
 > **Context**
-> This article is the second in a series on Azure Local:[Azure Local, Foundry Local, and Microsoft 365 Local: A Comprehensive Guide for IT Architects and Decision-Makers](https://holgerimbery.blog/azure-local-foundry-local-and-microsoft-365-local-a-comprehensive-guide-for-it-architects-and-decision-makers).
+> This article is the second in a series on Azure Local:  
+[Azure Local, Foundry Local, and Microsoft 365 Local: A Comprehensive Guide for IT Architects and Decision-Makers](https://holgerimbery.blog/azure-local-foundry-local-and-microsoft-365-local-a-comprehensive-guide-for-it-architects-and-decision-makers).
 
 Enterprise teams are moving beyond “chatbots” toward agents that can retrieve internal knowledge, call tools, orchestrate workflows, and produce outcomes aligned to real business processes. The challenge is that many agent reference designs assume always‑on cloud connectivity and cloud-hosted inference. That assumption does not hold everywhere.
 
