@@ -19,6 +19,8 @@ toc: true
 On-premises and cloud-native are not contradictions—they are complementary. While enterprises have spent years building cloud-native practices in the cloud, those same principles—containerization, orchestration, API-driven integration, and infrastructure-as-code—deliver even greater value when deployed on-premises. This guide shows you how to build production AI agents that run locally using Azure Local, Foundry Local, and Microsoft Agent Framework, proving that cloud-native excellence is not constrained by your network boundary.   
 If you operate in regulated industries, manage constrained connectivity, or face data residency requirements, this architecture gives you the operational consistency of the cloud without leaving your premises.
 
+{: .note}
+> This article is the second in a series on Azure Local:[Azure Local, Foundry Local, and Microsoft 365 Local: A Comprehensive Guide for IT Architects and Decision-Makers](https://holgerimbery.blog/azure-local-foundry-local-and-microsoft-365-local-a-comprehensive-guide-for-it-architects-and-decision-makers).
 
 Enterprise teams are moving beyond “chatbots” toward agents that can retrieve internal knowledge, call tools, orchestrate workflows, and produce outcomes aligned to real business processes. The challenge is that many agent reference designs assume always‑on cloud connectivity and cloud-hosted inference. That assumption does not hold everywhere.
 
