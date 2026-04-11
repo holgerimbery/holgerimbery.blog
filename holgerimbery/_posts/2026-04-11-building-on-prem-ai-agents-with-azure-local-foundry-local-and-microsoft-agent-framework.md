@@ -2,21 +2,21 @@
 layout: 
 title: "Building On‑Prem AI Agents with Azure Local, Foundry Local, and Microsoft Agent Framework"
 description: "A practical architecture and implementation guide for deploying AI agents on-premises using Azure Local, Foundry Local, and Microsoft Agent Framework."
-date: 2026-04-11
+date: 2026-04-11 06:55:24 +0200
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/taylor-vick-M5tzZtFCOfs-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor Vick</a> on <a href="https://unsplash.com/photos/cable-network-M5tzZtFCOfs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
             
-tags: [Azurelocal, foundrylocal, Agents, FrontierFirm, Implementation, SovereignPrivateCloud, OnPremAI, LocalInference, MicrosoftAgentFramework]
+tags: [azurelocal, foundrylocal, Agents, FrontierFirm, Implementation, SovereignPrivateCloud, OnPremAI, LocalInference, MicrosoftAgentFramework]
 featured: true
 toc: true
 ---
 
 {: .q-left }
-> **Summary Lede**   
-> Cloud-native architecture belongs on-premises too   
-On-premises and cloud-native are not contradictions — they are complementary. While enterprises have spent years building cloud-native practices in the cloud, those same principles—containerization, orchestration, API-driven integration, and infrastructure-as-code—deliver even greater value when deployed on-premises. This guide shows you how to build production AI agents that run locally using Azure Local, Foundry Local, and Microsoft Agent Framework, proving that cloud-native excellence is not constrained by your network boundary.   
+> **Summary Lede**  
+> Cloud-native architecture belongs on-premises too  
+**On-premises and cloud-native are not contradictions — they are complementary**. While enterprises have spent years building cloud-native practices in the cloud, those same principles—containerization, orchestration, API-driven integration, and infrastructure-as-code - deliver even greater value when deployed on-premises. This guide shows you how to build production AI agents that (must) run locally and using cloud native deployment schemas with Azure Local, Foundry Local, and Microsoft Agent Framework - this is proving that cloud-native excellence is not constrained by your network boundary.  
 If you operate in regulated industries, manage constrained connectivity, or face data residency requirements, this architecture gives you the operational consistency of the cloud without leaving your premises.
 
 {: .note}
@@ -27,10 +27,10 @@ Enterprise teams are moving beyond “chatbots” toward agents that can retriev
 
 In regulated industries, in plants and branches with constrained connectivity, or in environments where latency and data locality are non‑negotiable, the architecture has to follow the use case. This post describes a pragmatic design you can implement today by combining:
 
-*   **Azure Local** as the on‑prem infrastructure substrate, managed through **Azure Arc**.
-*   **AKS on Azure Local** as the standardized Kubernetes runtime for agent services and supporting components.
-*   **Foundry Local (preview)** as the local inference runtime exposing an **OpenAI‑compatible REST interface** for model calls.
-*   **Microsoft Agent Framework (MAF)** as the agent and workflow layer, including tool integration, session/state management, middleware, and telemetry patterns.
+* **Azure Local** as the on‑prem infrastructure substrate, managed through **Azure Arc**.
+* **AKS on Azure Local** as the standardized Kubernetes runtime for agent services and supporting components.
+* **Foundry Local (preview)** as the local inference runtime exposing an **OpenAI‑compatible REST interface** for model calls.
+* **Microsoft Agent Framework (MAF)** as the agent and workflow layer, including tool integration, session/state management, middleware, and telemetry patterns.
 
 **A critical insight: cloud-native architecture and practices are not limited to cloud deployments.** The principles—containerization, orchestration, infrastructure-as-code, API-driven integration, observability, and declarative state management—are equally valuable on‑premises. In fact, they become *more essential* when your infrastructure cannot scale elastically or rely on the implicit redundancy of cloud regions. By applying cloud-native architecture to on‑prem agent deployments, you gain consistent operational models across locations, faster iteration, clear boundaries between layers, and the ability to treat infrastructure changes as routine rather than exceptional.
 
@@ -41,9 +41,7 @@ One design choice drives everything that follows: **separate the agent runtime f
 A practical baseline pattern is “local inference, centralized orchestration.”
 ![upgit_20260409_1775761970.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/upgit_20260409_1775761970.png)
 
-
 This separation keeps your application surface stable by establishing a clear boundary between stateless agent logic and stateful model inference. Because the agent layer and model runtime are decoupled, you can update agent code, refine routing logic, add new tools, or adjust middleware without touching the inference layer. Tools can be added safely behind constrained proxies or API gateways, allowing you to apply fine-grained network controls and audit trails at the integration boundary. Governance policies, observability hooks, and logging patterns remain consistent across agent operations regardless of where inference is placed. Simultaneously, inference becomes a managed dependency that can scale, relocate, or upgrade independently of application code. This architectural separation is particularly valuable in regulated environments where model serving and application logic often require separate operational controls, hardware isolation, or audit commitments. By decoupling these layers, you achieve the flexibility to place inference close to hardware accelerators (GPUs, NPUs) and data sources without forcing agent code to depend on infrastructure choices that are still evolving, especially when the inference runtime is in preview status and subject to API changes or performance tuning.
-
 
 ## Where this approach fits (and where it does not)
 
@@ -64,7 +62,6 @@ This pattern becomes the right choice when one or more of the following constrai
 Reconsidering a local-first architecture is warranted in several practical scenarios. If your inference workload demands elastic horizontal scaling and you cannot predict peak capacity without overprovisioning on-premises infrastructure, then chasing elastic scale with local hardware becomes economically and operationally inefficient. Building auto-scaling logic that manages standby capacity across stateful models would contradict the efficiency argument for locality. Similarly, if your operational environment requires production-grade stability guarantees from the inference API layer with minimal risk of breaking changes between deployments, the current maturity of local inference runtimes (such as Foundry Local, which remains in preview) presents a material risk. Preview components introduce uncertainty regarding backward compatibility, performance-tuning recommendations, and troubleshooting depth, which may not align with production SLAs. Finally, if the problem you are solving is fundamentally deterministic—where steps follow a fixed sequence, validation rules are static, and branching logic is known in advance—a structured workflow orchestration tool or a conventional microservice often provides clearer observability, simpler debugging, and lower operational overhead than an agent. Not every problem with tools and state management requires agentic behavior; sometimes explicit choreography is both simpler and more reliable.
 
 These are the constraints that inform the "whether" decision. The next section moves to the "why Azure Local" specifically, grounded in use-case context rather than abstract on-premises philosophy.
-
 
 ## Why Azure Local makes sense here (the use case drives locality)
 
@@ -96,7 +93,7 @@ Azure Local enables local execution of the agent runtime and inference engine re
 
 Teams generally want repeatable delivery, policy enforcement, and consistent observability. The conventional tension between on-premises deployments and cloud-native operations has historically forced a false choice: either accept the operational discipline and automation of cloud platforms at the cost of moving workloads outside your perimeter, or keep infrastructure on-premises and revert to manual configuration management, bespoke deployment scripts, and fragmented observability tooling.
 
-Azure Local plus AKS on Azure Local servers that couple. Containerized deployments, GitOps-driven configuration management, Kubernetes namespaces, and declarative rollout strategies work identically whether your agent runtime is in a public cloud region or in your own data center. The infrastructure boundary becomes transparent to operational practices. Teams can maintain the same deployment pipelines, policy engines, and observability systems they have built for cloud workloads and apply them without modification to on-premises clusters. This continuity of tooling and process significantly reduces the operational friction that typically accompanies on-premises agent deployments. The "local" decision becomes a deployment location decision—a choice about where to run proven, familiar infrastructure patterns—rather than a return to bespoke server management, manual patching, and isolated monitoring infrastructure that would otherwise characterize traditional on-premises deployments.
+Azure Local plus AKS on Azure Local severs that coupling. Containerized deployments, GitOps-driven configuration management, Kubernetes namespaces, and declarative rollout strategies work identically whether your agent runtime is in a public cloud region or in your own data center. The infrastructure boundary becomes transparent to operational practices. Teams can maintain the same deployment pipelines, policy engines, and observability systems they have built for cloud workloads and apply them without modification to on-premises clusters. This continuity of tooling and process significantly reduces the operational friction that typically accompanies on-premises agent deployments. The "local" decision becomes a deployment location decision—a choice about where to run proven, familiar infrastructure patterns—rather than a return to bespoke server management, manual patching, and isolated monitoring infrastructure that would otherwise characterize traditional on-premises deployments.
 
 ### 5) Local inference forces you to manage capacity and hardware intentionally
 
@@ -116,7 +113,7 @@ Azure Local supports this incremental expansion by providing a consistent Kubern
 
 **Practical decision test:** Azure Local tends to be the right call when most of these are true: the authoritative tools/data are on‑prem, prompts and retrieved context must remain local, latency is a requirement, connectivity is constrained, and you want cloud-native operations in the same footprint.
 
-With that context, we can move from "why" to "how. 
+With that context, we can move from "why" to "how".
 
 ## Step‑by‑step implementation runbook
 
@@ -134,29 +131,28 @@ With that context, we can move from "why" to "how.
 
 **Operational gotcha:** Teams often prototype by giving agents broad access "to move fast." That security debt becomes expensive later. Start with constrained proxies and allow-lists from day one.
 
-
 ### Phase 1 — Platform baseline: Azure Local + Arc + AKS on Azure Local
 
 #### 1.1 Establish baseline assumptions
 
 Decide upfront:
 
-*   Topology: pilot node, datacenter cluster, or distributed sites.
-*   OS mix: Linux nodes, Windows nodes, or mixed.
-*   Acceleration: CPU only vs GPU/NPU inference nodes.
-*   Connectivity mode: connected, constrained, or partially disconnected.
+* Topology: pilot node, datacenter cluster, or distributed sites.
+* OS mix: Linux nodes, Windows nodes, or mixed.
+* Acceleration: CPU only vs GPU/NPU inference nodes.
+* Connectivity mode: connected, constrained, or partially disconnected.
 
 **Operational gotcha:** Constrained connectivity changes everything about artifact flow. Treat "how will nodes pull images and models?" as a first-class requirement (private registry, artifact promotion, caching).
 
-#### 1.2 Build a minimal AKS baseline (repeatable)"
+#### 1.2 Build a minimal AKS baseline (repeatable)
 
 Include:
 
-*   Namespaces for separation (`platform`, `agents`, `tools`, `observability`).
-*   Ingress and certificate strategy.
-*   Secrets management strategy.
-*   Logging/metrics pipeline.
-*   Network policies and egress controls.
+* Namespaces for separation (`platform`, `agents`, `tools`, `observability`).
+* Ingress and certificate strategy.
+* Secrets management strategy.
+* Logging/metrics pipeline.
+* Network policies and egress controls.
 
 Example namespace baseline:
 
@@ -178,17 +174,16 @@ metadata:
 
 **Operational gotcha:** Without early namespace boundaries and baseline policies, your cluster becomes a collection of special cases that are hard to govern and hard to migrate.
 
-
 ### Phase 2 — GitOps delivery (recommended even for pilots)
 
 ### 2.1 Repository layout pattern
 
 A structure that scales:
 
-*   `clusters/<cluster-name>/` for cluster-specific overlays
-*   `platform/` for shared add-ons (ingress, monitoring, policy)
-*   `workloads/agents/` for agent services
-*   `workloads/tools/` for tool proxies and connectors
+* `clusters/<cluster-name>/` for cluster-specific overlays
+* `platform/` for shared add-ons (ingress, monitoring, policy)
+* `workloads/agents/` for agent services
+* `workloads/tools/` for tool proxies and connectors
 
 #### 2.2 Kustomization pattern (example)
 
@@ -210,23 +205,21 @@ spec:
 
 **Operational gotcha:** GitOps only reduces drift if "kubectl apply in production" is the exception with a documented break-glass process.
 
-
 ### Phase 3 — Foundational services: state, memory, and observability
 
 Make state explicit and intentional:
 
-*   **Conversation state** (threads, session context) belongs in agent stores designed for that purpose.
-*   **Business state** (work items, approvals, tickets) belongs in systems of record.
+* **Conversation state** (threads, session context) belongs in agent stores designed for that purpose.
+* **Business state** (work items, approvals, tickets) belongs in systems of record.
 
 Common supporting components on AKS:
 
-*   Redis for caching and rate limiting
-*   PostgreSQL (or equivalent) for durable state
-*   A vector store if you implement local RAG
-*   OpenTelemetry collector for traces/metrics/logs
+* Redis for caching and rate limiting
+* PostgreSQL (or equivalent) for durable state
+* A vector store if you implement local RAG
+* OpenTelemetry collector for traces/metrics/logs
 
 **Operational gotcha:** Agent telemetry can explode. Define retention, sampling, and content redaction policies early. In regulated environments, you often cannot log raw prompts or retrieved text.
-
 
 ### Phase 4 — Install Foundry Local (preview) on inference nodes
 
@@ -234,19 +227,18 @@ Treat Foundry Local as a managed runtime dependency.
 
 #### 4.1 Placement and isolation
 
-*   Prefer dedicated inference nodes where possible.
-*   Place them where the acceleration hardware lives.
-*   Segment networking so AKS can reach them reliably while keeping exposure minimal.
+* Prefer dedicated inference nodes where possible.
+* Place them where the acceleration hardware lives.
+* Segment networking so AKS can reach them reliably while keeping exposure minimal.
 
 #### 4.2 Endpoint discovery (avoid hard-coded ports)
 
 Prefer one of these:
 
-*   **Discovery service pattern:** publish the current base URL into a config store that your agent services read.
-*   **Gateway pattern:** place a stable internal proxy in front of Foundry Local to normalize routing and policies.
+* **Discovery service pattern:** publish the current base URL into a config store that your agent services read.
+* **Gateway pattern:** place a stable internal proxy in front of Foundry Local to normalize routing and policies.
 
 **Operational gotcha:** Hard-coded ports work in a lab and fail after reboots, upgrades, or runtime changes. Build discovery or stable routing into the design.
-
 
 ### Phase 5 — Network, TLS, and identity between AKS and Foundry Local
 
@@ -254,9 +246,9 @@ Prefer one of these:
 
 Common choices:
 
-*   Direct HTTPS from agent pods to Foundry node IP/DNS
-*   Internal L4/L7 proxy for stable routing and policy
-*   Service mesh for mTLS and telemetry (only if you already operate one)
+* Direct HTTPS from agent pods to Foundry node IP/DNS
+* Internal L4/L7 proxy for stable routing and policy
+* Service mesh for mTLS and telemetry (only if you already operate one)
 
 #### 5.2 TLS strategy
 
@@ -337,13 +329,12 @@ spec:
 
 Start with conservative defaults:
 
-*   Timeout: 20–60s depending on model/prompt size
-*   Retries: 1–2 for transient failures only
-*   Circuit breaker: open after repeated failures to prevent cascading latency
-*   Concurrency limits: protect inference nodes from overload
+* Timeout: 20–60s depending on model/prompt size
+* Retries: 1–2 for transient failures only
+* Circuit breaker: open after repeated failures to prevent cascading latency
+* Concurrency limits: protect inference nodes from overload
 
 **Operational gotcha:** Without explicit backpressure, a single busy agent route can saturate inference and degrade every workload that shares the runtime.
-
 
 ### Phase 7 — Tool integration with constrained proxies
 
@@ -351,10 +342,10 @@ Do not give agents direct access to sensitive systems.
 
 Recommended approach:
 
-1.  Deploy tool proxy services in a dedicated namespace.
-2.  Restrict outbound connectivity to approved destinations only.
-3.  Enforce authorization, validation, and allow-lists in the proxy.
-4.  Log every invocation with correlation IDs.
+1. Deploy tool proxy services in a dedicated namespace.
+2. Restrict outbound connectivity to approved destinations only.
+3. Enforce authorization, validation, and allow-lists in the proxy.
+4. Log every invocation with correlation IDs.
 
 A default-deny egress policy concept:
 
@@ -377,81 +368,77 @@ spec:
 
 Minimum requirements:
 
-*   Correlation ID propagated across inbound request, tool calls, inference calls, and response
-*   Latency breakdown (tool time vs inference time vs orchestration time)
-*   Error classification by category (tool failure, inference failure, policy block, timeout)
-*   Token/prompt size metadata if available
+* Correlation ID propagated across inbound request, tool calls, inference calls, and response
+* Latency breakdown (tool time vs inference time vs orchestration time)
+* Error classification by category (tool failure, inference failure, policy block, timeout)
+* Token/prompt size metadata if available
 
 **Operational gotcha:** Decide what is safe to log. For many environments, metadata and hashes are acceptable, but raw prompts and retrieved snippets are not.
-
 
 ### Phase 9 — Hardening: safety, governance, regression testing
 
 Hardening checklist:
 
-*   Prompt and tool regression tests for critical flows
-*   Golden conversations for validation after runtime updates
-*   Tool schemas and allow-lists are enforced centrally
-*   Timeouts on every external call
-*   Rate limits per user and per route
-*   Graceful degradation when inference is unavailable (fallback to workflow/human)
+* Prompt and tool regression tests for critical flows
+* Golden conversations for validation after runtime updates
+* Tool schemas and allow-lists are enforced centrally
+* Timeouts on every external call
+* Rate limits per user and per route
+* Graceful degradation when inference is unavailable (fallback to workflow/human)
 
 **Operational gotcha:** Preview inference runtimes can introduce behavior changes that are not "errors" but still break user expectations. Without regression tests, you will find out in production.
 
-
 ### Phase 10 — Operations: versioning, rollouts, and capacity planning
 
-#### 10.1 Independent update cadences
+#### 10.1 Independent update cadencess
 
 Operate on separate cadences:
 
-*   Agent services: frequent updates via CI/CD
-*   Inference runtime: cautious updates via staged rollout
-*   Cluster/platform: regular maintenance windows
+* Agent services: frequent updates via CI/CD
+* Inference runtime: cautious updates via staged rollout
+* Cluster/platform: regular maintenance windows
 
 #### 10.2 Rollout strategy
 
-*   Canary agent changes with a small traffic slice and compares latency/error rates
-*   Pin inference runtime versions and validate with representative load before expanding rollout
+* Canary agent changes with a small traffic slice and compares latency/error rates
+* Pin inference runtime versions and validate with representative load before expanding rollout
 
 #### 10.3 Capacity planning
 
 Define explicit SLOs:
 
-*   p95 latency target for a representative prompt
-*   maximum concurrent sessions per inference node
-*   acceptable queueing delay under peak load
+* p95 latency target for a representative prompt
+* maximum concurrent sessions per inference node
+* acceptable queueing delay under peak load
 
 **Operational gotcha:** Size for peaks and recovery scenarios. A thundering herd is common when shifts start, sites reconnect, or batch processes trigger.
 
-
 ## A practical “day‑1 to day‑30” plan
 
-**Day 1–3: Foundation**
+### Day 1–3: Foundation
 
-*   Define business outcomes and agent/workflow boundaries
-*   Stand up AKS baseline namespaces, ingress, and GitOps scaffolding
-*   Deploy telemetry pipeline and basic dashboards
+* Define business outcomes and agent/workflow boundaries
+* Stand up AKS baseline namespaces, ingress, and GitOps scaffolding
+* Deploy telemetry pipeline and basic dashboards
 
-**Day 4–10: Inference integration**
+### Day 4–10: Inference integration
 
-*   Install Foundry Local on inference nodes
-*   Implement endpoint discovery and TLS trust
-*   Add inference adapter in the MAF service with externalized configuration
+* Install Foundry Local on inference nodes
+* Implement endpoint discovery and TLS trust
+* Add inference adapter in the MAF service with externalized configuration
 
-**Day 11–20: Tools and data**
+### Day 11–20: Tools and data
 
-*   Build constrained tool proxies with allow-lists and audit logs
-*   Implement retrieval paths that keep data inside the boundary
-*   Add correlation IDs end-to-end
+* Build constrained tool proxies with allow-lists and audit logs
+* Implement retrieval paths that keep data inside the boundary
+* Add correlation IDs end-to-end
 
-**Day 21–30: Hardening and operations**
+### Day 21–30: Hardening and operations
 
-*   Add regression tests and golden conversations
-*   Implement rollouts, version pinning, and canary strategy
-*   Load test and finalize a capacity plan and operational runbooks
-
+* Add regression tests and golden conversations
+* Implement rollouts, version pinning, and canary strategy
+* Load test and finalize a capacity plan and operational runbooks
 
 ## Conclusion
 
-This stack is not about "on‑prem versus cloud." It is about aligning the agent pattern with the constraints imposed by the use case: data locality, tool proximity, latency targets, and network realities. Azure Local provides a consistent on‑prem platform for that pattern; AKS keeps operations cloud-native; Foundry Local enables local inference; and Agent Framework provides the application layer to build agents and workflows that map to real business outcomes. By following this architecture and implementation runbook, you can deliver production‑grade AI agents that run locally, proving that cloud-native excellence is not constrained by your network boundary. 
+This stack is not about "on‑prem versus cloud." It is about aligning the agent pattern with the constraints imposed by the use case: data locality, tool proximity, latency targets, and network realities. Azure Local provides a consistent on‑prem platform for that pattern; AKS keeps operations cloud-native; Foundry Local enables local inference; and Agent Framework provides the application layer to build agents and workflows that map to real business outcomes. By following this architecture and implementation runbook, you can deliver production‑grade AI agents that run locally, proving that cloud-native excellence is not constrained by your network boundary.
