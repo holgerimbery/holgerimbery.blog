@@ -2,7 +2,7 @@
 layout: post
 title: "Connecting Azure Application Insights to Microsoft Copilot Studio: Unlocking Deep Analytics for Agentic Systems"
 description: "Transform your Copilot Studio agents from a black box into a fully observable, debuggable system. Learn how to connect Azure Application Insights for enterprise-grade monitoring, real-time diagnostics, and data-driven optimization that reduces support costs, improves user satisfaction, and demonstrates measurable ROI."
-date: 2026-04-12
+date: 2026-04-18 06:49:00 +0200
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/deng-xiang--WXQm_NTK0U-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@dengxiangs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Deng Xiang</a> on <a href="https://unsplash.com/photos/graphical-user-interface--WXQm_NTK0U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
