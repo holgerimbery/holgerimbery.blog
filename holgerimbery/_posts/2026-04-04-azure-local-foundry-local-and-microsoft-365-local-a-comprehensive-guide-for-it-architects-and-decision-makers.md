@@ -9,7 +9,7 @@ image_caption: Photo by <a href="https://unsplash.com/@kevinache?utm_source=unsp
       
       
 tags: [Azurelocal, foundrylocal, m365 local, Agents, FrontierFirm, Implementation, SovereignPrivateCloud]
-featured: true
+featured: false
 toc: true
 ---
 
