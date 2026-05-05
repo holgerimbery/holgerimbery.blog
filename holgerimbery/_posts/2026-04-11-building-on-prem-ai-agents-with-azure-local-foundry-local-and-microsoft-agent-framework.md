@@ -9,7 +9,7 @@ image_caption: Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash
       
             
 tags: [azurelocal, foundrylocal, Agents, FrontierFirm, Implementation, SovereignPrivateCloud, OnPremAI, LocalInference, MicrosoftAgentFramework]
-featured: true
+featured: false
 toc: true
 ---
 
