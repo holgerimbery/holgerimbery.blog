@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@topspot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustavo Torres</a> on <a href="https://unsplash.com/photos/person-on-balance-board-rBLTWS3WsQ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 tags: [copilotstudio, agents, agentevaluation, testing, qualityassurance]
-featured: true
+featured: false
 toc: true
 ---
 {: .note }
