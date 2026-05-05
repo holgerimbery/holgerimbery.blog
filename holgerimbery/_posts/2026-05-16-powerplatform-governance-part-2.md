@@ -16,6 +16,7 @@ toc: true
 {: .q-left }
 > **Summary lede.** Part 2 of this two-article reference picks up where last week's foundations ended. With the platform perimeter in place — environments, Managed Environments, environment groups, DLP, tenant isolation, identity, and monitoring — this article works through the resources that live inside that perimeter and the processes that move them through it: Copilot Studio agents, agent authentication and connector governance, Application Lifecycle Management and pipelines, solution checker and quality gates, licensing and capacity governance, and change management and release rings. A closing recap then ties both articles together into a single posture.
 
+{: .q-left }
 > **Who this is for.** Same audience as part 1 — Power Platform administrators, security and compliance officers, Center of Excellence leads, architects, and makers. Part 2 assumes you have read part 1 or have an equivalent grasp of environment design, Managed Environments, environment groups, and DLP. Where part 1 answered "what is the perimeter and how do we hold it?", part 2 answers "what gets built inside it, and how does that work move from a maker's hands into production safely?" The format is unchanged: each control begins with the reason it exists, moves to the how, and points you to the authoritative Microsoft Learn page.
 
 ## Recap: where part 1 left off
