@@ -716,11 +716,11 @@ Power Apps emit `pageView`, `traceEvent`, and error events; model-driven apps ad
 
 ### 8.6 The CoE Starter Kit and ALM Accelerator — what changed
 
-**Why.** Until recently, the **CoE Starter Kit** and the **ALM Accelerator for Power Platform** were the two community-driven kits most enterprise governance setups leaned on — one for inventory and oversight, the other for solution promotion and source control. Both have now been superseded by native, in-product experiences, and following the old guidance without qualification leads new tenants down a maintenance dead end.
+**Why.** Until recently, the **CoE Starter Kit** and the **ALM Accelerator for Power Platform** were the two community-driven kits most enterprise governance setups leaned on — one for inventory and oversight, the other for solution promotion and source control. Native, in-product experiences now supersede both, and following the old guidance without qualification leads new tenants into a maintenance dead end.
 
 **How.** Two formal status updates to be aware of:
 
-- **CoE Starter Kit — no longer actively maintained (Microsoft, May 2026).** The Microsoft Learn page now opens with a clear notice: *"The Power Platform CoE Starter Kit is no longer actively maintained. Its core capabilities are part of the Power Platform admin center. Issues are no longer reviewed or addressed."* The kit remains available for existing and new deployments, but it will not receive new features and GitHub issues are not triaged. Microsoft directs admins to the native admin center experiences instead:
+- **CoE Starter Kit — no longer actively maintained (Microsoft, May 2026).** The Microsoft Learn page now opens with a clear notice: *"The Power Platform CoE Starter Kit is no longer actively maintained. Its core capabilities are part of the Power Platform admin center. Issues are no longer reviewed or addressed."* The kit remains available for existing and new deployments, but it will not receive new features, and GitHub issues are not triaged. Microsoft directs admins to the native admin center experiences instead:
 
   - **Inventory** — view and govern all apps, flows, and agents across the tenant.
   - **Usage** — track adoption and identify top resources and their owners.
@@ -729,15 +729,15 @@ Power Apps emit `pageView`, `traceEvent`, and error events; model-driven apps ad
 
   Beyond the UI, the same data is reachable through the **Power Platform CLI**, the **Power Platform API**, the **Power Platform inventory API**, and the **Power Platform for Admins V2** connector — which is what to build automation against going forward.
 
-- **ALM Accelerator for Power Platform — formally deprecated (Microsoft Learn page last updated 2024-04-24).** Microsoft's overview page is now titled *"ALM Accelerator for Power Platform (Deprecated)"* and carries this notice: *"The ALM Accelerator is deprecated and will be removed in a future release. Use Pipelines in Power Platform to bring ALM automation capabilities to Power Platform and Dynamics 365 services. Pipelines can be used with source code integration or extended to integrate with other providers."* The accelerator was a canvas-app-plus-Azure-Pipelines reference implementation; the strategic replacement is the in-product **Power Platform Pipelines** experience (introduced in section 3.5 and detailed in part 2). The accelerator continues to function for now, but no new investment is going into it and it is on track to be removed.
+- **ALM Accelerator for Power Platform — formally deprecated (Microsoft Learn page last updated 2024-04-24).** Microsoft's overview page is now titled *"ALM Accelerator for Power Platform (Deprecated)"* and carries this notice: *"The ALM Accelerator is deprecated and will be removed in a future release. Use Pipelines in Power Platform to bring ALM automation capabilities to Power Platform and Dynamics 365 services. Pipelines can be used with source code integration or extended to integrate with other providers."* The accelerator was a canvas-app-plus-Azure-Pipelines reference implementation; the strategic replacement is the in-product **Power Platform Pipelines** experience (introduced in section 3.5 and detailed in part 2). The accelerator continues to function for now, but no new investment is being made in it, and it is on track to be removed.
 
-**Practical recommendation.** If you already run either kit, keep operating it — neither is being switched off tomorrow — but stop building new dependencies on top of it. For inventory, attestation, and orphaned-asset detection, build against the admin center experiences and the inventory API. For ALM, route new solutions through Power Platform Pipelines and plan a migration off the ALM Accelerator so you are not caught out when a removal date is announced. Tenants starting from scratch in 2026 should skip both kits and build directly on the in-product surfaces.
+**Practical recommendation.** If you already run either kit, keep operating it — neither is being switched off tomorrow — but stop building new dependencies on top of it. For inventory, attestation, and orphaned-asset detection, build against the admin center experiences and the inventory API. For ALM, route new solutions through Power Platform Pipelines and plan a migration off the ALM Accelerator to avoid being caught out when a removal date is announced. Tenants starting from scratch in 2026 should skip both kits and build directly on the in-product surfaces.
 
 **Learn more.** [CoE Starter Kit transition to Power Platform admin center](https://learn.microsoft.com/power-platform/guidance/coe/starter-kit), [ALM Accelerator for Power Platform (Deprecated)](https://learn.microsoft.com/power-platform/guidance/alm-accelerator/overview), [Power Platform Pipelines](https://learn.microsoft.com/power-platform/alm/pipelines), [Power Platform inventory API](https://learn.microsoft.com/power-platform/admin/programmability-authentication-v2).
 
 ### 8.7 Forward to Microsoft Sentinel
 
-**Why.** SOCs want one queue. Forwarding Power Platform signal to Sentinel puts platform incidents next to the rest of the security telemetry instead of in a separate place no one watches.
+**Why?** SOCs want one queue. Forwarding Power Platform signals to Sentinel places platform incidents alongside other security telemetry, rather than in a separate, unmonitored location.
 
 **How.** Forward the Power Platform activity log and Purview audit events to Sentinel via the `Microsoft Power Platform administrative logs` data connector. Pre-built analytic rules cover suspicious DLP changes, mass app sharing, and unauthenticated agent publishing.
 
@@ -747,7 +747,7 @@ Power Apps emit `pageView`, `traceEvent`, and error events; model-driven apps ad
 
 ## Outlook: what part 2 covers
 
-Part 1 has established the platform-level perimeter — the environments themselves, the policies that bound them, the identities that reach them, and the telemetry that watches them. None of those controls answers the question of what gets *built* inside that perimeter, or how that work moves from a maker's hands into production. That is the territory of part 2.
+Part 1 has established the platform-level perimeter — the environments themselves, the policies that bind them, the identities that reach them, and the telemetry that watches them. None of those controls answers the question of what gets *built* inside that perimeter, or how that work moves from a maker's hands into production. That is the territory of part 2.
 
 Next week's article picks up where this one ends and walks through six topics in the same Why → How → Learn more pattern:
 
@@ -758,7 +758,7 @@ Next week's article picks up where this one ends and walks through six topics in
 - **Licensing and capacity governance.** Power Apps and Power Automate license models, Dataverse capacity allocation, the Copilot Credits consumption model and its gotchas, and how to keep license assignment in sync with employment.
 - **Change management and release rings.** The two release channels that actually exist for Power Platform (Auto and Monthly — there is no Semi-Annual), how to gate previews per environment group, in-tenant change categories, administration mode, manual backups, and rollback realities.
 
-If you treat part 1 as the platform on which everything stands, part 2 is everything that runs on that platform. The two are designed to be read together: the controls in part 1 only matter because they shape the work covered in part 2, and the controls in part 2 only stick because the foundations in part 1 hold them up.
+If you treat part 1 as the platform on which everything stands, part 2 is everything that runs on that platform. The two are designed to be read together: the controls in part 1 matter only because they shape the work covered in part 2, and the controls in part 2 stick only because the foundations in part 1 hold them up.
 
 ---
 
@@ -766,7 +766,7 @@ If you treat part 1 as the platform on which everything stands, part 2 is everyt
 
 Platform-level governance is the foundation of everything else. It is the cumulative result of many small, well-placed controls working together: an environment topology that matches how the organization actually builds, a default environment treated as a perimeter rather than a playground, Managed Environments and environment groups that make policy enforceable at scale, DLP and tenant isolation that bound where data can move, identity and Conditional Access that decide who is allowed to touch the platform at all, and monitoring that turns activity into evidence.
 
-The controls described in this article already exist in the platform today. None of them require custom engineering, third-party tooling, or preview access to be useful. What they require is decision-making: which environments belong in which group, which connectors are business versus non-business, which tenants are trusted for cross-tenant connections, and who has the right to administer what. Those decisions *are* the platform half of governance.
+The controls described in this article already exist on the platform. None of them requires custom engineering, third-party tooling, or preview access to be useful. What they require is decision-making: which environments belong in which group, which connectors are business versus non-business, which tenants are trusted for cross-tenant connections, and who has the right to administer what. Those decisions *are* the platform half of governance.
 
 Start small and iterate. A minimum viable foundation is: restrict default environment creation, attach a tenant-wide baseline DLP policy, enable default environment routing with a Managed Environments group, turn on tenant-level analytics, lean on the Power Platform admin center's **Inventory**, **Usage**, **Monitor**, and **Actions** experiences (the CoE Starter Kit is no longer actively maintained — see section 8.6), and verify your tenant isolation defaults. Everything in part 1 is a refinement on that minimum viable foundation; everything in part 2 will be a refinement on top of part 1.
 
