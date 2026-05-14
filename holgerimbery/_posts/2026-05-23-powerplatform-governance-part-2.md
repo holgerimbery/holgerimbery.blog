@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@charles_forerunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Forerunner</a> on <a href="https://unsplash.com/photos/people-standing-inside-city-building-3fPXt37X6UQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 
-tags: [copilotstudio, agents, governance, powerplatform, dataverse, security, compliance]
+tags: [copilotstudio, agents, governance, powerplatform, dataverse, security, compliance, alm, pipelines]
 featured: true
 toc: true
 ---
@@ -18,6 +18,8 @@ toc: true
 
 {: .q-left }
 > **Who this is for.** Same audience as part 1 — Power Platform administrators, security and compliance officers, Center of Excellence leads, architects, and makers. Part 2 assumes you have read part 1 or have an equivalent grasp of environment design, Managed Environments, environment groups, and DLP. Where part 1 answered "what is the perimeter and how do we hold it?", part 2 answers "what gets built inside it, and how does that work move from a maker's hands into production safely?" The format is unchanged: each control begins with the reason it exists, moves to the how, and points you to the authoritative Microsoft Learn page.
+
+> **A note on the kits (continues from part 1).** Two pieces of widely-deployed community tooling have changed status: the **CoE Starter Kit** is no longer actively maintained — its core capabilities are now part of the Power Platform admin center (Inventory, Usage, Monitor, Actions) — and the **ALM Accelerator for Power Platform** is formally deprecated, with **Power Platform Pipelines** as the named replacement. Sections 9.14 (agent inventory) and 11 (ALM and pipelines) reflect that. The detailed write-up of the CoE Starter Kit transition lives in part 1, section 8.6; the ALM Accelerator transition is summarised in section 11.6 of this part.
 
 ## Recap: where part 1 left off
 
@@ -30,9 +32,9 @@ As we saw last week, platform-level governance is the foundation that everything
 - **Data Loss Prevention.** Connectors are sorted into Business, Non-business, and Blocked. Data cannot flow between Business and Non-business in the same resource. Endpoint filtering and connector action control let you keep useful connectors while blocking their dangerous edges.
 - **Tenant isolation and cross-tenant controls.** Restricts which external Entra ID tenants can be the identity source for connections. Defaults differ by tenant age — tenants created on or after 30 March 2026 ship with isolation enabled and both directions defaulting to deny.
 - **Security roles and identity.** Layered authorization: Entra ID at the tenant, Dataverse roles inside each environment, service principals for non-interactive work, Conditional Access and MFA on the `Power Platform API`.
-- **Monitoring, analytics, and the CoE Starter Kit.** Built-in admin center analytics, the weekly digest, Microsoft Purview audit log, Application Insights export, the CoE Starter Kit for inventory and attestation, and Microsoft Sentinel for SOC integration.
+- **Monitoring, analytics, and tenant inventory.** Built-in admin center analytics (the **Inventory**, **Usage**, **Monitor**, and **Actions** experiences), the weekly digest, Microsoft Purview audit log, Application Insights export, and Microsoft Sentinel for SOC integration. The **CoE Starter Kit** is no longer actively maintained; its inventory and attestation scenarios are now Microsoft's responsibility in the admin center, reachable through the **Power Platform inventory API** and the **Power Platform for Admins V2** connector for any custom automation.
 
-The minimum viable foundation from part 1 was: restrict default environment creation, attach a tenant-wide baseline DLP policy, enable default environment routing with a Managed Environments group, turn on tenant-level analytics, install the CoE Starter Kit, and verify your tenant isolation defaults. Everything in part 2 assumes that foundation is in place. The section numbering continues from part 1, starting at section 9.
+The minimum viable foundation from part 1 was: restrict default environment creation, attach a tenant-wide baseline DLP policy, enable default environment routing with a Managed Environments group, turn on tenant-level analytics, lean on the Power Platform admin center's **Inventory**, **Usage**, **Monitor**, and **Actions** experiences (the CoE Starter Kit is no longer actively maintained), and verify your tenant isolation defaults. Everything in part 2 assumes that foundation is in place. The section numbering continues from part 1, starting at section 9.
 
 ---
 
@@ -181,9 +183,9 @@ Require Entra ID authentication in regulated environments by blocking the no-aut
 - **Agent analytics** in Copilot Studio for sessions, resolution rate, and escalations.
 - **Copilot Studio audit logs** in Microsoft Purview for create, publish, share, knowledge change, and tool add events.
 - **Application Insights export** (Managed Environments) for detailed traces.
-- **CoE Starter Kit** inventory table `Power Platform agents` for owner, environment, authentication mode, and last publish.
+- **Power Platform admin center Inventory** (and the **Power Platform inventory API** / **Power Platform for Admins V2** connector) for owner, environment, authentication mode, and last publish across all agents in the tenant. This is the replacement surface for the CoE Starter Kit's `Power Platform agents` inventory table, which is no longer actively maintained.
 
-**Learn more.** [Copilot Studio audit logs in Purview](https://learn.microsoft.com/microsoft-copilot-studio/admin-logging-copilot-studio).
+**Learn more.** [Copilot Studio audit logs in Purview](https://learn.microsoft.com/microsoft-copilot-studio/admin-logging-copilot-studio), [Power Platform inventory API](https://learn.microsoft.com/power-platform/admin/programmability-authentication-v2).
 
 ### 9.15 Treat autonomous agents as a higher-risk class
 
@@ -294,7 +296,7 @@ Set-DlpPolicyDefaultConnectorGroup -PolicyName $policy.Name -DefaultGroup Blocke
 
 ## 11. Application Lifecycle Management and Pipelines
 
-Application Lifecycle Management (ALM) for Power Platform is built on **solutions**. A solution is a versioned container for apps, flows, agents, tables, roles, and environment variables. Movement between environments always goes through solution export and import — manually, via Power Platform pipelines, or via Azure DevOps or GitHub.
+Application Lifecycle Management (ALM) for Power Platform is built on **solutions**. A solution is a versioned container for apps, flows, agents, tables, roles, and environment variables. Movement between environments always goes through solution export and import — manually, via Power Platform Pipelines, or via Azure DevOps or GitHub.
 
 ### 11.1 Treat solutions as the unit of deployment
 
@@ -328,21 +330,24 @@ Application Lifecycle Management (ALM) for Power Platform is built on **solution
 
 **Learn more.** [ALM basics](https://learn.microsoft.com/power-platform/alm/basics-alm).
 
-### 11.5 Adopt Power Platform pipelines for native deployment
+### 11.5 Adopt Power Platform Pipelines for native deployment
 
-**Why.** Pipelines provide a deployment surface that runs inside the Power Platform itself — no external CI/CD required. For most low-code teams, they are the right starting point.
+**Why.** Pipelines provide a deployment surface that runs inside the Power Platform itself — no external CI/CD required. For most low-code teams, they are the right starting point, and as of 2024 Microsoft has positioned them as the **strategic replacement for the now-deprecated ALM Accelerator for Power Platform** (covered in 11.6).
 
 **How.** Pipelines require a **host environment** that is a Managed Environment. Source and target environments are registered in the host. A deployment imports a solution, rebinds connection references, and runs solution checker. Approvals can be attached to deployment stages.
 
-**Learn more.** [Power Platform pipelines](https://learn.microsoft.com/power-platform/alm/pipelines).
+**Learn more.** [Power Platform Pipelines](https://learn.microsoft.com/power-platform/alm/pipelines).
 
-### 11.6 Set up the pipelines host correctly
+### 11.6 Set up the pipelines host (and migrate off the ALM Accelerator)
 
-**Why.** Confusion between the pipelines host solution and the CoE Starter Kit is common. They are different solutions with different purposes; conflating them leads to stalled rollouts.
+**Why.** Two pieces of status to keep straight when standing up native ALM:
 
-**How.** Install the **Power Platform Pipelines** managed solution in the host environment (sometimes referenced as the *Deployment Pipeline Configuration* app). Register environments in the `Deployment Environments` table. The CoE Starter Kit is separate and can live in a different environment.
+1. **The ALM Accelerator for Power Platform is formally deprecated (Microsoft Learn page last updated 2024-04-24).** Microsoft's overview page is now titled *"ALM Accelerator for Power Platform (Deprecated)"* and carries this notice: *"The ALM Accelerator is deprecated and will be removed in a future release. Use Pipelines in Power Platform to bring ALM automation capabilities to Power Platform and Dynamics 365 services. Pipelines can be used with source code integration or extended to integrate with other providers."* The accelerator was a canvas-app-plus-Azure-Pipelines reference implementation; the strategic replacement is the native Power Platform Pipelines experience described in 11.5. The accelerator continues to function for now, but no new investment is going into it and it is on track to be removed.
+2. **The pipelines host solution is not the CoE Starter Kit.** They are different solutions with different purposes; conflating them leads to stalled rollouts. (The CoE Starter Kit itself is also no longer actively maintained — see part 1, section 8.6 — but that is a separate transition from the ALM Accelerator one.)
 
-**Learn more.** [Set up pipelines](https://learn.microsoft.com/power-platform/alm/set-up-pipelines).
+**How.** Install the **Power Platform Pipelines** managed solution in the host environment (sometimes referenced as the *Deployment Pipeline Configuration* app). Register environments in the `Deployment Environments` table. If your tenant currently runs on the ALM Accelerator canvas app and Azure DevOps templates, treat this as the trigger to plan a migration to Pipelines — start by mapping each accelerator pipeline to a Pipelines stage, then route new solutions through Pipelines and freeze the accelerator pipelines for net-new work. Source-control integration is on the Pipelines roadmap; if you need it today, fall back to Build Tools or GitHub Actions (11.10) rather than to the accelerator.
+
+**Learn more.** [Set up Pipelines](https://learn.microsoft.com/power-platform/alm/set-up-pipelines), [ALM Accelerator for Power Platform (Deprecated)](https://learn.microsoft.com/power-platform/guidance/alm-accelerator/overview).
 
 ### 11.7 Run pipelines as service principals
 
@@ -418,9 +423,9 @@ Solution checker is a static-analysis engine that inspects solution contents aga
 
 **Why.** Manual runs depend on discipline. Pipeline-integrated runs depend on configuration, which is more reliable.
 
-**How.** Solution checker runs automatically before deployment in Power Platform pipelines. No additional setup is needed beyond registering the pipeline.
+**How.** Solution checker runs automatically before deployment in Power Platform Pipelines. No additional setup is needed beyond registering the pipeline.
 
-**Learn more.** [Power Platform pipelines](https://learn.microsoft.com/power-platform/alm/pipelines).
+**Learn more.** [Power Platform Pipelines](https://learn.microsoft.com/power-platform/alm/pipelines).
 
 ### 12.3 Enforce at solution import
 
@@ -611,7 +616,7 @@ Set the channel with the environment group rule **Release channel**. Production 
 
 Each category maps to a pipeline approval configuration. Approvals are implemented as Dataverse records in the pipelines host with Azure AD group-based reviewer lists.
 
-**Learn more.** [Power Platform pipelines](https://learn.microsoft.com/power-platform/alm/pipelines).
+**Learn more.** [Power Platform Pipelines](https://learn.microsoft.com/power-platform/alm/pipelines).
 
 ### 14.5 Use administration mode during deployments
 
@@ -665,6 +670,6 @@ The two halves only work together. Part 1's controls are not useful without some
 
 The controls described across both parts already exist in the platform today. None of them require custom engineering, third-party tooling, or preview access to be useful. What they require is decision-making: which environments belong in which group, which connectors are business versus non-business, which agents must authenticate with Microsoft Entra ID, which release channel each group follows, who approves a production deployment, and where the lines are drawn between regulated and general-purpose work. Those decisions *are* governance.
 
-Start small and iterate. A minimum viable posture across both articles is: restrict default environment creation, attach a tenant-wide baseline DLP policy, enable default environment routing with a Managed Environments group, turn on tenant-level analytics, install the CoE Starter Kit, verify your tenant isolation defaults, require authenticated agents, run solution checker at import, deploy through pipelines as a service principal, and set Auto channel for production with Monthly for a pilot ring. Everything else in these two articles is a refinement on that foundation. Governance that grows with the platform is governance that lasts; governance that is bolted on after an incident rarely recovers the ground it lost.
+Start small and iterate. A minimum viable posture across both articles is: restrict default environment creation, attach a tenant-wide baseline DLP policy, enable default environment routing with a Managed Environments group, turn on tenant-level analytics, lean on the Power Platform admin center's **Inventory**, **Usage**, **Monitor**, and **Actions** experiences (the CoE Starter Kit is no longer actively maintained), verify your tenant isolation defaults, require authenticated agents, run solution checker at import, deploy through **Power Platform Pipelines** as a service principal (the strategic replacement for the now-deprecated ALM Accelerator), and set Auto channel for production with Monthly for a pilot ring. Everything else in these two articles is a refinement on that foundation. Governance that grows with the platform is governance that lasts; governance that is bolted on after an incident rarely recovers the ground it lost.
 
 Read this reference end to end once to map the territory, then return to it section by section as decisions come up. Both articles are designed to be skimmed for vocabulary and read closely when a specific control is on the table.
