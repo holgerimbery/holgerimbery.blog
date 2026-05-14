@@ -550,7 +550,7 @@ Monitor trends weekly and set Azure budget alerts on the PAYG meter subscription
 
 ### 13.6 Use group-based licensing and audit monthly
 
-**Why.** Direct license assignment leaves orphaned licenses behind when users leave. Group-based licensing keeps assignment in sync with employment.
+**Why?** Direct license assignment leaves orphaned licenses behind when users leave. Group-based licensing keeps assignment in sync with employment.
 
 **How.** Use Microsoft Entra ID group-based licensing. Audit monthly with PowerShell:
 
@@ -584,7 +584,7 @@ Power Platform receives continuous updates from Microsoft and from in-tenant mak
 **How.** Power Platform environments support two channels:
 
 - **Auto** (default) — updates arrive as they are released to ring-by-ring deployment. Recommended for production environments where stability is achieved through Microsoft's own gradual rollout.
-- **Monthly** — fixed monthly cadence; lets pilot environments preview the next set of updates before they reach Auto.
+- **Monthly** — fixed monthly cadence; let's pilot environments to preview the next set of updates before they reach Auto.
 
 Set the channel with the environment group rule **Release channel**. Production groups typically stay on `Auto`; pilot groups use `Monthly` for early validation. (There is no "Semi-Annual" channel for Power Platform — that term applies to Microsoft 365 Apps update channels, not Power Platform environments.)
 
@@ -608,7 +608,7 @@ Set the channel with the environment group rule **Release channel**. Production 
 
 ### 14.4 Define in-tenant change categories
 
-**Why.** Treating every deployment the same way over-controls routine changes and under-controls risky ones. Categories let you match scrutiny to risk.
+**Why?** Treating every deployment the same way over-controls routine changes and under-controls risky ones. Categories let you match scrutiny to risk.
 
 **How.** Apply the same change categories used in traditional IT:
 
@@ -622,7 +622,7 @@ Each category maps to a pipeline approval configuration. Approvals are implement
 
 ### 14.5 Use administration mode during deployments
 
-**Why.** Deploying while users are active risks corrupted state and poor user experience. Administration mode blocks user traffic while the change goes in.
+**Why.** Deploying while users are active risks corrupted state and poor user experience. Administration mode blocks user traffic while the change is being made.
 
 **How.** Enable administration mode with the CLI:
 
@@ -638,7 +638,7 @@ Revert with `--runtime-state Enabled`.
 
 **Why.** Automatic backups follow a schedule; risky changes do not. A manual restore point taken just before a deployment is the cheapest insurance available.
 
-**How.** Run `pac admin backup` to create a manual restore point. Set the **Back-up retention** rule to at least 28 days for production groups.
+**How.** Run `pac admin backup` to create a manual restore point. Set the **Backup retention** rule to at least 28 days for production groups.
 
 **Learn more.** [Manual backups](https://learn.microsoft.com/power-platform/admin/backup-restore-environments).
 
@@ -666,12 +666,12 @@ Revert with `--runtime-state Enabled`.
 
 ## Conclusion: bringing both parts together
 
-Power Platform governance is not a single product, a single policy, or a single role. Across the two articles in this reference, it has shown up as the cumulative result of many small, well-placed controls working together. Part 1 covered the platform on which everything stands: an environment topology that matches how the organization actually builds, a default environment treated as a perimeter rather than a playground, Managed Environments and environment groups that make policy enforceable at scale, DLP and tenant isolation that bound where data can move, identity and Conditional Access that decide who is allowed to touch the platform at all, and monitoring that turns activity into evidence. Part 2 covered everything that runs on that platform: Copilot Studio controls that extend the same model to AI agents, agent authentication and connector governance that shape what agents are allowed to do, ALM and pipelines that move solutions through environments traceably, solution checker and agent evaluations that gate quality at import and publish, licensing and capacity governance that prevent runtime surprises, and change management practices that absorb both Microsoft's rollouts and your own without disrupting users.
+Power Platform governance is not a single product, a single policy, or a single role. Across the two articles in this reference, the cumulative result is shown to be the result of many small, well-placed controls working together. Part 1 covered the platform on which everything stands: an environment topology that matches how the organization actually builds, a default environment treated as a perimeter rather than a playground, Managed Environments and environment groups that make policy enforceable at scale, DLP and tenant isolation that bound where data can move, identity and Conditional Access that decide who is allowed to touch the platform at all, and monitoring that turns activity into evidence. Part 2 covered everything that runs on that platform: Copilot Studio controls that extend the same model to AI agents, agent authentication and connector governance that shape what agents are allowed to do, ALM and pipelines that move solutions through environments traceably, solution checker and agent evaluations that gate quality at import and publish, licensing and capacity governance that prevent runtime surprises, and change management practices that absorb both Microsoft's rollouts and your own without disrupting users.
 
-The two halves only work together. Part 1's controls are not useful without something to govern; part 2's controls do not stick without the foundations underneath them. Sharing limits matter only because Managed Environments make them enforceable. Solution checker enforcement matters only because environment groups can apply it consistently. Entra Agent ID matters only because Conditional Access gates the identities those agents present. The two articles are designed to be read as one document split for digestibility, not as independent pieces.
+The two halves only work together. Part 1's controls are not useful without something to govern; part 2's controls do not stick without the foundations underneath them. Sharing limits matter only because Managed Environments make them enforceable. Solution checker enforcement matters only because environmental groups can apply it consistently. Entra Agent ID matters only because Conditional Access gates the identities of those agents present. The two articles are designed to be read as a single document, split for readability, not as independent pieces.
 
-The controls described across both parts already exist in the platform today. None of them require custom engineering, third-party tooling, or preview access to be useful. What they require is decision-making: which environments belong in which group, which connectors are business versus non-business, which agents must authenticate with Microsoft Entra ID, which release channel each group follows, who approves a production deployment, and where the lines are drawn between regulated and general-purpose work. Those decisions *are* governance.
+The controls described across both parts already exist in the platform today. None of them requires custom engineering, third-party tooling, or preview access to be useful. What they require is decision-making: which environments belong in which group, which connectors are business versus non-business, which agents must authenticate with Microsoft Entra ID, which release channel each group follows, who approves a production deployment, and where the lines are drawn between regulated and general-purpose work. Those decisions *are* governance.
 
 Start small and iterate. A minimum viable posture across both articles is: restrict default environment creation, attach a tenant-wide baseline DLP policy, enable default environment routing with a Managed Environments group, turn on tenant-level analytics, lean on the Power Platform admin center's **Inventory**, **Usage**, **Monitor**, and **Actions** experiences (the CoE Starter Kit is no longer actively maintained), verify your tenant isolation defaults, require authenticated agents, run solution checker at import, deploy through **Power Platform Pipelines** as a service principal (the strategic replacement for the now-deprecated ALM Accelerator), and set Auto channel for production with Monthly for a pilot ring. Everything else in these two articles is a refinement on that foundation. Governance that grows with the platform is governance that lasts; governance that is bolted on after an incident rarely recovers the ground it lost.
 
-Read this reference end to end once to map the territory, then return to it section by section as decisions come up. Both articles are designed to be skimmed for vocabulary and read closely when a specific control is on the table.
+Read this reference end to end once to map the territory, then return to it section by section as decisions come up. Both articles are designed to be skimmed for vocabulary and read closely when a specific control is at issue.
