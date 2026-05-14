@@ -32,7 +32,7 @@ For **makers**, governance is the difference between building with confidence an
 This first article works through the platform-level foundations: environment design, the default environment, Managed Environments, environment groups, DLP, tenant isolation, identity, and monitoring. Each control begins with the reason it exists, moves to the how, and points you to the authoritative Microsoft Learn page. Part 2 will build on this base by covering the resources that live inside those environments — Copilot Studio agents, ALM, licensing, and change management.
 
 {: .important }
-**A note on the kits.** 
+**A note on the kits.**  
 If you are coming to this article expecting the **CoE Starter Kit** or the **ALM Accelerator** to do the governance heavy lifting: that picture has changed. Microsoft has confirmed that the **CoE Starter Kit is no longer actively maintained** — its core capabilities are now part of the Power Platform admin center — and the **ALM Accelerator for Power Platform is formally deprecated**, with **Power Platform Pipelines** as the named replacement. Section 8.6 covers the CoE Starter Kit transition to the admin center; section 3.5 covers the ALM Accelerator → Pipelines transition; the rest of the article reflects that shift.
 
 ---
