@@ -19,8 +19,8 @@ toc: true
 {: .q-left }
 > **Who this is for.** Same audience as part 1 — Power Platform administrators, security and compliance officers, Center of Excellence leads, architects, and makers. Part 2 assumes you have read part 1 or have an equivalent grasp of environment design, Managed Environments, environment groups, and DLP. Where part 1 answered "what is the perimeter and how do we hold it?", part 2 answers "what gets built inside it, and how does that work move from a maker's hands into production safely?" The format is unchanged: each control begins with the reason it exists, moves to the how, and points you to the authoritative Microsoft Learn page.
 
-{: .q-left }
-> **A note on the kits (continues from part 1).** Two pieces of widely-deployed community tooling have changed status: the **CoE Starter Kit** is no longer actively maintained — its core capabilities are now part of the Power Platform admin center (Inventory, Usage, Monitor, Actions) — and the **ALM Accelerator for Power Platform** is formally deprecated, with **Power Platform Pipelines** as the named replacement. Sections 9.14 (agent inventory) and 11 (ALM and pipelines) reflect that. The detailed write-up of the CoE Starter Kit transition lives in part 1, section 8.6; the ALM Accelerator transition is summarised in section 11.6 of this part.
+{: .important }
+**A note on the kits (continues from part 1).** Two pieces of widely-deployed community tooling have changed status: the **CoE Starter Kit** is no longer actively maintained — its core capabilities are now part of the Power Platform admin center (Inventory, Usage, Monitor, Actions) — and the **ALM Accelerator for Power Platform** is formally deprecated, with **Power Platform Pipelines** as the named replacement. Sections 9.14 (agent inventory) and 11 (ALM and pipelines) reflect that. The detailed write-up of the CoE Starter Kit transition lives in part 1, section 8.6; the ALM Accelerator transition is summarised in section 11.6 of this part.
 
 ## Recap: where part 1 left off
 
