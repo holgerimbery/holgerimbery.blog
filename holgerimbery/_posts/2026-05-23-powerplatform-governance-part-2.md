@@ -20,7 +20,7 @@ toc: true
 > **Last verified: May 2026.** Feature availability and documentation links were checked against Microsoft Learn as of this date. Power Platform evolves rapidly; confirm preview/GA status before acting on release-sensitive claims.
 
 {: .q-left }
-> **Who this is for.** Same audience as part 1 — Power Platform administrators, security and compliance officers, Center of Excellence leads, architects, and makers. Part 2 assumes you have read part 1 or have an equivalent grasp of environment design, Managed Environments, environment groups, and DLP. Where part 1 answered "what is the perimeter and how do we hold it?", part 2 answers "what gets built inside it, and how does that work move from a maker's hands into production safely?" The format is unchanged: each control begins with the reason it exists, moves to the how, and points you to the authoritative Microsoft Learn page.
+> **Who this is for.** Same audience as part 1 — Power Platform administrators, security and compliance officers, Center of Excellence leads, architects, and makers. Part 2 assumes you have read Part 1 or have an equivalent grasp of environment design, Managed Environments, environment groups, and DLP. Where part 1 answered "what is the perimeter and how do we hold it?", part 2 answers "what gets built inside it, and how does that work move from a maker's hands into production safely?" The format is unchanged: each control begins with the reason it exists, moves to the how, and points you to the authoritative Microsoft Learn page.
 
 {: .important }
 **A note on the kits (continues from part 1).**  
@@ -28,18 +28,18 @@ Two pieces of widely-deployed community tooling have changed status: the **CoE S
 
 ## Recap: where part 1 left off
 
-As we saw last week, platform-level governance is the foundation that everything else rests on. Part 1 walked through eight sections of foundations:
+As we saw last week, platform-level governance is the foundation on which everything else rests. Part 1 walked through eight sections of foundations:
 
-- **Environment strategy.** Environments are the unit of governance because DLP, security roles, capacity, and compliance boundaries all follow environment lines. A topology that mirrors your delivery lifecycle (default for personal productivity, dev/test/prod for solutions, dedicated CoE and training environments) gives every later control a place to attach.
-- **The default environment.** It cannot be deleted, every licensed user is a maker in it, and Dataverse cannot be removed once added. Renaming it, attaching a restrictive DLP policy, enabling default environment routing, and converting it to a Managed Environment turn it from a shadow-IT magnet into a known, bounded surface.
+- **Environment strategy.** Environments are the unit of governance because DLP, security roles, capacity, and compliance boundaries all follow environment lines. A topology that mirrors your delivery lifecycle (default for personal productivity; dev/test/prod for solutions; dedicated CoE and training environments) gives every later control a place to attach to.
+- **The default environment.** It cannot be deleted, every licensed user is a maker in it, and Dataverse cannot be removed once added. Renaming it, attaching a restrictive DLP policy, enabling default environment routing, and converting it to a Managed Environment turn it into a known, bounded surface.
 - **Managed Environments.** A premium governance layer that adds sharing limits, the weekly digest, solution checker enforcement, maker welcome content, pipelines hosting, IP firewall, extended backup, and DLP for desktop flows. Most of part 2's controls depend on Managed Environments being on.
-- **Environment groups and rules.** Groups apply policy in bulk to Managed Environments. When a rule is published at the group level, the corresponding setting becomes read-only inside each member environment, which is what makes policy enforceable rather than advisory.
+- **Environment groups and rules.** Groups apply policy in bulk to Managed Environments. When a rule is published at the group level, the corresponding setting becomes read-only in each member environment, which makes the policy enforceable rather than advisory.
 - **Data Loss Prevention.** Connectors are sorted into Business, Non-business, and Blocked. Data cannot flow between Business and Non-business in the same resource. Endpoint filtering and connector action control let you keep useful connectors while blocking their dangerous edges.
 - **Tenant isolation and cross-tenant controls.** Restricts which external Entra ID tenants can be the identity source for connections. Tenant isolation is off by default; enable it explicitly and configure inbound and outbound rules for each trusted tenant.
 - **Security roles and identity.** Layered authorization: Entra ID at the tenant, Dataverse roles inside each environment, service principals for non-interactive work, Conditional Access and MFA on the `Power Platform API`.
-- **Monitoring, analytics, and tenant inventory.** Built-in admin center analytics (the **Inventory**, **Usage**, **Monitor**, and **Actions** experiences), the weekly digest, Microsoft Purview audit log, Application Insights export, and Microsoft Sentinel for SOC integration. The **CoE Starter Kit** is no longer actively maintained; its inventory and attestation scenarios are now Microsoft's responsibility in the admin center, reachable through the **Power Platform inventory API** and the **Power Platform for Admins V2** connector for any custom automation.
+- **Monitoring, analytics, and tenant inventory.** Built-in admin center analytics (the **Inventory**, **Usage**, **Monitor**, and **Actions** experiences), the weekly digest, Microsoft Purview audit log, Application Insights export, and Microsoft Sentinel for SOC integration. The **CoE Starter Kit** is no longer actively maintained; its inventory and attestation scenarios are now Microsoft's responsibility in the admin center, accessible via the **Power Platform inventory API** and the **Power Platform for Admins V2** connector for custom automation.
 
-The minimum viable foundation from part 1 was: restrict default environment creation, attach a tenant-wide baseline DLP policy, enable default environment routing with a Managed Environments group, turn on tenant-level analytics, lean on the Power Platform admin center's **Inventory**, **Usage**, **Monitor**, and **Actions** experiences (the CoE Starter Kit is no longer actively maintained), and verify your tenant isolation defaults. Everything in part 2 assumes that foundation is in place. The section numbering continues from part 1, starting at section 9.
+The minimum viable foundation from part 1 was: restrict default environment creation, attach a tenant-wide baseline DLP policy, enable default environment routing with a Managed Environments group, turn on tenant-level analytics, lean on the Power Platform admin center's **Inventory**, **Usage**, **Monitor**, and **Actions** experiences (the CoE Starter Kit is no longer actively maintained), and verify your tenant isolation defaults. Everything in part 2 assumes that the foundation is in place. The section numbering continues from part 1, starting at section 9.
 
 ---
 
@@ -599,11 +599,11 @@ Power Platform receives continuous updates from Microsoft and from in-tenant mak
 
 **How.** Power Platform environments support three channels:
 
-- **Auto** (default) — updates arrive as they are released to ring-by-ring deployment. Recommended for production environments where stability is achieved through Microsoft's own gradual rollout.
-- **Monthly** — fixed monthly cadence; lets pilot environments preview the next set of updates before they reach Auto.
+- **Auto** (default) — updates arrive as they are released to ring-by-ring deployment and are recommended for production environments where stability is achieved through Microsoft's own gradual rollout.
+- **Monthly** — fixed monthly cadence; let's pilot environments to preview the next set of updates before they reach Auto.
 - **Semi-Annual** — available for model-driven apps; updates arrive on a six-month cadence for organizations that need longer validation cycles.
 
-Set the channel with the environment group rule **Release channel**. Production groups typically stay on `Auto`; pilot groups use `Monthly` for early validation. The `Semi-Annual` channel is relevant primarily for model-driven app scenarios where extended validation is required.
+Set the channel with the environment group rule **Release channel**. Production groups typically stay on `Auto`; pilot groups use `Monthly` for early validation. The `Semi-Annual` channel is primarily relevant for model-driven app scenarios that require extended validation.
 
 **Learn more.** [Release channels](https://learn.microsoft.com/power-platform/admin/release-channels), [Model-driven app release channels](https://learn.microsoft.com/power-apps/maker/model-driven-apps/channel-overview).
 
