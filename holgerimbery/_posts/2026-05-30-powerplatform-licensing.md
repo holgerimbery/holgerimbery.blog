@@ -139,8 +139,6 @@ Capacity packs win at steady volumes; PAYG wins for unpredictable spikes. Note t
 
 The practical consequence: a tenant that adopted Managed Environments for governance reasons cannot mix-and-match M365-seeded users into the same environment. This is the most common reason a sizing exercise sized for "Premium for makers, M365 seeded for everyone else" needs to be re-priced upward.
 
-The **CoE Starter Kit** (Center of Excellence) and **Power Platform Pipelines** ship at no additional cost but are built on Premium and Managed Environments — same user-license gating applies.
-
 ### 1.6 Trial, Developer, and non-production licenses
 
 - **30-day trials** are available for Power Apps Premium and Power Automate Premium. Trials convert to paid via the Microsoft 365 admin center or your CSP / EA channel.
