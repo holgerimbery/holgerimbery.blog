@@ -316,7 +316,7 @@ Voice is built on **Azure Communication Services**. Phone-number rental and per-
 Phone-number leases run roughly $1 / month (US local DID) to $2 / month (US toll-free). SMS and WhatsApp messaging are metered per message under ACS pass-through. International outbound PSTN rates vary widely by destination — pull the current ACS price list per country before scoping any non-US deployment. Source: [voice channel pricing scenarios](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-pricing-scenarios).
 
 {: .warning }
-**Confidence note for §4.2.** ACS per-minute rates and DID lease costs change periodically and vary by region. The figures above are widely quoted US commercial rates at the time of writing; always pull the live ACS pricing per country / channel before contracting.
+**Confidence note for §4.2.** ACS per-minute rates and DID lease costs change periodically and vary by region. The figures above are widely quoted US commercial rates at the time of writing (MODERATE confidence); always pull the live ACS pricing per country / channel before contracting.
 
 ### 4.3 Where Copilot Studio meets Contact Center
 
