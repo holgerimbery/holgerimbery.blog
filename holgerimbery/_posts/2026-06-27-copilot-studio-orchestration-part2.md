@@ -2,7 +2,7 @@
 layout: post
 title: "Multi-Agent Orchestration with Copilot Studio — Part 2: In Practice"
 description: "Four end-to-end scenarios on different orchestration patterns, a starter MCP server inventory, and the ten anti-patterns that recur in production Copilot Studio deployments."
-date: 2026-06-20
+date: 2026-06-27
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/andy-kelly-0E_vhMVqL9g-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@askkell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Kelly</a> on <a href="https://unsplash.com/photos/photo-of-girl-laying-left-hand-on-white-digital-robot-0E_vhMVqL9g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
