@@ -11,7 +11,7 @@ image_caption: Photo by <a href="https://unsplash.com/@anniespratt?utm_source=un
 
 tags: ["microsoftteams", "teamsphone", "copilotstudio", "voiceagents", "autoattendant", "callqueue", "frontier"]
 featured: true
-toc: true
+toc: false
 ---
 
 {: .q-left }
