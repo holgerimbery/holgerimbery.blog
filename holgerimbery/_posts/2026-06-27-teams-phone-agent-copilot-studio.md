@@ -26,6 +26,8 @@ Three things define the current state of this feature set:
 
 1. **Two layers, one call flow.** Teams Phone Agent provides built-in skills you *configure* (Q&A, Appointments, conversational routing). Copilot Studio voice agents provide custom workflows you *build*. They are designed to work together inside a single call flow.
 2. **Frontier Public Preview, tenant-gated.** Both capabilities entered Frontier Public Preview in mid-June 2026. The Copilot Studio integration is explicitly gated — Microsoft support must enable your tenant before the Teams Phone channel option appears.
+![upgit_20260626_1782454466.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/06/upgit_20260626_1782454466.png)
+
 3. **Consumption billing for custom agents.** Copilot Studio voice agent experiences are billed consumptively at a rate based on the orchestration type selected when the agent is built. Billing rolls out by early July 2026; no usage is charged before that.
 
 {: .important }
@@ -34,7 +36,19 @@ Three things define the current state of this feature set:
 {: .note }
 **Scope.** This article covers Teams Phone Agent's built-in skills, custom Copilot Studio voice agents (hand-off and direct-dial patterns), the supporting auto attendant / call queue model, setup in the Teams admin center and Copilot Studio, preview gating, and consumption billing. Detailed Power Platform / Copilot Studio licensing economics, contact-center seat licensing, and third-party agent SDKs are out of scope and referenced only where they intersect with setup.
 
----
+## Where this fits — use cases, and why it doesn't cannibalize Dynamics 365 Contact Center
+Possible use cases. Teams Phone Agent and Copilot Studio voice agents are aimed at organizations whose phone system is Teams Phone and who want to add conversational self-service to call flows they already run. The natural fits are front-door deflection and after-hours coverage: 
+* a clinic answering hours, location, and insurance questions and handling appointment reschedules; 
+* a bank branch understanding intent and routing a mortgage caller to the right team with context; 
+* a pharmacy taking prescription-refill and order-status requests; 
+* a utility letting customers report an outage or get billing help at 2 a.m.; 
+* a home-services firm confirming or moving a booking without staff. 
+Inside larger enterprises that already have Teams Phone, the same pattern serves internal lines:
+- IT helpdesk, HR, facilities — and acts as an overflow or out-of-hours tier in front of human queues that would otherwise drop to voicemail. 
+The common thread is high-volume, repetitive, rules-or-knowledge-driven calls that don't need a trained agent.
+
+## Why this isn't cannibalizing Dynamics 365 Contact Center.
+The two products serve different operating models, and Microsoft has deliberately built them as a continuum rather than competitors. **Teams Phone Agent** is an extension of the **telephony layer** — it modernizes auto attendants and call queues for businesses that don't run, and don't want to run, a dedicated contact center. **Dynamics 365 Contact Center** is a **full CCaaS platform**: unified omnichannel routing across voice, chat, email, and social; a managed agent desktop with Copilot assist; queue and workforce management; quality and compliance tooling; CRM-agnostic system-of-record integration; and the operational analytics a supervised contact-center team depends on. Teams Phone Agent delivers none of those agent-operations capabilities, and it isn't trying to — so it can't displace the customers who need them. Crucially, both rest on the same Copilot Studio agent foundation: the custom voice agents you attach to Teams Phone are built in Copilot Studio, and the AI agents inside Dynamics 365 Contact Center draw on that same agentic platform and consumption model. That shared base means an organization grows along the curve — start with a Teams Phone Agent front door, and when call volume, omnichannel scope, or staffed-agent operations outgrow it, step up to Contact Center without abandoning the agent investment. The commercial models reinforce the split: Teams Phone Agent is a consumption-billed add-on to existing Teams Phone, while Contact Center is a per-seat CCaaS subscription. Different problem, different buyer, different price shape — complementary tiers of one Microsoft voice-AI story, not overlapping bets.
 
 ## 1. What changed and why it matters
 
