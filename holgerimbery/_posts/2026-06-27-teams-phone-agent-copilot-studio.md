@@ -7,8 +7,6 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/06/annie-spratt-goholCAVTRs-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/photos/brown-rotary-dial-telephone-in-gray-painted-room-goholCAVTRs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-
-
 tags: ["microsoftteams", "teamsphone", "copilotstudio", "voiceagents", "autoattendant", "callqueue", "frontier"]
 featured: true
 toc: false
@@ -20,7 +18,7 @@ Microsoft Teams Phone now has a conversational AI front door. **Teams Phone Agen
 
 {: .q-left }
 > **Why read this article**
-Teams Phone has always routed calls with auto attendants and call queues. What changed is that the routing layer can now *understand spoken intent* and *act on it* — answering questions from a knowledge base, booking an appointment, or completing a business-specific workflow such as a prescription refill or an outage report. This is not a forced change for every Teams user. It is a deliberate capability for Teams Phone administrators, contact-center-style teams, Copilot Studio makers, and the finance and compliance stakeholders who need to review preview gating, billing, call routing, data sources, and fallback paths before AI ever answers a live customer call. This guide ties those decisions to the configuration steps.
+Teams Phone has always routed calls with auto attendants and call queues. What changed is that the routing layer can now *understand spoken intent* and *act on it* — answering questions from a knowledge base, booking an appointment, or completing a business-specific workflow such as a prescription refill or an outage report. This is not a forced change for every Teams user. It is a deliberate capability for Teams Phone administrators, contact-center-style teams, Copilot Studio makers, and finance and compliance stakeholders who need to review, preview, gate, bill, route calls, manage data sources, and define fallback paths before AI ever answers a live customer call. This guide ties those decisions to the configuration steps.
 
 Three things define the current state of this feature set:
 
@@ -28,16 +26,16 @@ Three things define the current state of this feature set:
 2. **Frontier Public Preview, tenant-gated.** Both capabilities entered Frontier Public Preview in mid-June 2026. The Copilot Studio integration is explicitly gated — Microsoft support must enable your tenant before the Teams Phone channel option appears.
 ![upgit_20260626_1782454466.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/06/upgit_20260626_1782454466.png)
 
-3. **Consumption billing for custom agents.** Copilot Studio voice agent experiences are billed consumptively at a rate based on the orchestration type selected when the agent is built. Billing rolls out by early July 2026; no usage is charged before that.
+3. **Consumption billing for custom agents.** Copilot Studio voice agent experiences are billed consumptively at a rate based on the orchestration type selected when the agent is built. Billing rolls out by early July 2026; no usage will be charged before then.
 
 {: .important }
 **Confidence and currency note.** This article describes a **preview** feature set as documented in June 2026. Preview features are not intended for production use, may have restricted functionality, and are subject to change. Capabilities, gating, regional support, and especially **pricing and service limits** will change at general availability. Re-verify every commercial and technical detail against the current Microsoft Learn documentation and the Teams admin center before committing to a rollout.
 
 {: .note }
-**Scope.** This article covers Teams Phone Agent's built-in skills, custom Copilot Studio voice agents (hand-off and direct-dial patterns), the supporting auto attendant / call queue model, setup in the Teams admin center and Copilot Studio, preview gating, and consumption billing. Detailed Power Platform / Copilot Studio licensing economics, contact-center seat licensing, and third-party agent SDKs are out of scope and referenced only where they intersect with setup.
+**Scope.** This article covers Teams Phone Agent's built-in skills, custom Copilot Studio voice agents (hand-off and direct-dial patterns), the supporting auto-attendant/call-queue model, setup in the Teams admin center and Copilot Studio, preview gating, and consumption billing. Detailed Power Platform / Copilot Studio licensing economics, contact-center seat licensing, and third-party agent SDKs are out of scope and referenced only where they intersect with setup.
 
 ## Where this fits — use cases, and why it doesn't cannibalize Dynamics 365 Contact Center
-Possible use cases. Teams Phone Agent and Copilot Studio voice agents are aimed at organizations whose phone system is Teams Phone and who want to add conversational self-service to call flows they already run. The natural fits are front-door deflection and after-hours coverage: 
+Possible use cases. Teams Phone Agent and Copilot Studio voice agents are aimed at organizations whose phone system is Teams Phone, and that want to add conversational self-service to their existing call flows. The natural fits are front-door deflection and after-hours coverage: 
 * a clinic answering hours, location, and insurance questions and handling appointment reschedules; 
 * a bank branch understanding intent and routing a mortgage caller to the right team with context; 
 * a pharmacy taking prescription-refill and order-status requests; 
@@ -45,21 +43,21 @@ Possible use cases. Teams Phone Agent and Copilot Studio voice agents are aimed 
 * a home-services firm confirming or moving a booking without staff. 
 Inside larger enterprises that already have Teams Phone, the same pattern serves internal lines:
 - IT helpdesk, HR, facilities — and acts as an overflow or out-of-hours tier in front of human queues that would otherwise drop to voicemail. 
-The common thread is high-volume, repetitive, rules-or-knowledge-driven calls that don't need a trained agent.
+The common thread is high-volume, repetitive, rules- or knowledge-driven calls that don't require a trained agent.
 
 ## Why this isn't cannibalizing Dynamics 365 Contact Center.
 The two products serve different operating models, and Microsoft has deliberately built them as a continuum rather than competitors. **Teams Phone Agent** is an extension of the **telephony layer** — it modernizes auto attendants and call queues for businesses that don't run, and don't want to run, a dedicated contact center. **Dynamics 365 Contact Center** is a **full CCaaS platform**: unified omnichannel routing across voice, chat, email, and social; a managed agent desktop with Copilot assist; queue and workforce management; quality and compliance tooling; CRM-agnostic system-of-record integration; and the operational analytics a supervised contact-center team depends on. Teams Phone Agent delivers none of those agent-operations capabilities, and it isn't trying to — so it can't displace the customers who need them. Crucially, both rest on the same Copilot Studio agent foundation: the custom voice agents you attach to Teams Phone are built in Copilot Studio, and the AI agents inside Dynamics 365 Contact Center draw on that same agentic platform and consumption model. That shared base means an organization grows along the curve — start with a Teams Phone Agent front door, and when call volume, omnichannel scope, or staffed-agent operations outgrow it, step up to Contact Center without abandoning the agent investment. The commercial models reinforce the split: Teams Phone Agent is a consumption-billed add-on to existing Teams Phone, while Contact Center is a per-seat CCaaS subscription. Different problem, different buyer, different price shape — complementary tiers of one Microsoft voice-AI story, not overlapping bets.
 
 ## 1. What changed and why it matters
 
-It is often difficult for businesses to serve every customer immediately during surges in call volume. Callers sit on hold while staff work through the backlog. Meanwhile, agentic voice AI is opening new ways to serve customers — answering questions, scheduling, or even completing a transaction over the phone, including after hours and on weekends.
+It is often difficult for businesses to serve every customer immediately during surges in call volume. Callers sit on hold while staff work through the backlog. Meanwhile, agentic voice AI is opening new ways to serve customers — answering questions, scheduling appointments, or even completing transactions over the phone, including after hours and on weekends.
 
-Teams Phone Agent and the ability to bring custom Copilot Studio voice agents to Teams Phone address this directly. For customer-facing organizations using Teams Phone — healthcare clinics, bank branches, utilities, pharmacies, service businesses — these agents take repetitive calls off employees' plates so people can focus on the conversations that genuinely need a human, and customers get to resolution faster.
+Teams Phone Agent and the ability to bring custom Copilot Studio voice agents to Teams Phone address this directly. For customer-facing organizations using Teams Phone — healthcare clinics, bank branches, utilities, pharmacies, service businesses — these agents take repetitive calls off employees' plates, so people can focus on the conversations that genuinely need a human touch, and customers reach resolution faster.
 
-The goal is **not** to remove humans from every call. It is to reduce repetitive call handling so staff can focus on complex or sensitive conversations. Instead of relying only on traditional auto attendants, keypad menus, and human staff, organizations can now offer conversational phone experiences that understand spoken requests and respond naturally.
+The goal is **not** to remove humans from every call. It is to reduce repetitive call handling so staff can focus on complex or sensitive conversations. Instead of relying solely on traditional auto-attendants, keypad menus, and human staff, organizations can now offer conversational phone experiences that understand spoken requests and respond naturally.
 
 {: .note }
-**The design principle that matters most.** Teams Phone Agent sits *inside* your call flow. It should be designed like a business process — greeting, knowledge sources, routing rules, escalation, after-hours behavior — not switched on as a generic AI receptionist. Every flow needs a deliberate happy path, escalation path, and after-hours path.
+**The design principle that matters most.** Teams Phone Agent sits *inside* your call flow. It should be designed as a business process — greeting, knowledge sources, routing rules, escalation, after-hours behavior — rather than switched on as a generic AI receptionist. Every flow needs a deliberate happy path, escalation path, and after-hours path.
 
 ## 2. The out-of-the-box experience — Teams Phone Agent
 
@@ -92,7 +90,7 @@ There are **two ways** to bring a Copilot Studio voice agent into Teams Phone.
 
 | Pattern | How it works | When to use it |
 |---------|--------------|----------------|
-| **Hand-off** | Teams Phone Agent handles greeting and routine requests, then seamlessly hands the call to a custom Copilot Studio agent when a specialized skill is needed. | You want one conversational front door that escalates into specialized workflows. |
+| **Hand-off** | Teams Phone Agent handles greeting and routine requests, then seamlessly hands the call to a custom Copilot Studio agent when a specialized skill is needed. You want a single conversational front door that escalates to specialized workflows. |
 | **Direct dial** | A Copilot Studio voice agent is attached directly to a phone number via a Teams Phone **resource account**, so callers reach it as the first point of contact. | You are upgrading an existing IVR or want a dedicated line for a specific workflow. |
 
 ### 3.1 What you can build
@@ -128,7 +126,7 @@ Microsoft's planning guidance asks you to document the same business decisions u
 
 - **How do callers reach you?** Internal only, external, or click-to-call on the web?
 - **Which languages** are needed, and for which department or group?
-- **Voice or dial input** — do you allow spoken input, or keypad only?
+- **Voice or dial input** — Do you allow spoken input, or keypad only?
 - **Off-hours and holiday routing** — what are the hours and holidays?
 - **Knowledge sources** — which files and URLs feed the Q&A tool?
 - **Fallback and escalation** — where does an unresolved call go, and does the human handoff carry context?
@@ -162,7 +160,7 @@ Teams Phone admins configure Teams Phone Agent in the **Teams admin center** und
 {: .note }
 **No phone number?** If you do not assign a phone number to the resource account, only users in your tenant can reach the agent over VoIP via the Teams client.
 
-### 5.4 Using Tags for transfers
+### 5.4 Using Tags for Transfers
 
 After attaching a tag template in the Teams admin center, configure the Copilot Studio agent to act on the tag values: add a topic with a "User says a phrase" trigger (for example, "transfer" or "escalate"), ask the caller to choose a department using the tag names as options, then use **Topic Management → Transfer conversation → Transfer to agent**, passing the caller's choice as the transfer target. Publish the agent again. The agent can now transfer to the targets defined in your tag template.
 
@@ -176,22 +174,22 @@ This is firmly a preview, and the access and commercial model matter before any 
 | Item | Current state (June 2026) |
 |------|---------------------------|
 | **Program** | Frontier Public Preview. Both Teams Phone Agent and the Copilot Studio integration entered Frontier Public Preview in mid-June 2026. |
-| **Gating** | The Copilot Studio ↔ Teams Phone integration is **explicitly enabled per tenant**. Contact **Microsoft support** to enable it; until then the Teams Phone channel option does not appear in Copilot Studio. |
+| **Gating** | The Copilot Studio ↔ Teams Phone integration is **explicitly enabled per tenant**. Contact **Microsoft support** to enable it; until then, the Teams Phone channel option does not appear in Copilot Studio. |
 | **Teams Phone prerequisites** | Standard Teams Phone prerequisites, including a properly configured resource account and the relevant Teams Phone licenses for your scenario. |
 | **Copilot Studio licenses** | A **Copilot Studio tenant license** (to run and publish agents) and a **Copilot Studio user license** (to build them). |
 | **Built-in Teams Phone Agent** | Available via the Frontier program; service limitations may apply. |
 
 ### 6.1 How custom agents are billed
 
-Custom Copilot Studio voice agent experiences — whether reached through a Teams Phone Agent hand-off or by direct dial — are **billed consumptively**, at a rate based on the **orchestration type** your organization selects when building the agent in Copilot Studio.
+Custom Copilot Studio voice agent experiences — whether reached through a Teams Phone Agent handoff or by direct dial — are **billed consumptively**, at a rate based on the **orchestration type** your organization selects when building the agent in Copilot Studio.
 
 {: .important }
-**Billing timeline.** Billing for Copilot Studio voice agent experiences in Teams Phone was set to roll out **by early July 2026**, and usage is **not charged before** that rollout. When billing goes live, **all Frontier preview users must set up billing** to keep using Copilot Studio voice agents for Teams Phone. All licensing, pricing, and service limits are subject to change, with more detail expected at general availability.
+**Billing timeline.** Billing for Copilot Studio voice agent experiences in Teams Phone was set to roll out **by early July 2026**, and usage is **not charged before** that rollout. When billing goes live, **all Frontier preview users must set up billing** to keep using Copilot Studio voice agents for Teams Phone. All licensing, pricing, and service limits are subject to change, with more details expected at general availability.
 
 ### 6.2 Cost-control practices
 
 - Use **classic orchestration** to avoid unexpected charges and reduce latency.
-- **Scope each agent narrowly** to the processes it supports — overly broad agents produce unexpected responses and unpredictable cost.
+- **Scope each agent narrowly** to the processes it supports — overly broad agents produce unexpected responses and unpredictable costs.
 - **Test thoroughly** with proper guardrails before exposing an agent to callers; how you build the agent significantly shapes the customer experience.
 
 ## 7. An expanding ecosystem
@@ -203,16 +201,16 @@ Microsoft is positioning this as a platform with **choice across first- and thir
 A 40-branch bank wants to reduce hold times on its retail support line without risking a poor first AI experience.
 
 1. **Phase 1 — out-of-the-box only.** Enable Teams Phone Agent on a single non-critical line. Configure Q&A from published FAQs (hours, locations, card-replacement steps) and conversational routing to existing queues, with context-aware transfer to a human for anything unresolved. No custom build, no consumption billing.
-2. **Phase 2 — one custom workflow.** Once the front door is proven, build a single narrowly scoped Copilot Studio agent for one high-volume task (for example, "report a lost card") integrated to the system of record, using classic orchestration. Validate cost against the consumption meter before widening.
+2. **Phase 2 — one custom workflow.** Once the front door is proven, build a single, narrowly scoped Copilot Studio agent for one high-volume task (for example, "report a lost card") integrated to the system of record, using classic orchestration. Validate the cost against the consumption meter before widening.
 3. **Phase 3 — scale and route.** Use Tags so one agent serves multiple departments, and add after-hours coverage where a human queue previously sent callers to voicemail.
 
-**Why this order:** it separates the zero-cost, no-code value (Phase 1) from the consumption-billed custom value (Phase 2+), so the organization proves customer experience and measures cost before committing.
+**Why this order:** It separates the zero-cost, no-code value (Phase 1) from the consumption-billed custom value (Phase 2+), so the organization can prove customer experience and measure cost before committing.
 
 ## 9. Conclusion
 
-Teams Phone Agent turns Teams Phone from a routing-and-queueing system into a **conversational AI front door**. The out-of-the-box experience — Q&A, appointment scheduling, conversational routing, context-aware handoff, and 60+ languages — covers routine calls with no code. Custom Copilot Studio voice agents extend it to the workflows unique to your business, reached by hand-off or direct dial. Underneath, the classic auto attendant and call queue model keeps escalation and after-hours paths intact.
+Teams Phone Agent turns Teams Phone from a routing-and-queueing system into a **conversational AI front door**. The out-of-the-box experience — Q&A, appointment scheduling, conversational routing, context-aware handoff, and 60+ languages — covers routine calls with no code. Custom Copilot Studio voice agents extend it to the workflows unique to your business, accessible via handoff or direct dial. Underneath, the classic auto attendant and call queue model keeps escalation and after-hours paths intact.
 
-For now this is a **gated Frontier preview** with **consumption-based billing** for custom agents. The disciplined move is a **scoped pilot**: pick one high-volume, low-risk flow; design the happy, escalation, and after-hours paths deliberately; confirm the human handoff carries context; and validate cost on classic orchestration before widening. The technology is ready to trial — the discipline is in treating every voice agent as a designed business process, not a switch you flip.
+For now, this is a **gated Frontier preview** with **consumption-based billing** for custom agents. The disciplined move is a **scoped pilot**: pick one high-volume, low-risk flow; deliberately design the happy, escalation, and after-hours paths; confirm the human handoff carries context; and validate cost with classic orchestration before widening. The technology is ready to trial — the discipline is in treating every voice agent as a designed business process, not a switch you flip.
 
 {: .note }
 This article will be revised as the feature set moves toward general availability. Expect changes to gating, regional support, supported agent types, and especially pricing and service limits.
@@ -227,7 +225,7 @@ This article will be revised as the feature set moves toward general availabilit
 | **Classic orchestration** | The Copilot Studio orchestration mode required for the Teams Phone channel; uses deterministic topic flows. Generative orchestration is not supported here. |
 | **Direct dial** | Pattern where a Copilot Studio voice agent is attached directly to a phone number via a resource account, acting as the first point of contact. |
 | **Frontier program** | Microsoft's early-access program through which Teams Phone Agent and the Copilot Studio integration are currently delivered. |
-| **Hand-off** | Pattern where Teams Phone Agent passes a call to a custom Copilot Studio voice agent for a specialized workflow. |
+| **Handoff** | Pattern where Teams Phone Agent passes a call to a custom Copilot Studio voice agent for a specialized workflow. |
 | **IVR** | Interactive Voice Response — the automated voice menu or bot at the start of a call. |
 | **MCS** | Microsoft Copilot Studio — the platform for building custom voice and chat agents. |
 | **Resource account** | A licensed, non-user account in Teams Phone to which voice applications (auto attendants, call queues, voice agents) and phone numbers are assigned. |
