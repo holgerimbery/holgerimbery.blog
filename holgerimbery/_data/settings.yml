@@ -128,7 +128,7 @@ social:
 - {icon: "fa-solid fa-bullhorn", name: "sessionize", link: "https://sessionize.com/holgerimbery/"}
 - {icon: "fa-solid fa-heart", name: "Github Sponsors", link: "https://github.com/sponsors/holgerimbery"}
 - {icon: "fa-solid fa-mug-saucer", name: "Buy me a coffee", link: "https://buymeacoffee.com/holgerimbery"}
-# Example of adding a new link to the footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube.com"}
+# Example of adding a new link to the footer - {icon: "fa-brands fa-youtube", name: "Youtube", link: https://youtube-nocookie"}
 # Other icons can be found at https://fontawesome.com/icons
 
 

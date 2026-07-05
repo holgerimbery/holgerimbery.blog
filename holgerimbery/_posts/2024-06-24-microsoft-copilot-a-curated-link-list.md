@@ -58,7 +58,7 @@ If you are seeking a comprehensive overview of all information about Copilot, th
     
 * [Semantic Index for Copilot documentation](http://aka.ms/SemanticIndex)
     
-* [Semantic Index for Copilot explained](http://www.youtube.com/watch?v=KtsVRCsdvoU) (08.18.24)
+* [Semantic Index for Copilot explained](http://www.youtube-nocookie.com/watch?v=KtsVRCsdvoU) (08.18.24)
     
 * [Copilot Studio Blog - everything about extending Copilot](https://the.cognitiveservices.ninja/?source=top_nav_blog_home)
     
