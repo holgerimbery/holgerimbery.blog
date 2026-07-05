@@ -77,8 +77,13 @@ Customize your preferences: Choose which categories of cookies you wish to allow
 **Changes to our cookie use**  
 We may update our use of cookies and tracking technologies to improve our services or comply with legal requirements. We will notify you of any significant changes and seek your consent where necessary.
 
-For more detailed information about the cookies we use, their purposes, and how you can manage your preferences, please visit our detailed [Cookie Policy](https://holgerimbery.blog/cookie-policy)
-<script id="CookieDeclaration" src="https://consent.cookiebot.com/edd88b28-a00d-4acc-8686-1a39af16ffd7/cd.js" type="text/javascript" async></script> 
+For more detailed information about the cookies we use, their purposes, and how you can manage your preferences, please visit our detailed Cookie Policy below.
+
 Should you have any questions or concerns about our use of cookies and tracking technologies, please do not hesitate to contact us at contact@holgerimbery.blog or +49 +15140510120. Your privacy and the integrity of your personal data are of utmost importance to us.
 
 Powered by Usercentrics [Generate Yours](https://usercentrics.com/privacy-policy-generator/)
+
+
+## Cookie Policy
+
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/edd88b28-a00d-4acc-8686-1a39af16ffd7/cd.js" type="text/javascript" async></script> 
