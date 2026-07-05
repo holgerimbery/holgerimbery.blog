@@ -35,12 +35,12 @@ menu_settings:
       url: "https://www.freeprivacypolicy.com/live/9afc0ae9-b134-4b97-bf0f-dcb242d1b03a"
     - title: "&hearts; Sponsors"
       url: "https://github.com/sponsors/holgerimbery"
-    - title: "Pigeon Post"
-      url: "https://holgerimbery.github.io/PigeonPost/"
+#    - title: "Pigeon Post"
+#      url: "https://holgerimbery.github.io/PigeonPost/"
     - title: "instruo365"
       url: "https://instruo365.de"
-    - title: "mate Project"
-      url: "https://www.mate365.app"
+#    - title: "mate Project"
+#      url: "https://www.mate365.app"
 
 # Call to action button
 cta_button:
