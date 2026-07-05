@@ -7,9 +7,6 @@ image:
 image_caption: 
 ---
 
-<div class="uc-privacy-policy"></div>
-
-## Privacy Policy
 Effective Date: 05/07/2026, 11:58:32
 
 ### Introduction and organizational info
