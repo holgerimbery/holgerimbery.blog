@@ -29,12 +29,6 @@ menu_settings:
         title: "Updates"
     - title: "About"
       url: "/about/"
-    - title: "Legal"
-      submenu:
-      - title: "Impressum"
-        url: "/impressum/"
-      - title: "Privacy"
-        url: "/privacy-policy/"
     - title: "&hearts; Sponsors"
       url: "https://github.com/sponsors/holgerimbery"
 #    - title: "Pigeon Post"
@@ -43,6 +37,12 @@ menu_settings:
       url: "https://instruo365.de"
 #    - title: "mate Project"
 #      url: "https://www.mate365.app"
+    - title: "Legal"
+      submenu:
+      - title: "Impressum"
+        url: "/impressum/"
+      - title: "Privacy"
+        url: "/privacy-policy/"
 
 # Call to action button
 cta_button:
@@ -152,4 +152,4 @@ disqus_identifier: holgerimberyblog # Add your shortname for Disqus Comment. For
 
 #-------------------------------
 # Google Analytics
-#google_analytics: G-NVQGVXE3C8 # Add your GA Tracking Id
+google_analytics: G-QQ00X86TNS # Add your GA Tracking Id
