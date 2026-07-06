@@ -10,7 +10,7 @@ image_caption: Photo by <a href="https://unsplash.com/@andretaissin?utm_source=u
 
 
 tags: ["powerplatform", "licensing", "copilotstudio", "dataverse", "dynamics365contactcenter", "dynamics365customerservice"]
-featured: true
+featured: false
 toc: true
 ---
 
