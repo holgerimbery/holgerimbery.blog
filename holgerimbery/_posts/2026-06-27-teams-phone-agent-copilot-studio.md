@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/photos/brown-rotary-dial-telephone-in-gray-painted-room-goholCAVTRs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 tags: ["microsoftteams", "teamsphone", "copilotstudio", "voiceagents", "autoattendant", "callqueue", "frontier"]
-featured: true
+featured: false
 toc: false
 ---
 

@@ -9,7 +9,7 @@ image_caption: Photo by <a href="https://unsplash.com/@charles_forerunner?utm_so
 
 
 tags: [copilotstudio, agents, governance, powerplatform, dataverse, security, compliance]
-featured: true
+featured: false
 toc: true
 ---
 
