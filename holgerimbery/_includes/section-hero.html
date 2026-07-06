@@ -19,7 +19,7 @@
                 {% endif %}
                 {% if author.image %}
                 <a href="{{ author.url }}" class="hero__author__image">
-                  <img class="lazy" data-src="{{ author.image }}" alt="{{ author.name }}">
+                  <img class="lazy" src="{{ author.image }}" data-src="{{ author.image }}" alt="{{ author.name }}" loading="eager" decoding="async" width="48" height="48">
                 </a>
                 {% endif %}
               </div>

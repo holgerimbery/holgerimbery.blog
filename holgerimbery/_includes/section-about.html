@@ -8,7 +8,7 @@
 
           {% if site.data.settings.about.about_image %}
           <div class="about__image">
-            <img class="lazy" data-src="{{ site.data.settings.about.about_image }}" alt="{{ site.data.settings.about.author_image_alt }}">
+            <img class="lazy" src="{{ site.data.settings.about.about_image }}" data-src="{{ site.data.settings.about.about_image }}" alt="{{ site.data.settings.about.author_image_alt }}" loading="lazy" decoding="async" width="634" height="634">
           </div>
           {% endif %}
 

@@ -21,7 +21,7 @@ layout: default
 
     {% if page.image %}
     <div class="page__image">
-      <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+      <img class="lazy" src="{{ page.image | relative_url }}" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="eager" fetchpriority="high" decoding="async">
     </div>
     {% endif %}
     {% endif %}
