@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@kevinache?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Ache</a> on <a href="https://unsplash.com/photos/a-rack-of-servers-in-a-server-room-2JJ3wBHu4_0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
       
-tags: [Azurelocal, foundrylocal, m365 local, Agents, FrontierFirm, Implementation, SovereignPrivateCloud]
+tags: [azurelocal, foundrylocal, m365-local, agents, frontierfirm, implementation, sovereignprivatecloud]
 featured: false
 toc: true
 ---

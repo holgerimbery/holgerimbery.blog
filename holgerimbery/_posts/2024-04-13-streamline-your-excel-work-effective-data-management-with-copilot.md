@@ -5,7 +5,7 @@ description:
 date: 2024-04-13
 author: admin
 image: ./images/streamline-your-excel-work-effective-data-management-with-copilot.jpeg
-tags: [copilot]
+tags: [copilot, microsoft365copilot]
 featured: false
 toc: true
 

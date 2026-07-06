@@ -5,7 +5,7 @@ description:
 date: 2024-03-16
 author: admin
 image: ./images/using-microsoft-copilot-in-word.jpeg
-tags: [copilot]
+tags: [copilot, microsoft365copilot]
 featured: false
 toc: true
 

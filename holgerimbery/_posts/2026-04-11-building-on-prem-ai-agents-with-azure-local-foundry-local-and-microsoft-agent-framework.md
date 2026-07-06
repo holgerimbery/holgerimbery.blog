@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor Vick</a> on <a href="https://unsplash.com/photos/cable-network-M5tzZtFCOfs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
             
-tags: [azurelocal, foundrylocal, Agents, FrontierFirm, Implementation, SovereignPrivateCloud, OnPremAI, LocalInference, MicrosoftAgentFramework]
+tags: [azurelocal, foundrylocal, agents, frontierfirm, implementation, sovereignprivatecloud, onpremai, localinference, microsoftagentframework]
 featured: false
 toc: true
 ---

@@ -6,7 +6,7 @@ date: 2025-02-11
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/linkedin-sales-solutions-YDVdprpgHv4-unsplash.jpg
 image_caption: 'Photo by <a href="https://unsplash.com/@linkedinsalesnavigator?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LinkedIn Sales Solutions</a> on <a href="https://unsplash.com/photos/unknown-person-using-laptop-YDVdprpgHv4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'    
-tags: [copilotstudio, copilot, salesforce, copilot extensibility]
+tags: [copilotstudio, copilot, microsoft365copilot, salesforce, copilot-extensibility]
 featured: false
 toc: true
 ---
