@@ -76,3 +76,35 @@
     text-decoration-color: var(--heading-font-color);
   }
 }
+
+.section.featured-post {
+  padding: 28px;
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--primary-color) 10%, var(--background-color)) 0%,
+    var(--background-color) 100%
+  );
+  box-shadow: 0 16px 40px -28px rgba(0, 0, 0, 0.35);
+
+  .section__title {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section__title::before {
+    content: "★";
+    font-size: 18px;
+    color: var(--primary-color);
+  }
+}
+
+:root[dark] .section.featured-post {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--primary-color) 16%, var(--background-alt-color)) 0%,
+    var(--background-alt-color) 100%
+  );
+}
