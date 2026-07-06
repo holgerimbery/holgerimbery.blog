@@ -7,6 +7,7 @@
   bottom: 0;
   z-index: -1;
   opacity: 0;
+  contain: layout paint style;
 
   &.is-visible {
     z-index: 100;
@@ -35,6 +36,7 @@
   background: linear-gradient(320deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
+  contain: paint;
 }
 
 .search__box {
@@ -48,6 +50,7 @@
   overflow: hidden;
   will-change: transform;
   transition: all .2s ease;
+  contain: layout style paint;
 
   @media (max-width: $desktop) {
     margin: 80px auto 0;
@@ -112,6 +115,7 @@
   max-height: 68vh;
   white-space: normal;
   overflow: auto;
+  contain: layout paint;
 
   .search-results__item {
     display: flex;
