@@ -8,7 +8,7 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@charles_forerunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Forerunner</a> on <a href="https://unsplash.com/photos/people-standing-inside-city-building-3fPXt37X6UQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 
-tags: [copilotstudio, agents, governance, powerplatform, dataverse, security, compliance, alm, pipelines]
+tags: [copilotstudio, agents, governance, powerplatform, dataverse, security, compliance, applicationlifecyclemanagement, pipelines]
 featured: false
 toc: true
 ---
