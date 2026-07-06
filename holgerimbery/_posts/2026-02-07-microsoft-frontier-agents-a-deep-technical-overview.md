@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/02/dan-meyers-aGLFozyvXsQ-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@dmey503?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Meyers</a> on <a href="https://unsplash.com/photos/body-of-water-near-mountain-during-sunset-aGLFozyvXsQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
-tags: [copilotstudio, frontier, microsoft365, agents, enterpriseai, agent365, m365copilot]
+tags: [copilotstudio, frontier, agents, enterpriseai, agent365, microsoft365copilot]
 featured: false
 toc: true
 ---
