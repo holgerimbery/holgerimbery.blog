@@ -140,15 +140,18 @@ document.addEventListener("DOMContentLoaded", function() {
   // =====================
   // Simple Jekyll Search (Debounced + Optimized)
   // =====================
-  let searchTimeout;
-  SimpleJekyllSearch({
-    searchInput: document.getElementById("js-search-input"),
-    resultsContainer: document.getElementById("js-results-container"),
-    json: "/search.json",
-    searchResultTemplate: '<div class="search-results__item"><a href="{url}" class="search-results__image" style="background-image: url({image})"></a> <a href="{url}" class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}</div><div class="search-results-description">{content}</div></a></div>',
-    noResultsText: '<div class="no-results">No results found...</div>',
-    debounceTime: 100
-  });
+  const searchInputElement = document.getElementById("js-search-input");
+  const searchResultsElement = document.getElementById("js-results-container");
+  if (window.SimpleJekyllSearch && searchInputElement && searchResultsElement) {
+    window.SimpleJekyllSearch({
+      searchInput: searchInputElement,
+      resultsContainer: searchResultsElement,
+      json: "/search.json",
+      searchResultTemplate: '<div class="search-results__item"><a href="{url}" class="search-results__image" style="background-image: url({image})"></a> <a href="{url}" class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}</div><div class="search-results-description">{content}</div></a></div>',
+      noResultsText: '<div class="no-results">No results found...</div>',
+      debounceTime: 100
+    });
+  }
 
 
 
