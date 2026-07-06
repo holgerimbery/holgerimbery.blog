@@ -10,7 +10,7 @@ layout: default
     <div class="author__content">
 
       <div class="author__image">
-        <img class="lazy" data-src="{{ page.image }}" alt="{{ page.name }}">
+        <img class="lazy" src="{{ page.image }}" data-src="{{ page.image }}" alt="{{ page.name }}" loading="eager" fetchpriority="high" decoding="async" width="120" height="120">
       </div>
 
       <h1 class="author__name">{{ page.name }}</h1>

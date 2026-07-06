@@ -51,14 +51,14 @@ layout: default
           <!-- Display author images -->
           {% if post_authors.size == 2 %}
             <a href="{{ post_authors[0].url | relative_url }}" class="post__author__image">
-              <img class="lazy" data-src="{{ post_authors[0].image | relative_url }}" alt="{{ post_authors[0].name }}">
+              <img class="lazy" src="{{ post_authors[0].image | relative_url }}" data-src="{{ post_authors[0].image | relative_url }}" alt="{{ post_authors[0].name }}" loading="eager" decoding="async" width="40" height="40">
             </a>
             <a href="{{ post_authors[1].url | relative_url }}" class="post__author__image">
-              <img class="lazy" data-src="{{ post_authors[1].image | relative_url }}" alt="{{ post_authors[1].name }}">
+              <img class="lazy" src="{{ post_authors[1].image | relative_url }}" data-src="{{ post_authors[1].image | relative_url }}" alt="{{ post_authors[1].name }}" loading="eager" decoding="async" width="40" height="40">
             </a>
           {% else %}
             <a href="{{ post_authors[0].url | relative_url }}" class="post__author__image">
-              <img class="lazy" data-src="{{ post_authors[0].image | relative_url }}" alt="{{ post_authors[0].name }}">
+              <img class="lazy" src="{{ post_authors[0].image | relative_url }}" data-src="{{ post_authors[0].image | relative_url }}" alt="{{ post_authors[0].name }}" loading="eager" decoding="async" width="40" height="40">
             </a>
           {% endif %}
           <div class="post__author__bottom">
@@ -95,7 +95,7 @@ layout: default
 
     {% if page.image %}
     <div class="post__image">
-      <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+      <img class="lazy" src="{{ page.image | relative_url }}" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="eager" fetchpriority="high" decoding="async">
     </div>
     {% endif %}
     {% endif %}
@@ -131,7 +131,7 @@ layout: default
     <div class="card-author__media">
       {% if author.image %}
       <a class="card-author__image" href="{{ author.url }}">
-        <img class="lazy" data-src="{{ author.image }}" alt="{{ author.name }}">
+        <img class="lazy" src="{{ author.image }}" data-src="{{ author.image }}" alt="{{ author.name }}" loading="lazy" decoding="async" width="80" height="80">
       </a>
       {% endif %}
     </div>
