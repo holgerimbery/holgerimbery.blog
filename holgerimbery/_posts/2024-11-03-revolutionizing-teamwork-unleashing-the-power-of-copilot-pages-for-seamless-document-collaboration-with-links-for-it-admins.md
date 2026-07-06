@@ -5,7 +5,7 @@ description:
 date: 2024-11-03
 author: admin
 image: ./images/revolutionizing-teamwork-unleashing-the-power-of-copilot-pages-for-seamless-document-collaboration-with-links-for-it-admins.jpeg
-tags: [copilot]
+tags: [copilot, microsoft365copilot]
 featured: false
 toc: true
 

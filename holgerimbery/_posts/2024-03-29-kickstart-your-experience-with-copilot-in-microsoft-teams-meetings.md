@@ -5,7 +5,7 @@ description:
 date: 2024-03-29
 author: admin
 image: ./images/kickstart-your-experience-with-copilot-in-microsoft-teams-meetings.jpeg
-tags: [copilot]
+tags: [copilot, microsoft365copilot]
 featured: false
 toc: true
 

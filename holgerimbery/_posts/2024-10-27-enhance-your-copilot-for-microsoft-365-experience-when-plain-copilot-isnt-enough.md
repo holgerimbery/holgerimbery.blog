@@ -5,7 +5,7 @@ description:
 date: 2024-10-27
 author: admin
 image: ./images/enhance-your-copilot-for-microsoft-365-experience-when-plain-copilot-isnt-enough.jpeg
-tags: [copilot, copilotstudio, declarativeagents, teamstoolkit]
+tags: [copilot, microsoft365copilot, copilotstudio, declarativeagents, teamstoolkit]
 featured: false
 toc: true
 

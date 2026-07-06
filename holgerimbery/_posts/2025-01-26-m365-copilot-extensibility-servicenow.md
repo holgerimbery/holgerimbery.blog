@@ -6,7 +6,7 @@ date: 2025-01-26 10:28
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/linkedin-sales-solutions-46bom4lObsA-unsplash.jpg
 image_caption: 'Photo by <a href="https://unsplash.com/@linkedinsalesnavigator?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LinkedIn Sales Solutions</a> on <a href="https://unsplash.com/photos/two-women-sitting-at-a-table-looking-at-a-computer-screen-46bom4lObsA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'     
-tags: [copilotstudio, copilot, servicenow, copilot extensibility]
+tags: [copilotstudio, copilot, servicenow, copilot-extensibility]
 summary:
 featured: false
 toc: true

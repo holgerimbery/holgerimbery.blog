@@ -7,7 +7,7 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/yoel-winkler-iPPukR_eMcY-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@yoel100?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yoel Winkler</a> on <a href="https://unsplash.com/photos/a-flock-of-birds-flying-through-a-blue-sky-iPPukR_eMcY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
-tags: [copilot, copilotstudio, agentbuilder, migration, powerplatform, agents,enterpriseagents]
+tags: [copilot, copilotstudio, agentbuilder, migration, powerplatform, agents, enterpriseagents]
 featured: false
 toc: true
 ---

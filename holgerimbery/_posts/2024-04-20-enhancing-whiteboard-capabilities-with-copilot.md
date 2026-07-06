@@ -5,7 +5,7 @@ description:
 date: 2024-04-20
 author: admin
 image: ./images/enhancing-whiteboard-capabilities-with-copilot.jpeg
-tags: [copilot]
+tags: [copilot, microsoft365copilot]
 featured: false
 toc: true
 

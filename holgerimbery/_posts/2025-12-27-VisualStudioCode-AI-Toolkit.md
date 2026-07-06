@@ -6,7 +6,7 @@ date: 2025-12-27 06:38:53 +0100
 author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/barn-images-t5YUoHW6zRo-unsplash.jpg
 image_caption: Visual Studio Code AI Toolkit
-tag: [agents, development, vscode, aitoolkit, aifoundry]
+tags: [agents, development, vscode, aitoolkit, aifoundry]
 featured: false
 toc: true
 ---

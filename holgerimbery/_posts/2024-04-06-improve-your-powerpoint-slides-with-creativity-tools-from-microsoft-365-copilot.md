@@ -5,7 +5,7 @@ description:
 date: 2024-04-06
 author: admin
 image: ./images/improve-your-powerpoint-slides-with-creativity-tools-from-microsoft-365-copilot.jpeg
-tags: [copilot]
+tags: [copilot, microsoft365copilot]
 featured: false
 toc: true
 

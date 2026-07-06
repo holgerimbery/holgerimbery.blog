@@ -5,7 +5,7 @@ description:
 date: 2024-03-02
 author: admin
 image: ./images/microsoft-365-graph-grounded-chat-prompts.jpeg
-tags: [copilot]
+tags: [copilot, microsoft365copilot]
 featured: false
 toc: true
 

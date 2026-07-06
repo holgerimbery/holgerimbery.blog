@@ -5,7 +5,7 @@ description:
 date: 2024-02-18
 author: admin
 image: ./images/unlocking-productivity-and-creativity-harnessing-the-power-of-microsoft-365-copilot-with-good-prompts.jpeg
-tags: [prompts, copilot]
+tags: [prompts, copilot, microsoft365copilot]
 featured: false
 toc: true
 
