@@ -7,28 +7,28 @@ author: admin
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/andy-kelly-0E_vhMVqL9g-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@askkell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Kelly</a> on <a href="https://unsplash.com/photos/photo-of-girl-laying-left-hand-on-white-digital-robot-0E_vhMVqL9g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
-tags: [agents, copilotstudio, multiagent, orchestration, scenarios, antipatterns]
+tags: [agents, copilotstudio, multi-agent, orchestration, scenarios, anti-patterns]
 featured: true
 toc: true
 ---
 
 {: .q-left }
-> **Summary lede.** This is the second of three articles on multi-agent orchestration in Microsoft Copilot Studio. Part 1 settled the architecture: when to split a single agent, what a Copilot Studio agent is composed of, which orchestration patterns exist, and how the Model Context Protocol (MCP) and Agent2Agent (A2A) protocol keep the system composable. Part 2 — In Practice — takes those decisions and works through what they look like in production. Four end-to-end scenarios, each built on a different orchestration pattern, show how the architectural pieces fit together. A starter MCP server inventory makes the platform team's role explicit. Ten anti-patterns from real deployments close the article with the corrections that teams have actually applied.
+> **Summary lede.** This is the second of three articles on multi-agent orchestration in Microsoft Copilot Studio. Part 1 settled the architecture: when to split a single agent, what a Copilot Studio agent is composed of, which orchestration patterns exist, and how the Model Context Protocol (MCP) and Agent2Agent (A2A) protocol keep the system composable. Part 2 — In Practice — takes those decisions and works through what they look like in production. Four end-to-end scenarios, each built on a different orchestration pattern, show how the architectural pieces fit together. A starter MCP server inventory makes the platform team's role explicit. The article closes with ten anti-patterns from real deployments and the corrections that teams have actually applied.
 
 {: .q-left }
 > **About this series.** This is Part 2 of three. **Part 1 — Foundations** establishes the vocabulary, when to split a single agent, the five configuration surfaces, the four orchestration patterns, and how MCP and A2A are configured. **Part 2 — In Practice** (this article) turns those decisions into four end-to-end scenarios, a starter MCP server inventory, and ten production anti-patterns. Parts 1 and 2 describe the **released, generally available feature set** — the "classic" Copilot Studio experience, built on **generative orchestration**, which is GA and fully supported. **Part 3 — The Build 2026 Rebuild** describes the new four-surface model (Skills, Memory, a new orchestrator); those features are **in public preview and subject to change** before general availability, so treat Part 3 as forward-looking and re-check status before relying on it.
 
-Every scenario uses features documented on Microsoft Learn and either generally available or in public preview as of mid-2026: connected agents, autonomous triggers, agent flows with parallel branches and approval gates, Dataverse as a state store, MCP integration with Streamable transport, and Purview audit logging. Where a capability is preview (for example, connecting to Microsoft Foundry, Fabric, or Microsoft 365 Agents SDK agents), this article says so. The scenarios pair with named, published case studies — T-Mobile, Nexi Group, Dunaway, Holland America Line, Signetic, Singapore Civil Defence Force, La Trobe University — whose architectural shape matches the patterns described.
+Every scenario uses features documented on Microsoft Learn and either generally available or in public preview as of mid-2026: connected agents, autonomous triggers, agent flows with parallel branches and approval gates, Dataverse as a state store, MCP integration with Streamable transport, and Purview audit logging. Where a capability is in preview (for example, connecting to Microsoft Foundry, Fabric, or Microsoft 365 Agents SDK agents), this article says so. The scenarios pair with named, published case studies — T-Mobile, Nexi Group, Dunaway, Holland America Line, Signetic, Singapore Civil Defense Force, La Trobe University — whose architectural shape matches the patterns described.
 
 {: .q-left }
 > **Capability status at publication**
-> Two capabilities reinforce these scenarios directly. **A2A connections are generally available**, so cross-platform delegation is not a preview dependency. **Computer Use (computer-using agents) is generally available** — the CUA extension mentioned in Scenario 1 is a shipping capability, with embedding into multi-step workflows in preview. A **redesigned Workflows experience** (early release) introduces a unified visual canvas with **agent nodes** that drop existing agents into a flow, plus AI-powered actions for classification and content generation; **asynchronous responses** *(preview)* let agent-flow steps exceed the two-minute limit, which the onboarding scenario benefits from. And **per-agent Microsoft Entra agent identities** can be auto-created *(preview)*, the concrete mechanism behind the "Entra Agent ID per agent" recommendation in the anti-patterns section.
+> Two capabilities directly reinforce these scenarios. **A2A connections are generally available**, so cross-platform delegation is not a preview dependency. **Computer Use (computer-using agents) is generally available** — the CUA extension mentioned in Scenario 1 is a shipping capability, with embedding into multi-step workflows in preview. A **redesigned Workflows experience** (early release) introduces a unified visual canvas with **agent nodes** that drop existing agents into a flow, plus AI-powered actions for classification and content generation; **asynchronous responses** *(preview)* let agent-flow steps exceed the two-minute limit, which the onboarding scenario benefits from. And **per-agent Microsoft Entra agent identities** can be auto-created *(preview)*, which is the concrete mechanism behind the "Entra Agent ID per agent" recommendation in the anti-patterns section.
 
 {: .q-left }
 > **Why read this**
-Read this if Part 1 left you convinced that multi-agent orchestration is the right response to scope drift and you now need to see four working shapes. The four scenarios — IT incident triage, contract review, field service dispatch, employee onboarding — are not picked for variety; they are picked because they map cleanly onto the four orchestration patterns introduced in Part 1, and because each exposes a different production-failure mode that teams are most likely to hit. Read it if you have ever drawn a multi-agent architecture on a whiteboard, sent it to a senior maker, and watched them rebuild it in a way you did not expect. The MCP inventory section exists to answer the most common follow-up question — "okay, but who owns what?" — with a starting catalog. The anti-patterns section exists to answer the second-most-common follow-up — "what is most likely to bite us first?" — with ten patterns that recur often enough to be predictable.
+Read this if Part 1 left you convinced that multi-agent orchestration is the right response to scope drift, and you now need to see four working shapes. The four scenarios — IT incident triage, contract review, field service dispatch, employee onboarding — are not picked for variety; they are picked because they map cleanly onto the four orchestration patterns introduced in Part 1, and because each exposes a different production failure mode that teams are most likely to encounter. Read it if you have ever drawn a multi-agent architecture on a whiteboard, sent it to a senior maker, and watched them rebuild it in a way you did not expect. The MCP inventory section exists to answer the most common follow-up question — "okay, but who owns what?" — with a starting catalog. The anti-patterns section exists to answer the second-most-common follow-up — "what is most likely to bite us first?" — with ten patterns that recur often enough to be predictable.
 
-Read Part 1 if you need the vocabulary; read Part 2 if you have the vocabulary and need the working examples. Each scenario is small enough to be read in one sitting and concrete enough to be reproduced in your own tenant. The point is not that any of these scenarios is the right one for your organization — the point is that the patterns underneath them are.
+Read Part 1 if you need the vocabulary; read Part 2 if you have the vocabulary and need the working examples. Each scenario is small enough to read in one sitting and concrete enough to reproduce in your own tenant. The point is not that any of these scenarios is the right one for your organization — the point is that the patterns underneath them are.
 
 ---
 
@@ -43,17 +43,17 @@ Four scenarios appear below. They are deliberately ordered by complexity, from t
 | Field service dispatch | Router-worker with autonomous trigger | Event-driven autonomy, bounded decision trees, no user in the loop |
 | Employee onboarding | Hierarchical with persistent state | Long-running supervision, Dataverse as state store, SLA monitoring |
 
-The scenarios are sized to be read end-to-end. Each one names the agents, gives their instructions, walks through expected runtime behavior, and points to a published case study whose architectural shape matches. The published shape — not the exact numbers — is the part to import.
+The scenarios are sized to be read end to end. Each one names the agents, provides instructions, walks through the expected runtime behavior, and points to a published case study whose architectural shape matches. The published shape — not the exact numbers — is the part to import.
 
 ---
 
 ## 2. Scenario one — IT incident triage (router-worker)
 
-The first scenario takes a concrete, widespread problem — tier-one IT service-desk volume — and works through how a multi-agent design resolves it using only features available in Copilot Studio today.
+The first scenario takes a concrete, widespread problem — tier-one IT service desk volume — and shows how a multi-agent design resolves it using only features available in Copilot Studio today.
 
 ### The problem
 
-A large share of tier-one service desk tickets are mechanical: password resets, VPN issues, access requests, known application errors. In many IT organizations this mechanical work is a substantial fraction of total ticket volume. Each of these tickets, when routed to a human analyst, consumes several minutes — read the ticket, look up the user, open the runbook, apply the fix, update the record.
+A large share of tier-one service desk tickets are mechanical: password resets, VPN issues, access requests, known application errors. In many IT organizations, this mechanical work accounts for a substantial fraction of the total ticket volume. Each of these tickets, when routed to a human analyst, consumes several minutes — read the ticket, look up the user, open the runbook, apply the fix, update the record.
 
 The pattern is tedious for analysts and slow for users. It is also unnecessary: the runbooks already exist, the ticketing system already has APIs, and the retrieval work is well inside the capability of current language models.
 
@@ -61,13 +61,13 @@ The pattern is tedious for analysts and slow for users. It is also unnecessary: 
 
 Three agents, with clear responsibilities.
 
-**Triage Orchestrator (user-facing).** Classifies the incoming ticket into one of a small set of categories, delegates to the appropriate specialist, returns the response to the user.
+**Triage Orchestrator (user-facing).** Classifies the incoming ticket into one of a small set of categories, delegates to the appropriate specialist, and returns the response to the user.
 
 **Runbook Specialist (connected agent).** Retrieves the matching runbook from the IT knowledge base (SharePoint) and returns resolution steps or a "not found" result.
 
 **Ticket Writer (connected agent).** Writes outcomes back to the ticketing system (ServiceNow, via the existing connector). Idempotent — retries do not create duplicates.
 
-The split is deliberate. The Runbook Specialist is read-only; it never writes. The Ticket Writer writes but does not reason about runbooks. The Orchestrator owns the conversation and the classification but has no direct connector access.
+The split is deliberate. The Runbook Specialist is read-only; it never writes. The Ticket Writer writes but does not reason about runbooks. The Orchestrator owns the conversation and the classification but has no direct access to connectors.
 
 ### Agent configurations
 
@@ -75,8 +75,8 @@ The split is deliberate. The Runbook Specialist is read-only; it never writes. T
 
 ```
 You are the IT service desk triage agent. When a user
-describes a technical problem, your job is to classify it
-and route it to the correct specialist.
+describes a technical problem; your job is to classify it
+And route it to the correct specialist.
 
 Classify the request into exactly one of:
   password_reset, vpn, hardware, application, other
@@ -176,7 +176,7 @@ The exact numbers depend on ticket mix and runbook quality, but the shape is con
 
 The value of the split is not the number of agents. It is the clarity of ownership. When the knowledge base team updates a runbook, only the Runbook Specialist is affected. When the ticketing team rotates a credential, only the Ticket Writer is affected. When the user experience changes, only the Orchestrator is affected. Each change is small and independent, which is what allows the overall system to be maintained over time.
 
-The extensions to consider once the base is working: add an autonomous trigger (a Dataverse row-change event when a new ticket is written to a queue table) so the Orchestrator runs against new tickets, not only when a user chats. Replace the ServiceNow connector with an MCP server if you want to share ticketing tools across multiple agents in your tenant. Add a Computer-Using Agent (CUA) specialist — now generally available in Copilot Studio (May 2026) — for the narrow set of cases where the fix requires clicking through a legacy admin UI without an API.
+The extensions to consider once the base is working: add an autonomous trigger (a Dataverse row-change event that fires when a new ticket is written to a queue table) so the Orchestrator runs on new tickets, not only when a user chats. Replace the ServiceNow connector with an MCP server to share ticketing tools across multiple agents in your tenant. Add a Computer-Using Agent (CUA) specialist — now generally available in Copilot Studio (May 2026) — for the narrow set of cases where the fix requires clicking through a legacy admin UI without an API.
 
 ---
 
@@ -186,7 +186,7 @@ The second scenario exercises a different orchestration pattern — parallel fan
 
 ### The problem
 
-Inbound vendor contracts typically pass through three gates before signature: legal review (indemnity, liability cap, governing law, dispute resolution), finance review (payment terms, auto-renewal clauses, price escalators), and risk review (data processing, subprocessors, breach notification, sub-contracting). Each review happens by email, serially, and the combined cycle frequently spans two weeks for contracts that are not particularly complex.
+Inbound vendor contracts typically pass through three gates before signature: legal review (indemnity, liability cap, governing law, dispute resolution), finance review (payment terms, auto-renewal clauses, price escalators), and risk review (data processing, subprocessors, breach notification, subcontracting). Each review is conducted by email serially, and the combined cycle frequently spans two weeks for contracts that are not particularly complex.
 
 The serial nature is the problem. Each reviewer waits for the previous one. Each reviewer reads the full contract, even though their concerns are narrow. The end state — signature — is delayed by the sum of the waits, not the sum of the work.
 
@@ -224,7 +224,7 @@ When a user uploads a contract:
      reference, the number of issues found, and a link to
      the full findings.
 
-Do not perform legal, finance, or risk analysis yourself.
+Do not perform legal, financial, or risk analysis yourself.
 Do not reformulate reviewer findings; present them verbatim.
 ```
 
@@ -260,7 +260,7 @@ Parallel fan-out / fan-in. The Intake Orchestrator fires three calls at once and
 
 ### Human-in-the-loop
 
-Copilot Studio agent flows support approval gates. In this design, the memo is delivered to a human reviewer (usually the deal owner or general counsel) who decides what to act on. The system does not redline the contract automatically; it surfaces issues and suggests redlines for human judgment.
+Copilot Studio agent flows support approval gates. In this design, the memo is delivered to a human reviewer (usually the deal owner or general counsel) who decides what to act on. The system does not automatically redline the contract; it surfaces issues and suggests redlines for human judgment.
 
 This is the right default for regulated workflows. The published case study from Dunaway — a firm that uses Copilot Studio for city-code research — is explicit that the value of the agent is surfacing accurate information quickly, with the compliance professional retaining decision authority.
 
@@ -282,7 +282,7 @@ The time from upload to memo is effectively the slowest of the three parallel br
 
 **Scoped knowledge.** Each Reviewer's knowledge source is its own policy library and nothing else. Cross-contamination — a Legal Reviewer surfacing finance concerns — produces noisy memos and erodes trust. The narrower the library, the sharper the output.
 
-**Structured outputs.** Every reviewer returns the same shape of issue. The aggregator does not have to parse three different prose styles.
+**Structured outputs.** Every reviewer returns the same issue shape. The aggregator does not have to parse three different prose styles.
 
 **Citations.** Every issue includes a citation back to the policy passage that grounds it. Reviewers without citations are not trusted by their human counterparts, and correctly so. (Bear in mind Part 1's caveat: citations are not always preserved when outputs pass back from a connected agent, so carry the citation explicitly as a field in the structured output rather than relying on the platform to thread it through.)
 
@@ -292,11 +292,11 @@ The time from upload to memo is effectively the slowest of the three parallel br
 
 **Partial failure.** If the Finance Reviewer times out, what does the memo say? Decide before you build: a "partial review" memo that notes the missing section is more useful than a failed run.
 
-**Policy drift.** The quality of the reviewers depends on policy currency. Assign ownership of each policy library to a named team and review quarterly.
+**Policy drift.** The quality of the reviewers depends on the currency of the policy. Assign ownership of each policy library to a named team and review quarterly.
 
 **Scope creep.** It is tempting, once the Legal Reviewer works, to add "intellectual property" and "export control" to its scope. Resist. New domains are new reviewers.
 
-Two published case studies anchor this shape. Dunaway transformed compliance workflows with a conversational agent that delivers instant, accurate regulatory answers from scoped knowledge — the scoping is what made the answers trustworthy. Signetic uses Power Platform and Copilot Studio across healthcare operational workflows, including review-style patterns that merge multiple specialist inputs into operational decisions. Neither describes exactly this pipeline, but the architectural pattern — bounded specialists over scoped knowledge, merged by an orchestrator — is what both rely on.
+Two published case studies anchor this shape. Dunaway transformed compliance workflows with a conversational agent that delivers instant, accurate regulatory answers from scoped knowledge — the scoping makes the answers trustworthy. Signetic uses Power Platform and Copilot Studio across healthcare operational workflows, including review-style patterns that merge multiple specialist inputs into operational decisions. Neither describes this pipeline exactly, but the architectural pattern — bounded specialists over scoped knowledge, merged by an orchestrator — is what both rely on.
 
 ---
 
@@ -308,7 +308,7 @@ The third scenario exercises an autonomous trigger — the system reacts to an e
 
 A field technician arrives at a customer site to service equipment and finds that a required part is missing from the van stock. The resolution today is a phone call. The technician calls dispatch. Dispatch puts the customer call on hold, checks inventory in SAP, calls a nearby warehouse, reschedules the appointment in Dynamics 365 Field Service, calls the customer back, and notifies the technician. The technician waits through all of it — often 30 to 45 minutes of paid idle time, per incident, multiplied by however many incidents happen that day.
 
-The problem has obvious parts that should be automatic: inventory lookup, rescheduling, customer notification. None of it is novel; the delay is the cost of humans doing mechanical work.
+The problem has obvious parts that should be automatic: inventory lookup, rescheduling, and customer notification. None of it is novel; the delay is the cost of humans doing mechanical work.
 
 ### The design
 
@@ -320,7 +320,7 @@ Four agents. Three are called on-demand; one is autonomous.
 
 **Scheduler Specialist (connected agent).** Proposes and books appointment slots in Dynamics 365 Field Service.
 
-**Notification Specialist (connected agent).** Sends SMS and email to the customer and a Teams message to the technician.
+**Notification Specialist (connected agent).** Sends an SMS and an email to the customer and a Teams message to the technician.
 
 The Dispatch Orchestrator does almost no reasoning about parts, scheduling, or customer preference. Its job is to call the three specialists in the correct order and handle the cases.
 
@@ -400,7 +400,7 @@ The field app emits a `missing_part` event at 10:15 AM, written as a row to the 
 4. The technician receives a Teams message; the customer receives an SMS and an email: "Your technician has been delayed 75 minutes to retrieve a part. New estimated arrival: 11:30 AM."
 5. Everything above happens in under a minute.
 
-If inventory had been unavailable for two days, step three would have called the Scheduler Specialist instead, which would have proposed a slot and booked it in Dynamics 365 Field Service, followed by the notifications.
+If inventory had been unavailable for two days, step three would have called the Scheduler Specialist instead, who would have proposed a slot and booked it in Dynamics 365 Field Service, followed by the notifications.
 
 ### What makes the autonomous trigger the right shape
 
@@ -408,13 +408,13 @@ Three properties justify autonomy here:
 
 1. **The signal is clean.** The field app writes a well-defined row with a known schema. There is no ambiguity to clarify with a human.
 2. **The reasoning is bounded.** The decision tree is small. Nothing about the workflow requires open-ended judgment.
-3. **The latency matters.** A human-in-the-loop step would defeat the point. The whole value is removing the 30-minute phone call.
+3. **The latency matters.** A human-in-the-loop step would defeat the point. The whole value is in removing the 30-minute phone call.
 
-Where any of those is not true, a conversational trigger with a human in the loop is the better shape.
+Where any of those is not true, a conversational trigger with a human in the loop is in a better shape.
 
 ### A trigger-security note
 
-Autonomous triggers run with the agent maker's credentials, and the payload that wakes the agent is untrusted input that lands in the agent's context. This is precisely the surface that CVE-2026-21520 exploited: an indirect prompt injection placed in a SharePoint form field was concatenated into a Copilot Studio agent's instructions, which then exfiltrated data through a legitimate Outlook action (Microsoft patched it in January 2026; it was publicly disclosed in April 2026). For a `FieldIncident` row, the practical lessons are the same as Microsoft's autonomous-agent guidance: validate required fields before acting, narrow what activates the trigger, and never let free-text payload fields override the agent's instructions.
+Autonomous triggers run with the agent maker's credentials, and the payload that wakes the agent is untrusted input that is then added to the agent's context. This is precisely the surface that CVE-2026-21520 exploited: an indirect prompt injection inserted into a SharePoint form field was concatenated into a Copilot Studio agent's instructions, which then exfiltrated data via a legitimate Outlook action (Microsoft patched it in January 2026; it was publicly disclosed in April 2026). For a `FieldIncident` row, the practical lessons are the same as Microsoft's autonomous-agent guidance: validate required fields before acting, narrow the conditions that trigger the action, and never let free-text payload fields override the agent's instructions.
 
 ### Real anchor points
 
@@ -424,7 +424,7 @@ Several published Copilot Studio case studies touch adjacent patterns. The Holla
 
 Microsoft's guidance on autonomous agents is explicit about the safeguards that matter, and they apply directly here:
 
-- **Least-privileged access.** The Inventory Specialist should have read-only SAP access. The Scheduler Specialist should have write access only to the specific entities it books. Neither has broader scope. Per-agent Entra agent identities — now auto-creatable in Copilot Studio *(preview)* — make this scoping concrete.
+- **Least-privileged access.** The Inventory Specialist should have read-only access to SAP. The Scheduler Specialist should have write access only to the specific entities it books. Neither has broader scope. Per-agent Entra agent identities — now auto-creatable in Copilot Studio *(preview)* — make this scoping concrete.
 - **Input validation.** The field app's row write is authenticated; the Orchestrator validates required fields before acting, and treats free-text fields as data, not instructions.
 - **Audit logging.** Every decision and every action is logged to Purview. Field Service dispatch is a regulated area in some industries (medical device servicing, for example), and auditable logs are non-negotiable there.
 - **Human escalation path.** If the Orchestrator cannot resolve the event — for example, the customer has no contact method on file — it escalates to a human dispatcher rather than failing silently.
@@ -439,11 +439,11 @@ The fourth and final scenario exercises the hierarchical pattern: a long-running
 
 Between a candidate accepting an offer and their first day, a long list of things must happen: HR creates the employment record, legal sends contracts for signature, IT provisions the Entra account and assigns licenses, procurement orders hardware, facilities allocates a desk and issues a badge request, the hiring manager drafts a 30-day plan and sets up 1:1s, the new hire is added to Teams channels and mailing lists.
 
-None of this is intellectually hard. It is coordination work across four or five systems and three or four departments, and it fails often. In many organizations a meaningful share of new hires arrive on day one with at least one blocker — a missing laptop, no email account, no desk assignment. Each blocker creates friction that is remembered long after it is resolved.
+None of this is intellectually hard. It is coordination work across four or five systems and three or four departments, and it often fails. In many organizations, a meaningful share of new hires arrive on day one with at least one blocker — a missing laptop, no email account, no desk assignment. Each blocker creates friction that is remembered long after it is resolved.
 
 ### The design
 
-One supervisor agent, four specialists, one shared state store. All live in Copilot Studio, using connected agents and autonomous triggers.
+One supervisor agent, four specialists, and one shared state store. All live in Copilot Studio, using connected agents and autonomous triggers.
 
 **Onboarding Supervisor (autonomous).** Owns the case from offer acceptance to day 30. Orchestrates the specialists. Escalates when any step is overdue.
 
@@ -453,7 +453,7 @@ One supervisor agent, four specialists, one shared state store. All live in Copi
 
 **Facilities Specialist (connected agent).** Allocates a desk and issues a badge request.
 
-**Manager Specialist (connected agent).** Drafts the 30-day plan from a template, schedules 1:1s, adds the new hire to Teams channels.
+**Manager Specialist (connected agent).** Drafts the 30-day plan from a template, schedules 1:1s, and adds the new hire to Teams channels.
 
 **Shared state.** A Dataverse table, `OnboardingCase`, with one row per new hire and columns for each step's status, timestamps, and artifact links.
 
@@ -521,16 +521,16 @@ Other specialists follow the same shape — each scoped to its own domain, each 
 
 ### Orchestration pattern
 
-Hierarchical. The Supervisor runs autonomously, triggered by Dataverse row changes. It invokes specialists in a documented order with some parallelism (IT and Facilities can happen concurrently). Each specialist's work is bounded, owned, and auditable. Agent flows provide the mechanism for the Supervisor. Triggers on Dataverse table changes are a first-class feature.
+Hierarchical. The Supervisor runs autonomously, triggered by changes to Dataverse rows. It invokes specialists in a documented order with some parallelism (IT and Facilities can happen concurrently). Each specialist's work is bounded, owned, and auditable. Agent flows provide the mechanism for the Supervisor. Triggers on Dataverse table changes are a first-class feature.
 
 ### Expected runtime behavior
 
 Day 0: HR enters a new row in `OnboardingCase` with `status = "offer_accepted"`.
 
-1. The Supervisor wakes, calls HR Specialist. HR Specialist creates the Workday record and initiates the DocuSign flow. `hr_status` moves to `in_progress`, then to `complete` when the contract is signed.
+1. The Supervisor wakes and calls the HR Specialist. HR Specialist creates the Workday record and initiates the DocuSign flow. `hr_status` moves to `in_progress`, then to `complete` when the contract is signed.
 2. On HR completion, the Supervisor calls IT and Facilities in parallel. IT provisions Entra, licenses, and hardware. Facilities allocates a desk and issues a badge request.
-3. On IT completion, the Supervisor calls the Manager Specialist, which schedules 1:1s in the hiring manager's calendar, generates a 30-day plan draft in Word, saves it to the manager's OneDrive, and adds the new hire to the appropriate Teams channels.
-4. On day 1, the `overall_status` column reflects the readiness of the new hire. If any step is overdue, the HR coordinator Teams channel has been notified.
+3. On IT completion, the Supervisor calls the Manager Specialist, who schedules 1:1s in the hiring manager's calendar, generates a 30-day plan draft in Word, saves it to the manager's OneDrive, and adds the new hire to the appropriate Teams channels.
+4. On day 1, the `overall_status` column reflects the readiness of the new hire. If any step is overdue, the HR coordinator's Teams channel has been notified.
 
 ### Expected outcomes
 
@@ -572,7 +572,7 @@ A practical inventory answers three questions for every proposed tool:
 
 ### Microsoft-published MCP servers
 
-- **Microsoft Learn MCP server.** Exposes Microsoft documentation as searchable tools. Useful in internal developer agents and customer-support agents that need current Microsoft product guidance.
+- **Microsoft Learn MCP server.** Exposes Microsoft documentation as searchable tools. Useful for internal developer agents and customer support agents who need up-to-date Microsoft product guidance.
 - **Microsoft Dataverse MCP** — platform-level surfaces that expose Dataverse queries to agents, documented in the Microsoft Copilot Studio sample repositories.
 - **Azure MCP servers** from the Microsoft Azure organization on GitHub, exposing administrative surfaces for Azure resources.
 
@@ -582,7 +582,7 @@ The Microsoft Copilot Acceleration Team publishes working samples in the Copilot
 
 - **GitHub MCP server** — official server from GitHub for repository, issue, and pull-request operations.
 - **Atlassian MCP servers** — for Jira and Confluence.
-- **Notion, Linear, Asana** — community and vendor-provided servers for common SaaS work.
+- **Notion, Linear, Asana** — community- and vendor-provided servers for common SaaS work.
 
 For many enterprises, these third-party servers are the starting point because the backend APIs are stable and the servers are maintained by the vendors.
 
@@ -617,7 +617,7 @@ A few principles apply to every server in the inventory.
 
 **Structured outputs.** Tools should return structured data with explicit schemas. The MCP protocol supports this natively; use it. An agent parsing prose is a fragile agent.
 
-**Tool descriptions as product.** The description is what the orchestrator reads to decide whether to call a tool. Treat tool descriptions like API documentation — specific, accurate, current. Include: what the tool does, when to use it, what it returns, and any side effects.
+**Tool descriptions as products.** The description is what the orchestrator reads to decide whether to call a tool. Treat tool descriptions like API documentation — specific, accurate, and up to date. Include: what the tool does, when to use it, what it returns, and any side effects.
 
 **Authentication.** OAuth 2.0 with Entra ID is the default for enterprise tenants. API keys are acceptable for internal network-scoped servers; the connection manager in Copilot Studio encrypts them at rest. Unauthenticated MCP endpoints should not exist in a business tenant. (Because MCP connectivity rides on Power Platform connectors, connector-level data policies also govern MCP access.)
 
@@ -641,7 +641,7 @@ If an organization is beginning from zero, the order that tends to work:
 3. Adopt the vendor-provided servers (GitHub, Atlassian, etc.) for domains you already use.
 4. Expand to the rest of the inventory as agent demand justifies.
 
-Trying to build all ten servers at once produces an inventory with no consumers. Each server should exist because a specific agent needs it.
+Trying to build all 10 servers at once results in an inventory with no consumers. Each server should exist because a specific agent needs it.
 
 ### What to resist
 
@@ -659,19 +659,19 @@ The previous sections have covered the architecture, the scenarios, and the inve
 
 ### Anti-pattern 1 — The god agent
 
-A single agent acquires, over months, fifty tools, nine knowledge sources, and an instruction block that bumps up against the 8,000-character limit and that nobody can fully read in one sitting. Orchestration quality degrades: the agent picks wrong tools, cites wrong documents, and occasionally refuses valid requests. The team adds more rules to the instructions to patch the symptoms.
+A single agent acquires, over months, fifty tools, nine knowledge sources, and an instruction block that bumps up against the 8,000-character limit and that nobody can fully read in one sitting. Orchestration quality degrades: the agent selects the wrong tools, cites the wrong documents, and occasionally rejects valid requests. The team adds more rules to the instructions to patch the symptoms.
 
-**Why it happens.** Each addition seemed small at the time. Ownership was never explicit. Nobody had authority to say no.
+**Why it happens.** Each addition seemed small at the time. Ownership was never explicit. Nobody had the authority to say no.
 
-**Correction.** Split by domain into specialists. Apply the criteria in Part 1: tool count approaching 30 to 40, instruction length against the 8,000-character ceiling, number of owners, SLA variance. The first split is the hardest; subsequent ones are routine.
+**Correction.** Split by domain into specialists. Apply the criteria in Part 1: tool count approaching 30-40, instruction length relative to the 8,000-character ceiling, number of owners, and SLA variance. The first split is the hardest; subsequent ones are routine.
 
 **Lesson.** One agent, one domain, one owner. Enforce it at design review.
 
 ### Anti-pattern 2 — Prose contracts between agents
 
-The Orchestrator calls the Ticket Writer, which returns "I created ticket INC-12345 for you." The Orchestrator then tries to extract the ticket ID with string matching. For six months it works. Then someone rewrites the Ticket Writer's output to be more conversational, and every downstream integration breaks quietly.
+The Orchestrator calls the Ticket Writer, which returns "I created ticket INC-12345 for you." The Orchestrator then tries to extract the ticket ID with string matching. For six months, it works. Then someone rewrites the Ticket Writer's output to be more conversational, and every downstream integration breaks quietly.
 
-**Correction.** Every called agent returns structured data. Copilot Studio supports this natively; connected agents and A2A agents both allow structured outputs. Make this mandatory at the design-review stage.
+**Correction.** Every called agent returns structured data. Copilot Studio supports this natively; both connected and A2A agents allow structured outputs. Make this mandatory at the design-review stage.
 
 **Lesson.** Structured in, structured out. Prose is for users, not for agents.
 
@@ -695,41 +695,41 @@ Every MCP server, every connector, and every agent uses the same service princip
 
 A multi-step orchestration relies on conversation history to remember where it is. Conversation history truncates. The orchestration loses its place, and the Orchestrator either restarts the process (producing duplicates) or abandons it (producing incomplete work).
 
-**Correction.** Persist state in Dataverse. The `OnboardingCase` pattern from scenario four is the generalization: one row per case, columns for each step's status, with row-change events driving the Supervisor. Every specialist writes to its own columns.
+**Correction.** Persist state in Dataverse. The `OnboardingCase` pattern from scenario four is the generalization: one row per case, columns for each step's status, with row-change events driving the Supervisor. Every specialist writes in their own columns.
 
 **Lesson.** If the process outlives the conversation, so should the state.
 
 ### Anti-pattern 6 — Knowledge source overload
 
-An agent is attached to twelve SharePoint sites, six uploaded files, two website URLs, and a Graph connector. Retrieval produces irrelevant passages. Cited answers are confidently wrong. Adding more sources makes it worse, not better. (Generative orchestration also caps SharePoint knowledge at 25 site URLs per agent, which is a hard reminder that more is not better.)
+An agent is attached to 12 SharePoint sites, 6 uploaded files, 2 website URLs, and a Graph connector. Retrieval produces irrelevant passages. Cited answers are confidently wrong. Adding more sources makes it worse, not better. (Generative orchestration also caps SharePoint knowledge at 25 site URLs per agent, which is a hard reminder that more is not better.)
 
-**Correction.** Scope knowledge tightly. One domain, one library. The case studies that cite retrieval quality as the winning factor — Dunaway, ABN AMRO, La Trobe University — all scoped narrowly. Where a second domain matters, that is usually a second specialist with its own knowledge.
+**Correction.** Scope knowledge tightly. One domain, one library. The case studies that cite retrieval quality as the winning factor — Dunaway, ABN AMRO, La Trobe University — all scoped narrowly. Where a second domain matters, that is usually a second specialist with their own knowledge.
 
 **Lesson.** Retrieval quality is a function of signal-to-noise, not of source count.
 
 ### Anti-pattern 7 — Circular delegation
 
-Agent A calls Agent B, which calls Agent A, which calls Agent B. The orchestrator executes until a timeout or token exhaustion. The bill arrives.
+Agent A calls Agent B, who calls Agent A, who calls Agent B. The orchestrator executes until a timeout or token exhaustion. The bill arrives.
 
-**Correction.** Specialists never call back into their parents. If a specialist appears to need something the parent has, the parent should pass it down as an input. (Copilot Studio's one-level nesting rule — an agent with connected agents can't itself be a connected agent — limits but does not eliminate the risk.)
+**Correction.** Specialists never call their parents back. If a specialist appears to need something the parent has, the parent should pass it down as an input. (Copilot Studio's one-level nesting rule — an agent with connected agents can't itself be a connected agent — limits but does not eliminate the risk.)
 
 **Lesson.** Delegation is a tree, not a graph. Trees have no cycles.
 
 ### Anti-pattern 8 — Conversational autonomy
 
-An autonomous agent is built as a chatbot that also runs on a schedule. The chatbot surface and the autonomous surface have different failure modes, and the team maintains both. When a user interrupts the autonomous run through chat, state becomes inconsistent.
+An autonomous agent is built as a chatbot that also runs on a schedule. The chatbot surface and the autonomous surface have different failure modes, and the team maintains both. When a user interrupts the autonomous run through chat, the state becomes inconsistent.
 
-**Correction.** Autonomous agents have no chat surface. If users want visibility, build a report on top of the state store. Chat is a separate agent, if it is needed at all.
+**Correction.** Autonomous agents have no chat surface. If users want visibility, build a report on top of the state store. Chat is a separate agent if it is needed at all.
 
 **Lesson.** Autonomy is a different product shape from conversation. Do not combine them in one agent.
 
 ### Anti-pattern 9 — Ignoring the security posture of inputs and called agents
 
-Two failure modes share one root cause: trusting content the agent did not author. In the first, an A2A agent from a partner is added to the tool list; six months later, a vulnerability in the partner's agent lets its conversation context leak through its outputs. In the second — the one Microsoft assigned a CVE to — an attacker placed instructions in a SharePoint form field that an autonomous agent ingested as authoritative context. Microsoft assigned **CVE-2026-21520** (CVSS 7.5) to that indirect prompt-injection issue, patched it in January 2026, and it was publicly disclosed in April 2026; notably, the injected instruction exfiltrated data through a *legitimate* Outlook action, so DLP never fired. Both cases prove the same point: every input an agent trusts — a partner agent's output, a form field, a retrieved document — expands the attack surface.
+Two failure modes share one root cause: trusting content the agent did not author. In the first, an A2A agent from a partner is added to the tool list; six months later, a vulnerability in the partner's agent lets its conversation context leak through its outputs. In the second — the one Microsoft assigned a CVE to — an attacker placed instructions in a SharePoint form field that an autonomous agent ingested as authoritative context. Microsoft assigned **CVE-2026-21520** (CVSS 7.5) to that indirect prompt-injection issue, patched it in January 2026, and publicly disclosed it in April 2026. Notably, the injected instruction exfiltrated data through a *legitimate* Outlook action, so DLP never fired. Both cases prove the same point: every input an agent trusts — a partner agent's output, a form field, a retrieved document — expands the attack surface.
 
-**Correction.** Treat external agents as supply-chain dependencies: review their security posture, scope their access narrowly, log their calls, rotate credentials. Treat trigger and retrieval inputs as untrusted: validate payloads, and never let free-text content override the agent's instructions.
+**Correction.** Treat external agents as supply chain dependencies: review their security posture, scope their access narrowly, log their calls, and rotate credentials. Treat trigger and retrieval inputs as untrusted: validate payloads, and never let free-text content override the agent's instructions.
 
-**Lesson.** Defense in depth is necessary; agent composition is not safe by default. The LLM cannot reliably tell trusted instructions from untrusted data — so the boundary has to be enforced around it.
+**Lesson:** Defense-in-depth is necessary; agent composition is not safe by default. The LLM cannot reliably tell trusted instructions from untrusted data — so the boundary has to be enforced around it.
 
 ### Anti-pattern 10 — Measuring the wrong thing
 
@@ -747,7 +747,7 @@ Pulling the corrections together:
 - **Contracts.** Structured inputs and outputs. Explicit error contracts. Idempotency keys on writes.
 - **Security.** Scoped credentials. Entra Agent ID per agent. Validate untrusted inputs. Audit everything. Review external agents like you review external vendors.
 - **Operations.** State in Dataverse. Outcome metrics, not volume metrics. Ownership per agent, reviewed quarterly.
-- **Standards.** MCP for tools. A2A for agents across platforms (GA since April 2026). Connected agents for Copilot Studio–native specialists. Child agents for sub-routines inside a parent.
+- **Standards.** MCP for tools. A2A for agents across platforms (GA since April 2026). Connected agents for Copilot Studio–native specialists. Child agents for subroutines inside a parent.
 
 ---
 
@@ -771,17 +771,17 @@ Nothing in this series required features that do not exist. The gap between "pos
 
 If you take five things away from this article, they are these.
 
-First, **the four patterns are not abstractions; they have concrete shapes you can copy**. Router-worker is the IT triage scenario: classification, delegation, structured returns. Parallel fan-out is the contract review scenario: independent specialists with scoped knowledge, merged outputs. Router-worker with an autonomous trigger is the field service scenario: a clean event, a bounded decision tree, no human in the loop. Hierarchical with persistent state is the employee onboarding scenario: a supervisor that reads from a Dataverse table, specialists that update their own columns, SLA monitoring that escalates when work is stuck.
+First, **the four patterns are not abstractions; they have concrete shapes you can copy**. Router-worker is the IT triage scenario: classification, delegation, structured returns. Parallel fan-out is the contract review scenario: independent specialists with scoped knowledge, merged outputs. Router-worker with an autonomous trigger is the field service scenario: a clean event, a bounded decision tree, no human in the loop. Hierarchical with persistent state is the employee onboarding scenario: a supervisor that reads from a Dataverse table, specialists that update their own columns, and SLA monitoring that escalates when work is stuck.
 
-Second, **state is the architecture for anything long-running**. Dataverse is the right place for it. Conversation history is not. Every hierarchical and event-driven design in this article depends on a state table whose columns are the contract between the agents. Model it carelessly and the whole system is fragile; model it well and the supervisor becomes trivial.
+Second, **state is the architecture for anything long-running**. Dataverse is the right place for it. Conversation history is not. Every hierarchical and event-driven design in this article depends on a state table whose columns are the contract between the agents. Model it carelessly, and the whole system is fragile; model it well, and the supervisor becomes trivial.
 
-Third, **MCP is a platform decision, not an agent decision**. The inventory in section 6 is a starting point because the question of which server owns which domain has to be answered once, by the platform team, with the consuming agents in mind. Mega-servers and one-off wrappers both recreate the problems MCP exists to solve. Domain ownership and read/write separation are the load-bearing rules.
+Third, **MCP is a platform decision, not an agent decision**. The inventory in section 6 is a starting point because the question of which server owns which domain must be answered once by the platform team, with the consuming agents in mind. Mega-servers and one-off wrappers both recreate the problems MCP exists to solve. Domain ownership and read/write separation are the load-bearing rules.
 
 Fourth, **the ten anti-patterns are observations, not predictions**. Each reflects a failure mode teams hit in shipping deployments. The god agent, prose contracts, silent retries, unscoped credentials, no state store, knowledge overload, circular delegation, conversational autonomy, ignored security posture, and measuring volume instead of outcomes — these are the failure modes a design review should explicitly check for.
 
-Fifth, **the measure of a multi-agent system is not how clever any single agent is — it is how boring each agent is able to become**. Boring agents — narrow, owned, tested, well-described — compose into systems that deliver outcomes reliably. The four scenarios above each succeed because their specialists do one thing, do it well, and stop. The inventory and the anti-patterns exist to keep them that way.
+Fifth, **the measure of a multi-agent system is not how clever any single agent is — it is how boring each agent can become**. Boring agents — narrow, owned, tested, well-described — compose into systems that deliver outcomes reliably. The four scenarios above each succeed because their specialists do one thing, do it well, and stop. The inventory and the anti-patterns exist to keep them that way.
 
-Multi-agent orchestration is not a novelty. It is the shape enterprise AI takes when it grows beyond a single use case. Copilot Studio is one of the platforms where that shape is now routine to build, with two open standards (MCP and A2A) that keep it composable and a governance surface that keeps it safe to operate. Part 1 settled the architectural decisions; Part 2 worked through what they look like executed. The rest is the discipline of doing it well — and that, as it turns out, is the part that takes practice.
+Multi-agent orchestration is not a novelty. It is the shape enterprise AI takes when it grows beyond a single use case. Copilot Studio is one of the platforms where that shape is now routine to build, with two open standards (MCP and A2A) that keep it composable and a governance surface that keeps it safe to operate. Part 1 settled the architectural decisions; Part 2 worked through what they look like when executed. The rest is the discipline of doing it well — and that, as it turns out, is the part that takes practice.
 
 ## Sources
 
