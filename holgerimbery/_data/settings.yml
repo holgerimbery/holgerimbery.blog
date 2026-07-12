@@ -37,12 +37,12 @@ menu_settings:
       url: "https://instruo365.de"
 #    - title: "mate Project"
 #      url: "https://www.mate365.app"
-    - title: "Legal"
-      submenu:
-      - title: "Impressum"
-        url: "/impressum/"
-      - title: "Privacy"
-        url: "/privacy-policy/"
+#    - title: "Legal"
+#      submenu:
+    - title: "Impressum"
+      url: "/impressum/"
+#      - title: "Privacy"
+#        url: "/privacy-policy/"
 
 # Call to action button
 cta_button:
