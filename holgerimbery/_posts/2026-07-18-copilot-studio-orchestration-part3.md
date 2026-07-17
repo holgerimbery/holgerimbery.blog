@@ -22,6 +22,9 @@ toc: true
 > **Status, stated plainly.** The new experience is in **public preview**. It is available in production environments worldwide and Microsoft's own post says it is "ready to create agents for production use," but the same post carries an explicit correction: the features are **public preview**, not generally available. The new and classic experiences **coexist** — you opt into the new one with "Try now" on the Copilot Studio homepage, and your classic agents keep working. Treat everything in this article as preview unless noted, and re-check status before committing a production design to it.
 
 {: .q-left }
+> **Update since Parts 1 & 2 were published.** A few developments since those articles went out, re-verified against Microsoft Learn as of mid-July 2026. The **Windows 365 for Agents MCP server** is now **generally available**, giving an agent full operational control of a Windows 365 cloud PC — desktop interaction, browser automation, and semantic UI inspection — which extends the Computer Use / computer-using-agent thread from Part 2's IT-triage scenario. The **classic experience remains fully supported and nothing in the rebuild is deprecated**, so Parts 1 and 2 stay the accurate reference for classic agents. And the two time-sensitive facts those articles turn on still hold: **A2A reached general availability in April 2026**, and **CVE-2026-21520 ("ShareLeak," CVSS 7.5)** remains the relevant indirect-prompt-injection disclosure — patched January 2026, publicly disclosed April 2026 — with no newer CVE superseding it.
+
+{: .q-left }
 > **Why read this**
 Read this if you read Parts 1 and 2, opened Copilot Studio, and found a different product than the one those articles described — four tabs instead of nine, "Skills" where you expected child agents, a "Memory" surface that wasn't there before, and a chat that references markdown files. Nothing in Parts 1 and 2 is wrong for the classic experience, but the vocabulary moved. This article reconciles the two: it maps the classic five surfaces onto the new four-plus-Memory model, explains what "Skills" now means (and the naming trap that comes with it), and shows that the four orchestration patterns survive the change intact. Read it before you start a new build in the new experience, so you pick the right surface for each piece from the start.
 
@@ -39,7 +42,7 @@ The most visible change is the reduction from nine configuration tabs to four, w
 
 1. **Skills** — define behaviors through structured instructions, authored as markdown and loaded on demand. (This is new; see §3.)
 2. **Tools** — connect the agent to external systems and actions: connectors, Power Automate flows, MCP servers, and now Work IQ MCP tools.
-3. **Knowledge** — provide trusted context to guide decisions: SharePoint, Dataverse, files, Graph connectors, and so on.
+3. **Knowledge** — provide trusted context to guide decisions: SharePoint, Dataverse, files, Graph connectors, and so on. In the new experience, **Microsoft IQ** sources plug in here too — **Work IQ** (Microsoft 365 org data), **Fabric IQ** (Fabric business data and analytics), and **Foundry IQ** *(preview)*, which grounds the agent on enterprise knowledge bases indexed by Azure AI Search in Azure AI Foundry. (See §5.)
 4. **Connected agents** — collaborate across agents to complete work (Copilot Studio agents, plus external agents over A2A, and Microsoft Foundry / Fabric / M365 Agents SDK agents in preview).
 
 Plus, in preview, a fifth surface:
@@ -67,7 +70,7 @@ In the rebuilt experience, **Skills** are *"reusable instructions in markdown th
 
 ### What this actually is
 
-A skill in this sense is the **`SKILL.md` pattern**: a markdown file with light frontmatter (a `name` and a `description` of when to use it) and a markdown body of instructions, examples, and guidelines. The orchestrator reads the descriptions, and **loads the full skill body only when a task needs it** — progressive disclosure, rather than stuffing every rule into one always-on instruction block. This is the same convention GitHub Copilot and Claude Code use for agent skills, and Copilot Studio now speaks it natively, including importing skills authored for those tools.
+A skill in this sense is the **`SKILL.md` pattern**: a markdown file with light frontmatter (a `name` and a `description` of when to use it) and a markdown body of instructions, examples, and guidelines. The orchestrator reads the descriptions, and **loads the full skill body only when a task needs it** — progressive disclosure, rather than stuffing every rule into one always-on instruction block. This is the same convention GitHub Copilot and Claude Code use for agent skills, and Copilot Studio now speaks it natively, including importing skills authored for those tools. You author a skill once, add it to multiple agents, and can export it as a Markdown file or package to share — the reusable-library model those coding tools already use.
 
 ### Why it matters for everything in Parts 1 and 2
 
@@ -101,6 +104,8 @@ For readers of Part 2, this matters in two concrete ways. First, the **sequentia
 
 The harness-and-CLI framing is deliberate. It is the same shape as a modern coding agent — which is also why importing GitHub Copilot and Claude Code skills works at all: the runtime is built to consume that ecosystem's conventions.
 
+On the model side, the new experience lets you pick the orchestrator's primary model directly: **Claude Sonnet 5** and **GPT-5.5 Chat** are now generally available choices, so the instruction-adherence gains come from both the new harness and a current-generation model underneath it.
+
 ## 5. Memory and Microsoft IQ
 
 The new **Memory** surface (preview) — *"remember interactions, workflows and context for improved results"* — is the agent-facing edge of a larger platform layer.
@@ -113,11 +118,11 @@ On Microsoft Learn, **Work IQ (preview)** is described as *"the intelligence lay
 - **Memory** — *"builds persistent understanding of how people and teams work, enabling Agent 365–managed agents to stay aligned to priorities and remain consistent across tasks, apps, and sessions."* This is the layer behind the agent **Memory** surface.
 - **Inference** — brings together models, skills, and tools so agents can reason and act, using Work IQ MCP tools, under the Agent 365 control plane.
 
-You add Work IQ to an agent as **Work IQ MCP tools** (Tools → Add tool → Model Context Protocol → e.g. *Work IQ Mail*, *Work IQ Calendar*, *Work IQ Teams*). It requires a Microsoft 365 Copilot license; a separate **Work IQ API** with usage-based billing became available **June 16, 2026**. Governance runs through Agent 365 and the Microsoft 365 admin center (admins allow or block servers tenant-wide), with tool-call tracing in Microsoft Defender Advanced Hunting.
+You add Work IQ to an agent as **Work IQ MCP tools** (Tools → Add tool → Model Context Protocol → e.g. *Work IQ Mail*, *Work IQ Calendar*, *Work IQ Teams*). It requires a Microsoft 365 Copilot license. Work IQ in Copilot Studio is **preview-only today, with general availability "coming soon"**; Microsoft's documentation states that once Work IQ reaches GA, the **Work IQ API transitions to a usage-based (consumptive) billing model** — so that billing is not yet in effect. Governance runs through Agent 365 and the Microsoft 365 admin center (admins allow or block servers tenant-wide), with tool-call tracing in Microsoft Defender Advanced Hunting.
 
 ### Microsoft IQ — the umbrella
 
-Work IQ is one of three "IQ" layers under the broader **Microsoft IQ** banner introduced around Build 2026: **Work IQ** (Microsoft 365 work context), **Foundry IQ** (the knowledge layer on the Foundry side), and **Web IQ** (web context). Both Copilot Studio and Foundry draw on the same Microsoft IQ layer, which is part of what makes the convergence in §7 possible.
+Work IQ is one of three "IQ" layers under the broader **Microsoft IQ** banner introduced around Build 2026. In the new Copilot Studio experience, Microsoft Learn documents Microsoft IQ as a context layer with **three sources**: **Work IQ** (Microsoft 365 org data — emails, chats, files, calendar, people — routed through the Agent 365 MCP gateway), **Fabric IQ** (business data and analytics in Microsoft Fabric), and **Foundry IQ** *(preview)*, which grounds the agent on enterprise knowledge bases indexed by Azure AI Search in Azure AI Foundry. Turning on a Microsoft IQ source gives the agent both read access (knowledge) and actions (tools), always within the signed-in user's permissions. Both Copilot Studio and Foundry draw on the same Microsoft IQ layer, which is part of what makes the convergence in §7 possible. (Some Build 2026 community write-ups group the family differently — e.g. Work IQ / Foundry IQ / Web IQ; the Copilot Studio documentation itself lists Work IQ / Fabric IQ / Foundry IQ.)
 
 ### How Memory changes the hierarchical pattern
 
@@ -152,7 +157,7 @@ The strategic frame from Build 2026 is that **Microsoft Foundry and Copilot Stud
 
 For a platform team, the takeaway is the one Part 1 hinted at and this release makes literal: **standardize on the protocol and the knowledge layer, not the build tool.** Let pro-code teams use Foundry and low-code teams use Copilot Studio, knowing the agents interoperate over A2A and share Microsoft IQ. The multi-agent architecture you designed in Parts 1 and 2 does not have to be re-decided per tool; it is decided once at the protocol and knowledge layer.
 
-> A sourcing note: the new-experience surfaces, Skills-as-markdown, the new orchestrator, the workflow designer, and Work IQ/Memory are documented on first-party Microsoft sources (the Copilot Studio Blog and Microsoft Learn). The broader Foundry⇄Copilot Studio convergence detail — Foundry IQ, Web IQ, and the Microsoft Agent Framework's role — is drawn from Build 2026 engineering analysis citing Microsoft DevBlogs and Learn; treat the specific convergence mechanics as directionally confirmed and verify the parts that matter to your design.
+> A sourcing note: the new-experience surfaces, Skills-as-markdown, the new orchestrator, the workflow designer, and Work IQ/Memory are documented on first-party Microsoft sources (the Copilot Studio Blog and Microsoft Learn). The broader Foundry⇄Copilot Studio convergence detail — Foundry IQ, Web IQ, and the Microsoft Agent Framework's role — is drawn from Build 2026 engineering analysis citing Microsoft DevBlogs and Learn; treat the specific convergence mechanics as directionally confirmed and verify the parts that matter to your design. Since first drafting, two of those pieces firmed up: **Microsoft IQ and Foundry IQ now have their own Microsoft Learn pages** (*Microsoft IQ overview for agents (preview)* and *Connect to Foundry IQ from an agent (preview)*), which document Microsoft IQ's sources as **Work IQ, Fabric IQ, and Foundry IQ** — so the **Web IQ** grouping and the **Microsoft Agent Framework's** exact role are the parts that still rest on the community analysis.
 
 ## 8. What to do now
 
@@ -171,8 +176,9 @@ Parts 1 and 2 settled the architecture of multi-agent systems in Copilot Studio 
 ## Sources
 
 - Microsoft Copilot Studio Blog — [Meet the new Copilot Studio: rebuilt for more complex, multi-step work](https://techcommunity.microsoft.com/blog/copilot-studio-blog/meet-the-new-copilot-studio-rebuilt-for-more-complex-multi-step-work/4526488) (June 9, 2026) — four-surface model, nine-to-four tabs, new agentic orchestrator, Skills as markdown (import GitHub Copilot / Claude Code skills), new workflow designer with agent nodes and MCP servers; **public preview**, coexisting with classic
-- Microsoft Learn — [Work IQ MCP overview (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-work-iq) — Work IQ's Data / Memory / Inference layers, Work IQ MCP tools, Agent 365 governance, Work IQ API (June 16, 2026)
-- Microsoft Learn — [What's new in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new) — workflow nodes (Microsoft 365 Copilot node, prompt node, classification), Computer Use GA, A2A GA
+- Microsoft Learn — [Work IQ MCP overview (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-work-iq) — Work IQ's Data / Memory / Inference layers, Work IQ MCP tools, Agent 365 governance; Work IQ is preview with GA "coming soon" and usage-based Work IQ API billing taking effect at GA
+- Microsoft Learn — [Microsoft IQ overview for agents (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/use-microsoft-iq) — Microsoft IQ as a context layer with three sources (Work IQ, Fabric IQ, Foundry IQ *(preview)*); see also *Connect to Foundry IQ from an agent (preview)* and *Turn on Microsoft IQ for an agent (preview)*
+- Microsoft Learn — [What's new in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new) — the new agent experience as "Production-ready preview" (June 2026); **Windows 365 for Agents MCP server (GA)**; **Foundry IQ** knowledge source *(preview)*; **Claude Sonnet 5** / **GPT-5.5 Chat** primary models (GA); workflow nodes (Microsoft 365 Copilot node, prompt node, classification); Computer Use GA (May 2026); A2A GA (April 2026)
 - Microsoft Copilot Studio Blog — [What's new in Copilot Studio: May 2026](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/) — redesigned workflows experience, agent nodes, AI-powered actions
 - Microsoft Learn — [Use skills in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-skills) and [Configure skills](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-add-skills) — the *classic* (manifest-registered) meaning of "skills," for disambiguation
 - GitHub Docs — [Adding agent skills for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) and [Custom skills (Copilot SDK)](https://docs.github.com/en/copilot/how-tos/copilot-sdk/features/skills) — the `SKILL.md` markdown skill format Copilot Studio now imports
