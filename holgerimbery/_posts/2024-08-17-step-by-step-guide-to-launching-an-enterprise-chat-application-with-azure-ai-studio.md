@@ -3,7 +3,8 @@ layout: post
 title: Step-by-Step Guide to Launching an Enterprise Chat Application with Azure AI Studio
 description: 
 date: 2024-08-17
-author: admin
+author: admin
+slug: step-by-step-guide-to-launching-an-enterprise-chat-application-with-azure-ai-studio
 image: ./images/step-by-step-guide-to-launching-an-enterprise-chat-application-with-azure-ai-studio.jpeg
 tags: [azureaistudio]
 featured: false

@@ -3,7 +3,8 @@ layout: post
 title: Streamline Your Excel Work - Effective Data Management with Copilot
 description: 
 date: 2024-04-13
-author: admin
+author: admin
+slug: streamline-your-excel-work-effective-data-management-with-copilot
 image: ./images/streamline-your-excel-work-effective-data-management-with-copilot.jpeg
 tags: [copilot, microsoft365copilot]
 featured: false

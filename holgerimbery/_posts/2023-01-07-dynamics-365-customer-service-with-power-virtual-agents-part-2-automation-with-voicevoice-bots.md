@@ -3,7 +3,8 @@ layout: post
 title: Dynamics 365 Customer Service with Power Virtual Agents - Part 2 (automation with voice/voice bots)
 description: 
 date: 2023-01-07
-author: admin
+author: admin
+slug: dynamics-365-customer-service-with-power-virtual-agents-part-2-automation-with-voicevoice-bots
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

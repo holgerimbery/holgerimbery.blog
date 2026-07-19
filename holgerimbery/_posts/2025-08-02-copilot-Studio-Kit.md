@@ -6,7 +6,8 @@ date: 2025-08-02
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/wander-fleur-4i2crgbc0Gs-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@wanderfleur?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wander Fleur</a> on <a href="https://unsplash.com/photos/clear-acrylic-ruler-on-white-paper-4i2crgbc0Gs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: [copilotstudio, copilotstudio-kit, applicationlifecyclemanagement, agents, testing, monitoring, optimization]
-author: admin
+author: admin
+slug: copilot-Studio-Kit
 featured: false
 toc: true
 ---

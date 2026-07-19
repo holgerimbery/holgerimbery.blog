@@ -7,7 +7,8 @@ date: 2025-08-31
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/08/dave-sherrill-HjEKj1yMAdQ-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@daveatjude3?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dave Sherrill</a> on <a href="https://unsplash.com/photos/white-and-brown-wooden-bench-near-body-of-water-during-daytime-HjEKj1yMAdQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: [copilotstudio, webchat, copilotstudio-kit]
-author: admin
+author: admin
+slug: copilot-studio-kit-webchat-playground
 featured: false
 toc: true
 ---

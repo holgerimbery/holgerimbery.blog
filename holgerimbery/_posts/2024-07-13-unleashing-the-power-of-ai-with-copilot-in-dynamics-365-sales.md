@@ -3,7 +3,8 @@ layout: post
 title: Unleashing the Power of AI with Copilot in Dynamics 365 Sales
 description: 
 date: 2024-07-13
-author: admin
+author: admin
+slug: unleashing-the-power-of-ai-with-copilot-in-dynamics-365-sales
 image: ./images/unleashing-the-power-of-ai-with-copilot-in-dynamics-365-sales.jpeg
 tags: [copilot]
 featured: false

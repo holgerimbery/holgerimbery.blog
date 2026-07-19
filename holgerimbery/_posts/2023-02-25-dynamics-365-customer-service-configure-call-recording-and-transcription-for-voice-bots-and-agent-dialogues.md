@@ -3,7 +3,8 @@ layout: post
 title: Dynamics 365 customer service - configure call recording and transcription for voice bots and agent dialogues
 description: 
 date: 2023-02-25
-author: admin
+author: admin
+slug: dynamics-365-customer-service-configure-call-recording-and-transcription-for-voice-bots-and-agent-dialogues
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

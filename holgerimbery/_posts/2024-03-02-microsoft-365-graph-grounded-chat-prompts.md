@@ -3,7 +3,8 @@ layout: post
 title: Microsoft 365 (graph-grounded) Chat Prompts
 description: 
 date: 2024-03-02
-author: admin
+author: admin
+slug: microsoft-365-graph-grounded-chat-prompts
 image: ./images/microsoft-365-graph-grounded-chat-prompts.jpeg
 tags: [copilot, microsoft365copilot]
 featured: false

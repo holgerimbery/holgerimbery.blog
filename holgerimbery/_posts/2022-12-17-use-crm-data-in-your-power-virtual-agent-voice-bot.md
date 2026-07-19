@@ -3,7 +3,8 @@ layout: post
 title: Use CRM Data in your Power Virtual Agent Voice Bot
 description:  Use CRM data to make automated voice bot conversations more personal and relevant to your customer.
 date: 2022-12-17
-author: admin
+author: admin
+slug: use-crm-data-in-your-power-virtual-agent-voice-bot
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

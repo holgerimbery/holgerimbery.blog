@@ -3,7 +3,8 @@ layout: post
 title: Revolutionizing Teamwork - Unleashing the Power of Copilot Pages for Seamless Document Collaboration with Links for IT-Admins
 description: 
 date: 2024-11-03
-author: admin
+author: admin
+slug: revolutionizing-teamwork-unleashing-the-power-of-copilot-pages-for-seamless-document-collaboration-with-links-for-it-admins
 image: ./images/revolutionizing-teamwork-unleashing-the-power-of-copilot-pages-for-seamless-document-collaboration-with-links-for-it-admins.jpeg
 tags: [copilot, microsoft365copilot]
 featured: false

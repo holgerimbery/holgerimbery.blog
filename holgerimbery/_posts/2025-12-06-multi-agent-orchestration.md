@@ -3,7 +3,8 @@ layout: post
 title: Copilot Studio Multi‑Agent Orchestration - Embedded Agents, Connected Agents, and MCP—Architecture, Advantages, and Implementation Patterns
 description: Explore how Microsoft Copilot Studio's multi-agent orchestration enables specialized agents to collaborate across systems using embedded agents, connected agents, and the Model Context Protocol (MCP). Learn architectural trade-offs, governance implications, and practical implementation patterns to scale your agent ecosystem effectively. 
 date: 2025-12-06
-author: admin
+author: admin
+slug: multi-agent-orchestration
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/12/hannah-busing-Zyx1bK9mqmA-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hannah Busing</a> on <a href="https://unsplash.com/photos/person-in-red-sweater-holding-babys-hand-Zyx1bK9mqmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       

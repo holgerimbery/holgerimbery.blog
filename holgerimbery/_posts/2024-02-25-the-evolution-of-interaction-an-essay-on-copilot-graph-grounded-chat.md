@@ -3,7 +3,8 @@ layout: post
 title: The Evolution of Interaction - An Essay on Copilot (graph grounded) Chat
 description: 
 date: 2024-02-25
-author: admin
+author: admin
+slug: the-evolution-of-interaction-an-essay-on-copilot-graph-grounded-chat
 image: ./images/the-evolution-of-interaction-an-essay-on-copilot-graph-grounded-chat.jpeg
 tags: [copilot]
 featured: false

@@ -6,7 +6,8 @@ date: 2025-11-01
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/charlesdeluvio-Lks7vei-eAg-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/photos/man-using-macbook-Lks7vei-eAg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags: [dynamics365, sales, customerservice, copilotstudio, agents]
-author: admin
+author: admin
+slug: autonomous-agents-dynamics365
 featured: false
 toc: true
 ---

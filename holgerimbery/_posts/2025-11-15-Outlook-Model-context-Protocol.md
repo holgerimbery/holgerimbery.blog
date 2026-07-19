@@ -8,7 +8,8 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@mathyaskurmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathyas Kurmann</a> on <a href="https://unsplash.com/photos/six-assorted-color-mail-boxes-fb7yNPbT0l8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [modelcontextprotocol, copilotstudio, agents]
-author: admin
+author: admin
+slug: Outlook-Model-context-Protocol
 featured: fasle
 toc: true
 ---

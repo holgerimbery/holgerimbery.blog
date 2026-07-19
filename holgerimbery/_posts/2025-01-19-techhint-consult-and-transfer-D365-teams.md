@@ -2,7 +2,8 @@
 layout: post
 title: Tech Hint - Consult and transfer from Dynamics 365 Customer Service or Contact Center to Microsoft Teams
 date: 2025-01-19
-author: admin
+author: admin
+slug: techhint-consult-and-transfer-D365-teams
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/01/thisisengineering-t4qI2IDcL5s-unsplash.jpg
 image_caption: 'Photo by <a href="https://unsplash.com/@thisisengineering?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ThisisEngineering</a> on <a href="https://unsplash.com/photos/man-in-blue-and-white-checkered-button-up-shirt-sitting-beside-man-in-yellow-shirt-t4qI2IDcL5s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 tags: [techhint, dynamics365, customerservice, contactcenter, microsoftteams]

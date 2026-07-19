@@ -7,7 +7,8 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@voznenko_artur?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Artur Voznenko</a> on <a href="https://unsplash.com/photos/a-view-of-a-factory-with-smoke-coming-out-of-the-stacks-rwPIQQPz1ew?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, applicationlifecyclemanagement]
-author: admin
+author: admin
+slug: application_lifecycle_managment
 featured: false
 toc: true
 ---

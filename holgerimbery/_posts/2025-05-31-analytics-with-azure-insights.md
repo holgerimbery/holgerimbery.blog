@@ -3,7 +3,8 @@ layout: post
 title: Measuring for Improvement - Capturing Telemetry in Microsoft Copilot Studio with Azure Application Insights
 description: Learn how to effectively capture and analyze telemetry data in Microsoft Copilot Studio using Azure Application Insights.
 date: 2025-05-31
-author: admin
+author: admin
+slug: analytics-with-azure-insights
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/yucel-moran-onSPwKgLltg-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@ymoran?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yucel Moran</a> on <a href="https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-wooden-desk-onSPwKgLltg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       

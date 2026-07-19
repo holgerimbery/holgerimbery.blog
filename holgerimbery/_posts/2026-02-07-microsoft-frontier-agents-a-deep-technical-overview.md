@@ -3,7 +3,8 @@ layout: post
 title: "Microsoft Frontier Agents: A Deep Technical Overview"
 description: "An in-depth exploration of Microsoft Frontier Agents, their architecture, capabilities, and impact on enterprise AI transformation."
 date: 2026-02-07 11:57:11 +0100
-author: admin
+author: admin
+slug: microsoft-frontier-agents-a-deep-technical-overview
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/02/dan-meyers-aGLFozyvXsQ-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@dmey503?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Meyers</a> on <a href="https://unsplash.com/photos/body-of-water-near-mountain-during-sunset-aGLFozyvXsQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       

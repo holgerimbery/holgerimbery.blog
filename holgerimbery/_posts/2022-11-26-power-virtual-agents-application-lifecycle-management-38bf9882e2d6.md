@@ -3,7 +3,8 @@ layout: post
 title: Power Virtual Agents Application Lifecycle Management
 description: 
 date: 2022-11-26
-author: admin
+author: admin
+slug: power-virtual-agents-application-lifecycle-management-38bf9882e2d6
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

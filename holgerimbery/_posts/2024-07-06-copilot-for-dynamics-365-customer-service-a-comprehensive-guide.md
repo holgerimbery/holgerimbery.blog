@@ -3,7 +3,8 @@ layout: post
 title: Copilot for Dynamics 365 Customer Service - A Comprehensive Guide
 description: 
 date: 2024-07-06
-author: admin
+author: admin
+slug: copilot-for-dynamics-365-customer-service-a-comprehensive-guide
 image: ./images/copilot-for-dynamics-365-customer-service-a-comprehensive-guide.jpeg
 tags: [copilot]
 featured: false

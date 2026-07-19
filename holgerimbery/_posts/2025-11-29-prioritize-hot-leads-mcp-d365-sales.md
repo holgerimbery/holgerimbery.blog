@@ -9,7 +9,8 @@ image_caption: Photo by <a href="https://unsplash.com/@rocinante_11?utm_source=u
       
        
 tags: [dynamics365, sales, copilotstudio, agents]
-author: admin
+author: admin
+slug: prioritize-hot-leads-mcp-d365-sales
 featured: false
 toc: true
 ---

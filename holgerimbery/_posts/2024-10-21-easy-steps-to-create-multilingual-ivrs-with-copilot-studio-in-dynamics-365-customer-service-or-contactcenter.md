@@ -3,7 +3,8 @@ layout: post
 title: Easy Steps to Create Multilingual IVRs with Copilot Studio in Dynamics 365 Customer Service or ContactCenter
 description: 
 date: 2024-10-21
-author: admin
+author: admin
+slug: easy-steps-to-create-multilingual-ivrs-with-copilot-studio-in-dynamics-365-customer-service-or-contactcenter
 image: ./images/easy-steps-to-create-multilingual-ivrs-with-copilot-studio-in-dynamics-365-customer-service-or-contactcenter.jpeg
 tags: [copilotstudio, customerservice, dynamics365]
 featured: false

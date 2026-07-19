@@ -3,7 +3,8 @@ layout: post
 title: Extend Power Virtual Agent with Azure Cognitive Services
 description: 
 date: 2022-12-03
-author: admin
+author: admin
+slug: extend-power-virtual-agent-with-azure-cognitive-services-eab95018b7f6
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

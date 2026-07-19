@@ -3,7 +3,8 @@ layout: post
 title: Multilingual IVR Replacement for Dynamics 365 Customer Service (Voice Bot)
 description: 
 date: 2023-01-28
-author: admin
+author: admin
+slug: multilingual-ivr-replacement-for-dynamics-365-customer-service-voice-bot
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

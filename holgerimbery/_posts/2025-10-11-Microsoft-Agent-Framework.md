@@ -9,7 +9,8 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@thisisengineering?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ThisisEngineering</a> on <a href="https://unsplash.com/photos/woman-in-black-and-white-jacket-sitting-in-front-of-computer-monitor-iQqRM0XJvn8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 tags: [copilotstudio, aifoundry, agents]
-author: admin
+author: admin
+slug: Microsoft-Agent-Framework
 featured: false
 toc: true
 ---
