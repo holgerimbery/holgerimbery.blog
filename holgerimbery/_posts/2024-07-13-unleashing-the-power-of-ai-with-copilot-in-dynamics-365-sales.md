@@ -26,7 +26,7 @@ Copilot features a chat interface that enables sellers to obtain summaries of th
 
 Additionally, Copilot can summarize email exchanges and allows users to view and attach the summary as a note within a record. This functionality is especially beneficial for customer interactions via email, where manual record updates can be labor-intensive and susceptible to mistakes.
 
-![]({{site.baseurl}}/images/clyjwpatk00030alddh6z4qq8.md/f8760f17-55fd-4182-aa09-91c16febbf1b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyjwpatk00030alddh6z4qq8.md/f8760f17-55fd-4182-aa09-91c16febbf1b.png)
 
 e.g., Chat with Copilot in a side pane
 

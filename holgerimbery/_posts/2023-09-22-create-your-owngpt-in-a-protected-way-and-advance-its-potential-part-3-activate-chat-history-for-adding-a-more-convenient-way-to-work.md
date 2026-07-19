@@ -34,7 +34,7 @@ To enable chat history, deploy your model as a temporary web app.
     "Enable chat history".
     
 
-![]({{site.baseurl}}/images/clmv2ynko00050akzaxz551wp.md/69ca9eeb-a14b-461e-8bd3-e802692e4f59.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmv2ynko00050akzaxz551wp.md/69ca9eeb-a14b-461e-8bd3-e802692e4f59.png)
 
 After deploying the web app, we open it in the Azure portal and copy the content of the Application Settings (found in the Settings configurations) related to AZURE\_COSMOSDB\* as well as the API of the COSMOSDB itself.
 
@@ -53,13 +53,13 @@ AZURE_COSMOSDB_ACCOUNT_KEY=******************
 
 and restart the bot; the result on HTTP://127.0.0.1:5000 should look similar to the screenshot below.
 
-![]({{site.baseurl}}/images/clmv2ynko00050akzaxz551wp.md/a20d5993-36de-44ad-a109-daebacd398ec.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmv2ynko00050akzaxz551wp.md/a20d5993-36de-44ad-a109-daebacd398ec.png)
 
 Deploy it to your web app on Azure.
 
 After selecting the Web App in the Azure portal, navigate to Settings / Configuration and add the appropriate Application Settings there.
 
-![]({{site.baseurl}}/images/clmv2ynko00050akzaxz551wp.md/1a6da2e1-fcda-45e5-9324-9874a085b0c9.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmv2ynko00050akzaxz551wp.md/1a6da2e1-fcda-45e5-9324-9874a085b0c9.png)
 
 ## Conclusion
 

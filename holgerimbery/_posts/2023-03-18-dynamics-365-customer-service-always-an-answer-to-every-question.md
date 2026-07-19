@@ -26,7 +26,7 @@ Use the Dynamics 365 Customer Service function Knowledge base to create articles
 
 Use a topic to access the Knowledgebase, e.g., the fallback topic, and create a new action.
 
-![Figure: New action to search the Knowledgebase]({{site.baseurl}}/images/clfdy68r702hvr3nv1z11hmvh.md/806cd43a-562c-48e1-b77d-1d1922885508.png)
+![Figure: New action to search the Knowledgebase](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfdy68r702hvr3nv1z11hmvh.md/806cd43a-562c-48e1-b77d-1d1922885508.png)
 
 Figure: New action to search the Knowledgebase
 
@@ -40,7 +40,7 @@ The flow itself is self-explaining and ready to use for text-based chatbots but 
 
 * Open it and jump to "Append title to article text result"
 
-![Figure: Find "Append title to article text result"]({{site.baseurl}}/images/clfdy68r702hvr3nv1z11hmvh.md/7c62c896-3f8e-44dc-be49-5dc5a343460c.png)
+![Figure: Find "Append title to article text result"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfdy68r702hvr3nv1z11hmvh.md/7c62c896-3f8e-44dc-be49-5dc5a343460c.png)
 
 Figure: Find "Append title to article text result"
 
@@ -48,7 +48,7 @@ Figure: Find "Append title to article text result"
 
 * This will remove some nice formatting and a markdown based on "heading 2" which we cannot use in the voice channel.
 
-![Figure: Edit "Append title to article text result"]({{site.baseurl}}/images/clfdy68r702hvr3nv1z11hmvh.md/b5087a3c-7ea8-4a4b-87a3-22da7fdf1b9c.png)
+![Figure: Edit "Append title to article text result"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfdy68r702hvr3nv1z11hmvh.md/b5087a3c-7ea8-4a4b-87a3-22da7fdf1b9c.png)
 
 Figure: Edit "Append title to article text result"
 
@@ -74,7 +74,7 @@ If the Power Automate flow ends in a dead end, check if Dataverse search is enab
 
 * Select features and check "Search"
 
-![Figure: Dataverse Search]({{site.baseurl}}/images/clfdy68r702hvr3nv1z11hmvh.md/ac65a50b-983a-4b9a-938a-fde5fa71311a.png)
+![Figure: Dataverse Search](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfdy68r702hvr3nv1z11hmvh.md/ac65a50b-983a-4b9a-938a-fde5fa71311a.png)
 
 Figure: Dataverse Search
 

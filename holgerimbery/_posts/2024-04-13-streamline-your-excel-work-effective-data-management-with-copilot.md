@@ -41,7 +41,7 @@ Copilot for Microsoft 365 can show insights based on your data or a specific qu
     
 4. Select **Analyze** and choose a suggested prompt. You can also describe what you’d like to know by asking a question about your data in your own words.
     
-    ![]({{site.baseurl}}/images/cluxstsl2000h08l1d0go32kn.md/ee163239-d00c-4b76-8efc-a2b501d74c02.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cluxstsl2000h08l1d0go32kn.md/ee163239-d00c-4b76-8efc-a2b501d74c02.png)
     
 5. Select **Send**. Copilot analyzes your data to show insights as charts, PivotTable objects, summaries, trends, or outliers.
     
@@ -55,7 +55,7 @@ Copilot for Microsoft 365 can show insights based on your data or a specific qu
 **Example:**  
 Show total 'Engaged Users' by 'Launch Date' as a line chart
 
-![]({{site.baseurl}}/images/cluxstsl2000h08l1d0go32kn.md/bc9c40e1-54c6-4b5d-93f0-1a4e3b9fef0e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cluxstsl2000h08l1d0go32kn.md/bc9c40e1-54c6-4b5d-93f0-1a4e3b9fef0e.png)
 
 ## Highlight, sort, and filter your data with Copilot in Excel
 
@@ -75,12 +75,12 @@ Next, instruct Copilot on how you want to modify the table to enhance the visibi
 **Example:**  
 Show items with 'Campaign Owner' of 'Halima, Yakubu'
 
-![]({{site.baseurl}}/images/cluxstsl2000h08l1d0go32kn.md/088e4ba8-cbbe-421b-89d3-f617bfcde9ce.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cluxstsl2000h08l1d0go32kn.md/088e4ba8-cbbe-421b-89d3-f617bfcde9ce.png)
 
 **Example:**  
 Percentage distribution of 'Campaign Type'
 
-![]({{site.baseurl}}/images/cluxstsl2000h08l1d0go32kn.md/7240d6d1-b741-4ae3-a7da-063bd8feebb7.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cluxstsl2000h08l1d0go32kn.md/7240d6d1-b741-4ae3-a7da-063bd8feebb7.png)
 
 ## Create formula columns using Copilot in Excel
 
@@ -101,9 +101,9 @@ As with all AI-generated content, it's crucial to review, edit, and confirm the 
 **Example:**  
 *Add a column that calculates the total profit for each marketing campaign*
 
-![]({{site.baseurl}}/images/cluxstsl2000h08l1d0go32kn.md/4098c8dd-9d1e-4869-bc2d-e5853b5090ed.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cluxstsl2000h08l1d0go32kn.md/4098c8dd-9d1e-4869-bc2d-e5853b5090ed.png)
 
-![]({{site.baseurl}}/images/cluxstsl2000h08l1d0go32kn.md/efa7e4e3-57b2-4da6-8ad0-210e30b541d0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cluxstsl2000h08l1d0go32kn.md/efa7e4e3-57b2-4da6-8ad0-210e30b541d0.png)
 
 ## Conclusion
 

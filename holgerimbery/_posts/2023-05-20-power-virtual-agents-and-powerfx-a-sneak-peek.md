@@ -40,7 +40,7 @@ To use a variable in a Power Fx formula, you must add a prefix to its name to in
 
 For example, to use the system variable [`Conversation.Id`](http://Conversation.Id) in a formula, you'd need to refer to it as [`System.Conversation.Id`](http://System.Conversation.Id).
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/e33e92da-801f-4002-a5d1-e9fbb9e94cb0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/e33e92da-801f-4002-a5d1-e9fbb9e94cb0.png)
 
 Figure: Set Variable Value
 
@@ -72,7 +72,7 @@ we'll use a Power Fx expression to store the customer's name and output it in ca
 * Select the box under **Save response as**, and then select the variable `Var1` and name it `customerName`.
   
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/b2474955-9137-4b45-917a-65f0e820f94b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/b2474955-9137-4b45-917a-65f0e820f94b.png)
 
 Figure: Question Node
 
@@ -85,7 +85,7 @@ Figure: Question Node
 * In the **fx** box, enter `Upper(Text(Topic.customerName))`, and then choose **Insert**.
   
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/c3ec9f2f-d193-4128-8193-10d2930687e3.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/c3ec9f2f-d193-4128-8193-10d2930687e3.png)
 
 Figure: Set Variable Value
 
@@ -94,11 +94,11 @@ Figure: Set Variable Value
 * Enter `Hello`, select **{x}**, and then select `capsName`.
   
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/30e3bf3d-5441-46fa-992d-ea5807474e28.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/30e3bf3d-5441-46fa-992d-ea5807474e28.png)
 
 Figure: Send a message to Node
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/49bb993a-1caf-4faf-adc3-21b408a54d7f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/49bb993a-1caf-4faf-adc3-21b408a54d7f.png)
 
 Figure: Result
 
@@ -117,7 +117,7 @@ In this example, the bot determines if a booking date qualifies for a discount. 
 * Select the box under **Save response as**, and then select the variable `Var1` and name it `bookingDate`.
   
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/def8438a-974b-41d7-a3a8-6412e32f1354.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/def8438a-974b-41d7-a3a8-6412e32f1354.png)
 
 Figure: Question Node
 
@@ -126,7 +126,7 @@ Figure: Question Node
 * In the **Condition** node, select the **Node menu** (**⋮**) and choose **Change to formula**.
   
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/4a9de0f9-0991-458d-94a4-1b573b7ae384.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/4a9de0f9-0991-458d-94a4-1b573b7ae384.png)
 
 Figure: Add Condition
 
@@ -135,7 +135,7 @@ Figure: Add Condition
 * Replace the contents of the **fx** box with the formula `Topic.bookingDate > (DateAdd (Now(), 14))`, and then choose **Insert**.
   
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/1e28b474-1252-470f-a835-3b5a7bfd387a.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/1e28b474-1252-470f-a835-3b5a7bfd387a.png)
 
 Figure: Formula in condition
 
@@ -144,11 +144,11 @@ Figure: Formula in condition
 * Under the **All Other Conditions** node, add a **Send a message** node and enter the message, `Sorry, you don't qualify for a discount`.
   
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/b55e4f2c-0ae8-48d1-a01d-fb002f634fea.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/b55e4f2c-0ae8-48d1-a01d-fb002f634fea.png)
 
 Figure: Full Conversation Flow
 
-![]({{site.baseurl}}/images/clhvwrsyx029408nv61zsfy8u.md/7b0a60b3-2d03-4269-b8ef-d0fff873cd4d.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhvwrsyx029408nv61zsfy8u.md/7b0a60b3-2d03-4269-b8ef-d0fff873cd4d.png)
 
 Figure: Result
 

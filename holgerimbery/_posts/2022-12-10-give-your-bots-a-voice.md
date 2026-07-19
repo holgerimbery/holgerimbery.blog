@@ -44,7 +44,7 @@ To use this Kickstarter and explore this topic, you need to sign up for [Voice.A
 
 Let's give the (Power Virtual Agents) Bot a voice. Retrieve your Web channel Secret (in PVA-UI: Settings/Security/Web Channel Security)
 
-![Figure 0.1: retrieve your Web channel Secret]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/eprxmtgqc.webp)
+![Figure 0.1: retrieve your Web channel Secret](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/eprxmtgqc.webp)
 
 Figure 0.1: retrieve your Web channel Secret
 
@@ -54,21 +54,21 @@ then go to your Voice.AI Configuration Interface.
 
 Add Bot
 
-![Figure 0.2: Add details for your bot.]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/ssg2myt3b.webp)
+![Figure 0.2: Add details for your bot.](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/ssg2myt3b.webp)
 
 Figure 0.2: Add details for your Bot.
 
-![Figure 0.3: Select TTS, STT and Voice Font]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/aipvyfaa8.webp)
+![Figure 0.3: Select TTS, STT and Voice Font](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/aipvyfaa8.webp)
 
 Figure 0.3: Select TTS, STT, and Voice Font
 
 Configure Routing
 
-![Figure 0.4: configure routing "inbound"]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/kcvttvbvi.webp)
+![Figure 0.4: configure routing "inbound"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/kcvttvbvi.webp)
 
 Figure 0.4: configure routing "inbound"
 
-![Figure 0.5: configure routing "transfer"]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/ojrjtgtox.webp)
+![Figure 0.5: configure routing "transfer"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/ojrjtgtox.webp)
 
 Figure 0.5: configure routing "transfer"
 
@@ -95,7 +95,7 @@ If your Bot serves several phone lines, e.g., for different purposes (sales, cus
 
 In PVA, you can retrieve both IDs via a small composer integration and create a new composer topic.
 
-![Figure 0.6: new topic in composer]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/ta8sbucrb.png)
+![Figure 0.6: new topic in composer](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/ta8sbucrb.png)
 
 Figure 0.6: new topic in the Composer
 
@@ -103,7 +103,7 @@ Follow the steps to install Bot framework Composer and connect to Power Virtual 
 
 Create a new "Dialog" in Bot framework Composer, and select event-driven and event received as options.
 
-![Figure 1: Create a new "Event received" dialog in Composer]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/fbun6wpp-.png)
+![Figure 1: Create a new "Event received" dialog in Composer](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/fbun6wpp-.png)
 
 Figure 1: Create a new "Event received" dialog in Composer
 
@@ -111,17 +111,17 @@ Figure 1: Create a new "Event received" dialog in Composer
 
 Go back to Power Virtual Agents UI and create two variables within a new topic for each of them. This feels a little dirty to do so, but it is the way to do it before we all get the new unified authoring canvas we see in the preview.
 
-![Figure 2: Create a variable bot.caller in PVA]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/s5lkvdwhn.png)
+![Figure 2: Create a variable bot.caller in PVA](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/s5lkvdwhn.png)
 
 Figure 2: Create a variable bot.caller in PVA
 
 ensure you create a "bot" variable and select "external sources can set values".
 
-![Figure 3.0: variable as "Bot" variable ]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/bbznw5mo3.png)
+![Figure 3.0: variable as "Bot" variable ](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/bbznw5mo3.png)
 
 Figure 3.0: variable as "Bot" variable
 
-![Figure 3: Create a variable bot.callee]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/fn9amyh37.png)
+![Figure 3: Create a variable bot.callee](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/fn9amyh37.png)
 
 Figure 3: Create a variable bot.callee
 
@@ -129,7 +129,7 @@ and back to the Composer and create the flow in your newly created "dialog"
 
 #### Create dialog flow with Composer
 
-![Figure 4: Create Composer Flow to extract caller ID from channeldata]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/2yrubo81u.png)
+![Figure 4: Create Composer Flow to extract caller ID from channeldata](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/2yrubo81u.png)
 
 Figure 4: Create Composer Flow to extract caller ID from channeldata
 
@@ -137,7 +137,7 @@ Nothing special, create a switch and three "set a property node" (to manipulate 
 
 You can check the adaptive code in Bot framework Composer by selecting show code in the canvas.
 
-![Figure 5: check if condition is true]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/dww1dqc4d.png)
+![Figure 5: check if condition is true](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/dww1dqc4d.png)
 
 Figure 5: check if the condition is true
 
@@ -151,7 +151,7 @@ We can use the newly created variables everywhere (messages, as input for Power 
 
 Another Dialog you can create with the Composer is a Hangup to close the phone line after a successful dialog with a user. Therefore you select Send Activity as a Dialog event.
 
-![Figure 6: hangup dialog]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/33riopihf.png)
+![Figure 6: hangup dialog](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/33riopihf.png)
 
 Figure 6: hangup dialog
 
@@ -161,7 +161,7 @@ Why not integrate a feedback system and perform a clean hangup after the user co
 
 It would be best if you created a third Composer dialog to play music, announcements, or fancy jingles. Your sound file needs to be accessible as a public URL.
 
-![Figure 7: playsound dialog]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/c0zaakhlr.png)
+![Figure 7: playsound dialog](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/c0zaakhlr.png)
 
 Figure 7: playsound dialog
 
@@ -171,7 +171,7 @@ You could analyze the sentiment of the caller to hand over to an agent or when t
 
 This can be done without the Composer. You only need to create a new topic without trigger phrases and link to it from other topics.
 
-![Figure 8: Calltransfer Topic]({{site.baseurl}}/images/clbhy3eik05fcmlnvhhvq7v8n.md/cpp46yrkn.png)
+![Figure 8: Calltransfer Topic](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbhy3eik05fcmlnvhhvq7v8n.md/cpp46yrkn.png)
 
 Figure 8: Calltransfer Topic
 

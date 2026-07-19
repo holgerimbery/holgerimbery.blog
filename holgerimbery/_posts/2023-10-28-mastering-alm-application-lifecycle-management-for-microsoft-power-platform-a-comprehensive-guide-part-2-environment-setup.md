@@ -66,7 +66,7 @@ Developer environments are extremely useful for testing features or simply devel
   
 * Click on "New" in the top navigation.
   
-    ![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/8334aca2-bfa4-4b60-a3a9-b8d09afdef4b.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/8334aca2-bfa4-4b60-a3a9-b8d09afdef4b.png)
     
 * When the dialog window appears on the right-hand side, enter the following information:
   
@@ -80,7 +80,7 @@ Developer environments are extremely useful for testing features or simply devel
     
 * Select "yes" to add dataverse data store, and select "Next" and "Save"
   
-* ![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/c311fd78-5951-40d9-8dde-fd559ed32bd0.png)
+* ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/c311fd78-5951-40d9-8dde-fd559ed32bd0.png)
   
     repeat the same for a `test (test)` and for a `production (prod)` environment
     
@@ -109,7 +109,7 @@ Developer environments are extremely useful for testing features or simply devel
 * Create a new repository with a meaningful name
   
 
-![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/f935f66d-4b8b-48b2-bea7-43c2005c6ff6.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/f935f66d-4b8b-48b2-bea7-43c2005c6ff6.png)
 
 ### Creating a codespace
 
@@ -117,13 +117,13 @@ A codespace is a cloud-hosted development environment accessible from anywhere. 
 
 * Navigate to your newly created repository, locate the &lt;&gt; Code button, and click on it.
   
-    ![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/26b68c01-7ab5-4c5a-9c75-69755151b42f.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/26b68c01-7ab5-4c5a-9c75-69755151b42f.png)
     
 * In the Code pop-up, select the "Codespaces" tab.
   
 * Click on "Create codespace on the main".
   
-    ![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/696b5235-6136-4509-a2e9-678285b5ad6a.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/696b5235-6136-4509-a2e9-678285b5ad6a.png)
     
 
 A codespace will be created for you in a new tab. This process might take a few seconds. Upon completion, you will have a fully functional Visual Studio Code environment within your browser.
@@ -139,7 +139,7 @@ To work with your solution and save it to the repository, you need to install th
 * Click "Install."
   
 
-![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/1e6cf384-be58-4b9d-a9e7-6dc5b170de83.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/1e6cf384-be58-4b9d-a9e7-6dc5b170de83.png)
 
 ### Connecting to the Power Platform environment
 
@@ -149,7 +149,7 @@ To work with your solution and save it to the repository, you need to install th
   
 * You will notice that it says, "No auth profiles found on this computer." We will create one.
   
-    ![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/78825e39-69f8-4db6-97ca-7a353b5e41c7.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/78825e39-69f8-4db6-97ca-7a353b5e41c7.png)
     
 * Click on the hamburger menu icon in the top left corner, then hover over "Terminal" and click "New Terminal."
   
@@ -163,11 +163,11 @@ To work with your solution and save it to the repository, you need to install th
     
 * You will be prompted to use a web browser for authentication. Copy (Ctrl + C) the code provided in the terminal, and then Ctrl + click on the link also provided in the terminal.
   
-    ![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/f64885c2-5e71-4dba-af44-b9738220a9f0.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/f64885c2-5e71-4dba-af44-b9738220a9f0.png)
     
 * Once you click on the link, a new browser tab will open. Paste the code into the browser and click "Next."
   
-    ![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/f6e9546e-f18e-446e-b7c2-9fc3b48c90e1.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/f6e9546e-f18e-446e-b7c2-9fc3b48c90e1.png)
     
 * Sign in. Click "Continue."
   
@@ -175,7 +175,7 @@ To work with your solution and save it to the repository, you need to install th
   
 * Refresh the Auth Profiles section by clicking the "Refresh" button next to "Auth Profiles."
   
-* ![]({{site.baseurl}}/images/clo9zpucx000709l67t48cywk.md/57624b10-cd54-4296-b83d-2b7c6b9cce4f.png)
+* ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clo9zpucx000709l67t48cywk.md/57624b10-cd54-4296-b83d-2b7c6b9cce4f.png)
   
     After completing these steps, you should see your Authentication Profile and your Environments, allowing you to work with your environments effectively.
     

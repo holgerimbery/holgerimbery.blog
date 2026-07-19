@@ -39,7 +39,7 @@ Select "Create with Copilot" when creating a new topic and let the AI generate i
 
 1. Open your bot and select **Topics**. On the **Topics** page, select **\+ New topic** and then **Create with Copilot**.
     
-    ![create with copilot]({{site.baseurl}}/images/clkdotw4c000h09jvdpjfasuy.md/57ad6438-b8a6-4c35-b84f-6b363c91ec36.png)
+    ![create with copilot](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clkdotw4c000h09jvdpjfasuy.md/57ad6438-b8a6-4c35-b84f-6b363c91ec36.png)
     
     *Figure: create with Copilot*
     
@@ -47,7 +47,7 @@ Select "Create with Copilot" when creating a new topic and let the AI generate i
     
 3. In the **Create a topic to...** field, describe the topic you want to create in simple, plain English. You can include questions you want the bot to ask, messages it should show, and details of the specific behavior you want the bot to take.
     
-    ![action pane]({{site.baseurl}}/images/clkdotw4c000h09jvdpjfasuy.md/80f54d3a-048b-4388-857a-8aa777676ce3.png)
+    ![action pane](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clkdotw4c000h09jvdpjfasuy.md/80f54d3a-048b-4388-857a-8aa777676ce3.png)
     
     *Figure: "Create with copilot action" pane*
     
@@ -56,7 +56,7 @@ Select "Create with Copilot" when creating a new topic and let the AI generate i
 
 Based on your request, the authoring canvas will generate and open a new topic with trigger phrases and one or more nodes.
 
-![result]({{site.baseurl}}/images/clkdotw4c000h09jvdpjfasuy.md/c17c08d1-9d4a-463b-ab43-c99386855bb6.png)
+![result](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clkdotw4c000h09jvdpjfasuy.md/c17c08d1-9d4a-463b-ab43-c99386855bb6.png)
 
 *Figure: Result*
 
@@ -68,7 +68,7 @@ You can utilize AI to modify any topic within your bot. The topic doesn't need t
 
 Open your bot and select **Topics**. Select the topic you want to modify, then **Edit with the Copilot icon** on the menu bar just above the topic's conversation path.
 
-![Edit with Copilot]({{site.baseurl}}/images/clkdotw4c000h09jvdpjfasuy.md/992df61c-5c4b-4743-82bc-f715948054ce.png)
+![Edit with Copilot](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clkdotw4c000h09jvdpjfasuy.md/992df61c-5c4b-4743-82bc-f715948054ce.png)
 
 *Figure: Edit with Copilot*  
 You can always view your most recent request to Copilot under the "What you asked for" label.

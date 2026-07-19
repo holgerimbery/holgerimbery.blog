@@ -45,7 +45,7 @@ With [**Power Virtual Agents telephony extension**](https://appsource.microsoft.
 
 With the other extension, you will get "bot.msdyn\_" variables with all information about the caller. You can find them in your PVA variables.
 
-![Figure 1: Available variables after installing the extensions]({{site.baseurl}}/images/cle9xudpl018ojcnv5uw4dewq.md/e0922ce9-2526-4b7e-98e3-893969b621c8.png)
+![Figure 1: Available variables after installing the extensions](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cle9xudpl018ojcnv5uw4dewq.md/e0922ce9-2526-4b7e-98e3-893969b621c8.png)
 
 Figure 1: Available variables after installing the extensions.
 
@@ -54,7 +54,7 @@ Figure 1: Available variables after installing the extensions.
 Right after sending the first greeting, you can check if the bot.CustomerPhoneNumber is not empty.  
 If it's empty, the caller is not sending one, or we are not in the phone channel if you use the same bot for text and voice.
 
-![Figure 2: personalized greeting]({{site.baseurl}}/images/cle9xudpl018ojcnv5uw4dewq.md/caba74d4-a254-44fa-916c-7461b388271b.png)
+![Figure 2: personalized greeting](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cle9xudpl018ojcnv5uw4dewq.md/caba74d4-a254-44fa-916c-7461b388271b.png)
 
 Figure 2: personalized greeting
 
@@ -72,11 +72,11 @@ Please consider handling exceptions like:
 
 If you want to offer a callback, a phone number is stored in the variable bot.CustomerPhoneNumber, as the caller transmitted the caller id. Just ask for confirmation that the caller wants to have the callback on the number currently used for dialing in.
 
-![Figure 3: Confirmation of user for callback]({{site.baseurl}}/images/cle9xudpl018ojcnv5uw4dewq.md/d87b9770-e969-4f41-984e-935bcca8b404.png)
+![Figure 3: Confirmation of user for callback](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cle9xudpl018ojcnv5uw4dewq.md/d87b9770-e969-4f41-984e-935bcca8b404.png)
 
 Figure 3: Confirmation of user for callback
 
-![Figure 4: Message to the user with phone number]({{site.baseurl}}/images/cle9xudpl018ojcnv5uw4dewq.md/d297c7db-a5a9-4ee2-a297-ebc66bfecfe5.png)
+![Figure 4: Message to the user with phone number](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cle9xudpl018ojcnv5uw4dewq.md/d297c7db-a5a9-4ee2-a297-ebc66bfecfe5.png)
 
 Figure 4: Message to the user with phone number
 

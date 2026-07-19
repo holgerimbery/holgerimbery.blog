@@ -67,7 +67,7 @@ Discover information and obtain answers swiftly, even if you cannot recall the l
 
 ## Use this in Microsoft Teams
 
-![]({{site.baseurl}}/images/clta3cs5m000009kx1xsg24ps.md/515ad0b3-9286-42e7-949d-63995a008440.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clta3cs5m000009kx1xsg24ps.md/515ad0b3-9286-42e7-949d-63995a008440.png)
 
 1. Go to **Apps** on the left side of Teams.
     

@@ -33,7 +33,7 @@ To configure preferred agent routing, you must possess the Omnichannel Administr
     
 2. On the next page, click **Manage** next to **Preferred Agent Routing**.
     
-    ![]({{site.baseurl}}/images/clvhthjnp000609mjgdcudpms.md/17e99276-3f69-4a02-ab9f-9917f02289eb.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvhthjnp000609mjgdcudpms.md/17e99276-3f69-4a02-ab9f-9917f02289eb.png)
     
       
     
@@ -53,7 +53,7 @@ To configure preferred agent routing, you must possess the Omnichannel Administr
         
     3. Click **Add User** to link agents to the contact.
         
-        ![]({{site.baseurl}}/images/clvhthjnp000609mjgdcudpms.md/e7c08836-d983-4ed0-97e1-9610f92992a6.png)
+        ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvhthjnp000609mjgdcudpms.md/e7c08836-d983-4ed0-97e1-9610f92992a6.png)
         
           
         

@@ -67,7 +67,7 @@ In this task, you will learn how to create an approval flow that will handle the
     
 * Configure the trigger inputs
     
-    ![]({{site.baseurl}}/images/clpdsc6fv000v08l8dut101a3.md/44261b65-2178-4210-b0a1-d43d7f0a74c7.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clpdsc6fv000v08l8dut101a3.md/44261b65-2178-4210-b0a1-d43d7f0a74c7.png)
     
 * Select the three dots in the top-right corner of the trigger, then choose "Settings" to open the trigger settings.
     
@@ -89,7 +89,7 @@ In this task, you will learn how to create an approval flow that will handle the
     
 * Press the "Done" button at the bottom of the trigger card to save the trigger conditions.
     
-    ![]({{site.baseurl}}/images/clpdsc6fv000v08l8dut101a3.md/f2f43595-1381-4e4f-9f01-7d0945deb499.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clpdsc6fv000v08l8dut101a3.md/f2f43595-1381-4e4f-9f01-7d0945deb499.png)
     
 * Click the "New step" button to add an action that initiates and awaits approval.
     
@@ -104,7 +104,7 @@ In this task, you will learn how to create an approval flow that will handle the
     * For "assigned to", enter the email address of your user.
         
     
-    ![]({{site.baseurl}}/images/clpdsc6fv000v08l8dut101a3.md/2f15a5aa-b09a-4c2b-8a26-70daa9e27414.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clpdsc6fv000v08l8dut101a3.md/2f15a5aa-b09a-4c2b-8a26-70daa9e27414.png)
     
     In production scenarios, an admin would typically approve deployments.
     
@@ -154,7 +154,7 @@ In this task, you will learn how to create an approval flow that will handle the
     
     Add the **ActionInputs StageRunId** dynamic content field from the **When an action is performed** trigger as StageRunId.
     
-    ![]({{site.baseurl}}/images/clpdsc6fv000v08l8dut101a3.md/f6484747-89e1-472b-bb5e-f46a2a0e7696.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clpdsc6fv000v08l8dut101a3.md/f6484747-89e1-472b-bb5e-f46a2a0e7696.png)
     
 * Save the flow
     
@@ -166,7 +166,7 @@ In this task, you will learn how to create an approval flow that will handle the
 * Open your emails and find the approval request.
     
 
-![]({{site.baseurl}}/images/clpdsc6fv000v08l8dut101a3.md/4f9b6ef8-4054-4884-8762-1b2538a7e2a5.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clpdsc6fv000v08l8dut101a3.md/4f9b6ef8-4054-4884-8762-1b2538a7e2a5.png)
 
 * Approve the request
     

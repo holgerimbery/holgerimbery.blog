@@ -41,13 +41,13 @@ Previously, if the bot could not determine the user's intent after two prompts, 
     
 * Select **Try the unified canvas (preview)**.
     
-    ![Create new bot]({{site.baseurl}}/images/clfny97200d0iswnv7pq0fmzm.md/8be9b856-c521-4899-93ed-8fad97a6fb6c.png)
+    ![Create new bot](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfny97200d0iswnv7pq0fmzm.md/8be9b856-c521-4899-93ed-8fad97a6fb6c.png)
     
     Figure: Create a new bot
     
 * Give your bot a name and enter the website you want to use for retrieving data from
     
-    ![]({{site.baseurl}}/images/clfny97200d0iswnv7pq0fmzm.md/5fb7318e-13b7-4188-b184-cbcef58bdcd6.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfny97200d0iswnv7pq0fmzm.md/5fb7318e-13b7-4188-b184-cbcef58bdcd6.png)
     
 
 Figure: enter name and website

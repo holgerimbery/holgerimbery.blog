@@ -31,7 +31,7 @@ Today, Power Virtual Agents support [23 languages](https://learn.microsoft.com/e
 
 ### Using a Power Automate flow
 
-![language detection and custom question answering via Power Automate]({{site.baseurl}}/images/clipw6kkm000909labxg80bz9.md/9c2799d9-46ac-4fb6-a0e4-07363f275180.webp)
+![language detection and custom question answering via Power Automate](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clipw6kkm000909labxg80bz9.md/9c2799d9-46ac-4fb6-a0e4-07363f275180.webp)
 
 *Figure: language detection and custom question answering via Power Automate*
 
@@ -41,7 +41,7 @@ I authored an article a few months ago that provides a [step-by-step guide](http
 
 ### Use Dynamics 365 Customer Service and create a multilingual IVR for voice-enabled PVA
 
-![multiple cascaded bots]({{site.baseurl}}/images/clipw6kkm000909labxg80bz9.md/044ec5a9-bb85-46d6-8815-858159ba1663.webp)
+![multiple cascaded bots](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clipw6kkm000909labxg80bz9.md/044ec5a9-bb85-46d6-8815-858159ba1663.webp)
 
 *Figure: multiple cascade bots*
 
@@ -53,7 +53,7 @@ Begin with a language selector and forward the result to a queue designated for 
 
 ### Translation Bot on a relay
 
-![translation relay with an Azure Service Bot]({{site.baseurl}}/images/clipw6kkm000909labxg80bz9.md/dabc36f5-b268-4923-ba5b-2f0955fafa9b.jpeg)
+![translation relay with an Azure Service Bot](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clipw6kkm000909labxg80bz9.md/dabc36f5-b268-4923-ba5b-2f0955fafa9b.jpeg)
 
 *Figure: translation relay with an Azure Service Bot*
 

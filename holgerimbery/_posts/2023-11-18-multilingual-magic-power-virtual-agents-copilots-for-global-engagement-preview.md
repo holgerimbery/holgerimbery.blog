@@ -35,22 +35,22 @@ To implement a bot as a multilingual bot:
 * Click on Add Languages.
     
 
-![]({{site.baseurl}}/images/clp3vr11t000f08l9ai5p9xss.md/f645727c-bf0a-461e-adc1-a41a01cba4d1.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clp3vr11t000f08l9ai5p9xss.md/f645727c-bf0a-461e-adc1-a41a01cba4d1.png)
 
 * Select an additional language you wish to utilize.
     
 
-![]({{site.baseurl}}/images/clp3vr11t000f08l9ai5p9xss.md/455d3242-51fa-46ee-bb26-e982748683af.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clp3vr11t000f08l9ai5p9xss.md/455d3242-51fa-46ee-bb26-e982748683af.png)
 
 * Press "add languages"
     
 
-![]({{site.baseurl}}/images/clp3vr11t000f08l9ai5p9xss.md/dcef9c37-eee3-442a-bc8f-c6009b7cbc86.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clp3vr11t000f08l9ai5p9xss.md/dcef9c37-eee3-442a-bc8f-c6009b7cbc86.png)
 
 * download the language file after creation or after modification of your bot
     
 
-![]({{site.baseurl}}/images/clp3vr11t000f08l9ai5p9xss.md/54ef1971-6efa-438a-aea3-a08a62d94a2a.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clp3vr11t000f08l9ai5p9xss.md/54ef1971-6efa-438a-aea3-a08a62d94a2a.png)
 
 * You may want to use a translation tool to convert the .resx file or manually translate the strings.  
     One such tool you could use is, for example, [ResxTranslator](https://github.com/stevencohn/ResxTranslator)
@@ -58,12 +58,12 @@ To implement a bot as a multilingual bot:
 * Upload the translated content and proceed to work with your bot as usual.
     
 
-![]({{site.baseurl}}/images/clp3vr11t000f08l9ai5p9xss.md/32f9737f-2dc6-4bef-81a3-66f9b13798d9.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clp3vr11t000f08l9ai5p9xss.md/32f9737f-2dc6-4bef-81a3-66f9b13798d9.png)
 
 * Select the language on top of your "test chatbot" window to test your translated bot.
     
 
-![]({{site.baseurl}}/images/clp3vr11t000f08l9ai5p9xss.md/886dc4e7-a044-4645-a274-5f2e050cbb1f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clp3vr11t000f08l9ai5p9xss.md/886dc4e7-a044-4645-a274-5f2e050cbb1f.png)
 
 ## Next steps
 

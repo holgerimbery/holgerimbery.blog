@@ -29,7 +29,7 @@ In the next article of this series, I will explain how this feature is utilized 
 * enter a publicly available source into the URL field at the bottom
     
 
-![configure generative answers while generating a new bot]({{site.baseurl}}/images/clknobi76000909ldh0067s3b.md/c7be102f-65ed-43d2-a861-781310cc83c0.png)
+![configure generative answers while generating a new bot](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clknobi76000909ldh0067s3b.md/c7be102f-65ed-43d2-a861-781310cc83c0.png)
 
 Benefits of doing so:
 
@@ -50,11 +50,11 @@ It is always a got habit to start exploring new features as soon as they arise o
 
 To try out the feature, you can use a [demo page](https://aka.ms/pvademo) from Microsoft and your data.
 
-![demo page for generative answers]({{site.baseurl}}/images/clknobi76000909ldh0067s3b.md/b23b42bd-6f8c-4681-8854-9d61574e9f53.png)
+![demo page for generative answers](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clknobi76000909ldh0067s3b.md/b23b42bd-6f8c-4681-8854-9d61574e9f53.png)
 
 ## Tailor the experience if your tenant is enabled
 
-![configuration of additional resources]({{site.baseurl}}/images/clknobi76000909ldh0067s3b.md/62702f24-ef68-4228-832e-dc7c87bbcba2.png)
+![configuration of additional resources](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clknobi76000909ldh0067s3b.md/62702f24-ef68-4228-832e-dc7c87bbcba2.png)
 
 To add additional sources, go to the settings and add them.  
 The feature works with up to 2 sublevels.

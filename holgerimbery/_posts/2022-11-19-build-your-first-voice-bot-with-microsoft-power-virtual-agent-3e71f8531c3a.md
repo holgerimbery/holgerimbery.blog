@@ -48,7 +48,7 @@ Use [GitHub for Application Lifecycle Management](https://learn.microsoft.com/en
 
 Launch Power Virtual Agents editing [canvas](https://web.powerva.microsoft.com) and create your first chatbot.
 
-![Figure 2: Create your first chatbot]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/vg0pswspc.png)
+![Figure 2: Create your first chatbot](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/vg0pswspc.png)
 
 Figure 2: Create your first chatbot
 
@@ -58,13 +58,13 @@ Microsoft installed some default topics and entities; as we want to begin from n
 
 Delete "Lession 3"
 
-![Figure 3: Delete "Lesson 3"]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/xtl21mndz.png)
+![Figure 3: Delete "Lesson 3"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/xtl21mndz.png)
 
 Figure 3: Delete "Lesson 3"
 
 Next, we go to the "Greetings" Topic and change the flow by modifying the first message.
 
-![Figure 4: Modify greeting]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/v5hhwdomo.png)
+![Figure 4: Modify greeting](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/v5hhwdomo.png)
 
 Figure 4: Modify greeting
 
@@ -72,7 +72,7 @@ Keep in mind would like to use the bot on the phone - this means no graphics
 
 Next, we need to create a new "Confirmed Success" topic named "Success".
 
-![Figure 5: Create a new Question node and name the response as "answer"]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/ufwuphdqj.png)
+![Figure 5: Create a new Question node and name the response as "answer"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/ufwuphdqj.png)
 
 Figure 5: Create a new Question node and name the response as "answer"*
 
@@ -92,17 +92,17 @@ No
 No, thanks
 ```
 
-![Figure 6: Create two negative conditions]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/svsj5yssu.png)
+![Figure 6: Create two negative conditions](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/svsj5yssu.png)
 
 Figure 6: Create two negative conditions*
 
-![Figure 7:  as-well-as two positive conditions]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/lz7b6udra.png)
+![Figure 7:  as-well-as two positive conditions](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/lz7b6udra.png)
 
 Figure 7: as-well-as two positive conditions*
 
 This newly created topic will replace the last node, "Confirmed Success" in the "End of Conversation" topic. As "Confirmed Success" is not suitable for voice bots as there is a graphical feedback element involved.
 
-![Figure 8: Replace the last node]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/wfgfn1pmj.png)
+![Figure 8: Replace the last node](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/wfgfn1pmj.png)
 
 Figure 8: Replace the last node
 
@@ -114,7 +114,7 @@ Voice AI Connect is available in two flavors:
 
 * An enterprise solution, you can host yourself on Azure and bring your Carrier or as a fully managed solution with phone numbers. You can ask me to get the insides.
 
-![Figure 9: Create a "Message" and a "transfer to agent" node]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/puygx6vgg.png)
+![Figure 9: Create a "Message" and a "transfer to agent" node](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/puygx6vgg.png)
 
 Figure 9: Create a "Message" and a "transfer to agent" node
 
@@ -130,7 +130,7 @@ Please hold the line; you will be connected to a human.
 
 Finally, modify the "Escalation" topic to use the newly created "tranfer_agent_pva" topic as the end node.
 
-![Figure 10: Remove message node and add "transfer_agent_pva" as end node]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/km0wq8kdg.png)
+![Figure 10: Remove message node and add "transfer_agent_pva" as end node](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/km0wq8kdg.png)
 
 Figure 10: Remove message node and add "transfer_agent_pva" as end node
 
@@ -146,7 +146,7 @@ Let´s assume we want to answer questions, on the phone, regarding our opening h
 
 We open "Lesson 1" and rename it to "Opening hours"
 
-![Figure 11: modify both message nodes]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/segzhallv.png)
+![Figure 11: modify both message nodes](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/segzhallv.png)
 
 Figure 11: modify both message nodes
 
@@ -166,7 +166,7 @@ The Frankfurt hours are: Mon-Fri:
 
 Let´s assume we want to answer, on the phone, questions regarding our store location.
 
-![Figure 12: Modify nodes]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/vszwm0mav.png)
+![Figure 12: Modify nodes](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/vszwm0mav.png)
 
 Figure 12: Modify nodes
 
@@ -198,7 +198,7 @@ By integrating a custom entry, we make the dialog more natural. The caller can a
 
 #### Create Custom Entity
 
-![Figure 13: Create a Custom Entity "IVRTargets" as closed lis]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/h3eg35lxx.png)
+![Figure 13: Create a Custom Entity "IVRTargets" as closed lis](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/h3eg35lxx.png)
 
 Figure 13: Create a Custom Entity "IVRTargets" as closed list
 
@@ -262,7 +262,7 @@ help
 
 Rename "Lesson 4" to "IVRReplacement"
 
-![Figure 14: Change trigger phrases]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/s2qaz6mgx.png)
+![Figure 14: Change trigger phrases](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/s2qaz6mgx.png)
 
 Figure 14: Change trigger phrases
 
@@ -280,27 +280,27 @@ I want to talk to Support
 
 We use the created custom entity "IVRTargets" as a switchboard; if there is no identifiable target, we route to the standard human escalation point "Escalate" with the redirect to "transfer_agent_pva".
 
-![Figure 15: Change the question node, use custom entity "IVRTargets"]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/zhvko7xn6.png)
+![Figure 15: Change the question node, use custom entity "IVRTargets"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/zhvko7xn6.png)
 
 Figure 15: Change the question node, use custom entity "IVRTargets"
 
-![Figure 16: Change condition for human resources]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/22ddagvyr.png)
+![Figure 16: Change condition for human resources](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/22ddagvyr.png)
 
 Figure 16: Change condition for human resources
 
-![Figure 17: Change condition for sales]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/9thrub3c0.png)
+![Figure 17: Change condition for sales](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/9thrub3c0.png)
 
 Figure 17: Change condition for sales
 
-![Figure 18: Change condition for support]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/otlqhdspd.png)
+![Figure 18: Change condition for support](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/otlqhdspd.png)
 
 Figure 18: Change condition for support
 
-![Figure 19: Change condition for others]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/dunsvnurwp.png)
+![Figure 19: Change condition for others](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/dunsvnurwp.png)
 
 Figure 19: Change condition for others
 
-![Figure 20: Add a phone number to each target as a private message to agent]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/ik9lajqwi.png)
+![Figure 20: Add a phone number to each target as a private message to agent](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/ik9lajqwi.png)
 
 Figure 20: Add a phone number to each target as a private message to agent
 
@@ -318,19 +318,19 @@ With an adaptive Card, e.g., to a Microsoft Teams Channel, you could give your h
 
 Add questions to the "IVRReplacement" topic, e.g., asking for the transfer reason and a customer number.
 
-![Figure 21: Add questions]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/m4dfhkxad.png)
+![Figure 21: Add questions](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/m4dfhkxad.png)
 
 Figure 21: Add questions
 
 The user's response will be stored into a variable each, which we use as input for our power automate flow.
 
-![Figure 22: additional flow]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/vr7iamhzo.png)
+![Figure 22: additional flow](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/vr7iamhzo.png)
 
 Figure 22: additional flow
 
 The flow itself is straightforward.
 
-![Figure 23: Add "Post adaptive card in a chat or channel" action]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/3zane-8bd.png)
+![Figure 23: Add "Post adaptive card in a chat or channel" action](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/3zane-8bd.png)
 
 Figure 23: Add "Post adaptive card in a chat or channel" action
 
@@ -375,7 +375,7 @@ an example adaptive card could look like this, you need to edit the parts in "&l
 The resulting message will look like the picture below.  
 Please remember not to execute flows in a productive environment with a user's account; always use service principal accounts.
 
-![Figure 24: example message]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/z5hq7hrwv.png)
+![Figure 24: example message](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/z5hq7hrwv.png)
 
 Figure 24: example message
 
@@ -393,13 +393,13 @@ To use the component, you need to extract the bot id from the power virtual agen
 you can find the ID within the Settings/Channels/Custom Website  
 (the red part between "/bots/new_bot_" and "/webchat" )
 
-![Figure 25: Retrieve the bot ID]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/4c2jfsjd7.png)
+![Figure 25: Retrieve the bot ID](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/4c2jfsjd7.png)
 
 Figure 25: Retrieve the bot ID
 
 You can find a working example on [GitHub](https://github.com/the-cognitiveservices-ninja/webchat-pva). The example is prepopulated with configuration options; please see details on the configuration options within the [defaultStyleOptions.ts](https://github.com/microsoft/BotFramework-WebChat/blob/master/packages/api/src/defaultStyleOptions.ts) file within the repository of Microsoft´s webchat component.
 
-![Figure 26: example website]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/cucn-mdki.png)
+![Figure 26: example website](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/cucn-mdki.png)
 
 Figure 26: example website
 
@@ -409,7 +409,7 @@ Please sign up for "[Voice.Ai Connect Cloud](https://voiceaiconnect.audiocodes.i
 
 Let´s give the bot a voice. Retrieve your Web channel Secret (in PVA: Settings/Security/Web Channel Security)
 
-![Figure 27: retrieve your Web channel Secret]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/bhtwggirw.png)
+![Figure 27: retrieve your Web channel Secret](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/bhtwggirw.png)
 
 Figure 27: retrieve your Web channel Secret
 
@@ -419,21 +419,21 @@ and go to your Voice.AI Configuration Interface.
 
 Add the Bot
 
-![Figure 28: Add details for your bot.]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/wya1-hai1.png)
+![Figure 28: Add details for your bot.](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/wya1-hai1.png)
 
 Figure 28: Add details for your bot.
 
-![Figure 29: Select TTS, STT and Voice Font]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/z742cfy5a.png)
+![Figure 29: Select TTS, STT and Voice Font](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/z742cfy5a.png)
 
 Figure 29: Select TTS, STT and Voice Font
 
 #### Configure Routing
 
-![Figure 30: configure routing "inbound"]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/3hel6mpog.png)
+![Figure 30: configure routing "inbound"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/3hel6mpog.png)
 
 Figure 30: configure routing "inbound"
 
-![Figure 31: configure routing "transfer"]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/sj6j0fzjx.png)
+![Figure 31: configure routing "transfer"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/sj6j0fzjx.png)
 
 Figure 31: configure routing "transfer"
 
@@ -447,13 +447,13 @@ With Power Virtual Agents, the use cases are limitless and based on the requirem
 
 Create a new topic "Feedback"
 
-![Figure 32: create trigger phrases]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/wjarfi21m.png)
+![Figure 32: create trigger phrases](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/wjarfi21m.png)
 
 Figure 32: create trigger phrases
 
 and add 2 Nodes,
 
-![Figure 33: one message node to greet the User and a Question node to get Feedback]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/uwsbcxhas.png)
+![Figure 33: one message node to greet the User and a Question node to get Feedback](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/uwsbcxhas.png)
 
 Figure 33: one message node to greet the User and a Question node to get Feedback*
 
@@ -463,31 +463,31 @@ Welcome to our Feedback System.
 How was your experience with this virtual assistant?
 ```
 
-![Figure 34: Create a new Power Automate Flow with input and output and later a message to display the output]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/vnctpk31i.png)
+![Figure 34: Create a new Power Automate Flow with input and output and later a message to display the output](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/vnctpk31i.png)
 
 Figure 34: Create a new Power Automate Flow with input and output and later a message to display the output
 
-![Figure 35: initialize a variable and analyse the sentiment]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/gq4qvoixa.png)
+![Figure 35: initialize a variable and analyse the sentiment](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/gq4qvoixa.png)
 
 Figure 35: initialize a variable and analyse the sentiment
 
-![Figure 36: initialize a variable, set it to "overall text sentiment" and a switch]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/6aqlka8ik.png)
+![Figure 36: initialize a variable, set it to "overall text sentiment" and a switch](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/6aqlka8ik.png)
 
 Figure 36: initialize a variable, set it to "overall text sentiment" and a switch
 
-![Figure 37: create a positive case with Response to User]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/yuh7xktug.png)
+![Figure 37: create a positive case with Response to User](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/yuh7xktug.png)
 
 Figure 37: create a positive case with Response to User
 
-![Figure 38: create a negative case with Response to User]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/sxzhy3bqc.png)
+![Figure 38: create a negative case with Response to User](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/sxzhy3bqc.png)
 
 Figure 38: create a negative case with Response to User
 
-![Figure 39: create a neutral/default case with Response to User]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/bljr4rdrh.png)
+![Figure 39: create a neutral/default case with Response to User](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/bljr4rdrh.png)
 
 Figure 39: create a neutral/default case with Response to User
 
-![Figure 40: return the Response to PVA]({{site.baseurl}}/images/clanwregx000008l96xpb5ugz.md/lvts4etar.png)
+![Figure 40: return the Response to PVA](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clanwregx000008l96xpb5ugz.md/lvts4etar.png)
 
 Figure 40: return the Response to PVA
 

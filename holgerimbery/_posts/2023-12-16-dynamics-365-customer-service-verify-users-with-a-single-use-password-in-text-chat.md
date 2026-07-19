@@ -47,7 +47,7 @@ To start with the basics to identify the user, we implement a pre-conversation s
 In this example, we ask three questions.  
 The user´s name, the email address (for returning/registered customers), and the consent for our T&Cs.
 
-![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/e1c2067b-e4fa-4930-a595-dca894977ee8.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/e1c2067b-e4fa-4930-a595-dca894977ee8.png)
 
 ### Prerequisites
 
@@ -56,7 +56,7 @@ The user´s name, the email address (for returning/registered customers), and th
 * Add this flow to the "Conversation Start" topic with a question, asking the user. to authenticate.
     
 
-![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/41f3bb8d-bc59-4425-baf8-aa68908f095f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/41f3bb8d-bc59-4425-baf8-aa68908f095f.png)
 
 ### Authentication as a topic
 
@@ -66,34 +66,34 @@ The user´s name, the email address (for returning/registered customers), and th
     "generate the verification code"
     
 
-![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/dbc090a5-35db-4300-9c6d-c124118888fb.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/dbc090a5-35db-4300-9c6d-c124118888fb.png)
 
 * The generated code is the output of the flow and is stored in a variable. The flow itself sends the code to the user's registered email address.
     
 * Ask the user to input the code using a question node.
     
-    ![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/c8351c89-8719-4604-94e2-2bfc8f810fd9.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/c8351c89-8719-4604-94e2-2bfc8f810fd9.png)
     
     * Verify the code using another flow, "Validate the code."
         
 
-![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/8fbe48fe-ee9f-40ce-9707-59942328b1cb.png"left")
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/8fbe48fe-ee9f-40ce-9707-59942328b1cb.png"left")
 
 ### Flow 1: generate verification code
 
-![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/9b5fea2b-a471-4a40-9e3c-5ecb6bf8c327.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/9b5fea2b-a471-4a40-9e3c-5ecb6bf8c327.png)
 
 * Create the flow as shown above with `CodeLength`.
     
 
-![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/9eb3e1e2-4304-417f-9397-6753f7c9575f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/9eb3e1e2-4304-417f-9397-6753f7c9575f.png)
 
 * Use a formula like:
     
 
 `plaintext substring(replace(guid(), '-', ''), 0, min(variables('CodeLength'), 32))`to create the verification code.
 
-![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/2458197e-4fb3-4f07-a752-5578418389c0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/2458197e-4fb3-4f07-a752-5578418389c0.png)
 
 * Use an email template like the following to send the code to the user:
     
@@ -102,7 +102,7 @@ The user´s name, the email address (for returning/registered customers), and th
 
 Use a simple check to verify the code and return a Boolean value the topic.
 
-![]({{site.baseurl}}/images/clq80jcqw000i08ju3yew0dvp.md/44382631-3a35-4c4c-b3af-71518eea635a.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/44382631-3a35-4c4c-b3af-71518eea635a.png)
 
 ## Conclusion
 

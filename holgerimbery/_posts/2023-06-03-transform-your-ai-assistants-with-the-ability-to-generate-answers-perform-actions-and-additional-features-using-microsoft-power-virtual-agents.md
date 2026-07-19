@@ -32,31 +32,31 @@ Additionally, you can create custom topics that draw data from your backend syst
 * Create a new bot in the latest editing canvas and enter the first web source to get answers from
     
 
-![first external source for generative answers]({{site.baseurl}}/images/clifwxq4501iubynv6ip6awlc.md/504caebc-8b3b-4c31-be1c-0e25c2a7a71f.png)
+![first external source for generative answers](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clifwxq4501iubynv6ip6awlc.md/504caebc-8b3b-4c31-be1c-0e25c2a7a71f.png)
 
 *Figure: the first external source for generative answers*
 
 * head over to the Settings/AI Capabilities page to tailor the feature to your needs, e.g., add additional information sources.
     
 
-![]({{site.baseurl}}/images/clifwxq4501iubynv6ip6awlc.md/b48b573c-a2a3-4dac-8562-6a259c120690.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clifwxq4501iubynv6ip6awlc.md/b48b573c-a2a3-4dac-8562-6a259c120690.png)
 
 *Figure: Generative answers configuration and settings page with multiple data sources.*
 
 * scroll down to "Advanced configuration" to modify the feature, if needed
     
-    ![Advanced configuration]({{site.baseurl}}/images/clifwxq4501iubynv6ip6awlc.md/91d5d310-4c79-4f4e-aaa6-4974706dccf4.png)
+    ![Advanced configuration](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clifwxq4501iubynv6ip6awlc.md/91d5d310-4c79-4f4e-aaa6-4974706dccf4.png)
     
     *Figure: Advanced Configuration*
     
-    ![conversational boosting topic]({{site.baseurl}}/images/clifwxq4501iubynv6ip6awlc.md/b968487b-9235-49e2-b5d1-644708104b95.png)
+    ![conversational boosting topic](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clifwxq4501iubynv6ip6awlc.md/b968487b-9235-49e2-b5d1-644708104b95.png)
     
     *Figure: conversational boosting topic*  
     
 
 You will find a result similar to the screenshot below
 
-![Result]({{site.baseurl}}/images/clifwxq4501iubynv6ip6awlc.md/b4302629-3d7a-4024-b74a-83b17a593ab5.png)
+![Result](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clifwxq4501iubynv6ip6awlc.md/b4302629-3d7a-4024-b74a-83b17a593ab5.png)
 
 *Figure: Result*  
   
@@ -67,7 +67,7 @@ Please find [additional resources](https://the.cognitiveservices.ninja/series/op
 
 In a limited Preview version, bot makers can utilize generative actions capabilities to integrate their tenant APIs, enterprise-specific Microsoft Power Automate flows, or other actions into their bots. In the generative actions-tracing canvas, creators can observe how the bot evaluates and decides which tools to use and what questions to ask. The bot can comprehend the user's inquiry and search through its action library to identify which can best satisfy the request. It then automatically assembles and links them together while creating follow-up questions for the user if more information is needed.
 
-![]({{site.baseurl}}/images/clifwxq4501iubynv6ip6awlc.md/66df5ad2-42ae-4bb5-b15a-c5256f7e8e33.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clifwxq4501iubynv6ip6awlc.md/66df5ad2-42ae-4bb5-b15a-c5256f7e8e33.png)
 
 *Figure: Test generative actions tracing and watch the chain log progress.  
 *

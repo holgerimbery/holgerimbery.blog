@@ -39,19 +39,19 @@ Between answering user questions by chatting over proprietary company informatio
 * Open your bot and select "Topics." On the Topics page, click the "+Add" button, and then choose "Plugin action (preview)."
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/759f7083-264a-4e93-a9d9-fe450712d124.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/759f7083-264a-4e93-a9d9-fe450712d124.png)
 
 * In the "Add an action (preview)" wizard now open, you can search for the plugin action you want to use within your bot.  
     Upon opening the wizard, the default list includes "Power Automate Flows" and "custom connectors" available in the environment, commonly used pre-built connectors, and Bot Framework Skills that have been registered with your bot.
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/c308cc41-c4a0-43d2-8824-3240cc04b364.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/c308cc41-c4a0-43d2-8824-3240cc04b364.png)
 
 * Select the action you want to use.  
     You will proceed to the wizard's next step to configure the action's connection. Once your connection has been successfully configured, click "Next."
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/87ad8e5d-5247-4b63-ab0c-a1837739967e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/87ad8e5d-5247-4b63-ab0c-a1837739967e.png)
 
 * Configure the display name and Description for your plugin action.  
     Typically, these are pre-populated based on the action you selected. On this page, you can decide whether you want your users to confirm the information they have provided before the plugin action is executed. This can often be helpful, particularly for actions that modify a user's data, such as inserting or updating a record in a table.
@@ -64,7 +64,7 @@ Between answering user questions by chatting over proprietary company informatio
 * Once you have configured your name, Description, and confirmation options, click "Next."
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/56641ad3-9ba3-4b9e-b4dc-a16dfdfe125e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/56641ad3-9ba3-4b9e-b4dc-a16dfdfe125e.png)
 
 * For each input on your action, you can now configure the **Display name** and **Description**.
     
@@ -73,7 +73,7 @@ Between answering user questions by chatting over proprietary company informatio
 * The Description of the input can impact the generated question. Additionally, you can modify the "Identify as" option to a specific entity type based on the input being gathered.
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/c213b6d3-b944-4267-8584-91978b4a121e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/c213b6d3-b944-4267-8584-91978b4a121e.png)
 
 * Once you have configured your inputs, click "Next."
     
@@ -84,7 +84,7 @@ Between answering user questions by chatting over proprietary company informatio
 * To add an output, click "Add" and then choose from the available outputs, which are determined by the action you selected at the beginning of the wizard.
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/cab3afa5-4c2c-4088-a9ba-8651941fa02b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/cab3afa5-4c2c-4088-a9ba-8651941fa02b.png)
 
 * In addition to determining which variables are populated by your plugin action, you can also have your plugin action send a response back to the user once the action has been executed.
     
@@ -93,7 +93,7 @@ Between answering user questions by chatting over proprietary company informatio
 * Similar to the confirmation editor, you can insert references to output variables from the action using Power Fx, such as the `Topic.Output.responses.daily.tempLo` or `Topic.Output.responses.daily.tempHi` variable shown in this example.
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/f8ef4e48-6669-4236-85f3-d598ecdbcb7b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/f8ef4e48-6669-4236-85f3-d598ecdbcb7b.png)
 
 * Select Next to proceed to the final step in the wizard, where you can review your plugin action configuration. You can also go back to make changes.
     
@@ -102,7 +102,7 @@ Between answering user questions by chatting over proprietary company informatio
 * Once added, your plugin can be viewed in the Plugin Actions (preview) tab on the Topics page.
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/52549cf6-8d54-4531-b5dd-e33ab6684bc3.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/52549cf6-8d54-4531-b5dd-e33ab6684bc3.png)
 
 ### **Call a plugin action.**
 
@@ -122,14 +122,14 @@ To call a plugin action, explicitly invoke it from within a topic, just as you w
     ```
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/805c54e9-a7f0-4cd2-861e-f897de69cea1.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/805c54e9-a7f0-4cd2-861e-f897de69cea1.png)
 
 * Select "Add node (+)" and then choose "Call an action".
     
 * Navigate to the "Plugin actions (preview)" tab and select the plugin action you previously created, "Get forecast for today".
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/07e51959-4032-48a2-b5d1-222f72e31e1c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/07e51959-4032-48a2-b5d1-222f72e31e1c.png)
 
 * Save your work
     
@@ -143,13 +143,13 @@ To call a plugin action, explicitly invoke it from within a topic, just as you w
 * Now that this input has been overridden, the bot won't ask the user for a value.
     
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/c224a0c7-8db1-4cff-8d19-ab6d4849aeaf.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/c224a0c7-8db1-4cff-8d19-ab6d4849aeaf.png)
 
 ### **Test your plugin action.**
 
 Once you've added a plugin action to a topic, you can test it and see an output similar to the one displayed below.
 
-![]({{site.baseurl}}/images/clnpzjx4j000009kzfhwda2l2.md/3606a40d-a958-40fd-a75a-eb27aafcb7ef.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clnpzjx4j000009kzfhwda2l2.md/3606a40d-a958-40fd-a75a-eb27aafcb7ef.png)
 
 GPT-driven conversations are more fluid than traditional, pre-written questions, enabling users to answer multiple questions in a single turn or modify previously entered values.
 

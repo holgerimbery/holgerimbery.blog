@@ -31,7 +31,7 @@ PVA has a built-in topic that can serve as a hook to the outside world, the "Fal
 
 ## Activate the "Fallback" topic
 
-![Figure 2: Activate the "Fallback" topic]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/7d-bbsgxq.png)
+![Figure 2: Activate the "Fallback" topic](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/7d-bbsgxq.png)
 
 Figure 2: Activate the "Fallback" topic
 
@@ -39,7 +39,7 @@ To activate the "Fallback" system topic, go to Settings within the editing canva
 
 After activating the topic, you will find it within "topics".
 
-![Figure 3: activated fallback topic]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/ugat3hgo2.png)
+![Figure 3: activated fallback topic](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/ugat3hgo2.png)
 
 Figure 3: activated fallback topic
 
@@ -62,7 +62,7 @@ This example will integrate a FAQ Database on "growing chilies". Data from a ran
 
 We created a new project on [Azure Language Studio](https://language.cognitive.azure.com/home)  and chose "Custom Question Answering".
 
-![Figure 4: Create a new Custom Question Answering Project]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/nrqckwgic.jpg)
+![Figure 4: Create a new Custom Question Answering Project](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/nrqckwgic.jpg)
 
 Figure 4: Create a new Custom Question Answering Project
 
@@ -78,19 +78,19 @@ Figure 4: Create a new Custom Question Answering Project
 | --- | --- |
 | Growing Chillies | [https://www.greenhousesensation.co.uk/growing-chillies-faq/](https://www.greenhousesensation.co.uk/growing-chillies-faq/) |
 
-![Figure 5: Add URL of FAQs]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/ivh0-ynnf.jpg)
+![Figure 5: Add URL of FAQs](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/ivh0-ynnf.jpg)
 
 Figure 5: Add URL of FAQs
 
 Language Studio will now import your FAQs into the project and gives you single and multiturn Question and Answer pairs.
 
-![Figure 6: Question and Answer pairs in Knowledge Base]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/_armxwuhi.jpg)
+![Figure 6: Question and Answer pairs in Knowledge Base](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/_armxwuhi.jpg)
 
 Figure 6: Question and Answer pairs in Knowledge Base
 
 To use the imported content, we need to clean up the answers and make them usable for a bot. We must remove pictures and links if our bot is a voice bot.
 
-![Figure 7: Add alternate phrases]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/nq-y9ppgr.jpg)
+![Figure 7: Add alternate phrases](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/nq-y9ppgr.jpg)
 
 Figure 7: Add alternate phrases
 
@@ -98,13 +98,13 @@ To make the Answering more fluent, we will add variations to each question.
 
 And deploy the knowledge base.
 
-![Figure 8: Select "Deploy" on the left side and press "deploy" on top to deploy]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/xkbv50ojw.jpg)
+![Figure 8: Select "Deploy" on the left side and press "deploy" on top to deploy](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/xkbv50ojw.jpg)
 
 Figure 8: Select "Deploy" on the left side and press "deploy" on top to deploy
 
 After deploying the knowledge base, we press "Get prediction URL", and we note down the Site URL(Red) and the Account Key (Yellow); we will use both later in Power Automate.
 
-![Figure 9: Retrieve the Site URL and Account Key]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/i16r0pr4i.jpg)
+![Figure 9: Retrieve the Site URL and Account Key](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/i16r0pr4i.jpg)
 
 Figure 9: Retrieve the Site URL and Account Key
 
@@ -114,7 +114,7 @@ We jump back into your newly created "Fallback" Topic and remove the "Escalate" 
 
 After deleting the nodes, we create a new "Call an action" node.
 
-![Figure 10: Create a new Call for an action node]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/uviczacgu.png)
+![Figure 10: Create a new Call for an action node](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/uviczacgu.png)
 
 Figure 10: Create a new Call for an action node
 
@@ -122,37 +122,37 @@ Power Automate will open, and we can create a new flow.
 
 First, we rename the flow and define the input.
 
-![Figure 11: Define Input]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/8u5cieypk.png)
+![Figure 11: Define Input](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/8u5cieypk.png)
 
 Figure 11: Define Input
 
 To determine the language of the question, we will initialize a new variable, "QuestionLanguage". We will use it to store the language code.
 
-![Figure 12: Initialize variable]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/uivkxxcho.png)
+![Figure 12: Initialize variable](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/uivkxxcho.png)
 
 Figure 12: Initialize variable
 
 Create a new node by searching "Microsoft Translator V2" and selecting "Detect language", and set Text to the content of the variable "UnrecognisedUserInput".
 
-![Figure 13: Create Detect Language Node]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/z6pj8xvgj.png)
+![Figure 13: Create Detect Language Node](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/z6pj8xvgj.png)
 
 Figure 13: Create Detect Language Node
 
 We use a set Variable Node to store the output of "detect language" into the "QuestionLanguage" Variable
 
-![Figure 14: Initialize Variable QuestionLanguage]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/tb4le7yz1.png)
+![Figure 14: Initialize Variable QuestionLanguage](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/tb4le7yz1.png)
 
 Figure 14: Initialize Variable QuestionLanguage
 
 with a translate text node (Microsoft Translator V2); we translate the content of "UnrecognizedUserInput" to English.
 
-![Figure 15: Translate to English]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/siemo5faq.png)
+![Figure 15: Translate to English](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/siemo5faq.png)
 
 Figure 15: Translate to English
 
 Create a new node by searching "Language - Question Answering" and selecting "Generate answer from Project".
 
-![Figure 16: Create Node]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/veunyzdfl.png)
+![Figure 16: Create Node](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/veunyzdfl.png)
 
 Figure 16: Create Node
 
@@ -160,31 +160,31 @@ We noted the account Key and Site URL earlier in this guide; we use the values n
 
 Set "Question" to the output of the translation node.
 
-![Figure 17: Generate Answers from Project]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/zgjtxgraz.png)
+![Figure 17: Generate Answers from Project](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/zgjtxgraz.png)
 
 Figure 17: Generate Answers from Project
 
 Next, Initialize a new variable with a name, e.g., "CQA\_Answer"
 
-![Figure 18: Initialize Variable CQA_Answer]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/vbptlpszz.png)
+![Figure 18: Initialize Variable CQA_Answer](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/vbptlpszz.png)
 
 Figure 18: Initialize Variable CQA\_Answer
 
 A "Apply to each" Node with a "Translation" and a "set Variable" action will translate back to the language the question was asked in.
 
-![Figure 19: Apply to each Node with two actions]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/uax_rxwv_.png)
+![Figure 19: Apply to each Node with two actions](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/uax_rxwv_.png)
 
 Figure 19: Apply to each Node with two actions
 
 Finally, we adjust the Return Value to the content of the "CQA\_Answer" Variable.
 
-![Figure 20: Return Value with Content of CQA_Answer Variable]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/cdbcw4myu.png)
+![Figure 20: Return Value with Content of CQA_Answer Variable](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/cdbcw4myu.png)
 
 Figure 20: Return Value with Content of CQA\_Answer Variable
 
 After saving the flow, we can select the flow in the action node, adjust the input, and create a message node to display the output of the flow.
 
-![Figure 21: Complete Topic with Power Automate Flow]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/zbmcqzu6k.png)
+![Figure 21: Complete Topic with Power Automate Flow](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/zbmcqzu6k.png)
 
 Figure 21: Complete Topic with Power Automate Flow
 
@@ -192,7 +192,7 @@ The flow will result in the following:
 
 A question asked to the bot without a topic in PVA will end up in the "Fallback" topic. Custom Question Answering will help with the answer, even to a question not asked in English.
 
-![Figure 22: Result: multilingual QNA]({{site.baseurl}}/images/clb7zhrzm000n08lcher16dpp.md/r6envbs8n.png)
+![Figure 22: Result: multilingual QNA](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/r6envbs8n.png)
 
 Figure 22: Result: multilingual QNA
 

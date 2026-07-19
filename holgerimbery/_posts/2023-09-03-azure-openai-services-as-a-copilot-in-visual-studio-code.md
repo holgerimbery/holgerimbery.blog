@@ -35,18 +35,18 @@ To gain insights on Azure OpenAI service, please refer to [another article](http
 
 * Go to "https://oai.azure.com" and create a new model deployment if you have done this before
     
-    ![]({{site.baseurl}}/images/clm3fdxp2000709mlh5kjaxlq.md/efbb5214-a79c-4ed5-8e27-c13fad67e396.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clm3fdxp2000709mlh5kjaxlq.md/efbb5214-a79c-4ed5-8e27-c13fad67e396.png)
     
 * Select "gpt-35-turbo" and give your deployment a name.
     
 * Go to playground/completions/view code,
     
-    ![]({{site.baseurl}}/images/clm3fdxp2000709mlh5kjaxlq.md/bfcadc20-b099-491e-876e-93e00cafd8e3.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clm3fdxp2000709mlh5kjaxlq.md/bfcadc20-b099-491e-876e-93e00cafd8e3.png)
     
 * obtain the endpoint address (red) & API key (yellow), and store it in a safe place.
     
 
-![]({{site.baseurl}}/images/clm3fdxp2000709mlh5kjaxlq.md/cccd573f-9f53-4255-b05f-313cf815e52f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clm3fdxp2000709mlh5kjaxlq.md/cccd573f-9f53-4255-b05f-313cf815e52f.png)
 
 ## Add an extension to your Visual Studio Code.
 
@@ -54,7 +54,7 @@ In this article, I will use an exceptional extension created by [Andrew Butson](
 
 To install the extension, search for "AndrewButson.vscode-openai" in your Visual Studio Code and activate the Azure OpenAI Services as a resource provider. You can do this through the command palette by pressing "Ctrl+Shift+P" and entering "vscode-openai: Register openai service".
 
-![]({{site.baseurl}}/images/clm3fdxp2000709mlh5kjaxlq.md/0c34d87b-4d0c-438d-9728-bf5c762822b1.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clm3fdxp2000709mlh5kjaxlq.md/0c34d87b-4d0c-438d-9728-bf5c762822b1.png)
 
 * select openai.azure.com
     
@@ -71,11 +71,11 @@ To gain further insight into the model, please look at [another article of mine]
 
 Example 1: Working with Text
 
-![]({{site.baseurl}}/images/clm3fdxp2000709mlh5kjaxlq.md/66eab756-6e05-48cf-987b-590faba27a57.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clm3fdxp2000709mlh5kjaxlq.md/66eab756-6e05-48cf-987b-590faba27a57.png)
 
 Example 2: Working with Your Own Data - Utilizing Locally Accessible Data
 
-![]({{site.baseurl}}/images/clm3fdxp2000709mlh5kjaxlq.md/f826d1fc-ca84-412b-b3f9-6842f57f58c0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clm3fdxp2000709mlh5kjaxlq.md/f826d1fc-ca84-412b-b3f9-6842f57f58c0.png)
 
 ## Conclusion
 

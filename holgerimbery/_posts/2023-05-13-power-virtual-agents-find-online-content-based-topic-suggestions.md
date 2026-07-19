@@ -37,17 +37,17 @@ Power Virtual Agents can detect and analyze the structure of documents during co
 
 First, point to the web pages or online files from which you'd like to extract content. Once the extraction is complete, you will be directed to the Suggested Topics page. Here, you will be able to review topics that were extracted from the web pages or online files. To access the Suggested Topics page, open the navigation menu and select Topics. Then, select Suggest topics. Once on the Suggested Topics page, you can add the topics to your bot for further use.
 
-![]({{site.baseurl}}/images/clhlp6q1l02g0l9nv8l11fwce.md/ed40cb87-1bd4-4cfd-85b4-a4e9334fbec8.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhlp6q1l02g0l9nv8l11fwce.md/ed40cb87-1bd4-4cfd-85b4-a4e9334fbec8.png)
 
 Figure: Suggest topics
 
 Once you have finished adding URLs to webpages and online files, click "Start" to begin the extraction process. This can take several minutes, depending on the number and complexity of the web pages or files you have added. A message will appear at the top of the screen indicating that the extraction is in progress and may take some time.
 
-![]({{site.baseurl}}/images/clhlp6q1l02g0l9nv8l11fwce.md/ec4a2acc-3dc5-49ac-bf1a-0316fa95a874.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhlp6q1l02g0l9nv8l11fwce.md/ec4a2acc-3dc5-49ac-bf1a-0316fa95a874.png)
 
 Figure: raw data
 
-![]({{site.baseurl}}/images/clhlp6q1l02g0l9nv8l11fwce.md/b5c7ce2c-6baf-48e4-843d-0f5a7cb6120f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhlp6q1l02g0l9nv8l11fwce.md/b5c7ce2c-6baf-48e4-843d-0f5a7cb6120f.png)
 
 Figure: Enter URL
 
@@ -55,7 +55,7 @@ Figure: Enter URL
     Several suggestions will appear.
     
 
-![]({{site.baseurl}}/images/clhlp6q1l02g0l9nv8l11fwce.md/6e13d686-b03a-4289-8990-f99c83c9d5cc.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clhlp6q1l02g0l9nv8l11fwce.md/6e13d686-b03a-4289-8990-f99c83c9d5cc.png)
 
 Figure: Suggested
 

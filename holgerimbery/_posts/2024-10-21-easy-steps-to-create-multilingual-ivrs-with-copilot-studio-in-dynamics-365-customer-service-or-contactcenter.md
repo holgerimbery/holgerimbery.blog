@@ -21,7 +21,7 @@ Leveraging Copilot Studio's built-in capabilities, you can create a multilingual
 
 Copilot Studio cannot create bots in the voice channel using multiple languages.
 
-![]({{site.baseurl}}/images/cm2iy07ml001y08me9sokaz7m.md/32feb528-28c0-4f03-ab15-ff2ed31e3fd1.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2iy07ml001y08me9sokaz7m.md/32feb528-28c0-4f03-ab15-ff2ed31e3fd1.png)
 
 ## How to create a multilingual IVR
 
@@ -29,7 +29,7 @@ You can create a bot for your Voice Channel in one language and utilize SSML tag
 
 * Begin by establishing a Workstream as a concierge service in your primary language. Then, connect the Workstream to the phone number you wish to make available to your customers.
     
-    ![]({{site.baseurl}}/images/cm2iy07ml001y08me9sokaz7m.md/d3921049-8b21-457a-81b5-48642e5140d2.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2iy07ml001y08me9sokaz7m.md/d3921049-8b21-457a-81b5-48642e5140d2.png)
     
 * Incorporate a multilingual voice into your Voice Profile for that particular Workstream.
     
@@ -39,7 +39,7 @@ You can create a bot for your Voice Channel in one language and utilize SSML tag
     
 * Add a Message Node as your IVR Text with SSML Tags to change the language.
     
-    ![]({{site.baseurl}}/images/cm2iy07ml001y08me9sokaz7m.md/5c9f01f4-f20f-4528-8078-03862e019db9.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2iy07ml001y08me9sokaz7m.md/5c9f01f4-f20f-4528-8078-03862e019db9.png)
     
     ```xml
     <voice name="en-US-AvaMultilingualNeural">
@@ -55,14 +55,14 @@ You can create a bot for your Voice Channel in one language and utilize SSML tag
     
 * Create a question node and a condition as described in the screenshots.
     
-    ![]({{site.baseurl}}/images/cm2iy07ml001y08me9sokaz7m.md/dda57bab-6c53-43f1-8cab-693959cb68b8.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2iy07ml001y08me9sokaz7m.md/dda57bab-6c53-43f1-8cab-693959cb68b8.png)
     
 
-![]({{site.baseurl}}/images/cm2iy07ml001y08me9sokaz7m.md/d21f3930-c384-4375-a47a-574cdad1827c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2iy07ml001y08me9sokaz7m.md/d21f3930-c384-4375-a47a-574cdad1827c.png)
 
 * Utilize the Transfer Conversation Node to forward calls for all languages other than your primary one to the "hidden" phone numbers associated with your workstreams in those languages. Do not forget to end the topic with an “End current topic” node.
     
-    ![]({{site.baseurl}}/images/cm2iy07ml001y08me9sokaz7m.md/bc82bef8-49c5-4d0a-9cd3-5f526991e47d.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2iy07ml001y08me9sokaz7m.md/bc82bef8-49c5-4d0a-9cd3-5f526991e47d.png)
     
     Once saved and published, the final result should mirror the dialogue in the attachment, noting that sound is absent between seconds 18 and 20.
     

@@ -32,11 +32,11 @@ Copilot Studio's voice bots offer several key features, including:
 
 You need to create a classic bot to use it in Dynamics 365 Customer Service Omnichannel.
 
-![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/89cc2684-7aa7-4b24-b7aa-c8ee65b45eb4.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/89cc2684-7aa7-4b24-b7aa-c8ee65b45eb4.png)
 
-![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/03001c35-f38d-479b-b47c-f24adac4b4cf.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/03001c35-f38d-479b-b47c-f24adac4b4cf.png)
 
-![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/ec1acbe2-6d57-4cf8-8a33-41061545d770.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/ec1acbe2-6d57-4cf8-8a33-41061545d770.png)
 
 ## **Prerequisites**
 
@@ -53,13 +53,13 @@ For the Copilot Studio bot to function properly, the following prerequisites are
     
 * Choose a bot from the Name dropdown menu in the Add Bot pane.
     
-    ![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/36321334-b52d-4e05-9342-ca0bf58aa470.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/36321334-b52d-4e05-9342-ca0bf58aa470.png)
     
 * Select **Save and close**. The bot is added to the workstream.
     
-    ![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/df23e4fd-d0d1-4f2a-9307-ddd879c0ed24.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/df23e4fd-d0d1-4f2a-9307-ddd879c0ed24.png)
     
-    ![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/b906290b-759d-4c27-aea5-f4b9a7ad8db0.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/b906290b-759d-4c27-aea5-f4b9a7ad8db0.png)
     
 
 ### **Configure handoff from Copilot Studio to Omnichannel for Customer Service**
@@ -86,16 +86,16 @@ For the Copilot Studio bot to function properly, the following prerequisites are
             
         * Enter the name of your bot, and then select **Register**.
             
-        * ![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/f6294a7f-fefb-418d-93a8-6180d0301abe.png)
+        * ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/f6294a7f-fefb-418d-93a8-6180d0301abe.png)
             
             Copy the **Application ID** to the clipboard.
             
-            ![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/50d50e9f-8bb7-468f-8cd1-a2d0631221b1.png)
+            ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/50d50e9f-8bb7-468f-8cd1-a2d0631221b1.png)
             
     * Navigate to Copilot Studio, insert the copied ID into the Application ID field, and then choose 'Add your bot'. Once the bot is added, a confirmation message will appear, and the bot will be listed.
         
     
-    ![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/85a520cf-8726-4529-adeb-4fd92919b3b0.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/85a520cf-8726-4529-adeb-4fd92919b3b0.png)
     
     To use details from Dynamics 365 Customer Service within the custom copilot, install the addon packages:  
     [  
@@ -115,7 +115,7 @@ For the Copilot Studio bot to function properly, the following prerequisites are
 
 Using CallerID as an identifier, the system greets the caller with the name stored in the associated record in Dynamics.
 
-![]({{site.baseurl}}/images/clvrrpnz3000409la52j69nui.md/be1a2e25-e073-4024-84cd-ce9a1eeeff49.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clvrrpnz3000409la52j69nui.md/be1a2e25-e073-4024-84cd-ce9a1eeeff49.png)
 
 ## Conclusion
 

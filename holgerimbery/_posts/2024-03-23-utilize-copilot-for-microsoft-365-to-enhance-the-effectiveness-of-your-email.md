@@ -38,7 +38,7 @@ Drafting in Outlook for Microsoft 365 is currently available in new Outlook for 
 
 4. In the Copilot box, enter your prompt. For instance, *"Let the team know we decided to meet in our headquarters meeting room, 'Redmond,' next Wednesday at 2 pm to discuss the OKRs."*
 
-    ![]({{site.baseurl}}/images/clu40y6tb000f09l15cm4202b.md/6841eda4-d638-4206-bb84-f203896cd598.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clu40y6tb000f09l15cm4202b.md/6841eda4-d638-4206-bb84-f203896cd598.png)
 
 5. Click **Generate options** to pick your preferred length and tone.
 
@@ -47,7 +47,7 @@ Drafting in Outlook for Microsoft 365 is currently available in new Outlook for 
 7. Check the message. If it's not exactly what you want, click **Regenerate draft** for a new version.
 
 
-![]({{site.baseurl}}/images/clu40y6tb000f09l15cm4202b.md/d08156ab-9f70-4fe7-860c-b3aeade1e07d.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clu40y6tb000f09l15cm4202b.md/d08156ab-9f70-4fe7-860c-b3aeade1e07d.png)
 
 8. If you want to start again, change your prompt and click **Generate**.
    
@@ -87,7 +87,7 @@ In New Outlook and web versions of Outlook, Draft with Copilot doesn't support m
 4. If you like any or all of the suggestions, incorporate the feedback into the draft. When you are satisfied, send your email.
    
 
-![]({{site.baseurl}}/images/clu40y6tb000f09l15cm4202b.md/b93aabd8-56b2-4960-8443-88c1f8f2b214.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clu40y6tb000f09l15cm4202b.md/b93aabd8-56b2-4960-8443-88c1f8f2b214.png)
 
 ## What are the limitations of Copilot in Outlook, and how can users minimize their impact when using the system?
 
@@ -114,7 +114,7 @@ The way you ask your CoPilot for help is critical, including the following point
 * name the source
   
 
-![source Microsoft training material]({{site.baseurl}}/images/clu40y6tb000f09l15cm4202b.md/e3811861-5cf5-4562-be4c-99da46ded99c.png)
+![source Microsoft training material](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clu40y6tb000f09l15cm4202b.md/e3811861-5cf5-4562-be4c-99da46ded99c.png)
 
 ## Conclusion
 

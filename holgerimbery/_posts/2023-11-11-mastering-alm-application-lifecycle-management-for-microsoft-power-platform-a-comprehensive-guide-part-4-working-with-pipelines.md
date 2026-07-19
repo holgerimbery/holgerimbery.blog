@@ -114,7 +114,7 @@ Deploy the pipeline solution in your production environment.
     
 * In the sidebar that appears, scroll down and select the "Power Platform Pipelines" app.
     
-    ![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/64b7364a-74b4-45ae-b784-7215fd9b7127.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/64b7364a-74b4-45ae-b784-7215fd9b7127.png)
     
 * Then, click the "Next" button at the bottom of the sidebar.
     
@@ -125,7 +125,7 @@ Deploy the pipeline solution in your production environment.
 
 You can refresh the page by clicking the Refresh button in the command bar at the top. Once completed, go to the [maker portal](https://make.powerapps.com/) and select the correct environment (Production). If everything went smoothly, you should see the Deployment Pipeline Configuration app in the Apps section of the maker portal.
 
-![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/bcdccc51-f945-4860-8cb3-b4011eee89ef.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/bcdccc51-f945-4860-8cb3-b4011eee89ef.png)
 
 ## Create a new Pipeline.
 
@@ -142,16 +142,16 @@ There is also a Pipeline Setup section to view your environments and pipelines.
 
 Lastly, a Deployments section allows you to view the run history and find solution artifacts.
 
-![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/7305db2f-ccd1-4873-8ea9-5f3260908288.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/7305db2f-ccd1-4873-8ea9-5f3260908288.png)
 
 create a new pipeline by selecting three dots and then the "+ New" button on the "Active Development Pipeline" Dashboard
 
-![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/84a14f6b-957f-478d-be28-5bc35ee49259.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/84a14f6b-957f-478d-be28-5bc35ee49259.png)
 
 create a new pipeline by selecting the new button on the `Pipelines Dashboard`.  
 The result should be similar to the screenshot below
 
-![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/4418a35a-ef19-4534-91cd-8d67238f745c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/4418a35a-ef19-4534-91cd-8d67238f745c.png)
 
 As you can see, there are two sections: Linked Development Environments and Deployment Stages.
 
@@ -167,17 +167,17 @@ The Deployment Stages section allows you to add stages following your developmen
 
 Add or create a development environment with the respecting buttons and find the result similar to the screenshot
 
-![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/6b6cc054-3743-4309-b4fb-7419f18fcb46.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/6b6cc054-3743-4309-b4fb-7419f18fcb46.png)
 
 ## Create stages
 
 Create your first stage, "deploy to test," via "+ New Deployment Stage."
 
-![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/7a122b09-c71f-4dab-b13c-400e57755a86.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/7a122b09-c71f-4dab-b13c-400e57755a86.png)
 
 the process is self-explanatory
 
-![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/0e0f58a9-0353-44b2-9162-57ef030cdd83.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/0e0f58a9-0353-44b2-9162-57ef030cdd83.png)
 
 Ensure you click the "New Deployment Stage" button again to add a second deployment stage called "Deploy to Prod". Follow a similar process as above, but select the Previous Deployment Stage and search for the "Deploy to Test" stage.
 
@@ -193,7 +193,7 @@ This two-stage process ensures the quality and reliability of the solutions deve
 
 Select your solution in your development environment and press the "rocket" symbol to fire up your pipeline.
 
-![]({{site.baseurl}}/images/clotvy78m000d09ju8kh29r6z.md/143b7f1f-a377-459a-b9f6-f79cc091bc32.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clotvy78m000d09ju8kh29r6z.md/143b7f1f-a377-459a-b9f6-f79cc091bc32.png)
 
 Similar to "deploy to prod"
 

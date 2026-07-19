@@ -58,73 +58,73 @@ The steps in this tutorial are:
 
 * To set up a new resource group and include an Azure OpenAI Resource, begin by navigating the Azure portal. Once there, create a new resource group, then add an Azure OpenAI Resource to this group.
   
-    ![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/2d177ac8-1f02-4774-acd0-582cfb5e7a7d.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/2d177ac8-1f02-4774-acd0-582cfb5e7a7d.png)
     
 * Navigate to Azure AI Studio and initiate the deployment of the large language models, provided that you have already established a hub and a project.
   
-    ![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/6037bbb5-6a60-4592-b2c8-ea08546ac1df.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/6037bbb5-6a60-4592-b2c8-ea08546ac1df.png)
     
 * Navigate to Project Playground, select Chat, and proceed to test the model.
   
-    ![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/951955fb-4fb3-4c16-8c9a-3b5ca04cf3ba.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/951955fb-4fb3-4c16-8c9a-3b5ca04cf3ba.png)
     
 
 ## Add Your Data
 
 * Select "Add your data" and proceed with the provided instructions.
   
-    ![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/dd9a87ed-c300-4538-a78a-4cdf643e5a5a.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/dd9a87ed-c300-4538-a78a-4cdf643e5a5a.png)
     
 * Select a storage container from an existing Azure Blob Storage and choose a previously established Azure AI Search service. Assign a descriptive name to your index. You can modify the Indexer Schedule at a later time if necessary.
   
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/4a149205-6142-4605-949b-8c3db3e24daa.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/4a149205-6142-4605-949b-8c3db3e24daa.png)
 
 * Please choose your type of search.
   
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/126a5168-370d-47ef-94a2-9fce74751323.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/126a5168-370d-47ef-94a2-9fce74751323.png)
 
 * Select the type of authentication for our system.
   
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/b714c315-cc42-425c-9a98-07a9db51ad10.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/b714c315-cc42-425c-9a98-07a9db51ad10.png)
 
 * Grab a cup of coffee or tea and hang tight—the data will be ready before your cup runs dry! :-)
   
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/2e7feb1d-688d-4a48-a848-063010a05bfe.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/2e7feb1d-688d-4a48-a848-063010a05bfe.png)
 
 **Test the Model With Your Data**
 
 * Check the chat interface to see if everything works with your data.
   
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/e2eb769b-c7ea-4720-a852-c89004a91a4b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/e2eb769b-c7ea-4720-a852-c89004a91a4b.png)
 
 ## **Deploy Your Web Application**
 
 * Select "Deploy to a web app" located above the chat window.
   
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/bb3b767f-c3ef-4516-985d-a94785551d69.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/bb3b767f-c3ef-4516-985d-a94785551d69.png)
 
 * Create the web app according to your preferences.
   
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/03d700f8-847e-4ec6-9474-336ae1d61a44.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/03d700f8-847e-4ec6-9474-336ae1d61a44.png)
 
 * Environment variables allow you to customize the web application to meet your requirements. Documentation and instructions for additional customizations are available on [GitHub](https://github.com/microsoft/sample-app-aoai-chatGPT).  
   
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/26b86e5b-755f-49b0-b970-7b518cc35672.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/26b86e5b-755f-49b0-b970-7b518cc35672.png)
 
 * The result will then look similar to this.
   
-    ![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/4c729912-1096-4cfb-8362-0e30c8641287.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/4c729912-1096-4cfb-8362-0e30c8641287.png)
     
 
-![]({{site.baseurl}}/images/clzxzun55000308kx5nm5bgl7.md/96a3b517-af5b-4aac-bb3c-4f9ab6f60ef5.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzxzun55000308kx5nm5bgl7.md/96a3b517-af5b-4aac-bb3c-4f9ab6f60ef5.png)
 
 ## Conclusion
 

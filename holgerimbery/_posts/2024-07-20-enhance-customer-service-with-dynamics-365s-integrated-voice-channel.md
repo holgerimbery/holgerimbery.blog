@@ -34,21 +34,21 @@ Create Azure Communication Resource
 * Navigate to [portal.azure.com](http://portal.azure.com), create a new Resource Group, and click the "+Create" button.
     
 
-![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/3944a3ea-cb53-4401-8c1d-eccd1e9ccd19.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/3944a3ea-cb53-4401-8c1d-eccd1e9ccd19.png)
 
 * Then, enter 'Communication' into the search bar or the 'Search the Marketplace' input field. Choose 'Communication Services' from the search results and click 'Create'.
     
 
-![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/a05ca81e-4d74-4d5f-9274-21c66faa4995.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/a05ca81e-4d74-4d5f-9274-21c66faa4995.png)
 
 * Proceed to configure your new resource.
     
 
-![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/b66ad2bb-7aee-4efa-a3ea-ba3555ed64b3.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/b66ad2bb-7aee-4efa-a3ea-ba3555ed64b3.png)
 
 * Verify your new Resource
     
-    ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/6b48c6f4-78cd-498c-bac6-2a459632db16.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/6b48c6f4-78cd-498c-bac6-2a459632db16.png)
     
 
 ### Create an App Registration
@@ -56,16 +56,16 @@ Create Azure Communication Resource
 * Navigate to Microsoft Entra ID within [portal.azure.com](http://portal.azure.com) and select 'App Registration'.
     
 
-![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/8ef6a8ed-92ec-4778-86e1-b0f0e7453148.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/8ef6a8ed-92ec-4778-86e1-b0f0e7453148.png)
 
 * Click "+Add" and set up your new App Registration, as shown in the image below.
     
 
-![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/34c6506d-3f76-4b6c-986f-3b6036a05c70.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/34c6506d-3f76-4b6c-986f-3b6036a05c70.png)
 
 * Navigate to the created App Registration and add yourself as an owner.
     
-* ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/bcf2a106-f2ab-4920-aa6f-849368608443.png)
+* ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/bcf2a106-f2ab-4920-aa6f-849368608443.png)
     
 
 ### Remember your Tenant ID
@@ -73,7 +73,7 @@ Create Azure Communication Resource
 * After registering your app, remember to note down your tenant ID for future reference; it will be highlighted in red in the image below.
     
 
-![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/23cbcf9b-cfa6-4819-af04-bd6278d980d6.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/23cbcf9b-cfa6-4819-af04-bd6278d980d6.png)
 
 ### Configure Direct Routing
 
@@ -82,27 +82,27 @@ Create Azure Communication Resource
 * Select "Add domain"
     
 
-![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/d7729097-262f-438b-902e-f30dd6f96bc7.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/d7729097-262f-438b-902e-f30dd6f96bc7.png)
 
 * You ought to have obtained some domain names from your direct routing provider. The subsequent step involves creating TXT records for domain verification. These records and additional details must be forwarded to your provider.
     
 * After verifying these domains, it should look as shown in the picture below.
     
-    ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/1964ea48-97e5-4e9a-9e2b-83a7b36d18bb.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/1964ea48-97e5-4e9a-9e2b-83a7b36d18bb.png)
     
     * Click on "Session Border Controllers" to add your provider's SBC. Therefore, you should have received a URI for at least one SBC and a port number.
         
     * The setup should resemble the image provided after integrating the Session Border Controllers (SBCs).
         
     
-    ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/b55a4aaa-b75f-494f-8297-1cebce6fc928.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/b55a4aaa-b75f-494f-8297-1cebce6fc928.png)
     
     * Next, configure your Voice Routes as outlined in Microsoft's documentation.
         
     * If you have just one SBC, you can establish a default route.
         
 
-![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/7380d1ac-809b-48d7-bb2a-145b9ef1f501.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/7380d1ac-809b-48d7-bb2a-145b9ef1f501.png)
 
 ### Start a test call
 
@@ -110,7 +110,7 @@ To ensure the Azure Communication Resource functions correctly, initiate a test 
 
 * Click on "Try Phone Calling," and enter your Caller ID and the number you want to call.
     
-    ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/2da1c246-93d3-443c-b526-d0b5ab76f29a.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/2da1c246-93d3-443c-b526-d0b5ab76f29a.png)
     
     * If everything is configured correctly, you will receive a call via Azure Communication Services.
         
@@ -123,7 +123,7 @@ To ensure the Azure Communication Resource functions correctly, initiate a test 
     
 * Click on "Channels", "Phone numbers" and "Manage"
     
-    ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/7c81c980-c7c9-4117-85af-73f09dbf005e.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/7c81c980-c7c9-4117-85af-73f09dbf005e.png)
     
     * Complete your channel setup by installing the Omnichannel for Customer Service app.
         
@@ -140,11 +140,11 @@ To ensure the Azure Communication Resource functions correctly, initiate a test 
         
         Once you have configured the Azure Communication Services resource, input your App Registration App ID (highlighted in red, paragraph "remember your App ID") and your Tenant ID into the 'Event Grid App ID' and 'Event Grid App Tenant ID' fields, respectively.
         
-        ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/e3b6d223-e480-4964-9fee-8c76a29e7f64.png)
+        ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/e3b6d223-e480-4964-9fee-8c76a29e7f64.png)
         
         The system will present three webhooks that need to be configured as "Event Grid Topics." (Marked in red)
         
-        ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/30713e57-f2d0-49c9-a764-1ac2fcf78dc6.png)
+        ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/30713e57-f2d0-49c9-a764-1ac2fcf78dc6.png)
         
 
 ### Add your Phone Numbers
@@ -155,7 +155,7 @@ To ensure the Azure Communication Resource functions correctly, initiate a test 
     
 * The result should look similar to the configuration below.
     
-    ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/43310ef0-1ece-494d-bc27-53d31044ecb2.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/43310ef0-1ece-494d-bc27-53d31044ecb2.png)
     
 ### Create your Event Grid System Topics
     
@@ -203,7 +203,7 @@ You must carry out the following three types of incoming/recording/SMS actions.
     
     Next, set the Endpoint Type to 'Web Hook'. For the Endpoint, click 'Select an endpoint' and input the webhook endpoint for incoming calls, recording, or SMS services.
     
-    ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/00555d69-dbe3-476f-9478-f7331cee41ef.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/00555d69-dbe3-476f-9478-f7331cee41ef.png)
     
     In the Additional Features tab, tick the 'Use Microsoft Entra Authentication' box and provide the following details:
     
@@ -212,11 +212,11 @@ You must carry out the following three types of incoming/recording/SMS actions.
     * Microsoft Entra Application ID or URI: Enter the application ID (from the app registration) for your Azure resource.
         
     
-    ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/1a6ea69d-978a-40f2-bf78-fe2b731d924c.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/1a6ea69d-978a-40f2-bf78-fe2b731d924c.png)
     
     * When done, it should look like the following.
         
-        ![]({{site.baseurl}}/images/clyuala0i000n09mmd9g527wn.md/849c5d0c-b12d-44ce-884b-62635cac0f10.png)
+        ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clyuala0i000n09mmd9g527wn.md/849c5d0c-b12d-44ce-884b-62635cac0f10.png)
         
 
 ## Workstreams and Queues

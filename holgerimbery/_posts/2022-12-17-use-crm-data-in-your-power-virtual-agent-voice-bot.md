@@ -28,7 +28,7 @@ Create a simple list with the following columns:
 title, name, surname, phonenumber, customernumber
 ```
 
-![Figure 1: Create list in a sharepoint]({{site.baseurl}}/images/clbry6f1208l0gwnvand88iit.md/1nfphfblu.png)
+![Figure 1: Create list in a sharepoint](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbry6f1208l0gwnvand88iit.md/1nfphfblu.png)
 
 Figure 1: Create a list in SharePoint
 
@@ -36,25 +36,25 @@ Figure 1: Create a list in SharePoint
 
 Next, we create a new Power Automate flow to fetch the calling customers' data from the list; we use the caller's phone number - [we already extracted it from the channel data](https://the.cognitiveservices.ninja/give-your-bots-a-voice#heading-callercallee-ids) - as input for the flow.
 
-![Figure 2: Create a action node with input and outputs]({{site.baseurl}}/images/clbry6f1208l0gwnvand88iit.md/ixxhkoign.png)
+![Figure 2: Create a action node with input and outputs](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbry6f1208l0gwnvand88iit.md/ixxhkoign.png)
 
 Figure 2: Create an action node with input and outputs
 
 First, we define "phonenumber" as an input in Power Automate
 
-![Figure 3: Input variable]({{site.baseurl}}/images/clbry6f1208l0gwnvand88iit.md/nxsdmqm5h.png)
+![Figure 3: Input variable](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbry6f1208l0gwnvand88iit.md/nxsdmqm5h.png)
 
 Figure 3: Input variable
 
 Next, we initialize four variables as temporary storage for our CRM data.
 
-![Figure 4: Create four variables]({{site.baseurl}}/images/clbry6f1208l0gwnvand88iit.md/sxbwetmjk.png)
+![Figure 4: Create four variables](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbry6f1208l0gwnvand88iit.md/sxbwetmjk.png)
 
 Figure 4: Create four variables
 
 Next, the "get details from (SharePoint) list" action fetches the calling customers' data.
 
-![Figure 5: Get data from the SharePoint list]({{site.baseurl}}/images/clbry6f1208l0gwnvand88iit.md/uinkr2kxn.png)
+![Figure 5: Get data from the SharePoint list](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbry6f1208l0gwnvand88iit.md/uinkr2kxn.png)
 
 Figure 5: Get data from the SharePoint list
 
@@ -83,17 +83,17 @@ phonenumber eq 'phonenumber'
 
 The array we get as an output of that step will be used to append the created variables via "Apply to each".
 
-![Figure 6: store sharepoint list data in string variables]({{site.baseurl}}/images/clbry6f1208l0gwnvand88iit.md/ni5efnpwf.png)
+![Figure 6: store sharepoint list data in string variables](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbry6f1208l0gwnvand88iit.md/ni5efnpwf.png)
 
 Figure 6: store SharePoint list data in string variables
 
 ## Usage of CRM Data
 
-![Figure 7: make data globally visible]({{site.baseurl}}/images/clbry6f1208l0gwnvand88iit.md/7rzzksojp.png)
+![Figure 7: make data globally visible](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbry6f1208l0gwnvand88iit.md/7rzzksojp.png)
 
 Figure 7: make data globally visible
 
-![Figure 7.1: make data globally visible]({{site.baseurl}}/images/clbry6f1208l0gwnvand88iit.md/qbdme7gib.png)
+![Figure 7.1: make data globally visible](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clbry6f1208l0gwnvand88iit.md/qbdme7gib.png)
 
 Figure 7.1: make data globally visible
 

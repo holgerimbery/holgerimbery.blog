@@ -39,7 +39,7 @@ to enable call recording and transcription for a workstream
 
 * open Workstreams within your "Customer Service admin center".
 
-![Figure 1: workstream overview]({{site.baseurl}}/images/clejxxccl02pl9invf4ts678x.md/cc889ebf-c29c-4204-9a01-8cad1f8fd899.png)
+![Figure 1: workstream overview](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/cc889ebf-c29c-4204-9a01-8cad1f8fd899.png)
 
 Figure 1: workstream overview
 
@@ -47,7 +47,7 @@ Figure 1: workstream overview
 
 * Click on edit in the voice channel configuration.
 
-![Figure 2: voice channel configuration]({{site.baseurl}}/images/clejxxccl02pl9invf4ts678x.md/04598904-4cae-4db1-acde-cac6246c34c2.png)
+![Figure 2: voice channel configuration](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/04598904-4cae-4db1-acde-cac6246c34c2.png)
 
 Figure 2: voice channel configuration
 
@@ -55,7 +55,7 @@ Figure 2: voice channel configuration
 
 * choose the feature you want to enable in the section Transcription and Recording
 
-![Figure 3: enable features]({{site.baseurl}}/images/clejxxccl02pl9invf4ts678x.md/5d337feb-02c5-4ae2-9aad-4d88e9f6047f.png)
+![Figure 3: enable features](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/5d337feb-02c5-4ae2-9aad-4d88e9f6047f.png)
 
 Figure 3: enable features
 
@@ -63,7 +63,7 @@ Figure 3: enable features
 
 If the customer asks for a handover from the voice bot to a live agent, the agent will see the full transcript after taking the call, even with the customer's sentiment. If you use the "private message to agent" feature of the Power Virtual agents, relevant data from the chat with the bot are summarized.
 
-![Figure 4: Transcript in agent desktop]({{site.baseurl}}/images/clejxxccl02pl9invf4ts678x.md/f046b892-4cff-4f1e-b517-559c413de64f.webp)
+![Figure 4: Transcript in agent desktop](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/f046b892-4cff-4f1e-b517-559c413de64f.webp)
 
 Figure 4: Transcript in agent desktop
 
@@ -75,25 +75,25 @@ If you want to check a call from a specific customer, for example, while working
 
 The same applies equivalently if you go via cases, accounts, etc**.**
 
-![Figure 5: select Contacts]({{site.baseurl}}/images/clejxxccl02pl9invf4ts678x.md/a92922b9-9a65-45b3-b2d5-32cc8f34bcca.png)
+![Figure 5: select Contacts](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/a92922b9-9a65-45b3-b2d5-32cc8f34bcca.png)
 
 Figure 5: Select Contacts.
 
 * Find the relevant contact.
 
-![Figure 6: select a specific contact.]({{site.baseurl}}/images/clejxxccl02pl9invf4ts678x.md/f0b58012-7ff4-4d87-9792-ca4f6dd74bdf.png)
+![Figure 6: select a specific contact.](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/f0b58012-7ff4-4d87-9792-ca4f6dd74bdf.png)
 
 Figure 6: select a specific contact.
 
 * Select the relevant call/chat and open the transcript with the three dots menu.
 
-![Figure 7: select the relevant call/chat]({{site.baseurl}}/images/clejxxccl02pl9invf4ts678x.md/96c5a9cf-7896-445d-877b-183291042c00.png)
+![Figure 7: select the relevant call/chat](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/96c5a9cf-7896-445d-877b-183291042c00.png)
 
 Figure 7: Select the relevant call/chat.
 
 * Explore the transcript and the recording.
 
-![Figure 8: Transcript/Recording]({{site.baseurl}}/images/clejxxccl02pl9invf4ts678x.md/87988afb-5254-47a9-8d95-eb4bd14c8109.png)
+![Figure 8: Transcript/Recording](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/87988afb-5254-47a9-8d95-eb4bd14c8109.png)
 
 Figure 8: Transcript/Recording
 
