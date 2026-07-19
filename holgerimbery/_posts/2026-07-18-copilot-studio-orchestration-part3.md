@@ -19,7 +19,15 @@ image_caption: Photo by <a href="https://unsplash.com/@askkell?utm_source=unspla
 
       
 
-tags: [agents, copilotstudio, multiagent, orchestration, skills, memory, workiq, build2026]
+tags: 
+ - agents
+ - copilotstudio
+ - multiagent
+ - orchestration
+ - skills
+ - memory
+ - workiq
+ - build2026
 
 featured: true
 
