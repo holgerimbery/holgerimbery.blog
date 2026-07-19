@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 In my previous articles, I focused on the how, and here I will switch the perspective and dig deeper into the why.
 

@@ -12,7 +12,8 @@ toc: true
 # 2023-07-01-dynamics-365-customer-service-effortlessly-detect-clients-in-conversations
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 You can better assist customers by automatically identifying them and viewing their account and case details on the Active Conversation page. One way to achieve this is by setting up pre-conversation questions in the appropriate chat widgets. See here my blog article "[Assessing Customer Experience with Surveys](https://the.cognitiveservices.ninja/dynamics-365-customer-service-assessing-customer-experience-with-surveys)".
 

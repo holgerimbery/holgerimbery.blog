@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 
 # Dynamics 365 Customer Service with Power Virtual Agents - Part 2 (automation with voice/voice bots)

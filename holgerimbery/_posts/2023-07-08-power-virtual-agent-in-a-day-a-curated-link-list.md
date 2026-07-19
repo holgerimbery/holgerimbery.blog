@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 Attending a "Power Virtual Agent in a Day" (PVAinaDay) workshop is highly recommended when beginning with Power Virtual Agents. After conducting numerous workshops alongside colleagues and utilizing our script to engage participants, we adopted Microsoft's new "Power Virtual Agents in a Day" curriculum.
 

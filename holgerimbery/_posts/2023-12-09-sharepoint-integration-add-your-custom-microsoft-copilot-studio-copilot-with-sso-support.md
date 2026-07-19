@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 Integrating a Microsoft CoPilot Studio Copilot into a Microsoft SharePoint site can significantly enhance user experience and productivity. This assistant can provide real-time assistance to users, guiding them through the site, answering their questions, and helping them complete tasks more efficiently.
 

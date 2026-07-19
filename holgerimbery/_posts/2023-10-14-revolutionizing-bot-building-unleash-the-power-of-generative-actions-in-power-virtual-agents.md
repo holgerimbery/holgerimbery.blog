@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
  Note:  
  This article showcases a preview feature. Preview features are not intended for production use and may possess limited functionality. These features are made available prior to an official release, allowing customers to gain early access and offer feedback.

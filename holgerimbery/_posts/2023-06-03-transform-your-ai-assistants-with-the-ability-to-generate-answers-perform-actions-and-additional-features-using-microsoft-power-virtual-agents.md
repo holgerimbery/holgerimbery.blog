@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 Bots are handy tools in today's fast-paced digital world, serving as virtual assistants to help users accomplish various tasks. These bots primarily perform two essential functions: answering user queries or completing actions by calling backend APIs. In the past, both experiences had to be painstakingly crafted using hand-built dialogues. Bot builders would have to anticipate every possible question or action a user might request and then construct specific conversations to address each.
 

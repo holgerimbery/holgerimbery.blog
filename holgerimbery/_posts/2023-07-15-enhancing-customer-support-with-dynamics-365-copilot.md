@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 Copilot for Dynamics 365 Customer Service is an AI-powered tool designed to enhance the agent experience. By providing real-time, AI-driven assistance, agents can swiftly resolve issues, effectively manage cases, and automate routine tasks. This enables them to concentrate on delivering exceptional customer service and fostering genuine human-to-human interactions.
 

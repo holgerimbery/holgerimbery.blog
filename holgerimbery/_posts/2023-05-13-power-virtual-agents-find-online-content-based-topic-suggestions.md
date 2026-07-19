@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 
 Power Virtual Agents is a powerful tool that allows users to populate their chatbots with existing web pages or files. With AI-assisted authoring technology, this feature recognizes a webpage's or online file's structure and content and segregates relevant content blocks related to a support issue or question. This article explains how to use the Suggested Topics feature in three easy steps and how to extract content from web pages or online files. Additionally, it discusses single-turn and multi-turn topic suggestions and how to add them to an existing bot.
