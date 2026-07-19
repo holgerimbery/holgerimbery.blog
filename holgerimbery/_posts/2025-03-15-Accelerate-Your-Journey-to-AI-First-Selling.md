@@ -12,6 +12,9 @@ tags: [copilotstudio, sales, agents, dynamics365]
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .note }
 Summary lede:
 This article explores Microsoft's AI Accelerator for Sales, a groundbreaking initiative designed to revolutionize sales processes through AI-driven tools and intelligent agents. As a **sales manager or business executive**, you'll discover how this program can **enhance productivity, streamline operations, and drive profitability**. Learn from the success stories of industry leaders like Lenovo and Lexmark and find out how your organization can benefit from adopting these cutting-edge AI solutions.

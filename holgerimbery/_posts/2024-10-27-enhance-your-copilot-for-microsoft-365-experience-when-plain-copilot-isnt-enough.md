@@ -12,6 +12,8 @@ featured: false
 toc: true
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 In today’s fast-paced digital world, the need for efficient and reliable tools has never been greater. Extending Copilot for Microsoft 365 and leveraging declarative agents are at the forefront of this evolution, offering users unparalleled productivity and streamlined workflows.
 

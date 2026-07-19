@@ -12,6 +12,8 @@ featured: false
 toc: true
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Writing good prompts can be straightforward, but following specific rules is essential. Please refer to [an article](https://aiassistant.studio/unlocking-productivity-and-creativity-harnessing-the-power-of-microsoft-365-copilot-with-good-prompts) on this blog about crafting effective prompts, and remember: iterate, iterate, and iterate.
 

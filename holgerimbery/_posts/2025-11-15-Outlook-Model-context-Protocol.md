@@ -14,6 +14,8 @@ canonical_url: https://holgerimbery.blog/Outlook-Model-context-Protocol
 featured: fasle
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 {: .q-left }
 > **Summary Lede**:  

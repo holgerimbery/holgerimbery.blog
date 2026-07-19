@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Introducing Copilot in Whiteboard - an innovative tool that revolutionizes how you create and collaborate on ideas and projects. Copilot helps you generate new ideas, transform them into visually stunning concepts, organize thoughts into logical categories, and simplify complex projects for more productive collaboration. With Copilot in Whiteboard, you'll have a new gateway to creativity. It will boost your hybrid workshops to the next level.
 

@@ -12,6 +12,9 @@ tags: [copilotstudio, copilot, microsoft365copilot, salesforce, copilot-extensib
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .note }
 **summary lede**: Integrating Salesforce with Copilot for Microsoft 365 revolutionizes sales operations by automating repetitive tasks and providing real-time insights. This powerful integration enhances team collaboration and leverages AI-driven analytics to personalize customer interactions. By streamlining workflows and utilizing predictive analytics, sales teams can stay ahead of trends and make informed decisions. Seamless access to Salesforce data within Microsoft 365 allows the team to focus on high-value activities without switching platforms. Ultimately, this integration drives productivity and success in sales operations.
 

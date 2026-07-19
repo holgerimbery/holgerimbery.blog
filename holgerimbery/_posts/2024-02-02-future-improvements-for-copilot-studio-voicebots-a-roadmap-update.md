@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Voice bots, also known as voice-based virtual assistants, are revolutionizing customer service by offering a range of benefits that enhance the customer experience and operational efficiency.
 

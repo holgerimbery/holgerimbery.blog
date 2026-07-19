@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 After thoroughly examining the insights from my comprehensive article [on the ‘build versus buy’ dilemma](https://aiassistant.studio/choosing-generative-ai-solutions-build-your-own-or-use-microsoft-copilot), you’ve reached a strategic decision to embark on constructing a bespoke chatbot. This decision is rooted in the desire to harness the capabilities of a Large Language Model (LLM) while integrating it with your wealth of proprietary data. By utilizing Azure AI Studio as the foundational platform, you’re setting the stage for a chatbot that is not only equipped with advanced natural language processing abilities but also deeply customized to reflect your organization's unique knowledge and data. This tailored approach ensures that the chatbot will serve as a highly effective digital representative, capable of engaging in meaningful interactions and delivering precise, data-driven insights directly aligned with your business objectives.
 

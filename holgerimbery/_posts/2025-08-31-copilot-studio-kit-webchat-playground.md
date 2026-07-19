@@ -13,6 +13,8 @@ canonical_url: https://holgerimbery.blog/copilot-studio-kit-webchat-playground
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 # Webchat Playground Tool in Copilot Studio Kit
 

@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Copilot in Word is a revolutionary tool that uses AI to assist you in writing any document. Whether you need to create a report, a blog post, a resume, or a letter, Copilot in Word can generate relevant and coherent text for you based on your input. You can also use Copilot Chat to interact with the AI and get suggestions, feedback, or information from various sources.
 

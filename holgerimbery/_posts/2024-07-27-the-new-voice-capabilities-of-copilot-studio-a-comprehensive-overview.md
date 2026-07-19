@@ -12,6 +12,8 @@ featured: false
 toc: true
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 {: .note }
 This article is the second in a mini-series. In the [first part](https://holgerimbery.blog/enhance-customer-service-with-dynamics-365s-integrated-voice-channel), I discussed integrating the voice channel for Dynamics 365 Contact Center and Dynamics 365 Customer Service Premium.

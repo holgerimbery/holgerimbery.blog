@@ -12,7 +12,8 @@ canonical_url: https://holgerimbery.blog/autonomous-agents-dynamics365
 featured: false
 toc: true
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 *Technical overview and configuration guide (October 2025)*
 

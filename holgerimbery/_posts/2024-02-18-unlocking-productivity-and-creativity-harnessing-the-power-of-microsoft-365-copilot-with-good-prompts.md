@@ -12,8 +12,8 @@ featured: false
 toc: true
 
 ---
-
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 With Microsoft 365 Copilot, you can boost your productivity and creativity with the help of an AI assistant. It leverages LLMs, an artificial intelligence algorithm that applies deep learning methods and large data sets to comprehend, condense, anticipate, and create content.
 

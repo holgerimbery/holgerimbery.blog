@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Chatbots are increasingly popular and effective for automating customer service and offering immediate responses to common inquiries. However, chatbots aren't flawless and may struggle with complex or sensitive issues requiring human intervention. This is where human handover comes into play.
 

@@ -12,6 +12,8 @@ featured: false
 toc: true
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Copilot is an intelligent AI assistant that simplifies workflow and increases productivity. It helps you draft, edit, and polish your writing. It provides intelligent suggestions, synonyms, and different ways of expressing your ideas to improve your content quality. Copilot uses AI and machine learning to understand the context, learn from your preferences, and offer personalized assistance that suits your needs. Copilot can be your writing partner, helping you to produce written text of native speaker quality.
 

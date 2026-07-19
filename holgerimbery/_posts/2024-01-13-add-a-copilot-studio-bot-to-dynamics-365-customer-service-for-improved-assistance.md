@@ -12,6 +12,8 @@ featured: false
 toc: true
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Omnichannel for Customer Service augments the functionality of Dynamics 365 Customer Service Enterprise by offering many features. These features empower organizations to establish immediate and interactive communication with their clientele via diverse digital messaging platforms. However, an additional license is mandatory to utilize Omnichannel for Customer Service.
 

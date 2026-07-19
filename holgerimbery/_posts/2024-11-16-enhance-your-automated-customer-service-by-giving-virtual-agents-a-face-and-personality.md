@@ -12,6 +12,8 @@ featured: false
 toc: true
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 In today's customer service landscape, virtual agents in text chats and voice calls have become quite common. However, it's time to move beyond these faceless interactions and embrace virtual agents with a face that exhibit human-like behavior.
 

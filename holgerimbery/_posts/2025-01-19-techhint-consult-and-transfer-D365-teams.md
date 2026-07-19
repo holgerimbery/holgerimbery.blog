@@ -11,6 +11,8 @@ tags: [techhint, dynamics365, customerservice, contactcenter, microsoftteams]
 featured: false
 toc: false
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Suppose you have upgraded to the enhanced voice experience (vNext) in Dynamics 365 Customer Service / Contact Center. In that case, you can empower your representatives to consult with or transfer voice calls to Microsoft Teams subject matter experts (SMEs). This advanced feature is facilitated through Azure Communication Services Call Automation. By leveraging this capability, SMEs can seamlessly join customer service conversations directly from Microsoft Teams, eliminating the need to configure a separate phone number. Any Teams user within your tenant who appears in the Teams search box can receive calls from your customer service representatives. This integration ensures your team can collaborate efficiently and provide timely customer assistance, enhancing the overall service experience.
 

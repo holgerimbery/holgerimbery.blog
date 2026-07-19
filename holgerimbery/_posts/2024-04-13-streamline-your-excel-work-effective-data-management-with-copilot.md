@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Copilot for Microsoft 365 in Excel is designed to enhance productivity by assisting with data analysis, comprehension, and visualization. Here are some of the ways it can help:
 

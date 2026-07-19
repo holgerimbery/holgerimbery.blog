@@ -12,6 +12,9 @@ tags: [copilotstudio]
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .note }
 **summary lede**:  
 In this article, we explore the features of Copilot Studio, focusing on classic and generative orchestration methods. This is for you if you are a new user of Copilot Studio and want to learn about the fundamentals of the tool or if you are a seasoned user and want a recap on the functionality. Classic orchestration relies on predefined triggers, topics, and actions to guide conversations, making it suitable for straightforward interactions. On the other hand, generative orchestration uses AI to dynamically manage conversations, allowing for more natural and comprehensive responses. We discuss using triggers, topics, actions, and knowledge in both methods and provide guidelines on when to use each orchestration type. You can create efficient and engaging conversational agents in Copilot Studio by understanding these features.

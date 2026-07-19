@@ -12,6 +12,9 @@ featured: false
 toc: true
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .note }
 This is the first article in a two-part series. The [next piece](https://holgerimbery.blog/the-new-voice-capabilities-of-copilot-studio-a-comprehensive-overview) will discuss integrating a Copilot Studio Voice Bot into the Voice Channel.
 
