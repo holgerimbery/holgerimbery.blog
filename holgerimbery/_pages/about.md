@@ -15,7 +15,7 @@ I also work to align technical architectures with organizational goals and ensur
 
 Technical areas I focus on include:  
 Copilot Studio for agentic workflows and autonomous (multi- ) agent systems  
-Power Automate, Power Virtual Agents, Power Apps  
+Power Automate,  Power Apps  
 Azure Functions, Logic Apps, API Management  
 Azure Cognitive Services (Language, Speech, Vision)  
 Azure DevOps & GitHub for agile delivery  
