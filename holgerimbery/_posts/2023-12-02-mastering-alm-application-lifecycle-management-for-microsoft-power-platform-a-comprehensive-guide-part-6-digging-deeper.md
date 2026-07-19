@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Mastering ALM (Application LifeCycle Management) for Microsoft Power Platform - A Comprehensive Guide (Part 6 - digging deeper)
-date: 2023-12-02
-author: admin
-slug: mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-6-digging-deeper
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-12-02-mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-6-digging-deeper
+layout: post
+title: Mastering ALM (Application LifeCycle Management) for Microsoft Power Platform - A Comprehensive Guide (Part 6 - digging deeper)
+date: 2023-12-02
+author: admin
+slug: mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-6-digging-deeper
+canonical_url: https://holgerimbery.blog/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-6-digging-deeper
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-12-02-mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-6-digging-deeper
 
 ---
 

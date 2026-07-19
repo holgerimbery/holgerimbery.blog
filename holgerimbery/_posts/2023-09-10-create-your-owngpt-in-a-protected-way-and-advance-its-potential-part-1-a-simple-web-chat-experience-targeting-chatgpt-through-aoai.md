@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Create Your "ownGPT" in a Protected Way and Advance Its Potential (Part 1) - a simple web chat experience targeting chatGPT through AOAI
-date: 2023-09-10
-author: admin
-slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-1-a-simple-web-chat-experience-targeting-chatgpt-through-aoai
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-09-10-create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-1-a-simple-web-chat-experience-targeting-chatgpt-through-aoai
+layout: post
+title: Create Your "ownGPT" in a Protected Way and Advance Its Potential (Part 1) - a simple web chat experience targeting chatGPT through AOAI
+date: 2023-09-10
+author: admin
+slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-1-a-simple-web-chat-experience-targeting-chatgpt-through-aoai
+canonical_url: https://holgerimbery.blog/create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-1-a-simple-web-chat-experience-targeting-chatgpt-through-aoai
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-09-10-create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-1-a-simple-web-chat-experience-targeting-chatgpt-through-aoai
 
 ---
 

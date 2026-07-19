@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Azure OpenAi services: working with your own data without compromising your intellectual property"
-date: 2023-08-27
-author: admin
-slug: azure-openai-services-working-with-your-own-data-without-compromising-your-intellectual-property
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
+layout: post
+title: "Azure OpenAi services: working with your own data without compromising your intellectual property"
+date: 2023-08-27
+author: admin
+slug: azure-openai-services-working-with-your-own-data-without-compromising-your-intellectual-property
+canonical_url: https://holgerimbery.blog/azure-openai-services-working-with-your-own-data-without-compromising-your-intellectual-property
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
 # 2023-08-27-azure-openai-services-working-with-your-own-data-without-compromising-your-intellectual-property
 ---
 

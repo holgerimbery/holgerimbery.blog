@@ -1,15 +1,16 @@
 ---
-layout: post
-title: Microsoft First‑Party Autonomous Agents for Dynamics 365 Sales and Operations
-description: Technical overview and configuration guide for additional Microsoft first‑party autonomous agents for Dynamics 365 Sales and Service, including purpose, scope, expected outcomes, prerequisites, enablement steps, key configuration choices, and guardrails.
-
-date: 2025-11-09
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/headway-5QgIuuBxKwM-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@headwayio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Headway</a> on <a href="https://unsplash.com/photos/black-smartphone-near-person-5QgIuuBxKwM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-tags: [dynamics365, sales, operations, copilotstudio, agents]
-author: admin
-slug: additional-agents-dynamics365
-featured: false
+layout: post
+title: Microsoft First‑Party Autonomous Agents for Dynamics 365 Sales and Operations
+description: Technical overview and configuration guide for additional Microsoft first‑party autonomous agents for Dynamics 365 Sales and Service, including purpose, scope, expected outcomes, prerequisites, enablement steps, key configuration choices, and guardrails.
+
+date: 2025-11-09
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/headway-5QgIuuBxKwM-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@headwayio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Headway</a> on <a href="https://unsplash.com/photos/black-smartphone-near-person-5QgIuuBxKwM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+tags: [dynamics365, sales, operations, copilotstudio, agents]
+author: admin
+slug: additional-agents-dynamics365
+canonical_url: https://holgerimbery.blog/additional-agents-dynamics365
+featured: false
 toc: true
 ---
 

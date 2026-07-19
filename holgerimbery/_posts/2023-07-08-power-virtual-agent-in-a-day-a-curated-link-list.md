@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Power Virtual Agent in a Day - a curated link list"
-author: admin
-date: 2023-07-08
-slug: power-virtual-agent-in-a-day-a-curated-link-list
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-07-08-power-virtual-agent-in-a-day-a-curated-link-list
+layout: post
+title: "Power Virtual Agent in a Day - a curated link list"
+author: admin
+date: 2023-07-08
+slug: power-virtual-agent-in-a-day-a-curated-link-list
+canonical_url: https://holgerimbery.blog/power-virtual-agent-in-a-day-a-curated-link-list
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-07-08-power-virtual-agent-in-a-day-a-curated-link-list
 
 ---
 

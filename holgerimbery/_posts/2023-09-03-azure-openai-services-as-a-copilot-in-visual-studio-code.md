@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Azure OpenAI Services as a CoPilot in Visual Studio Code
-date: 2023-09-03
-author: admin
-slug: azure-openai-services-as-a-copilot-in-visual-studio-code
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-09-03-azure-openai-services-as-a-copilot-in-visual-studio-code
+layout: post
+title: Azure OpenAI Services as a CoPilot in Visual Studio Code
+date: 2023-09-03
+author: admin
+slug: azure-openai-services-as-a-copilot-in-visual-studio-code
+canonical_url: https://holgerimbery.blog/azure-openai-services-as-a-copilot-in-visual-studio-code
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-09-03-azure-openai-services-as-a-copilot-in-visual-studio-code
 
 ---
 

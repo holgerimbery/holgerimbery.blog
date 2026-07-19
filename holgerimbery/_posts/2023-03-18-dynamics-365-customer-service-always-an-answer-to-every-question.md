@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Dynamics 365 Customer service - always an answer to every question"
-date: 2023-03-18
-author: admin
-slug: dynamics-365-customer-service-always-an-answer-to-every-question
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
+layout: post
+title: "Dynamics 365 Customer service - always an answer to every question"
+date: 2023-03-18
+author: admin
+slug: dynamics-365-customer-service-always-an-answer-to-every-question
+canonical_url: https://holgerimbery.blog/dynamics-365-customer-service-always-an-answer-to-every-question
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
 # 2023-03-18-dynamics-365-customer-service-always-an-answer-to-every-question
 ---
 

@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Future Improvements for CoPilot Studio Voicebots - A  Roadmap Update
-description: 
-date: 2024-02-02
-author: admin
-slug: future-improvements-for-copilot-studio-voicebots-a-roadmap-update
-image: ./images/future-improvements-for-copilot-studio-voicebots-a-roadmap-update.jpeg
-tags: [customerservice, roadmap, dynamics365, copilotstudio]
-featured: false
-toc: true
+layout: post
+title: Future Improvements for CoPilot Studio Voicebots - A  Roadmap Update
+description: 
+date: 2024-02-02
+author: admin
+slug: future-improvements-for-copilot-studio-voicebots-a-roadmap-update
+canonical_url: https://holgerimbery.blog/future-improvements-for-copilot-studio-voicebots-a-roadmap-update
+image: ./images/future-improvements-for-copilot-studio-voicebots-a-roadmap-update.jpeg
+tags: [customerservice, roadmap, dynamics365, copilotstudio]
+featured: false
+toc: true
 
 ---
 

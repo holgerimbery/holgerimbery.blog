@@ -1,15 +1,16 @@
 ---
-layout: post
-title: "Dynamics 365 Customer service: Realtime translation to break barriers in text chats."
-date: 2023-03-04
-author: admin
-slug: dynamics-365-customer-service-realtime-translation-to-break-barriers-in-text-chats
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-03-04-dynamics-365-customer-service-realtime-translation-to-break-barriers-in-text-chats
-
+layout: post
+title: "Dynamics 365 Customer service: Realtime translation to break barriers in text chats."
+date: 2023-03-04
+author: admin
+slug: dynamics-365-customer-service-realtime-translation-to-break-barriers-in-text-chats
+canonical_url: https://holgerimbery.blog/dynamics-365-customer-service-realtime-translation-to-break-barriers-in-text-chats
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-03-04-dynamics-365-customer-service-realtime-translation-to-break-barriers-in-text-chats
+
 
 ---
 

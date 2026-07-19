@@ -1,17 +1,18 @@
 ---
-layout: post
-title: Prioritize Hot Leads with AI - Connect to Dynamics 365 Sales Using Model Context Protocol
-description: Learn how to leverage Model Context Protocol (MCP) to connect AI agents with Dynamics 365 Sales for automated lead prioritization, improving sales efficiency, and pipeline quality.
-
-date: 2025-11-29
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/mick-haupt-REqGEwTeFZ4-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@rocinante_11?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mick Haupt</a> on <a href="https://unsplash.com/photos/green-and-red-chili-pepper-REqGEwTeFZ4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
-       
-tags: [dynamics365, sales, copilotstudio, agents]
-author: admin
-slug: prioritize-hot-leads-mcp-d365-sales
-featured: false
+layout: post
+title: Prioritize Hot Leads with AI - Connect to Dynamics 365 Sales Using Model Context Protocol
+description: Learn how to leverage Model Context Protocol (MCP) to connect AI agents with Dynamics 365 Sales for automated lead prioritization, improving sales efficiency, and pipeline quality.
+
+date: 2025-11-29
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/mick-haupt-REqGEwTeFZ4-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@rocinante_11?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mick Haupt</a> on <a href="https://unsplash.com/photos/green-and-red-chili-pepper-REqGEwTeFZ4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+       
+tags: [dynamics365, sales, copilotstudio, agents]
+author: admin
+slug: prioritize-hot-leads-mcp-d365-sales
+canonical_url: https://holgerimbery.blog/prioritize-hot-leads-mcp-d365-sales
+featured: false
 toc: true
 ---
 

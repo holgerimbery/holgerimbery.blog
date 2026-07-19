@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Business Process Automation for Sustainability: Why It Matters"
-date: 2023-05-27
-author: admin
-slug: business-process-automation-for-sustainability-why-it-matters
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-05-27-business-process-automation-for-sustainability-why-it-matters
+layout: post
+title: "Business Process Automation for Sustainability: Why It Matters"
+date: 2023-05-27
+author: admin
+slug: business-process-automation-for-sustainability-why-it-matters
+canonical_url: https://holgerimbery.blog/business-process-automation-for-sustainability-why-it-matters
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-05-27-business-process-automation-for-sustainability-why-it-matters
 
 ---
 

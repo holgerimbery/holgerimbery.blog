@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Power Virtual Agents and PowerFX: A Sneak Peek"
-date: 2023-05-20
-author: admin
-slug: power-virtual-agents-and-powerfx-a-sneak-peek
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-05-20-power-virtual-agents-and-powerfx-a-sneak-peek
+layout: post
+title: "Power Virtual Agents and PowerFX: A Sneak Peek"
+date: 2023-05-20
+author: admin
+slug: power-virtual-agents-and-powerfx-a-sneak-peek
+canonical_url: https://holgerimbery.blog/power-virtual-agents-and-powerfx-a-sneak-peek
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-05-20-power-virtual-agents-and-powerfx-a-sneak-peek
 
 ---
 

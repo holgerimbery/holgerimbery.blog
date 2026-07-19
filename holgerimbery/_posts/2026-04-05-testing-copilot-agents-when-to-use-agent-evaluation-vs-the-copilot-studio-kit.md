@@ -1,15 +1,16 @@
 ---
-layout: 
-title: "Testing Copilot Agents: When to Use Agent Evaluation vs. the Copilot Studio Kit"
-description: "On March 31, 2026, Microsoft launched Agent Evaluation in general availability, fundamentally changing how teams validate Copilot agents. This guide explains how Agent Evaluation and the Copilot Studio Kit serve different—but complementary—roles in your quality assurance strategy, and when to use each one."
-date: 2026-04-05 06:56:31 +0200
-author: admin
-slug: testing-copilot-agents-when-to-use-agent-evaluation-vs-the-copilot-studio-kit
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/gustavo-torres-rBLTWS3WsQ8-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@topspot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustavo Torres</a> on <a href="https://unsplash.com/photos/person-on-balance-board-rBLTWS3WsQ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-tags: [copilotstudio, agents, agentevaluation, testing, qualityassurance]
-featured: false
+layout: 
+title: "Testing Copilot Agents: When to Use Agent Evaluation vs. the Copilot Studio Kit"
+description: "On March 31, 2026, Microsoft launched Agent Evaluation in general availability, fundamentally changing how teams validate Copilot agents. This guide explains how Agent Evaluation and the Copilot Studio Kit serve different—but complementary—roles in your quality assurance strategy, and when to use each one."
+date: 2026-04-05 06:56:31 +0200
+author: admin
+slug: testing-copilot-agents-when-to-use-agent-evaluation-vs-the-copilot-studio-kit
+canonical_url: https://holgerimbery.blog/testing-copilot-agents-when-to-use-agent-evaluation-vs-the-copilot-studio-kit
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/gustavo-torres-rBLTWS3WsQ8-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@topspot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustavo Torres</a> on <a href="https://unsplash.com/photos/person-on-balance-board-rBLTWS3WsQ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+tags: [copilotstudio, agents, agentevaluation, testing, qualityassurance]
+featured: false
 toc: true
 ---
 {: .note }

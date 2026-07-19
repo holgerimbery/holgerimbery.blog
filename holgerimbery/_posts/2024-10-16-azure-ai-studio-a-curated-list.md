@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Azure AI Studio - a curated list
-description: 
-date: 2024-10-16
-author: admin
-slug: azure-ai-studio-a-curated-list
-image: ./images/azure-ai-studio-a-curated-list.jpeg
-tags: [azureaistudio]
-featured: false
-toc: true
+layout: post
+title: Azure AI Studio - a curated list
+description: 
+date: 2024-10-16
+author: admin
+slug: azure-ai-studio-a-curated-list
+canonical_url: https://holgerimbery.blog/azure-ai-studio-a-curated-list
+image: ./images/azure-ai-studio-a-curated-list.jpeg
+tags: [azureaistudio]
+featured: false
+toc: true
 
 ---
 

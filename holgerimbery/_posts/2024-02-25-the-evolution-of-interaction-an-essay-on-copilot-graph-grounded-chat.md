@@ -1,14 +1,15 @@
 ---
-layout: post
-title: The Evolution of Interaction - An Essay on Copilot (graph grounded) Chat
-description: 
-date: 2024-02-25
-author: admin
-slug: the-evolution-of-interaction-an-essay-on-copilot-graph-grounded-chat
-image: ./images/the-evolution-of-interaction-an-essay-on-copilot-graph-grounded-chat.jpeg
-tags: [copilot]
-featured: false
-toc: true
+layout: post
+title: The Evolution of Interaction - An Essay on Copilot (graph grounded) Chat
+description: 
+date: 2024-02-25
+author: admin
+slug: the-evolution-of-interaction-an-essay-on-copilot-graph-grounded-chat
+canonical_url: https://holgerimbery.blog/the-evolution-of-interaction-an-essay-on-copilot-graph-grounded-chat
+image: ./images/the-evolution-of-interaction-an-essay-on-copilot-graph-grounded-chat.jpeg
+tags: [copilot]
+featured: false
+toc: true
 
 ---
 

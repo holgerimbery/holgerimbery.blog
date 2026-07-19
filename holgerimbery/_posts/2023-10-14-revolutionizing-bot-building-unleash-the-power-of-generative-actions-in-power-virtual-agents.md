@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Revolutionizing Bot Building - Unleash the Power of Generative Actions in Power Virtual Agents
-date: 2023-10-14
-author: admin
-slug: revolutionizing-bot-building-unleash-the-power-of-generative-actions-in-power-virtual-agents
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-10-14-revolutionizing-bot-building-unleash-the-power-of-generative-actions-in-power-virtual-agents
+layout: post
+title: Revolutionizing Bot Building - Unleash the Power of Generative Actions in Power Virtual Agents
+date: 2023-10-14
+author: admin
+slug: revolutionizing-bot-building-unleash-the-power-of-generative-actions-in-power-virtual-agents
+canonical_url: https://holgerimbery.blog/revolutionizing-bot-building-unleash-the-power-of-generative-actions-in-power-virtual-agents
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-10-14-revolutionizing-bot-building-unleash-the-power-of-generative-actions-in-power-virtual-agents
 
 ---
 

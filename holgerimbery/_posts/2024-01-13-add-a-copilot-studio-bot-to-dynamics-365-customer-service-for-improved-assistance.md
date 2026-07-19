@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Add a Copilot Studio Bot to Dynamics 365 Customer Service for Improved Assistance
-description: 
-date: 2024-01-13
-author: admin
-slug: add-a-copilot-studio-bot-to-dynamics-365-customer-service-for-improved-assistance
-image: ./images/add-a-copilot-studio-bot-to-dynamics-365-customer-service-for-improved-assistance.jpeg
-tags: [customerservice, dynamics365, copilotstudio]
-featured: false
-toc: true
+layout: post
+title: Add a Copilot Studio Bot to Dynamics 365 Customer Service for Improved Assistance
+description: 
+date: 2024-01-13
+author: admin
+slug: add-a-copilot-studio-bot-to-dynamics-365-customer-service-for-improved-assistance
+canonical_url: https://holgerimbery.blog/add-a-copilot-studio-bot-to-dynamics-365-customer-service-for-improved-assistance
+image: ./images/add-a-copilot-studio-bot-to-dynamics-365-customer-service-for-improved-assistance.jpeg
+tags: [customerservice, dynamics365, copilotstudio]
+featured: false
+toc: true
 
 ---
 

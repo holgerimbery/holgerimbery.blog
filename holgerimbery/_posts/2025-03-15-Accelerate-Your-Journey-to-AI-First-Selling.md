@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Accelerate Your Journey to AI-First Selling 
-description: Microsoft's AI Accelerator for Sales is a groundbreaking initiative designed to revolutionize sales processes through AI-driven tools and intelligent agents. As a sales manager or business executive, you'll discover how this program can enhance productivity, streamline operations, and drive profitability. Learn from the success stories of industry leaders like Lenovo and Lexmark and find out how your organization can benefit from adopting these cutting-edge AI solutions.
-date: 2025-03-15
-author: admin
-slug: Accelerate-Your-Journey-to-AI-First-Selling
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/03/clay-banks-LjqARJaJotc-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@claybanks?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Clay Banks</a> on <a href="https://unsplash.com/photos/five-human-hands-on-brown-surface-LjqARJaJotc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>   
-tags: [copilotstudio, sales, agents, dynamics365]
-featured: false
+layout: post
+title: Accelerate Your Journey to AI-First Selling 
+description: Microsoft's AI Accelerator for Sales is a groundbreaking initiative designed to revolutionize sales processes through AI-driven tools and intelligent agents. As a sales manager or business executive, you'll discover how this program can enhance productivity, streamline operations, and drive profitability. Learn from the success stories of industry leaders like Lenovo and Lexmark and find out how your organization can benefit from adopting these cutting-edge AI solutions.
+date: 2025-03-15
+author: admin
+slug: Accelerate-Your-Journey-to-AI-First-Selling
+canonical_url: https://holgerimbery.blog/Accelerate-Your-Journey-to-AI-First-Selling
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/03/clay-banks-LjqARJaJotc-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@claybanks?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Clay Banks</a> on <a href="https://unsplash.com/photos/five-human-hands-on-brown-surface-LjqARJaJotc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>   
+tags: [copilotstudio, sales, agents, dynamics365]
+featured: false
 toc: true
 ---
 {: .note }

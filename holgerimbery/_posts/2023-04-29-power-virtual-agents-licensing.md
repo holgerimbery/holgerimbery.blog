@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Comparing Power Virtual Agents for Microsoft Teams vs Standalone Subscription: Which One to Choose?"
-date: 2023-04-29
-author: admin
-slug: power-virtual-agents-licensing
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
+layout: post
+title: "Comparing Power Virtual Agents for Microsoft Teams vs Standalone Subscription: Which One to Choose?"
+date: 2023-04-29
+author: admin
+slug: power-virtual-agents-licensing
+canonical_url: https://holgerimbery.blog/power-virtual-agents-licensing
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
 # 2023-04-29-power-virtual-agents-licensing
 ---
 

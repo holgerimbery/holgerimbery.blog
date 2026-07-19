@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Transform your AI assistants with the ability to generate answers, perform actions, and additional features using Microsoft Power Virtual Agents
-date: 2023-06-03
-author: admin
-slug: transform-your-ai-assistants-with-the-ability-to-generate-answers-perform-actions-and-additional-features-using-microsoft-power-virtual-agents
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-06-03-transform-your-ai-assistants-with-the-ability-to-generate-answers-perform-actions-and-additional-features-using-microsoft-power-virtual-agents
+layout: post
+title: Transform your AI assistants with the ability to generate answers, perform actions, and additional features using Microsoft Power Virtual Agents
+date: 2023-06-03
+author: admin
+slug: transform-your-ai-assistants-with-the-ability-to-generate-answers-perform-actions-and-additional-features-using-microsoft-power-virtual-agents
+canonical_url: https://holgerimbery.blog/transform-your-ai-assistants-with-the-ability-to-generate-answers-perform-actions-and-additional-features-using-microsoft-power-virtual-agents
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-06-03-transform-your-ai-assistants-with-the-ability-to-generate-answers-perform-actions-and-additional-features-using-microsoft-power-virtual-agents
 
 ---
 

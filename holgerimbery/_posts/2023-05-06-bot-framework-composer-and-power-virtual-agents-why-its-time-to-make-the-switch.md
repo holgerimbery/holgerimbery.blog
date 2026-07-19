@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Bot Framework Composer and Power Virtual Agents: Why It's Time to Make the Switch"
-date: 2023-05-06
-author: admin
-slug: bot-framework-composer-and-power-virtual-agents-why-its-time-to-make-the-switch
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-05-06-bot-framework-composer-and-power-virtual-agents-why-its-time-to-make-the-switch
+layout: post
+title: "Bot Framework Composer and Power Virtual Agents: Why It's Time to Make the Switch"
+date: 2023-05-06
+author: admin
+slug: bot-framework-composer-and-power-virtual-agents-why-its-time-to-make-the-switch
+canonical_url: https://holgerimbery.blog/bot-framework-composer-and-power-virtual-agents-why-its-time-to-make-the-switch
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-05-06-bot-framework-composer-and-power-virtual-agents-why-its-time-to-make-the-switch
 
 ---
 *Archived post - content may be outdate*

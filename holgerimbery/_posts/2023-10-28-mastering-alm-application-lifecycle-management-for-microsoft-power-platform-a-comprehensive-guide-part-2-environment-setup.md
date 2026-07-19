@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Mastering ALM (Application LifeCycle Management) for Microsoft Power Platform - A Comprehensive Guide (Part 2 - environment setup)
-date: 2023-10-28
-author: admin
-slug: mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-2-environment-setup
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-10-28-mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-2-environment-setup
+layout: post
+title: Mastering ALM (Application LifeCycle Management) for Microsoft Power Platform - A Comprehensive Guide (Part 2 - environment setup)
+date: 2023-10-28
+author: admin
+slug: mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-2-environment-setup
+canonical_url: https://holgerimbery.blog/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-2-environment-setup
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-10-28-mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-2-environment-setup
  
 ---
 

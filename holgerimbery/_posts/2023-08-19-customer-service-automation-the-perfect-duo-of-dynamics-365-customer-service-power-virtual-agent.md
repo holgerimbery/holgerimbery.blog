@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Customer Service Automation: The Perfect Duo of Dynamics 365 Customer Service & Power Virtual Agent"
-date: 2023-08-19
-author: admin
-slug: customer-service-automation-the-perfect-duo-of-dynamics-365-customer-service-power-virtual-agent
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-08-19-customer-service-automation-the-perfect-duo-of-dynamics-365-customer-service-power-virtual-agent
+layout: post
+title: "Customer Service Automation: The Perfect Duo of Dynamics 365 Customer Service & Power Virtual Agent"
+date: 2023-08-19
+author: admin
+slug: customer-service-automation-the-perfect-duo-of-dynamics-365-customer-service-power-virtual-agent
+canonical_url: https://holgerimbery.blog/customer-service-automation-the-perfect-duo-of-dynamics-365-customer-service-power-virtual-agent
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-08-19-customer-service-automation-the-perfect-duo-of-dynamics-365-customer-service-power-virtual-agent
 
 ---
 

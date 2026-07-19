@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Mastering ALM (Application LifeCycle Management) for Microsoft Power Platform - A Comprehensive Guide (Part 4 - working with pipelines)
-date: 2023-11-11
-author: admin
-slug: mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-4-working-with-pipelines
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-11-11-mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-4-working-with-pipelines
+layout: post
+title: Mastering ALM (Application LifeCycle Management) for Microsoft Power Platform - A Comprehensive Guide (Part 4 - working with pipelines)
+date: 2023-11-11
+author: admin
+slug: mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-4-working-with-pipelines
+canonical_url: https://holgerimbery.blog/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-4-working-with-pipelines
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-11-11-mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-4-working-with-pipelines
 
 ---
 

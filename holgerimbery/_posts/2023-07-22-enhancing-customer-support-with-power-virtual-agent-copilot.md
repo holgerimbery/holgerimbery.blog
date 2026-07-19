@@ -1,15 +1,16 @@
 ---
-layout: post
-title: "Enhancing Customer Support with Power Virtual Agent Copilot"
-datePublished: Sat Jul 22 2023 07:27:38 GMT+0000 (Coordinated Universal Time)
-date: 2023-07-22
-author: admin
-slug: enhancing-customer-support-with-power-virtual-agent-copilot
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-07-22-enhancing-customer-support-with-power-virtual-agent-copilot
+layout: post
+title: "Enhancing Customer Support with Power Virtual Agent Copilot"
+datePublished: Sat Jul 22 2023 07:27:38 GMT+0000 (Coordinated Universal Time)
+date: 2023-07-22
+author: admin
+slug: enhancing-customer-support-with-power-virtual-agent-copilot
+canonical_url: https://holgerimbery.blog/enhancing-customer-support-with-power-virtual-agent-copilot
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-07-22-enhancing-customer-support-with-power-virtual-agent-copilot
 
 ---
 

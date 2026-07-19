@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Dynamics 365 Customer Service: Design Your Own Live Chat Experience"
-date: 2023-06-17
-slug: dynamics-365-customer-service-design-your-own-live-chat-experience
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-06-17-dynamics-365-customer-service-design-your-own-live-chat-experience
+layout: post
+title: "Dynamics 365 Customer Service: Design Your Own Live Chat Experience"
+date: 2023-06-17
+slug: dynamics-365-customer-service-design-your-own-live-chat-experience
+canonical_url: https://holgerimbery.blog/dynamics-365-customer-service-design-your-own-live-chat-experience
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-06-17-dynamics-365-customer-service-design-your-own-live-chat-experience
 
 ---
 

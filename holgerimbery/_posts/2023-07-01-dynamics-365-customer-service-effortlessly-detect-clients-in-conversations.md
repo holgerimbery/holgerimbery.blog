@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Dynamics 365 Customer Service: Effortlessly Detect Clients in Conversations"
-date: 2023-07-01
-author: admin
-slug: dynamics-365-customer-service-effortlessly-detect-clients-in-conversations
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
+layout: post
+title: "Dynamics 365 Customer Service: Effortlessly Detect Clients in Conversations"
+date: 2023-07-01
+author: admin
+slug: dynamics-365-customer-service-effortlessly-detect-clients-in-conversations
+canonical_url: https://holgerimbery.blog/dynamics-365-customer-service-effortlessly-detect-clients-in-conversations
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
 # 2023-07-01-dynamics-365-customer-service-effortlessly-detect-clients-in-conversations
 ---
 

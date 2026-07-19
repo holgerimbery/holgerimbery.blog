@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Kickstart Your Experience with Copilot in Microsoft Teams Meetings
-description: 
-date: 2024-03-29
-author: admin
-slug: kickstart-your-experience-with-copilot-in-microsoft-teams-meetings
-image: ./images/kickstart-your-experience-with-copilot-in-microsoft-teams-meetings.jpeg
-tags: [copilot, microsoft365copilot]
-featured: false
-toc: true
+layout: post
+title: Kickstart Your Experience with Copilot in Microsoft Teams Meetings
+description: 
+date: 2024-03-29
+author: admin
+slug: kickstart-your-experience-with-copilot-in-microsoft-teams-meetings
+canonical_url: https://holgerimbery.blog/kickstart-your-experience-with-copilot-in-microsoft-teams-meetings
+image: ./images/kickstart-your-experience-with-copilot-in-microsoft-teams-meetings.jpeg
+tags: [copilot, microsoft365copilot]
+featured: false
+toc: true
 
 ---
 

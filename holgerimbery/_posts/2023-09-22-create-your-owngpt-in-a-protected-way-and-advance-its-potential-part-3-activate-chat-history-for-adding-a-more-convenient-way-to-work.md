@@ -1,13 +1,14 @@
 ---
-layout: post
-title: Create Your ownGPT in a Protected Way and Advance Its Potential (Part 3) - activate chat history for adding a more convenient way to work!
-date: 2023-09-22
-author: admin
-slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-3-activate-chat-history-for-adding-a-more-convenient-way-to-work
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: Create Your ownGPT in a Protected Way and Advance Its Potential (Part 3) - activate chat history for adding a more convenient way to work!
+date: 2023-09-22
+author: admin
+slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-3-activate-chat-history-for-adding-a-more-convenient-way-to-work
+canonical_url: https://holgerimbery.blog/create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-3-activate-chat-history-for-adding-a-more-convenient-way-to-work
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 

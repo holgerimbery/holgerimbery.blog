@@ -1,15 +1,16 @@
 ---
-layout: post
-title: Comparing Copilot Studio Agent Builder and Microsoft Copilot Studio
-description: A technical comparison of Copilot Studio Agent Builder and Microsoft Copilot Studio, highlighting their differences in target users, capabilities, integration options, customization, deployment, and governance.
-
-date: 2025-09-06
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/danist-soh-8Gg2Ne_uTcM-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@danist07?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danist Soh</a> on <a href="https://unsplash.com/photos/low-angle-photography-of-cranes-on-top-of-building-8Gg2Ne_uTcM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-tags: [copilotstudio, agentbuilder, agents]
-author: admin
-slug: copilot-studio-agentbuilder-vs-copilot-studio
-featured: false
+layout: post
+title: Comparing Copilot Studio Agent Builder and Microsoft Copilot Studio
+description: A technical comparison of Copilot Studio Agent Builder and Microsoft Copilot Studio, highlighting their differences in target users, capabilities, integration options, customization, deployment, and governance.
+
+date: 2025-09-06
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/danist-soh-8Gg2Ne_uTcM-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@danist07?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danist Soh</a> on <a href="https://unsplash.com/photos/low-angle-photography-of-cranes-on-top-of-building-8Gg2Ne_uTcM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tags: [copilotstudio, agentbuilder, agents]
+author: admin
+slug: copilot-studio-agentbuilder-vs-copilot-studio
+canonical_url: https://holgerimbery.blog/copilot-studio-agentbuilder-vs-copilot-studio
+featured: false
 toc: true
 ---
 {: .q-left }

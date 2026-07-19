@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Enhancing Customer Support with Dynamics 365 Copilot"
-datePublished: Sat Jul 15 2023 07:18:21 GMT+0000 (Coordinated Universal Time)
-date: 2023-07-15
-slug: enhancing-customer-support-with-dynamics-365-copilot
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-07-15-enhancing-customer-support-with-dynamics-365-copilot
+layout: post
+title: "Enhancing Customer Support with Dynamics 365 Copilot"
+datePublished: Sat Jul 15 2023 07:18:21 GMT+0000 (Coordinated Universal Time)
+date: 2023-07-15
+slug: enhancing-customer-support-with-dynamics-365-copilot
+canonical_url: https://holgerimbery.blog/enhancing-customer-support-with-dynamics-365-copilot
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-07-15-enhancing-customer-support-with-dynamics-365-copilot
 
 ---
 

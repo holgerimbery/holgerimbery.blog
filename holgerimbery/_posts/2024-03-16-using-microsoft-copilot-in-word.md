@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Using Microsoft Copilot in Word
-description: 
-date: 2024-03-16
-author: admin
-slug: using-microsoft-copilot-in-word
-image: ./images/using-microsoft-copilot-in-word.jpeg
-tags: [copilot, microsoft365copilot]
-featured: false
-toc: true
+layout: post
+title: Using Microsoft Copilot in Word
+description: 
+date: 2024-03-16
+author: admin
+slug: using-microsoft-copilot-in-word
+canonical_url: https://holgerimbery.blog/using-microsoft-copilot-in-word
+image: ./images/using-microsoft-copilot-in-word.jpeg
+tags: [copilot, microsoft365copilot]
+featured: false
+toc: true
 
 ---
 

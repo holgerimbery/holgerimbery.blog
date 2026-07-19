@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Power Virtual Agents - a low-code platform for conversational assistants
-description: 
-date: 2022-12-24
-author: admin
-slug: power-virtual-agents-developer-environment-a-low-code-platform-for-conversational-assistants
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: Power Virtual Agents - a low-code platform for conversational assistants
+description: 
+date: 2022-12-24
+author: admin
+slug: power-virtual-agents-developer-environment-a-low-code-platform-for-conversational-assistants
+canonical_url: https://holgerimbery.blog/power-virtual-agents-developer-environment-a-low-code-platform-for-conversational-assistants
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 

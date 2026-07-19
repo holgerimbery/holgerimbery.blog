@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Generative Answers with Power Virtual Agents"
-date: 2023-07-29
-author: admin
-slug: generative-answers-with-power-virtual-agents
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
+layout: post
+title: "Generative Answers with Power Virtual Agents"
+date: 2023-07-29
+author: admin
+slug: generative-answers-with-power-virtual-agents
+canonical_url: https://holgerimbery.blog/generative-answers-with-power-virtual-agents
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
 # 2023-07-29-generative-answers-with-power-virtual-agents
 ---
 

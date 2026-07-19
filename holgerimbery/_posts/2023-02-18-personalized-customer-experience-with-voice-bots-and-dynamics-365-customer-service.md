@@ -1,14 +1,15 @@
 ---
-layout: post
-title: personalized customer experience with voice bots and Dynamics 365 Customer Service
-description: 
-date: 2023-02-18
-author: admin
-slug: personalized-customer-experience-with-voice-bots-and-dynamics-365-customer-service
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: personalized customer experience with voice bots and Dynamics 365 Customer Service
+description: 
+date: 2023-02-18
+author: admin
+slug: personalized-customer-experience-with-voice-bots-and-dynamics-365-customer-service
+canonical_url: https://holgerimbery.blog/personalized-customer-experience-with-voice-bots-and-dynamics-365-customer-service
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 

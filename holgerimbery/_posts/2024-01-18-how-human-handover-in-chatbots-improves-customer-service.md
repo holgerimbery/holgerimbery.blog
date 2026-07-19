@@ -1,14 +1,15 @@
 ---
-layout: post
-title: How Human Handover in Chatbots Improves Customer Service
-description: 
-date: 2024-01-18
-author: admin
-slug: how-human-handover-in-chatbots-improves-customer-service
-image: ./images/how-human-handover-in-chatbots-improves-customer-service.jpeg
-tags: [customerservice, salesforce, dynamics365, servicenow, genesys, copilotstudio]
-featured: false
-toc: true
+layout: post
+title: How Human Handover in Chatbots Improves Customer Service
+description: 
+date: 2024-01-18
+author: admin
+slug: how-human-handover-in-chatbots-improves-customer-service
+canonical_url: https://holgerimbery.blog/how-human-handover-in-chatbots-improves-customer-service
+image: ./images/how-human-handover-in-chatbots-improves-customer-service.jpeg
+tags: [customerservice, salesforce, dynamics365, servicenow, genesys, copilotstudio]
+featured: false
+toc: true
 
 ---
 
