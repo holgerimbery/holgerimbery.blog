@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Microsoft Copilot for Microsoft 365 is an AI-powered tool that can improve email communication in many ways. Here are some methods to fully utilize Copilot's capabilities:
 

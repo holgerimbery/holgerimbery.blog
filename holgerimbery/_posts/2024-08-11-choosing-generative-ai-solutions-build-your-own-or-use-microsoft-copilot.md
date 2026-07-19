@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 In the realm of artificial intelligence, particularly regarding generative pre-trained transformers (GPT), organizations often engage in debates over which model is superior. The discourse frequently revolves around terms like “goodGPT” or “betterGPT,” with the implication being that one large language model may outperform another. However, this conversation tends to oversimplify the complexities involved in selecting an AI solution.
 

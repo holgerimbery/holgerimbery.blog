@@ -13,6 +13,8 @@ canonical_url: https://holgerimbery.blog/application_lifecycle_managment
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 {: .q-left }
 > **Content Classification**  

@@ -13,6 +13,9 @@ featured: false
 toc: false
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .note }
 **summary lede**: Discover how Microsoft Copilot Studio empowers business users to create and customize AI agents with ease. This curated guide offers a comprehensive overview, hands-on workshops, and essential resources to help you become a citizen developer and leverage the full potential of Copilot Studio.
 

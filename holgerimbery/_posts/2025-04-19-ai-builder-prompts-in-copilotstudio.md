@@ -13,6 +13,8 @@ tags: [copilotstudio, aibuilder]
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 {: .note } 
 **summary lede**: 

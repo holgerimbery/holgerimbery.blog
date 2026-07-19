@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 In recent weeks, we've gained the ability to collaborate in groups and teams on documents using Copilot. This new feature, Copilot Pages, has quickly become one of the most potent collaborative tools introduced. It allows multiple users to work together seamlessly on the same document, enhancing productivity and ensuring everyone stays on the same page—literally and figuratively. Integrating Copilot Pages into our workflow has revolutionized how we handle document collaboration, making it more efficient and cohesive.
 

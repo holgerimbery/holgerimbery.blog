@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Azure AI Studio emerges as a beacon of innovation in the rapidly evolving landscape of artificial intelligence (AI). Offering a suite of tools that significantly simplify the process of developing AI applications, this article delves into the myriad benefits of using Azure AI Studio compared to the traditional approach of building AI apps from scratch.
 

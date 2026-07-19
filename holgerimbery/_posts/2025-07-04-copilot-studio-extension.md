@@ -13,6 +13,9 @@ canonical_url: https://holgerimbery.blog/copilot-studio-extension
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .important}
 **Content Classification**  
 Content for IT architects - Level 100 (Background & Integration knowledge)

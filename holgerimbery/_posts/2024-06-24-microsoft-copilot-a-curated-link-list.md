@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 The Microsoft Copilot Family introduces a revolutionary way to interact with technology. It offers a suite of AI-powered tools designed to enhance productivity, inspire creativity, and improve connectivity. Copilot enables both individuals and businesses to incorporate AI functionalities into their everyday tasks seamlessly.
 

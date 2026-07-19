@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 Microsoft Dynamics 365 Customer Service has introduced a game-changing feature known as Copilot. This AI-powered tool is designed to provide real-time assistance to customer service agents, enabling them to resolve issues faster, manage cases more efficiently, and automate time-consuming tasks.
 

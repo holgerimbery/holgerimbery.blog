@@ -13,6 +13,9 @@ tags: [copilotstudio, azureapplicationinsights]
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .important} 
 **Content Classification**  
 Content for IT professionals - Level 100 (Implementation knowledge)   

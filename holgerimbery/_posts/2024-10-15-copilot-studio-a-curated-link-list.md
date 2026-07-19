@@ -14,6 +14,9 @@ toc: false
 
 ---
 {: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
+{: .caution }
 Please find an updated version of this document [here](https://holgerimbery.blog/copilot-studio-a-curated-link-list-v2).
 
 

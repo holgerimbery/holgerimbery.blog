@@ -14,6 +14,9 @@ canonical_url: https://holgerimbery.blog/copilot-studio-licensing259
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .q-left }
 > **Summary Lede**: Microsoft Copilot Studio offers a flexible licensing model built around Copilot Credits, with pay-as-you-go and subscription options to suit different organizational needs. This comprehensive guide explains how credits are consumed, tracked, and managed across various AI agent activities, helping organizations make informed decisions about their Copilot Studio implementation.
 

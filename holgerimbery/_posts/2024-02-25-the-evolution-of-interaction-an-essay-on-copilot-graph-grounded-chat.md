@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 In technological advancements, the emergence of AI-driven chat interfaces represents a significant leap forward in human-computer interaction. Among these, Microsoft Copilot (graph grounded )Chat stands out as a prime example of how artificial intelligence can bridge the complexity of machine learning and users' everyday needs.
 

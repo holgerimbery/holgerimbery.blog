@@ -12,6 +12,8 @@ featured: false
 toc: true
 
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 For effective multilingual customer service, it is essential to have voice Copilot custom agents that can operate in multiple languages, particularly when you want to offer customers the option to choose their preferred language on the phone. Although Copilot Studio does not currently support the creation of multilingual voice custom agents for Dynamics 365 Customer Service or Dynamics 365 Contact Center out of the box, there is a straightforward way to achieve the functionality of a multilingual IVR (Intelligent Voice Response System) using Copilot Studio.
 

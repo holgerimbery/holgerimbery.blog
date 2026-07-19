@@ -13,6 +13,9 @@ canonical_url: https://holgerimbery.blog/experimental-voice-channel
 featured: false
 toc: true
 ---
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+
 {: .q-left }
 > **Summary Lede** 
 ACSforMCS bridges Azure Communication Services with Microsoft Copilot Studio, providing an open-source, experimental alternative to traditional contact center solutions for voice interactions. This lightweight integration enables organizations of all sizes to implement AI-powered voice capabilities without the complexity and cost of complete Dynamics 365 Contact Center implementations. Ideal for small to medium-sized businesses, educational institutions, or specific use cases requiring voice automation, the project provides a flexible and scalable foundation for creating intelligent voice channels that connect customers with the AI-powered assistance they need.

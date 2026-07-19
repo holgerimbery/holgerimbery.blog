@@ -11,7 +11,8 @@ tags: [dynamics365, customerservice, voicebot]
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 In today's fast-paced business world, delivering outstanding customer service is essential. Companies need efficient and effective solutions to handle customer inquiries, streamline processes, and improve user experiences. This is where Copilot Studio Voice Bots come into play. These intelligent voice bots are a cutting-edge addition to the Dynamics 365 suite. They utilize advanced natural language processing (NLP) and machine learning (ML) algorithms to interact smoothly with customers. Whether resolving common issues, automating routine tasks, or routing requests to the appropriate department, Copilot Studio Voice Bots help businesses offer personalized and efficient support. In this blog, we'll explore how these voice bots transform customer service within the Dynamics 365 ecosystem.
 

@@ -12,8 +12,8 @@ featured: false
 toc: true
 
 ---
-
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 In the dynamic world of omnichannel contact centers, the concept of preferred agent routing stands out as a cornerstone for delivering exceptional customer service. This strategic approach fosters a sense of familiarity and personalization by connecting customers with agents they've interacted with and streamlines the resolution process through the efficient use of agent expertise. As we delve into the intricacies of this system, we'll explore how it enhances customer satisfaction, optimizes operational efficiency, and ultimately contributes to the success of modern customer service paradigms. Join us as we unpack the significance of preferred agent routing and its impact on the customer experience in today’s service landscape.
 

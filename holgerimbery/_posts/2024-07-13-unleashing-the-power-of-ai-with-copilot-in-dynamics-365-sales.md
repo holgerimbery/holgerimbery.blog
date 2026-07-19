@@ -12,7 +12,8 @@ featured: false
 toc: true
 
 ---
-
+{: .caution }
+Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
 
 In the fast-paced sales world, staying on top of leads and opportunities can be daunting. But what if you had an AI assistant to help you out? Enter Copilot, a feature in Dynamics 365 Sales that’s revolutionizing the way sales teams operate.
 
