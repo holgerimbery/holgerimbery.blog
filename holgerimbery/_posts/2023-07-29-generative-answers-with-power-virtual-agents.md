@@ -12,7 +12,8 @@ toc: true
 # 2023-07-29-generative-answers-with-power-virtual-agents
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 Generative answers within Power Virtual Agents offer a convenient way for your bot to retrieve and display information from various sources, both internal and external. Unlike authored topics, generative answers do not require pre-determined subjects to be created beforehand. They can serve as your chatbot's main information source or be a fallback option when existing topics fail to address user inquiries. This feature streamlines the bot creation process by enabling you to build and launch a functional chatbot quickly without spending time manually authoring multiple topics that may not adequately address customer queries.
 

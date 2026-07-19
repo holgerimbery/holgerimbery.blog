@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
  ***Third part of a series  
  building the foundation -*** [***part 1***](https://the.cognitiveservices.ninja/create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-2-incorporating-your-own-data-to-create-unique-experiences) ***&  

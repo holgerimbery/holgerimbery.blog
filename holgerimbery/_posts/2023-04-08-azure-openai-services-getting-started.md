@@ -13,7 +13,8 @@ toc: true
 
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 This is a first article of a series on Azure OpenAI Services. This article describes how to start and brings you directly to [Azure OpenAI Service Studio](https://oai.azure.com/).
 

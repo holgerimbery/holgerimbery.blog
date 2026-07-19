@@ -12,7 +12,8 @@ toc: true
 # 2023-03-18-dynamics-365-customer-service-always-an-answer-to-every-question
 ---
 
-*Archived post - content may be outdate*
+{: .caution }
+**Archived post for reference**: This article remains available because it may still provide useful context or historical insight. However, technologies, features, and recommendations may have changed since it was published.
 
 ## Motivation
 
