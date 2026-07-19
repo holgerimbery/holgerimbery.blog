@@ -9,7 +9,8 @@ image_caption: Photo by <a href="https://unsplash.com/@adamanium?utm_content=cre
       
 
 tags: [copilotstudio, aifoundry]
-author: admin
+author: admin
+slug: triggering-the-backend
 featured: false
 toc: true
 ---

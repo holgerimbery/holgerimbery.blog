@@ -3,7 +3,8 @@ layout: post
 title: Agentic AI and Microsoft’s Autonomous Agents - An In-Depth Comparison
 description: A comprehensive analysis of agentic AI and Microsoft's autonomous agents, exploring their unique features, use cases, and technological underpinnings.
 date: 2025-06-09
-author: admin
+author: admin
+slug: agentic-ai-an-overview
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/igor-omilaev-gVQLAbGVB6Q-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@omilaev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Igor Omilaev</a> on <a href="https://unsplash.com/photos/two-hands-touching-each-other-in-front-of-a-pink-background-gVQLAbGVB6Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       

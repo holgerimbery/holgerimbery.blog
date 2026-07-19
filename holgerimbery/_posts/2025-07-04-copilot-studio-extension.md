@@ -7,7 +7,8 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@flowforfrank?utm_content=creditCopyText&utm_medium=reBringingsource=unsplash">Ferenc Almasi</a> on <a href="https://unsplash.com/photos/a-computer-screen-with-a-bunc-buttons-on-it--FHIdRVGets?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, agents, vscode]
-author: admin
+author: admin
+slug: copilot-studio-extension
 featured: false
 toc: true
 ---

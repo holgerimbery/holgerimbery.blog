@@ -3,7 +3,8 @@ layout: post
 title: Give your Bots a voice
 description: 
 date: 2022-12-10
-author: admin
+author: admin
+slug: give-your-bots-a-voice
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

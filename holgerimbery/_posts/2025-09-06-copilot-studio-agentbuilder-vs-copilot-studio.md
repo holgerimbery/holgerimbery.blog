@@ -7,7 +7,8 @@ date: 2025-09-06
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/danist-soh-8Gg2Ne_uTcM-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@danist07?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danist Soh</a> on <a href="https://unsplash.com/photos/low-angle-photography-of-cranes-on-top-of-building-8Gg2Ne_uTcM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: [copilotstudio, agentbuilder, agents]
-author: admin
+author: admin
+slug: copilot-studio-agentbuilder-vs-copilot-studio
 featured: false
 toc: true
 ---

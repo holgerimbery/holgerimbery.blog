@@ -3,7 +3,8 @@ layout: post
 title: Azure AI Studio - a curated list
 description: 
 date: 2024-10-16
-author: admin
+author: admin
+slug: azure-ai-studio-a-curated-list
 image: ./images/azure-ai-studio-a-curated-list.jpeg
 tags: [azureaistudio]
 featured: false

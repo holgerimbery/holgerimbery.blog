@@ -3,7 +3,8 @@ layout: post
 title: AI-Accelerated Customer Service - Transforming the Future of Customer Support
 description: AI is revolutionizing customer service, offering solutions that enhance efficiency, reduce costs, and improve customer satisfaction. Microsoft's innovative AI-driven tools like Microsoft Copilot, Microsoft Agents, Dynamics 365 Customer Service, and Dynamics 365 Contact Center are transforming customer service operations. This article explores how AI accelerates customer service and empowers agents.
 date: 2025-03-22
-author: admin
+author: admin
+slug: AI-Accelerated-Customer-Service
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/03/arlington-research-kN_kViDchA0-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@arlington_research?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Arlington Research</a> on <a href="https://unsplash.com/photos/rectangular-brown-wooden-table-kN_kViDchA0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 tags: [copilotstudio, sales, agents, dynamics365]

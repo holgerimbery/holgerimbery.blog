@@ -3,7 +3,8 @@ layout: post
 title: Microsoft Copilot - a curated link list
 description: 
 date: 2024-06-24
-author: admin
+author: admin
+slug: microsoft-copilot-a-curated-link-list
 image: ./images/microsoft-copilot-a-curated-link-list.jpeg
 tags: [copilot]
 featured: false

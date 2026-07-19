@@ -7,7 +7,8 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@struvictoryart?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Victoria Strukovskaya</a> on <a href="https://unsplash.com/photos/gray-telephone-UkEN39LOTw8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       
 tags: [copilotstudio, voicechannel, customerservice]
-author: admin
+author: admin
+slug: experimental-voice-channel
 featured: false
 toc: true
 ---

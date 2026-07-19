@@ -3,7 +3,8 @@ layout: post
 title: The Chitchat of the other kind - ChatGPT in Power Virtual Agents
 description: 
 date: 2023-01-14
-author: admin
+author: admin
+slug: the-chitchat-of-the-other-kind-chatgpt-in-power-virtual-agents
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

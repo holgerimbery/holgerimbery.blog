@@ -3,7 +3,8 @@ layout: post
 title: Enhancing Customer Connections The Power of Preferred Agent Routing in Dynamics 365 Customer Service
 description: 
 date: 2024-04-27
-author: admin
+author: admin
+slug: enhancing-customer-connections-the-power-of-preferred-agent-routing-in-dynamics-365-customer-service
 image: ./images/enhancing-customer-connections-the-power-of-preferred-agent-routing-in-dynamics-365-customer-service.jpeg
 tags: [dynamics365, customerservice]
 featured: false

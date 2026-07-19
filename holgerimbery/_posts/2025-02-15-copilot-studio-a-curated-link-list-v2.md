@@ -3,7 +3,8 @@ layout: post
 title: Copilot Studio - a curated link list
 description: 
 date: 2025-02-15
-author: admin
+author: admin
+slug: copilot-studio-a-curated-link-list-v2
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/copilot-studio-a-curated-link-list.jpeg
 image_caption: 'Photo by <a href="https://unsplash.com/@rawkkim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">rawkkim</a> on <a href="https://unsplash.com/photos/people-sitting-on-wooden-chairs-BW6IojhaiDU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 tags: [copilotstudio, curatedlist]

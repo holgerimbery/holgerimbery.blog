@@ -3,7 +3,8 @@ layout: post
 title: Enhancing Whiteboard Capabilities with Copilot
 description: 
 date: 2024-04-20
-author: admin
+author: admin
+slug: enhancing-whiteboard-capabilities-with-copilot
 image: ./images/enhancing-whiteboard-capabilities-with-copilot.jpeg
 tags: [copilot, microsoft365copilot]
 featured: false

@@ -3,7 +3,8 @@ layout: post
 title: "Teams Phone Agent and Custom Voice Agents in Copilot Studio: A Practitioner's Guide"
 description: "How Teams Phone Agent's out-of-the-box voice experience and custom Copilot Studio voice agents bring conversational AI to Microsoft Teams Phone — capabilities, call-flow design, setup, gating, and consumption billing in the Frontier preview."
 date: 2026-06-27
-author: admin
+author: admin
+slug: teams-phone-agent-copilot-studio
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/06/annie-spratt-goholCAVTRs-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/photos/brown-rotary-dial-telephone-in-gray-painted-room-goholCAVTRs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 

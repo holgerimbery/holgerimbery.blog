@@ -7,7 +7,8 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@gaspanik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Masaaki Komori</a> on <a href="https://unsplash.com/photos/gray-steel-gate-closed-with-padlock-_we0BQQewBo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       
 tags: [copilotstudio, governance, agents]
-author: admin
+author: admin
+slug: copilot-studio-governance
 featured: false
 toc: true
 ---

@@ -3,7 +3,8 @@ layout: post
 title: "Multi-Agent Orchestration with Copilot Studio — Part 1: Foundations"
 description: "A long-form, end-to-end foundation for building multi-agent systems in Microsoft Copilot Studio — when to split, the five surfaces, four patterns, and the two open standards (MCP and A2A) that make the whole thing composable."
 date: 2026-07-04
-author: admin
+author: admin
+slug: copilot-studio-orchestration-part1
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/andy-kelly-0E_vhMVqL9g-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@askkell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Kelly</a> on <a href="https://unsplash.com/photos/photo-of-girl-laying-left-hand-on-white-digital-robot-0E_vhMVqL9g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       

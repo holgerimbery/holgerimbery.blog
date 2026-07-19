@@ -8,7 +8,8 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@4themorningshoot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oliver Hale</a> on <a href="https://unsplash.com/photos/strawberries-in-bucket--vMnQkiIPeo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
        
 tags: [aifoundry, copilotstudio, agents]
-author: admin
+author: admin
+slug: bring-your-own-model-copilotstudio
 featured: false
 toc: true
 ---

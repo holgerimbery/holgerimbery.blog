@@ -3,7 +3,8 @@ layout: post
 title: Dynamics 365 Customer Service Voice Channel
 description: 
 date: 2023-02-04
-author: admin
+author: admin
+slug: dynamics-365-customer-service-voice-channel
 image: ./images/archive.jpg
 tags: [archive]
 featured: false

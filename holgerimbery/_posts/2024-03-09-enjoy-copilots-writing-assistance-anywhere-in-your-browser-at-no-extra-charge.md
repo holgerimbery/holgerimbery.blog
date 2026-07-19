@@ -3,7 +3,8 @@ layout: post
 title: Enjoy Copilot's writing assistance anywhere in your browser at no extra charge
 description: 
 date: 2024-03-09
-author: admin
+author: admin
+slug: enjoy-copilots-writing-assistance-anywhere-in-your-browser-at-no-extra-charge
 image: ./images/enjoy-copilots-writing-assistance-anywhere-in-your-browser-at-no-extra-charge.jpeg
 tags: [copilot]
 featured: false

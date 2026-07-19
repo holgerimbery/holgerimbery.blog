@@ -3,7 +3,8 @@ layout: post
 title: Improve Your PowerPoint Slides with Creativity Tools from Microsoft 365 Copilot
 description: 
 date: 2024-04-06
-author: admin
+author: admin
+slug: improve-your-powerpoint-slides-with-creativity-tools-from-microsoft-365-copilot
 image: ./images/improve-your-powerpoint-slides-with-creativity-tools-from-microsoft-365-copilot.jpeg
 tags: [copilot, microsoft365copilot]
 featured: false
