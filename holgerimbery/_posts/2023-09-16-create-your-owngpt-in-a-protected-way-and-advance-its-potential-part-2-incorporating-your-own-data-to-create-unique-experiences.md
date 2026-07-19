@@ -32,7 +32,7 @@ In this second part of the series, we will learn how to customize our chatGPT cl
 * Click on "Add a data source"
     
 
-![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/308a5f73-92f1-45da-8253-c8ecb5d52359.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/308a5f73-92f1-45da-8253-c8ecb5d52359.png)
 
 * Choose "Upload files" and follow the wizard to create an "Azure Blob Storage," an "Azure Cognitive Search Resource" with the ARM templates of the wizard.
     
@@ -43,21 +43,21 @@ In this second part of the series, we will learn how to customize our chatGPT cl
 * After acknowledging the information, click "Next."
     
 
-![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/203241fb-4b76-4bc0-9654-3befe85bf843.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/203241fb-4b76-4bc0-9654-3befe85bf843.png)
 
 * Next, upload some test data to the blob storage to test the installation.
     
 
-![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/77cad8c9-a308-45bc-b788-be3c92789279.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/77cad8c9-a308-45bc-b788-be3c92789279.png)
 
 * After finishing the upload, everything will be created in the background, and the Assistant setup tells you to wait some minutes
     
 
-![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/c763d8e1-5f90-4f30-b240-b3c530b8759c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/c763d8e1-5f90-4f30-b240-b3c530b8759c.png)
 
 Once the wizard has completed its task, you'll see the created resource in the status window beneath the wizard. You can then restrict the response to your data and verify its functionality with a brief chat session.
 
-![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/3668284a-a164-4434-86a2-5c8764cc540c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/3668284a-a164-4434-86a2-5c8764cc540c.png)
 
 ## Add the resources to the ownGPT web interface
 
@@ -65,7 +65,7 @@ Once the wizard has completed its task, you'll see the created resource in the s
 
 Update your .env file and add the following details:
 
-![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/c1db43d6-d73a-460a-9390-5f8bd395baeb.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/c1db43d6-d73a-460a-9390-5f8bd395baeb.png)
 
 restart your ownGPT by executing ./start.cmd
 
@@ -73,18 +73,18 @@ and try it in your browser at https://127.0.0.1:5000
 
 The result should look similar to the picture below
 
-![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/65b185bd-6f5f-428c-94f4-dbfab681f2be.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/65b185bd-6f5f-428c-94f4-dbfab681f2be.png)
 
 ### Update the config of the Web App
 
 * go to Settings / Applications, and add the "AZURE\_Search\*" elements from before as application settings. Do not forget to restart the web app.
     
 
-![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/39ebdf1a-14f4-432b-88e0-6daf841156a1.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/39ebdf1a-14f4-432b-88e0-6daf841156a1.png)
 
 * Test the web app in a private browser and see that your identity provider kicks in.
     
-    ![]({{site.baseurl}}/images/clmllxvzo000009ml4w203zmh.md/eb4f0ec0-2e43-4c94-bcec-c91e2d795fa5.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmllxvzo000009ml4w203zmh.md/eb4f0ec0-2e43-4c94-bcec-c91e2d795fa5.png)
     
 * The test in the web chat should then give you the same result as testing the chat interface locally.
     

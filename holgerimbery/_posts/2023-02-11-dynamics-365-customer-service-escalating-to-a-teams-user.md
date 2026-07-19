@@ -37,7 +37,7 @@ To update the Teams phone number in the user profile, perform the following step
 
 3. Select the required user and select **Edit** to add the phone number in the **Contact info** &gt; **Office phone** field.
 
-    ![Figure 1: Add phone number in Business Phone field]({{site.baseurl}}/images/cldzxrf0h07s3o1nv92vf064m.md/9bf0a544-2fe2-48e8-81ab-014c503eff28.png)
+    ![Figure 1: Add phone number in Business Phone field](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldzxrf0h07s3o1nv92vf064m.md/9bf0a544-2fe2-48e8-81ab-014c503eff28.png)
 
     Figure 1: Add phone number in Business Phone field
 
@@ -47,13 +47,13 @@ To update the Teams phone number in the user profile, perform the following step
 
 You'll need to enable the Consult with Microsoft Teams user setting in the voice channel section to allow the agents to consult with Microsoft Teams users.
 
-![Figure 2: Enable consult with Teams Part 1]({{site.baseurl}}/images/cldzxrf0h07s3o1nv92vf064m.md/9de0e8f2-2906-4ac5-ad73-96860fd11cf2.png)
+![Figure 2: Enable consult with Teams Part 1](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldzxrf0h07s3o1nv92vf064m.md/9de0e8f2-2906-4ac5-ad73-96860fd11cf2.png)
 
 Figure 2: Enable consult with Teams Part 1
 
 scroll down to the end
 
-![Figure 3: Enable consult with Teams Part 2]({{site.baseurl}}/images/cldzxrf0h07s3o1nv92vf064m.md/99819938-40a6-463f-aec4-e3fb4a6233b1.png)
+![Figure 3: Enable consult with Teams Part 2](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldzxrf0h07s3o1nv92vf064m.md/99819938-40a6-463f-aec4-e3fb4a6233b1.png)
 
 Figure 3: Enable consult with Teams Part 2
 

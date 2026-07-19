@@ -62,15 +62,15 @@ Connect your carrier via direct routing
 * Open the dialogue "add domain" to add the Carrier / SBC Domain to the configuration and to verify it.
     
 
-![]({{site.baseurl}}/images/cll7si5s4000m0aiiasahdhnq.md/523046d8-6ad1-41a8-9dcd-fbee2301b8f8.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cll7si5s4000m0aiiasahdhnq.md/523046d8-6ad1-41a8-9dcd-fbee2301b8f8.png)
 
 When verified, go to the "Session Border Controllers" Tab
 
-![]({{site.baseurl}}/images/cll7si5s4000m0aiiasahdhnq.md/72317cb2-ebda-4441-8f0e-32a3dc10e58a.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cll7si5s4000m0aiiasahdhnq.md/72317cb2-ebda-4441-8f0e-32a3dc10e58a.png)
 
 and add your carrier's SBCs
 
-![]({{site.baseurl}}/images/cll7si5s4000m0aiiasahdhnq.md/b57b8e77-6a3f-46b2-97db-d86606d4b8a6.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cll7si5s4000m0aiiasahdhnq.md/b57b8e77-6a3f-46b2-97db-d86606d4b8a6.png)
 
 Configure your Voice Routes according to your needs.
 

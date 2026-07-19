@@ -29,7 +29,7 @@ Within the PowerPoint environment, Copilot for Microsoft 365 offers the followin
 
 ## Create a new presentation with Copilot in PowerPoint
 
-![]({{site.baseurl}}/images/clunbwcz5000208k48vytba7l.md/5551a4c5-dd97-4e84-abb7-f67de5a65793.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clunbwcz5000208k48vytba7l.md/5551a4c5-dd97-4e84-abb7-f67de5a65793.png)
 
 1. Open PowerPoint and create a new presentation.
     
@@ -44,7 +44,7 @@ Within the PowerPoint environment, Copilot for Microsoft 365 offers the followin
 
 You can edit the presentation to fit your needs better, ask Copilot to add a slide, or start anew with a more detailed prompt. For instance, *"Create a presentation about adopting Copilot for Microsoft 365 using examples and best practice examples"*
 
-![]({{site.baseurl}}/images/clunbwcz5000208k48vytba7l.md/bae034d5-247b-4dfd-b42d-eb2c03ee73ac.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clunbwcz5000208k48vytba7l.md/bae034d5-247b-4dfd-b42d-eb2c03ee73ac.png)
 
 ## Create a presentation from a file with Copilot
 
@@ -68,13 +68,13 @@ If the file picker doesn't appear type a front slash (/) to cause it to pop up.
 * Edit the presentation to suit your needs, ask Copilot to add a slide, organize your presentation, or add images.
     
 
-![]({{site.baseurl}}/images/clunbwcz5000208k48vytba7l.md/0df19df7-5877-45ba-984f-71ebb80c2144.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clunbwcz5000208k48vytba7l.md/0df19df7-5877-45ba-984f-71ebb80c2144.png)
 
 ## Add a slide or image to your presentation with Copilot in PowerPoint
 
 If you need to include a slide about license details in your presentation, simply ask Copilot in PowerPoint to “**Add a slide** about licensing details,” and it will create the slide for you.
 
-![]({{site.baseurl}}/images/clunbwcz5000208k48vytba7l.md/5351cd3f-073b-4738-b47b-c0e9cc4292fb.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clunbwcz5000208k48vytba7l.md/5351cd3f-073b-4738-b47b-c0e9cc4292fb.png)
 
 Copilot can also help improve your presentation. Ask Copilot to “**Add an image** of a person in an office,” and Copilot will find the ideal image to enhance your slide.
 

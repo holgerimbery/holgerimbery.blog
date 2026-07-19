@@ -32,7 +32,7 @@ You can easily create and modify bot topics with Power Virtual Agents copilot. I
  
  If you are unable to see this feature, check in Settings / General
  
- ![enable feature]({{site.baseurl}}/images/clfxvkv0c00020al7d0u85lmn.md/6f2df0b6-1fd5-4daa-a771-4a9f51a185cd.png)
+ ![enable feature](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfxvkv0c00020al7d0u85lmn.md/6f2df0b6-1fd5-4daa-a771-4a9f51a185cd.png)
 
 ## **Use copilot to create a topic**
 
@@ -43,11 +43,11 @@ When creating a new topic, you can utilize the "Create with Copilot" feature, as
 * Create a new Topic by selecting "+ New Topic" and "Create with Copilot"
     
 
-![Create a new Topic]({{site.baseurl}}/images/clfxvkv0c00020al7d0u85lmn.md/58a19e56-95d6-473d-8ab3-0174301c6d59.png)
+![Create a new Topic](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfxvkv0c00020al7d0u85lmn.md/58a19e56-95d6-473d-8ab3-0174301c6d59.png)
 
 Figure: Create a new topic
 
-![Create it with Copilot]({{site.baseurl}}/images/clfxvkv0c00020al7d0u85lmn.md/adee681a-6f49-4a77-9755-9220b556e9d5.png)
+![Create it with Copilot](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfxvkv0c00020al7d0u85lmn.md/adee681a-6f49-4a77-9755-9220b556e9d5.png)
 
 Figure: "Create it with Copilot"
 
@@ -62,11 +62,11 @@ If you want to offer help to users with outstanding, ask the copilot to generate
 
 The result is an excellent start to work with:
 
-![AI generated dialogflow (1)]({{site.baseurl}}/images/clfxvkv0c00020al7d0u85lmn.md/0a4392ea-66f9-4377-ac74-835cd296d86b.png)
+![AI generated dialogflow (1)](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfxvkv0c00020al7d0u85lmn.md/0a4392ea-66f9-4377-ac74-835cd296d86b.png)
 
 Figure: AI-generated dialog flow (1)
 
-![AI generated dialogflow (2)]({{site.baseurl}}/images/clfxvkv0c00020al7d0u85lmn.md/a61310ed-a622-4e33-8545-f3361da5d6b0.png)
+![AI generated dialogflow (2)](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfxvkv0c00020al7d0u85lmn.md/a61310ed-a622-4e33-8545-f3361da5d6b0.png)
 
 Figure: AI-generated dialog flow (2)
 
@@ -85,14 +85,14 @@ The essential work is done; refinements can be done manually or with your copilo
 
 To use copilot to edit an existing topic, select "Edit with Copilot"
 
-![]({{site.baseurl}}/images/clfxvkv0c00020al7d0u85lmn.md/ea873cfb-a3f0-4970-ba3b-11fe14453a3d.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfxvkv0c00020al7d0u85lmn.md/ea873cfb-a3f0-4970-ba3b-11fe14453a3d.png)
 
  Tip!  
  If you have selected any nodes on your canvas, your request will be limited to those nodes.  
  For instance, if you have selected a question node, you can simply write "add a speech response" instead of "add a speech response to the question node".  
  The nodes you have selected will be displayed next to the Update button.
 
-![Edit with Copilot]({{site.baseurl}}/images/clfxvkv0c00020al7d0u85lmn.md/bc84ed52-97d0-4ab1-9902-fb78e8326a86.png)
+![Edit with Copilot](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clfxvkv0c00020al7d0u85lmn.md/bc84ed52-97d0-4ab1-9902-fb78e8326a86.png)
 
 Figure: Edit with Copilot
 

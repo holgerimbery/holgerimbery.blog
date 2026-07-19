@@ -61,23 +61,23 @@ go to: your "Azure OpenAI Studio", jump into your "playground"
 
 Select "Chat" and "add your data"
 
-![]({{site.baseurl}}/images/cllt3vjv5000g09mnfrj04ucn.md/963096dd-dd36-426e-9ea1-401bb5db7f81.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/963096dd-dd36-426e-9ea1-401bb5db7f81.png)
 
 You can then add data. Your data will be stored securely in your Azure Subscription.
 
-![]({{site.baseurl}}/images/cllt3vjv5000g09mnfrj04ucn.md/a44862b9-7396-497e-a8ec-e7e46dc18ea2.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/a44862b9-7396-497e-a8ec-e7e46dc18ea2.png)
 
 ## How Do I Connect a Power Virtual Agent?
 
 To connect a Power Virtual Agent bot to your data, choose the Deploy option. The bot will be created and automatically linked to your Azure resource.
 
-![]({{site.baseurl}}/images/cllt3vjv5000g09mnfrj04ucn.md/69f392fb-29d4-491e-b391-c36a21087649.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/69f392fb-29d4-491e-b391-c36a21087649.png)
 
-![]({{site.baseurl}}/images/cllt3vjv5000g09mnfrj04ucn.md/d3b3f08d-ef85-4b03-b7d6-83448ec9cc70.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/d3b3f08d-ef85-4b03-b7d6-83448ec9cc70.png)
 
 The "Conversational Boosting" system topic is automatically generated when the bot is created using Azure OpenAI Studio.
 
-![]({{site.baseurl}}/images/cllt3vjv5000g09mnfrj04ucn.md/0fd2bbab-26e5-495a-97dd-eb15a8706d47.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/0fd2bbab-26e5-495a-97dd-eb15a8706d47.png)
 
 In the Power Virtual Agents editing canvas, open the Data Source Configuration panel for your topic's "Generative Answers" node:
 
@@ -85,11 +85,11 @@ Open the Properties panel for the "Create Generative Answers" node and select Da
 
 On the Create Generative Answers node, select Edit under Data Sources.
 
-![]({{site.baseurl}}/images/cllt3vjv5000g09mnfrj04ucn.md/cb13d8b1-0970-416f-a5bf-de234fdabce1.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/cb13d8b1-0970-416f-a5bf-de234fdabce1.png)
 
 Edit the connection to the Azure OpenAI Service.
 
-![]({{site.baseurl}}/images/cllt3vjv5000g09mnfrj04ucn.md/24979867-c793-4e9e-8a90-f6ae6e975036.png"left")
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/24979867-c793-4e9e-8a90-f6ae6e975036.png"left")
 
 Once you have finished entering sources, close the menu. Be sure to save any changes made to your topic.
 

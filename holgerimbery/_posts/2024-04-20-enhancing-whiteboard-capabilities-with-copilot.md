@@ -18,7 +18,7 @@ Introducing Copilot in Whiteboard - an innovative tool that revolutionizes how y
 
 Copilot in Whiteboard is available in the Whiteboard desktop app, web browser, iPad, and Teams client to users with a Copilot for Microsoft 365 license. It supports various languages, including English, Spanish, Japanese, French, German, Portuguese, Italian, and Chinese Simplified.
 
-![]({{site.baseurl}}/images/clv7ujs2v000009jk6mx4frro.md/541e6a5c-2474-4bcd-a787-8459b11f1a1d.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clv7ujs2v000009jk6mx4frro.md/541e6a5c-2474-4bcd-a787-8459b11f1a1d.png)
 
 ### Suggest ideas
 
@@ -30,7 +30,7 @@ Getting started with a new plan can be challenging, especially when you have a b
         
     
 
-![]({{site.baseurl}}/images/clv7ujs2v000009jk6mx4frro.md/c69c5721-55c4-4f19-9edf-c205fa71fa6f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clv7ujs2v000009jk6mx4frro.md/c69c5721-55c4-4f19-9edf-c205fa71fa6f.png)
 
 * **Right-click menu**
     
@@ -43,9 +43,9 @@ Getting started with a new plan can be challenging, especially when you have a b
 
 After submitting your prompt, Copilot will display several suggestions in a pop-up window. You can remove a suggestion by clicking the **X** next to it. Click **Insert** to add the suggestions to the Whiteboard, **Generate more** to get additional suggestions, or **Edit** to modify your prompt.
 
-![]({{site.baseurl}}/images/clv7ujs2v000009jk6mx4frro.md/c2a8d248-fd87-4ee6-ab48-f6fb99707c31.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clv7ujs2v000009jk6mx4frro.md/c2a8d248-fd87-4ee6-ab48-f6fb99707c31.png)
 
-![]({{site.baseurl}}/images/clv7ujs2v000009jk6mx4frro.md/a2000885-f65e-4cb7-9c50-525de0360ee6.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clv7ujs2v000009jk6mx4frro.md/a2000885-f65e-4cb7-9c50-525de0360ee6.png)
 
 ## Organize the ideas
 
@@ -58,13 +58,13 @@ It can be challenging to understand if you have a whiteboard filled with ideas t
     * Click **Categorize** to start the process or **Cancel** to stop and exit the process.
         
 
-![]({{site.baseurl}}/images/clv7ujs2v000009jk6mx4frro.md/0e938696-7970-48aa-afcd-0d1d6e8b62e2.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clv7ujs2v000009jk6mx4frro.md/0e938696-7970-48aa-afcd-0d1d6e8b62e2.png)
 
-![]({{site.baseurl}}/images/clv7ujs2v000009jk6mx4frro.md/32f4c967-a225-4826-9f17-54d5f8d60c57.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clv7ujs2v000009jk6mx4frro.md/32f4c967-a225-4826-9f17-54d5f8d60c57.png)
 
 Copilot is a note-taking tool that categorizes your notes into different groups with headings using different colors. After Copilot categorizes your notes, you can either Keep them, Revert them to being uncategorized, or Regenerate Copilot’s categorization if you're not happy with the result. Once your notes are categorized, you can edit, move, and delete them, as well as modify the headings as per your needs.
 
-![]({{site.baseurl}}/images/clv7ujs2v000009jk6mx4frro.md/3994e644-4be3-4a2a-9444-61d1d351fbc0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clv7ujs2v000009jk6mx4frro.md/3994e644-4be3-4a2a-9444-61d1d351fbc0.png)
 
 ## Understand your ideas
 
@@ -86,7 +86,7 @@ Accessing the Summarize feature in Whiteboard is possible through several method
 
 Copilot is designed to compile a summary of the notes taken on the Whiteboard and seamlessly integrate them into a Loop component. This component can then be conveniently edited, duplicated, and distributed among colleagues or customers.
 
-![]({{site.baseurl}}/images/clv7ujs2v000009jk6mx4frro.md/000f6405-234d-4819-bf15-ef94efe6f496.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clv7ujs2v000009jk6mx4frro.md/000f6405-234d-4819-bf15-ef94efe6f496.png)
 
 ## Conclusion
 

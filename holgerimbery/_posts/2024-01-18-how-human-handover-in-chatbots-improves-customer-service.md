@@ -62,7 +62,7 @@ This chatbot platform assists users in creating and deploying chatbots for vario
 
 Microsoft introduced numerous new handover targets and rebranded Power Virtual Agents to CoPilot Studio. All major players are now covered.
 
-![]({{site.baseurl}}/images/clrxhz1to000009lf6mpfduku.md/7936016a-7075-4b41-a10c-4769f2b6acea.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clrxhz1to000009lf6mpfduku.md/7936016a-7075-4b41-a10c-4769f2b6acea.png)
 
 ### Microsoft Dynamics Customer Service
 

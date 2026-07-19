@@ -44,7 +44,7 @@ Users must configure their Copilots for Voice in Copilot Studio to get started w
 
 create a new bot on https://copilotstudio.microsoft.com
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/9b73b744-ebf1-447c-b9c4-4c25502443a0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/9b73b744-ebf1-447c-b9c4-4c25502443a0.png)
 
 ### Configure Voice Settings
 
@@ -53,52 +53,52 @@ create a new bot on https://copilotstudio.microsoft.com
 * Mark "Use voice as a primary author mode"
     
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/da7563e8-5ff0-4d5c-b8d6-a47a969f829b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/da7563e8-5ff0-4d5c-b8d6-a47a969f829b.png)
 
 ### Configure Telefony Channel
 
 * Go to Channels &gt; Channels, click "Telephony" and activate it.
     
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/1e626750-6ade-4f4d-a975-75e2700cef29.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/1e626750-6ade-4f4d-a975-75e2700cef29.png)
 
 ### Configure Handover to Dynamics 365 Customer Service or Dynamics 365 Contact Center
 
 * go to Channels &gt; Customer Engagement Hub &gt; Dynamics 365 Customer Service
     
-    ![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/5e24c101-d8f7-4e7c-b065-1546fe2334b5.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/5e24c101-d8f7-4e7c-b065-1546fe2334b5.png)
     
 * If you have activated it, the result should look similar to the picture below.
     
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/42014edc-d8ec-43f8-8162-655654a24c32.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/42014edc-d8ec-43f8-8162-655654a24c32.png)
 
 * Navigate to the Dynamics 365 "Customer Service Admin Center" or "Contact Center Admin Center," proceed to your voice workstream, and click 'Add bot.'
     
 * Then, select the bot you have recently created. The outcome should resemble the screenshot provided.
     
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/a45eb71c-3f56-4f26-8d06-8fd47fe59bee.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/a45eb71c-3f56-4f26-8d06-8fd47fe59bee.png)
 
 ### Greet your calling customer by name
 
 To greet a caller by name, you can utilize the caller ID and an associated contact in Dynamics Customer Service by adding a variable to a text node.
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/78b6c953-b40b-4b5c-9e7b-35e1fb4e4604.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/78b6c953-b40b-4b5c-9e7b-35e1fb4e4604.png)
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/dcd07062-256b-4035-8aad-0017f567b467.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/dcd07062-256b-4035-8aad-0017f567b467.png)
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/f09f5e9f-fc17-49b8-bb51-33fd6063dab2.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/f09f5e9f-fc17-49b8-bb51-33fd6063dab2.png)
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/b935b8cf-dcc9-4efb-853f-7f6dc0771ab2.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/b935b8cf-dcc9-4efb-853f-7f6dc0771ab2.png)
 
 ## Testing Your Voice-Enabled Copilot
 
 Once the copilot is set up, users can test it using text inputs that simulate a user’s input through speech or DTMF. This allows users to see the speech response in the text output and verify voice features such as Barge-in and DTMF in their text input.
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/cce0c1c4-6785-465a-baa3-e9bc6b766cde.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/cce0c1c4-6785-465a-baa3-e9bc6b766cde.png)
 
-![]({{site.baseurl}}/images/clz3xugxg000209l8gr335ait.md/f5f14115-7e90-4ba9-b360-fd882ec7268d.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clz3xugxg000209l8gr335ait.md/f5f14115-7e90-4ba9-b360-fd882ec7268d.png)
 
 ## Conclusion
 

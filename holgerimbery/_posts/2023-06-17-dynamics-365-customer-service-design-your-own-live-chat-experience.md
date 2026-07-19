@@ -43,11 +43,11 @@ To utilize Live Chat Widget 2.0 and script-based customization, alter the code s
 
 The revised code snippet will appear as follows:
 
-![Code snippet]({{site.baseurl}}/images/clizx3li406ew35nvcm66477p.md/1ed6a584-69b2-48d9-920f-0367ebd71893.png)
+![Code snippet](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clizx3li406ew35nvcm66477p.md/1ed6a584-69b2-48d9-920f-0367ebd71893.png)
 
 Figure: code snippet
 
-![Resulting Chat Window]({{site.baseurl}}/images/clizx3li406ew35nvcm66477p.md/21768743-851e-4025-b3f8-2453e83046a5.png)
+![Resulting Chat Window](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clizx3li406ew35nvcm66477p.md/21768743-851e-4025-b3f8-2453e83046a5.png)
 
 Figure: Resulting Chat Window
 

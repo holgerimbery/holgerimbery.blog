@@ -17,7 +17,7 @@ toc: true
 
 This is a first article of a series on Azure OpenAI Services. This article describes how to start and brings you directly to [Azure OpenAI Service Studio](https://oai.azure.com/).
 
-![Figure: OpenAI on Azure Studio]({{site.baseurl}}/images/clg7w9yjb0bizuonvaprjcpm3.md/ddcbe3b1-aa6c-44ac-a073-7c7ddb03ce6a.png)
+![Figure: OpenAI on Azure Studio](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clg7w9yjb0bizuonvaprjcpm3.md/ddcbe3b1-aa6c-44ac-a073-7c7ddb03ce6a.png)
 
 Figure: Azure OpenAI Service Studio
 
@@ -44,14 +44,14 @@ The quickest way to onboard is via [Azure OpenAI Services Studio](https://oai.az
 * Check access rights
     
 
-![Figure: onboarding message]({{site.baseurl}}/images/clg7w9yjb0bizuonvaprjcpm3.md/224e7ea3-ff32-4d49-84cd-56851ac83c54.png)
+![Figure: onboarding message](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clg7w9yjb0bizuonvaprjcpm3.md/224e7ea3-ff32-4d49-84cd-56851ac83c54.png)
 
 Figure: onboarding message
 
 * [Request Access](https://aka.ms/oai/access)
     
 
-![Figure: application form]({{site.baseurl}}/images/clg7w9yjb0bizuonvaprjcpm3.md/25d5234a-b626-4bc7-a160-95114b380836.png)
+![Figure: application form](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clg7w9yjb0bizuonvaprjcpm3.md/25d5234a-b626-4bc7-a160-95114b380836.png)
 
 Figure: application form
 
@@ -61,7 +61,7 @@ after your application, it could take some time to get your authorization.
 
 After you receive your authorization, you can create a Ressource via Azure Market Place.
 
-![Figure: Create Ressource]({{site.baseurl}}/images/clg7w9yjb0bizuonvaprjcpm3.md/37107b5c-2aee-4b3b-8028-07a70cacebd6.png)
+![Figure: Create Ressource](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clg7w9yjb0bizuonvaprjcpm3.md/37107b5c-2aee-4b3b-8028-07a70cacebd6.png)
 
 Figure: Create Ressource
 
@@ -72,7 +72,7 @@ After getting access and creating your Ressource, you can explore Azure OpenAI S
 * Create a new deployment.
     
 
-![Figure: Create a new deployment]({{site.baseurl}}/images/clg7w9yjb0bizuonvaprjcpm3.md/8ae78ba3-e480-4bc8-a0d0-bcd1fc379f74.png)
+![Figure: Create a new deployment](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clg7w9yjb0bizuonvaprjcpm3.md/8ae78ba3-e480-4bc8-a0d0-bcd1fc379f74.png)
 
 Figure: Create a new deployment
 
@@ -81,13 +81,13 @@ Figure: Create a new deployment
 * after the creation, you can start with GPT-3 Playground
     
 
-![Figure: door to playground]({{site.baseurl}}/images/clg7w9yjb0bizuonvaprjcpm3.md/06865a37-2ca7-498c-8d96-d96995b7e1d7.png)
+![Figure: door to playground](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clg7w9yjb0bizuonvaprjcpm3.md/06865a37-2ca7-498c-8d96-d96995b7e1d7.png)
 
 Figure: door to the playground
 
 Start with, e.g., parsing unstructured data
 
-![Figure: First experiment]({{site.baseurl}}/images/clg7w9yjb0bizuonvaprjcpm3.md/1443911c-86a4-4517-a9a1-0a13e7bb594c.png)
+![Figure: First experiment](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clg7w9yjb0bizuonvaprjcpm3.md/1443911c-86a4-4517-a9a1-0a13e7bb594c.png)
 
 Figure: First experiment
 

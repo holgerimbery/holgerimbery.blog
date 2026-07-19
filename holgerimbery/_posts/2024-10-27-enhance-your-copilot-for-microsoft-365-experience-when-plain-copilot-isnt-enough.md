@@ -69,7 +69,7 @@ You need to be licensend for Copilot for Microsoft 365 to follow the steps below
 
 * Open Visual Studio Code and install Teams Toolkit.
   
-    ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/9107557b-15d6-470b-a0e7-0c698b648993.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/9107557b-15d6-470b-a0e7-0c698b648993.png)
     
 * Click on extensions in the menu on the left side,
   
@@ -80,41 +80,41 @@ You need to be licensend for Copilot for Microsoft 365 to follow the steps below
 
 * Click on Teams Toolkit and select “Create a New App”.
 
-* ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/3bd157e8-2555-45ac-b13a-4d1c874ecbd9.png)
+* ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/3bd157e8-2555-45ac-b13a-4d1c874ecbd9.png)
 
     Select “Copilot Agent”
 
-* ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/549de0b1-96d2-4cba-88e5-b584f35f1ecf.png)
+* ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/549de0b1-96d2-4cba-88e5-b584f35f1ecf.png)
 
     Select “Declarative Agent”
 
-* ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/02fb6a8c-e7f5-4585-b128-ea3b92b7f1f3.png)
+* ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/02fb6a8c-e7f5-4585-b128-ea3b92b7f1f3.png)
 
 * Select “No plugin”
 
-    ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/fd022f86-9771-4939-a4b9-8b3c80b6a829.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/fd022f86-9771-4939-a4b9-8b3c80b6a829.png)
 
 * Select a folder to store your agents “code”
 
-    ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/ff05d1ab-b123-4c21-b8b2-b6af2bff6f6d.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/ff05d1ab-b123-4c21-b8b2-b6af2bff6f6d.png)
 
 * Please give it a name
 
-    ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/b5075a1b-edbc-4ea6-aa95-38fb0d711709.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/b5075a1b-edbc-4ea6-aa95-38fb0d711709.png)
 
 * The extension will create your started code
 
-    ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/84edbbfe-35fe-4132-b08c-1d263d9fdb27.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/84edbbfe-35fe-4132-b08c-1d263d9fdb27.png)
 
     Click on the Teams Toolkit icon on the left side
 
     * select provision and
 
-        ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/e30b4c23-c5cb-45fc-84c8-2569a16ea8e9.png)
+        ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/e30b4c23-c5cb-45fc-84c8-2569a16ea8e9.png)
 
     * give it a try on [www.microsoft365.com/chat](https://www.microsoft365.com/chat)
 
-        ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/83b65200-3576-4b55-ba71-9fbb50115de8.png)
+        ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/83b65200-3576-4b55-ba71-9fbb50115de8.png)
 
         Click on the name of your just-created declarative Agent
 
@@ -133,7 +133,7 @@ to help customers understand the products better and resolve
 their queries efficiently.
 ```
 
-![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/5cfa199f-eaa7-4190-b793-25df64ac2ee9.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/5cfa199f-eaa7-4190-b793-25df64ac2ee9.png)
 
 * don’t forget to save
   
@@ -167,7 +167,7 @@ their queries efficiently.
     
     * Press provision again and see the result in the copilot chat window
       
-        ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/b18a0e18-b8e6-4454-94fa-3f8ae3ba1185.png)
+        ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/b18a0e18-b8e6-4454-94fa-3f8ae3ba1185.png)
         
         **Add Content from the web**
         
@@ -203,9 +203,9 @@ their queries efficiently.
         
         * Hit provision and start testing it again
           
-            ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/4ca804c1-90a8-4757-a314-a2ec026d962f.png)
+            ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/4ca804c1-90a8-4757-a314-a2ec026d962f.png)
             
-            ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/fc34c9c0-3a19-427a-9758-ca5c57011232.png)
+            ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/fc34c9c0-3a19-427a-9758-ca5c57011232.png)
             
     
     **Add OneDrive and Sharepoint Content**
@@ -277,7 +277,7 @@ their queries efficiently.
 }
 ```
 
-![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/50d6f372-f0d0-4035-99e5-f4994b542bc0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/50d6f372-f0d0-4035-99e5-f4994b542bc0.png)
 
 **Additional Resources**  
 please look at the [declarative Agent schema for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-manifest) for further details.
@@ -286,40 +286,40 @@ please look at the [declarative Agent schema for Microsoft 365 Copilot](https://
 
 * Click on “Create Agents” within your Copilot Chat
   
-* ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/d008e49d-a3c5-429f-883b-047ac3369bcb.png)
+* ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/d008e49d-a3c5-429f-883b-047ac3369bcb.png)
   
     Select “configure” on the top” and start to configure your declarative agents.
     
 * First, enter “Name”, “Description” and “Instructions”  
     We did this similar above in the declarativeAgent.json and instuction.txt file
     
-    ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/6ac8da10-22d1-4a89-8fb5-3e81f8bdbe32.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/6ac8da10-22d1-4a89-8fb5-3e81f8bdbe32.png)
     
-    ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/fb0bda42-e51f-4647-9391-f7536aebe8ab.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/fb0bda42-e51f-4647-9391-f7536aebe8ab.png)
     
     * Add your knowledge sources (SharePoint site and web search) - same as above with the teams toolkit
       
     
-    ![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/c160ce79-4d02-4400-9e77-aa4230d0832d.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/c160ce79-4d02-4400-9e77-aa4230d0832d.png)
     
     * configure your conversation starter prompts with the same elements we used above within the declarativeAgent.json
       
 
-![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/b106876e-d947-4342-a435-f9a474135444.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/b106876e-d947-4342-a435-f9a474135444.png)
 
 - Hit “Create”
 
 
-![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/1ebcff35-73f7-4f3e-a0f9-707913f01944.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/1ebcff35-73f7-4f3e-a0f9-707913f01944.png)
 
-![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/a3d974f3-668a-4b76-b5be-66b0e45a244a.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/a3d974f3-668a-4b76-b5be-66b0e45a244a.png)
 
 * and give it a try
   
 
-![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/1aa138a1-100e-4f50-b226-2f8ba86bea3c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/1aa138a1-100e-4f50-b226-2f8ba86bea3c.png)
 
-![]({{site.baseurl}}/images/cm2rmr6yz000109lc6els41rc.md/29aa7f12-2c5c-4a73-96a0-2c3157d04bdd.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm2rmr6yz000109lc6els41rc.md/29aa7f12-2c5c-4a73-96a0-2c3157d04bdd.png)
 
 ## Conclusion
 

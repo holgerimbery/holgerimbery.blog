@@ -28,7 +28,7 @@ Understanding the Contenders Microsoft Copilot is an AI-powered assistant integr
 
 On the other hand, Azure AI Studio is a comprehensive platform allowing developers to build custom AI solutions. It provides access to Azure AI Infrastructure, Machine Learning, Cognitive Services, and OpenAI Services in one centralized hub.
 
-![solving the "build or buy dilemma"]({{site.baseurl}}/images/clzpc5j4500060aladprtath3.md/4d2a9922-8945-4c08-a297-7443eab4038b.jpeg)
+![solving the "build or buy dilemma"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clzpc5j4500060aladprtath3.md/4d2a9922-8945-4c08-a297-7443eab4038b.jpeg)
 
 ## Criteria for Decision-Making
 

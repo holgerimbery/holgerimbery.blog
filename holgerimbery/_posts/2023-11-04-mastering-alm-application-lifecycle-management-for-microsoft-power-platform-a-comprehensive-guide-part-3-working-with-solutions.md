@@ -42,22 +42,22 @@ Create a new solution
   
 * Choose "solutions" and then "+new Solution"
   
-    ![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/d9fe797b-cdf7-4a22-b962-5d8c4787fff0.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/d9fe797b-cdf7-4a22-b962-5d8c4787fff0.png)
     
     * give it a meaningful full name and hit "create"
       
     
-    ![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/a312904c-5724-4054-b3d6-a6ef83f4e599.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/a312904c-5724-4054-b3d6-a6ef83f4e599.png)
     
     * Open the new solution and add all components associated with the project.
       
     
-    ![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/b0a64905-bd05-4942-bcb9-a547c8b1f672.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/b0a64905-bd05-4942-bcb9-a547c8b1f672.png)
     
 
 (in this case, we have created a solution with a basic Power Virtual Agents bot)
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/00f90c2b-135e-4846-8d21-d4a335178a0f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/00f90c2b-135e-4846-8d21-d4a335178a0f.png)
 
 ## Initial export of the solution
 
@@ -79,7 +79,7 @@ pac org list
 pac org select --environment <Unique Name>
 ```
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/5f91126a-31a8-4a87-b2e3-2fbfcf3a5c30.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/5f91126a-31a8-4a87-b2e3-2fbfcf3a5c30.png)
 
 * list all your solutions within the environment
   
@@ -88,7 +88,7 @@ pac org select --environment <Unique Name>
 pac solution list
 ```
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/b03305fc-ebfe-46bf-a1f9-139acb9f579f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/b03305fc-ebfe-46bf-a1f9-139acb9f579f.png)
 
 * create a new path in your repository and export the solution you created in the step before
   
@@ -101,7 +101,7 @@ pac solution list
     ```
     
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/d5afec8d-0579-4471-840d-9c10f5cf20dc.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/d5afec8d-0579-4471-840d-9c10f5cf20dc.png)
 
 * unpack the solution
   
@@ -112,7 +112,7 @@ pac solution list
 * find a result similar to the screenshot in your codespace
   
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/f1cc8fda-74d1-4b93-8f99-3bc2d329b1ba.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/f1cc8fda-74d1-4b93-8f99-3bc2d329b1ba.png)
 
 * commit your code to the repository
   
@@ -121,11 +121,11 @@ pac solution list
     * enter a meaningful commit message, hit "commit" and sync
       
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/a18ca8d1-42ae-4fa9-9d41-1b9af3775caf.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/a18ca8d1-42ae-4fa9-9d41-1b9af3775caf.png)
 
 * Find your first commit in your repository on GitHub.
   
-    ![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/200c81c9-b9a3-4e88-80b5-56eaac6ff4c9.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/200c81c9-b9a3-4e88-80b5-56eaac6ff4c9.png)
     
 
 ## Create a new branch, export a change, and create a pull request
@@ -133,15 +133,15 @@ pac solution list
 After working on your solution, create a new branch in your codespace.  
 Do not forget to add your changes to the solution, e.g right click on your bot and select "advanced" and "+Add required objects"
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/c3020671-a43c-458c-85e4-f3eb6e573dbd.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/c3020671-a43c-458c-85e4-f3eb6e573dbd.png)
 
 * click on "main" in the status line
   
-    ![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/a6882926-e537-46f4-a208-8a12f285c91d.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/a6882926-e537-46f4-a208-8a12f285c91d.png)
     
 * click on "+ Create new branch"
   
-    ![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/96f9043a-1b22-426b-97fc-30ee696d7340.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/96f9043a-1b22-426b-97fc-30ee696d7340.png)
     
 * please give it a meaningful name and export your solution.
   
@@ -154,7 +154,7 @@ Do not forget to add your changes to the solution, e.g right click on your bot a
 * find your changes in the source control menu, give your commit a name, and commit
   
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/93abf473-02ee-4b09-b34a-c3092514eff9.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/93abf473-02ee-4b09-b34a-c3092514eff9.png)
 
 * create a new pull request via codespaces vscode web.
   
@@ -163,12 +163,12 @@ Do not forget to add your changes to the solution, e.g right click on your bot a
     * , click on the "Create Pull Request" icon
       
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/bc6657e6-6e48-4c01-bdcf-eef9a6f75906.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/bc6657e6-6e48-4c01-bdcf-eef9a6f75906.png)
 
 * Give your PR a meaningful name and describe it to assist the repository maintainer in deciding to merge the PR.
   
 
-![]({{site.baseurl}}/images/clojq50t5000109kyg03rhzr5.md/f632f621-263f-48b9-a837-471badc22abf.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clojq50t5000109kyg03rhzr5.md/f632f621-263f-48b9-a837-471badc22abf.png)
 
 * the maintainer will then see the PR and can decide whether to merge or not
   

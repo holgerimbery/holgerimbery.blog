@@ -34,7 +34,7 @@ starting with the usage on Microsoft's CoPilot Website: https://copilot.microsof
 
 ### Available for everyone
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/70bdb31a-f860-4849-be49-a33e95a7c04e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/70bdb31a-f860-4849-be49-a33e95a7c04e.png)
 
 For anyone looking to find the correct information, create unique content, and increase productivity, Copilot is available for use. With your free Microsoft account, you can:
 
@@ -51,7 +51,7 @@ For anyone looking to find the correct information, create unique content, and i
 
 ### Available for Individuals as a paid addon for Microsoft 365 Personal or Family subscribers
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/fd53ec0f-6b83-4fc5-9fba-0f78499815fd.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/fd53ec0f-6b83-4fc5-9fba-0f78499815fd.png)
 
 For those seeking enhanced performance and creative capabilities. This monthly subscription includes everything in Copilot, plus:
 
@@ -68,7 +68,7 @@ For those seeking enhanced performance and creative capabilities. This monthly s
 
 When organizations and employees utilize generative AI services, it's crucial to comprehend how these services manage user and chat data. Since employee chats might contain sensitive information, Copilot is specifically designed to safeguard this data, as demonstrated here:
 
-![source Microsoft: Commercial Data Protection]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/90f221f5-bdf6-409b-b93b-db15f46269ea.png)
+![source Microsoft: Commercial Data Protection](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/90f221f5-bdf6-409b-b93b-db15f46269ea.png)
 
 <center>source Microsoft: Commercial Data Protection</center>
 
@@ -85,11 +85,11 @@ When organizations and employees utilize generative AI services, it's crucial to
 * Advertising shown to Entra ID users is not targeted based on workplace identity or chat history.
     
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/1e5daf46-447d-402f-83b5-e0d7ab4739d7.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/1e5daf46-447d-402f-83b5-e0d7ab4739d7.png)
 
 <center> as website or as web app </center>
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/efa02edb-a876-4aac-806f-3ea9f37e5879.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/efa02edb-a876-4aac-806f-3ea9f37e5879.png)
 
 <center> Build in in your edge browsers bar on the right side </center>
 
@@ -133,15 +133,15 @@ Copilot for Microsoft 365 adds three things:
 > 
 > No, therefor you need Microsoft 365 CoPilot (paid)
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/c1c216f7-95e6-4204-8576-6c39cffef0e6.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/c1c216f7-95e6-4204-8576-6c39cffef0e6.png)
 
 <center> as website or as web app </center>
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/13259726-5f4d-4689-af53-dbfbeb79254e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/13259726-5f4d-4689-af53-dbfbeb79254e.png)
 
 <center> Build in in your edge browsers bar on the right side </center>
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/d8ab5a8b-c4bc-448d-bb84-5747e9a7a3b3.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/d8ab5a8b-c4bc-448d-bb84-5747e9a7a3b3.png)
 
 <center> within Microsoft Teams </center>
 
@@ -152,27 +152,27 @@ Copilot for Microsoft 365 adds three things:
 * Press the three dots on top-right
     
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/e3fadf4a-651e-4ba3-9076-4e6df139917e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/e3fadf4a-651e-4ba3-9076-4e6df139917e.png)
 
 * select "Apps" and "Install this site as an app."
     
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/2911c03d-8425-40bf-bb55-b7a5489348d8.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/2911c03d-8425-40bf-bb55-b7a5489348d8.png)
 
 * please give it a name
     
-* ![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/7ea998a5-25f4-433f-9a4a-714a73a93cd3.png)
+* ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/7ea998a5-25f4-433f-9a4a-714a73a93cd3.png)
     
     Pin it to your taskbar and Start menu and start it with your device login
     
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/bff0b50e-d1c1-4223-996b-7f271a761b5a.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/bff0b50e-d1c1-4223-996b-7f271a761b5a.png)
 
 ## Entering Prompts via spoken words
 
 Using Copilot through voice commands provides several advantages, such as enhanced productivity, hands-free coding, inclusivity, and efficiency. Voice commands can help streamline tasks, enabling developers to code without a keyboard, which can reduce physical fatigue and support individuals with disabilities. Voice coding fosters greater inclusivity in software development and encourages individuals with disabilities to engage in coding activities. Copilot's versatility makes it an adaptable tool that caters to different needs and preferences, making technology more accessible and convenient. By using voice commands, you can quickly and efficiently tackle daily tasks, boost productivity, unlock creativity, and enhance your understanding of information.
 
-![]({{site.baseurl}}/images/clt1it1gu000409l95y1155ek.md/05464cfd-7026-4b6e-b243-70b1e9dac817.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clt1it1gu000409l95y1155ek.md/05464cfd-7026-4b6e-b243-70b1e9dac817.png)
 
 ## Conclusion
 

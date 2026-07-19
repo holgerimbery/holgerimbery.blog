@@ -33,17 +33,17 @@ A GitHub repository to store your solution and all your workflow files.
 
 Please consider a governance solution like "[Landing Zones for Power Platform](https://cloudblogs.microsoft.com/powerplatform/2022/02/18/north-star-architecture-and-landing-zones-for-power-platform/#:~:text=Within%20the%20context%20of%20the%20North%20Star%20Architecture%2C,regardless%20of%20citizen%20developer%20or%20professional%20developer%20persona.)" to create and manage your environments (Role-based Access Control [RBAC], apply policies, including data loss prevention, allowing connectors, or denying some), primarily if you work with fusion teams of pro and low-code developers. "Landing Zones for Power Platform" is Microsoft Reference architecture to govern Power Platform Deployments.
 
-![Figure 2: deployment of your landing zones]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/tubuzupcw.png)
+![Figure 2: deployment of your landing zones](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/tubuzupcw.png)
 
 Figure 2: deployment of your landing zones
 
-![Figure 3: assign policies to your landing zones]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/xh2ci3sup.png)
+![Figure 3: assign policies to your landing zones](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/xh2ci3sup.png)
 
 Figure 3: assign policies to your landing zones
 
 ### The idea behind the workflows
 
-![Figure 4: GitHub Actions Workflow]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/rfee74e0h.png)
+![Figure 4: GitHub Actions Workflow](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/rfee74e0h.png)
 
 Figure 4: GitHub Actions Workflow
 
@@ -57,7 +57,7 @@ After end-to-end testing, we create a new release on GitHub, and
 
 #### Create a service principal account
 
-![Figure 5: Create a new App registrations on Azure]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/s5ob26nmb.png)
+![Figure 5: Create a new App registrations on Azure](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/s5ob26nmb.png)
 
 Figure 5: Create new App registrations on Azure
 
@@ -93,7 +93,7 @@ Next, proceed to create a client secret. In the navigation panel, select "Certif
 
 #### Create an application user
 
-![Figure 6: Create a new application user]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/f461zbnui.png)
+![Figure 6: Create a new application user](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/f461zbnui.png)
 
 Figure 6: Create a new application user
 
@@ -115,7 +115,7 @@ With the "App registration" and the "Application User", we can use "GitHub Actio
 
 #### Create a Solution
 
-![Figure 7: Create a new solution in Power Platform Admin Center]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/pwpvir7lm.png)
+![Figure 7: Create a new solution in Power Platform Admin Center](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/pwpvir7lm.png)
 
 Figure 7: Create a new solution in Power Platform Admin Center
 
@@ -137,13 +137,13 @@ Within the solution, you will find all your bots, flows, connector references, a
 
 * After adding your bot use the tree dots menu item and "+ add required objects" to get everything into the solution.
 
-![Figure 8: Add everything to the solution]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/grgey7a1e.png)
+![Figure 8: Add everything to the solution](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/grgey7a1e.png)
 
 Figure 8: add everything to the solution
 
 #### Create a new GitHub secret for Service Principal Authentication
 
-![Figure 9: Create a new GitHub Secret]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/7ko-2iafc.png)
+![Figure 9: Create a new GitHub Secret](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/7ko-2iafc.png)
 
 Figure 9: Create a new GitHub Secret
 
@@ -247,7 +247,7 @@ jobs:
 
 to start this manual flow, go to "Action", select the flow, click "Run workflow" and insert your values into the fields.
 
-![Figure 10: export to a new branch dialog]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/xzqout-i9.gif)
+![Figure 10: export to a new branch dialog](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/xzqout-i9.gif)
 
 Figure 10: export to a new branch dialog
 
@@ -526,7 +526,7 @@ jobs:
 
 to start this manual flow, go to "Action", select the flow, click "Run workflow" and insert your values into the fields.
 
-![Figure 11: Dialog to deploy new Development Environment]({{site.baseurl}}/images/clay0x7bd000308m50jmmgnga.md/1bwc1jm_r.gif)
+![Figure 11: Dialog to deploy new Development Environment](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clay0x7bd000308m50jmmgnga.md/1bwc1jm_r.gif)
 
 Figure 11: Dialog to deploy new Development Environment
 

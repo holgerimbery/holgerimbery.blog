@@ -37,21 +37,21 @@ In the same way, we added data to our "ownGPT" we will create the link to a new 
 * Choose "Chat" in the "Playground" and "Add own Data" utilizing the resources we already created in the step before (part 2 of this series)
     
 
-![]({{site.baseurl}}/images/cln5owko6000l08lg21efg745.md/a9eb6b03-da9a-4bd5-9d4f-5e30d946b72c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cln5owko6000l08lg21efg745.md/a9eb6b03-da9a-4bd5-9d4f-5e30d946b72c.png)
 
-![]({{site.baseurl}}/images/cln5owko6000l08lg21efg745.md/70918b21-a834-4e07-84e9-8c5fb50fcfab.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cln5owko6000l08lg21efg745.md/70918b21-a834-4e07-84e9-8c5fb50fcfab.png)
 
-![]({{site.baseurl}}/images/cln5owko6000l08lg21efg745.md/af25c2fe-82ed-4fc3-97e1-b15b810227e2.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cln5owko6000l08lg21efg745.md/af25c2fe-82ed-4fc3-97e1-b15b810227e2.png)
 
 * and then we click on "Deploy to" and choose "A new Power Virtual Agent bot"
     
 
-![]({{site.baseurl}}/images/cln5owko6000l08lg21efg745.md/75338bc6-5b68-498a-9857-8fdf8105b389.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cln5owko6000l08lg21efg745.md/75338bc6-5b68-498a-9857-8fdf8105b389.png)
 
 * We give our consent by clicking "Continue in Power Virtual Agents"
     
 
-![]({{site.baseurl}}/images/cln5owko6000l08lg21efg745.md/5f6de7d7-ed89-41fe-a11d-11ff9dc50330.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cln5owko6000l08lg21efg745.md/5f6de7d7-ed89-41fe-a11d-11ff9dc50330.png)
 
 > Note
 > 
@@ -61,7 +61,7 @@ In the same way, we added data to our "ownGPT" we will create the link to a new 
 
 A conversational boosting system topic is automatically generated when the bot is created using Azure OpenAI Studio.
 
-![]({{site.baseurl}}/images/cln5owko6000l08lg21efg745.md/d0640205-1ca7-4cb7-b037-6b1640d73201.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cln5owko6000l08lg21efg745.md/d0640205-1ca7-4cb7-b037-6b1640d73201.png)
 
 In Power Virtual Agents, open the Data Source Configuration panel for your topic's generative answers node:
 
@@ -69,11 +69,11 @@ Open the Properties panel for the Create Generative Answers node and select Data
 
 On the Create Generative Answers node, select Edit under Data Sources.
 
-![]({{site.baseurl}}/images/cln5owko6000l08lg21efg745.md/3d51dbb1-4e88-4aae-908c-ebc1ce1c378d.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cln5owko6000l08lg21efg745.md/3d51dbb1-4e88-4aae-908c-ebc1ce1c378d.png)
 
 Edit the connection to the Azure OpenAI Service.
 
-![]({{site.baseurl}}/images/cln5owko6000l08lg21efg745.md/45d9053e-7dfe-445f-826b-ca3f160c309c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cln5owko6000l08lg21efg745.md/45d9053e-7dfe-445f-826b-ca3f160c309c.png)
 
 Once you have finished entering sources, close the menu. Be sure to save any changes made to your topic.
 

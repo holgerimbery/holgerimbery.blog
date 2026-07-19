@@ -44,11 +44,11 @@ Please find a [detailed description](https://github.com/microsoft/CopilotStudioS
 
 After following all the steps,
 
-![]({{site.baseurl}}/images/clpxtbiod000m08kthtsa5bva.md/8d4eb243-dd07-406d-a659-34a3d2458ca4.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clpxtbiod000m08kthtsa5bva.md/8d4eb243-dd07-406d-a659-34a3d2458ca4.png)
 
 Press the button on the bottom and enjoy your bot on SharePoint
 
-![]({{site.baseurl}}/images/clpxtbiod000m08kthtsa5bva.md/d4051860-e09f-4792-abe9-d22478fd9b1a.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clpxtbiod000m08kthtsa5bva.md/d4051860-e09f-4792-abe9-d22478fd9b1a.png)
 
 ## Conclusion
 

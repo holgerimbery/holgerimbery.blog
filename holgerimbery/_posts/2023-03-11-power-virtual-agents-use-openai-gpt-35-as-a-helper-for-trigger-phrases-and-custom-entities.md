@@ -33,7 +33,7 @@ Signup for OpenAI Playground and start exploring.
 
 e.g., if you need synonyms for personal transport vehicles, ask for them.
 
-![Figure: Ask for synonyms]({{site.baseurl}}/images/clf3wyx2b000e08mpapv40pvj.md/69650784-420f-453b-b75f-746a24ec2dec.png)
+![Figure: Ask for synonyms](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clf3wyx2b000e08mpapv40pvj.md/69650784-420f-453b-b75f-746a24ec2dec.png)
 
 Figure: Ask for synonyms
 
@@ -86,7 +86,7 @@ e.g., you create a topic for giving your customers a precise answer to the quest
 Why not combine a custom entity for the vehicles with a fine list of trigger phrases?  
 Use the same method and model as above.
 
-![Figure: Ask for trigger phrases]({{site.baseurl}}/images/clf3wyx2b000e08mpapv40pvj.md/603757d2-3f2c-4210-8e62-494fc9c10a1a.png)
+![Figure: Ask for trigger phrases](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clf3wyx2b000e08mpapv40pvj.md/603757d2-3f2c-4210-8e62-494fc9c10a1a.png)
 
 Figure: Ask for trigger phrases
 

@@ -37,44 +37,44 @@ Here are some of its standout features:
 
 Open your copilot chat [https://www.microsoft365.com/chat](https://www.microsoft365.com/chat), ask a question, and integrate some documents.
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/76b86106-f72b-4e51-94be-8af2d40b8ced.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/76b86106-f72b-4e51-94be-8af2d40b8ced.png)
 
 * Refine your prompt and give it a try.
     
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/d2b882bf-c20e-456a-8c22-374cb9225ce0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/d2b882bf-c20e-456a-8c22-374cb9225ce0.png)
 
 * See the result Copilot created for you.
     
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/493c26c8-4e62-4870-b982-86fc258cb49d.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/493c26c8-4e62-4870-b982-86fc258cb49d.png)
 
 * Scroll to the bottom and click on "Edit in Pages."
     
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/4d4f0f94-7065-4da8-a1bc-31bb04ffbb1b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/4d4f0f94-7065-4da8-a1bc-31bb04ffbb1b.png)
 
 * A new canvas will open side by side, and you will see your Copilot page and a chat window.
     
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/b9d00580-e5b2-4f33-a9eb-be5ec2d2ecd4.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/b9d00580-e5b2-4f33-a9eb-be5ec2d2ecd4.png)
 
 * Select the shared element at the top right and share the page with a teammate.
     
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/236874e9-134a-431e-83a3-2d69874f725e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/236874e9-134a-431e-83a3-2d69874f725e.png)
 
 * Your teammate will be able to edit the Copilot Pages and can also use Copilot (when licensed) as an assistant.
     
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/02e2b126-8acf-4722-b528-1702e731ae6f.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/02e2b126-8acf-4722-b528-1702e731ae6f.png)
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/32fce5b2-1db6-43b4-936c-f9606596a5ed.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/32fce5b2-1db6-43b4-936c-f9606596a5ed.png)
 
 * You will see the highlighted additions and can use the collaborative work result in any way.
     
 
-![]({{site.baseurl}}/images/cm31fkzxo000209mj2900huyy.md/6a9b644e-37d8-4f8e-964c-87cceebefba8.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cm31fkzxo000209mj2900huyy.md/6a9b644e-37d8-4f8e-964c-87cceebefba8.png)
 
 ## What is behind it?
 

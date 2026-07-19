@@ -25,7 +25,7 @@ After 60 minutes, you can bring your SIP-Trunk via Azure Communication Services 
 If you are in Europe, you must go with the SIP-Trunk integration. This is a straightforward and menu-based setup. Your SIP-Trunk provider should give you an FQDN of "your" Session Border Controller and a Port.  
 Even though direct routing in Azure Communication Services is still in preview, Microsoft fully supports it on a GA level if you use it with **Dynamics 365 Customer Service Enterprise**.
 
-![Figure 1: Microsofts disclaimer]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/6b47b582-97b7-4e0a-9c87-986524d5c412.png)
+![Figure 1: Microsofts disclaimer](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/6b47b582-97b7-4e0a-9c87-986524d5c412.png)
 
 Figure 1: Microsofts disclaimer
 
@@ -36,7 +36,7 @@ Figure 1: Microsofts disclaimer
 First, go to your OmniChannel Admin Center.  
 In the site map, select **Phone numbers** in **General settings**.
 
-![Figure 2: Click on "Get Started" to start]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/f48764b0-14e9-4b3f-b1cf-11b95795bfd7.png)
+![Figure 2: Click on "Get Started" to start](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/f48764b0-14e9-4b3f-b1cf-11b95795bfd7.png)
 
 Figure 2: Click on "Get Started" to
 
@@ -48,39 +48,39 @@ Figure 2: Click on "Get Started" to
 
 * Give the new resource a meaningful name.
 
-![Figure 3: Create a new resource ]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/60869aa4-5edb-4b49-9745-2f75a9697fcb.png)
+![Figure 3: Create a new resource ](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/60869aa4-5edb-4b49-9745-2f75a9697fcb.png)
 
 Figure 3: Create a new resource.
 
 Leave the Omnichannel Admin Center window open, open another tab for the [**Azure Portal**](https://portal.azure.com/), and configure the SBC/Port for Direct Routing.
 
-![Figure 4: Create a new Session Border Controller Configuration]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/b94c9a4f-b9d8-4312-b1b8-f319a5e60b9e.png)
+![Figure 4: Create a new Session Border Controller Configuration](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/b94c9a4f-b9d8-4312-b1b8-f319a5e60b9e.png)
 
 Figure 4: Create a new Session Border Controller Configuration
 
-![Figure 5: enter SBC FQDN and Port]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/0279c8da-9e3e-46d8-b166-299296d8d581.png)
+![Figure 5: enter SBC FQDN and Port](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/0279c8da-9e3e-46d8-b166-299296d8d581.png)
 
 Figure 5: enter SBC FQDN and Port
 
-![Figure 6: and a number pattern for outbound]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/55c0f812-7bb6-4587-9b01-d259b9212a1c.png)
+![Figure 6: and a number pattern for outbound](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/55c0f812-7bb6-4587-9b01-d259b9212a1c.png)
 
 Figure 6: and a number pattern for outbound
 
 Go back to your Omnichannel Admin Center tab and configure your phone numbers.
 
-![Figure 7: Add Phone Numbers - part 1]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/9289a02d-5c62-4497-b660-b3a78fda2919.png)
+![Figure 7: Add Phone Numbers - part 1](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/9289a02d-5c62-4497-b660-b3a78fda2919.png)
 
 Figure 7: Add Phone Numbers - part 1
 
-![Figure 8: Add Phone Numbers - part 2]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/b117e437-7c38-429d-9a05-604b616f82dd.png)
+![Figure 8: Add Phone Numbers - part 2](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/b117e437-7c38-429d-9a05-604b616f82dd.png)
 
 Figure 8: Add Phone Numbers - part 2
 
-![Figure 9: Add Phone Numbers - part 3]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/bd9f14b0-d0ce-479a-81cb-357c1e8169c9.png)
+![Figure 9: Add Phone Numbers - part 3](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/bd9f14b0-d0ce-479a-81cb-357c1e8169c9.png)
 
 Figure 9: Add Phone Numbers - part 3
 
-![Figure 10: Add Phone Numbers - part 4]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/473850da-e777-4a33-a0d0-68ee4d0a38b1.png)
+![Figure 10: Add Phone Numbers - part 4](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/473850da-e777-4a33-a0d0-68ee4d0a38b1.png)
 
 Figure 10: Add Phone Numbers - part 4
 
@@ -102,7 +102,7 @@ For example, I will describe how to configure a development direct routing conne
 
 #### Create a new sip connection via Voice, SIP Routing, and select MS Teams SBC
 
-![Figure 11: Create new SIP Connection]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/faaf4349-8bce-4ed8-b32a-e6b1db6b3f2b.png)
+![Figure 11: Create new SIP Connection](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/faaf4349-8bce-4ed8-b32a-e6b1db6b3f2b.png)
 
 Figure 11: Create a new SIP Connection
 
@@ -114,7 +114,7 @@ You are now required to assign a Number to the Azure Communications Resource con
 
 2. Once you have a number, navigate to the **Numbers** page of your Telnyx Mission Control Portal and assign your Azure Communications Resource connection to the desired DID, as shown below.
 
-![Figure 12: Assign numbers]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/8332fe52-56a2-4065-bf23-601310566560.png)
+![Figure 12: Assign numbers](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/8332fe52-56a2-4065-bf23-601310566560.png)
 
 Figure 12: Assign numbers
 
@@ -122,7 +122,7 @@ Figure 12: Assign numbers
 
 Create an Outbound Voice Profile and assign it to the connection you created above.
 
-![Figure 13: Assign Outbound Voice Profile]({{site.baseurl}}/images/cldpxogo006jqj1nv0ryg1vic.md/91c69d1d-8196-4b47-8027-b2075e79514c.png)
+![Figure 13: Assign Outbound Voice Profile](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cldpxogo006jqj1nv0ryg1vic.md/91c69d1d-8196-4b47-8027-b2075e79514c.png)
 
 Figure 13: Assign Outbound Voice Profile
 

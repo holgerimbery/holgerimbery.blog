@@ -77,11 +77,11 @@ single line
 
 ---
 
-![pre-conversation survey]({{site.baseurl}}/images/cljjoi85l000709l873ex3ovi.md/5f64818a-d37e-4331-9a1b-03c9cf66c7e7.png)
+![pre-conversation survey](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cljjoi85l000709l873ex3ovi.md/5f64818a-d37e-4331-9a1b-03c9cf66c7e7.png)
 
 Figure: pre-conversation survey
 
-![configuration of pre-conversation survey]({{site.baseurl}}/images/cljjoi85l000709l873ex3ovi.md/cfdeed7c-cbd8-4d64-9a85-1c498a503dc3.png)
+![configuration of pre-conversation survey](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cljjoi85l000709l873ex3ovi.md/cfdeed7c-cbd8-4d64-9a85-1c498a503dc3.png)
 
 Figure: configuration of pre-conversation survey
 

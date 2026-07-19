@@ -38,7 +38,7 @@ Microsoft fully controls the Azure OpenAI Service; Microsoft hosts the OpenAI mo
 
 With some experience in PowerShell and Azure Administration, you will get an interface like the one in the picture below. If you are familiar with Node.js, Python, and Azure CLI, you can take it a step further.
 
-![]({{site.baseurl}}/images/clmd6745i000609ig0gc44rwn.md/8f09852f-a24b-4a4c-9f1d-bf8790805662.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmd6745i000609ig0gc44rwn.md/8f09852f-a24b-4a4c-9f1d-bf8790805662.png)
 
 Within the following weeks, this series will guide you in utilizing Azure OpenAI Services to create your own company's "chatGPT" with all the necessary components to enhance your business without compromising it.
 
@@ -100,7 +100,7 @@ AZURE_OPENAI_MODEL_NAME= # the type you deployed
 We will find the details in the "playground", unter "Completions", and "View Code".  
 Where to find them is marked in the screenshot below with different colors.
 
-![]({{site.baseurl}}/images/clmd6745i000609ig0gc44rwn.md/5c35bf49-3acd-4ed2-9260-fe4c54ec5e2b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmd6745i000609ig0gc44rwn.md/5c35bf49-3acd-4ed2-9260-fe4c54ec5e2b.png)
 
 ## Create the Chat Interface and deploy it to an Azure App Service
 
@@ -152,7 +152,7 @@ Use the same command to update the app later
     * Go to Configurations, and add the "AZURE\_OPENAI\_\*" Settings using the details we saved before and the defaults from the ".env" file.
         
 
-![]({{site.baseurl}}/images/clmd6745i000609ig0gc44rwn.md/ce2e66e0-2cbe-45e8-be1e-5c95ef861c4c.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmd6745i000609ig0gc44rwn.md/ce2e66e0-2cbe-45e8-be1e-5c95ef861c4c.png)
 
 * Restart the web app.
     
@@ -161,7 +161,7 @@ Use the same command to update the app later
     * Go to "Settings", Authentication" in the web app and add, e.g., Microsoft with the defaults as an identity provider.
         
     
-    ![]({{site.baseurl}}/images/clmd6745i000609ig0gc44rwn.md/a926f363-e560-4ee8-8d59-2a20f6b0931e.png)
+    ![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clmd6745i000609ig0gc44rwn.md/a926f363-e560-4ee8-8d59-2a20f6b0931e.png)
     
 
 Go to https://{app-name}.azurewebsites.net and find your first version of your "ownGPT" secured with an identity provider and in a safe environment.

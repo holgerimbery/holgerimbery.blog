@@ -36,7 +36,7 @@ Follow these steps to enable the Copilot features:
 * Operations &gt; Insights &gt; Copilot Help Pane (preview)
     
 
-![]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/c693c9f0-e5f8-4092-9eca-a7fadd66ba49.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/c693c9f0-e5f8-4092-9eca-a7fadd66ba49.png)
 
 *Figure: copilot help pane*
 
@@ -52,13 +52,13 @@ Follow these steps to enable the Copilot features:
 * **For email:** This displays the "Write an email" tab on the Copilot Help Pane (preview). Copilot assists agents in creating email responses based on the case context.
     
 
-![]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/be13a771-57f6-47b4-9316-675fd9c66981.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/be13a771-57f6-47b4-9316-675fd9c66981.png)
 
 *Figure: enable features*
 
 4\. Click Add Web Address in Web Resources to add trusted domains. You can add up to five trusted web domains for the copilot to search and generate responses. To limit the content you want Copilot to use, specify up to two levels, represented by a forward slash (/) after the .com part of the URL.
 
-![knowledge sources]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/d456b3db-513d-4b06-8c45-3737f14c0e46.png)
+![knowledge sources](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/d456b3db-513d-4b06-8c45-3737f14c0e46.png)
 
 *Figure: knowledge sources*
 
@@ -80,7 +80,7 @@ Copilot-generated case and conversation summaries enhance agent collaboration an
     
     Next, click on "Manage" in Summaries (preview).
     
-    ![summaries pane]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/7188a353-7167-481f-acb6-a398bf9b1142.png)
+    ![summaries pane](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/7188a353-7167-481f-acb6-a398bf9b1142.png)
     
     *Figure: summaries pane*
     
@@ -97,7 +97,7 @@ Copilot-generated case and conversation summaries enhance agent collaboration an
     * **On-demand, by selecting a button to summarize the conversation**: Generate a summary at any point in the conversation whenever the agent chooses the copilot. **Summarize the conversation**.
         
 
-![enable features]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/6cde828d-aa37-4f33-b4c2-6a3093bd2fe5.png)
+![enable features](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/6cde828d-aa37-4f33-b4c2-6a3093bd2fe5.png)
 
 *Figure: enable features*
 
@@ -107,13 +107,13 @@ Perform the [Display case summary steps on custom case forms](https://learn.micr
 
 When you sign in to any of the Customer Service agent apps, copilot becomes activated on the right pane with the **Ask a Question** tab in focus. Copilot acts as your partner that can help answer questions without you having to search knowledge sources or other articles for information.
 
-![]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/22c3ac5c-dfe0-4ee7-841e-922387ad7916.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/22c3ac5c-dfe0-4ee7-841e-922387ad7916.png)
 
 You can ask free-form questions as you would ask a colleague or supervisor who might know the answers.
 
-![]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/f65688f6-dd80-44eb-adad-b6177ddcb41e.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/f65688f6-dd80-44eb-adad-b6177ddcb41e.png)
 
-![]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/77edf9f2-f6c8-4aa1-b4bd-63f4c1049988.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/77edf9f2-f6c8-4aa1-b4bd-63f4c1049988.png)
 
 With copilot, you can perform the following actions:
 
@@ -143,7 +143,7 @@ Based on the triggers enabled by your administrator, the Copilot conversation su
     
 * When you select "Summarize conversation" on the ongoing dialog.
     
-* ![Summary]({{site.baseurl}}/images/clk3of002000p0al1gam0awij.md/b4b44b06-88b1-4c51-9721-199d3fc23771.png)
+* ![Summary](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clk3of002000p0al1gam0awij.md/b4b44b06-88b1-4c51-9721-199d3fc23771.png)
     
 
 *Figure: Summary*

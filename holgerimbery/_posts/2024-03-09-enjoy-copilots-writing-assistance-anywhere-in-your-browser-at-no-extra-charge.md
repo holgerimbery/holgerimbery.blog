@@ -26,15 +26,15 @@ Copilot is an intelligent AI assistant that simplifies workflow and increases pr
 * activate "**Use Compose (AI-writing) on the web"**
     
 
-![]({{site.baseurl}}/images/cltjq7yta00060ajo2sdfctny.md/1624b2dc-c0a8-42a6-9de3-54516c03d2ec.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltjq7yta00060ajo2sdfctny.md/1624b2dc-c0a8-42a6-9de3-54516c03d2ec.png)
 
 How to use it
 
 Select your text and wait a fraction of a second for the "Rewrite with CoPilot" option to appear, or press "ALT+I".
 
-![]({{site.baseurl}}/images/cltjq7yta00060ajo2sdfctny.md/6881b3f9-5d88-46ba-a493-d45e10bb0409.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltjq7yta00060ajo2sdfctny.md/6881b3f9-5d88-46ba-a493-d45e10bb0409.png)
 
-![]({{site.baseurl}}/images/cltjq7yta00060ajo2sdfctny.md/5d1c992b-4ff2-4c88-925d-0ccb21e930d0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltjq7yta00060ajo2sdfctny.md/5d1c992b-4ff2-4c88-925d-0ccb21e930d0.png)
 
 You can replace your selected text with the generated one or adjust the generated text's length and tone.  
 Please be aware that the generated content needs to be proofread as it might not be correct.

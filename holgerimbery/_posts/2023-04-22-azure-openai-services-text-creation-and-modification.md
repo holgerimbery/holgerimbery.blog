@@ -67,7 +67,7 @@ feedback: "After calling you, one of your staff solved me issue. everything is w
 Sentiment:
 ```
 
-![Result of the experiment - feedback]({{site.baseurl}}/images/clgrwfyc005frlcnv7vmi89p6.md/fb1be3b4-e0c6-4cfb-aff8-73fbd6c36b36.png)
+![Result of the experiment - feedback](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clgrwfyc005frlcnv7vmi89p6.md/fb1be3b4-e0c6-4cfb-aff8-73fbd6c36b36.png)
 
 Figure: Result of the experiment - feedback  
 It's worth paying attention to several features in this example:
@@ -91,7 +91,7 @@ Ideas involving chatbots and customer service
 2.
 ```
 
-![Result of Generation experiment]({{site.baseurl}}/images/clgrwfyc005frlcnv7vmi89p6.md/033da7d3-1b63-4b47-9457-bb773e5e7930.png)
+![Result of Generation experiment](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clgrwfyc005frlcnv7vmi89p6.md/033da7d3-1b63-4b47-9457-bb773e5e7930.png)
 
 Figure: Result of Generation experiment
 
@@ -130,7 +130,7 @@ User: Who was the first man in space?
 Herbert:
 ```
 
-![Result of Conversation experiment]({{site.baseurl}}/images/clgrwfyc005frlcnv7vmi89p6.md/e01500e0-4048-45a5-bd7c-359a2ee28976.png)
+![Result of Conversation experiment](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clgrwfyc005frlcnv7vmi89p6.md/e01500e0-4048-45a5-bd7c-359a2ee28976.png)
 
 Figure: Result of Conversation experiment
 
@@ -158,7 +158,7 @@ This example works because the API already has a grasp of French, so there's no 
 
 The API can identify the underlying meaning of the text and rephrase it into multiple different forms. As an example of its capabilities, the API can take a section of text and form an understandable explanation for young children. This serves to demonstrate the API's comprehensive knowledge of the language.
 
-![Result of Summarization experiment]({{site.baseurl}}/images/clgrwfyc005frlcnv7vmi89p6.md/03b246a7-5f96-4523-a056-cf12d03e2a26.png)
+![Result of Summarization experiment](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clgrwfyc005frlcnv7vmi89p6.md/03b246a7-5f96-4523-a056-cf12d03e2a26.png)
 
 Figure: Result of Summarization experiment
 
@@ -172,7 +172,7 @@ While all prompts result in completions, it can be helpful to think of text comp
 Vertical farming provides a novel solution for producing food locally, reducing transportation costs and
 ```
 
-![Result of experiment Completion]({{site.baseurl}}/images/clgrwfyc005frlcnv7vmi89p6.md/181f4b42-7381-4306-8ae1-2e61e47743e7.png)
+![Result of experiment Completion](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clgrwfyc005frlcnv7vmi89p6.md/181f4b42-7381-4306-8ae1-2e61e47743e7.png)
 
 Figure: Result of experiment Completion
 

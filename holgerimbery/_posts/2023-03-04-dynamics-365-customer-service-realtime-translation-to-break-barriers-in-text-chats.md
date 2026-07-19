@@ -62,7 +62,7 @@ googleTranslateApiClientSecret: '<please add your own google translation v2 api 
 * Click on "Manage" in the section "Real-time translation".
     
 
-![Figure 1: Select "Manage" in "Real-time translation"]({{site.baseurl}}/images/clety0boq093hrqnv8hsvcadn.md/99e74a83-8261-461f-9686-3bf549b2dcfe.png)
+![Figure 1: Select "Manage" in "Real-time translation"](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clety0boq093hrqnv8hsvcadn.md/99e74a83-8261-461f-9686-3bf549b2dcfe.png)
 
 Figure 1: Select "Manage" in "Real-time translation"
 
@@ -71,7 +71,7 @@ Figure 1: Select "Manage" in "Real-time translation"
 * configure the target language and Web Resource URL you deployed. before
     
 
-![Figure 2: configure the service]({{site.baseurl}}/images/clety0boq093hrqnv8hsvcadn.md/f8aabf80-33d7-4eac-8beb-847b9e4fe71d.png)
+![Figure 2: configure the service](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clety0boq093hrqnv8hsvcadn.md/f8aabf80-33d7-4eac-8beb-847b9e4fe71d.png)
 
 Figure 2: Configure the service.
 
@@ -79,7 +79,7 @@ Figure 2: Configure the service.
 
 As an example - all dialogs are in English (in the screenshot, you see a caller in the voice channel talking to the voice bot and later to an human agent) and the translation is in realtime to Hindi.
 
-![Figure: translated voice call from English to Hindi]({{site.baseurl}}/images/clety0boq093hrqnv8hsvcadn.md/fc484653-d2a6-465e-b019-52b18fbc7b04.png)
+![Figure: translated voice call from English to Hindi](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clety0boq093hrqnv8hsvcadn.md/fc484653-d2a6-465e-b019-52b18fbc7b04.png)
 
 Figure: translated voice call from English to Hindi
 

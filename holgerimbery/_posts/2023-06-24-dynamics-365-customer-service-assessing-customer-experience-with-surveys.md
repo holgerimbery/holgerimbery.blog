@@ -37,11 +37,11 @@ To configure a pre-conversation survey for the chat channel, follow these steps:
 
 Following these instructions, you can easily create a pre-conversation survey that users will be prompted with when accessing your chat channel widget.
 
-![activating and configuring pre-conversation survey]({{site.baseurl}}/images/clj9x6jzi0qzy4jnv8xoxde8e.md/fcf0a5d0-86c5-4b39-a71a-35fac98e56f2.png)
+![activating and configuring pre-conversation survey](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clj9x6jzi0qzy4jnv8xoxde8e.md/fcf0a5d0-86c5-4b39-a71a-35fac98e56f2.png)
 
 Figure: activating and configuring pre-conversation survey
 
-![Result]({{site.baseurl}}/images/clj9x6jzi0qzy4jnv8xoxde8e.md/a478ca59-c2fd-40ff-b8f6-27b0b6fad58d.png)
+![Result](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clj9x6jzi0qzy4jnv8xoxde8e.md/a478ca59-c2fd-40ff-b8f6-27b0b6fad58d.png)
 
 Figure: Result
 
@@ -51,11 +51,11 @@ The post-conversation survey utilizes Dynamics 365 Customer Voice to create surv
 
 See [documentation](https://learn.microsoft.com/en-us/dynamics365/customer-service/configure-post-conversation-survey?tabs=customerserviceadmincenter) for details.
 
-![activating and configuring post-conversation survey]({{site.baseurl}}/images/clj9x6jzi0qzy4jnv8xoxde8e.md/652bbe77-7fc1-4caf-b058-8851a2e14ed3.png)
+![activating and configuring post-conversation survey](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clj9x6jzi0qzy4jnv8xoxde8e.md/652bbe77-7fc1-4caf-b058-8851a2e14ed3.png)
 
 Figure: activating and configuring post-conversation survey
 
-![Result]({{site.baseurl}}/images/clj9x6jzi0qzy4jnv8xoxde8e.md/56848d36-94af-4a73-a20a-06a6e730aaa3.png)
+![Result](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clj9x6jzi0qzy4jnv8xoxde8e.md/56848d36-94af-4a73-a20a-06a6e730aaa3.png)
 
 Figure: Result
 

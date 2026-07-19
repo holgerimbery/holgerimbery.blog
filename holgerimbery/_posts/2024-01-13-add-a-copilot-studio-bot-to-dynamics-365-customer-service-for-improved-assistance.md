@@ -66,7 +66,7 @@ To accomplish this, follow these steps:
 
 In Microsoft Copilot Studio, edit your Bot. Select **Settings** and **Customer Engagement Hub in the navigation menu**, then choose the **Omnichannel** tile.
 
-![]({{site.baseurl}}/images/clrc0c4mu000008l0gwwb99it.md/e8100e43-70d4-4599-a25d-7c53a0e101ff.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clrc0c4mu000008l0gwwb99it.md/e8100e43-70d4-4599-a25d-7c53a0e101ff.png)
 
 Click **Connect**.
 
@@ -190,7 +190,7 @@ To achieve this in Copilot Studio, follow these steps:
 
 Following these steps ensures that your Bot is appropriately configured to end a conversation when a customer closes the chat window, providing a seamless and controlled user experience.
 
-![Configure end conversation topic in Copilot Studio.]({{site.baseurl}}/images/clrc0c4mu000008l0gwwb99it.md/end-bot-conversation.png)
+![Configure end conversation topic in Copilot Studio.](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clrc0c4mu000008l0gwwb99it.md/end-bot-conversation.png)
 
 1. Navigate to the topic where you need to trigger the conversation-ending topic in Omnichannel for Customer Service and use the **Go to another topic** option in **Add a node**.
     

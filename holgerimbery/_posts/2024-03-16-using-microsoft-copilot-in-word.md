@@ -28,11 +28,11 @@ Copilot in Word is not just a simple text generator. It is an innovative and cre
 
 Copilot can assist you in creating or editing documents effortlessly. You will notice the "Draft with Copilot" option when you begin a new document or line.
 
-![]({{site.baseurl}}/images/cltu3j4jg000209l22qnqeb1m.md/c3cfefcb-c62b-4744-b602-fe31891a87f2.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltu3j4jg000209l22qnqeb1m.md/c3cfefcb-c62b-4744-b602-fe31891a87f2.png)
 
 You can provide Copilot with a simple or complex description of what you wish to write. For instance, you might say "Write an essay about dad jokes" or "Create a paragraph about time management".
 
-![]({{site.baseurl}}/images/cltu3j4jg000209l22qnqeb1m.md/a493d032-b85c-4835-9444-21f0d7021d2b.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltu3j4jg000209l22qnqeb1m.md/a493d032-b85c-4835-9444-21f0d7021d2b.png)
 
 If you have a Copilot for Microsoft365 license, you can reference up to three of your files to help guide Copilot's drafting. Use the "Reference your content" button or type "/" followed by the file name in the compose box. This feature only accesses the files you select, ensuring your data remains private.
 
@@ -50,11 +50,11 @@ Rewriting and editing your documents can often take more time and effort than wr
 
 To rewrite text or convert it into a table, highlight the text in your document. Next, click the **Copilot** icon located in the left margin next to your text. Select **Rewrite** from the menu to see new versions suggested by Copilot. If you want to tweak Copilot's suggestions, click **Adjust tone** or **Regenerate** to receive a fresh set of options.
 
-![]({{site.baseurl}}/images/cltu3j4jg000209l22qnqeb1m.md/d68c5880-e386-4aed-a4d2-2bf74922c8c0.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltu3j4jg000209l22qnqeb1m.md/d68c5880-e386-4aed-a4d2-2bf74922c8c0.png)
 
 If you want to visualize your text as a table, after highlighting the text, click the **Copilot** icon in the left margin. Select **Visualize as a table** from the menu, and Copilot will convert the text into a table format. You can click **Regenerate** for a new table or **Discard** to remove it.
 
-![]({{site.baseurl}}/images/cltu3j4jg000209l22qnqeb1m.md/4b37d09f-3dd6-4507-98e7-4a5ddc588629.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltu3j4jg000209l22qnqeb1m.md/4b37d09f-3dd6-4507-98e7-4a5ddc588629.png)
 
 To customize the table, use the Copilot compose box to specify adjustments, such as "*Add an empty third column.*"
 
@@ -64,13 +64,13 @@ To customize the table, use the Copilot compose box to specify adjustments, such
 
 You can access the **Copilot** feature by clicking on the Copilot icon in the **Home** tab of the ribbon. This helpful tool can answer both broad and specific questions about your document. You can engage in back-and-forth conversations to refine your queries, get summaries or detailed information about your document's content, or ask it to create ideas, tables, or lists that you can then copy and paste into your document.
 
-![]({{site.baseurl}}/images/cltu3j4jg000209l22qnqeb1m.md/2e011281-f0e5-4af1-9acf-bcc34dc75220.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltu3j4jg000209l22qnqeb1m.md/2e011281-f0e5-4af1-9acf-bcc34dc75220.png)
 
 When you ask for summaries or have questions about your document, Copilot will give you answers, references, and citations from where it got its information.
 
-![]({{site.baseurl}}/images/cltu3j4jg000209l22qnqeb1m.md/c0b4db8b-9b82-46ca-8e0b-b03de0eb0936.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltu3j4jg000209l22qnqeb1m.md/c0b4db8b-9b82-46ca-8e0b-b03de0eb0936.png)
 
-![]({{site.baseurl}}/images/cltu3j4jg000209l22qnqeb1m.md/2d2f0754-01cd-4a89-aae5-290725523afd.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cltu3j4jg000209l22qnqeb1m.md/2d2f0754-01cd-4a89-aae5-290725523afd.png)
 
 ## Sample prompts
 
