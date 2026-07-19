@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Enhancing Whiteboard Capabilities with Copilot
-description: 
-date: 2024-04-20
-author: admin
-slug: enhancing-whiteboard-capabilities-with-copilot
-image: ./images/enhancing-whiteboard-capabilities-with-copilot.jpeg
-tags: [copilot, microsoft365copilot]
-featured: false
-toc: true
+layout: post
+title: Enhancing Whiteboard Capabilities with Copilot
+description: 
+date: 2024-04-20
+author: admin
+slug: enhancing-whiteboard-capabilities-with-copilot
+canonical_url: https://holgerimbery.blog/enhancing-whiteboard-capabilities-with-copilot
+image: ./images/enhancing-whiteboard-capabilities-with-copilot.jpeg
+tags: [copilot, microsoft365copilot]
+featured: false
+toc: true
 
 ---
 

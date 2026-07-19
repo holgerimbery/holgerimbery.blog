@@ -1,15 +1,16 @@
 ---
-layout: post
-title: Integrating SAP with Copilot Studio Agents - Why it Matters, What to Build, and How to Deliver
-description: This article explores how to integrate SAP systems with Microsoft Copilot Studio Agents, enabling AI-driven interactions and workflows within enterprise environments. It covers architecture, use cases, and best practices for leveraging SAP data in AI agents.
-date: 2025-10-18
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/peter-miranda-fTw24pNs21w-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@petermiranda?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Peter Miranda</a> on <a href="https://unsplash.com/photos/man-in-blue-and-black-cap-looking-at-silver-imac-fTw24pNs21w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
-tags: [copilotstudio, sap, agents]
-author: admin
-slug: copilot-studio-sap
-featured: false
+layout: post
+title: Integrating SAP with Copilot Studio Agents - Why it Matters, What to Build, and How to Deliver
+description: This article explores how to integrate SAP systems with Microsoft Copilot Studio Agents, enabling AI-driven interactions and workflows within enterprise environments. It covers architecture, use cases, and best practices for leveraging SAP data in AI agents.
+date: 2025-10-18
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/10/peter-miranda-fTw24pNs21w-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@petermiranda?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Peter Miranda</a> on <a href="https://unsplash.com/photos/man-in-blue-and-black-cap-looking-at-silver-imac-fTw24pNs21w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+tags: [copilotstudio, sap, agents]
+author: admin
+slug: copilot-studio-sap
+canonical_url: https://holgerimbery.blog/copilot-studio-sap
+featured: false
 toc: true
 ---
 

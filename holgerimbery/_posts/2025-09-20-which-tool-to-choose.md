@@ -1,16 +1,17 @@
 ---
-layout: post
-title: Choosing Between Microsoft Copilot Studio and Azure AI Foundry - A Comprehensive Guide
-description: A detailed comparison of Microsoft Copilot Studio and Azure AI Foundry, highlighting their strengths, ideal use cases, and how they can be combined for powerful AI solutions. 
-
-date: 2025-09-20
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/sue-winston-68mRGAs7tnQ-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@winniepix?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sue Winston</a> on <a href="https://unsplash.com/photos/a-table-filled-with-lots-of-different-types-of-cakes-68mRGAs7tnQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
-tags: [copilotstudio, aifoundry]
-author: admin
-slug: which-tool-to-choose
-featured: false
+layout: post
+title: Choosing Between Microsoft Copilot Studio and Azure AI Foundry - A Comprehensive Guide
+description: A detailed comparison of Microsoft Copilot Studio and Azure AI Foundry, highlighting their strengths, ideal use cases, and how they can be combined for powerful AI solutions. 
+
+date: 2025-09-20
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/sue-winston-68mRGAs7tnQ-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@winniepix?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sue Winston</a> on <a href="https://unsplash.com/photos/a-table-filled-with-lots-of-different-types-of-cakes-68mRGAs7tnQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+tags: [copilotstudio, aifoundry]
+author: admin
+slug: which-tool-to-choose
+canonical_url: https://holgerimbery.blog/which-tool-to-choose
+featured: false
 toc: true
 ---
 

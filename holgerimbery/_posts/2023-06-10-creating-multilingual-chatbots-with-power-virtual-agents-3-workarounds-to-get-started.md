@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Creating Multilingual Chatbots with Power Virtual Agents: 3 Workarounds to Get Started"
-date: 2023-06-10
-author: admin
-slug: creating-multilingual-chatbots-with-power-virtual-agents-3-workarounds-to-get-started
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-06-10-creating-multilingual-chatbots-with-power-virtual-agents-3-workarounds-to-get-started
+layout: post
+title: "Creating Multilingual Chatbots with Power Virtual Agents: 3 Workarounds to Get Started"
+date: 2023-06-10
+author: admin
+slug: creating-multilingual-chatbots-with-power-virtual-agents-3-workarounds-to-get-started
+canonical_url: https://holgerimbery.blog/creating-multilingual-chatbots-with-power-virtual-agents-3-workarounds-to-get-started
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-06-10-creating-multilingual-chatbots-with-power-virtual-agents-3-workarounds-to-get-started
 
 ---
 

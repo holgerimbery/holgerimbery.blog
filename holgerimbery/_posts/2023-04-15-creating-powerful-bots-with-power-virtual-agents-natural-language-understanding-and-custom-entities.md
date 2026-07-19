@@ -1,15 +1,16 @@
 ---
-layout: post
-title: "Creating Powerful Bots with Power Virtual Agents' Natural Language Understanding and Custom Entities"
-date: 2023-04-15
-author: admin
-slug: creating-powerful-bots-with-power-virtual-agents-natural-language-understanding-and-custom-entities
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-04-15-creating-powerful-bots-with-power-virtual-agents-natural-language-understanding-and-custom-entities
- 
+layout: post
+title: "Creating Powerful Bots with Power Virtual Agents' Natural Language Understanding and Custom Entities"
+date: 2023-04-15
+author: admin
+slug: creating-powerful-bots-with-power-virtual-agents-natural-language-understanding-and-custom-entities
+canonical_url: https://holgerimbery.blog/creating-powerful-bots-with-power-virtual-agents-natural-language-understanding-and-custom-entities
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-04-15-creating-powerful-bots-with-power-virtual-agents-natural-language-understanding-and-custom-entities
+ 
 
 ---
 

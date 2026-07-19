@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Transform Your Sales Operations - Integrate Salesforce with Copilot for Microsoft 365 
-description: Integrating Salesforce with Copilot for Microsoft 365 can revolutionize your sales operations. It automates repetitive tasks, provides real-time insights, and enhances collaboration across your team.
-date: 2025-02-11
-author: admin
-slug: Transform-Your-Sales-Operations-Integrate-Salesforce-with-Copilot-for-Microsoft-365
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/linkedin-sales-solutions-YDVdprpgHv4-unsplash.jpg
-image_caption: 'Photo by <a href="https://unsplash.com/@linkedinsalesnavigator?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LinkedIn Sales Solutions</a> on <a href="https://unsplash.com/photos/unknown-person-using-laptop-YDVdprpgHv4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'    
-tags: [copilotstudio, copilot, microsoft365copilot, salesforce, copilot-extensibility]
-featured: false
+layout: post
+title: Transform Your Sales Operations - Integrate Salesforce with Copilot for Microsoft 365 
+description: Integrating Salesforce with Copilot for Microsoft 365 can revolutionize your sales operations. It automates repetitive tasks, provides real-time insights, and enhances collaboration across your team.
+date: 2025-02-11
+author: admin
+slug: Transform-Your-Sales-Operations-Integrate-Salesforce-with-Copilot-for-Microsoft-365
+canonical_url: https://holgerimbery.blog/Transform-Your-Sales-Operations-Integrate-Salesforce-with-Copilot-for-Microsoft-365
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/linkedin-sales-solutions-YDVdprpgHv4-unsplash.jpg
+image_caption: 'Photo by <a href="https://unsplash.com/@linkedinsalesnavigator?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LinkedIn Sales Solutions</a> on <a href="https://unsplash.com/photos/unknown-person-using-laptop-YDVdprpgHv4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'    
+tags: [copilotstudio, copilot, microsoft365copilot, salesforce, copilot-extensibility]
+featured: false
 toc: true
 ---
 {: .note }

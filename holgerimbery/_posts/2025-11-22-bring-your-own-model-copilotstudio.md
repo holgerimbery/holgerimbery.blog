@@ -1,16 +1,17 @@
 ---
-layout: post
-title: Bring Your Own Model (BYOM) to Microsoft Copilot Studio — A Practical, No‑Code Guide
-description: Unlock the power of specialized AI models in Microsoft Copilot Studio with a omplete Bring Your Own Model (BYOM) guide! Connect GPT-4.5, Llama, or your fine-tuned models directly into agents—no coding required. From setup to governance, learn how to build domain-specific, compliant AI solutions in just 10-15 minutes. 
-
-date: 2025-11-22
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/oliver-hale--vMnQkiIPeo-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@4themorningshoot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oliver Hale</a> on <a href="https://unsplash.com/photos/strawberries-in-bucket--vMnQkiIPeo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-       
-tags: [aifoundry, copilotstudio, agents]
-author: admin
-slug: bring-your-own-model-copilotstudio
-featured: false
+layout: post
+title: Bring Your Own Model (BYOM) to Microsoft Copilot Studio — A Practical, No‑Code Guide
+description: Unlock the power of specialized AI models in Microsoft Copilot Studio with a omplete Bring Your Own Model (BYOM) guide! Connect GPT-4.5, Llama, or your fine-tuned models directly into agents—no coding required. From setup to governance, learn how to build domain-specific, compliant AI solutions in just 10-15 minutes. 
+
+date: 2025-11-22
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/oliver-hale--vMnQkiIPeo-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@4themorningshoot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oliver Hale</a> on <a href="https://unsplash.com/photos/strawberries-in-bucket--vMnQkiIPeo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+       
+tags: [aifoundry, copilotstudio, agents]
+author: admin
+slug: bring-your-own-model-copilotstudio
+canonical_url: https://holgerimbery.blog/bring-your-own-model-copilotstudio
+featured: false
 toc: true
 ---
 

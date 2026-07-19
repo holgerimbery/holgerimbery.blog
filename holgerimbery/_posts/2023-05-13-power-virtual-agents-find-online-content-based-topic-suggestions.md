@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Power Virtual Agents: Find Online Content-Based Topic Suggestions"
-date: 2023-05-13
-author: admin
-slug: power-virtual-agents-find-online-content-based-topic-suggestions
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-05-13-power-virtual-agents-find-online-content-based-topic-suggestions
+layout: post
+title: "Power Virtual Agents: Find Online Content-Based Topic Suggestions"
+date: 2023-05-13
+author: admin
+slug: power-virtual-agents-find-online-content-based-topic-suggestions
+canonical_url: https://holgerimbery.blog/power-virtual-agents-find-online-content-based-topic-suggestions
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-05-13-power-virtual-agents-find-online-content-based-topic-suggestions
 
 ---
 

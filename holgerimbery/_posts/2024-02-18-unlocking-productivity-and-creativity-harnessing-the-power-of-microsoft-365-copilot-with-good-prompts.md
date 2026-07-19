@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Unlocking Productivity and Creativity - Harnessing the Power of Microsoft 365 Copilot with good prompts
-description: 
-date: 2024-02-18
-author: admin
-slug: unlocking-productivity-and-creativity-harnessing-the-power-of-microsoft-365-copilot-with-good-prompts
-image: ./images/unlocking-productivity-and-creativity-harnessing-the-power-of-microsoft-365-copilot-with-good-prompts.jpeg
-tags: [prompts, copilot, microsoft365copilot]
-featured: false
-toc: true
+layout: post
+title: Unlocking Productivity and Creativity - Harnessing the Power of Microsoft 365 Copilot with good prompts
+description: 
+date: 2024-02-18
+author: admin
+slug: unlocking-productivity-and-creativity-harnessing-the-power-of-microsoft-365-copilot-with-good-prompts
+canonical_url: https://holgerimbery.blog/unlocking-productivity-and-creativity-harnessing-the-power-of-microsoft-365-copilot-with-good-prompts
+image: ./images/unlocking-productivity-and-creativity-harnessing-the-power-of-microsoft-365-copilot-with-good-prompts.jpeg
+tags: [prompts, copilot, microsoft365copilot]
+featured: false
+toc: true
 
 ---
 

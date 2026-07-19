@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Create Your ownGPT in a Protected Way and Advance Its Potential (Part 5) - Refine and enhance knowledge on your own data
-date: 2023-10-07
-author: admin
-slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-5-refine-and-enhance-knowledge-on-your-own-data
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-10-07-create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-5-refine-and-enhance-knowledge-on-your-own-data
+layout: post
+title: Create Your ownGPT in a Protected Way and Advance Its Potential (Part 5) - Refine and enhance knowledge on your own data
+date: 2023-10-07
+author: admin
+slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-5-refine-and-enhance-knowledge-on-your-own-data
+canonical_url: https://holgerimbery.blog/create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-5-refine-and-enhance-knowledge-on-your-own-data
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-10-07-create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-5-refine-and-enhance-knowledge-on-your-own-data
 
 ---
 

@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Give your Bots a voice
-description: 
-date: 2022-12-10
-author: admin
-slug: give-your-bots-a-voice
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: Give your Bots a voice
+description: 
+date: 2022-12-10
+author: admin
+slug: give-your-bots-a-voice
+canonical_url: https://holgerimbery.blog/give-your-bots-a-voice
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 

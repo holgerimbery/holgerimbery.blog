@@ -1,15 +1,16 @@
 ---
-layout: post
-title: Autonomous Agents with Microsoft Copilot Studio - an overview
-description: An article tailored for business leaders, IT professionals, and developers keen on leveraging AI to enhance their operations. Whether you're a seasoned developer looking to explore new tools or a business leader aiming to streamline processes, this guide will provide valuable insights into creating autonomous agents using Microsoft Copilot Studio.
-date: 2025-03-08
-author: admin
-slug: Autonomous-Agents-with-Microsoft-Copilot-Studio
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/mathew-schwartz-sb7RUrRMaC4-unsplash.jpg
-image_alt: Time-lapse photography of tunnel
-image_caption: 'Photo by <a href="https://unsplash.com/@cadop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mathew Schwartz</a> on <a href="https://unsplash.com/photos/time-lapse-photography-of-tunnel-sb7RUrRMaC4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>' 
-tags: [copilotstudio, autonomousagents, agents, automation]
-featured: false
+layout: post
+title: Autonomous Agents with Microsoft Copilot Studio - an overview
+description: An article tailored for business leaders, IT professionals, and developers keen on leveraging AI to enhance their operations. Whether you're a seasoned developer looking to explore new tools or a business leader aiming to streamline processes, this guide will provide valuable insights into creating autonomous agents using Microsoft Copilot Studio.
+date: 2025-03-08
+author: admin
+slug: Autonomous-Agents-with-Microsoft-Copilot-Studio
+canonical_url: https://holgerimbery.blog/Autonomous-Agents-with-Microsoft-Copilot-Studio
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/mathew-schwartz-sb7RUrRMaC4-unsplash.jpg
+image_alt: Time-lapse photography of tunnel
+image_caption: 'Photo by <a href="https://unsplash.com/@cadop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mathew Schwartz</a> on <a href="https://unsplash.com/photos/time-lapse-photography-of-tunnel-sb7RUrRMaC4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>' 
+tags: [copilotstudio, autonomousagents, agents, automation]
+featured: false
 toc: true
 ---
 {: .note }

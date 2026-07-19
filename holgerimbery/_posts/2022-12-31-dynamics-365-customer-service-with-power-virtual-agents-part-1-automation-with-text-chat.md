@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Dynamics 365 Customer Service with Power Virtual Agents - Part 1 (automation with text chat)
-description: 
-date: 2022-12-31
-author: admin
-slug: dynamics-365-customer-service-with-power-virtual-agents-part-1-automation-with-text-chat
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: Dynamics 365 Customer Service with Power Virtual Agents - Part 1 (automation with text chat)
+description: 
+date: 2022-12-31
+author: admin
+slug: dynamics-365-customer-service-with-power-virtual-agents-part-1-automation-with-text-chat
+canonical_url: https://holgerimbery.blog/dynamics-365-customer-service-with-power-virtual-agents-part-1-automation-with-text-chat
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 

@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Enhance Customer Service with Dynamics 365's Integrated Voice Channel
-description: 
-date: 2024-07-20
-author: admin
-slug: enhance-customer-service-with-dynamics-365s-integrated-voice-channel
-image: ./images/enhance-customer-service-with-dynamics-365s-integrated-voice-channel.jpeg
-tags: [dynamics365, contactcenter]
-featured: false
-toc: true
+layout: post
+title: Enhance Customer Service with Dynamics 365's Integrated Voice Channel
+description: 
+date: 2024-07-20
+author: admin
+slug: enhance-customer-service-with-dynamics-365s-integrated-voice-channel
+canonical_url: https://holgerimbery.blog/enhance-customer-service-with-dynamics-365s-integrated-voice-channel
+image: ./images/enhance-customer-service-with-dynamics-365s-integrated-voice-channel.jpeg
+tags: [dynamics365, contactcenter]
+featured: false
+toc: true
 
 ---
 {: .note }

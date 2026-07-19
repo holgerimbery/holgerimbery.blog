@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Mastering ALM (Application LifeCycle Management) for Microsoft Power Platform - A Comprehensive Guide (Part 5 - approval with pipeline)
-date: 2023-11-25
-author: admin
-slug: mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-5-approval-with-pipeline
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-11-25-mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-5-approval-with-pipeline
+layout: post
+title: Mastering ALM (Application LifeCycle Management) for Microsoft Power Platform - A Comprehensive Guide (Part 5 - approval with pipeline)
+date: 2023-11-25
+author: admin
+slug: mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-5-approval-with-pipeline
+canonical_url: https://holgerimbery.blog/mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-5-approval-with-pipeline
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-11-25-mastering-alm-application-lifecycle-management-for-microsoft-power-platform-a-comprehensive-guide-part-5-approval-with-pipeline
 
 ---
 

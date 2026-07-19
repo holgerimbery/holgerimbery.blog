@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Microsoft Copilot - a curated link list
-description: 
-date: 2024-06-24
-author: admin
-slug: microsoft-copilot-a-curated-link-list
-image: ./images/microsoft-copilot-a-curated-link-list.jpeg
-tags: [copilot]
-featured: false
-toc: true
+layout: post
+title: Microsoft Copilot - a curated link list
+description: 
+date: 2024-06-24
+author: admin
+slug: microsoft-copilot-a-curated-link-list
+canonical_url: https://holgerimbery.blog/microsoft-copilot-a-curated-link-list
+image: ./images/microsoft-copilot-a-curated-link-list.jpeg
+tags: [copilot]
+featured: false
+toc: true
 
 ---
 

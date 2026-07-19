@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Create Your ownGPT in a Protected Way and Advance Its Potential (Part 4) - adding additional channels and take action on your data
-date: 2023-09-30
-author: admin
-slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-4-adding-additional-channels-and-take-action-on-your-data
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-09-30-create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-4-adding-additional-channels-and-take-action-on-your-data
+layout: post
+title: Create Your ownGPT in a Protected Way and Advance Its Potential (Part 4) - adding additional channels and take action on your data
+date: 2023-09-30
+author: admin
+slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-4-adding-additional-channels-and-take-action-on-your-data
+canonical_url: https://holgerimbery.blog/create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-4-adding-additional-channels-and-take-action-on-your-data
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-09-30-create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-4-adding-additional-channels-and-take-action-on-your-data
 
 ---
 

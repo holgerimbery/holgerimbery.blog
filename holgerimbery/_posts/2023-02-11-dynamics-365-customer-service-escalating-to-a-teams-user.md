@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Dynamics 365 Customer Service - escalating to a Teams User
-description: 
-date: 2023-02-11
-author: admin
-slug: dynamics-365-customer-service-escalating-to-a-teams-user
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: Dynamics 365 Customer Service - escalating to a Teams User
+description: 
+date: 2023-02-11
+author: admin
+slug: dynamics-365-customer-service-escalating-to-a-teams-user
+canonical_url: https://holgerimbery.blog/dynamics-365-customer-service-escalating-to-a-teams-user
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 

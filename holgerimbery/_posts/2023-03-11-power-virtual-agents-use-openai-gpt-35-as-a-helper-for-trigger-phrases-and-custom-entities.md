@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Power Virtual Agents: Use OpenAI GPT-3.5 as a helper for trigger phrases and custom entities"
-date: 2023-03-11
-author: admin
-slug: power-virtual-agents-use-openai-gpt-35-as-a-helper-for-trigger-phrases-and-custom-entities
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-03-11-power-virtual-agents-use-openai-gpt-35-as-a-helper-for-trigger-phrases-and-custom-entities
+layout: post
+title: "Power Virtual Agents: Use OpenAI GPT-3.5 as a helper for trigger phrases and custom entities"
+date: 2023-03-11
+author: admin
+slug: power-virtual-agents-use-openai-gpt-35-as-a-helper-for-trigger-phrases-and-custom-entities
+canonical_url: https://holgerimbery.blog/power-virtual-agents-use-openai-gpt-35-as-a-helper-for-trigger-phrases-and-custom-entities
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-03-11-power-virtual-agents-use-openai-gpt-35-as-a-helper-for-trigger-phrases-and-custom-entities
 
 ---
 

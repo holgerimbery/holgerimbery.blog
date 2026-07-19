@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Azure OpenAI Services: Mastering the Art of Text Creation and Modification"
-date: 2023-04-22
-author: admin
-slug: azure-openai-services-text-creation-and-modification
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-04-22-azure-openai-services-text-creation-and-modification
+layout: post
+title: "Azure OpenAI Services: Mastering the Art of Text Creation and Modification"
+date: 2023-04-22
+author: admin
+slug: azure-openai-services-text-creation-and-modification
+canonical_url: https://holgerimbery.blog/azure-openai-services-text-creation-and-modification
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-04-22-azure-openai-services-text-creation-and-modification
 
 ---
 

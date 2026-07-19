@@ -1,15 +1,16 @@
 ---
-layout: post
-title: Copilot Studio Extension for VS Code - Enhancing AI Agent Development with an additional code view
-description: Copilot Studio (Preview) is a Visual Studio Code extension developed by Microsoft to streamline creating and managing custom agents within the VS Code environment. By integrating with Microsoft Copilot Studio, this extension lets developers work on AI agent components using VS Code's powerful editing features.
-date: 2025-07-04
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/ferenc-almasi--FHIdRVGets-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@flowforfrank?utm_content=creditCopyText&utm_medium=reBringingsource=unsplash">Ferenc Almasi</a> on <a href="https://unsplash.com/photos/a-computer-screen-with-a-bunc-buttons-on-it--FHIdRVGets?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
-tags: [copilotstudio, agents, vscode]
-author: admin
-slug: copilot-studio-extension
-featured: false
+layout: post
+title: Copilot Studio Extension for VS Code - Enhancing AI Agent Development with an additional code view
+description: Copilot Studio (Preview) is a Visual Studio Code extension developed by Microsoft to streamline creating and managing custom agents within the VS Code environment. By integrating with Microsoft Copilot Studio, this extension lets developers work on AI agent components using VS Code's powerful editing features.
+date: 2025-07-04
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/ferenc-almasi--FHIdRVGets-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@flowforfrank?utm_content=creditCopyText&utm_medium=reBringingsource=unsplash">Ferenc Almasi</a> on <a href="https://unsplash.com/photos/a-computer-screen-with-a-bunc-buttons-on-it--FHIdRVGets?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+tags: [copilotstudio, agents, vscode]
+author: admin
+slug: copilot-studio-extension
+canonical_url: https://holgerimbery.blog/copilot-studio-extension
+featured: false
 toc: true
 ---
 {: .important}

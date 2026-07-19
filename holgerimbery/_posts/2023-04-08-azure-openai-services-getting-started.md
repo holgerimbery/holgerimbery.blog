@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Azure OpenAI Services: Getting started."
-date: 2023-04-08
-author: admin
-slug: azure-openai-services-getting-started
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-04-08-azure-openai-services-getting-started
+layout: post
+title: "Azure OpenAI Services: Getting started."
+date: 2023-04-08
+author: admin
+slug: azure-openai-services-getting-started
+canonical_url: https://holgerimbery.blog/azure-openai-services-getting-started
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-04-08-azure-openai-services-getting-started
 
 ---
 

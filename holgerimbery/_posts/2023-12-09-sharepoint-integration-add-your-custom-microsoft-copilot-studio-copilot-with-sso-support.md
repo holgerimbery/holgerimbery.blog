@@ -1,14 +1,15 @@
 ---
-layout: post
-title: SharePoint Integration Add Your Custom Microsoft Copilot Studio Copilot with SSO Support
-date: 2023-12-09
-author: admin
-slug: sharepoint-integration-add-your-custom-microsoft-copilot-studio-copilot-with-sso-support
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-12-09-sharepoint-integration-add-your-custom-microsoft-copilot-studio-copilot-with-sso-support
+layout: post
+title: SharePoint Integration Add Your Custom Microsoft Copilot Studio Copilot with SSO Support
+date: 2023-12-09
+author: admin
+slug: sharepoint-integration-add-your-custom-microsoft-copilot-studio-copilot-with-sso-support
+canonical_url: https://holgerimbery.blog/sharepoint-integration-add-your-custom-microsoft-copilot-studio-copilot-with-sso-support
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-12-09-sharepoint-integration-add-your-custom-microsoft-copilot-studio-copilot-with-sso-support
 
 ---
 

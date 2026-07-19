@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Dynamics 365 Customer Service: Assessing Customer Experience with Surveys"
-date: 2023-06-24
-author: admin
-slug: dynamics-365-customer-service-assessing-customer-experience-with-surveys
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
+layout: post
+title: "Dynamics 365 Customer Service: Assessing Customer Experience with Surveys"
+date: 2023-06-24
+author: admin
+slug: dynamics-365-customer-service-assessing-customer-experience-with-surveys
+canonical_url: https://holgerimbery.blog/dynamics-365-customer-service-assessing-customer-experience-with-surveys
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
 # 2023-06-24-dynamics-365-customer-service-assessing-customer-experience-with-surveys
 ---
 

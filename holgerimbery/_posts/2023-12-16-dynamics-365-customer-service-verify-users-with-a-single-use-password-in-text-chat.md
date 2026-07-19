@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Dynamics 365 Customer Service - Verify Users with a Single-Use Password in Text Chat
-date: 2023-12-16
-author: admin
-slug: dynamics-365-customer-service-verify-users-with-a-single-use-password-in-text-chat
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-12-16-dynamics-365-customer-service-verify-users-with-a-single-use-password-in-text-chat
+layout: post
+title: Dynamics 365 Customer Service - Verify Users with a Single-Use Password in Text Chat
+date: 2023-12-16
+author: admin
+slug: dynamics-365-customer-service-verify-users-with-a-single-use-password-in-text-chat
+canonical_url: https://holgerimbery.blog/dynamics-365-customer-service-verify-users-with-a-single-use-password-in-text-chat
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-12-16-dynamics-365-customer-service-verify-users-with-a-single-use-password-in-text-chat
 
 ---
 

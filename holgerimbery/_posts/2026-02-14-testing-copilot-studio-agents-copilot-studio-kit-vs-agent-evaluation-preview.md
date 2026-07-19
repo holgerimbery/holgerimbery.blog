@@ -1,15 +1,16 @@
 ---
-layout: post
-title: "Testing Copilot Studio Agents: Copilot Studio Kit vs. Agent Evaluation (Preview)"
-description: "Choosing the right testing tool for your Copilot Studio agents: A detailed comparison of Copilot Studio Kit and Agent Evaluation (preview) to help you decide when to use each tool for optimal agent quality."
-date: 2026-02-14 08:09:12 +0100
-author: admin
-slug: testing-copilot-studio-agents-copilot-studio-kit-vs-agent-evaluation-preview
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/02/cdc-CfS6A4U5g8M-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a href="https://unsplash.com/photos/person-holding-white-plastic-container-CfS6A4U5g8M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
-tags: [copilotstudio, agentevaluation, testing]
-featured: false
+layout: post
+title: "Testing Copilot Studio Agents: Copilot Studio Kit vs. Agent Evaluation (Preview)"
+description: "Choosing the right testing tool for your Copilot Studio agents: A detailed comparison of Copilot Studio Kit and Agent Evaluation (preview) to help you decide when to use each tool for optimal agent quality."
+date: 2026-02-14 08:09:12 +0100
+author: admin
+slug: testing-copilot-studio-agents-copilot-studio-kit-vs-agent-evaluation-preview
+canonical_url: https://holgerimbery.blog/testing-copilot-studio-agents-copilot-studio-kit-vs-agent-evaluation-preview
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/02/cdc-CfS6A4U5g8M-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a href="https://unsplash.com/photos/person-holding-white-plastic-container-CfS6A4U5g8M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+tags: [copilotstudio, agentevaluation, testing]
+featured: false
 toc: true
 ---
 

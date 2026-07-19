@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Enhance Your Copilot for Microsoft 365 Experience - When Plain Copilot Isn't Enough
-description: 
-date: 2024-10-27
-author: admin
-slug: enhance-your-copilot-for-microsoft-365-experience-when-plain-copilot-isnt-enough
-image: ./images/enhance-your-copilot-for-microsoft-365-experience-when-plain-copilot-isnt-enough.jpeg
-tags: [copilot, microsoft365copilot, copilotstudio, declarativeagents, teamstoolkit]
-featured: false
-toc: true
+layout: post
+title: Enhance Your Copilot for Microsoft 365 Experience - When Plain Copilot Isn't Enough
+description: 
+date: 2024-10-27
+author: admin
+slug: enhance-your-copilot-for-microsoft-365-experience-when-plain-copilot-isnt-enough
+canonical_url: https://holgerimbery.blog/enhance-your-copilot-for-microsoft-365-experience-when-plain-copilot-isnt-enough
+image: ./images/enhance-your-copilot-for-microsoft-365-experience-when-plain-copilot-isnt-enough.jpeg
+tags: [copilot, microsoft365copilot, copilotstudio, declarativeagents, teamstoolkit]
+featured: false
+toc: true
 
 ---
 

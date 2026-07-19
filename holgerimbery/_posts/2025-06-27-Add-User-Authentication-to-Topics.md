@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Add User Authentication to Topics
-description: Learn how to add user authentication to specific topics in Microsoft Copilot Studio, enhancing security for sensitive information access.
-date: 2025-06-27
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/ed-hardie-RMIsZlv8qv4-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@edhardie?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ed Hardie</a> on <a href="https://unsplash.com/photos/a-screenshot-of-a-phone-RMIsZlv8qv4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-tags: [copilotstudio, agents, authentication]
-author: admin
-slug: Add-User-Authentication-to-Topics
-featured: false
+layout: post
+title: Add User Authentication to Topics
+description: Learn how to add user authentication to specific topics in Microsoft Copilot Studio, enhancing security for sensitive information access.
+date: 2025-06-27
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/06/ed-hardie-RMIsZlv8qv4-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@edhardie?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ed Hardie</a> on <a href="https://unsplash.com/photos/a-screenshot-of-a-phone-RMIsZlv8qv4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tags: [copilotstudio, agents, authentication]
+author: admin
+slug: Add-User-Authentication-to-Topics
+canonical_url: https://holgerimbery.blog/Add-User-Authentication-to-Topics
+featured: false
 toc: true
 ---
 

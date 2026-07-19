@@ -1,13 +1,14 @@
 ---
-layout: post
-title: Exploring the Potential of Retrieval-Augmented Generation using Azure Open AI Solutions and build your ownGPT
-date: 2023-12-30
-author: admin
-slug: exploring-the-potential-of-retrieval-augmented-generation-using-azure-open-ai-solutions-and-build-your-owngpt
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
+layout: post
+title: Exploring the Potential of Retrieval-Augmented Generation using Azure Open AI Solutions and build your ownGPT
+date: 2023-12-30
+author: admin
+slug: exploring-the-potential-of-retrieval-augmented-generation-using-azure-open-ai-solutions-and-build-your-owngpt
+canonical_url: https://holgerimbery.blog/exploring-the-potential-of-retrieval-augmented-generation-using-azure-open-ai-solutions-and-build-your-owngpt
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
 # 2023-12-30-exploring-the-potential-of-retrieval-augmented-generation-using-azure-open-ai-solutions-and-build-your-owngpt
 ---
 

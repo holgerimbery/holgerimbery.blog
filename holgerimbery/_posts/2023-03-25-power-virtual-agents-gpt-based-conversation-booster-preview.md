@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Power Virtual Agents - GPT based conversation booster (preview)"
-date: 2023-03-25
-author: admin
-slug: power-virtual-agents-gpt-based-conversation-booster-preview
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-03-25-power-virtual-agents-gpt-based-conversation-booster-preview
+layout: post
+title: "Power Virtual Agents - GPT based conversation booster (preview)"
+date: 2023-03-25
+author: admin
+slug: power-virtual-agents-gpt-based-conversation-booster-preview
+canonical_url: https://holgerimbery.blog/power-virtual-agents-gpt-based-conversation-booster-preview
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-03-25-power-virtual-agents-gpt-based-conversation-booster-preview
 
 ---
 

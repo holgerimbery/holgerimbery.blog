@@ -1,16 +1,17 @@
 ---
-layout: post
-title: Integrating Outlook Model Context Protocol (MCP) Server with Copilot Studio Agents
-description: Learn how to connect the Outlook Model Context Protocol (MCP) server with Microsoft Copilot Studio agents to enable intelligent, email-driven automation workflows without writing code. This article covers configuration steps, available email operations, and a complete example of an autonomous agent handling order status inquiries.
-
-date: 2025-11-15
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/mathyas-kurmann-fb7yNPbT0l8-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@mathyaskurmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathyas Kurmann</a> on <a href="https://unsplash.com/photos/six-assorted-color-mail-boxes-fb7yNPbT0l8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
-tags: [modelcontextprotocol, copilotstudio, agents]
-author: admin
-slug: Outlook-Model-context-Protocol
-featured: fasle
+layout: post
+title: Integrating Outlook Model Context Protocol (MCP) Server with Copilot Studio Agents
+description: Learn how to connect the Outlook Model Context Protocol (MCP) server with Microsoft Copilot Studio agents to enable intelligent, email-driven automation workflows without writing code. This article covers configuration steps, available email operations, and a complete example of an autonomous agent handling order status inquiries.
+
+date: 2025-11-15
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/11/mathyas-kurmann-fb7yNPbT0l8-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@mathyaskurmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathyas Kurmann</a> on <a href="https://unsplash.com/photos/six-assorted-color-mail-boxes-fb7yNPbT0l8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+tags: [modelcontextprotocol, copilotstudio, agents]
+author: admin
+slug: Outlook-Model-context-Protocol
+canonical_url: https://holgerimbery.blog/Outlook-Model-context-Protocol
+featured: fasle
 toc: true
 ---
 

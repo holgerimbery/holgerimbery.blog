@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Multilingual Magic: Power Virtual Agents / CoPilots for Global Engagement (preview)"
-date: 2023-11-18
-author: admin
-slug: multilingual-magic-power-virtual-agents-copilots-for-global-engagement-preview
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-11-18-multilingual-magic-power-virtual-agents-copilots-for-global-engagement-preview
+layout: post
+title: "Multilingual Magic: Power Virtual Agents / CoPilots for Global Engagement (preview)"
+date: 2023-11-18
+author: admin
+slug: multilingual-magic-power-virtual-agents-copilots-for-global-engagement-preview
+canonical_url: https://holgerimbery.blog/multilingual-magic-power-virtual-agents-copilots-for-global-engagement-preview
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-11-18-multilingual-magic-power-virtual-agents-copilots-for-global-engagement-preview
 
 ---
 

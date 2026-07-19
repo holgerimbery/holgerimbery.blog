@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Build your first (voice-)bot with Microsoft Power Virtual Agent
-description: 
-date: 2022-11-19
-author: admin
-slug: build-your-first-voice-bot-with-microsoft-power-virtual-agent-3e71f8531c3a
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: Build your first (voice-)bot with Microsoft Power Virtual Agent
+description: 
+date: 2022-11-19
+author: admin
+slug: build-your-first-voice-bot-with-microsoft-power-virtual-agent-3e71f8531c3a
+canonical_url: https://holgerimbery.blog/build-your-first-voice-bot-with-microsoft-power-virtual-agent-3e71f8531c3a
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 *Archived post - content may be outdate*

@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Choosing Generative AI Solutions - Build Your Own or Use Microsoft Copilot?
-description: 
-date: 2024-08-11
-author: admin
-slug: choosing-generative-ai-solutions-build-your-own-or-use-microsoft-copilot
-image: ./images/choosing-generative-ai-solutions-build-your-own-or-use-microsoft-copilot.jpeg
-tags: [copilot]
-featured: false
-toc: true
+layout: post
+title: Choosing Generative AI Solutions - Build Your Own or Use Microsoft Copilot?
+description: 
+date: 2024-08-11
+author: admin
+slug: choosing-generative-ai-solutions-build-your-own-or-use-microsoft-copilot
+canonical_url: https://holgerimbery.blog/choosing-generative-ai-solutions-build-your-own-or-use-microsoft-copilot
+image: ./images/choosing-generative-ai-solutions-build-your-own-or-use-microsoft-copilot.jpeg
+tags: [copilot]
+featured: false
+toc: true
 
 ---
 

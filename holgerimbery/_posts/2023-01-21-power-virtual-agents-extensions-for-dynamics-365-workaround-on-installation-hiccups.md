@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Power Virtual Agents extensions for Dynamics 365 (workaround on installation hiccups)
-description: 
-date: 2023-01-21
-author: admin
-slug: power-virtual-agents-extensions-for-dynamics-365-workaround-on-installation-hiccups
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: Power Virtual Agents extensions for Dynamics 365 (workaround on installation hiccups)
+description: 
+date: 2023-01-21
+author: admin
+slug: power-virtual-agents-extensions-for-dynamics-365-workaround-on-installation-hiccups
+canonical_url: https://holgerimbery.blog/power-virtual-agents-extensions-for-dynamics-365-workaround-on-installation-hiccups
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 

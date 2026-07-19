@@ -1,16 +1,17 @@
 ---
-layout: post
-title: "Power Platform Governance: A Practitioner's Reference (Part 1)"
-description: "Part 1 of a two-part guide to managing and securing Power Platform environments within Microsoft 365 — environment strategy, the default environment, Managed Environments, environment groups, DLP, tenant isolation, identity, and monitoring."
-date: 2026-05-16
-author: admin
-slug: powerplatform-governance-part-1
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/charles-forerunner-3fPXt37X6UQ-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@charles_forerunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Forerunner</a> on <a href="https://unsplash.com/photos/people-standing-inside-city-building-3fPXt37X6UQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-
-tags: [copilotstudio, agents, governance, powerplatform, dataverse, security, compliance]
-featured: false
+layout: post
+title: "Power Platform Governance: A Practitioner's Reference (Part 1)"
+description: "Part 1 of a two-part guide to managing and securing Power Platform environments within Microsoft 365 — environment strategy, the default environment, Managed Environments, environment groups, DLP, tenant isolation, identity, and monitoring."
+date: 2026-05-16
+author: admin
+slug: powerplatform-governance-part-1
+canonical_url: https://holgerimbery.blog/powerplatform-governance-part-1
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/charles-forerunner-3fPXt37X6UQ-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@charles_forerunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Forerunner</a> on <a href="https://unsplash.com/photos/people-standing-inside-city-building-3fPXt37X6UQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+
+tags: [copilotstudio, agents, governance, powerplatform, dataverse, security, compliance]
+featured: false
 toc: true
 ---
 

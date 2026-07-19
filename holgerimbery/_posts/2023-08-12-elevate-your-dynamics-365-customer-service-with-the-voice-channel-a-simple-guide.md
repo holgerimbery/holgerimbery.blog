@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Elevate Your Dynamics 365 Customer Service with the Voice Channel: A Simple Guide"
-date: 2023-08-12
-author: admin
-slug: elevate-your-dynamics-365-customer-service-with-the-voice-channel-a-simple-guide
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
+layout: post
+title: "Elevate Your Dynamics 365 Customer Service with the Voice Channel: A Simple Guide"
+date: 2023-08-12
+author: admin
+slug: elevate-your-dynamics-365-customer-service-with-the-voice-channel-a-simple-guide
+canonical_url: https://holgerimbery.blog/elevate-your-dynamics-365-customer-service-with-the-voice-channel-a-simple-guide
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
 # 2023-08-12-elevate-your-dynamics-365-customer-service-with-the-voice-channel-a-simple-guide
 ---
 

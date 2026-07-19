@@ -1,14 +1,15 @@
 ---
-layout: post
-title: The New Voice Capabilities of Copilot Studio - A Comprehensive Overview
-description: 
-date: 2024-07-27
-author: admin
-slug: the-new-voice-capabilities-of-copilot-studio-a-comprehensive-overview
-image: ./images/the-new-voice-capabilities-of-copilot-studio-a-comprehensive-overview.jpeg
-tags: [copilot, dynamics365, copilotstudio, contactcenter]
-featured: false
-toc: true
+layout: post
+title: The New Voice Capabilities of Copilot Studio - A Comprehensive Overview
+description: 
+date: 2024-07-27
+author: admin
+slug: the-new-voice-capabilities-of-copilot-studio-a-comprehensive-overview
+canonical_url: https://holgerimbery.blog/the-new-voice-capabilities-of-copilot-studio-a-comprehensive-overview
+image: ./images/the-new-voice-capabilities-of-copilot-studio-a-comprehensive-overview.jpeg
+tags: [copilot, dynamics365, copilotstudio, contactcenter]
+featured: false
+toc: true
 
 ---
 

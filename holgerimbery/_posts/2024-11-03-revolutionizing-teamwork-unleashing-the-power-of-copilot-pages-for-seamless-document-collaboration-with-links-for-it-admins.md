@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Revolutionizing Teamwork - Unleashing the Power of Copilot Pages for Seamless Document Collaboration with Links for IT-Admins
-description: 
-date: 2024-11-03
-author: admin
-slug: revolutionizing-teamwork-unleashing-the-power-of-copilot-pages-for-seamless-document-collaboration-with-links-for-it-admins
-image: ./images/revolutionizing-teamwork-unleashing-the-power-of-copilot-pages-for-seamless-document-collaboration-with-links-for-it-admins.jpeg
-tags: [copilot, microsoft365copilot]
-featured: false
-toc: true
+layout: post
+title: Revolutionizing Teamwork - Unleashing the Power of Copilot Pages for Seamless Document Collaboration with Links for IT-Admins
+description: 
+date: 2024-11-03
+author: admin
+slug: revolutionizing-teamwork-unleashing-the-power-of-copilot-pages-for-seamless-document-collaboration-with-links-for-it-admins
+canonical_url: https://holgerimbery.blog/revolutionizing-teamwork-unleashing-the-power-of-copilot-pages-for-seamless-document-collaboration-with-links-for-it-admins
+image: ./images/revolutionizing-teamwork-unleashing-the-power-of-copilot-pages-for-seamless-document-collaboration-with-links-for-it-admins.jpeg
+tags: [copilot, microsoft365copilot]
+featured: false
+toc: true
 
 ---
 

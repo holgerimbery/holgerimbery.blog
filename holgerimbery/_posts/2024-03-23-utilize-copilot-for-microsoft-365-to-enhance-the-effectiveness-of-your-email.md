@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Utilize CoPilot for Microsoft 365 to enhance the effectiveness of your email
-description: 
-date: 2024-03-23
-author: admin
-slug: utilize-copilot-for-microsoft-365-to-enhance-the-effectiveness-of-your-email
-image: ./images/utilize-copilot-for-microsoft-365-to-enhance-the-effectiveness-of-your-email.jpeg
-tags: [copilot, microsoft365copilot]
-featured: false
-toc: true
+layout: post
+title: Utilize CoPilot for Microsoft 365 to enhance the effectiveness of your email
+description: 
+date: 2024-03-23
+author: admin
+slug: utilize-copilot-for-microsoft-365-to-enhance-the-effectiveness-of-your-email
+canonical_url: https://holgerimbery.blog/utilize-copilot-for-microsoft-365-to-enhance-the-effectiveness-of-your-email
+image: ./images/utilize-copilot-for-microsoft-365-to-enhance-the-effectiveness-of-your-email.jpeg
+tags: [copilot, microsoft365copilot]
+featured: false
+toc: true
 
 ---
 

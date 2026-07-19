@@ -1,13 +1,14 @@
 ---
-layout: post
-title: Revolutionizing Customer Service The Power of Copilot Studio Voice Copilots in Dynamics 365
-description: 
-date: 2024-05-04
-author: admin
-slug: revolutionizing-customer-service-the-power-of-copilot-studio-voice-copilots-in-dynamics-365
-image: ./images/revolutionizing-customer-service-the-power-of-copilot-studio-voice-copilots-in-dynamics-365.jpeg
-tags: [dynamics365, customerservice, voicebot]
-toc: true
+layout: post
+title: Revolutionizing Customer Service The Power of Copilot Studio Voice Copilots in Dynamics 365
+description: 
+date: 2024-05-04
+author: admin
+slug: revolutionizing-customer-service-the-power-of-copilot-studio-voice-copilots-in-dynamics-365
+canonical_url: https://holgerimbery.blog/revolutionizing-customer-service-the-power-of-copilot-studio-voice-copilots-in-dynamics-365
+image: ./images/revolutionizing-customer-service-the-power-of-copilot-studio-voice-copilots-in-dynamics-365.jpeg
+tags: [dynamics365, customerservice, voicebot]
+toc: true
 
 ---
 

@@ -1,14 +1,15 @@
 ---
-layout: post
-title: The Chitchat of the other kind - ChatGPT in Power Virtual Agents
-description: 
-date: 2023-01-14
-author: admin
-slug: the-chitchat-of-the-other-kind-chatgpt-in-power-virtual-agents
-image: ./images/archive.jpg
-tags: [archive]
-featured: false
-toc: true
+layout: post
+title: The Chitchat of the other kind - ChatGPT in Power Virtual Agents
+description: 
+date: 2023-01-14
+author: admin
+slug: the-chitchat-of-the-other-kind-chatgpt-in-power-virtual-agents
+canonical_url: https://holgerimbery.blog/the-chitchat-of-the-other-kind-chatgpt-in-power-virtual-agents
+image: ./images/archive.jpg
+tags: [archive]
+featured: false
+toc: true
 
 ---
 

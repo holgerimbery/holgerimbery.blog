@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Leveraging Dynamics 365 Customer Service for a Superior Digital Contact Center Experience"
-date: 2023-12-23
-author: admin
-slug: leveraging-dynamics-365-customer-service-for-a-superior-digital-contact-center-experience
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-12-23-leveraging-dynamics-365-customer-service-for-a-superior-digital-contact-center-experience
+layout: post
+title: "Leveraging Dynamics 365 Customer Service for a Superior Digital Contact Center Experience"
+date: 2023-12-23
+author: admin
+slug: leveraging-dynamics-365-customer-service-for-a-superior-digital-contact-center-experience
+canonical_url: https://holgerimbery.blog/leveraging-dynamics-365-customer-service-for-a-superior-digital-contact-center-experience
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-12-23-leveraging-dynamics-365-customer-service-for-a-superior-digital-contact-center-experience
 
 ---
 

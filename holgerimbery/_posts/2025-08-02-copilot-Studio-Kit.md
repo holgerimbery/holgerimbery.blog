@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Copilot Studio Kit - you can't improve what you can't measure
-description: Copilot Studio Kit enhances Microsoft Copilot Studio with powerful tools for testing, monitoring, and optimizing AI agents. This solution enables organizations to measure agent performance through automated testing, conversation analytics, and advanced monitoring, allowing data-driven improvements to custom AI solutions. By providing robust quality assurance and governance capabilities, the Kit helps ensure AI agents deliver reliable, high-quality responses while meeting enterprise requirements for scalability and compliance.
-date: 2025-08-02
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/wander-fleur-4i2crgbc0Gs-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@wanderfleur?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wander Fleur</a> on <a href="https://unsplash.com/photos/clear-acrylic-ruler-on-white-paper-4i2crgbc0Gs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-tags: [copilotstudio, copilotstudio-kit, applicationlifecyclemanagement, agents, testing, monitoring, optimization]
-author: admin
-slug: copilot-Studio-Kit
-featured: false
+layout: post
+title: Copilot Studio Kit - you can't improve what you can't measure
+description: Copilot Studio Kit enhances Microsoft Copilot Studio with powerful tools for testing, monitoring, and optimizing AI agents. This solution enables organizations to measure agent performance through automated testing, conversation analytics, and advanced monitoring, allowing data-driven improvements to custom AI solutions. By providing robust quality assurance and governance capabilities, the Kit helps ensure AI agents deliver reliable, high-quality responses while meeting enterprise requirements for scalability and compliance.
+date: 2025-08-02
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/07/wander-fleur-4i2crgbc0Gs-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@wanderfleur?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wander Fleur</a> on <a href="https://unsplash.com/photos/clear-acrylic-ruler-on-white-paper-4i2crgbc0Gs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tags: [copilotstudio, copilotstudio-kit, applicationlifecyclemanagement, agents, testing, monitoring, optimization]
+author: admin
+slug: copilot-Studio-Kit
+canonical_url: https://holgerimbery.blog/copilot-Studio-Kit
+featured: false
 toc: true
 ---
 

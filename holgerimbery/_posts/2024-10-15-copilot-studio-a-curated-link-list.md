@@ -1,15 +1,16 @@
 ---
-layout: post
-title: Copilot Studio - a curated link list
-description: 
-date: 2024-10-15
-author: admin
-slug: copilot-studio-a-curated-link-list
-image: ./images/archive.jpg
-image_caption: 'Photo by <a href="https://unsplash.com/@rawkkim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">rawkkim</a> on <a href="https://unsplash.com/photos/people-sitting-on-wooden-chairs-BW6IojhaiDU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
-tags: [archive]
-featured: false
-toc: false
+layout: post
+title: Copilot Studio - a curated link list
+description: 
+date: 2024-10-15
+author: admin
+slug: copilot-studio-a-curated-link-list
+canonical_url: https://holgerimbery.blog/copilot-studio-a-curated-link-list
+image: ./images/archive.jpg
+image_caption: 'Photo by <a href="https://unsplash.com/@rawkkim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">rawkkim</a> on <a href="https://unsplash.com/photos/people-sitting-on-wooden-chairs-BW6IojhaiDU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+tags: [archive]
+featured: false
+toc: false
 
 ---
 {: .caution }

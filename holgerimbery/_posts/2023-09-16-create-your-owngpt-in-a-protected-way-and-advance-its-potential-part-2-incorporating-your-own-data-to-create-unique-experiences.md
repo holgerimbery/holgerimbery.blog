@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Create Your ownGPT in a Protected Way and Advance Its Potential (Part 2) - Incorporating your own data to create unique experiences
-date: 2023-09-16
-author: admin
-slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-2-incorporating-your-own-data-to-create-unique-experiences
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-09-16-create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-2-incorporating-your-own-data-to-create-unique-experiences
+layout: post
+title: Create Your ownGPT in a Protected Way and Advance Its Potential (Part 2) - Incorporating your own data to create unique experiences
+date: 2023-09-16
+author: admin
+slug: create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-2-incorporating-your-own-data-to-create-unique-experiences
+canonical_url: https://holgerimbery.blog/create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-2-incorporating-your-own-data-to-create-unique-experiences
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-09-16-create-your-owngpt-in-a-protected-way-and-advance-its-potential-part-2-incorporating-your-own-data-to-create-unique-experiences
 
 ---
 

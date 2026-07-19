@@ -1,16 +1,17 @@
 ---
-layout: 
-title: "Building On‑Prem AI Agents with Azure Local, Foundry Local, and Microsoft Agent Framework"
-description: "A practical architecture and implementation guide for deploying AI agents on-premises using Azure Local, Foundry Local, and Microsoft Agent Framework."
-date: 2026-04-11 06:55:24 +0200
-author: admin
-slug: building-on-prem-ai-agents-with-azure-local-foundry-local-and-microsoft-agent-framework
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/taylor-vick-M5tzZtFCOfs-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor Vick</a> on <a href="https://unsplash.com/photos/cable-network-M5tzZtFCOfs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
-            
-tags: [azurelocal, foundrylocal, agents, frontierfirm, implementation, sovereignprivatecloud, onpremai, localinference, microsoftagentframework]
-featured: false
+layout: 
+title: "Building On‑Prem AI Agents with Azure Local, Foundry Local, and Microsoft Agent Framework"
+description: "A practical architecture and implementation guide for deploying AI agents on-premises using Azure Local, Foundry Local, and Microsoft Agent Framework."
+date: 2026-04-11 06:55:24 +0200
+author: admin
+slug: building-on-prem-ai-agents-with-azure-local-foundry-local-and-microsoft-agent-framework
+canonical_url: https://holgerimbery.blog/building-on-prem-ai-agents-with-azure-local-foundry-local-and-microsoft-agent-framework
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/04/taylor-vick-M5tzZtFCOfs-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor Vick</a> on <a href="https://unsplash.com/photos/cable-network-M5tzZtFCOfs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+            
+tags: [azurelocal, foundrylocal, agents, frontierfirm, implementation, sovereignprivatecloud, onpremai, localinference, microsoftagentframework]
+featured: false
 toc: true
 ---
 

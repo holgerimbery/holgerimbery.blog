@@ -1,14 +1,15 @@
 ---
-layout: post
-title: "Power Virtual Agents - Create and Edit with Copilot (preview)"
-date: 2023-04-01
-author: admin
-slug: power-virtual-agents-create-and-edit-with-copilot-preview
-tags: [archive]
-image: ./images/archive.jpg
-featured: false
-toc: true
-# 2023-04-01-power-virtual-agents-create-and-edit-with-copilot-preview
+layout: post
+title: "Power Virtual Agents - Create and Edit with Copilot (preview)"
+date: 2023-04-01
+author: admin
+slug: power-virtual-agents-create-and-edit-with-copilot-preview
+canonical_url: https://holgerimbery.blog/power-virtual-agents-create-and-edit-with-copilot-preview
+tags: [archive]
+image: ./images/archive.jpg
+featured: false
+toc: true
+# 2023-04-01-power-virtual-agents-create-and-edit-with-copilot-preview
 
 ---
 

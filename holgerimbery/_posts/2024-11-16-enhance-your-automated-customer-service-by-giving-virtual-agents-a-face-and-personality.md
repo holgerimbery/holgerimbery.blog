@@ -1,14 +1,15 @@
 ---
-layout: post
-title: Enhance Your Automated Customer Service by Giving Virtual Agents a Face and Personality
-description: 
-date: 2024-11-16
-author: admin
-slug: enhance-your-automated-customer-service-by-giving-virtual-agents-a-face-and-personality
-image: ./images/enhance-your-automated-customer-service-by-giving-virtual-agents-a-face-and-personality.png
-tags: [virtualassistant, customerservice]
-featured: false
-toc: true
+layout: post
+title: Enhance Your Automated Customer Service by Giving Virtual Agents a Face and Personality
+description: 
+date: 2024-11-16
+author: admin
+slug: enhance-your-automated-customer-service-by-giving-virtual-agents-a-face-and-personality
+canonical_url: https://holgerimbery.blog/enhance-your-automated-customer-service-by-giving-virtual-agents-a-face-and-personality
+image: ./images/enhance-your-automated-customer-service-by-giving-virtual-agents-a-face-and-personality.png
+tags: [virtualassistant, customerservice]
+featured: false
+toc: true
 
 ---
 
