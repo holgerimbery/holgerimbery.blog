@@ -1,17 +1,18 @@
 ---
-layout: post
-title: Copilot Studio licensing
-description: Microsoft Copilot Studio offers a flexible licensing model built around Copilot Credits, with pay-as-you-go and subscription options to suit different organizational needs. This comprehensive guide explains how credits are consumed, tracked, and managed across various AI agent activities, helping organizations make informed decisions about their Copilot Studio implementation.
-
-date: 2025-09-13
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/igal-ness-9wY2ofzQ9Us-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@igalness?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Igal Ness</a> on <a href="https://unsplash.com/photos/person-holding-fan-of-100-us-dollar-bill-9wY2ofzQ9Us?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
-tags: [copilotstudio]
-author: admin
-slug: copilot-studio-licensing259
+layout: post
+title: Copilot Studio licensing
+description: Microsoft Copilot Studio offers a flexible licensing model built around Copilot Credits, with pay-as-you-go and subscription options to suit different organizational needs. This comprehensive guide explains how credits are consumed, tracked, and managed across various AI agent activities, helping organizations make informed decisions about their Copilot Studio implementation.
+date: 2025-09-13
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/09/igal-ness-9wY2ofzQ9Us-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@igalness?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Igal Ness</a> on <a href="https://unsplash.com/photos/person-holding-fan-of-100-us-dollar-bill-9wY2ofzQ9Us?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+"\r": null
+tags:
+  - agents
+  - copilotstudio
+author: admin
+slug: copilot-studio-licensing259
 canonical_url: https://holgerimbery.blog/copilot-studio-licensing259
-featured: false
+featured: false
 toc: true
 ---
 {: .caution }

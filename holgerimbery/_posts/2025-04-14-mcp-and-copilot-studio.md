@@ -1,17 +1,20 @@
 ---
-layout: post
-title: Use the Model Context Protocol (MCP) with Copilot Studio 
-description: The Model Context Protocol (MCP) is an open protocol designed to standardize how applications provide context to large language models (LLMs). It enables seamless connections to data sources and tools through a client-server architecture, offering features like pre-built integrations, flexibility, security, extensibility, and interoperability.
-
-date: 2025-04-14
-author: admin
-slug: mcp-and-copilot-studio
+layout: post
+title: Use the Model Context Protocol (MCP) with Copilot Studio
+description: The Model Context Protocol (MCP) is an open protocol designed to standardize how applications provide context to large language models (LLMs). It enables seamless connections to data sources and tools through a client-server architecture, offering features like pre-built integrations, flexibility, security, extensibility, and interoperability.
+date: 2025-04-14
+author: admin
+slug: mcp-and-copilot-studio
 canonical_url: https://holgerimbery.blog/mcp-and-copilot-studio
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/04/resume-genius-IESB4iFVuzA-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@resumegenius?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Resume Genius</a> on <a href="https://unsplash.com/photos/a-woman-shaking-hands-with-another-woman-sitting-at-a-table-IESB4iFVuzA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
-tags: [copilotstudio, mcp, modelcontextprotocol, aifoundry]
-featured: false
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/04/resume-genius-IESB4iFVuzA-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@resumegenius?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Resume Genius</a> on <a href="https://unsplash.com/photos/a-woman-shaking-hands-with-another-woman-sitting-at-a-table-IESB4iFVuzA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tags:
+  - agents
+  - aifoundry
+  - copilotstudio
+  - mcp
+  - modelcontextprotocol
+featured: false
 toc: true
 ---
 {: .caution }

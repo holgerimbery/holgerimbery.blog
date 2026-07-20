@@ -1,16 +1,20 @@
 ---
-layout: post
-title: Creating an Agent for Microsoft Copilot Chat Using SharePoint as a Knowledge Source
-description: explore how to create an intelligent agent for Microsoft Copilot Chat using SharePoint as a knowledge source. By leveraging SharePoint's robust document management capabilities, you can enhance information retrieval, automate responses, and improve overall efficiency in your organization.
-date: 2025-03-01
-author: admin
-slug: Creating-an-Agent-for-Microsoft-Copilot-Chat-Using-SharePoint-as-a-Knowledge-Source
+layout: post
+title: Creating an Agent for Microsoft Copilot Chat Using SharePoint as a Knowledge Source
+description: explore how to create an intelligent agent for Microsoft Copilot Chat using SharePoint as a knowledge source. By leveraging SharePoint's robust document management capabilities, you can enhance information retrieval, automate responses, and improve overall efficiency in your organization.
+date: 2025-03-01
+author: admin
+slug: Creating-an-Agent-for-Microsoft-Copilot-Chat-Using-SharePoint-as-a-Knowledge-Source
 canonical_url: https://holgerimbery.blog/Creating-an-Agent-for-Microsoft-Copilot-Chat-Using-SharePoint-as-a-Knowledge-Source
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/patrick-robert-doyle-OvXht_wi5Ew-unsplash.jpg
-image_caption: 'Photo by <a href="https://unsplash.com/@teapowered?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrick Robert Doyle</a> on <a href="https://unsplash.com/photos/interior-building-OvXht_wi5Ew?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
-      
-tags: [copilotstudio, copilotchat, sharepoint, knowledgemanagement]
-featured: false
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/02/patrick-robert-doyle-OvXht_wi5Ew-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@teapowered?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrick Robert Doyle</a> on <a href="https://unsplash.com/photos/interior-building-OvXht_wi5Ew?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tags:
+  - agents
+  - copilotchat
+  - copilotstudio
+  - knowledgemanagement
+  - sharepoint
+featured: false
 toc: true
 ---
 {: .caution }

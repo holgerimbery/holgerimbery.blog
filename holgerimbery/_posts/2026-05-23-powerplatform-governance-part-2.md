@@ -1,17 +1,26 @@
 ---
-layout: post
-title: "Power Platform Governance: A Practitioner's Reference (Part 2)"
-description: "Part 2 of a two-part guide to managing and securing Power Platform environments within Microsoft 365 — Copilot Studio governance, agent authentication, ALM and pipelines, solution checker, licensing, and change management."
-date: 2026-05-23
-author: admin
-slug: powerplatform-governance-part-2
+layout: post
+title: "Power Platform Governance: A Practitioner's Reference (Part 2)"
+description: Part 2 of a two-part guide to managing and securing Power Platform environments within Microsoft 365 — Copilot Studio governance, agent authentication, ALM and pipelines, solution checker, licensing, and change management.
+date: 2026-05-23
+author: admin
+slug: powerplatform-governance-part-2
 canonical_url: https://holgerimbery.blog/powerplatform-governance-part-2
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/charles-forerunner-3fPXt37X6UQ-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@charles_forerunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Forerunner</a> on <a href="https://unsplash.com/photos/people-standing-inside-city-building-3fPXt37X6UQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-
-tags: [copilotstudio, agents, governance, powerplatform, dataverse, security, compliance, applicationlifecyclemanagement, pipelines]
-featured: false
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/charles-forerunner-3fPXt37X6UQ-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@charles_forerunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Forerunner</a> on <a href="https://unsplash.com/photos/people-standing-inside-city-building-3fPXt37X6UQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+"\r": null
+tags:
+  - agent365
+  - agents
+  - applicationlifecyclemanagement
+  - compliance
+  - copilotstudio
+  - dataverse
+  - governance
+  - pipelines
+  - powerplatform
+  - security
+featured: false
 toc: true
 ---
 

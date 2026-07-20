@@ -1,16 +1,19 @@
 ---
-layout: post
-title: Webchat Playground Tool in Copilot Studio Kit - easy customisation of Copilot webchat UI
-description: The Webchat Playground in the Copilot Studio Kit is a practical utility for customising the user interface of agent webchats. It streamlines the design process by offering a visual editor, live preview, and export capabilities. For developers working with Microsoft Copilot Studio, this tool provides a structured and efficient way to align chat interfaces with organisational branding and accessibility standards.
-
-date: 2025-08-31
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/08/dave-sherrill-HjEKj1yMAdQ-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@daveatjude3?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dave Sherrill</a> on <a href="https://unsplash.com/photos/white-and-brown-wooden-bench-near-body-of-water-during-daytime-HjEKj1yMAdQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-tags: [copilotstudio, webchat, copilotstudio-kit]
-author: admin
-slug: copilot-studio-kit-webchat-playground
+layout: post
+title: Webchat Playground Tool in Copilot Studio Kit - easy customisation of Copilot webchat UI
+description: The Webchat Playground in the Copilot Studio Kit is a practical utility for customising the user interface of agent webchats. It streamlines the design process by offering a visual editor, live preview, and export capabilities. For developers working with Microsoft Copilot Studio, this tool provides a structured and efficient way to align chat interfaces with organisational branding and accessibility standards.
+date: 2025-08-31
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/08/dave-sherrill-HjEKj1yMAdQ-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@daveatjude3?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dave Sherrill</a> on <a href="https://unsplash.com/photos/white-and-brown-wooden-bench-near-body-of-water-during-daytime-HjEKj1yMAdQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tags:
+  - agents
+  - copilotstudio
+  - copilotstudio-kit
+  - webchat
+author: admin
+slug: copilot-studio-kit-webchat-playground
 canonical_url: https://holgerimbery.blog/copilot-studio-kit-webchat-playground
-featured: false
+featured: false
 toc: true
 ---
 {: .caution }

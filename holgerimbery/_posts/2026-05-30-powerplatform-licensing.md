@@ -1,18 +1,23 @@
 ---
-layout: post
-title: "Understanding Microsoft Power Platform Licensing: A Practitioner's Reference"
-description: "A practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service."
-date: 2026-05-30
-author: admin
-slug: powerplatform-licensing
+layout: post
+title: "Understanding Microsoft Power Platform Licensing: A Practitioner's Reference"
+description: A practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service.
+date: 2026-05-30
+author: admin
+slug: powerplatform-licensing
 canonical_url: https://holgerimbery.blog/powerplatform-licensing
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/andre-taissin-5OUMf1Mr5pU-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@andretaissin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andre Taissin</a> on <a href="https://unsplash.com/photos/pink-pig-coin-bank-on-brown-wooden-table-5OUMf1Mr5pU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
-
-
-tags: [powerplatform, licensing, copilotstudio, dataverse, dynamics365contactcenter, dynamics365customerservice]
-featured: false
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/05/andre-taissin-5OUMf1Mr5pU-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@andretaissin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andre Taissin</a> on <a href="https://unsplash.com/photos/pink-pig-coin-bank-on-brown-wooden-table-5OUMf1Mr5pU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+"\r": null
+tags:
+  - agents
+  - copilotstudio
+  - dataverse
+  - dynamics365contactcenter
+  - dynamics365customerservice
+  - licensing
+  - powerplatform
+featured: false
 toc: true
 ---
 

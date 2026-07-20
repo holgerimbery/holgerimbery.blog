@@ -1,16 +1,25 @@
 ---
-layout: post
-title: "Ship Copilot Studio Agents with Confidence: Master Automated Testing with the Copilot Studio Kit"
-description: Master automated testing for Copilot Studio agents with the Copilot Studio Kit. Learn Phase-4 testing practices, multi-turn validation, compliance checks, and how to integrate tests into Power Platform pipelines for enterprise-grade deployments.
-date: 2026-01-31 13:35:30 +0100
-author: admin
-slug: ship-copilot-studio-agents-with-confidence-master-automated-testing-with-the-copilot-studio-kit
+layout: post
+title: "Ship Copilot Studio Agents with Confidence: Master Automated Testing with the Copilot Studio Kit"
+description: Master automated testing for Copilot Studio agents with the Copilot Studio Kit. Learn Phase-4 testing practices, multi-turn validation, compliance checks, and how to integrate tests into Power Platform pipelines for enterprise-grade deployments.
+date: 2026-01-31 13:35:30 +0100
+author: admin
+slug: ship-copilot-studio-agents-with-confidence-master-automated-testing-with-the-copilot-studio-kit
 canonical_url: https://holgerimbery.blog/ship-copilot-studio-agents-with-confidence-master-automated-testing-with-the-copilot-studio-kit
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/testalize-me-0jE8ynV4mis-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@testalizeme?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Testalize.me</a> on <a href="https://unsplash.com/photos/green-pink-and-purple-plastic-bottles-0jE8ynV4mis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
-tags: [copilotstudio, powerplatform, agentevaluation, ai, llm, testing, governance, devops, copilotstudio-kit]
-featured: false
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/01/testalize-me-0jE8ynV4mis-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@testalizeme?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Testalize.me</a> on <a href="https://unsplash.com/photos/green-pink-and-purple-plastic-bottles-0jE8ynV4mis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+tags:
+  - agentevaluation
+  - agents
+  - ai
+  - copilotstudio
+  - copilotstudio-kit
+  - devops
+  - governance
+  - llm
+  - powerplatform
+  - testing
+featured: false
 toc: true
 ---
 {: .q-left }

@@ -1,16 +1,21 @@
 ---
-layout: post
-title: Implementing Pay-As-You-Go Payment for Copilot Studio Agents and Agent Flows
-description: This article explores the implementation of a pay-as-you-go (PAYG) payment model for Copilot Studio agents and agent flows, highlighting its economic advantages, practical setup guidance, and monitoring strategies. By adopting the PAYG model, organizations can optimize resource allocation, reduce upfront costs, and maintain operational continuity while leveraging advanced AI capabilities.
-date: 2025-04-26
-author: admin
-slug: pay-as-you-go-payment-copilot-agents-agentflows
+layout: post
+title: Implementing Pay-As-You-Go Payment for Copilot Studio Agents and Agent Flows
+description: This article explores the implementation of a pay-as-you-go (PAYG) payment model for Copilot Studio agents and agent flows, highlighting its economic advantages, practical setup guidance, and monitoring strategies. By adopting the PAYG model, organizations can optimize resource allocation, reduce upfront costs, and maintain operational continuity while leveraging advanced AI capabilities.
+date: 2025-04-26
+author: admin
+slug: pay-as-you-go-payment-copilot-agents-agentflows
 canonical_url: https://holgerimbery.blog/pay-as-you-go-payment-copilot-agents-agentflows
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/04/blake-wisz-q3o_8MteFM0-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@blakewisz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Blake Wisz</a> on <a href="https://unsplash.com/photos/woman-holding-magnetic-card-q3o_8MteFM0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
-tags: [copilotstudio, pay-as-you-go, agentflows, azure, subscription]
-featured: false
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/04/blake-wisz-q3o_8MteFM0-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@blakewisz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Blake Wisz</a> on <a href="https://unsplash.com/photos/woman-holding-magnetic-card-q3o_8MteFM0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tags:
+  - agentflows
+  - agents
+  - azure
+  - copilotstudio
+  - pay-as-you-go
+  - subscription
+featured: false
 toc: true
 ---
 {: .caution }

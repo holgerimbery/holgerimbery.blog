@@ -1,15 +1,18 @@
 ---
-layout: post
-title: Creating Conversational AI with Microsoft Fabric Data Agents and Azure AI Agents
-description: Learn how to build conversational AI applications using Microsoft Fabric Data Agents and Azure AI Agents.
-date: 2025-05-10
-author: admin
-slug: Creating-Conversational-AI-with-Microsoft-Fabric-Data-Agents-and-Azure-AIAgents
+layout: post
+title: Creating Conversational AI with Microsoft Fabric Data Agents and Azure AI Agents
+description: Learn how to build conversational AI applications using Microsoft Fabric Data Agents and Azure AI Agents.
+date: 2025-05-10
+author: admin
+slug: Creating-Conversational-AI-with-Microsoft-Fabric-Data-Agents-and-Azure-AIAgents
 canonical_url: https://holgerimbery.blog/Creating-Conversational-AI-with-Microsoft-Fabric-Data-Agents-and-Azure-AIAgents
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/birmingham-museums-trust-vgTENcD9TvE-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@birminghammuseumstrust?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Birmingham Museums Trust</a> on <a href="https://unsplash.com/photos/grayscale-photo-of-industrial-machine-vgTENcD9TvE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-tags: [fabric, dataagent]
-featured: false
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2025/05/birmingham-museums-trust-vgTENcD9TvE-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@birminghammuseumstrust?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Birmingham Museums Trust</a> on <a href="https://unsplash.com/photos/grayscale-photo-of-industrial-machine-vgTENcD9TvE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+tags:
+  - agents
+  - dataagent
+  - fabric
+featured: false
 toc: true
 ---
 {: .caution }
