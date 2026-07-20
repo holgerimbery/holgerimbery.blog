@@ -1,0 +1,103 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "featuredField": "image",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "string"
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "dateFormat": "yy-MM-dd",
+          "isPublishDate": true
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string"
+        },
+                {
+          "title": "slug",
+          "name": "slug",
+          "default": "{{slug}}",
+          "type": "string"
+        },
+        {
+          "title": "canonical_url",
+          "name": "canonical_url",
+          "default": "https://holgerimbery.blog/{{slug}}",  
+          "type": "string"
+        },
+        {
+          "title": "image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "image_caption",
+          "name": "image_caption",
+          "type": "string"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "featured",
+          "name": "featured",
+          "type": "boolean"
+        },
+        {
+          "title": "toc",
+          "name": "toc",
+          "type": "boolean"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "jekyll",
+  "frontMatter.content.publicFolder": "/images",
+  "frontMatter.preview.host": "http://127.0.0.1:4000",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "drafts",
+      "path": "[[workspace]]/_drafts"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/_posts"
+    },
+    {
+      "path": "[[workspace]]/_pages",
+      "title": "pages"
+    }
+  ],
+  "frontMatter.content.mediaFolders": [
+    {
+      "title": "Images",
+      "path": "images"
+    }
+  ],
+  "frontMatter.website.host": "https://holgerimbery.blog",
+  "frontMatter.content.snippets": {}
+}
