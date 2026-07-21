@@ -102,5 +102,6 @@
   "frontMatter.website.host": "https://holgerimbery.blog",
   "frontMatter.content.snippets": {},
   "frontMatter.dashboard.openOnStart": true,
-  "frontMatter.panel.openOnSupportedFile": true
+  "frontMatter.panel.openOnSupportedFile": true,
+  "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload --future"
 }
