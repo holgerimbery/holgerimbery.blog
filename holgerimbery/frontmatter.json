@@ -98,11 +98,21 @@
     }
   ],
   "frontMatter.website.host": "https://holgerimbery.blog",
-  "frontMatter.content.snippets": {},
+  "frontMatter.content.snippets": {
+    "qleft": {
+      "description": "qleft",
+      "body": [
+        "{: q.left }",
+        "> "
+      ],
+      "fields": [],
+      "isMediaSnippet": true
+    }
+  },
   "frontMatter.dashboard.openOnStart": true,
   "frontMatter.panel.openOnSupportedFile": true,
   "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload --future",
   "frontMatter.extensibility.scripts": [
-  "[[workspace]]/.frontmatter/ui/external.js"
-]
+    "[[workspace]]/.frontmatter/ui/external.js"
+  ]
 }
