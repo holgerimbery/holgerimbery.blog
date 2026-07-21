@@ -32,7 +32,8 @@ The result is a platform that increasingly resembles an *agent engineering envir
 *Figure 1 — The core shift: from predicting every conversation path to describing an agent's capabilities and letting the orchestrator decide how to combine them.*
 
 {: .q-left }
-> **Why read this**: 
+> **Why read this**:
+
 - Read this if you opened Copilot Studio after **Build 2026** and wondered where the familiar tabs, topics, and configuration surfaces went.
 - Read it if you spent the last year designing agents around generative orchestration, child agents, and topic structures, and want to understand Microsoft's new direction.
 - And read it if the phrase **SKILL.md** keeps appearing in discussions about Copilot Studio, GitHub Copilot, Claude, and modern agent architectures — because it is now the same idea in all of them.
@@ -52,7 +53,6 @@ New Copilot Studio:  Design the agent's capabilities.
 
 One important nuance the marketing sometimes blurs: the new agent experience runs **alongside** the classic experience, and the two are **not convertible** in either direction. This is a parallel platform, not an in-place upgrade.
 
-
 ## From conversation design to agent design
 
 For years, Copilot Studio inherited concepts from its chatbot origins. A typical implementation included topics, triggers, branching logic, topic transitions, explicit conversation paths, and deterministic fallback behavior. Designing an agent often meant **predicting every possible user journey**.
@@ -68,7 +68,6 @@ The new model moves responsibility away from hand-authored conversation paths an
 - and what **constraints** it must obey.
 
 The orchestrator determines how these components combine to accomplish the user's objective. This is a different engineering mindset. In the classic model, the maker designs the **dialog**. In the new model, the maker designs the **operating environment** of the agent.
-
 
 ## The new authoring experience
 
@@ -152,7 +151,6 @@ That does not mean deterministic workflows disappear. They remain essential for 
 *Figure 4 — A practical enterprise pattern: an agentic core reasons and adapts, while a deterministic layer (workflows, connected agents, validation) provides the guardrails and executes the controlled steps.*
 
 This is much closer to how modern agent systems are being built across the wider AI ecosystem.
-
 
 ## Skills: the most important new capability
 
@@ -288,7 +286,6 @@ A mature design therefore does not ask, "Should this be a prompt, a tool, or a k
 - External action? → **Tool**
 - Specialist ownership? → **Connected agent**
 
-
 ## The naming trap: two different meanings of "skills"
 
 There is one real source of confusion. Copilot Studio has used the word **skills** before, and the two meanings are unrelated.
@@ -317,7 +314,6 @@ The separation is clean:
 
 That separation makes multi-agent architectures easier to reason about and to govern.
 
-
 ## Memory and Microsoft IQ
 
 Memory adds another dimension. Classic agents required makers to explicitly persist every piece of state that needed to survive a conversation. For **business state**, that is still the right approach: a case status, approval decision, contract value, or onboarding step should live in a durable business system such as **Dataverse**.
@@ -344,7 +340,6 @@ From:  One bot with its own topics and data
 To:    Many agents · shared governance · shared knowledge ·
        shared tools · shared skills · shared protocols
 ```
-
 
 ## Convergence with Microsoft IQ and Microsoft Foundry
 
@@ -397,9 +392,11 @@ The same skill may influence many agents. That makes reuse powerful — but it a
 The rebuild does not mean every classic agent should migrate immediately. A more nuanced approach:
 
 ### For new agents
+
 Start with the new experience where the required capabilities are available. Design around **Skills** (task-specific behavior), **Tools** (actions), **Knowledge** (grounding), **Connected Agents** (delegation), **Memory** (continuity), and **Workflows** (deterministic process control). Remember that agents built here **cannot be converted back** to the classic experience.
 
 ### For existing classic agents
+
 **Do not migrate reflexively.** Classic agents still matter, especially where topic structures are stable, tested, and operationally reliable. Consider migration when:
 
 - the agent needs a significant redesign,
@@ -409,6 +406,7 @@ Start with the new experience where the required capabilities are available. Des
 - or reusable skills would clearly simplify the design.
 
 ### For platform teams
+
 Begin building a **skills strategy** now. Ask:
 
 - Which procedural behaviors are repeated across agents?
@@ -418,7 +416,6 @@ Begin building a **skills strategy** now. Ask:
 - Where should `SKILL.md` files live, and how are they versioned and released?
 
 The earlier this discipline is established, the easier it will be to scale agent development responsibly.
-
 
 ## Choosing between the new experience and classic — a decision guide
 
@@ -511,7 +508,6 @@ For architects, the most important takeaway is not the reduced tab count. It is 
 
 And because it rests on an **open** Agent Skills format shared with Claude and GitHub Copilot, **SKILL.md** may become one of the key building blocks of that transition — not just inside Copilot Studio, but across the industry.
 
-
 ## Sources
 
 - Microsoft Learn — [Agents overview (preview): Microsoft Copilot Studio (new experience)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview)
@@ -530,4 +526,3 @@ And because it rests on an **open** Agent Skills format shared with Claude and G
 - Anthropic — [Agent Skills overview (SKILL.md, YAML frontmatter, progressive disclosure)](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 - GitHub Docs — [Custom skills in the Copilot SDK](https://docs.github.com/en/copilot/how-tos/copilot-sdk/features/skills)
 - Microsoft Build 2026 — [Event dates (June 2–3, 2026)](https://build.microsoft.com/en-US/home)
-

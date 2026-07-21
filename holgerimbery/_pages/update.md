@@ -1,11 +1,18 @@
 ---
 layout: page
 title: Blog Updates
-description: Updates and changes to the blog  
+description: Updates and changes to the blog
 permalink: /updates/
-image: '/images/01.jpg'
-image_caption: 
+image: /images/01.jpg
+image_caption: null
+canonical_url: https://holgerimbery.blog/updates
 ---
+
+## 2026-07-21 - new infrastructure
+The blog has been migrated to a new infrastructure. Moved from Azure Static Web Apps to GitHub Pages. This change was made to improve performance, scalability, and ease of maintenance. The new infrastructure allows for better integration with GitHub's version control system, making it easier to manage content and updates.
+
+## 2026-07-21 - add Frontmatter CMS
+The blog is now supported by Frontmatter CMS, a user-friendly content management system that allows for easy editing
 
 ## 2025-12-12 - multiple authors
 The blog now supports multiple authors. If you are interested in contributing articles or collaborating on content, please reach out to me via the contact form.
