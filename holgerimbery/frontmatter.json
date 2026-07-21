@@ -76,8 +76,6 @@
       ]
     }
   ],
-  "frontMatter.framework.id": "jekyll",
-  "frontMatter.content.publicFolder": "/images",
   "frontMatter.preview.host": "http://127.0.0.1:4000",
   "frontMatter.content.pageFolders": [
     {
@@ -103,5 +101,8 @@
   "frontMatter.content.snippets": {},
   "frontMatter.dashboard.openOnStart": true,
   "frontMatter.panel.openOnSupportedFile": true,
-  "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload --future"
+  "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload --future",
+  "frontMatter.extensibility.scripts": [
+  "[[workspace]]/.frontmatter/ui/external.js"
+]
 }

@@ -17,7 +17,7 @@ tags:
 featured: true
 toc: true
 canonical_url: https://holgerimbery.blog/copilot-studio-reimagined
-image: images/2026/07/declan-sun--OgGD4lSVfs-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/07/declan-sun--OgGD4lSVfs-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@declansun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Declan Sun</a> on <a href="https://unsplash.com/photos/good-design-is-principles-with-colorful-graphic-lines--OgGD4lSVfs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
