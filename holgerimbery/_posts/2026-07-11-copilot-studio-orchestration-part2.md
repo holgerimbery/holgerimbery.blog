@@ -16,7 +16,7 @@ tags:
   - multiagent
   - orchestration
   - scenarios
-  - mc
+  - mcp
 featured: false
 toc: true
 ---
