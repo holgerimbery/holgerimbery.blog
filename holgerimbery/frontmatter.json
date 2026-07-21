@@ -10,6 +10,7 @@
         {
           "title": "layout",
           "name": "layout",
+          "default": "post",
           "type": "string"
         },
         {
@@ -35,7 +36,7 @@
           "name": "author",
           "type": "string"
         },
-                {
+        {
           "title": "slug",
           "name": "slug",
           "default": "{{slug}}",
@@ -44,7 +45,7 @@
         {
           "title": "canonical_url",
           "name": "canonical_url",
-          "default": "https://holgerimbery.blog/{{slug}}",  
+          "default": "https://holgerimbery.blog/{{slug}}",
           "type": "string"
         },
         {
@@ -99,5 +100,7 @@
     }
   ],
   "frontMatter.website.host": "https://holgerimbery.blog",
-  "frontMatter.content.snippets": {}
+  "frontMatter.content.snippets": {},
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.panel.openOnSupportedFile": true
 }
