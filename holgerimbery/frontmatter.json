@@ -98,21 +98,57 @@
     }
   ],
   "frontMatter.website.host": "https://holgerimbery.blog",
-  "frontMatter.content.snippets": {
-    "qleft": {
-      "description": "qleft",
-      "body": [
-        "{: q.left }",
-        "> "
-      ],
-      "fields": [],
-      "isMediaSnippet": true
-    }
-  },
   "frontMatter.dashboard.openOnStart": true,
   "frontMatter.panel.openOnSupportedFile": true,
   "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload --future",
+  "frontMatter.snippets.wrapper.enabled": false,
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/external.js"
-  ]
+  ],
+  "frontMatter.content.snippets": {
+    "Callout": {
+      "description": "Creates a callout box",
+      "body": [
+        "{: .[[type]] }",
+        "[[selection]]"
+      ],
+      "fields": [
+        {
+          "name": "type",
+          "title": "Type",
+          "type": "choice",
+          "choices": [
+            "note",
+            "tip",
+            "important",
+            "warning",
+            "caution"
+          ],
+          "default": "note"
+        },
+        {
+          "name": "selection",
+          "title": "Selection",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
+        }
+      ]
+    }, 
+      "highlightbox": {
+      "description": "Creates a highlighted box with a left border",
+      "body": [
+        "{: .q-left }",
+        "> [[selection]]"
+      ],
+      "fields": [
+        {
+          "name": "selection",
+          "title": "Selection",
+          "type": "string",
+          "default": "FM_SELECTED_TEXT"
+        }
+      ]
+    }
+
+  }
 }

@@ -21,8 +21,10 @@ image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/hol
 image_caption: Photo by <a href="https://unsplash.com/@declansun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Declan Sun</a> on <a href="https://unsplash.com/photos/good-design-is-principles-with-colorful-graphic-lines--OgGD4lSVfs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
+
 {: .q-left }
-> **Summary Lede**: Microsoft's 2026 rebuild of Copilot Studio is far more than a coat of paint. Beneath the reduced tab count and the natural-language authoring surface sits a fundamental shift in how agents are designed, orchestrated, and maintained.
+> **Summary lede** Microsoft&#39;s 2026 rebuild of Copilot Studio is far more than a coat of paint. Beneath the reduced tab count and the natural-language authoring surface sits a fundamental shift in how agents are designed, orchestrated, and maintained.
+
 
 The classic model centered on **topics, triggers, and conversation paths**. The rebuilt experience introduces a **new agentic orchestrator**, reusable **Skills authored in Markdown**, **Memory** as a first-class capability, a redesigned workflow experience, and tighter alignment with **Microsoft IQ** and **Microsoft Foundry** (formerly Azure AI Foundry).
 
@@ -33,7 +35,6 @@ The result is a platform that increasingly resembles an *agent engineering envir
 
 {: .q-left }
 > **Why read this**:
-
 - Read this if you opened Copilot Studio after **Build 2026** and wondered where the familiar tabs, topics, and configuration surfaces went.
 - Read it if you spent the last year designing agents around generative orchestration, child agents, and topic structures, and want to understand Microsoft's new direction.
 - And read it if the phrase **SKILL.md** keeps appearing in discussions about Copilot Studio, GitHub Copilot, Claude, and modern agent architectures — because it is now the same idea in all of them.
@@ -133,8 +134,9 @@ Unlike earlier models that leaned on predefined flows, the new orchestrator beha
 
 This matters because modern enterprise agents rarely operate as simple question-answering bots. They need to **perform work**, **plan**, and decide *when* to retrieve information, call a tool, delegate, or ask for what's missing. The orchestrator is the layer where that decision-making happens.
 
-{: .q-left }
-> **A note on the model.** Copilot Studio's model picker surfaces multiple frontier models (including Claude models). You will see community posts describing the orchestrator as *"powered by Claude,"* but there is **no official orchestrator product name** beyond "the agentic orchestrator," and the model is **selectable** rather than a fixed brand. Treat "powered by Claude" as shorthand for *"Claude models are available,"* not an official label.
+{: .note }
+**A note on the model.** 
+Copilot Studio&#39;s model picker surfaces multiple frontier models (including Claude models). You will see community posts describing the orchestrator as *&quot;powered by Claude,&quot;* but there is **no official orchestrator product name** beyond &quot;the agentic orchestrator,&quot; and the model is **selectable** rather than a fixed brand. Treat &quot;powered by Claude&quot; as shorthand for *&quot;Claude models are available,&quot;* not an official label.
 
 ## Planning instead of branching
 
