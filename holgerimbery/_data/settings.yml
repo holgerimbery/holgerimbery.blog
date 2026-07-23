@@ -1,7 +1,7 @@
 #-------------------------------
 # Site Settings
 title: Holger Imbery - fieldnotes and insights
-description: a blog for those who want to look behind the curtain.
+description: Where Curiosity Meets Practice
 #logo: /images/logov2.png # You can add own logo. For example "/images/logo.png".
 #logo_dark: /images/logo-darkv2.png # You can add own logo for dark mode. For example "/images/logo-dark.png".
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
@@ -55,9 +55,9 @@ cta_button:
 # Hero Settings
 hero:
   enable: true
-  hero_title: Stories, Journeys, and Ideas for the crazy ones.
+  hero_title: Where Curiosity Meets Practice
   hero_description: | 
-    Join me on a journey where every post brings a fresh perspective. This blog is for those who are driven by curiosity and a desire to learn.
+    Notes from the trenches of real projects. What worked, what didn't, and why — no marketing spin.
 
 hero_authors:
   enable: false
@@ -86,7 +86,7 @@ about:
   about_title: Hello, I’m Holger
   about_subtitle: Microsoft MVP & MCT | Low Code Hacker | Copilot, Copilot Studio, Power Platform & Azure Architect
   about_description: |
-    I’m a Microsoft MVP, specializing in agentic AI, autonomous systems, and the Microsoft Power Platform—with a focus on Copilot Studio and Azure AI Services. This blog provides practical insights and real-world approaches to building secure, scalable, and responsible AI solutions. Your feedback is always welcome—let’s start the conversation.
+    I’m a Microsoft MVP, specializing in agentic AI, autonomous systems, and the Microsoft Power Platform — with a focus on Copilot Studio and Azure AI Services. This blog provides practical insights and real-world approaches to building secure, scalable, and responsible AI solutions. Your feedback is always welcome—let’s start the conversation.
   about_image: "/images/01.jpg"
   about_image_alt: Holger Imbery
   about_button_text: Meet me
@@ -112,7 +112,7 @@ mailchimp:
 
 #-------------------------------
 # Footer Settings
-footer_description: Join me on a journey where every post brings a fresh perspective. This blog is for those who are driven by curiosity and a desire to learn.
+# footer_description: Join me on a journey where every post brings a fresh perspective. This blog is for those who are driven by curiosity and a desire to learn.
 
 
 # Social Links

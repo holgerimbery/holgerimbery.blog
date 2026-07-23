@@ -6,19 +6,15 @@ date: 26-08-01
 author: admin
 slug: creating-skills-copilot-studio-agents
 canonical_url: https://holgerimbery.blog/creating-skills-copilot-studio-agents
-image: /images/2026/08/swello-ly8NZU7Nsdg-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/swello-ly8NZU7Nsdg-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@getswello?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Swello</a> on <a href="https://unsplash.com/photos/people-working-on-laptops-with-notebooks-and-notebooks-ly8NZU7Nsdg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
-
 tags:
-    - agents
-    - copilotstudio
-    - microsoftcopilotstudio
-    - skills
-    - skillmd
-    - agentskills
-    - orchestration
-    - behavior-as-code
+  - agents
+  - agentskills
+  - behavior-as-code
+  - copilotstudio
+  - orchestration
+  - skills
 featured: false
 toc: false
 ---
