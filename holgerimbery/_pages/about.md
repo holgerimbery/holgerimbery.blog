@@ -1,26 +1,38 @@
 ---
 layout: page
 title: About Me
-description: I believe that great ideas are born from collaboration, and I am dedicated to fostering a culture of openness and creativity. 
+description: Sharing field notes, lessons learned, and practical perspectives from building AI solutions in the Microsoft ecosystem.
 permalink: /about/
-image: '/images/01.jpg'
-image_caption: 
+image: /images/01.jpg
+image_caption: null
+canonical_url: https://holgerimbery.blog/
+slug: ""
 ---
 
-**Welcome to my personal blog** — a resource dedicated to the Microsoft Power Platform (with a focus on Copilot Studio), Microsoft Azure AI Services, and Microsoft Dynamics 365, along with the background knowledge needed to use these technologies effectively.
-My goal is to make AI concepts and Microsoft technologies easier to understand and apply. Whether you're exploring AI for the first time or looking for practical ways to improve workflows, this blog provides clear guidance and real-world examples.  
-I work as a Principal Architect and Microsoft MVP, focusing on designing and implementing agentic AI systems that support autonomous decision-making and intelligent process automation in enterprise environments. My work centers on creating secure, scalable, and well-governed solutions using Microsoft Azure, Power Platform, and Copilot Studio. This includes building autonomous agents, cognitive services, and conversational AI systems that integrate into existing business processes. I also have experience delivering RPA solutions with Power Automate that improve efficiency and reduce costs.  
-In addition to solution design, I lead adoption programs and technical workshops, such as "Agent in a Day", to help teams understand and implement AI-driven workflows.    
-I also work to align technical architectures with organizational goals and ensure responsible AI practices are followed.  
 
-Technical areas I focus on include:  
-Copilot Studio for agentic workflows and autonomous (multi- ) agent systems  
-Power Automate,  Power Apps  
-Azure Functions, Logic Apps, API Management  
-Azure Cognitive Services (Language, Speech, Vision)  
-Azure DevOps & GitHub for agile delivery  
+**Welcome to my blog** — a place to share insights, experiences, and lessons learned from building AI solutions in the Microsoft ecosystem.
 
-This blog reflects my experience and interest in building intelligent systems that are practical, secure, and aligned with business needs. I aim to share insights and approaches that help others make informed decisions about AI and Microsoft technologies.
+I’m a Microsoft MVP, Principal Architect, and technology enthusiast focused on agentic AI, intelligent agents, and enterprise AI solutions. Using Microsoft Copilot Studio, Azure AI Foundry, the Power Platform, and Azure services, I work with organizations to design and implement AI systems that are practical, secure, scalable, and aligned with business goals.
+
+This blog is a collection of field notes from that journey. You'll find architectural patterns, implementation approaches, technology deep dives, lessons learned, and observations from real-world projects. My goal is not to provide definitive answers, but to share experiences that can help others navigate the rapidly evolving AI landscape.
+
+Topics frequently covered include:
+
+- Microsoft Copilot Studio
+- Azure AI Foundry
+- Agentic AI and Multi-Agent Systems
+- Power Platform
+- Enterprise AI Architecture
+- AI Governance and Responsible AI
+- Automation and Process Transformation
+- Azure Integration Services
+
+I have always believed that our industry advances fastest when knowledge is shared openly. Many of the insights I have gained come from conversations within the Microsoft community, customers, partners, colleagues, and fellow practitioners. This blog is my way of contributing back to that community.
+
+Whether you're exploring AI for the first time, experimenting with intelligent agents, or designing enterprise-scale AI solutions, I hope you'll find something useful here.
+
+I welcome feedback, alternative perspectives, and discussions. The best ideas are often refined through conversation.
+
 
 {: .q-left }
 > Please be aware that the information in my articles may become outdated over time due to ongoing technological advancements. Could you consider them current as of the date of publication?
