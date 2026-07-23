@@ -35,6 +35,9 @@ This article is a build guide. It walks through what a Skill is, how to write a 
 
 A Skill is a **reusable capability that extends what your agent can do** by teaching it *how* to approach a class of tasks. It is defined by three things: a **name**, a **description**, and **Markdown instructions**.
 
+![Where a Skill fits in an agent: Knowledge, Tools and Skills as three roles the orchestrator combines](images/2026/08/fig1-where-a-skill-fits.png)
+*Figure 1 — Where a Skill fits. Knowledge supplies facts, Tools perform actions, and a Skill carries the situational know-how for *how* to do a task; the orchestrator combines them for each request.*
+
 The cleanest way to place it is against the other components you assemble inside an agent:
 
 - Unlike a **tool**, a Skill does **not** connect to an external service.
@@ -92,6 +95,9 @@ Review a solution architecture and identify risks, gaps, and recommendations.
 - Prefer enterprise platform standards where applicable.
 ```
 
+![Anatomy of a SKILL.md file: YAML front matter as routing metadata, Markdown body as behavior](images/2026/08/fig2-skillmd-anatomy.png)
+*Figure 2 — Anatomy of a `SKILL.md`. The YAML front matter (name + description) is routing metadata the runtime reads to decide **when** the Skill applies; the Markdown body is the behavior, loaded only when the Skill activates.*
+
 **Naming rules.** Use only lowercase letters, numbers, and hyphens; don't start or end the name with a hyphen (e.g. `customer-support-escalation`). Pick a descriptive, kebab-case name — when you download a Skill, the file is named after it, so a clean name doubles as a clean filename. In the wider open format, the practical limits are a **name of ≤64 characters** and a **description of ≤1024 characters**.
 
 **The description is the load-bearing field.** It is **routing metadata for the runtime, not a human-facing comment.** The orchestrator reads it to decide whether the Skill is relevant to a request. A vague description ("Helps with architecture") produces unpredictable activation; a precise one — stating *what* the Skill does *and when to use it (and when not to)* — helps the orchestrator pick the right capability at the right moment.
@@ -120,6 +126,9 @@ Two things about the "code" part are worth being precise about:
 ## How the orchestrator finds and runs your Skill
 
 You don't "call" a Skill directly. The orchestrator **selects** it — based on its name and description — when the conversation matches, then follows its instructions step by step, including reaching for the right tool at the right moment.
+
+![Progressive disclosure: only skill metadata stays in context; full instructions load on a matching prompt](images/2026/08/fig3-progressive-disclosure.png)
+*Figure 3 — Progressive disclosure. Only names and descriptions sit in context by default; when a prompt matches, the orchestrator loads that one Skill's full instructions (and any bundled scripts or resources), then the agent acts on its general instructions plus the Skill plus the knowledge and tools it needs.*
 
 This works because Copilot Studio registers knowledge, tools, and Skills the same way: **only their metadata — names and descriptions — sits in context by default**, and the full content is pulled in **on demand** when a prompt matches. (The agent's own top-level instructions are the exception: they are always loaded in full.) This pattern is often called **progressive disclosure** or **dynamic loading**, and it is what keeps large agents manageable.
 
@@ -268,6 +277,9 @@ From the **Build** tab, the **Skills** section lists every Skill on the agent. F
 
 Two decisions come up constantly.
 
+![Decision flow: can the agent infer it? is it always true? leave it, put it in instructions, or make it a Skill](images/2026/08/fig4-decision-instruction-skill-agent.png)
+*Figure 4 — Where a piece of guidance belongs. If the agent can infer it from a good tool or knowledge description, leave it out; if it's true in every conversation, put it in instructions; if it's situational, make it a Skill.*
+
 **Instruction, or a Skill?** By the time you're weighing this, one thing is settled: there's something the agent can't infer on its own. The only question is *where it goes*.
 
 ```text
@@ -289,6 +301,9 @@ Tone, the agent's role, and always-on guardrails are valid 100% of the time — 
 ## The naming trap: this is NOT a Bot Framework skill
 
 This is the distinction to keep clean. Copilot Studio has used the word **skill** before, and the two meanings are **unrelated**.
+
+![Two different things called Skill: the new SKILL.md skill versus the legacy Bot Framework skill](images/2026/08/fig5-naming-trap-new-vs-legacy.png)
+*Figure 5 — The naming trap. The new Markdown `SKILL.md` skill and the legacy Bot Framework skill share only a name — different format, runtime, and invocation. In this guide, "Skill" always means the new format.*
 
 | Term | Legacy (classic) meaning | New-experience meaning |
 |---|---|---|
