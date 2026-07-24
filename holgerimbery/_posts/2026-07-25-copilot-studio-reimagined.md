@@ -265,7 +265,7 @@ That means the same anatomy now appears across vendors:
 The strategic implication is large. For the first time, a piece of *behavior* — not code, not a model, but the procedural know-how of how your organization does something — can be **written once and run across multiple agent runtimes.** Skills become portable enterprise assets in the same way that container images or OpenAPI specs are.
 
 {: .q-left }
-> **Reality check.** Convergence is real, but maturity varies. Visual Studio 2026 ships built-in Microsoft skills but keeps them **off by default** while it measures whether their token cost is justified — a reminder that "portable" does not mean "free," and that every skill you load has a context-window and cost footprint worth evaluating.
+> **Reality check.** Convergence is real, but maturity varies. Visual Studio 2026 ships built-in Microsoft skills but keeps them **off by default** while it measures whether their token cost is justified — a reminder that "portable" does not mean "free," and that every skill you load has a context window and cost footprint worth evaluating.
 
 ## Skills versus tools versus knowledge
 
