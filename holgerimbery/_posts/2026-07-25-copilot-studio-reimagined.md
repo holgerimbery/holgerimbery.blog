@@ -136,7 +136,7 @@ This matters because modern enterprise agents rarely operate as simple question-
 
 {: .note }
 **A note on the model.** 
-Copilot Studio&#39;s model picker surfaces multiple frontier models (including Claude models). You will see community posts describing the orchestrator as *&quot;powered by Claude,&quot;* but there is **no official orchestrator product name** beyond &quot;the agentic orchestrator,&quot; and the model is **selectable** rather than a fixed brand. Treat &quot;powered by Claude&quot; as shorthand for *&quot;Claude models are available,&quot;* not an official label.
+Copilot Studio's model picker surfaces multiple frontier models (including Claude models). You will see community posts describing the orchestrator as *powered by Claude* but there is **no official orchestrator product name** beyond "the agentic orchestrator", and the model is **selectable** rather than a fixed brand. Treat "powered by Claude" as shorthand for *Claude models are available* not as an official label.
 
 ## Planning instead of branching
 
