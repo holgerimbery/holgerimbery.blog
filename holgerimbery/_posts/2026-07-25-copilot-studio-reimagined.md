@@ -23,7 +23,7 @@ image_caption: Photo by <a href="https://unsplash.com/@declansun?utm_source=unsp
 
 
 {: .q-left }
-> **Summary lede** Microsoft&#39;s 2026 rebuild of Copilot Studio is far more than a coat of paint. Beneath the reduced tab count and the natural-language authoring surface sits a fundamental shift in how agents are designed, orchestrated, and maintained.
+> **Summary lede** Microsoft's 2026 rebuild of Copilot Studio is far more than a coat of paint. Beneath the reduced tab count and the natural-language authoring surface sits a fundamental shift in how agents are designed, orchestrated, and maintained.
 
 
 The classic model centered on **topics, triggers, and conversation paths**. The rebuilt experience introduces a **new agentic orchestrator**, reusable **Skills authored in Markdown**, **Memory** as a first-class capability, a redesigned workflow experience, and tighter alignment with **Microsoft IQ** and **Microsoft Foundry** (formerly Azure AI Foundry).
@@ -52,6 +52,7 @@ Old Copilot Studio:  Design the conversation.
 New Copilot Studio:  Design the agent's capabilities.
 ```
 
+{: .important }
 One important nuance the marketing sometimes blurs: the new agent experience runs **alongside** the classic experience, and the two are **not convertible** in either direction. This is a parallel platform, not an in-place upgrade.
 
 ## From conversation design to agent design
