@@ -74,9 +74,9 @@ blog:
 #-------------------------------
 # Recommended Section Settings
 recommended:
-  enable: false
+  enable: true
   recommended_title: Recommended
-  recommended_tag: "CopilotStudio"
+  recommended_tag: "recommended"
 
 
 #-------------------------------
