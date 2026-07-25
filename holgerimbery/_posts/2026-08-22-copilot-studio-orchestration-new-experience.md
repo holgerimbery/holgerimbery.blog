@@ -6,7 +6,7 @@ date: 2026-08-22
 author: admin
 slug: copilot-studio-orchestration-new-experience
 canonical_url: https://holgerimbery.blog/copilot-studio-orchestration-new-experience
-image: /images/2026/08/nasik-lababan-pKbePv-7V10-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/nasik-lababan-pKbePv-7V10-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@nasik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nasik Lababan</a> on <a href="https://unsplash.com/photos/people-work-at-computers-under-a-decorative-shelf-pKbePv-7V10?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
   - agents

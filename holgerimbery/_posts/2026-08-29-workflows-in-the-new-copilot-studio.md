@@ -6,7 +6,7 @@ date: 2026-08-29
 author: admin
 slug: copilot-studio-workflows-new-experience
 canonical_url: https://holgerimbery.blog/copilot-studio-workflows-new-experience
-image: /images/2026/08/c-shi-4L-XZM-Arqg-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/c-shi-4L-XZM-Arqg-unsplash.jpg
 image_caption: "Photo by <a href=\"https://unsplash.com/@sunnymoth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">C. Shi</a> on <a href=\"https://unsplash.com/photos/messy-workspace-with-desk-papers-lamps-and-photos-on-wall-4L-XZM-Arqg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>
 
     \ "
