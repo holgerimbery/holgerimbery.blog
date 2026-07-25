@@ -2,8 +2,8 @@
 # Site Settings
 title: Holger Imbery - fieldnotes and insights
 description: Where Curiosity Meets Practice
-logo: /images/fieldnotes-insights-wordmark-light.png # You can add own logo. For example "/images/logo.png".
-logo_dark: /images/fieldnotes-insights-wordmark-dark.png # You can add own logo for dark mode. For example "/images/logo-dark.png".
+#logo: /images/fieldnotes-insights-wordmark-light.png # You can add own logo. For example "/images/logo.png".
+#logo_dark: /images/fieldnotes-insights-wordmark-dark.png # You can add own logo for dark mode. For example "/images/logo-dark.png".
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
