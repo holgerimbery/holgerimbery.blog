@@ -18,7 +18,7 @@ tags:
   - orchestration
   - skills
   - workiq
-featured: true
+featured: false
 toc: true
 ---
 
