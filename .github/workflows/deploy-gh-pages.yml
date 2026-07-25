@@ -4,7 +4,12 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+  schedule:
+    - cron: '0 4 * * *'
 
 # Grant the GITHUB_TOKEN permissions needed by the deploy job
 permissions:
