@@ -133,8 +133,8 @@
           "default": "FM_SELECTED_TEXT"
         }
       ]
-    }, 
-      "highlightbox": {
+    },
+    "highlightbox": {
       "description": "Creates a highlighted box with a left border",
       "body": [
         "{: .q-left }",
@@ -149,6 +149,7 @@
         }
       ]
     }
-
-  }
+  },
+  "frontMatter.git.enabled": true,
+  "frontMatter.git.commitMessage": "Synced by Front Matter {{hour24}}:{{minute}}"
 }
