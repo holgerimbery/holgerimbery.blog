@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Copilot Studio Reimagined: The New Agent Experience, the Agentic Orchestrator, and the SKILL.md Revolution"
-description: A deep dive into the rebuilt Copilot Studio — its natural-language authoring surface, the new agentic orchestrator, Memory, Microsoft IQ, and the rise of SKILL.md as an open, behavior-as-code pattern for enterprise agents. Fact-checked against Microsoft Learn and Build 2026.
+description: A deep dive into the rebuilt Copilot Studio — its natural-language authoring surface, the new agentic orchestrator, Memory, Microsoft IQ, and the rise of SKILL.md as an open, behavior-as-code pattern for enterprise agents.
 date: 2026-07-25
 author: admin
 slug: copilot-studio-reimagined
