@@ -17,7 +17,7 @@ tags:
   - dynamics365customerservice
   - licensing
   - powerplatform
-  - recomended
+  - recommended
 featured: false
 toc: false
 ---
