@@ -5,7 +5,7 @@ description: A living, frequently-updated field guide to Microsoft Copilot Cowor
 date: 26-08-15
 author: admin
 slug: cowork-field-guide
-image: /images/2026/08/bluestonex-4uIRzJYYaOE-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/bluestonex-4uIRzJYYaOE-unsplash.jpg
 featured: true
 toc: true
 image_caption: "Photo by <a href=\"https://unsplash.com/@bluestonex_apphaus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Bluestonex</a> on <a href=\"https://unsplash.com/photos/two-men-working-on-laptops-in-a-modern-office-4uIRzJYYaOE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>
@@ -16,6 +16,7 @@ tags:
   - cowork
   - governance
   - microsoft365copilot
+  - recommended
 ---
 
 {: .q-left }
@@ -53,11 +54,12 @@ Most people have spent the last two years using AI to **assist** with work — d
 
 Technically, Cowork is a cloud-hosted **agentic orchestration layer** embedded in your Microsoft 365 tenant and running inside Microsoft 365 Copilot. You describe a task in plain language; Cowork creates a plan, reasons across your calendar, email, files, and Teams content via Microsoft's Work IQ layer, and produces a finished result. Progress is visible at every step, and you can pause, resume, or cancel at any time.
 
+{: .q-left }
 > **The one-line mental model.** Cowork is the first Microsoft AI surface where the unit of output is a **finished task**, not a generated paragraph. Brief it well, approve carefully, audit honestly.
 
 ## Status, licensing & availability
 
-> **What changed since spring 2026.** **Copilot Cowork reached general availability worldwide on 16 June 2026**, after roughly three months in the Frontier preview. It is no longer preview-only. Any older guidance that calls it "Frontier opt-in only" is now out of date.
+**What changed since spring 2026.** **Copilot Cowork reached general availability worldwide on 16 June 2026**, after roughly three months in the Frontier preview. It is no longer preview-only. Any older guidance that calls it "Frontier opt-in only" is now out of date.
 
 ### How you get it
 
@@ -72,7 +74,8 @@ Technically, Cowork is a cloud-hosted **agentic orchestration layer** embedded i
 - **Desktop** — the Microsoft 365 Copilot app for Windows and Mac
 - **Mobile** — the Microsoft 365 Copilot app for iPhone and Android *(new since the spring articles, which said mobile was unsupported)*
 
-> **Acts on vs. runs on.** Cowork **acts on** Outlook and Teams — it sends mail and posts messages — but you **launch** it from the Microsoft 365 Copilot app, not as a standalone add-in inside Teams or Outlook. If earlier notes said Cowork "runs in Teams and Outlook," read that as "acts on."
+{: .q-left }
+> **Acts on vs. runs on.** Cowork **acts on** Outlook and Teams — it sends mail and posts messages — but you **launch** it from the Microsoft 365 Copilot app, not as a standalone add-in inside Teams or Outlook. If earlier notes said Cowork &quot;runs in Teams and Outlook,&quot; read that as &quot;acts on.&quot;
 
 ### The models under the hood
 
@@ -90,6 +93,7 @@ Enabling Cowork is a short, deliberate sequence. The most common rollout snag is
 5. **Pre-decide governance.** Sensitivity labels and DLP policies that should apply before broad rollout; your approved-use matrix; and SIEM telemetry.
 6. **Open Cowork.** Users go to `m365.cloud.microsoft`, the desktop app, or the mobile app and select Cowork.
 
+{: .q-left }
 > **First-run experience.** Users see a chat input, a side panel for files, suggested prompts (*Catch me up*, *Organize my inbox*, *Prep for a meeting*), a **Tasks** view in the navigation, and an output panel where generated files land.
 
 **Turning it off for specific users.** Scope access through the security groups you used to grant it, or manage availability through Copilot settings in the admin center. Access is group-based and reversible — you stay in control of who has it.
@@ -103,7 +107,8 @@ Cowork uses Anthropic Claude models as part of its multi-model engine. For most 
 - **One arrangement, not two.** An earlier "independent processor" route was decommissioned on 1 May 2026. Today, Anthropic access runs through the single subprocessor model.
 - **Multi-model quality.** Pairing a drafting model with a reviewing model from a different provider is the same idea behind the Researcher agent's Critique capability (§12) — different models checking each other's work.
 
-> **A date to verify before you quote it.** Some earlier write-ups cite a specific DPA effective date of *7 January 2026*. That exact date is **not confirmed in a primary Microsoft source** at the time of writing. The subprocessor relationship and the Product-Terms/DPA framing are well documented; treat the precise date as "verify against the Microsoft Product Terms revision history" before repeating it externally.
+{: .q-left }
+> **A date to verify before you quote it.** Some earlier write-ups cite a specific DPA effective date of *7 January 2026*. That exact date is **not confirmed in a primary Microsoft source** at the time of writing. The subprocessor relationship and the Product-Terms&#x2F;DPA framing are well documented; treat the precise date as &quot;verify against the Microsoft Product Terms revision history&quot; before repeating it externally.
 
 
 ## EU Data Boundary & Anthropic — enabling with confidence
@@ -134,7 +139,8 @@ Rather than leaving capability on the table, treat enablement as a **governed pr
 5. **Turn on telemetry.** Capture model ID, provider, user identity, and document sources in your SIEM so every Cowork session is auditable. Cowork actions are auditable by design within the tenant; validate your SIEM coverage during the ramp.
 6. **Roll out in rings.** Pilot with an informed group, gather feedback, then expand. The opt-in is reversible and group-scoped — you stay in control at every stage.
 
-> **The framing that works.** The Anthropic toggle is a **contractual and governance decision, not a technical one**. Handle the six steps above and you can say "yes" to Cowork with a clear compliance story — enabling the productivity gain deliberately, for the right people, with a full audit trail.
+{: .q-left }
+> **The framing that works.** The Anthropic toggle is a **contractual and governance decision, not a technical one**. Handle the six steps above and you can say &quot;yes&quot; to Cowork with a clear compliance story — enabling the productivity gain deliberately, for the right people, with a full audit trail.
 
 ### Notes & nuances for European admins
 
@@ -142,7 +148,8 @@ Rather than leaving capability on the table, treat enablement as a **governed pr
 
 > **New EU app-level model setting (3 April 2026).** A distinct admin setting, "Copilot in M365 apps with Anthropic models in EU/EFTA and UK," lets Anthropic be the default model for Copilot in Word, Excel, and PowerPoint. It is on by default only for tenants created after 25 March 2026; older tenants should check the Message Center. It still routes data outside the EU Data Boundary — so fold it into the same governance story above.
 
-> **Government cloud update (22 July 2026).** Non-federal customers in Government Community Cloud (GCC) can now enable Anthropic models — processed **outside** Microsoft's FedRAMP-authorized US Government cloud, and off by default. GCC High and DoD remain excluded, with no toggle shown.
+{: .q-left }
+> **Government cloud update (22 July 2026).** Non-federal customers in Government Community Cloud (GCC) can now enable Anthropic models — processed **outside** Microsoft&#39;s FedRAMP-authorized US Government cloud, and off by default. GCC High and DoD remain excluded, with no toggle shown.
 
 ## The 13 built-in skills
 
@@ -200,7 +207,8 @@ Produce a Word document titled "Weekly Report — [date range]" and save it to
 /Documents/Reports/Weekly/. Cap each section at 6 bullets; use a direct tone.
 ```
 
-> **Why the description matters most.** Cowork uses the `description` field to decide when to invoke a skill. A vague description ("helps with reports") is ignored or misused; a specific one ("Use when I ask for my weekly report or 'wrap up the week'") triggers reliably. Write the trigger phrase into the description.
+{: .q-left }
+> **Why the description matters most.** Cowork uses the &#x60;description&#x60; field to decide when to invoke a skill. A vague description (&quot;helps with reports&quot;) is ignored or misused; a specific one (&quot;Use when I ask for my weekly report or &#39;wrap up the week&#39;&quot;) triggers reliably. Write the trigger phrase into the description.
 
 **The standard behind it.** `SKILL.md` is the open **Agent Skills standard**, originally developed by Anthropic and adopted broadly — the same format supported by Claude Code, VS Code Copilot, Gemini CLI, Cursor, JetBrains Junie, and 30+ other AI tools. Examples live at [github.com/anthropics/skills](https://github.com/anthropics/skills) and the spec at [agentskills.io](https://agentskills.io/home).
 
@@ -217,33 +225,33 @@ Skills shine when you brief an **outcome** and let Cowork compose the steps. A f
 
 ### Email
 
-> *"Read my unread emails from the past 24 hours. Group them by project. For anything from marketing about the spring campaign, draft a reply summarising the latest results from the attached CSV and propose a 30-minute review next Tuesday between 10 and 12. Show me each draft before sending."*
+*&quot;Read my unread emails from the past 24 hours. Group them by project. For anything from marketing about the spring campaign, draft a reply summarising the latest results from the attached CSV and propose a 30-minute review next Tuesday between 10 and 12. Show me each draft before sending.&quot;*
 
 Cowork triages, drafts grounded in the thread plus attachments, and prompts before each send. *"Catch me up on the Acme account"* quietly composes Email + Enterprise Search + Meetings into a single narrative brief.
 
 ### Scheduling & Calendar Management
 
-> *"Find 30 minutes next week with Sarah, Tom, and me. Avoid Mondays. Book a room if available, send the invite 'Spring campaign review' with an agenda I'll dictate, and propose two backup times."*
+*"Find 30 minutes next week with Sarah, Tom, and me. Avoid Mondays. Book a room if available, send the invite 'Spring campaign review' with an agenda I'll dictate, and propose two backup times."*
 
-> *"Review next week's calendar. Flag back-to-backs longer than 3 hours, identify meetings without a clear agenda, and propose declines for anything I'm only optional on. Show me the proposals before acting."*
+*"Review next week's calendar. Flag back-to-backs longer than 3 hours, identify meetings without a clear agenda, and propose declines for anything I'm only optional on. Show me the proposals before acting."*
 
 Use **Scheduling** for forward motion and **Calendar Management** for hygiene. Both respond better to explicit constraints. Private events are respected and never surfaced.
 
 ### Meetings & Daily Briefing
 
-> *"Prepare me for Monday's quarterly review with the CISO. Pull her last month of meetings with my team, open action items from those notes in Teams, and status updates sent via email. Produce a one-page briefing I can share 24 hours in advance."*
+*"Prepare me for Monday's quarterly review with the CISO. Pull her last month of meetings with my team, open action items from those notes in Teams, and status updates sent via email. Produce a one-page briefing I can share 24 hours in advance."*
 
 Daily Briefing is the canonical **scheduled prompt**: *"Every weekday at 7:00 AM, run my morning briefing and save it to /Documents/Briefings/."* It is the easiest automation to set up and the one with the largest compounding return.
 
 ### Documents (Word, Excel, PowerPoint, PDF)
 
-> *"Draft a 2-page board memo on Q1 results. Use the attached financial summary and the previous board memo as references. Direct tone, no jargon. Save to /Documents/Board/."*
+*"Draft a 2-page board memo on Q1 results. Use the attached financial summary and the previous board memo as references. Direct tone, no jargon. Save to /Documents/Board/."*
 
 Document skills generate finished files — not just inline content — and write them into OneDrive/SharePoint. They appear in the side panel during the conversation and persist afterward; use **Download All** to grab a session's outputs as a zip. Cross-skill chains are common: *"build the deck, save it to OneDrive, and post a link in #leadership"* invokes three skills, with each external action approved separately.
 
 ### Enterprise Search & Deep Research
 
-> *"Run a competitive analysis of our top three competitors using the product team's research files and the industry reports in /SharePoint/Industry. Produce a Word document with an executive summary and an Excel comparison matrix. Flag capability gaps. Use Critique."*
+*"Run a competitive analysis of our top three competitors using the product team's research files and the industry reports in /SharePoint/Industry. Produce a Word document with an executive summary and an Excel comparison matrix. Flag capability gaps. Use Critique."*
 
 **Enterprise Search** is the broad sweep across mail, calendar, files, Teams, OneNote, and SharePoint — answers with citations, bounded strictly by your existing permissions. **Deep Research** is the multi-step synthesis, optionally routed through the Researcher agent's Critique capability (§12). Treat citations as the audit trail for anything you share externally.
 
@@ -284,6 +292,7 @@ Output quality is largely a function of context. A vague prompt against an empty
 - **Context pack for recurring work.** For a weekly report, assemble last period's deliverable, a definitions file, and the data source. Attach the whole folder for consistent output across cycles.
 - **Source-of-truth pinning.** *"Only state facts from the attached document. Flag anything I need to verify separately."* This constrains hallucination risk significantly.
 
+{: .q-left }
 > **Rules to remember.** Each attachment must be under **200 MB**. Prompts can run up to **250,000 characters**. Files must live in OneDrive, SharePoint, or Teams — no local-drive access. Cowork **cannot read encrypted files**, even ones you can open. Work IQ grounds Cowork automatically and permission-bound across your M365 graph; explicit attachments are per-task and not re-read in later conversations — reattach or reference the path to reuse.
 
 ## Limits & known constraints
@@ -305,6 +314,7 @@ Knowing the boundaries is what makes a rollout credible. Lead with these in your
 - Use is limited to Anthropic-supported countries and regions.
 - Cowork actions are auditable by design within the tenant — but validate your specific SIEM/Compliance coverage during the ramp before relying on it for regulatory evidence.
 
+{: .q-left }
 > **The trade-off, stated honestly.** Cowork exchanges some autonomy and breadth for the certainty that AI-driven actions stay within an **auditable, policy-governed, compliance-covered** infrastructure. For most regulated enterprises, that trade is the whole point.
 
 **Things that change quickly — re-check monthly:** the skill list and custom-skill cap · regional availability and EU/GCC settings · the model lineup and billing · the plugin catalogue and compliance-surface coverage (DLP was "coming soon" at GA).
@@ -320,7 +330,8 @@ Cowork is one feature inside a larger shift toward governed, multi-agent enterpr
 
 **Researcher with Critique.** The Researcher agent's Critique capability pairs one model's draft with a second model from a different provider that reviews for accuracy, completeness, and citation integrity. Microsoft reports a **DRACO benchmark score of 57.4 — a ~13.8% improvement over single-model approaches**.
 
-> **Read the benchmark carefully.** The 57.4 / 13.8% figures are **Microsoft's own evaluation and are not independently verified**; the baseline is described slightly differently across Microsoft's materials. Quote it as "Microsoft-reported," not as a settled external result.
+{: .q-left }
+> **Read the benchmark carefully.** The 57.4 &#x2F; 13.8% figures are **Microsoft&#39;s own evaluation and are not independently verified**; the baseline is described slightly differently across Microsoft&#39;s materials. Quote it as &quot;Microsoft-reported,&quot; not as a settled external result.
 
 **Plugins & extensibility.** At GA, Cowork opened to partner **plugins** — nine live at launch (including Harvey, Miro, monday.com, Moody's, Morningstar, and S&P Global Energy) with more announced, plus Microsoft Fabric and Dynamics 365 integrations. Plugins are how third-party tools reach Cowork, built on the same Agent Skills standard as your custom `SKILL.md` files. Start a team `SKILL.md` library in OneDrive now; when organizational skill-sharing matures, you'll have curated content ready.
 
@@ -341,6 +352,7 @@ Cowork is one feature inside a larger shift toward governed, multi-agent enterpr
 - [ ] Pilot one document workflow with grounding attachments end-to-end.
 - [ ] Use the Tasks view as your audit trail; approve external actions deliberately.
 
+{: .q-left }
 > **Takeaway.** Start small. Build one custom skill. Run one scheduled briefing for two weeks. Pilot one document workflow with one team. Compound from there. Cowork rewards organizations that show up with real use cases — and, in Europe, those that **enable it thoughtfully rather than leave it on the shelf**.
 
 ## Conclusion

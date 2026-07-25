@@ -4,10 +4,10 @@ title: Cost optimization for agentic systems
 description: Agentic AI removes the human from most of the loop, and with it, the natural ceiling on spend. One request can trigger planning, multiple model calls, retrieval, tool actions, retries, and sub-agents, all within seconds and often before any dashboard reacts. This article explains how to measure, allocate, and govern the full cost of agent workflows — not just the headline token line — and tie that cost to measurable business outcomes.
 author: admin
 slug: cost-optimization-for-agentic-systems
-image: /images/2026/08/spoton-v1Csmlztqiw-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/spoton-v1Csmlztqiw-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@spotonpos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">SpotOn</a> on <a href="https://unsplash.com/photos/man-paying-with-credit-card-at-a-terminal-v1Csmlztqiw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 featured: true
-toc: false
+toc: true
 tags:
     - agenticai
     - billing
