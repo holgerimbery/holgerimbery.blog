@@ -24,6 +24,10 @@ date: 26-08-07
 {: .q-left }
 > **Why read this:** It shows how to measure the full cost of agent workflows, map that spend to Microsoft’s three agent surfaces, and put practical controls in place before the bill gets away from you.
 
+![Agent FinOps — keeping autonomy on a budget](/images/2026/08/agent-finops-hero.png)
+
+*Figure 1 — Agent FinOps: keeping autonomy on a budget. © Holger Imbery · holgerimbery.blog*
+
 ## Why "Agent FinOps," and why now
 
 For a decade, cloud FinOps gave finance and engineering a shared language for variable spend: tag it, allocate it, optimize it. Generative AI stretched that language with token-based pricing, but the bill was still tied to a human prompt and a single response. **Agentic AI removes the human from most of the loop** — and with it, the natural ceiling on spend. One request can trigger planning, multiple model calls, retrieval, tool actions, retries, and sub-agents, all within seconds and often before any dashboard reacts.
@@ -35,6 +39,10 @@ The consequences are already concrete. Reporting this year cites organizations t
 **Agent FinOps** is the response: the discipline of measuring, allocating, and governing the **full** cost of agent workflows — not just the headline token line — and tying that cost to measurable business outcomes. On the Microsoft stack, that discipline has to span three very different meters.
 
 ## Why agent costs behave differently
+
+![The real cost is below the surface](/images/2026/08/hidden-costs-iceberg.png)
+
+*Figure 2 — The real cost is below the surface. © Holger Imbery · holgerimbery.blog*
 
 The mistake most teams make is budgeting for the visible inference line and nothing else. Enterprise cost audits consistently find that the raw token figure sits **40–60% below the actual cost** of an agentic workload once the surrounding machinery is counted. Four cost centers do the hiding:
 
@@ -48,6 +56,10 @@ The mistake most teams make is budgeting for the visible inference line and noth
 The implication reframes the whole exercise. The right unit of measurement is not **cost per token** but **cost per agent session** — and ultimately **cost per business outcome**: per ticket resolved, per document reviewed, per invoice exception cleared. That is the unit that connects to the P&L, and it is the number Agent FinOps exists to defend.
 
 ## The Microsoft agent estate: three surfaces, three meters
+
+![Three surfaces, three separate meters](/images/2026/08/three-meters.png)
+
+*Figure 3 — Three surfaces, three separate meters. © Holger Imbery · holgerimbery.blog*
 
 Microsoft customers now build and run agents in three distinct places, each with its own cost model. Governing them as one estate — rather than three disconnected invoices — is the practical heart of Agent FinOps.
 
@@ -107,6 +119,10 @@ What makes Cowork a FinOps template rather than a liability is its **governance 
 
 ## A unified Agent FinOps operating model
 
+![Visibility, accountability, optimization](/images/2026/08/finops-operating-model.png)
+
+*Figure 4 — Visibility, accountability, optimization. © Holger Imbery · holgerimbery.blog*
+
 Cloud FinOps rests on three practices — visibility, accountability, and optimization. Agent FinOps keeps the structure but changes the attribution logic, because the unit of cost is a whole workflow, not a single call. Here is how each practice maps onto the Microsoft controls above.
 
 **Visibility — measure the full workflow**
@@ -156,6 +172,10 @@ Cloud FinOps rests on three practices — visibility, accountability, and optimi
 | **Autonomy level** | How much spend runs without a human checkpoint — the risk multiplier behind every other metric. |
 
 ## Is there a single pane of glass?
+
+![Toward a single pane of glass](/images/2026/08/single-pane-of-glass.png)
+
+*Figure 5 — Toward a single pane of glass. © Holger Imbery · holgerimbery.blog*
 
 Not yet — no single native screen spans all three surfaces. But Microsoft is converging on one, and there is a clear "closest thing" at each layer.
 

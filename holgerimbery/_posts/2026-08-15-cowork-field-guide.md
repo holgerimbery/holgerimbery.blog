@@ -102,6 +102,10 @@ Enabling Cowork is a short, deliberate sequence. The most common rollout snag is
 
 ## The Anthropic engine: what "subprocessor" means
 
+![Two AI model cores — representing Anthropic Claude and OpenAI — collaborating inside Microsoft's orchestration layer](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/cowork-multimodel.png)
+*Cowork is multi-model: a drafting model and a reviewing model from different providers, orchestrated by Microsoft. © Holger Imbery · holgerimbery.blog*
+
+
 Cowork uses Anthropic Claude models as part of its multi-model engine. For most tenants this is invisible plumbing. What matters for governance is the **contractual** arrangement behind it.
 
 - **Subprocessor status.** Anthropic operates as a Microsoft **subprocessor** under Microsoft's Product Terms and Data Protection Addendum (DPA). Breach notification, incident response, and data-handling obligations flow through Microsoft's contractual framework — not through a separate Anthropic agreement.
@@ -114,12 +118,15 @@ Cowork uses Anthropic Claude models as part of its multi-model engine. For most 
 
 
 ## EU Data Boundary & Anthropic — enabling with confidence
+![A governed gateway opening within a ring of EU-gold stars, with data passing a shield-and-checkmark checkpoint](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/cowork-eu-boundary.png)
+*Enabling Anthropic in the EU as a deliberate, governed choice — a green-lit gateway, not a wall. © Holger Imbery · holgerimbery.blog*
+
 
 For organizations in the EU, UK, or EFTA, the Anthropic setting is the single most important configuration decision before rollout. The good news: Microsoft has turned it into an **explicit, informed choice** rather than a hidden default. That is a governance *feature*, not a limitation — and it means European teams can adopt Cowork deliberately, on their own terms.
 
 ### The facts, plainly
 
-*Microsoft's documented position, current as of 22 July 2026:*
+*Microsoft's documented position, current as of 08 August 2026:*
 
 - **Anthropic is a Microsoft subprocessor** under the Product Terms and DPA (see §4).
 - Anthropic-processed requests are **currently excluded from the EU Data Boundary** and, where applicable, from in-country processing commitments.
@@ -146,14 +153,17 @@ Rather than leaving capability on the table, treat enablement as a **governed pr
 
 ### Notes & nuances for European admins
 
-> **What "off" actually means.** Copilot's default/base models are OpenAI GPT; Anthropic is an **opt-in layer on top**. Because Cowork runs on Anthropic models at GA, leaving Anthropic off tends to make Cowork features unavailable rather than silently swapping to GPT. Document this so users understand what the setting does — and so "enable in a controlled way" is understood as the path *to* Cowork, not a risk to avoid.
+**What "off" actually means.** Copilot's default/base models are OpenAI GPT; Anthropic is an **opt-in layer on top**. Because Cowork runs on Anthropic models at GA, leaving Anthropic off tends to make Cowork features unavailable rather than silently swapping to GPT. Document this so users understand what the setting does — and so "enable in a controlled way" is understood as the path *to* Cowork, not a risk to avoid.
 
-> **New EU app-level model setting (3 April 2026).** A distinct admin setting, "Copilot in M365 apps with Anthropic models in EU/EFTA and UK," lets Anthropic be the default model for Copilot in Word, Excel, and PowerPoint. It is on by default only for tenants created after 25 March 2026; older tenants should check the Message Center. It still routes data outside the EU Data Boundary — so fold it into the same governance story above.
+**New EU app-level model setting (3 April 2026).** A distinct admin setting, "Copilot in M365 apps with Anthropic models in EU/EFTA and UK," lets Anthropic be the default model for Copilot in Word, Excel, and PowerPoint. It is on by default only for tenants created after 25 March 2026; older tenants should check the Message Center. It still routes data outside the EU Data Boundary — so fold it into the same governance story above.
 
 {: .q-left }
 > **Government cloud update (22 July 2026).** Non-federal customers in Government Community Cloud (GCC) can now enable Anthropic models — processed **outside** Microsoft&#39;s FedRAMP-authorized US Government cloud, and off by default. GCC High and DoD remain excluded, with no toggle shown.
 
 ## The 13 built-in skills
+![A modular toolkit of interlocking skill tiles showing document, spreadsheet, email, calendar and search icons, plus a custom skill tile snapping into place](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/cowork-skills.png)
+*Thirteen built-in skills, plus up to 50 custom SKILL.md skills that snap into place. © Holger Imbery · holgerimbery.blog*
+
 
 Cowork's behaviour is organised around **skills** — packaged capabilities the agent loads on demand, using the same open Agent Skills vocabulary as §7. You don't pick the skill; Cowork matches your prompt to a skill's description and loads it, streaming skill messages ("Preparing to create Word documents") and tool steps ("Composing your email") as it goes. Naming a skill explicitly also works: *"Use the Deep Research skill to compare these three proposals."*
 
@@ -259,6 +269,9 @@ Document skills generate finished files — not just inline content — and writ
 
 
 ## The control surface: approvals, pause/resume, Tasks
+![A hand reviewing a floating approval card with approve, pause and cancel controls and a risk gauge, while a blue AI assistant waits](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/cowork-approvals.png)
+*Human-in-the-loop by design: previews, risk indicators, and approvals before anything leaves your tenant. © Holger Imbery · holgerimbery.blog*
+
 
 Cowork takes actions — so the safeguards are built into every conversation. This is what makes agentic AI safe to run at scale.
 
