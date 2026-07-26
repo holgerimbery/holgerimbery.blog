@@ -25,9 +25,9 @@ featured: false
 toc: true
 ---
 
+
 {: .q-left }
 > **Summary lede.** The companion articles in this series built *agents* in the new Copilot Studio — the agentic orchestrator, the harness and loop, Skills as reusable behavior, Connected agents as delegation. This one turns to the other half of the platform: the **new workflows experience** (public preview), the **deterministic backbone**, and the **agent node** — the ability to drop an *existing* agent onto a workflow canvas as a first-class step. The headline claim is specific: **calling an agent from a flow is not a plumbing feature bolted onto Power Automate.** It is the composition primitive that ends the old either/or — fully structured *or* fully agentic — and lets a single canvas be deterministic where it must be and adaptive where it pays.
-
 
 {: .q-left }
 > **Capability status at publication.** Precision matters, because these surfaces sit at different maturity levels. The **new agent experience is a production-ready preview**; the **new workflows experience is public preview** and, per Microsoft, *"aren't meant for production use."* The **classic agent flows experience is generally available** (GA since 31 March 2025) and remains the supported automation experience. The **new orchestrator** (Microsoft reports *"improving evaluation performance by approximately 20% while decreasing net token usage by 50%"*) is rolling through **early release environments**, applied automatically. **Computer-using agents are GA**; embedding them into multi-step workflows is *"now moving into preview."* **A2A is GA** in Copilot Studio; **Work IQ** is **preview**, with usage-based billing at GA. Treat every "new experience" capability as preview unless noted, and re-check status before you commit a production design to it.
@@ -37,6 +37,10 @@ toc: true
 Read this if you built automation on the classic experience — an *agent flow*: a deterministic pipeline with a "call an agent" AI action buried among the steps — and then opened the new experience to find a rebuilt canvas, a first-class **agent node**, and Microsoft describing "deterministic orchestration with adaptive execution" as the point of the whole thing. Nothing about classic agent flows is wrong; they are GA and they keep working. But the compositional model changed, and the reasons to reach for a workflow versus an agent shifted with it. Read it before your next automation build, so the deterministic parts and the adaptive parts land in the right home from the first draft — not the third.
 
 ## The shift: from a flow that phones a bot to a canvas that hosts agents
+
+![The forced choice between fully structured and fully agentic, converging into one canvas](/images/2026/08/2026-08-29-copilot-studio-workflows-fig3-end-of-either-or.png)
+
+*Figure 1 — The end of the either/or: a binary choice between fully structured and fully agentic becomes one canvas that holds both.*
 
 In the classic experience, a workflow was, at heart, a *deterministic pipeline*. Microsoft's own definition has not moved: *"workflows are step-by-step automation processes that complete actions or tasks in a deterministic, reliable way."* An **agent flow** consisted of a trigger and a sequence of actions, and its defining property was predictability — *"the same input always produces the same output, making them reliable and predictable."* You could already reach an agent from inside one, but you did it the way you did everything else in that pipeline: as one AI action among many, buried in a menu, prose in and prose out.
 
@@ -73,6 +77,10 @@ The property that makes all of this valuable is the **deterministic contract**: 
 
 ## The agent node: calling an agent from a flow
 
+![A Copilot Studio workflow with an agent node as an inline, first-class step among deterministic actions](/images/2026/08/2026-08-29-copilot-studio-workflows-fig1-agent-node-canvas.png)
+
+*Figure 2 — Calling an agent from a flow: an existing agent — its knowledge, tools, and loop — dropped onto the canvas as a first-class step, beside the deterministic actions.*
+
 Here is the feature the rest of the article is about, and the one the request behind this piece asks us to weigh honestly: is calling an agent from a flow *new*, and is it a *real* evolution? The intellectually honest answer is that the *capability* existed and the *primitive* did not — and the primitive is what matters.
 
 ### It existed before — as an AI action
@@ -83,7 +91,8 @@ Classic agent flows could already call an agent. The Learn action list is unambi
 
 The new experience promotes that buried capability to a first-class citizen. Microsoft's description is worth quoting in full, because every clause carries weight:
 
-> *"A core component of the new experience is the ability to add existing agents directly into workflows. These agent nodes allow you to create automated solutions that keep the scalable reliability of workflows while bringing in AI intelligence when you need it."*
+{: .q-left }
+> *&quot;A core component of the new experience is the ability to add existing agents directly into workflows. These agent nodes allow you to create automated solutions that keep the scalable reliability of workflows while bringing in AI intelligence when you need it.&quot;*
 
 Three things follow from "add **existing** agents … as **agent nodes**":
 
@@ -107,6 +116,10 @@ None of this was *impossible* before. All of it was *awkward* before, because th
 
 ## Deterministic where you need it, adaptive where it adds value
 
+![A deterministic backbone that detours up into an agent node and back](/images/2026/08/2026-08-29-copilot-studio-workflows-fig2-deterministic-backbone.png)
+
+*Figure 3 — The flow stays reliable end-to-end; the agent node plugs in only where judgment is needed.*
+
 The design principle the agent node serves is worth stating as a rule, because it is the one decision the platform will not make for you: **put determinism where correctness and audit demand it; put an agent node where the work needs judgment.**
 
 | Put it in a **deterministic action** when… | Put it in an **agent node** when… |
@@ -121,6 +134,10 @@ The Graebel case Microsoft published is this rule made real: relocation requests
 
 ## Placing the new primitive: agent node vs connected agent vs skill vs A2A
 
+![Four ways intelligence enters a system: agent node, connected agent, skill, and A2A](/images/2026/08/2026-08-29-copilot-studio-workflows-fig4-who-calls-whom.png)
+
+*Figure 4 — Who calls whom: the agent node is the flow's way to reach an agent; connected agents are an agent's way.*
+
 Because there are now several ways to bring "intelligence" into a system, teams conflate them — the same failure the previous article flagged for Skills versus Connected agents, now with one more piece on the board. The clean way to hold them apart is to ask **who is calling, whose loop runs, and who owns the thing being called.**
 
 | Mechanism | Caller → callee | Whose loop runs | When to use |
@@ -131,7 +148,7 @@ Because there are now several ways to bring "intelligence" into a system, teams 
 | **Skill** | Agent → its own behavior | The **calling agent's** loop | Reusable behavior shared across agents |
 | **A2A** | Agent → cross-platform agent | The **remote agent's** loop | Reaching Foundry / SDK / third-party agents |
 
-The distinction that trips people up: **the agent node is the *flow's* way to reach an agent; connected agents are an *agent's* way to reach an agent.** Both call agents; the difference is the caller and the surrounding runtime. A workflow uses an agent node to inject reasoning into a structured process. An agent uses a connected agent to delegate a domain to a specialist. Choosing the wrong one rebuilds the classic "god" anti-pattern in a new place — either a workflow that tries to encode judgment as ever-branching if-then logic, or an agent stuffed with process logic that should have been a deterministic flow.
+The distinction that trips people up: **the agent node is the flow's way to reach an agent; connected agents are an agent's way to reach an agent.** Both call agents; the difference is the caller and the surrounding runtime. A workflow uses an agent node to inject reasoning into a structured process. An agent uses a connected agent to delegate a domain to a specialist. Choosing the wrong one rebuilds the classic "god" anti-pattern in a new place — either a workflow that tries to encode judgment as ever-branching if-then logic, or an agent stuffed with process logic that should have been a deterministic flow.
 
 ## What else is new in the designer
 
@@ -157,6 +174,10 @@ The four orchestration patterns from the classic articles survive here too — b
 Two practical notes. First, **the agentic loop absorbs the simplest cases**: a task that once needed a router plus two workers may now be a *single agent node* whose internal loop orchestrates its own tools — reach for multiple nodes when ownership, parallelism, or a hard determinism boundary demands it, not reflexively. Second, **the deterministic scaffolding is now clearly separated from the adaptive core**: approvals, state transitions, and compliance checks are workflow nodes; the reasoning is the agent node. The pattern you choose is still a design decision the platform will not make for you — but the boring parts and the adaptive parts finally have distinct homes.
 
 ## A worked example: unstructured intake, rebuilt as a workflow
+
+![Unstructured intake rebuilt as a workflow with an agent node, a decision, and human review](/images/2026/08/2026-08-29-copilot-studio-workflows-fig5-intake-worked-example.png)
+
+*Figure 5 — The flow owns the process and the writes; the agent node owns the one judgment; a person adjudicates exceptions.*
 
 To make the mapping concrete, take an inbound-request intake — a relocation service order, an invoice, a vendor contract; the shape is the same — and build it on the new canvas.
 
@@ -204,7 +225,7 @@ Second, **the agent node is the evolution — and it is real.** Calling an agent
 
 Third, **it ends the either/or and completes the composition.** The old choice was fully structured *or* fully agentic. Workflow-first (deterministic backbone, agent node for reasoning) is the **inverse and complement** of agent-first (the loop carries it, workflows are guardrails). With both directions available and interlocking, you finally compose the whole system instead of picking a side.
 
-Fourth, **put each step in its right home.** Deterministic action, agent node, connected agent, skill, A2A — the boundary between them is the whole game, again. The agent node is the *flow's* way to reach an agent; connected agents are an *agent's* way. Confuse them and you rebuild the god-agent problem on the workflow canvas.
+Fourth, **put each step in its right home.** Deterministic action, agent node, connected agent, skill, A2A — the boundary between them is the whole game, again. The agent node is the flow's way to reach an agent; connected agents are an agent's way. Confuse them and you rebuild the god-agent problem on the workflow canvas.
 
 Fifth, **the node gives you reasoning and a new boundary to enforce.** Do not call a flow deterministic across an agent node; commit side effects in deterministic, idempotent steps around it; validate whatever the node ingests; keep humans on consequential branches; and keep classic agent flows as the GA fallback while the new experience is preview.
 
@@ -220,4 +241,3 @@ The classic articles settled how automation is shaped and showed it executed. Th
 - LinkedIn — [Introducing deep reasoning and agent flows in Copilot Studio](https://www.linkedin.com/pulse/introducing-deep-reasoning-agent-flows-copilot-studio-charles-lamanna-n1zxc/) (Charles Lamanna, March 2025) — agent flows GA on 31 March 2025; "combine the predictability of workflows with the flexibility of agents"; flow-to-agent hand-off examples
 - Community coverage (secondary, treat as commentary) — ChatForest, *Microsoft Rebuilt Copilot Studio's Engine* (July 2026), for the "agent nodes eliminate that choice" framing; candede.com, *Mastering Copilot Studio: 2026 Release Wave 1* (May 2026), and WindowsForum's April 2026 update thread, for designer-UX details (node notes, canvas search, human review, version diffs). Verify against Microsoft Learn before relying on any specific detail
 - Prior articles in this series — *The Build 2026 Rebuild*, *Copilot Studio Reimagined*, and *Multi-Agent Orchestration in the New Copilot Studio* — for the agent-first model, the four orchestration patterns, and the Skills-versus-Connected-agents boundary this article builds on
-
