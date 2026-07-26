@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Creating Skills for Copilot Studio Agents: A Practical Guide to SKILL.md and Behavior-as-Code"
-description: A hands-on, deep-researched guide to building reusable Skills for the new Copilot Studio agent experience — the SKILL.md format, bundling scripts and resources, authoring and uploading, how the orchestrator invokes them, best practices, and governance. Deliberately kept separate from the legacy Bot Framework skill model. Fact-checked against Microsoft Learn and the Copilot Studio CAT blog.
-date: 26-08-01
+description: A hands-on, deep-researched guide to building reusable Skills for the new Copilot Studio agent experience — the SKILL.md format, bundling scripts and resources, authoring and uploading, how the orchestrator invokes them, best practices, and governance. Deliberately kept separate from the legacy Bot Framework skill model.
 author: admin
 slug: creating-skills-copilot-studio-agents
 canonical_url: https://holgerimbery.blog/creating-skills-copilot-studio-agents
