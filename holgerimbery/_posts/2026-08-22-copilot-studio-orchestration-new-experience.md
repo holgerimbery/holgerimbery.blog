@@ -26,17 +26,15 @@ toc: true
 > **Summary lede.** The earlier articles in this series built multi-agent systems on the *classic* Copilot Studio — generative orchestration, the five surfaces, child agents, and the four orchestration patterns. This one rebuilds the same subject on the *new* Copilot Studio experience from Build 2026: the **new agentic orchestrator**, its **coding harness and agentic loop**, **Skills** as a reusable behavior layer, **Connected agents** as the delegation surface, and the two open standards — **A2A** for agents and **MCP** for tools — that keep the whole thing composable. The load-bearing architectural ideas do not change. Where they live, how the orchestrator combines them at runtime, and where the *first* wall you hit moves to — those do.
 
 {: .q-left }
-> **About this series.** Parts 1 and 2 covered multi-agent orchestration on the **released, generally available classic experience** built on generative orchestration. Part 3 — *The Build 2026 Rebuild* — mapped the classic five surfaces onto the new four-surface-plus-Memory model. *Copilot Studio Reimagined* went deep on the new authoring surface, the agentic orchestrator, and the SKILL.md pattern. **This article is the companion to all four: multi-agent orchestration built end-to-end in the new experience.** It assumes you have read at least the rebuild and the reimagined pieces; where a concept carries over unchanged from the classic articles, it is referenced rather than repeated.
-
-{: .q-left }
 > **Capability status at publication.** Precision matters here, because the new-experience surfaces sit at different maturity levels. The **new agent experience is a production-ready preview**; the **new workflows experience is public preview** and, per Microsoft, not for production. Within the new agent experience today, **Connected agents currently supports only other Copilot Studio agents** (Microsoft Learn, *Connected agents overview (preview)*). Separately, in the broader Copilot Studio multi-agent stack, **A2A, Microsoft Fabric, and Microsoft 365 Agents SDK connections reached general availability** in the April 2026 wave, and **A2A itself has been GA since April 2026**. **Work IQ** and **Memory** are **preview**; **Claude Sonnet 5** and **GPT-5.5 Chat** are **GA** model choices. Treat every "new experience" capability as preview unless noted, and re-check status before committing a production design to it.
 
 {: .q-left }
 > **Why read this**
 Read this if you designed a multi-agent system on the classic experience — a router with connected agents, a Dataverse-backed supervisor, an MCP tool catalog — and then opened the new experience to find four tabs, a "Skills" surface where child agents used to be, and an orchestrator that plans instead of routes. Nothing in the classic articles is wrong for classic agents. But the compositional choices are different now, and the reasons to split an agent have shifted. Read it before you start a new multi-agent build in the new experience, so you put behavior in Skills, delegation in Connected agents, actions in Tools and MCP, and cross-platform reach in A2A — from the first design review, not the third.
 
+---
 
-## The shift: from routing tables to an agentic loop
+## 1. The shift: from routing tables to an agentic loop
 
 In the classic experience, a multi-agent system was, at heart, a routing problem. A thin parent agent classified each request and handed it to a specialist; generative orchestration ranked the candidate tools and agents and picked one; the specialist did its work and returned. The architecture the earlier articles describe — router-worker, sequential pipeline, parallel fan-out, hierarchical — is a taxonomy of *how requests move between agents*.
 
@@ -44,7 +42,7 @@ The new experience keeps every one of those shapes, but it changes the engine un
 
 That is the through-line of this article. Multi-agent orchestration in the new experience is still about narrow agents with clear ownership, structured contracts between them, and state that outlives the conversation. What changed is the *runtime* they compose on. So this article starts with the runtime.
 
-## The agent harness and the agentic loop
+## 2. The agent harness and the agentic loop
 
 Microsoft describes the new experience as being built on a **new agentic orchestrator** — in its own words, on *"a new coding harness and CLI layer,"* with *"stronger instruction adherence and long-horizon task execution,"* support for **recursive task execution**, the ability to *"process large volumes of content,"* and to *"produce rich file outputs."* Microsoft Learn frames it as an **enhanced orchestration runtime** that improves reasoning and response quality, *particularly over Microsoft 365 data* — and, unlike the classic experience, this runtime is **not configurable**: every agent in the new experience uses it. What *is* configurable is the primary model beneath it (**Claude Sonnet 5** and **GPT-5.5 Chat** are GA choices).
 
@@ -70,6 +68,9 @@ return         ->  ...until the orchestrator produces a response with
                    no further actions, then returns the result
 ```
 
+![The agentic loop inside the harness: a goal enters, then a Reason–Act–Observe cycle repeats until the run returns.](images/2026/08/01-agentic-loop.png)
+*Figure 1 — The agentic loop. A goal enters the harness; the orchestrator reasons, acts (through tools, skills, and connected agents), and observes the real result, repeating until nothing remains to do and it returns.*
+
 Each full reason-act-observe round trip is a **turn**. A quick question resolves in a turn or two; a long-horizon task — "review these three contracts, draft the memo, and file the exceptions" — can chain many turns, the orchestrator adjusting after each observation. This is the same *observe → plan → act → verify* pattern the wider industry calls the **agentic loop**, formalized by the ReAct approach (interleaving reasoning and acting) and its Plan-Act-Reflect descendants. The power of the loop is that observations are *real*: the orchestrator is reasoning over what actually happened, not what it guessed would happen.
 
 ### Why long-horizon and recursive execution matter for multi-agent
@@ -80,7 +81,7 @@ Two of Microsoft's stated gains — **long-horizon** and **recursive task execut
 
 A loop that can act repeatedly can also loop *wrongly*. The failure modes are well understood and they are the same ones any harness engineer worries about: **infinite loops** (the orchestrator never decides it is done), **derailment** (an early wrong action sends the run down an unrecoverable path), **spurious tool calls** (acting without a real need), and **context growth** (each turn adds tokens). These are not reasons to avoid the loop — they are the reasons the classic-article disciplines still apply, and apply *more*: structured contracts so an agent knows when a step truly succeeded, idempotency so a retried action does not double-fire, and bounded delegation so agents do not call each other in a cycle. Section 10 returns to this; for now, the point is that the harness gives you power *and* a new class of thing to get wrong.
 
-## The four surfaces as a multi-agent toolkit
+## 3. The four surfaces as a multi-agent toolkit
 
 The new experience assembles an agent from a small set of capability components — **Skills, Tools, Knowledge, Connected agents**, complemented by **Memory** (preview) — and the orchestrator decides at runtime how to combine them. For multi-agent work, the useful move is to read each surface as a distinct *role in a system of agents*:
 
@@ -94,7 +95,10 @@ The new experience assembles an agent from a small set of capability components 
 
 The classic articles taught that "the five surfaces are not interchangeable" — putting deterministic compliance flows in generative nodes, or large rule tables in the instruction block, was the most common cause of unreliable agents. The same discipline holds, sharpened by one addition: **Skills** now give procedural behavior a dedicated home it never had in the classic model, and **Connected agents** are the only cross-agent surface you need to reason about, because child agents are gone as a distinct concept. The clean question for any behavior becomes: *general identity* → Instructions; *task-specific procedure* → Skill; *reference information* → Knowledge; *external action* → Tool; *specialist ownership* → Connected agent; *learned continuity* → Memory.
 
-## Skills: the shared behavior layer for a fleet of agents
+![Five capability surfaces around one agent: Skills, Tools, Knowledge, Connected agents, and Memory.](images/2026/08/02-five-surfaces.png)
+*Figure 2 — Five capability surfaces, read as roles in a system of agents: Skills (behavior), Tools (action), Knowledge (grounding), Connected agents (delegation), and Memory (continuity).*
+
+## 4. Skills: the shared behavior layer for a fleet of agents
 
 In a single-agent build, Skills solve instruction bloat. In a *multi-agent* build, they do something more strategically important: they become the **reusable expertise layer shared across the fleet**. Multiple agents — HR, finance, procurement, service desk — can all load the same `executive-summary` skill, the same `risk-classification` skill, the same `policy-compliance-review` skill. Behavior written once travels to every agent that needs it.
 
@@ -144,7 +148,10 @@ Because both are ways to "add capability," teams conflate them. The distinction 
 
 The rule of thumb: **Skills define reusable behavioral patterns; Connected agents define ownership boundaries.** If two teams must independently own, publish, and secure a capability, it is a connected agent. If it is a way of doing something that many agents should share, it is a skill. Getting this wrong is the new-experience version of the classic "god agent": either everything collapses into one agent stuffed with skills, or every skill becomes a needless connected agent with its own governance surface.
 
-## Connected agents in the new experience
+![Skills run inside the calling agent's loop; a connected agent runs its own loop across an ownership boundary.](images/2026/08/03-skills-vs-connected-agents.png)
+*Figure 3 — The boundary that matters most. A Skill is reusable behavior that runs inside the calling agent's loop, with no separate owner; a Connected agent is a specialist with its own loop, its own owner, and its own tools and knowledge.*
+
+## 5. Connected agents in the new experience
 
 Connected agents are the delegation surface. Microsoft Learn's *Connected agents overview (preview)* describes the runtime precisely, and it is worth reading closely because the mechanics differ in one important way from the classic experience.
 
@@ -174,7 +181,7 @@ Present each specialist's structured result to the user in plain language.
 
 Note what is *not* here: no runbook logic, no connector calls, no policy text. The primary holds routing and a short identity; each specialist holds its own knowledge, tools, and owner. That is the whole discipline — the front door stays thin, and each connected agent stays boring.
 
-## Reaching beyond Copilot Studio: A2A, Foundry, Fabric, and the M365 Agents SDK
+## 6. Reaching beyond Copilot Studio: A2A, Foundry, Fabric, and the M365 Agents SDK
 
 A fleet that lives entirely inside one Copilot Studio tenant rarely stays that way. Data teams build Fabric agents; platform teams build pro-code agents with the Microsoft 365 Agents SDK or on Microsoft Foundry; partners expose agents as services. The April 2026 multi-agent wave is what makes those reachable, and Microsoft framed it directly: *"several multi-agent capabilities are rolling out to general availability,"* covering **Microsoft Fabric integration**, **Microsoft 365 Agents SDK orchestration**, and **Agent-to-Agent (A2A) communication** — *"all designed to help your agents operate together as a coordinated system rather than in isolated silos."*
 
@@ -192,11 +199,14 @@ The decision rule from Part 1 still holds, updated for the new landscape:
 
 They are not mutually exclusive. A realistic production system mixes them: a new-experience primary delegates to Copilot Studio connected agents for native specialists and reaches a Foundry- or SDK-built agent over A2A for the pro-code ones.
 
+![A primary agent connects to Copilot Studio specialists, reaches external agents over A2A, and shared tools over MCP.](images/2026/08/04-composing-a-fleet.png)
+*Figure 4 — Composing a fleet. A primary agent delegates to Copilot Studio connected agents in-tenant, reaches Foundry, Fabric, M365 Agents SDK, and partner agents over A2A, and calls shared tools — including Work IQ — over MCP.*
+
 ### The pro-code peer: Microsoft Agent Framework
 
 The reason a Foundry or SDK agent slots in as a peer rather than a foreign object is convergence at the runtime and protocol layers. The **Microsoft Agent Framework (MAF)** — the unification of **Semantic Kernel and AutoGen** into one open, multi-language (.NET and Python) framework — is the pro-code harness on the other side of the A2A boundary. Its four pillars are **open standards** (MCP, A2A, OpenAPI), **research-grade orchestration patterns**, **extensibility**, and **production readiness** (OpenTelemetry, Entra ID, CI/CD). Its orchestration patterns — **sequential, concurrent, group chat, handoff,** and **magentic** (the MagenticOne pattern from AutoGen, where a manager dynamically assigns specialists to an open-ended task) — are the pro-code expression of the same shapes this article describes for Copilot Studio. The platform-team takeaway from the reimagined article is the one that matters: **standardize on the architecture — the protocols (MCP, A2A) and the grounding layer (Microsoft IQ) — not the authoring tool.** Let low-code teams use Copilot Studio and pro-code teams use Foundry/MAF, knowing the agents interoperate over A2A.
 
-## Tools and MCP in the new experience
+## 7. Tools and MCP in the new experience
 
 Delegation moves work between *agents*; MCP moves *tools* between agents. In the new experience, MCP servers are added on the **Tools** surface, and everything the classic articles said about MCP still applies: one server per domain owned by the team that owns the backend, discovered automatically, consumed by many agents, with the tool *description* as the production variable the orchestrator routes on. The Streamable transport is current; write-capable servers get idempotency keys and audit; read and write are best split into separate servers with separately scoped credentials.
 
@@ -204,7 +214,7 @@ What the new experience adds is **Microsoft IQ as a first-class tool and knowled
 
 MCP also reaches into the **new workflows experience** (public preview): a workflow can call MCP-server tools directly, and drop existing agents onto the canvas as **agent nodes** — the cleanest expression of "deterministic where you need it, agentic where it adds value."
 
-## The orchestration patterns, revisited
+## 8. The orchestration patterns, revisited
 
 The four patterns from the classic articles survive the rebuild intact — the reimagined and rebuild articles both say so — but they now have a more direct home, and it is worth seeing how each maps onto the new surfaces (and onto the MAF patterns on the pro-code side).
 
@@ -215,9 +225,12 @@ The four patterns from the classic articles survive the rebuild intact — the r
 | **Parallel fan-out / fan-in** | Parallel workflow branches of agent nodes joined by an aggregation step | **Concurrent** |
 | **Hierarchical (supervisor)** | A supervisor **workflow** invoking agent nodes, persisting durable state in **Dataverse**, with **Memory** carrying cross-session continuity | **Magentic** / **Group chat** |
 
+![Four orchestration patterns: router-worker, sequential, parallel fan-out, and hierarchical.](images/2026/08/05-four-orchestration-patterns.png)
+*Figure 5 — The four orchestration patterns, unchanged by the rebuild: router-worker (handoff), sequential (pipeline), parallel fan-out (concurrent), and hierarchical (supervisor).*
+
 Two things change in practice. First, the **agentic loop absorbs the simplest cases**: a request that once needed a router plus two specialists may now be one agent that loads two skills and calls two tools within a single run — split it into agents only when ownership or reuse demands it, not reflexively. Second, **deterministic control moves to workflows**. In the classic model, deterministic logic often *carried* the conversation (topics, agent-flows). In the new model, deterministic logic becomes the **guardrail and execution backbone around an agentic core** — approvals, state transitions, and compliance checks live in workflows, while the reasoning lives in the loop. The pattern you choose is still a design decision the platform does not make for you; what changed is that the boring parts are more clearly separated from the adaptive parts.
 
-## A worked example: contract intake, rebuilt in the new experience
+## 9. A worked example: contract intake, rebuilt in the new experience
 
 To make the mapping concrete, take the parallel-fan-out contract-review scenario from Part 2 and rebuild it natively. The goal is unchanged — turn an inbound vendor contract into a merged review memo — but the assembly is new.
 
@@ -229,7 +242,7 @@ To make the mapping concrete, take the parallel-fan-out contract-review scenario
 
 The shape is identical to the classic version; the difference is that the shared behavior (`clause-extraction`, `review-memo`) is now portable across every legal-ops agent instead of duplicated, the reviewers are cleanly owned, and the deterministic join-and-approve lives in a workflow rather than an agent-flow bolted onto a generative core.
 
-## Governance and the harness's new risks
+## 10. Governance and the harness's new risks
 
 Every governance discipline the earlier articles established still applies — **Entra Agent ID per agent** (auto-creatable, so permissions are scoped per agent, not per maker), **least privilege**, **structured contracts**, **idempotency on writes**, **audit through Purview**, and treating external agents as **supply-chain dependencies**. The rebuild routes new capabilities through **Agent 365** governance in the Microsoft 365 admin center, with tool-call tracing available in **Microsoft Defender** Advanced Hunting; the **Agent 365 SDK is GA**, though several surrounding capabilities remain preview, so don't blanket-label all of Agent 365 as GA. What the agentic loop adds is a small set of *new* risks that a multi-agent design review should check for explicitly.
 
