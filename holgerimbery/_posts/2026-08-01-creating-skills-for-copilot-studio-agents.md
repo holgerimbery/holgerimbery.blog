@@ -16,6 +16,7 @@ tags:
   - skills
 featured: false
 toc: false
+date: 26-08-01
 ---
 
 {: .q-left }
