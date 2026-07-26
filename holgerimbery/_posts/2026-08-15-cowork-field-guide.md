@@ -34,6 +34,8 @@ Microsoft Copilot Cowork has moved from preview to global production use, and th
 {: .warning }
 **A living document.** Cowork moves fast — it went from a Frontier preview to worldwide general availability in three months. This guide is built to be updated. Each section is self-contained, every time-sensitive claim is dated. 
 
+![Copilot Cowork — an AI agent that carries out whole tasks across Microsoft 365](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/cowork-hero.png)
+*Cowork's unit of output is a finished task across Microsoft 365 — not just a paragraph. © Holger Imbery · holgerimbery.blog*
 
 ## How to use this guide
 
