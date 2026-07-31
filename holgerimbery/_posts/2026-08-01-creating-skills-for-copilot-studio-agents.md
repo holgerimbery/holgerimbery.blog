@@ -14,8 +14,8 @@ tags:
   - copilotstudio
   - orchestration
   - skills
-featured: false
-toc: false
+featured: true
+toc: true
 date: 26-08-01
 ---
 
@@ -61,8 +61,6 @@ A Skill is just a set of instructions, so you might wonder why separate them at 
 - **Accuracy.** A Skill can include detailed guidance on using tools—such as which tool to use, which parameters are important, how to write a query, what to check before calling, and what to do if a tool returns nothing. This guidance loads only when it's relevant. With large or overlapping toolsets, this can make tool calls more reliable. However, it depends on your use case, so test it instead of assuming it will work.
 - **Speed and cost.** When you guide the agent to the right approach, it does fewer searches, tool calls, and reasoning steps before answering. This also depends on your use case, so be sure to measure it.
 
-{: .note }
-**Reality check.** Manageability and context management are structural benefits—they apply almost everywhere. Accuracy and speed depend on your agent, and every Skill you load still uses context and costs money. Modular design is not free.
 
 ## Anatomy of a SKILL.md
 
@@ -118,8 +116,6 @@ Two things to know about the code part:
 - **Bundled scripts run in the agent's sandbox when needed.** A Skill can include a Python script and reference it in its instructions; the script loads when the Skill is selected. For example, the CAT gallery's PowerPoint Deck Designer builds decks from a JSON spec using python-pptx in the agent's Python container, without needing an external Azure Function. Microsoft's CAT team plans to release a detailed guide on scripts and resources, so check runtime details in Preview as they may change.
 - **Skills can also point to the agent's own tools, not just bundled scripts.** Instructions can say 'use the order-lookup action here,' referring to actions, flows, connectors, or MCP servers the agent already has. This is a soft pointer: the Skill names the capability but does not bind to it or grant access. If the agent does not have that tool, the step cannot be completed. Even if the tool exists, the orchestrator still decides whether to use it.
 
-{: .note }
-**On 'skill + code'.** Package your scripts, templates, and references with the Skill, and make sure the instructions reference them directly. Remember, a Skill only guides; it does not guarantee that a tool exists or that a script will run a certain way. Always check the full behavior in the reasoning view before relying on it.
 
 ## How the orchestrator finds and runs your Skill
 
