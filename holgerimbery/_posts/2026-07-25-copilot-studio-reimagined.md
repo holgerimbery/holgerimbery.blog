@@ -14,7 +14,7 @@ tags:
   - microsoftiq
   - orchestration
   - skills
-featured: true
+featured: false
 toc: true
 canonical_url: https://holgerimbery.blog/copilot-studio-reimagined
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/07/declan-sun--OgGD4lSVfs-unsplash.jpg
