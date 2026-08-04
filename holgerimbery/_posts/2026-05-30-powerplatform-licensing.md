@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding Microsoft Power Platform Licensing: A Practitioner's Reference (Rev. 3)"
-description: "A **frequently updated** practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service."
+description: "A practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service."
 date: 2026-08-04
 author: admin
 slug: powerplatform-licensing
