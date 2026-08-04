@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Understanding Microsoft Power Platform Licensing: A Practitioner's Reference"
-description: A practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service.
-date: 2026-07-25
+title: "Understanding Microsoft Power Platform Licensing: A Practitioner's Reference (Rev. 3)"
+description: "A **frequently updated** practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service."
+date: 2026-08-04
 author: admin
 slug: powerplatform-licensing
 canonical_url: https://holgerimbery.blog/powerplatform-licensing
@@ -18,13 +18,13 @@ tags:
   - licensing
   - powerplatform
   - recommended
-featured: false
+featured: true
 toc: true
 ---
 
 {: .q-left }
 > **Summary lede:** 
-Power Platform licensing is now a hybrid of seat-based user licenses, pooled consumption credits, and MAU-based web access, and small architecture choices can materially change total cost. This guide maps the recent changes — Copilot Credits replacing messages, the April 2026 Dataverse accrual figures in the licensing guides, and the expansion of Dynamics 365 Contact Center / Customer Service bundles — into practical sizing and purchasing decisions with source-backed pricing.
+Power Platform licensing is now a hybrid of seat-based user licenses, pooled consumption credits, and MAU-based web access, and small architecture choices can materially change total cost. This guide maps the recent changes — Copilot Credits replacing messages, the **August 2026 Copilot Studio Licensing Guide's four Copilot Credit purchasing constructs** (pay-as-you-go, the Copilot Credit Pre-Purchase Plan, the new cross-platform Microsoft Agent Pre-Purchase Plan, and $200 capacity packs), the raised Dataverse-for-Copilot-Studio default capacity, the April 2026 Dataverse accrual figures in the licensing guides, and the expansion of Dynamics 365 Contact Center / Customer Service bundles — into practical sizing and purchasing decisions with source-backed pricing.
 
 {: .q-left }
 > **Why read this article**
@@ -32,16 +32,36 @@ Microsoft's business-application licensing surface is a three-pillar commercial 
 
 The last twelve months changed the math in three places that matter:
 
-1. **Dataverse per-user accrual reporting (April 2026 licensing guides).** The April 2026 Power Platform and Dynamics 365 Licensing Guide PDFs report meaningfully higher per-license accrued storage for Power Apps Premium and several Dynamics 365 SKUs than prior revisions did. Microsoft's live pricing pages still display the previous per-user figures (e.g., 250 MB DB / 2 GB File for Power Apps Premium) — meaning the guide PDF and the marketing page disagree at the time of writing. This article cites the live pricing page as the conservative number and flags the guide-PDF uplift where it appears. Verify against the current PPLG PDF before sizing.
-2. **September 1, 2025 — Copilot Studio "messages" became "Copilot Credits."** The meter was renamed on that date; per Microsoft's Copilot Studio licensing documentation the rename did **not** change the pay-as-you-go rate or the quantity per prepaid pack (verify per-event consumption rates against the current Copilot Credit Guide). Copilot Credits now pool across Copilot Studio agents AND the AI agents shipped inside Dynamics 365 Contact Center, Customer Service, and (per Microsoft messaging at the time of the rebrand) Sales-side AI agents.
+1. **Dataverse capacity — tenant default vs per-user accrual (August 2026 licensing guides).** Microsoft raised the **one-time tenant default** Dataverse capacity in November 2025 (File default 20 GB, Log 2 GB, Database default stated as 10 GB in the guide's worked example). The **per-user accrued** capacity is unchanged: Power Apps Premium still accrues **250 MB Database / 2 GB File per user**, exactly as the live pricing page shows and as the **August 2026 Power Platform Licensing Guide** confirms in its Accrued column. Earlier claims of a per-user "uplift" to 20 GB conflated the tenant default with per-user accrual — this article keeps them distinct. Dynamics 365 per-user figures still require the current Dynamics 365 Licensing Guide (§3.5).
+2. **September 1, 2025 — Copilot Studio "messages" became "Copilot Credits."** The meter was renamed on that date; per Microsoft's Copilot Studio licensing documentation the rename did **not** change the pay-as-you-go rate or the quantity per prepaid pack (verify per-event consumption rates against the current Copilot Credit Guide). Copilot Credits now pool across Copilot Studio agents AND the AI agents shipped inside Dynamics 365 Contact Center, Customer Service, and (per Microsoft messaging at the time of the rebrand) Sales-side AI agents. The **August 2026 Copilot Studio Licensing Guide** now organizes purchasing into four constructs — pay-as-you-go ($0.01/credit), the tiered **Copilot Credit Pre-Purchase Plan (P3)**, the new cross-platform **Microsoft Agent Pre-Purchase Plan (P3)** priced in Agent Commit Units, and **$200/month capacity packs** of 25,000 credits — and introduces three build *harnesses* (see §2).
 3. **2024–2026 — Dynamics 365 Contact Center as a standalone, CRM-agnostic CCaaS SKU**, plus the **Customer Service Premium** bundle ($195/user/month = Customer Service Enterprise + Contact Center).
 
 This article is the reference that ties the structural decisions to the line items. Every numeric claim has a source URL. Every section closes with a real-world example that shows why a customer would choose one option over another. Read this before sizing a Power Platform deployment, scoping a Copilot Studio agent, or negotiating a Dynamics 365 renewal.
 
-## Notes
-### Changelog — 2026-07-25 (Revision 2)
 
-Reviewed against Microsoft's live pricing pages and Copilot Studio licensing documentation on July 25, 2026. Changes in this revision:
+**Changelog — 2026-08-04 (Revision 4 — Power Platform Licensing Guide verification).** Cross-checked the Power Platform figures against the **Power Platform Licensing Guide — August 2026** and corrected the Dataverse per-user narrative. Changes:
+
+- **Corrected the "guide reports higher per-user Dataverse accrual" claim (Why-read #1, §1.1, §3.2, §3.5, Conclusion).** The August 2026 PPLG separates **Default (per tenant)** from **Accrued (per user)**: Power Apps Premium accrues **250 MB Database / 2 GB File per user** — identical to the live pricing page. The 20 GB figure that circulated as a per-user "uplift" is actually the **one-time tenant Database default**, not a per-user accrual. There is no pricing-page-vs-guide disagreement for Power Apps; the passages that framed one are rewritten.
+- **Power Apps per App is End of Sale (January 2026).** Per the PPLG change log, the per-App **subscription license** reached End of Sale; only the **per-App pay-as-you-go meter ($10 / active user / app / month)** remains. §1.1 and the per-App status flag are updated (the Rev 2 "reinstated / to-verify" note is superseded).
+- **Dataverse tenant defaults (§3.1).** The PPLG confirms **File default 20 GB and Log default 2 GB**; its worked example uses a **10 GB Database default** while its capacity table lists 20 GB — an internal inconsistency in the guide itself. Defaults were increased in November 2025.
+- **AI Builder (§2.2.1).** Corrected to **End of Sale November 2025**, with existing entitlements available until **November 1, 2026** (PPLG change log).
+- **Now confirmed HIGH via the PPLG:** Power Apps Premium $20/user/month (and $12 with 2,000+ Microsoft 365 licenses), Power Automate Premium $15 and Process $150/bot/month, Power Pages Authenticated $200/pack (100 users) and Anonymous $75/pack (500 users), Dataverse add-ons ($40 DB / $30 DB Tier 2 / $2 File / $10 Log) and PAYG meters ($48 / $2.40 / $12), and the tenant-graph-grounding rate cut from 30 to 10 (§2.2).
+- **Licensing-guide links updated** from the April 2026 to the **August 2026** Power Platform Licensing Guide throughout (§1.1, §1.2, §3.2, Sources), and the Copilot Studio guide link relabelled to August 2026 (§2.2.1). Dynamics 365 guide/deck links are unchanged — the Power Platform guide does not cover D365 SKUs, so the §3.5 D365 per-user figures still await the current Dynamics 365 Licensing Guide.
+
+
+**Changelog — 2026-08-04 (Revision 3).** Updated against the **Microsoft Copilot Studio Licensing Guide — August 2026** (the current edition) and Microsoft's live billing pages on August 4, 2026. Changes in this revision:
+
+- **New Copilot Credit billing schema (§2.1).** The August 2026 guide organizes Copilot Studio purchasing into **four distinct constructs**, and this revision rewrites §2.1 to match them exactly: (1) **pay-as-you-go** at **$0.01/Copilot Credit**; (2) the tiered **Copilot Credit Pre-Purchase Plan (P3)** — a one-year pay-upfront pool with nine volume tiers from 300,000 credits (5% off) to 300,000,000 credits (20% off); (3) the **new Microsoft Agent Pre-Purchase Plan (P3)**, a cross-platform one-year plan priced in **Agent Commit Units (ACUs)** where **1 ACU = $1 = 100 Copilot Credits**, spanning Copilot Studio and Microsoft Foundry, with three tiers (20,000 ACUs / 5%, 100,000 / 10%, 500,000 / 15%); and (4) the **Microsoft Copilot Studio capacity pack** at **$200/pack/month (billed annually) = 25,000 credits**, plus a $0 Copilot Studio User License per builder. The previous table conflated the capacity pack with the "Pre-Purchase Plan" and mis-stated the Agent plan as a flat 20%-off Azure reservation.
+- **New "build harness" concept (§2.0).** The guide introduces **three harnesses** — **GitHub Copilot** (agentic build; consumes credits at *both* maker/build time and runtime), **Standard** (rule-based topics/flows), and **Copilot Chat** (customize Microsoft 365 Copilot). A new §2.0 explains them and their credit-consumption implications.
+- **Dataverse-for-Copilot-Studio default capacity raised (§3.1).** Per the guide, the Copilot Studio Dataverse default is now **15 GB Database / 20 GB File / 2 GB Log** per tenant — the Database default rose from 5 GB to 15 GB in December 2025. Noted in §3.1 as distinct from the general Power Platform tenant default.
+- **Dataverse add-ons confirmed and expanded (§3.3).** The guide confirms the subscription add-on list prices ($40 DB, $2 File, $10 Log per GB/month, billed annually) and adds a **Database Tier 2 add-on at $30/GB/month (1,000 GB minimum)**. It also documents **pay-as-you-go Dataverse capacity meters** (per environment: **$48/GB DB, $2.40/GB File, $12/GB Log per month**, above a 1 GB DB + 1 GB File per-environment entitlement, no Log). §3.3 updated.
+- **Work IQ APIs (§2.3).** Per the guide's July 2026 note, Copilot Studio agents' use of **Work IQ APIs is not included** in the Microsoft 365 Copilot USL and consumes credits. Noted in §2.3.
+- **Verified against Microsoft's live billing pages (August 4, 2026):** the pay-as-you-go rate ($0.01/credit) and the existence of the Microsoft Agent Prepurchase Plan (ACUs paying down Copilot Studio and Microsoft Foundry usage at $1 = 100 credits) are confirmed on Azure pricing and Microsoft Learn.
+- **Carried forward unchanged from Revision 2:** Dynamics 365 Contact Center / Customer Service pricing and the closed 40% promo — the August 2026 guide covers Copilot Studio only and does not change those. Per-event Copilot Credit consumption rates (§2.2) remain MODERATE confidence; the guide points to the separate "Billing rates and management" page rather than listing them.
+
+
+**Changelog — 2026-07-25 (Revision 2).** Reviewed against Microsoft's live pricing pages and Copilot Studio licensing documentation on July 25, 2026. Changes in this revision:
+
 - **The 40% Contact Center / Customer Service Premium promotion has ended.** It ran October 1, 2025 → **June 30, 2026** and is no longer displayed on Microsoft's [Contact Center pricing page](https://www.microsoft.com/en-us/dynamics-365/products/contact-center/pricing) or [Customer Service pricing page](https://www.microsoft.com/en-us/dynamics-365/products/customer-service/pricing). Passages that treated the promo as active or upcoming (§4.1, §5.1, §5.5, §6.1, §6.5, Conclusion) are updated to past tense. Confirm any successor FY27 offer with your account team or CSP partner.
 - **Customer Service Premium now includes base Copilot Credit capacity for its bundled AI agents** (Customer Intent, Customer Knowledge Management, Case Management, Quality Evaluation), per footnote [6] on the current Customer Service pricing page. Previously every tier showed these agents as "Requires Copilot Credits (sold separately)." §4.3 and §5.1 updated. Heavy usage still consumes credits beyond the included capacity.
 - **Copilot Credit rebrand date corrected** from "late 2025" to **September 1, 2025** — the effective date in Microsoft's [Copilot Studio licensing documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/billing-licensing), which also confirms the rename did **not** change the pay-as-you-go rate or the quantity per prepaid pack. "Why read" item 2 and §2 updated.
@@ -49,35 +69,35 @@ Reviewed against Microsoft's live pricing pages and Copilot Studio licensing doc
 - **Verified current on Microsoft's live pricing pages (July 25, 2026):** Power Apps Premium ($20; new $12 volume tier), Dynamics 365 Contact Center ($110 / $95 / $95), Dynamics 365 Customer Service (Professional $50 / Enterprise $105 / Premium $195), the Power Apps Premium live Dataverse entitlement (250 MB DB / 2 GB file), and the Copilot Studio prepaid-pack quantity and pay-as-you-go rate (unchanged by the rebrand).
 - **Not re-fetched this cycle (no change assumed; verify if material):** Power Automate, Power Pages, and Dataverse capacity add-on list prices, plus the items already flagged MODERATE confidence — per-event Copilot Credit consumption rates (§2.2), April 2026 Licensing Guide Dataverse per-user accrual uplifts (§3.2 / §3.5), and Customer Service omnichannel add-in list prices (§5.3).
 
-
-### Confidence note.
- Prices and entitlements published on Microsoft's own public pricing pages are HIGH confidence at the time of writing. The following are MODERATE confidence and should be re-verified against the current Microsoft Licensing Guide PDFs before any commercial commitment:  
-(a) per-user Dataverse accrual figures from the April 2026 Power Platform / Dynamics 365 Licensing Guides where they exceed the live pricing-page figures;  
+{: .important }
+**Confidence note.** Prices and entitlements published on Microsoft's own public pricing pages are HIGH confidence at the time of writing. The following are MODERATE confidence and should be re-verified against the current Microsoft Licensing Guide PDFs before any commercial commitment:  
+(a) per-user Dataverse accrual figures for **Dynamics 365** SKUs from the current Dynamics 365 Licensing Guide (the Power Platform figures are now confirmed against the August 2026 PPLG — Power Apps Premium accrues 250 MB DB / 2 GB File per user, and the larger numbers are tenant defaults, not per-user);  
 (b) Copilot Studio Copilot Credit per-event billing rates (the meter was rebranded to Copilot Credits on September 1, 2025; the pay-as-you-go rate and prepaid-pack quantity did not change, but per-event consumption rates should be re-verified against the current Copilot Credit Guide);  
 (c) Customer Service Enterprise omnichannel add-in USD list prices — confirmed via Microsoft community channels and partner aggregators, not the public pricing page;  
 (d) the Premium step-up SKU reported as introduced in March 2026. Treat MODERATE-confidence items as anchors for a discussion with your Microsoft account team or CSP partner, not as final quoted prices.
 
-### Scope.
- This article covers Power Apps, Power Automate, Power Pages, Microsoft Copilot Studio, Microsoft Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service. The following are deliberately out of scope and are NOT addressed: Power BI (separate Pro / PPU / Premium licensing model), Dynamics 365 Sales, Field Service, Business Central, Finance, Supply Chain Management, Project Operations, Commerce, Customer Insights – Data, Customer Insights – Journeys, Industry Clouds, and Microsoft Fabric. Government cloud SKUs (GCC, GCC High, DoD), Education (A-SKUs), and Nonprofit pricing are referenced only briefly in §6.
+{: .note }
+**Scope.** This article covers Power Apps, Power Automate, Power Pages, Microsoft Copilot Studio, Microsoft Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service. The following are deliberately out of scope and are NOT addressed: Power BI (separate Pro / PPU / Premium licensing model), Dynamics 365 Sales, Field Service, Business Central, Finance, Supply Chain Management, Project Operations, Commerce, Customer Insights – Data, Customer Insights – Journeys, Industry Clouds, and Microsoft Fabric. Government cloud SKUs (GCC, GCC High, DoD), Education (A-SKUs), and Nonprofit pricing are referenced only briefly in §6.
 
+---
 
-## Power Platform (Core)
+## 1. Power Platform (Core)
 
-### Power Apps
+### 1.1 Power Apps
 
 Power Apps in 2026 has three commercial purchase paths and one free developer path.
 
 | SKU | List price (USD) | Entitlement |
 |-----|------------------|-------------|
-| **Power Apps Premium** (per user) | **$20 / user / month** | Unlimited custom canvas + model-driven apps and Power Pages portals (run-time). Includes Premium connectors, custom connectors, on-prem data gateway, and **250 MB Dataverse database + 2 GB Dataverse file accrued capacity per user** as displayed on the live Power Apps pricing page. The April 2026 Power Platform Licensing Guide PDF reports a higher figure — see §3.2 for the discrepancy and how to read it. |
-| **Power Apps Premium** (2,000-seat minimum) | **$12 / user / month** | Same entitlement as Power Apps Premium, discounted for organizations committing to a minimum of 2,000 licenses ("Contact Sales"). Added to the public Power Apps pricing page by July 2026. |
-| **Power Apps per App** (per user per app) | **$5 / user / app / month** | One app or one portal per "pass." Dataverse is limited to that app's scope: 50 MB DB / 400 MB file per user per pass. 5-pack minimum has been removed. |
+| **Power Apps Premium** (per user) | **$20 / user / month** | Unlimited custom canvas + model-driven apps and Power Pages portals (run-time). Includes Premium connectors, custom connectors, on-prem data gateway, and **250 MB Dataverse database + 2 GB Dataverse file accrued capacity per user**, as shown on the live Power Apps pricing page and confirmed in the August 2026 Power Platform Licensing Guide (Accrued column). The 20 GB figure sometimes quoted is the tenant-wide **default**, not per-user accrual — see §3.1–§3.2. |
+| **Power Apps Premium** (volume tier) | **$12 / user / month** | Same entitlement as Power Apps Premium, available to organizations **with 2,000+ Microsoft 365 / Office 365 licenses** (per the August 2026 Power Platform Licensing Guide). |
+| **Power Apps per App** (subscription license) | **End of Sale — January 2026** | The per-App *subscription* license is no longer sold (Power Platform Licensing Guide change log, January 2026). Existing customers may renew per Microsoft's transition terms; new per-app scenarios use the pay-as-you-go meter below. |
 | **Power Apps Pay-as-you-go** | **$10 per active user per app / month** | Consumption-billed through an Azure subscription. An "active user" is any user who launches the app within a calendar month. |
 | **Power Apps Developer Plan** | Free | Build/test against a personal developer environment; no production rights. |
 
-Sources: [Power Apps pricing](https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing), [Power Platform Licensing Guide April 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2085130).
+Sources: [Power Apps pricing](https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing), [Power Platform Licensing Guide August 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-**Per-App SKU status flag.** Microsoft announced **end-of-sale of the Power Apps per App SKU on January 2, 2026** for new commercial customers. In **early April 2026**, Microsoft reversed and reinstated the per-App SKU on the public price list. The April 2026 licensing guide reflects per-App as a current offer. **Update (July 25, 2026):** the public Power Apps *marketing* pricing page now displays only Power Apps Premium ($20/user/month) and a new $12/user/month volume tier (2,000-seat minimum) — it does **not** show the per-App plan. Per-App may still be available through the licensing-guide / CSP channel, so treat its availability as a to-verify item against the current PPLG PDF before quoting. This revision records the change in the changelog above.
+**Per-App SKU status flag (resolved).** The **August 2026 Power Platform Licensing Guide change log confirms the Power Apps per App *subscription* license reached End of Sale in January 2026.** What remains on the price list is the **Power Apps per app pay-as-you-go meter at $10 per active user/app/month** (an "active user" is anyone who opens the app one or more times in a calendar month). Per-app economics are therefore still available — as consumption billing, not a fixed subscription. Model role-segmented app usage on the $10 meter, and choose Power Apps Premium ($20, or $12 with 2,000+ Microsoft 365 licenses) when most users run most apps.
 
 #### Standard vs Premium connectors — the core licensing fault line
 
@@ -108,7 +128,7 @@ A 500-employee manufacturer deploys three line-of-business Power Apps (HSE incid
 
 **Rule of thumb:** Premium wins when most users run most apps. Per-App wins when usage is role-segmented and the user count per app is well below the total workforce.
 
-### Power Automate
+### 1.2 Power Automate
 
 | SKU | List price (USD) | Entitlement |
 |-----|------------------|-------------|
@@ -118,13 +138,13 @@ A 500-employee manufacturer deploys three line-of-business Power Apps (HSE incid
 | **Power Automate Pay-as-you-go** | **$0.60 per cloud flow run** | Azure-billed. Suitable for low-frequency, high-variance workloads. |
 | **Process Mining add-on** | **$5,000 / tenant / month** | Enterprise Process Mining for >5 process maps or unlimited records. |
 
-Sources: [Power Automate pricing](https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing), [Power Platform Licensing Guide April 2026](https://go.microsoft.com/fwlink/?linkid=2085130).
+Sources: [Power Automate pricing](https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing), [Power Platform Licensing Guide August 2026](https://go.microsoft.com/fwlink/?linkid=2085130). Power Automate Premium ($15/user/month) and Process ($150/bot/month) are confirmed in the August 2026 guide.
 
 #### Real-world example — Process vs Hosted Process
 
 A finance team runs an unattended nightly bot that reconciles bank statements with ERP entries. The bot runs on a corporate VDI that is patched weekly, resulting in 1–2 missed runs per month. Moving to **Hosted Process at $215 / bot / month** eliminates the VDI dependency and adds Microsoft-managed patching, RDP brokering, and elastic capacity. ROI breaks even at one prevented missed reconciliation per month.
 
-### Power Pages
+### 1.3 Power Pages
 
 Power Pages (the renamed Power Apps Portals) is licensed by **monthly active users (MAU) per site**. A MAU is a unique identity that loads any Power Pages page within a calendar month. Authenticated MAUs sign in (Entra ID, Entra External ID / B2C, Microsoft account, LinkedIn, etc.); anonymous MAUs are unauthenticated public visitors. Search-engine crawlers are not counted ([Power Pages capacity licensing](https://learn.microsoft.com/en-us/power-pages/admin/about-capacity-licensing)).
 
@@ -145,7 +165,7 @@ A municipality launches a citizen-permit portal expected to draw **8,000 anonymo
 
 Capacity packs win at steady volumes; PAYG wins for unpredictable spikes. Note that an authenticated MAU is a *unique signed-in identity per month*, not a session or a page view — repeat visits by the same citizen do not increment the count.
 
-### Tenant environment and API entitlements
+### 1.4 Tenant environment and API entitlements
 
 - **Default environment.** Each tenant receives one default environment provisioned with **3 GB Dataverse database, 3 GB file, and 1 GB log** capacity ([Dataverse capacity storage](https://learn.microsoft.com/en-us/power-platform/admin/capacity-storage)). Production and sandbox environments draw from the tenant Dataverse pool. No hard cap on environment count, but each consumes from the shared pool ([environments overview](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview)).
 - **Developer environment.** Every user with any seeded or paid license automatically receives a personal developer environment.
@@ -153,13 +173,13 @@ Capacity packs win at steady volumes; PAYG wins for unpredictable spikes. Note t
 
 **When the Requests add-on actually matters.** High-volume Power Automate scenarios are typically triggered by child-flow fan-out patterns, integration flows polling HTTP endpoints on a short cadence, large-scale Dataverse data movement, and any flow making many connector calls per run. If your monitoring shows users approaching the daily cap or HTTP 429s in the flow run history, the add-on is the supported answer.
 
-### Managed Environments and Governance Licensing
+### 1.5 Managed Environments and Governance Licensing
 
 **Managed Environments** is Microsoft's governance overlay for Power Platform environments — it surfaces DLP enforcement, sharing limits, weekly digests, Power Platform Pipelines, solution checker enforcement, and "Maker welcome content." Managed Environments has **no separate SKU price**, but it gates feature access by *user-license type*: every user accessing a Managed Environment must hold a **Power Apps Premium**, **Power Automate Premium**, **Power Pages**, or qualifying **Dynamics 365** license ([about Managed Environments](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview)).
 
 The practical consequence: a tenant that adopted Managed Environments for governance reasons cannot mix-and-match M365-seeded users into the same environment. This is the most common reason a sizing exercise sized for "Premium for makers, M365 seeded for everyone else" needs to be re-priced upward.
 
-### Trial, Developer, and non-production licenses
+### 1.6 Trial, Developer, and non-production licenses
 
 - **30-day trials** are available for Power Apps Premium and Power Automate Premium. Trials convert to paid via the Microsoft 365 admin center or your CSP / EA channel.
 - **Power Apps Developer Plan** (free) replaces the retired Power Apps Community Plan. It provides a personal developer environment for build/test, with **no production rights and no commercial use**. Each user with any paid or seeded license is automatically entitled to a developer environment ([Developer Plan](https://powerapps.microsoft.com/en-us/developerplan/)).
@@ -167,22 +187,59 @@ The practical consequence: a tenant that adopted Managed Environments for govern
 
 ---
 
-## Microsoft Copilot Studio
+## 2. Microsoft Copilot Studio
 
 Copilot Studio is licensed by **Copilot Credit consumption**, which replaced the legacy "message" terminology on September 1, 2025. Credits pool at the tenant level and are consumed FIFO across **all Copilot Studio agents, all environments, and bundled Dynamics 365 AI agents**. Microsoft documentation consistently references the Contact Center and Customer Service AI agents (Customer Intent, Customer Knowledge, Quality Evaluation) as drawing from the same credit pool. Sales-side AI agents are referenced in Microsoft messaging as participating in the pooled meter (MODERATE confidence — verify on the Dynamics 365 Sales pricing page).
 
-### Commercial models
+### 2.0 Build harnesses (new in the August 2026 guide)
 
-| SKU | List price (USD) | Entitlement |
-|-----|------------------|-------------|
-| **Copilot Studio Pre-Purchase Plan** (Tenant Message Pack) | **$200 / month for 25,000 Copilot Credits** (≈ $0.008 / credit) | Annual commitment; up to **20% discount** vs PAYG. |
-| **Copilot Studio Pay-as-you-go** (Azure-billed) | **$0.01 / Copilot Credit** | No commitment; Azure subscription required. |
-| **M365 Copilot included usage** | Zero-rated for licensed M365 Copilot users | When agents are invoked through M365 Copilot Chat or Teams by a user holding the $30 / user / month M365 Copilot license, no tenant credits are drawn ("B2E zero-rated path"). |
-| **Agent Pre-Purchase Plan** (Azure Reservation) | Up to 20% off PAYG | Credits apply across all Copilot Studio agents AND Dynamics 365 agents. |
+The August 2026 Copilot Studio Licensing Guide introduces **three "harnesses"** — the software scaffolding an agent uses to plan, reason, keep context, and call tools. The harness a maker chooses affects **when** Copilot Credits are consumed:
 
-Sources: [Copilot Studio pricing](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio/pricing), [Copilot Credits pre-purchase](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-pre-purchase-pricing), [M365 Copilot included entitlement](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-microsoft-copilot-included).
+| Harness | What it's for | Credit consumption |
+|---------|---------------|--------------------|
+| **GitHub Copilot harness** | Optimize end-to-end business processes with an agentic build experience | Consumes Copilot Credits at **both build/maker time and runtime** |
+| **Standard harness** | Rule-based conversational agents with predefined topics, flows, and workflows | LLM-powered maker features consume credits; runtime billed via Copilot Credits (fair-usage limits apply in Microsoft channels) |
+| **Copilot Chat harness** | Customize Microsoft 365 Copilot with your organization's knowledge | LLM-powered maker features consume credits; runtime billed via Copilot Credits (fair-usage limits apply in Microsoft channels) |
 
-### Copilot Credit billing rates
+Manual, non-LLM configuration does **not** consume credits; natural-language authoring, Evaluation, and Preview do. For Microsoft 365 Copilot USL holders, employee-facing (B2E) runtime of **Standard** and **Copilot Chat** harness agents in Microsoft channels is included in the USL and does not require a Copilot Credit purchasing option to be configured; **GitHub Copilot** harness runtime always consumes credits. (Source: Copilot Studio Licensing Guide, August 2026.)
+
+### 2.1 Commercial models
+
+The August 2026 guide defines **four purchasing constructs** for Copilot Credits, plus the zero-rated M365 Copilot path:
+
+| Purchasing construct | List price (USD) | How it works |
+|----------------------|------------------|--------------|
+| **1. Pay-as-you-go Copilot Credit** (Azure-billed meter) | **$0.01 / Copilot Credit** | Post-pay for the exact credits agents and flows consume in a billing month; no upfront commitment. Decrements the Microsoft Azure Consumption Commitment (MACC); not Azure-prepayment eligible. |
+| **2. Copilot Credit Pre-Purchase Plan (P3)** | Tiered discount off PAYG (see tiers below) | One-year pay-upfront pool of Copilot Credits that auto-decrements; overage rolls to PAYG or an added pool. Unused credits expire at the end of the annual term. |
+| **3. Microsoft Agent Pre-Purchase Plan (P3)** | Tiered discount (see tiers below) | One-year pay-upfront pool priced in **Agent Commit Units (ACUs)** that covers eligible usage across **Copilot Studio *and* Microsoft Foundry**. **1 ACU = $1 = 100 Copilot Credits.** Per environment via billing plan; unused ACUs do not roll over. |
+| **4. Copilot Studio capacity pack** (subscription license) | **$200 / pack / month, billed annually = 25,000 Copilot Credits** (≈ $0.008 / credit) | Per-tenant subscription; buy packs for expected monthly volume. Unused credits do not roll over month to month. Each builder also needs a **Copilot Studio User License ($0)**. |
+| **M365 Copilot included usage** (not a purchase) | Zero-rated for licensed M365 Copilot users | B2E runtime of Standard / Copilot Chat harness agents in Microsoft channels is included in the $30/user/month M365 Copilot USL when the agent runs under the licensed user's identity; no tenant credits drawn. |
+
+**Copilot Credit Pre-Purchase Plan (P3) tiers** (one-year, pay-upfront):
+
+| Tier | Copilot Credits | Discount |
+|------|-----------------|----------|
+| 1 | 300,000 | 5% |
+| 2 | 1,500,000 | 6% |
+| 3 | 3,000,000 | 7% |
+| 4 | 15,000,000 | 8% |
+| 5 | 30,000,000 | 10% |
+| 6 | 75,000,000 | 12% |
+| 7 | 150,000,000 | 14% |
+| 8 | 225,000,000 | 17% |
+| 9 | 300,000,000 | 20% |
+
+**Microsoft Agent Pre-Purchase Plan (P3) tiers** (one-year, pay-upfront; priced in ACUs, 1 ACU = $1 = 100 Copilot Credits):
+
+| Tier | Agent Commit Units (ACUs) | Discount |
+|------|---------------------------|----------|
+| 1 | 20,000 | 5% |
+| 2 | 100,000 | 10% |
+| 3 | 500,000 | 15% |
+
+Sources: Microsoft Copilot Studio Licensing Guide — August 2026; [Copilot Studio pricing](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio/pricing); [Microsoft Agent Prepurchase Plan (Microsoft Learn)](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/agent-pre-purchase); [Copilot Credits pre-purchase](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-pre-purchase-pricing); [M365 Copilot included entitlement](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-microsoft-copilot-included).
+
+### 2.2 Copilot Credit billing rates
 
 Per the April 2026 Copilot Studio Licensing Guide and the [Copilot Studio billing-rates page](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-capacity):
 
@@ -191,22 +248,22 @@ Per the April 2026 Copilot Studio Licensing Guide and the [Copilot Studio billin
 | **Classic answer** (deterministic topic flow, no LLM) | **1** |
 | **Generative answer** (RAG over indexed knowledge sources) | **2** |
 | **Agent action / tool call** (Power Automate flow, REST connector) | **5** |
-| **Tenant Microsoft Graph grounding** (employee context) | **10** (reported reduced from 30 before the rebrand) |
+| **Tenant Microsoft Graph grounding** (employee context) | **10** (reduced from 30; confirmed in the Power Platform Licensing Guide change log, April 2025) |
 | **Voice** (per minute) | **13** |
 | **Autonomous action** (event-triggered, no user prompt) | **25** |
 
 {: .warning }
-**Confidence note.** Microsoft rebranded "messages" to "Copilot Credits" on September 1, 2025; per its Copilot Studio licensing documentation the pay-as-you-go rate and the prepaid-pack quantity did **not** change with the rename, but per-event consumption rates should be treated as unverified. The table above reflects the rates reported in the April 2026 licensing guide and has not been independently re-verified as of July 25, 2026. The Microsoft Learn billing-rates page is authoritative — confirm before sizing a deployment.
+**Confidence note.** Microsoft rebranded "messages" to "Copilot Credits" on September 1, 2025; per its Copilot Studio licensing documentation the pay-as-you-go rate and the prepaid-pack quantity did **not** change with the rename, but per-event consumption rates should be treated as unverified. The table above reflects the rates reported in the April 2026 licensing guide and has not been independently re-verified as of August 4, 2026. The **August 2026 Copilot Studio Licensing Guide still lists per-event rates only by reference to the separate [Billing rates and management](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-capacity) page**, which remains authoritative — confirm before sizing a deployment.
 
 **Capacity pooling.** All credits pool at the tenant level. Overage on the Pre-Purchase Plan rolls onto PAYG automatically unless the admin disables overflow.
 
-### AI Builder — current state and sunset
+### 2.2.1 AI Builder — current state and sunset
 
-While AI Builder remains on price lists, it serves form processing / document automation, prediction models, sentiment analysis, and category classification scenarios — distinct from Copilot Studio agent invocations. Legacy AI Builder credits at **$500 per 1 million service credits** are scheduled to be **retired in November 2026** and consolidated under the Copilot Credit meter. Customers with active AI Builder add-ons can use them until renewal; net-new deployments after the retirement date will provision Copilot Credits instead.
+AI Builder reached **End of Sale in November 2025** per the Power Platform Licensing Guide change log; existing **AI Builder entitlements for current Power Apps, Power Automate, and Dynamics 365 customers remain available until November 1, 2026**, after which the capability consolidates under the Copilot Credit meter. It serves form processing / document automation, prediction models, sentiment analysis, and category classification scenarios — distinct from Copilot Studio agent invocations. Customers with active AI Builder entitlements can use them through that date; net-new deployments after it will provision Copilot Credits instead.
 
-**During the transition (now through November 2026):** if a workload is predominantly document processing, AI Builder may still be the more economical SKU. If it mixes document processing with conversational agents, Copilot Credits are the forward-compatible path. Re-check the current Copilot Studio Licensing Guide before committing to either ([Copilot Studio Licensing Guide April 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2243406)).
+**During the transition (now through November 2026):** if a workload is predominantly document processing, AI Builder may still be the more economical SKU. If it mixes document processing with conversational agents, Copilot Credits are the forward-compatible path. Re-check the current Copilot Studio Licensing Guide before committing to either ([Copilot Studio Licensing Guide August 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2243406)).
 
-### What's included with Microsoft 365 Copilot vs what requires Copilot Studio
+### 2.3 What's included with Microsoft 365 Copilot vs what requires Copilot Studio
 
 There are **three distinct user-license states** that affect how a Copilot Studio agent is billed:
 
@@ -222,7 +279,10 @@ There are **three distinct user-license states** that affect how a Copilot Studi
 {: .important }
 **The free-tier surprise.** A tenant that rolls out Microsoft 365 Copilot Chat broadly without buying the $30 M365 Copilot license will see agent invocations from those users **draw against tenant Copilot Credits** rather than being zero-rated. The economics flip at the M365 Copilot license boundary, not at the Copilot Chat boundary. Plan B2E credit budgets accordingly.
 
-### Role-specific Copilots — Sales and Service
+{: .note }
+**Work IQ APIs are not zero-rated.** Per the August 2026 guide (a July 2026 change), a Copilot Studio agent's use of **Work IQ APIs is not included** in the Microsoft 365 Copilot USL and consumes Copilot Credits even in otherwise-included B2E scenarios.
+
+### 2.4 Role-specific Copilots — Sales and Service
 
 Distinct from Copilot Studio agents and from the in-Customer-Service Copilot, Microsoft also sells two **role-overlay Copilot SKUs**:
 
@@ -231,33 +291,33 @@ Distinct from Copilot Studio agents and from the in-Customer-Service Copilot, Mi
 
 Each is a **per-user seat license** with pricing reported around the $50 / user / month range (MODERATE confidence — verify against the current Microsoft 365 Copilot pricing page). These SKUs are **not** the same as Copilot Studio credits and are **not** consumed from the tenant credit pool — they are flat per-user subscriptions.
 
-### Real-world example — Pre-Purchase vs PAYG break-even
+### 2.5 Real-world example — Pre-Purchase vs PAYG break-even
 
 A retail customer expects 50,000 generative answers and 5,000 agent actions per month.
 
 - Credits required: 50,000 × 2 + 5,000 × 5 = **125,000 credits / month**.
 - PAYG cost: 125,000 × $0.01 = **$1,250 / month**.
-- Pre-Purchase: 5 × $200 packs = **$1,000 / month** for 125,000 credits — exactly the advertised 20% discount.
+- Capacity packs: 5 × $200 packs = **$1,000 / month** for 125,000 credits (5 × 25,000) — the effective $0.008 / credit is exactly a 20% saving vs PAYG.
 
-**Rule of thumb:** Above ~25,000 credits / month, Pre-Purchase always wins.
+**Rule of thumb:** Above ~25,000 credits / month, the **$200 capacity pack** beats PAYG. For large annual commitments the **Copilot Credit Pre-Purchase Plan (P3)** layers on a further 5–20% tiered discount, and the **Microsoft Agent Pre-Purchase Plan (P3)** is the option when the same up-front commitment must also cover Microsoft Foundry usage.
 
 ---
 
-## Microsoft Dataverse
+## 3. Microsoft Dataverse
 
 Dataverse is the relational data backbone behind model-driven Power Apps and Dynamics 365. It is licensed as a **shared, tenant-level capacity pool** measured in three buckets — **Database** (relational rows), **File** (attachments / images / blobs), and **Log** (audit trail). Every Power Apps / Power Automate / Dynamics 365 license contributes per-user accrued capacity to the same shared pool, on top of a one-time tenant default.
 
-### Default tenant entitlement
+### 3.1 Default tenant entitlement
 
-The first eligible subscription provisioned in a tenant grants a **one-time tenant-level default** (long-standing licensing-guide figure: **10 GB Database, 20 GB File, 2 GB Log**). This is not per subscription — purchasing a second Power Apps Premium or Dynamics 365 SKU does NOT double the default. The per-environment default (3 GB DB / 3 GB File / 1 GB Log for the default environment) is separate. Verify both figures against the current licensing guide ([Dataverse capacity storage](https://learn.microsoft.com/en-us/power-platform/admin/capacity-storage)).
+The first eligible subscription provisioned in a tenant grants a **one-time tenant-level default**. The **August 2026 Power Platform Licensing Guide** puts the **File default at 20 GB and the Log default at 2 GB**; for the **Database default** the guide is internally inconsistent — its worked example uses **10 GB** while its capacity table lists **20 GB** (these tenant defaults were raised in November 2025). This is not per subscription — purchasing a second Power Apps Premium or Dynamics 365 SKU does NOT double the default. The per-environment default (3 GB DB / 3 GB File / 1 GB Log for the default environment) is separate. Verify both figures against the current licensing guide ([Dataverse capacity storage](https://learn.microsoft.com/en-us/power-platform/admin/capacity-storage)). The **August 2026 Copilot Studio Licensing Guide** states a **Dataverse-for-Copilot-Studio default of 15 GB Database / 20 GB File / 2 GB Log** per tenant (the Database default rose from 5 GB to 15 GB in December 2025) — the entitlement a tenant's first Copilot Studio / Power Apps / Power Automate / Power Pages or select Dynamics 365 subscription unlocks. Do not confuse it with the general Power Platform tenant default above.
 
-### Per-license accrued capacity
+### 3.2 Per-license accrued capacity
 
-Dataverse per-user accrual is reported in two places that currently disagree at the time of writing: Microsoft's live pricing pages (the conservative numbers below) and the April 2026 Power Platform / Dynamics 365 Licensing Guide PDFs (which report larger figures for several SKUs, attributed to a late-2025 uplift). The table below shows the **live pricing-page values** with the licensing-guide PDF figure noted where it differs.
+Dataverse capacity has two distinct dimensions that are easy to confuse: a **one-time tenant Default** (raised in November 2025) and **per-user Accrued** capacity (added for each license). The August 2026 Power Platform Licensing Guide lists them in separate columns, and its per-user numbers agree with the live pricing pages. The table below shows the **per-user accrued** values; the tenant default is covered in §3.1.
 
 | License | DB accrued (live pricing page) | File accrued (live pricing page) | Licensing Guide PDF reports |
 |---------|-------------------------------|----------------------------------|-----------------------------|
-| Power Apps Premium | 250 MB / user | 2 GB / user | Reported as substantially higher in the April 2026 PPLG PDF (figures circulating in partner channels reference 20 GB DB / user as the post-uplift number) — **verify against current PPLG PDF before sizing**. |
+| Power Apps Premium | 250 MB / user | 2 GB / user | **Confirmed** by the August 2026 PPLG (Accrued column). The 20 GB sometimes cited is the tenant-wide **Default**, not per-user accrual — see §3.1. |
 | Power Apps per App pass | 50 MB / user / pass | 400 MB / user / pass | Per the April 2026 PPLG. |
 | Power Automate Premium | 250 MB / user | 2 GB / user | Per the live Power Automate pricing page. |
 | Power Automate Process / Hosted Process | 50 MB / flow or bot | 200 MB / flow or bot | Per the live Power Automate pricing page. |
@@ -266,22 +326,33 @@ Dataverse per-user accrual is reported in two places that currently disagree at 
 | Dynamics 365 Business Central Premium | 4 GB / user | 4 GB / user | Per the April 2026 D365 Licensing Guide. |
 | Dynamics 365 Team Members | 250 MB / user | 2 GB / user | Per the April 2026 D365 Licensing Guide. |
 
-Sources: [Power Apps pricing](https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing); [Power Automate pricing](https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing); [Power Platform Licensing Guide April 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2085130); [Dynamics 365 Licensing Deck March 2026 (PDF)](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/bizapps/Dynamics-365-Licensing-Deck-March-2026-PUB.pdf).
+Sources: [Power Apps pricing](https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing); [Power Automate pricing](https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing); [Power Platform Licensing Guide August 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2085130); [Dynamics 365 Licensing Deck March 2026 (PDF)](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/bizapps/Dynamics-365-Licensing-Deck-March-2026-PUB.pdf).
 
 {: .important }
-**Pricing-page vs Licensing Guide disagreement.** At the time of writing, the public Power Apps pricing page reports 250 MB DB + 2 GB File per Premium user, while the April 2026 Power Platform Licensing Guide PDF reports higher per-user accruals. Sizing should be based on the figures the customer is contractually entitled to under the licensing-guide PDF in force at the time of purchase — confirm with your Microsoft account team or CSP partner before signing.
+**Default vs per-user accrual — resolved for Power Platform.** The August 2026 Power Platform Licensing Guide confirms Power Apps Premium accrues **250 MB DB + 2 GB File per user** — the same as the pricing page. The larger numbers that circulated (e.g., 20 GB) are the **one-time tenant Database default**, not a per-user accrual, and must not be multiplied per user. For **Dynamics 365** SKUs the analogous per-user figures still come from the Dynamics 365 Licensing Guide (see §3.5) — verify those the same way before sizing.
 
-### Capacity add-ons
+### 3.3 Capacity add-ons
 
-| Add-on | List price (USD) |
-|--------|------------------|
-| Dataverse Database Capacity | **$40 / GB / month** |
-| Dataverse File Capacity | **$2 / GB / month** |
-| Dataverse Log Capacity | **$10 / GB / month** |
+**Subscription capacity add-ons** (billed annually; confirmed in the August 2026 Copilot Studio Licensing Guide):
 
-Capacity is purchased per tenant and allocated across environments by an admin in the Power Platform admin center.
+| Add-on | Minimum quantity | List price (USD) |
+|--------|------------------|------------------|
+| Dataverse Database capacity | 1 GB | **$40 / GB / month** |
+| Dataverse Database capacity **Tier 2** | 1,000 GB | **$30 / GB / month** |
+| Dataverse File capacity | 1 GB | **$2 / GB / month** |
+| Dataverse Log capacity | 1 GB | **$10 / GB / month** |
 
-### Dataverse for Teams vs full Dataverse
+**Pay-as-you-go Dataverse capacity meters** (per environment, billed on consumption above a 1 GB Database + 1 GB File per-environment entitlement — no Log entitlement):
+
+| Meter | List price (USD) |
+|-------|------------------|
+| Dataverse Database capacity | **$48 / GB / month** |
+| Dataverse File capacity | **$2.40 / GB / month** |
+| Dataverse Log capacity | **$12 / GB / month** |
+
+Subscription capacity is purchased per tenant and allocated across environments by an admin in the Power Platform admin center; the pay-as-you-go meters bill per environment as an alternative to subscription add-ons for overages. Dataverse capacity add-ons do not apply to Dataverse-for-Teams environments.
+
+### 3.4 Dataverse for Teams vs full Dataverse
 
 **Dataverse for Teams** is a constrained Dataverse instance bundled with **any Microsoft 365 plan that includes Teams** (Business Basic and above, E1+, F3, A1+, G1+). It exists to make canvas Power Apps inside Teams feasible without buying Premium ([about Teams environment](https://learn.microsoft.com/en-us/power-platform/admin/about-teams-environment)).
 
@@ -292,9 +363,9 @@ Limits:
 
 An admin can **upgrade a Dataverse-for-Teams environment to a full Dataverse production environment**, at which point Premium licensing rules apply and the per-user accrued capacity is added to the tenant pool. This is a one-way upgrade.
 
-### Real-world example — Dataverse capacity math
+### 3.5 Real-world example — Dataverse capacity math
 
-A 200-user Dynamics 365 Customer Service Enterprise tenant in 2026, using the licensing-guide-PDF per-user figures (30 GB DB / 30 GB File per Enterprise CRM user):
+A 200-user Dynamics 365 Customer Service Enterprise tenant in 2026. **Caution:** the 30 GB DB / 30 GB File "per Enterprise CRM user" figure used below comes from an earlier Dynamics 365 Licensing Guide reading and may repeat the default-vs-accrued confusion corrected for Power Apps in §3.2 — re-verify per-user *accrued* capacity against the current Dynamics 365 Licensing Guide before relying on it. Using that figure:
 
 - Default + accrued DB = 10 GB (tenant default) + 200 × 30 GB (accrued) = **6,010 GB Database**
 - File = 20 GB + 200 × 30 GB = **6,020 GB File**
@@ -306,11 +377,11 @@ At the older 10 GB per-user accrual, the same tenant would have entitled 10 + 20
 
 ---
 
-## Copilot Studio with Dynamics 365 Contact Center
+## 4. Copilot Studio with Dynamics 365 Contact Center
 
 In 2024, Microsoft repositioned the omnichannel pieces of Customer Service as a **CRM-agnostic Contact Center as a Service** offering. The strategic intent: sell a "Copilot-first" CCaaS to organizations whose system of record is Salesforce, ServiceNow, Zendesk, or anything else — not just Dynamics 365.
 
-### Dynamics 365 Contact Center SKUs
+### 4.1 Dynamics 365 Contact Center SKUs
 
 | SKU | List price (USD) | Entitlement |
 |-----|------------------|-------------|
@@ -323,7 +394,7 @@ Source: [Contact Center pricing](https://www.microsoft.com/en-us/dynamics-365/pr
 
 **Capacity entitlements per Contact Center user** (per the Dynamics 365 Licensing Guide April 2026): 50 record routes / user, 1,000 messaging conversations / user / month, 3,000 IVR voice-bot minutes / tenant / month with the Voice add-in. Overage is billed via Copilot Credits or Azure Communication Services (ACS) pass-through.
 
-### Voice channel — Azure Communication Services pass-through
+### 4.2 Voice channel — Azure Communication Services pass-through
 
 Voice is built on **Azure Communication Services**. Phone-number rental and per-minute usage charges are **NOT included** in the Contact Center subscription — they are billed separately through an Azure subscription.
 
@@ -340,17 +411,17 @@ Phone-number leases run roughly $1 / month (US local DID) to $2 / month (US toll
 {: .warning }
 **Confidence note for §4.2.** ACS per-minute rates and DID lease costs change periodically and vary by region. The figures above are widely quoted US commercial rates at the time of writing (MODERATE confidence); always pull the live ACS pricing per country / channel before contracting.
 
-### Where Copilot Studio meets Contact Center
+### 4.3 Where Copilot Studio meets Contact Center
 
 When a customer interacts with an **AI agent** inside Contact Center — for example, a Customer Intent Agent that captures reason-for-contact before routing, or a Customer Knowledge Agent that drafts answers from the knowledge base — each turn consumes **Copilot Credits at the rates in §2.2**. The organization must hold either a Copilot Studio Pre-Purchase Plan or PAYG capacity. AI agents are NOT included in the base $110 Contact Center subscription — the official pricing page explicitly labels them "Requires Copilot Credits (sold separately)." **Exception (added July 2026):** the current Customer Service pricing page now shows **Customer Service Premium** with *included* base Copilot Credit capacity for these agents (footnote: "Base Copilot Credit capacity included in Dynamics 365 Customer Service Premium"), so a Premium seat carries a starter credit allotment that a standalone Contact Center seat does not — heavy usage still consumes additional credits beyond the included capacity.
 
 This is the single most-misunderstood line in the entire Dynamics 365 portfolio. Buying Contact Center alone gives you the orchestration runtime — channel ingress, routing, the agent desktop, and reporting. It does NOT give you the AI agents the marketing material is built around. Those run on Copilot Studio credits.
 
-### Unified routing
+### 4.4 Unified routing
 
 Unified routing — skill-based, attribute-based, and longest-idle distribution across voice, chat, email, and social channels — is included with **Contact Center, Contact Center Digital, Contact Center Voice, Customer Service Enterprise, and Customer Service Premium**. It is **NOT included with Customer Service Professional**, which is the largest hidden functional gap between Professional and Enterprise.
 
-### Real-world example — Contact Center + ACS
+### 4.5 Real-world example — Contact Center + ACS
 
 A 60-seat outbound sales team uses Contact Center Voice ($95 × 60 = $5,700 / month, or $3,420 / month after the 40% promo) and makes 25 outbound calls per agent per day, average 4 minutes:
 
@@ -363,9 +434,9 @@ Add a Customer Intent AI agent that captures reason-for-contact on every call (2
 
 ---
 
-## Dynamics 365 Customer Service
+## 5. Dynamics 365 Customer Service
 
-### Base SKUs
+### 5.1 Base SKUs
 
 | SKU | List price (USD) | Entitlement |
 |-----|------------------|-------------|
@@ -378,14 +449,14 @@ Source: [Customer Service pricing](https://www.microsoft.com/en-us/dynamics-365/
 
 **Recent pricing changes.** Customer Service Enterprise moved from $95 to **$105 / user / month** in mid-2025; partner blogs dated 2024 still cite $95. The **40% promotional discount** that ran October 1, 2025 → June 30, 2026 applied to **Customer Service Premium**, **Dynamics 365 Contact Center**, **Contact Center Digital**, and **Contact Center Voice** SKUs only — **Customer Service Enterprise was NOT included** in the promotion. **This promotional window closed on June 30, 2026 and is no longer displayed on Microsoft's pricing pages** (checked July 25, 2026); confirm any successor FY27 offer with your account team or CSP partner ([Contact Center pricing](https://www.microsoft.com/en-us/dynamics-365/products/contact-center/pricing)). The promotion is EA / CSP only and is not stackable with other discounts.
 
-### Capacity entitlements per Customer Service license
+### 5.2 Capacity entitlements per Customer Service license
 
 - **Dataverse:** the April 2026 Dynamics 365 Licensing Guide reports up to 30 GB DB / 30 GB File / 2 GB Log per Customer Service Enterprise user (MODERATE confidence; verify against current PDF).
 - **Unified routing** (Enterprise+): 50 record routes / user, 1,000 messaging conversations / user / month.
 - **API requests:** 40,000 / user / 24 h.
 - **Copilot for Customer Service:** Included in Enterprise and Premium since 2024 — case summary, email draft, conversation summary, real-time agent assist, Q&A over linked knowledge sources.
 
-### Add-ins available to Customer Service Enterprise
+### 5.3 Add-ins available to Customer Service Enterprise
 
 These add-ins enable omnichannel capabilities for Customer Service Enterprise customers who do not want the full Contact Center bundle. **They cannot be purchased on top of Customer Service Professional.**
 
@@ -400,7 +471,7 @@ Sources: [Microsoft Dynamics community thread, MS employee response (June 2024)]
 
 **Confidence note.** Add-in USD list prices are confirmed via the Microsoft Dynamics community (employee response) and TrustRadius pricing aggregation, but at the time of writing they are **not directly published on the public microsoft.com Customer Service pricing page**, which links only to the three base plans. Treat as MODERATE-confidence list prices; final quotes should come from the Microsoft account team or a CSP partner.
 
-### Customer Service Enterprise vs Contact Center vs Premium — the decision matrix
+### 5.4 Customer Service Enterprise vs Contact Center vs Premium — the decision matrix
 
 | Need | Recommended SKU | Monthly cost (200 seats, list, before promo) |
 |------|------------------|-----------------------------------------------|
@@ -411,7 +482,7 @@ Sources: [Microsoft Dynamics community thread, MS employee response (June 2024)]
 | CRM-agnostic CCaaS (no D365 CRM in scope) | Dynamics 365 Contact Center | 110 × 200 = **$22,000** |
 | Existing non-MS CRM + native voice + AI agents | Contact Center + Copilot Studio Pre-Purchase | 110 × 200 + credit pack = **~$22,000 + credits** |
 
-### Real-world example — when Premium beats Enterprise + add-ins
+### 5.5 Real-world example — when Premium beats Enterprise + add-ins
 
 A 500-seat global support center needs digital messaging on day one and plans to add voice within 12 months. List-price comparison:
 
@@ -428,9 +499,9 @@ Premium under the promo is **roughly $30,000 / user / month cheaper** than the E
 
 ---
 
-## Cross-cutting Guidance — How to Decide What to License
+## 6. Cross-cutting Guidance — How to Decide What to License
 
-### Decision principles
+### 6.1 Decision principles
 
 1. **Start with the data.** If the workload needs full Dataverse and Premium connectors, you are in Premium territory. If everything lives in SharePoint, Excel, and Teams, M365-seeded rights may be sufficient.
 2. **Count the apps per user.** Power Apps Premium wins when most users run most apps; per-App wins when usage is role-segmented and you can count app users by the hundred, not the thousand.
@@ -438,18 +509,18 @@ Premium under the promo is **roughly $30,000 / user / month cheaper** than the E
 4. **Use the promotional window — but check eligibility carefully.** The 40% discount applied to **Customer Service Premium**, **Dynamics 365 Contact Center**, **Contact Center Digital**, and **Contact Center Voice** through June 30, 2026 — **that window has now closed** (as of July 25, 2026 it is no longer shown on the pricing pages). **Customer Service Enterprise was never eligible.** If a successor FY27 promotion exists, confirm scope and eligibility with your account team before modeling it. If a sizing exercise is sitting on Enterprise + add-ins, model the Premium-with-promo alternative explicitly before deciding.
 5. **Re-verify the moving parts before signing.** Copilot Credit billing rates, Customer Service add-in list prices, and Dataverse per-user accruals have all moved within the last 12 months. The next revision of this article will track those in a dedicated changelog section.
 
-### Cloud variants and regulated tenants
+### 6.2 Cloud variants and regulated tenants
 
 - **Government clouds (GCC, GCC High, DoD).** Power Platform and Dynamics 365 SKUs in US government clouds have a separate price list, separate feature-parity timeline (Copilot Studio voice and some AI agents have historically reached GCC clouds later than commercial), and constraints on which ACS regions and Azure OpenAI endpoints are available. Public-sector and defense readers should treat this article's pricing as commercial-cloud-only and verify GCC/GCC High availability with their account team before sizing.
 - **EU Data Boundary.** Microsoft completed full inclusion of Copilot and AI services in the EU Data Boundary in early 2025; processing for tenants in scope remains in EU/EFTA data centers. Multi-geo Dataverse is available as a separate capability with its own capacity implications.
 - **Sovereign and regulated EU clouds.** Specific sovereign offerings (such as the Microsoft Cloud for Sovereignty, and locally-operated partner offerings where applicable) have distinct SKU availability and price lists. Confirm specifics with your account team.
 
-### Education and Nonprofit
+### 6.3 Education and Nonprofit
 
 - **Education (A-SKUs).** A1, A3, and A5 plans grant seeded Power Platform rights similar in shape to E-series equivalents but with reduced commercial use scope. Dynamics 365 has dedicated Education SKUs.
 - **Nonprofit.** Eligible nonprofits qualify for steep discounts on Power Apps Premium and Dynamics 365 base SKUs via the Microsoft Tech for Social Impact program. Pricing varies by entity and country — engage Microsoft Philanthropies for current quotes.
 
-### Common mistakes to avoid
+### 6.4 Common mistakes to avoid
 
 1. **Buying Contact Center without Copilot Credits.** The AI agents in marketing material are not included in the seat price — see §4.3.
 2. **Assuming Managed Environments is free.** It has no SKU price, but it gates per-user license type — see §1.5.
@@ -458,7 +529,7 @@ Premium under the promo is **roughly $30,000 / user / month cheaper** than the E
 5. **Forgetting that F-series ≠ E-series for Power Platform rights** — see §1.1 caveat.
 6. **Assuming the 40% promo applies to Customer Service Enterprise.** It does not — see §5.1 and §6.1 step 4.
 
-### Negotiation levers — EA vs CSP vs MCA-E
+### 6.5 Negotiation levers — EA vs CSP vs MCA-E
 
 - **Enterprise Agreement (EA).** Best for very large tenants with predictable three-year demand; gates access to certain volume discounts and the 40% Contact Center promotion. Price-protected through the EA term.
 - **Cloud Solution Provider (CSP).** Most flexible for mid-market — monthly cadence, partner-managed billing, easier mid-term seat changes. Promotion eligibility usually mirrors EA but ask the CSP partner to confirm.
@@ -466,15 +537,15 @@ Premium under the promo is **roughly $30,000 / user / month cheaper** than the E
 
 ---
 
-## Conclusion
+## 7. Conclusion
 
 Microsoft's business-application licensing in 2026 reflects a maturing, three-pillar commercial design: **per-user subscriptions** for the seat-based products, **capacity-based consumption metering** for Dataverse and Copilot Studio Copilot Credits, and **MAU-based capacity packs** for citizen-facing Power Pages portals.
 
-The structurally interesting shift of the last twelve months is the consolidation of Power Platform AI consumption under a single **Copilot Credit** meter (with AI Builder credits scheduled to be retired in November 2026) — a strategic move toward a unified Azure-billed currency for all AI workloads. Future licensing decisions will increasingly be about *how much AI you can commit to up front* (Pre-Purchase Plan) versus *flexibility to spike* (PAYG), rather than which SKU contains which feature. In parallel, the April 2026 licensing guides report higher per-user Dataverse accruals for Power Apps Premium and several Dynamics 365 SKUs than the live pricing pages currently display — a discrepancy that materially affects sizing for tenants with 100+ seats and that should be re-verified against the licensing guide PDF in force at contract signing.
+The structurally interesting shift of the last twelve months is the consolidation of Power Platform AI consumption under a single **Copilot Credit** meter (with AI Builder credits scheduled to be retired in November 2026) — a strategic move toward a unified Azure-billed currency for all AI workloads. Future licensing decisions will increasingly be about *how much AI you can commit to up front* (capacity packs and the Copilot Credit or cross-platform Microsoft Agent Pre-Purchase Plans) versus *flexibility to spike* (pay-as-you-go), rather than which SKU contains which feature. In parallel, the August 2026 Power Platform Licensing Guide clarified what had looked like a pricing-page-vs-guide discrepancy: it is the **one-time tenant Dataverse default** that rose (November 2025), not per-user accrual — Power Apps Premium still accrues 250 MB DB / 2 GB File per user. Dynamics 365 per-user figures should still be re-verified against the current Dynamics 365 Licensing Guide at contract signing.
 
-For the practitioner, three defaults: **Power Apps Premium for new build-outs unless app usage is clearly segmented by role; Customer Service Premium over Enterprise + add-ins for any deployment that includes both voice and digital messaging (the 40% Contact Center promo that made this especially attractive ran to June 30, 2026 and has since closed — Enterprise was never eligible); Copilot Studio Pre-Purchase Plan above ~25,000 credits / month.** Confidence in these recommendations is HIGH for prices on Microsoft's own pricing pages and MODERATE for add-in list prices, Copilot Credit billing rates, and Licensing Guide PDF Dataverse accrual figures — all should be re-verified before any commercial commitment.
+For the practitioner, three defaults: **Power Apps Premium for new build-outs unless app usage is clearly segmented by role; Customer Service Premium over Enterprise + add-ins for any deployment that includes both voice and digital messaging (the 40% Contact Center promo that made this especially attractive ran to June 30, 2026 and has since closed — Enterprise was never eligible); Copilot Studio capacity packs above ~25,000 credits / month, stepping up to the Copilot Credit or Microsoft Agent Pre-Purchase Plan (P3) for large annual commitments.** Confidence in these recommendations is HIGH for prices on Microsoft's own pricing pages and MODERATE for add-in list prices, Copilot Credit billing rates, and Licensing Guide PDF Dataverse accrual figures — all should be re-verified before any commercial commitment.
 
-This article will be revised. The next revision will append a **Changelog** section recording every license-relevant change Microsoft publishes — price adjustments, SKU additions or retirements, capacity changes, billing rate revisions — with effective date, source URL, and a one-line impact note.
+This article is revised on a rolling basis. The **Changelog** at the top records every license-relevant change Microsoft publishes — price adjustments, SKU additions or retirements, capacity changes, billing rate revisions — with effective date, source, and a one-line impact note.
 
 ---
 
@@ -511,10 +582,10 @@ This article will be revised. The next revision will append a **Changelog** sect
 
 ## Sources (primary)
 
-1. [Microsoft Power Platform Licensing Guide — April 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2085130)
+1. [Microsoft Power Platform Licensing Guide — August 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2085130)
 2. [Microsoft Dynamics 365 Licensing Guide — April 2026 (PDF)](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/bizapps/Dynamics-365-Licensing-Guide-April-2026.pdf)
 3. [Microsoft Dynamics 365 Licensing Deck — March 2026 (PDF)](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/bizapps/Dynamics-365-Licensing-Deck-March-2026-PUB.pdf)
-4. [Microsoft Copilot Studio Licensing Guide — April 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2243406)
+4. [Microsoft Copilot Studio Licensing Guide (fwlink → current edition; **August 2026** at the time of writing)](https://go.microsoft.com/fwlink/?linkid=2243406)
 5. [Power Apps pricing](https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing)
 6. [Power Automate pricing](https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing)
 7. [Power Pages pricing](https://www.microsoft.com/en-us/power-platform/products/power-pages/pricing)
@@ -534,4 +605,6 @@ This article will be revised. The next revision will append a **Changelog** sect
 21. [Connector reference (Microsoft Learn)](https://learn.microsoft.com/en-us/connectors/connector-reference/)
 22. [Microsoft Dynamics community — Customer Service add-in pricing (employee response, June 2024)](https://community.dynamics.com/forums/thread/details/?threadid=5752f6aa-042f-ef11-840a-000d3a18baa0)
 23. [TrustRadius — Dynamics 365 Customer Service pricing (2026)](https://www.trustradius.com/products/microsoft-dynamics-365-customer-service/pricing)
+24. [Microsoft Agent Prepurchase Plan — Agent Commit Units (Microsoft Learn)](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/agent-pre-purchase)
+25. [Copilot Studio pay-as-you-go pricing (Azure)](https://azure.microsoft.com/en-us/pricing/details/copilot-studio/)
 
