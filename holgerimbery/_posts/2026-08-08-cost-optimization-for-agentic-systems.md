@@ -36,7 +36,7 @@ A few numbers set the stakes. Industry coverage of the FinOps Foundation's 2026 
 
 The failure stories are concrete: organizations that spent an annual AI budget in four months, a company that capped AI spend at $200 a week after too many surprises, and a single agent stuck in a reasoning loop that billed about $4,700 of compute in one afternoon before anyone noticed. Around 96% of organizations report AI costs higher than expected once workloads hit production.
 
-What I see in projects is that the surprise is rarely the model itself — it's everything around it. That's what Agent FinOps is for: measuring, allocating, and governing the full cost of an agent workflow, then tying that cost to a business outcome. On the Microsoft stack, that means spanning three very different meters.
+What I see in projects is that the surprise is rarely the model itself — it's everything around it. And as of this summer, the meter starts earlier than it used to: on Copilot Studio, building an agent now draws credits, not just running one. That's what Agent FinOps is for: measuring, allocating, and governing the full cost of an agent workflow, then tying that cost to a business outcome. On the Microsoft stack, that means spanning three very different meters.
 
 ## Why agent costs behave differently
 
@@ -86,6 +86,18 @@ Copilot Studio meters agents in Copilot Credits, the common currency Microsoft a
 Two design facts drive most of the bill. First, grounding costs about ten times a plain reply: a tenant-Graph-grounded response bills at 10 credits against 1 for a classic answer, so an agent that reaches into SharePoint or Exchange on every turn costs roughly ten times a simple chatbot. On its own, that single factor moved a pilot's projected cost more than any model choice did. Second, autonomy adds up quietly — Microsoft's own guidance notes an agent with deep reasoning and autonomous triggers can use up to 100 credits (about $1) per 10 auto-triggered interactions, roughly $0.10 each with no human in the loop.
 
 Usage by people already licensed for Microsoft 365 Copilot is included at no extra charge, which turns "how much per message?" into "credits or licenses?" For everyone else, there are three ways to buy: pay-as-you-go at $0.01 per credit through an Azure subscription; prepaid packs (for example, 25,000 credits for $200 a month — an effective $0.008 per credit, about 20% below pay-as-you-go); and an annual prepurchase of Copilot Credit Commit Units usable across eligible products. Bring-your-own models, including Azure Foundry models, are billed separately.
+
+There's a third fact that changed the math this year, and it's easy to miss. The August 2026 licensing guide moves the meter upstream: the LLM-powered maker actions you use while building — natural-language authoring, evaluation, and preview — now draw Copilot Credits. Only manual, non-LLM configuration stays free. In other words, the cost clock can start before a single user ever talks to the agent. Publishing itself is still free; it's the act of designing with AI that now bills.
+
+How much building costs depends on the harness — the scaffolding that lets an agent plan, reason, hold context, and call tools. Copilot Studio ships three, and they meter differently:
+
+| Harness | What it's for | When credits are consumed |
+|---|---|---|
+| **Copilot Chat** | Customize Microsoft 365 Copilot with your own knowledge — e.g. an onboarding agent answering from SharePoint | LLM-powered build actions draw credits; employee-facing runtime in Microsoft channels is included in the Microsoft 365 Copilot license, under the user's identity and fair-use limits |
+| **Standard** | Rule-based conversational agents with predefined topics and flows — e.g. an IT agent routing laptop requests through approval | Same as Copilot Chat: LLM-powered build actions draw credits; employee-facing Microsoft-channel runtime is license-included |
+| **GitHub Copilot** | Agentic, end-to-end process automation — e.g. an accounts-payable agent that reads invoices, matches purchase orders, and routes exceptions | Credits during **creation and** runtime — the runtime is not zero-rated by the license |
+
+The takeaway for FinOps is that "building" is no longer a free, pre-production zone. The GitHub Copilot harness — the one you reach for exactly when the work is most autonomous and most valuable — bills you to build it *and* bills you to run it, license or no license. The old mental model, where cost only showed up once real users arrived, is gone. Budget the build, not just the run.
 
 ### Microsoft Foundry Agent Service — tokens, tools, and reserved capacity
 
@@ -201,6 +213,7 @@ The teams that build this layer early — while their agent estates are still sm
 
 - Microsoft Copilot Studio — Billing and licensing — <https://learn.microsoft.com/en-us/microsoft-copilot-studio/billing-licensing>
 - Microsoft Copilot Studio — Billing rates and management — <https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management>
+- Microsoft Copilot Studio Licensing Guide — August 2026 (harnesses; build-time credit consumption)
 - Microsoft Azure — Foundry Agent Service pricing — <https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/>
 - Microsoft Learn — Provisioned throughput billing and cost management — <https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput-billing>
 - WinBuzzer — Microsoft's Copilot Cowork is Now a Metered Agent Consuming Credits (Jul 2026) — <https://winbuzzer.com/2026/07/20/microsoft-made-copilot-cowork-a-metered-agent-in-june-xcxwbn/>
