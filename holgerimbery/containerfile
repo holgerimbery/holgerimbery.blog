@@ -1,0 +1,7 @@
+FROM ruby:3.4
+
+WORKDIR /site
+
+RUN gem install bundler
+
+CMD ["bash"]
