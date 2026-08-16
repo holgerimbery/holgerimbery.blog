@@ -14,7 +14,7 @@ tags:
   - copilotstudio
   - orchestration
   - skills
-featured: true
+featured: false
 toc: true
 date: 26-08-01
 ---
