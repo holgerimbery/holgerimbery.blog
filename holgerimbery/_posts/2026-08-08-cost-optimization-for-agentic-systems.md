@@ -6,7 +6,7 @@ author: admin
 slug: cost-optimization-for-agentic-systems
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/spoton-v1Csmlztqiw-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@spotonpos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">SpotOn</a> on <a href="https://unsplash.com/photos/man-paying-with-credit-card-at-a-terminal-v1Csmlztqiw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-featured: true
+featured: false
 toc: true
 tags:
     - agenticai
