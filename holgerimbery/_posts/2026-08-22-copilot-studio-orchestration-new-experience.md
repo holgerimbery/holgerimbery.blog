@@ -2,7 +2,7 @@
 layout: post
 title: "Multi-Agent Orchestration in the New Copilot Studio: The Agent Harness, the Agentic Loop, Skills, and Connected Agents"
 description: A long-form guide to building multi-agent systems in the rebuilt Copilot Studio — how the new agentic orchestrator's coding harness and agentic loop change the work, how Skills become the shared behavior layer, and how Connected agents, A2A, and MCP compose a fleet in the new experience.
-date: 2026-08-22
+date: 26-09-30
 author: admin
 slug: copilot-studio-orchestration-new-experience
 canonical_url: https://holgerimbery.blog/copilot-studio-orchestration-new-experience
