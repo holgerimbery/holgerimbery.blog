@@ -2,25 +2,25 @@
 layout: post
 title: "Workflows in the New Copilot Studio: The Agent Node, the Deterministic Backbone, and Why Calling an Agent from a Flow Is a Real Evolution"
 description: A long-form guide to the new workflows experience in Copilot Studio — how the redesigned canvas orchestrates deterministic actions and agentic reasoning together, what the agent node actually changes, and why calling an existing agent from inside a flow is the composition primitive the classic model was missing.
-date: 2026-08-29
+date: 26-09-29
 author: admin
 slug: copilot-studio-workflows-new-experience
 canonical_url: https://holgerimbery.blog/copilot-studio-workflows-new-experience
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/c-shi-4L-XZM-Arqg-unsplash.jpg
 image_caption: "Photo by <a href=\"https://unsplash.com/@sunnymoth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">C. Shi</a> on <a href=\"https://unsplash.com/photos/messy-workspace-with-desk-papers-lamps-and-photos-on-wall-4L-XZM-Arqg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>
 
-    \ "
+  \ "
 tags:
-    - a2a
-    - agentflows
-    - agentnode
-    - agents
-    - automation
-    - copilotstudio
-    - mcp
-    - orchestration
-    - workflows
-    - build2026
+  - a2a
+  - agentflows
+  - agentnode
+  - agents
+  - automation
+  - copilotstudio
+  - mcp
+  - orchestration
+  - workflows
+  - build2026
 featured: false
 toc: true
 ---
