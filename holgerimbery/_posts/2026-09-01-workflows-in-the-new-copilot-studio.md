@@ -19,7 +19,7 @@ tags:
   - orchestration
   - workflows
   - build2026
-featured: false
+featured: true
 toc: true
 ---
 
