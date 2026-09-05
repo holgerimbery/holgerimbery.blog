@@ -1,11 +1,13 @@
 ---
+layout: post
 canonical_url: https://holgerimbery.blog/multi-agent-orchestration-copilot-studio-harnesses
-title: Multi-Agent Orchestration in Copilot Studio - Pick the Harness First
+title: "Multi-Agent Orchestration in Copilot Studio - Pick the Harness First"
 description: "Child agents, connected agents, A2A, MCP, and the new skills: which of them exist in which harness, why, and how I decide before a single agent gets built."
+date: 26-09-06
 author: admin
 slug: multi-agent-orchestration-copilot-studio-harnesses
-image: /images/2026/09/vitaly-gariev-Q3Y8kK1aV3M-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@silverkblack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vitaly Gariev</a> on <a href="https://unsplash.com/photos/people-looking-at-canvas-in-studio-Q3Y8kK1aV3M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/09/vitaly-gariev-Q3Y8kK1aV3M-unsplash.jpg
+image_caption: "Photo by <a href=\"https://unsplash.com/@silverkblack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Vitaly Gariev</a> on <a href=\"https://unsplash.com/photos/people-looking-at-canvas-in-studio-Q3Y8kK1aV3M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>"
 tags:
   - a2a
   - agents
@@ -215,11 +217,11 @@ I use these five definitions on every engagement, and they end most of the debat
 - **Tool** — access to an external capability or system. Including MCP. Including the only way out of the sandbox.
 - **Knowledge** — information the agent may retrieve and reason over.
 
-In-agent complexity becomes skills. Cross-agent work stays connected to agents. Everything that leaves the tenant boundary is a tool or A2A.
+In-agent complexity becomes skills. Cross-agent work stays a connected agent. Everything that leaves the tenant boundary is a tool or A2A.
 
 ## Money and identity, before the design review
 
-**Billing is the harness distinction with the sharpest edge.** On the GitHub Copilot harness, "All usage is billed based on consumption and measured in Copilot credits", covering "large language model (LLM) tokens, tools (including knowledge and MCPs), and the harness itself". The timing is what catches teams: "Billing starts when you start building", against the standard harness "which starts billing after publish". Building, testing, and evaluating are all metered. The Power Platform admin guidance is equally direct — GitHub Copilot-harness agents are not covered by a Microsoft 365 Copilot licence, they are "Billed for all usage", the admin agent inventory now carries a Harness column, and developer and trial environments moved to usage-based billing on 1 September 2026.
+**Billing is the harness distinction with the sharpest edge.** On the GitHub Copilot harness, "All usage is billed based on consumption and measured in Copilot credits", covering "large language model (LLM) tokens, tools (including knowledge and MCPs), and the harness itself". The timing is what catches teams: "Billing starts when you start building", against the standard harness "which starts billing after publish". Building, testing, and evaluating are all metered. The Power Platform admin guidance is equally direct — GitHub Copilot-harness agents are not covered by a Microsoft 365 Copilot license, they are "Billed for all usage", the admin agent inventory now carries a Harness column, and developer and trial environments moved to usage-based billing on 1 September 2026.
 
 **Identity is now automatic.** "Copilot Studio automatically creates a Microsoft Entra Agent ID for each new agent," and you "can no longer opt out". Connector permissions are "re-validated at runtime against Advanced Connector Policies (ACP) and DLP". A dating conflict to be aware of: Learn says this changed "After May 2026"; the September blog says "as of July 2026". Either way, plan for it rather than discovering it in a governance review.
 
@@ -259,7 +261,7 @@ Standard-harness agents are the responsive, controlled front door. Workflows own
 ## What I would check before shipping
 
 - **Did you pick the harness before the canvas?** It cannot be changed later without a rebuild.
-- **Do you need an external agent?** If yes, it is a standard harness today. A2A is not documented in the new harness.
+- **Do you need an external agent?** If yes, it is the standard harness today. A2A is not documented in the new harness.
 - **Is that thing a skill or a connection?** If it authenticates or leaves the sandbox, it is a tool. Always.
 - **Have you refactored network-dependent skill code?** `pip install`, direct API calls, and database queries don't survive the move.
 - **Where does the generated file go?** The sandbox is temporary; files are capped at 10 MB and expire after 28 days. Persist through a tool or hand it to the user.
@@ -273,7 +275,7 @@ Neither harness supersedes the other. The standard harness owns deterministic co
 
 - Microsoft Learn, [Harnesses overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview), last updated 27 August 2026: the definition of a harness, the three harnesses, comparison guidance, the "secure sandbox governed by Copilot Studio" wording
 - Microsoft Learn, [GitHub Copilot harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview), 26 August 2026: agents "can't be transferred" between harnesses
-- Microsoft Learn, [Add a child agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-child-agent), 25 August 2026: definition, triggers, typed inputs and outputs, validation and reprompts, Power Fx conditions, priority, after-running behaviour, separate orchestration and tool limits, latency trade-off
+- Microsoft Learn, [Add a child agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-child-agent), 25 August 2026: definition, triggers, typed inputs and outputs, validation and reprompts, Power Fx conditions, priority, after-running behavior, separate orchestration and tool limits, latency trade-off
 - Microsoft Learn, [Skills overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/skills-overview), 26 August 2026, and [Create a skill](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/skills-create) / [Add an existing skill](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/skills-add-existing), 3 August 2026: skills as self-contained instructions versus tools, SKILL.md and YAML front matter, packaging, authoring and upload paths, runtime selection
 - Microsoft Learn, [Connected agents overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/authoring-add-other-agents), 26 August 2026: new-harness connected agents, the Copilot Studio-only restriction
 - Microsoft Learn, [Connect to an existing agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-copilot-studio-agent), 3 August 2026: standard-harness configuration path, pass-conversation-history option, connected-agent limits
@@ -287,6 +289,3 @@ Neither harness supersedes the other. The standard harness owns deterministic co
 - Microsoft Copilot Studio Blog, [New and improved: multi-agent orchestration, connected experiences, and faster prompt iteration](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-multi-agent-orchestration-connected-experiences-and-faster-prompt-iteration/), 1 April 2026: A2A, Fabric and M365 Agents SDK multi-agent GA, the Ask Microsoft sub-agent pattern, Coca-Cola Beverages Africa
 - Microsoft TechCommunity, [White paper: choosing between the GitHub Copilot and standard harnesses in Copilot Studio](https://techcommunity.microsoft.com/blog/copilot-studio-blog/white-paper-choosing-between-the-github-copilot-and-standard-harnesses-in-copilo/4552385), September 2026: the harness as operating layer, decision guidance
 - Microsoft CAT community blog, [The new Copilot Studio agent sandbox](https://microsoft.github.io/mcscatblog/posts/copilot-studio-agent-sandbox/): no outbound network path, Python runtime and preinstalled libraries, non-permanent storage, egress only through knowledge sources and tools. **Not Microsoft Learn** — treat the no-egress statement as community-sourced until it is published on Learn
-- Prior articles in this series, for the agent node, the deterministic backbone, and the workflows-versus-agents boundary
-
-**Two open conflicts as of publication:** Learn dates automatic Entra Agent ID creation to "After May 2026" while the September blog says July 2026; and the September blog marks connected agents in the GitHub Copilot harness as preview while the corresponding Learn page carries no preview banner. Verify both in your own tenant before you plan around them.
