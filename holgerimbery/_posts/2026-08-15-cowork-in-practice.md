@@ -6,7 +6,7 @@ date: 26-08-15
 author: admin
 slug: cowork-in-practice
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/08/bluestonex-4uIRzJYYaOE-unsplash.jpg
-featured: true
+featured: false
 toc: false
 image_caption: "Photo by <a href=\"https://unsplash.com/@bluestonex_apphaus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Bluestonex</a> on <a href=\"https://unsplash.com/photos/two-men-working-on-laptops-in-a-modern-office-4uIRzJYYaOE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>
 
