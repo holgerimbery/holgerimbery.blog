@@ -1,13 +1,13 @@
 ---
 layout: post
 canonical_url: https://holgerimbery.blog/multi-agent-orchestration-copilot-studio-harnesses
-title: "Multi-Agent Orchestration in Copilot Studio - Pick the Harness First"
+title: Multi-Agent Orchestration in Copilot Studio - Pick the Harness First
 description: "Child agents, connected agents, A2A, MCP, and the new skills: which of them exist in which harness, why, and how I decide before a single agent gets built."
-date: 26-09-06
+date: 26-09-05
 author: admin
 slug: multi-agent-orchestration-copilot-studio-harnesses
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/09/vitaly-gariev-Q3Y8kK1aV3M-unsplash.jpg
-image_caption: "Photo by <a href=\"https://unsplash.com/@silverkblack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Vitaly Gariev</a> on <a href=\"https://unsplash.com/photos/people-looking-at-canvas-in-studio-Q3Y8kK1aV3M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>"
+image_caption: Photo by <a href="https://unsplash.com/@silverkblack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vitaly Gariev</a> on <a href="https://unsplash.com/photos/people-looking-at-canvas-in-studio-Q3Y8kK1aV3M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
   - a2a
   - agents
