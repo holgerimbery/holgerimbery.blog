@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Long-Running Business Processes in Copilot Studio: State Tables, Agent Flows and Multi-Agent Orchestration"
-description: "Building long-running business processes in Copilot Studio using state tables, agent flows, and multi-agent orchestration. Boring but effective and save"
+description: "Building long-running business processes in Copilot Studio using standard harness, state tables, agent flows, and multi-agent orchestration. Boring but effective and save"
 date: 26-09-13
 author: "admin"
-slug: long-running-business-processes-copilot-studio-state-tables-agent-flows-multi-agent-orchestration
+slug: statetable-multi-agent-orchestration
 canonical_url: https://holgerimbery.blog/long-running-business-processes-copilot-studio-state-tables-agent-flows-multi-agent-orchestration
 image: /images/2026/09/olena-kholina-MhqUBTxQ3Hw-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@sixtynice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olena Kholina</a> on <a href="https://unsplash.com/photos/two-people-reviewing-documents-at-a-table-MhqUBTxQ3Hw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -17,7 +17,7 @@ How I built long-running processes, like invoice processing or purchase order ha
 
 ## Why I stopped thinking in conversations
 
-The first thing I had to unlearn in my projects was the idea that an agent is a conversation. A conversation is short, synchronous, and forgettable. A business process is none of those things. An invoice arrives on a Tuesday, sits in an approval queue for four days, gets rejected because a purchase order number is missing, comes back on Monday, and finally posts to the ERP two weeks after it first landed in the mailbox.
+The first thing I had to unlearn in my projects was the idea that an agent is a conversation. A conversation is short, synchronous, and forgettable. A business process is none of those things. An invoice arrives on a Tuesday, sits in an approval queue for four days, gets rejected because a purchase order number is missing, comes back on Monday, and finally posts to the backend system (if there is any) two weeks after it first landed in the mailbox.
 
 Nothing in that story fits into a chat turn. But it all fits into a **state table**.
 
@@ -49,7 +49,7 @@ plus the two states that carry all the real-world mess: `NeedsHuman` and `Failed
 Two rules I do not break:
 
 1. **Only one component may write `State` at a time** Transitions go through a single agent flow that takes the current state and the requested target state, validates the transition against an allowed-transition list, and writes the new row version. Everything else *reads* state and *proposes* transitions.
-2. **Every transition is written before the side effect, and confirmed after it** If the ERP posting call dies halfway, I want the table to say `Posting` with an attempt count, not `Approved` forever.
+2. **Every transition is written before the side effect, and confirmed after it** If the backend system posting call dies halfway, I want the table to say `Posting` with an attempt count, not `Approved` forever.
 
 That is idempotency in practice. Because the state table is the source of truth, a retry is never a duplicate — it is a re-read of a row that already knows how far it got.
 
@@ -87,7 +87,7 @@ The specialist agents hold the domain knowledge, and each one is scoped small en
 
 **Approval agent** Determines the approver from amount, cost center, and delegation rules, sends an adaptive card, and waits. "Waits" here means: writes `PendingApproval`, sets `NextActionAt` for the reminder, and stops. Nothing stays in memory.
 
-**Posting agent** Talks to the ERP through a connector, with the write-before/confirm-after pattern.
+**Posting agent** Talks to the backend system through a connector, with the write-before/confirm-after pattern.
 
 **Communication and alerting agent** Manages SLAs, deadlines, and escalations. When a case breaches its SLA target or an approval sits unattended, it sends reminders via Teams or email, escalates to backup approvers, and records every notification in the state table.
 
