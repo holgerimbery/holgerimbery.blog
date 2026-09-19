@@ -62,6 +62,9 @@ Microsoft describes a skill as "a modular capability that you add to a declarati
 
 Look at those two words: **reliably** and **repeatably**. Not *smarter*. Not *faster*. Those are the words you use for a business asset, not a clever trick.
 
+![upgit_20260919_1789813724.png](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/09/upgit_20260919_1789813724.png)
+
+
 ## Microsoft just retired the way we taught this in 2025
 
 There is a line in the documentation that deserves more attention than it is getting:
