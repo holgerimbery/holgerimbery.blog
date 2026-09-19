@@ -197,11 +197,11 @@ One warning on that upload: you must upload the complete `.zip`. Uploading `SKIL
 
 ## The escape hatch that removes the last objection
 
-The strongest argument for starting in Agent Builder is that starting there is reversible.
+The strongest argument for starting in Agent Builder is that you can reverse it.
 
 You can **copy an agent created in Microsoft 365 Copilot into Copilot Studio** when you need advanced capabilities or broader integration. The core configuration and instructions are preserved. You do not start over.
 
-So choosing Agent Builder is not a decision you have to defend for the next five years. It is a decision you revisit on the day a skill genuinely needs a connector, a workflow, or an external channel.
+So choosing Agent Builder is not a decision you have to defend for the next five years. You revisit it the day a skill genuinely needs a connector, a workflow, or an external channel.
 
 My rule, stated plainly:
 
@@ -213,27 +213,27 @@ Pushing a business case skill through Copilot Studio does not make it better gov
 
 It would be unfair to sell only the good side. This is a **preview**, and it behaves like one.
 
-**Frontier Program required.** Custom skills are in preview for organizations that are part of the Microsoft Frontier Preview. Not every tenant qualifies.
+**Frontier Program required** Custom skills are in preview for organizations in the Microsoft Frontier Preview. Not every tenant qualifies.
 
-**Not available with Information Barriers.** Custom skills are not available in tenants that use Microsoft Purview Information Barriers. The restriction applies to both admin-deployed and user-created declarative agents.
+**Not available with Information Barriers** Custom skills are not available in tenants that use Microsoft Purview Information Barriers. The restriction applies to both admin-deployed and user-created declarative agents.
 
-**No ISV distribution yet.** Support for independent software vendors to publish declarative agents with custom skills through Partner Center is not available yet. Microsoft explicitly tells ISVs not to submit such packages.
+**No ISV distribution yet** Support for independent software vendors to publish declarative agents with custom skills through Partner Center is not available yet. Microsoft explicitly tells ISVs not to submit such packages.
 
-**Scripts have no network access.** Covered above, but worth repeating because it catches people who assumed a script could call an API.
+**Scripts have no network access** Covered above, but worth repeating because it catches people who assumed a script could call an API.
 
-**Skills and uploaded files do not mix yet.** More on that below.
+**Skills and uploaded files don't mix yet** More on that below.
 
-**Sharing one skill across several agents is not supported yet.** More on that below too, because it is the question I get in every room.
+**Sharing one skill across several agents isn't supported yet** More on that below too, because it is the question I get in every room.
 
 ## "Not shared" does not mean "only once"
 
 Let me answer the question directly, because the documentation does not.
 
-The support matrix has a single row — *reuse across agents: not supported at this stage of the preview* — for both Agent Builder and the Agents Toolkit. That is the whole statement. There is no rule anywhere saying a `.zip` may only be uploaded once.
+The support matrix has a single row — *reuse across agents: not supported at this stage of the preview* — for both Agent Builder and the Agents Toolkit. That is the whole statement. No rule says a `.zip` may only be uploaded once.
 
-So: nothing stops you uploading the same `project-kickoff.zip` to three different agents. You can do that today. What you get is **three separate copies**, not one shared skill. The row is about *linking*, not *uploading*. There is no central skill library that several agents point at. A skill belongs to the agent you uploaded it to.
+So: nothing stops you from uploading the same `project-kickoff.zip` to three different agents. You can do that today. What you get is **three separate copies**, not one shared skill. The row is about *linking*, not *uploading*. No central skill library that several agents point to. A skill belongs to the agent you uploaded it to.
 
-Why that matters in daily life: fix a small mistake in the ROI script, and you have to upload the file again to every agent that uses it. Nothing tells you which agent carries which version. A few months later one agent is on version 3 and another is still on version 1 — and you are back where the prompt library left you, just with tidier files.
+Why that matters in daily life: fix a small mistake in the ROI script, and you have to upload the file again to every agent that uses it. Nothing tells you which agent carries which version. A few months later, one agent is on version 3, and another is still on version 1 — and you are back where the prompt library left you, just with tidier files.
 
 So keep the master copy **outside** Copilot: in Git, or in one properly governed SharePoint library. Treat every upload as a delivery from that master, never as the original. When real sharing arrives, you reconnect instead of rebuilding.
 
@@ -255,7 +255,7 @@ Power Automate did not become important because flows were technically novel. It
 
 Skills are that moment for enterprise know-how in Copilot.
 
-Champions stop being prompt authors and become capability authors. Instead of teaching a thousand people to use prompt #17 correctly, you publish `project-kickoff` once, and everyone who comes after benefits without being taught anything at all.
+Champions stop being prompt authors and become capability authors. Instead of teaching a thousand people to use prompt #17 correctly, you publish `project-kickoff` once, and everyone who comes after benefits without being taught anything.
 
 Prompt libraries standardize **what users type**. Skills standardize **how the work gets done**.
 
@@ -265,19 +265,21 @@ If you are going to start this month, work through this list first.
 
 **Confirm you are in the Frontier Preview**, and confirm you are not running Purview Information Barriers. Those two answers decide whether the rest of the list matters at all.
 
-**Pick one skill, not five.** Take the document your organization produces most often and argues about least. Executive briefing is usually the right first move.
+**Pick one skill, not five** Take the document your organization produces most often and argues about least. Executive briefing is usually the right first move.
 
-**Put the master in source control before the first upload.** This is the single habit that prevents the prompt-library failure from repeating itself.
+**Put the master in source control before the first upload** This is the single habit that prevents the prompt-library failure from repeating itself.
 
-**Move the templates into the package.** If the agent currently has uploaded files, that is a blocker today — and moving them into the skill is the better design regardless.
+**Move the templates into the package** If the agent currently has uploaded files, that is a blocker today — and moving them into the skill is the better design regardless.
 
-**Write the description as a trigger, not a label.** The description in the YAML front matter is how the agent decides to load the skill. "Create approved project kickoff documents, including objectives, scope, stakeholders, governance, risks, milestones, and success metrics. Use whenever a user wants to start a project" works. "Kickoff skill" does not.
+**Write the description as a trigger, not a label** The description in the YAML front matter is how the agent decides to load the skill. "Create approved project kickoff documents, including objectives, scope, stakeholders, governance, risks, milestones, and success metrics. Use whenever a user wants to start a project" works. "Kickoff skill" does not.
 
-**Test it with a user who has never heard the word skill.** If they have to be told the skill exists, the description is wrong.
+**Test it with a user who has never heard the word skill** If they have to be told the skill exists, the description is wrong.
 
-**Do not route it through Copilot Studio because it feels more serious.** Route it there when it has to touch another system. Until then, Agent Builder, no code, no extra license.
+**Do not route it through Copilot Studio because it feels more serious** Route it there when it has to touch another system. Until then, Agent Builder, no code, no extra license.
 
 If you take one sentence to your next steering committee, take this one: **prompt libraries are reusable text, skills are reusable expertise.**
+
+**One thing to verify in your own tenant:** the entire feature is in preview and behind the Frontier Program, so the limits quoted here — 8 skills per agent, 50 MB per package, 350 files, 20,000 characters of skill instructions — are the numbers documented on 4 September 2026 and are the kind of thing that moves during a preview. Check them against Microsoft Learn before you build a rollout plan on top of them.
 
 ## Sources
 
@@ -286,5 +288,3 @@ If you take one sentence to your next steering committee, take this one: **promp
 - Microsoft Learn, [Choose between Agent Builder in Microsoft 365 Copilot and Copilot Studio to build your agent](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copilot-studio-experience), accessed 19 September 2026: the audience, agent type, capability, governance, and licensing comparison, and the ability to copy an agent from Microsoft 365 Copilot into Copilot Studio with configuration and instructions preserved
 - Microsoft Learn, [Choose the right tool to build your declarative agent](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/declarative-agent-tool-comparison), accessed 19 September 2026: the no-code, low-code, and pro-code positioning of Agent Builder, Copilot Studio, and the Microsoft 365 Agents Toolkit, and the licensing prerequisites for each
 - Microsoft Learn, [Add knowledge sources to your declarative agent](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/knowledge-sources), accessed 19 September 2026: embedded file content as a distinct knowledge source, supported in Agent Builder but not in the Agents Toolkit
-
-**One thing to verify in your own tenant:** the entire feature is in preview and behind the Frontier Program, so the limits quoted here — 8 skills per agent, 50 MB per package, 350 files, 20,000 characters of skill instructions — are the numbers documented on 4 September 2026 and are the kind of thing that moves during a preview. Check them against Microsoft Learn before you build a rollout plan on top of them.
