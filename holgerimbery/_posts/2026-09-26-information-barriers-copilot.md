@@ -29,8 +29,7 @@ toc: true
 
 Ask whether Copilot can expose information a user should never see, and you get this:
 
-{: .q-left }
-> Copilot can only access what the user can access.
+**Copilot can only access what the user can access**.
 
 True, but not the whole story. Copilot has no Information Barriers filter inside it. It answers from an index trimmed by the user's permissions, and Information Barriers shape those permissions in Teams, SharePoint, and OneDrive. The barrier is inherited, not enforced.
 
@@ -68,7 +67,7 @@ Sites and teams created before you enabled Information Barriers default to Open 
 ## The one sentence Microsoft writes about barriers and Copilot
 
 There is exactly one authoritative statement connecting the two, in a section titled "Tenant wide search and Copilot experience":
-{: .q-left }
+
 > If the user had access to the site and content prior to the policy application, they continue to see the site and its contents in search and Copilot results.
 >
 > <cite>– Microsoft Learn, Use Information Barriers with SharePoint</cite>
@@ -129,7 +128,7 @@ So the barrier is inherited only when the agent runs as the user. That makes aut
 | Authenticate with Microsoft | The safe option. The agent runs as the user, so barriers apply |
 | Authenticate manually | Workable, but this is the path that drifts toward app-only access |
 
-Teams and Microsoft 365 channels accept only "Authenticate with Microsoft," which is a useful safety rail. Two more points worth knowing: Dataverse has no Information Barriers support, and Power Platform data policies can force authentication across the tenant. Use them.
+Teams and Microsoft 365 channels accept only "Authenticate with Microsoft," which is a useful safety rail. Two more points worth knowing: Dataverse has no Information Barriers support at all, and Power Platform data policies can force authentication across the tenant. Use them.
 
 ### 3. Copilot Cowork, undocumented
 
@@ -139,15 +138,15 @@ Not covered: data loss prevention, data classification, and Compliance Manager. 
 
 Information Barriers appear nowhere in any Cowork documentation. Not as supported, not as unsupported.
 
-Do not read "runs with the user's permissions" as coverage. Permissions are not the same thing. Information Barriers sit on top of permissions in Explicit-mode sites, and their known gaps land exactly where Cowork's multi-tool retrieval operates. The absence of documentation is not the absence of enforcement, but "probably fine" is not something you take to a regulator.
+Do not read "runs with the user's permissions" as coverage. Permissions are not the same thing. Information Barriers sit on top of permissions in Explicit-mode sites, and their known gaps land exactly where Cowork's multi-tool retrieval operates. Absence of documentation is not absence of enforcement, but "probably fine" is not something you take to a regulator.
 
-A spending policy controls Cowork access, so exclusion is easy. Leave segmented users out of every policy that selects Cowork until Microsoft publishes a statement.
+Access to Cowork is controlled by a spending policy, so exclusion is easy. Leave segmented users out of every policy that selects Cowork until Microsoft publishes a statement.
 
 ## Three more gaps outside the agent layer
 
 **Copilot connectors.** External content is indexed with the source system's own access list. There is no Information Barriers model for it at all. A Confluence page with broad access surfaces regardless of segment. This is the largest blind spot in most deployments.
 
-**App-only access.** A tenant setting explicitly allows applications running in app-only mode to reach barriered sites. Anything running as a service principal falls into that category. Check the setting before any agent rollout.
+**App-only access.** A tenant setting explicitly allows applications running in app-only mode to reach barriered sites. Anything running as a service principal is that case. Check the setting before any agent rollout.
 
 **Teams meetings.** View-only overflow participants are not checked, and federated external users "aren't restricted by IB policies" ([Information Barriers in Microsoft Teams](https://learn.microsoft.com/en-us/purview/information-barriers-teams)).
 
