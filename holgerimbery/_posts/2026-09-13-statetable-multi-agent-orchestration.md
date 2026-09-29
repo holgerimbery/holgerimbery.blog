@@ -6,7 +6,7 @@ date: 26-09-13
 author: "admin"
 slug: statetable-multi-agent-orchestration
 canonical_url: https://holgerimbery.blog/long-running-business-processes-copilot-studio-state-tables-agent-flows-multi-agent-orchestration
-image: /images/2026/09/olena-kholina-MhqUBTxQ3Hw-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/09/olena-kholina-MhqUBTxQ3Hw-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@sixtynice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olena Kholina</a> on <a href="https://unsplash.com/photos/two-people-reviewing-documents-at-a-table-MhqUBTxQ3Hw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags: [copilotstudio, standardharness, longrunningprocesses, statetables, agentflows, multiagentorchestration]
 featured: false

@@ -1,13 +1,13 @@
 ---
 layout: post
 canonical_url: https://holgerimbery.blog/agent-finops-microsoft-ecosystem
-title: "Agent FinOps in the Microsoft Ecosystem - Where the Costs Show Up and How to Control Them"
-description: "Part two of the series on Copilot and agent costs. Where Copilot, Cowork, Copilot Studio, and Foundry agents show their costs, which controls actually stop spending, how to charge costs back, and what Microsoft has announced for October 2026."
+title: Agent FinOps in the Microsoft Ecosystem - Where the Costs Show Up and How to Control Them
+description: Part two of the series on Copilot and agent costs. Where Copilot, Cowork, Copilot Studio, and Foundry agents show their costs, which controls actually stop spending, how to charge costs back, and what Microsoft has announced for October 2026.
 date: 26-10-10
 author: admin
 slug: agent-finops-microsoft-ecosystem
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/immo-wegmann-lLRm3S-7Kfw-unsplash.jpg
-image_caption: "Photo by <a href=\"https://unsplash.com/@tinkerman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Immo Wegmann</a> on <a href=\"https://unsplash.com/photos/silver-and-gold-round-coins-lLRm3S-7Kfw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>"
+image: /images/2026/10/sasun-bughdaryan-Z6fNpLI_-mc-unsplash.jpg
+image_caption: Photo by <a href="https://unsplash.com/@sasun1990?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sasun Bughdaryan</a> on <a href="https://unsplash.com/photos/hands-protectively-holding-an-orange-piggy-bank-Z6fNpLI_-mc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
   - agent365
   - agentfinops

@@ -6,7 +6,7 @@ description: Custom skills replace the prompt library as the way organizations p
 date: 26-09-19
 author: admin
 slug: declarative-agent-skills-agent-builder
-image: /images/2026/09/herry-sutanto-hQKJ5FlQSzY-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/09/herry-sutanto-hQKJ5FlQSzY-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@sutanto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Herry Sutanto</a> on <a href="https://unsplash.com/photos/cozy-library-lounge-with-bookshelves-hQKJ5FlQSzY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
   - agentbuilder
