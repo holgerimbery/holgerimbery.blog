@@ -20,7 +20,7 @@ tags:
   - orchestration
   - skills
   - standardharness
-featured: true
+featured: false
 toc: true
 ---
 

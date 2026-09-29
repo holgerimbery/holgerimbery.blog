@@ -9,7 +9,7 @@ canonical_url: https://holgerimbery.blog/long-running-business-processes-copilot
 image: /images/2026/09/olena-kholina-MhqUBTxQ3Hw-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@sixtynice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olena Kholina</a> on <a href="https://unsplash.com/photos/two-people-reviewing-documents-at-a-table-MhqUBTxQ3Hw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags: [copilotstudio, standardharness, longrunningprocesses, statetables, agentflows, multiagentorchestration]
-featured: true
+featured: false
 toc: true
 ---
 
