@@ -3,7 +3,7 @@ layout: post
 canonical_url: https://holgerimbery.blog/agent-finops-microsoft-ecosystem
 title: Agent FinOps in the Microsoft Ecosystem - Where the Costs Are and How to Control Them
 description: A plain guide to agent costs across Microsoft 365 Copilot, Copilot Cowork, Copilot Studio, and Foundry agents - what each one charges you for, which screen shows the number, and what you can do to lower it.
-date: 26-10-03
+date: 29-10-03
 author: admin
 slug: agent-finops-microsoft-ecosystem
 image: /images/2026/10/immo-wegmann-lLRm3S-7Kfw-unsplash.jpg

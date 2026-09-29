@@ -3,7 +3,7 @@ layout: post
 canonical_url: https://holgerimbery.blog/information-barriers-copilot
 title: Information Barriers and Copilot - The Control Nobody Checks
 description: Information Barriers decide what Copilot can see, before any sensitivity label or DLP policy gets a chance. Here is where they hold, and where agents walk straight through them.
-date: 26-10-09
+date: 29s-10-09
 author: admin
 slug: information-barriers-copilot
 image: /images/2026/09/shane-monarc-RH-lqMBPYiM-unsplash.jpg
