@@ -22,21 +22,12 @@ featured: false
 toc: true
 ---
 
-{: .q-left }
-> **Summary lede:** 
-Power Platform licensing is now a hybrid of seat-based user licenses, pooled consumption credits, and MAU-based web access, and small architecture choices can materially change total cost. This guide maps the recent changes — Copilot Credits replacing messages, the **August 2026 Copilot Studio Licensing Guide's four Copilot Credit purchasing constructs** (pay-as-you-go, the Copilot Credit Pre-Purchase Plan, the new cross-platform Microsoft Agent Pre-Purchase Plan, and $200 capacity packs), the raised Dataverse-for-Copilot-Studio default capacity, the April 2026 Dataverse accrual figures in the licensing guides, and the expansion of Dynamics 365 Contact Center / Customer Service bundles — into practical sizing and purchasing decisions with source-backed pricing.
+
 
 {: .q-left }
-> **Why read this article**
-Microsoft's business-application licensing surface is a three-pillar commercial design that nobody encounters as a single coherent story: **per-user subscriptions** for the seat-based products (Power Apps, Power Automate, Dynamics 365 apps, Contact Center), **capacity-based consumption metering** for Dataverse and Copilot Studio Copilot Credits, and **monthly-active-user packs** for citizen-facing Power Pages portals. The result is that two near-identical projects can land on wildly different invoices depending on a handful of design decisions made by an architect who may never have read a licensing guide.
-
-The last twelve months changed the math in three places that matter:
-
-1. **Dataverse capacity — tenant default vs per-user accrual (August 2026 licensing guides).** Microsoft raised the **one-time tenant default** Dataverse capacity in November 2025 (File default 20 GB, Log 2 GB, Database default stated as 10 GB in the guide's worked example). The **per-user accrued** capacity is unchanged: Power Apps Premium still accrues **250 MB Database / 2 GB File per user**, exactly as the live pricing page shows and as the **August 2026 Power Platform Licensing Guide** confirms in its Accrued column. Earlier claims of a per-user "uplift" to 20 GB conflated the tenant default with per-user accrual — this article keeps them distinct. Dynamics 365 per-user figures still require the current Dynamics 365 Licensing Guide (§3.5).
-2. **September 1, 2025 — Copilot Studio "messages" became "Copilot Credits."** The meter was renamed on that date; per Microsoft's Copilot Studio licensing documentation the rename did **not** change the pay-as-you-go rate or the quantity per prepaid pack (verify per-event consumption rates against the current Copilot Credit Guide). Copilot Credits now pool across Copilot Studio agents AND the AI agents shipped inside Dynamics 365 Contact Center, Customer Service, and (per Microsoft messaging at the time of the rebrand) Sales-side AI agents. The **August 2026 Copilot Studio Licensing Guide** now organizes purchasing into four constructs — pay-as-you-go ($0.01/credit), the tiered **Copilot Credit Pre-Purchase Plan (P3)**, the new cross-platform **Microsoft Agent Pre-Purchase Plan (P3)** priced in Agent Commit Units, and **$200/month capacity packs** of 25,000 credits — and introduces three build *harnesses* (see §2).
-3. **2024–2026 — Dynamics 365 Contact Center as a standalone, CRM-agnostic CCaaS SKU**, plus the **Customer Service Premium** bundle ($195/user/month = Customer Service Enterprise + Contact Center).
-
-This article is the reference that ties the structural decisions to the line items. Every numeric claim has a source URL. Every section closes with a real-world example that shows why a customer would choose one option over another. Read this before sizing a Power Platform deployment, scoping a Copilot Studio agent, or negotiating a Dynamics 365 renewal.
+This article is updated frequently and reflects the latest changes in Power Platform licensing, including Dataverse capacity, Copilot Studio credits, and Dynamics 365 Contact Center bundles. There is a changelog at the beginning of the article that tracks all updates.
+  
+## Changelog
 
 **Changelog — 2026-10-01 (Revision 5 — October 2026 pricing release).** Re-verified every list price in this guide against Microsoft's live pricing pages on October 1, 2026, and published this October 2026 release. Changes:
 
