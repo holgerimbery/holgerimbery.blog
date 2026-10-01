@@ -25,7 +25,7 @@ toc: true
 
 
 {: .q-left }
-This article is updated frequently and reflects the latest changes in Power Platform licensing, including Dataverse capacity, Copilot Studio credits, and Dynamics 365 Contact Center bundles. There is a changelog at the beginning of the article that tracks all updates.
+> This article is updated frequently and reflects the latest changes in Power Platform licensing, including Dataverse capacity, Copilot Studio credits, and Dynamics 365 Contact Center bundles. There is a changelog at the beginning of the article that tracks all updates.
   
 ## Changelog
 
