@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Understanding Microsoft Power Platform Licensing: A Practitioner's Reference (Rev. 3)"
-description: "A practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service."
-date: 2026-08-04
+title: "Understanding Microsoft Power Platform Licensing: A Practitioner's Reference"
+description: A practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service.
+date: 2026-05-30
+updated: 2026-10-01
 author: admin
 slug: powerplatform-licensing
 canonical_url: https://holgerimbery.blog/powerplatform-licensing
@@ -17,8 +18,7 @@ tags:
   - dynamics365customerservice
   - licensing
   - powerplatform
-  - recommended
-featured: true
+featured: false
 toc: true
 ---
 
@@ -38,7 +38,15 @@ The last twelve months changed the math in three places that matter:
 
 This article is the reference that ties the structural decisions to the line items. Every numeric claim has a source URL. Every section closes with a real-world example that shows why a customer would choose one option over another. Read this before sizing a Power Platform deployment, scoping a Copilot Studio agent, or negotiating a Dynamics 365 renewal.
 
+{: .important }
+**Changelog — 2026-10-01 (Revision 5 — October 2026 pricing release).** Re-verified every list price in this guide against Microsoft's live pricing pages on October 1, 2026, and published this October 2026 release. Changes:
 
+- **Announced Power Apps Premium price increase (effective January 1, 2027).** Microsoft's September 9, 2026 licensing announcement confirms the first Power Apps Premium list-price increase in more than five years: **Power Apps Premium $20 → $22/user/month** and the **2,000-seat volume tier $12 → $14/user/month**. Only these two SKUs are affected; all other Power Platform products, and the Power Apps entitlements seeded inside Microsoft 365 / Dynamics 365, are unchanged, and no entitlements are being removed. Existing subscriptions keep their price through the end of their term; the new price applies to new purchases, renewals, and co-terminations beginning on or after January 1, 2027 (U.S. Government increases are capped at 10%/year and phased). §1.1 now flags this, and today's $20 / $12 remain the current list prices until then.
+- **All other prices verified UNCHANGED (October 1, 2026):** Power Automate Premium $15/user/month, Process $150/bot/month, Hosted Process $215/bot/month, Process Mining add-on $5,000/tenant/month; Power Pages Authenticated $200/pack (100 users) and Anonymous $75/pack (500 users); Dynamics 365 Contact Center $110 / Digital $95 / Voice $95; Dynamics 365 Customer Service Professional $50 / Enterprise $105 / Premium $195; Copilot Studio $200/pack (25,000 credits) and $0.01/credit pay-as-you-go; the Power Apps per-app pay-as-you-go meter $10/active user/app/month.
+- **Pricing-page terminology.** The Power Apps, Power Automate, and Power Pages pricing pages now surface the Copilot Studio pre-purchase as **"Copilot Credit Commit Units" with "save up to 20%"** — the same construct this guide documents as the Copilot Credit / Microsoft Agent Pre-Purchase Plan (§2.1); no price change.
+- **This is a new dated release file** (`2026-10-01-powerplatform-licensing.md`). The post's identity — slug, canonical URL, and original publish date — is unchanged; the `updated` field is now 2026-10-01.
+
+{: .important }
 **Changelog — 2026-08-04 (Revision 4 — Power Platform Licensing Guide verification).** Cross-checked the Power Platform figures against the **Power Platform Licensing Guide — August 2026** and corrected the Dataverse per-user narrative. Changes:
 
 - **Corrected the "guide reports higher per-user Dataverse accrual" claim (Why-read #1, §1.1, §3.2, §3.5, Conclusion).** The August 2026 PPLG separates **Default (per tenant)** from **Accrued (per user)**: Power Apps Premium accrues **250 MB Database / 2 GB File per user** — identical to the live pricing page. The 20 GB figure that circulated as a per-user "uplift" is actually the **one-time tenant Database default**, not a per-user accrual. There is no pricing-page-vs-guide disagreement for Power Apps; the passages that framed one are rewritten.
@@ -48,7 +56,7 @@ This article is the reference that ties the structural decisions to the line ite
 - **Now confirmed HIGH via the PPLG:** Power Apps Premium $20/user/month (and $12 with 2,000+ Microsoft 365 licenses), Power Automate Premium $15 and Process $150/bot/month, Power Pages Authenticated $200/pack (100 users) and Anonymous $75/pack (500 users), Dataverse add-ons ($40 DB / $30 DB Tier 2 / $2 File / $10 Log) and PAYG meters ($48 / $2.40 / $12), and the tenant-graph-grounding rate cut from 30 to 10 (§2.2).
 - **Licensing-guide links updated** from the April 2026 to the **August 2026** Power Platform Licensing Guide throughout (§1.1, §1.2, §3.2, Sources), and the Copilot Studio guide link relabelled to August 2026 (§2.2.1). Dynamics 365 guide/deck links are unchanged — the Power Platform guide does not cover D365 SKUs, so the §3.5 D365 per-user figures still await the current Dynamics 365 Licensing Guide.
 
-
+{: .important }
 **Changelog — 2026-08-04 (Revision 3).** Updated against the **Microsoft Copilot Studio Licensing Guide — August 2026** (the current edition) and Microsoft's live billing pages on August 4, 2026. Changes in this revision:
 
 - **New Copilot Credit billing schema (§2.1).** The August 2026 guide organizes Copilot Studio purchasing into **four distinct constructs**, and this revision rewrites §2.1 to match them exactly: (1) **pay-as-you-go** at **$0.01/Copilot Credit**; (2) the tiered **Copilot Credit Pre-Purchase Plan (P3)** — a one-year pay-upfront pool with nine volume tiers from 300,000 credits (5% off) to 300,000,000 credits (20% off); (3) the **new Microsoft Agent Pre-Purchase Plan (P3)**, a cross-platform one-year plan priced in **Agent Commit Units (ACUs)** where **1 ACU = $1 = 100 Copilot Credits**, spanning Copilot Studio and Microsoft Foundry, with three tiers (20,000 ACUs / 5%, 100,000 / 10%, 500,000 / 15%); and (4) the **Microsoft Copilot Studio capacity pack** at **$200/pack/month (billed annually) = 25,000 credits**, plus a $0 Copilot Studio User License per builder. The previous table conflated the capacity pack with the "Pre-Purchase Plan" and mis-stated the Agent plan as a flat 20%-off Azure reservation.
@@ -59,7 +67,7 @@ This article is the reference that ties the structural decisions to the line ite
 - **Verified against Microsoft's live billing pages (August 4, 2026):** the pay-as-you-go rate ($0.01/credit) and the existence of the Microsoft Agent Prepurchase Plan (ACUs paying down Copilot Studio and Microsoft Foundry usage at $1 = 100 credits) are confirmed on Azure pricing and Microsoft Learn.
 - **Carried forward unchanged from Revision 2:** Dynamics 365 Contact Center / Customer Service pricing and the closed 40% promo — the August 2026 guide covers Copilot Studio only and does not change those. Per-event Copilot Credit consumption rates (§2.2) remain MODERATE confidence; the guide points to the separate "Billing rates and management" page rather than listing them.
 
-
+{: .important }
 **Changelog — 2026-07-25 (Revision 2).** Reviewed against Microsoft's live pricing pages and Copilot Studio licensing documentation on July 25, 2026. Changes in this revision:
 
 - **The 40% Contact Center / Customer Service Premium promotion has ended.** It ran October 1, 2025 → **June 30, 2026** and is no longer displayed on Microsoft's [Contact Center pricing page](https://www.microsoft.com/en-us/dynamics-365/products/contact-center/pricing) or [Customer Service pricing page](https://www.microsoft.com/en-us/dynamics-365/products/customer-service/pricing). Passages that treated the promo as active or upcoming (§4.1, §5.1, §5.5, §6.1, §6.5, Conclusion) are updated to past tense. Confirm any successor FY27 offer with your account team or CSP partner.
@@ -89,13 +97,16 @@ Power Apps in 2026 has three commercial purchase paths and one free developer pa
 
 | SKU | List price (USD) | Entitlement |
 |-----|------------------|-------------|
-| **Power Apps Premium** (per user) | **$20 / user / month** | Unlimited custom canvas + model-driven apps and Power Pages portals (run-time). Includes Premium connectors, custom connectors, on-prem data gateway, and **250 MB Dataverse database + 2 GB Dataverse file accrued capacity per user**, as shown on the live Power Apps pricing page and confirmed in the August 2026 Power Platform Licensing Guide (Accrued column). The 20 GB figure sometimes quoted is the tenant-wide **default**, not per-user accrual — see §3.1–§3.2. |
-| **Power Apps Premium** (volume tier) | **$12 / user / month** | Same entitlement as Power Apps Premium, available to organizations **with 2,000+ Microsoft 365 / Office 365 licenses** (per the August 2026 Power Platform Licensing Guide). |
+| **Power Apps Premium** (per user) | **$20 / user / month** → **$22** (Jan 1, 2027) | Unlimited custom canvas + model-driven apps and Power Pages portals (run-time). Includes Premium connectors, custom connectors, on-prem data gateway, and **250 MB Dataverse database + 2 GB Dataverse file accrued capacity per user**, as shown on the live Power Apps pricing page and confirmed in the August 2026 Power Platform Licensing Guide (Accrued column). The 20 GB figure sometimes quoted is the tenant-wide **default**, not per-user accrual — see §3.1–§3.2. |
+| **Power Apps Premium** (volume tier) | **$12 / user / month** → **$14** (Jan 1, 2027) | Same entitlement as Power Apps Premium, available to organizations **with 2,000+ Microsoft 365 / Office 365 licenses** (per the August 2026 Power Platform Licensing Guide). |
 | **Power Apps per App** (subscription license) | **End of Sale — January 2026** | The per-App *subscription* license is no longer sold (Power Platform Licensing Guide change log, January 2026). Existing customers may renew per Microsoft's transition terms; new per-app scenarios use the pay-as-you-go meter below. |
 | **Power Apps Pay-as-you-go** | **$10 per active user per app / month** | Consumption-billed through an Azure subscription. An "active user" is any user who launches the app within a calendar month. |
 | **Power Apps Developer Plan** | Free | Build/test against a personal developer environment; no production rights. |
 
 Sources: [Power Apps pricing](https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing), [Power Platform Licensing Guide August 2026 (PDF)](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+{: .important }
+**Upcoming price change — Power Apps Premium (effective January 1, 2027).** On September 9, 2026 Microsoft announced the first Power Apps Premium list-price increase in more than five years: **Power Apps Premium rises from $20 to $22/user/month**, and the **2,000-seat volume tier from $12 to $14/user/month**. Only these two SKUs change — all other Power Platform products, and all Power Apps entitlements seeded through Microsoft 365 / Dynamics 365, are unchanged, and no entitlements are removed. Existing subscriptions keep their current price through the end of their term; the new price applies to new purchases, renewals, and co-terminations beginning on or after January 1, 2027 (U.S. Government increases are capped at 10%/year and phased). The $20 / $12 prices in the table above remain in effect until then ([Microsoft announcement](https://www.microsoft.com/en-us/licensing/news/power-apps-premium-price-update)).
 
 **Per-App SKU status flag (resolved).** The **August 2026 Power Platform Licensing Guide change log confirms the Power Apps per App *subscription* license reached End of Sale in January 2026.** What remains on the price list is the **Power Apps per app pay-as-you-go meter at $10 per active user/app/month** (an "active user" is anyone who opens the app one or more times in a calendar month). Per-app economics are therefore still available — as consumption billing, not a fixed subscription. Model role-segmented app usage on the $10 meter, and choose Power Apps Premium ($20, or $12 with 2,000+ Microsoft 365 licenses) when most users run most apps.
 
@@ -607,4 +618,5 @@ This article is revised on a rolling basis. The **Changelog** at the top records
 23. [TrustRadius — Dynamics 365 Customer Service pricing (2026)](https://www.trustradius.com/products/microsoft-dynamics-365-customer-service/pricing)
 24. [Microsoft Agent Prepurchase Plan — Agent Commit Units (Microsoft Learn)](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/agent-pre-purchase)
 25. [Copilot Studio pay-as-you-go pricing (Azure)](https://azure.microsoft.com/en-us/pricing/details/copilot-studio/)
+26. [New pricing for Power Apps Premium — effective January 1, 2027 (Microsoft Licensing News, September 9, 2026)](https://www.microsoft.com/en-us/licensing/news/power-apps-premium-price-update)
 

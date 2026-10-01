@@ -100,7 +100,7 @@
   "frontMatter.website.host": "https://holgerimbery.blog",
   "frontMatter.dashboard.openOnStart": true,
   "frontMatter.panel.openOnSupportedFile": true,
-  "frontMatter.framework.startCommand": "wslc run --rm -p 4000:4000 -v \"${PWD}:/site\" my-jekyll",
+  "frontMatter.framework.startCommand": "wslc run --rm -p 4000:4000 -v \"${PWD}:/site\" my-jekyll bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload --future --force_polling",
   "frontMatter.snippets.wrapper.enabled": false,
   "frontMatter.extensibility.scripts": [
     "[[workspace]]/.frontmatter/ui/external.js"

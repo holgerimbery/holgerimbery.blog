@@ -2,11 +2,11 @@
 layout: post
 canonical_url: https://holgerimbery.blog/copilot-managed-runtime-governance-boundary
 title: Copilot Managed Runtime - The Runtime Becomes the Governance Boundary
-description: Microsoft now hosts the code that Copilot and other AI tools build. For architects, that moves governance from the build tool to the runtime. Here is what that changes, what it does not solve, and what to design before the first AI-built app goes viral.
+description: "Microsoft now hosts the code that Copilot and other AI tools build. For architects, that moves governance from the build tool to the runtime. Here is what that changes, what it does not solve, and what to design before the first AI-built app goes viral."
 date: 26-10-24
 author: admin
 slug: copilot-managed-runtime-governance-boundary
-image: /images/2026/10/khaleelah-ajibola-3TlpZl0_Y5w-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/khaleelah-ajibola-3TlpZl0_Y5w-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@akt_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Khaleelah Ajibola</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-person-typing-on-a-laptop-3TlpZl0_Y5w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
   - agent365

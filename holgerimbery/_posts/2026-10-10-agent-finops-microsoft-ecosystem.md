@@ -6,7 +6,7 @@ description: Part two of the series on Copilot and agent costs. Where Copilot, C
 date: 26-10-10
 author: admin
 slug: agent-finops-microsoft-ecosystem
-image: /images/2026/10/sasun-bughdaryan-Z6fNpLI_-mc-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/sasun-bughdaryan-Z6fNpLI_-mc-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@sasun1990?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sasun Bughdaryan</a> on <a href="https://unsplash.com/photos/hands-protectively-holding-an-orange-piggy-bank-Z6fNpLI_-mc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
   - agent365
