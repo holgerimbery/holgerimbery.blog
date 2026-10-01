@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding Microsoft Power Platform Licensing: A Practitioner's Reference"
+title: "Understanding Microsoft Power Platform Licensing Rev.5"
 description: A practitioner's reference for Power Platform core, Copilot Studio, Dataverse, Dynamics 365 Contact Center, and Dynamics 365 Customer Service.
 date: 2026-05-30
 updated: 2026-10-01
