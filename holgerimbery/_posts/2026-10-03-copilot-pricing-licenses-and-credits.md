@@ -73,7 +73,7 @@ That year, the $30 license price didn't move. Almost every new feature that need
 
 ## What the Copilot license costs
 
-These are Microsoft's list prices as of October 2, 2026. Dollar prices are from the US pages. Euro prices are from the German pages, which list all prices excluding VAT. Other countries and other buying channels (EA or CSP) may give you different numbers.
+These are Microsoft's list prices as of October 2, 2026. Dollar prices are from the US pages. Euro prices are from the German pages and exclude VAT. Other countries and buying channels (EA or CSP) may have different numbers.
 
 | Plan | USD per user/month | EUR per user/month | Notes |
 |---|---|---|---|
@@ -84,7 +84,7 @@ These are Microsoft's list prices as of October 2, 2026. Dollar prices are from 
 | Business Premium + Copilot Business | $32.00 | €27.73 | Bundle, paid yearly |
 | Microsoft 365 E7 (Copilot included) | $99.00 | €91.92 | Paid yearly |
 
-The [US enterprise page](https://www.microsoft.com/en-us/copilot/solutions/enterprise) shows "$30.00 user/month, paid yearly" and "Or $31.50 paid monthly (Annual commitment)". The [German enterprise page](https://www.microsoft.com/de-de/microsoft-365-copilot/enterprise) shows €26.00 per user per month, billed annually. It offers monthly payment too, but doesn't show a monthly euro price.
+The [US enterprise page](https://www.microsoft.com/en-us/copilot/solutions/enterprise) shows "$30.00 user/month, paid yearly" and "Or $31.50 paid monthly (Annual commitment)". The [German enterprise page](https://www.microsoft.com/de-de/microsoft-365-copilot/enterprise) shows €26.00 per user per month, billed annually. It also offers monthly payments, but doesn't show a monthly euro price.
 
 Which base plans qualify is listed in [License options for Microsoft Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-licensing) (updated September 17, 2026). For the enterprise add-on that's E7 (which already includes Copilot), E5, E3, F1, F3, the Business plans, Apps for Enterprise and for Business, Office 365 E5, E3, E1, and F3, the Teams plans, and standalone Exchange, SharePoint, OneDrive, Planner and Project, Visio, and Clipchamp plans.
 
@@ -110,7 +110,7 @@ E7 gives you the license, not a credit budget. Cowork, Code, and every other cre
 
 ### The base plans went up on July 1, 2026
 
-Microsoft announced this in December 2025 in [Advancing Microsoft 365: New capabilities and pricing update](https://www.microsoft.com/en-us/copilot/blog/2025/12/04/advancing-microsoft-365-new-capabilities-and-pricing-update/), and published the full tables in February 2026 in [Microsoft 365 Pricing and Packaging Updates](https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates). The plans most Copilot customers sit on changed like this (list prices with Teams, per user per month, paid yearly). Microsoft published the before and after prices in dollars only. For Germany I can only show today's price.
+Microsoft announced this in December 2025 in [Advancing Microsoft 365: New capabilities and pricing update](https://www.microsoft.com/en-us/copilot/blog/2025/12/04/advancing-microsoft-365-new-capabilities-and-pricing-update/), and published the full tables in February 2026 in [Microsoft 365 Pricing and Packaging Updates](https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates). The plans most Copilot customers sit on changed like this (list prices with Teams, per user per month, paid yearly). Microsoft published the before-and-after prices in dollars only. For Germany, I can only show today's price.
 
 | Plan | US before | US from July 1, 2026 | Germany today |
 |---|---|---|---|
@@ -225,7 +225,7 @@ The trouble is in the exceptions. An agent uses credits when:
 * **It gives generative answers outside Agent Builder.** They're billed "unless the agent is created in Agent Builder in Microsoft 365" and don't use tenant graph grounding.
 * **It uses computer use.** "Computer-Using Agents (CUA) usage is not included in the Microsoft 365 Copilot USL."
 * **It calls APIs.** The [business pricing page](https://www.microsoft.com/en-us/copilot/pricing/business): "Does not include cost of API calls, including Work IQ API calls."
-* **It uses Work IQ.** The September 2026 Credits Guide: "Work IQ APIs are not included as entitlements in the Microsoft Copilot license." The Tools API costs 0.1 credit per call. The Chat and Context APIs vary with the query; the June edition gave examples from 20 to 150 credits per query. Work IQ used inside Copilot itself (chat, the Office apps, Researcher, Analyst, Facilitator) carries no extra charge. The older Retrieval API and Chat API stay free for licensed users, and the guide says, "This licensing model will continue for now." I wouldn't count on that lasting.
+* **It uses Work IQ.** The September 2026 Credits Guide: "Work IQ APIs are not included as entitlements in the Microsoft Copilot license." The Tools API costs 0.1 credits per call. The Chat and Context APIs vary by query; the June edition gave examples ranging from 20 to 150 credits per query. Work IQ used inside Copilot itself (chat, the Office apps, Researcher, Analyst, Facilitator) carries no extra charge. The older Retrieval API and Chat API stay free for licensed users, and the guide says, "This licensing model will continue for now." I wouldn't count on that lasting.
 * **It's built on the GitHub Copilot harness.** Copilot Studio now has three harnesses (Copilot Chat, Standard, GitHub Copilot). The GitHub one "Requires Copilot Credits for LLM-powered maker experiences", even while you're still building.
 * **The user has no license.** All of the free rules above apply to licensed users only.
 
@@ -284,7 +284,7 @@ There's no date for the usage limits yet. When they arrive, part of what people 
 
 ## Before the next budget round
 
-Prices alone won't give you a budget, but they do settle a few decisions you can make now.
+Prices alone won't give you a budget, but they will help you make a few decisions now.
 
 1. **Plan two budgets.** One for base plans and Copilot licenses, fixed per user. One for credits, which depend on usage. If you bought Copilot Business at the discount, use the full price from year two.
 2. **Decide who owns the credit budget.** Microsoft suggests business units. Agree on it before anyone switches on Cowork, Code, or Autopilot.
