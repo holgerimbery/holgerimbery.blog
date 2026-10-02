@@ -1,8 +1,8 @@
 ---
 layout: post
 canonical_url: https://holgerimbery.blog/copilot-pricing-licenses-and-credits
-title: "Copilot Pricing After September 25, 2026 - The License for Everyday AI, Credits for Agentic Work"
-description: "Part one of a short series on what Copilot and agents cost. What the Copilot license costs, how Copilot Credits work, which features use them, and what Microsoft has announced next."
+title: "Understanding Microsoft Copilot Licensing - Rev1"
+description: "Part one of a short, but living series on what Copilot and agents cost. What the Copilot license costs, how Copilot Credits work, which features use them, and what Microsoft has announced next."
 date: 26-10-03
 author: admin
 slug: copilot-pricing-licenses-and-credits
@@ -25,8 +25,8 @@ featured: true
 toc: true
 ---
 
-{: .q-left }
-> This is the first of two posts about what Copilot and agents cost in the Microsoft world. This one is the price list: what the Copilot license costs, how Copilot Credits work, and which features use them, as of the end of September 2026. The next post will cover the other half, where those costs show up and how to keep them under control.
+{: .note }
+This is a living article. I check it against Microsoft's pricing pages, licensing guides, and Learn documentation at the start of every month and update it when something changes. The changelog at the end lists every change.
 
 ## Since September 25, Copilot has two price tags
 
@@ -73,7 +73,7 @@ That year, the $30 license price didn't move. Almost every new feature that need
 
 ## What the Copilot license costs
 
-These are Microsoft's list prices as of October 1, 2026. Dollar prices are from the US pages. Euro prices are from the German pages, which list all prices excluding VAT. Other countries and other buying channels (EA or CSP) may give you different numbers.
+These are Microsoft's list prices as of October 2, 2026. Dollar prices are from the US pages. Euro prices are from the German pages, which list all prices excluding VAT. Other countries and other buying channels (EA or CSP) may give you different numbers.
 
 | Plan | USD per user/month | EUR per user/month | Notes |
 |---|---|---|---|
@@ -84,7 +84,7 @@ These are Microsoft's list prices as of October 1, 2026. Dollar prices are from 
 | Business Premium + Copilot Business | $32.00 | €27.73 | Bundle, paid yearly |
 | Microsoft 365 E7 (Copilot included) | $99.00 | €91.92 | Paid yearly |
 
-The [US enterprise page](https://www.microsoft.com/en-us/copilot/solutions/enterprise) shows "$30.00 user/month, paid yearly" and "or $31.50 paid monthly (Annual commitment)". The [German enterprise page](https://www.microsoft.com/de-de/microsoft-365-copilot/enterprise) shows €26.00 per user per month, billed annually. It offers monthly payment too, but doesn't show a monthly euro price.
+The [US enterprise page](https://www.microsoft.com/en-us/copilot/solutions/enterprise) shows "$30.00 user/month, paid yearly" and "Or $31.50 paid monthly (Annual commitment)". The [German enterprise page](https://www.microsoft.com/de-de/microsoft-365-copilot/enterprise) shows €26.00 per user per month, billed annually. It offers monthly payment too, but doesn't show a monthly euro price.
 
 Which base plans qualify is listed in [License options for Microsoft Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-licensing) (updated September 17, 2026). For the enterprise add-on that's E7 (which already includes Copilot), E5, E3, F1, F3, the Business plans, Apps for Enterprise and for Business, Office 365 E5, E3, E1, and F3, the Teams plans, and standalone Exchange, SharePoint, OneDrive, Planner and Project, Visio, and Clipchamp plans.
 
@@ -142,7 +142,7 @@ Unlicensed users can still run up costs through agents. The E7 page footnote say
 
 A year ago, Copilot Studio counted "messages". [Standard harness licensing](https://learn.microsoft.com/en-us/microsoft-copilot-studio/billing-licensing) records the change: "Starting on September 1, 2025, the common currency for agents changed from messages to Copilot Credits." The price stayed the same.
 
-Since then, credits have become the currency for much more than Copilot Studio. The [Copilot Credits Guide](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Microsoft-Copilot-Credits-Guide-June-16-2026-PUB.pdf) (June 2026) says: "Copilot Credits serve as the common currency in this usage-based model." One pool per tenant pays for Cowork, Copilot Studio agents, Dynamics 365 agents, Power Platform features, and the Work IQ APIs.
+Since then, credits have become the currency for much more than Copilot Studio. The [Copilot Credits Guide](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Copilot-Credits-Guide-September-2026.pdf) (September 2026) says: "Copilot Credits serve as the common currency in this usage-based model." One pool per tenant pays for Cowork, Copilot Studio agents, Dynamics 365 agents, Power Platform features, and the Work IQ APIs.
 
 You can buy them three ways.
 
@@ -152,7 +152,7 @@ You can buy them three ways.
 | Pre-Purchase Plan (P3) | 5% to 20% off | One year, paid up front | Large, predictable use |
 | Capacity pack | $200 (€173.30) per 25,000 credits a month | Billed annually | Existing Copilot Studio setups |
 
-Both licensing guides give the pay-as-you-go rate as "Pricing: $0.01/Copilot Credit". The [Copilot Studio Licensing Guide, September 2026](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Microsoft-Copilot-Studio-Licensing-Guide-September-2026.pdf) prices the pack at "$200 per credit pack/month (billed annually)". Unused pack credits don't roll over. The [German Copilot Studio page](https://www.microsoft.com/de-de/microsoft-365-copilot/pricing/copilot-studio) shows €173.30 in its comparison table, while its FAQ leaves the pack price blank. The US page has the same gap.
+Both licensing guides give the pay-as-you-go rate as "Pricing: $0.01/Copilot Credit". The [Copilot Studio Licensing Guide, October 2026](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Microsoft-Copilot-Studio-Licensing-Guide.pdf) prices the pack at "$200 per credit pack/month (billed annually)". Unused pack credits don't roll over. The [German Copilot Studio page](https://www.microsoft.com/de-de/microsoft-365-copilot/pricing/copilot-studio) shows €173.30 in its comparison table, while its FAQ leaves the pack price blank. The US page has the same gap.
 
 Microsoft introduced the Pre-Purchase Plan on October 27, 2025, in [Scale your agent rollout with confidence](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/scale-your-agent-rollout-with-confidence-introducing-copilot-credit-pre-purchase-plan/), as "a one-year, pay-up-front purchase option for Copilot Credits". It counts toward an Azure consumption commitment and renews automatically. The discount depends on how much you buy:
 
@@ -183,14 +183,14 @@ Spataro's sentence names Cowork, Code, Autopilot, and frontier models. Other Mic
 | Code | Rolling out to Frontier program tenants | September 25 blog post |
 | Autopilot (formerly Scout) | Private preview from end of September 2026 | September 25 blog post |
 | Frontier models Astra and Fable | On usage-based billing | September 25 post, USL/UBB Learn page |
-| New agentic features in SharePoint | On usage-based billing | USL/UBB Learn page |
+| Some Copilot in SharePoint features: image generation and editing, advanced autofill, site analytics | Credits rolling out with general availability, which started September 30, 2026 | SharePoint blog, USL/UBB Learn page |
 | Work IQ APIs | Nothing included in the license | Credits Guide |
 | Computer use in agents | Not included in the license | Billing rates Learn page |
 | Apps built in Copilot Studio | Paid public preview | Copilot Studio Licensing Guide |
 
 ### Copilot Cowork
 
-Cowork was the first major Copilot feature that the license alone doesn't cover. It started as a research preview in March and became generally available on June 16, 2026. The [launch post](https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/) says it is "billed on a usage basis, denominated in Copilot Credits", and the Credits Guide adds: "No Cowork entitlements are included with the Microsoft 365 Copilot subscription." So each Cowork user needs a license and credits.
+Cowork was the first major Copilot feature that the license alone doesn't cover. It started as a research preview in March and became generally available on June 16, 2026. The [launch post](https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/) says it is "billed on a usage basis, denominated in Copilot Credits", and the June 2026 edition of the Credits Guide adds: "No Cowork entitlements are included with the Microsoft 365 Copilot subscription." So each Cowork user needs a license and credits.
 
 A task's cost depends on the model, how much context it pulls in, how many tools it calls, and how long it runs. Microsoft gives rough examples:
 
@@ -225,7 +225,7 @@ The trouble is in the exceptions. An agent uses credits when:
 * **It gives generative answers outside Agent Builder.** They're billed "unless the agent is created in Agent Builder in Microsoft 365" and don't use tenant graph grounding.
 * **It uses computer use.** "Computer-Using Agents (CUA) usage is not included in the Microsoft 365 Copilot USL."
 * **It calls APIs.** The [business pricing page](https://www.microsoft.com/en-us/copilot/pricing/business): "Does not include cost of API calls, including Work IQ API calls."
-* **It uses Work IQ.** The Credits Guide: "There are no included entitlements of Work IQ APIs in the M365 Copilot license." The Tools API costs 0.1 credit per call. The Chat and Context APIs vary, and Microsoft's examples range from 20 to 150 credits per query. The older Retrieval API and Chat API stay free for licensed users, and the guide says, "This licensing model will continue for now." I wouldn't count on that lasting.
+* **It uses Work IQ.** The September 2026 Credits Guide: "Work IQ APIs are not included as entitlements in the Microsoft Copilot license." The Tools API costs 0.1 credit per call. The Chat and Context APIs vary with the query; the June edition gave examples from 20 to 150 credits per query. Work IQ used inside Copilot itself (chat, the Office apps, Researcher, Analyst, Facilitator) carries no extra charge. The older Retrieval API and Chat API stay free for licensed users, and the guide says, "This licensing model will continue for now." I wouldn't count on that lasting.
 * **It's built on the GitHub Copilot harness.** Copilot Studio now has three harnesses (Copilot Chat, Standard, GitHub Copilot). The GitHub one "Requires Copilot Credits for LLM-powered maker experiences", even while you're still building.
 * **The user has no license.** All of the free rules above apply to licensed users only.
 
@@ -278,7 +278,7 @@ There's no date for the usage limits yet. When they arrive, part of what people 
 
 **New services join your billing policy automatically.** [Usage-Based Billing and Cost Management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits) says: "The Auto-apply new services setting is enabled by default". When Microsoft moves another feature onto credits, it can start using your budget without anyone deciding it should.
 
-**Partner purchases.** From November 2, 2026, new Copilot Business licenses bought through a CSP partner have pay-as-you-go credits switched on. The [Partner Center announcement](https://learn.microsoft.com/en-us/partner-center/announcements/2026-september): "Pay-as-you-go is the default billing configuration".
+**Partner purchases.** Microsoft has moved this date. New Copilot Business licenses bought through a CSP partner will have pay-as-you-go credits switched on from December 1, 2026, not November 2 as first announced. The [Partner Center announcement for October 2026](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october) adds two details. The default limit is "4,000 Copilot Credits per user per month", which admins can change. That's up to $40 per user per month at the pay-as-you-go rate. And the change "will initially not be available" in several markets, including Germany, France, Italy, Spain, and the Netherlands.
 
 **Ignite.** Microsoft points to Ignite, November 17–20, 2026, for the next round of news. Prices may move again after that.
 
@@ -289,7 +289,7 @@ Prices alone won't give you a budget, but they do settle a few decisions you can
 1. **Plan two budgets.** One for base plans and Copilot licenses, fixed per user. One for credits, which depend on usage. If you bought Copilot Business at the discount, use the full price from year two.
 2. **Decide who owns the credit budget.** Microsoft suggests business units. Agree on it before anyone switches on Cowork, Code, or Autopilot.
 3. **Don't pre-purchase yet.** Pay as you go for a few months, then buy a Pre-Purchase Plan based on real numbers. The purchase is final.
-4. **Buying through a partner?** Talk to them before November 2, 2026, about how pay-as-you-go will be set up for new Copilot Business licenses.
+4. **Buying through a partner?** Talk to them before December 1, 2026, about how pay-as-you-go will be set up for new Copilot Business licenses, and agree whether the default limit of 4,000 credits per user per month suits you.
 
 The price list only tells you what you could pay. What you actually pay depends on how you run things, and that's what the next post in this series covers: where each of these costs appears, which admin center shows it, how to set billing policies and spending limits, how to charge costs back to the teams that cause them, and what to do once Microsoft puts a date on the usage limits.
 
@@ -299,7 +299,7 @@ The price list only tells you what you could pay. What you actually pay depends 
 - Microsoft Learn, [Understanding the user subscription license (USL) and usage-based billing (UBB)](https://learn.microsoft.com/en-us/microsoft-365/copilot/user-subscription-license-usage-based-billing), last updated September 25, 2026: everyday and advanced AI, UBB requires a USL, billing policy requirement, funding by business units, usage limits "coming soon", model inclusion
 - Microsoft Learn, [Usage-Based Billing and Cost Management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits), last updated September 25, 2026: auto-apply setting
 - Microsoft, [Microsoft Copilot Plans and Pricing – AI for Business](https://www.microsoft.com/en-us/copilot/pricing/business), read October 1, 2026: Copilot Business prices, discount terms, bundles, Cowork "Metered", API calls excluded
-- Microsoft Germany, [Microsoft 365 Copilot for business, German page](https://www.microsoft.com/de-de/microsoft-365-copilot/pricing), read October 1, 2026: euro prices for Copilot Business and bundles, discount dates, prices excluding VAT
+- Microsoft Germany, [Microsoft 365 Copilot for business, German page](https://www.microsoft.com/de-de/microsoft-365-copilot/pricing), read October 2, 2026: euro prices for Copilot Business and bundles, discount dates, prices excluding VAT
 - Microsoft, [Microsoft Copilot Plans and Pricing – Enterprise](https://www.microsoft.com/en-us/copilot/pricing/enterprise), read October 1, 2026: feature matrix, voice limits
 - Microsoft, [AI for Enterprise Productivity - Microsoft Copilot](https://www.microsoft.com/en-us/copilot/solutions/enterprise), read October 1, 2026: $30.00 and $31.50 prices, qualifying plan requirement
 - Microsoft Germany, [Microsoft 365 Copilot for enterprise, German page](https://www.microsoft.com/de-de/microsoft-365-copilot/enterprise), read October 1, 2026: €26.00 price, no monthly euro price shown
@@ -311,13 +311,14 @@ The price list only tells you what you could pay. What you actually pay depends 
 - Microsoft Learn, [Meters for Microsoft Copilot pay-as-you-go services](https://learn.microsoft.com/en-us/microsoft-365/copilot/pay-as-you-go/meters), last updated August 18, 2026: $0.01 rate for agents in Copilot Chat
 - Microsoft Learn, [Standard harness licensing – Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/billing-licensing), last updated August 3, 2026: messages renamed to credits, zero-rated usage, user license prerequisite
 - Microsoft Learn, [Billing rates and management – Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management), last updated August 3, 2026: rates per action, reasoning surcharge, computer use, 125% limit, free use for licensed users
-- Microsoft, [Microsoft Copilot Studio Licensing Guide – September 2026](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Microsoft-Copilot-Studio-Licensing-Guide-September-2026.pdf), September 2026: pack price, pre-purchase tiers, Agent Pre-Purchase Plan, $0 user license, Author role, harnesses, change log
-- Microsoft, [Copilot Credits Guide](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Microsoft-Copilot-Credits-Guide-June-16-2026-PUB.pdf), June 2026: credits as common currency, pay-as-you-go rate, pre-purchase tiers, Work IQ rates, no Cowork entitlement
+- Microsoft, [Microsoft Copilot Studio Licensing Guide – October 2026](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Microsoft-Copilot-Studio-Licensing-Guide.pdf), October 2026: pack price, pre-purchase tiers, Agent Pre-Purchase Plan, $0 user license, Author role, harnesses, change log
+- Microsoft, [Copilot Credits Guide – September 2026](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Copilot-Credits-Guide-September-2026.pdf), September 2026: credits as common currency, pay-as-you-go rate, pre-purchase tiers, Work IQ not included in the license, Tools API rate, no extra charge for Work IQ inside Copilot
+- Microsoft, [Copilot Credits Guide – June 2026](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Microsoft-Copilot-Credits-Guide-June-16-2026-PUB.pdf), June 2026: no Cowork entitlement in the license, Cowork and Work IQ example credit ranges
 - Microsoft Learn, [Copilot Credit P3 – Microsoft Cost Management](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/copilot-credit-p3), last updated July 17, 2026: purchases are final, expiry at end of term
 - Microsoft Copilot Blog, [Scale your agent rollout with confidence: Introducing Copilot Credit Pre-Purchase Plan](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/scale-your-agent-rollout-with-confidence-introducing-copilot-credit-pre-purchase-plan/), October 27, 2025: introduction of the Pre-Purchase Plan
 - Microsoft Copilot Blog, [Microsoft 365 Copilot Business: The future of work for small businesses](https://www.microsoft.com/en-us/copilot/blog/2025/12/02/microsoft-365-copilot-business-the-future-of-work-for-small-businesses/), December 2, 2025: launch and $21 price, bundle offer until June 30, 2026
 - Microsoft Copilot Blog, [Advancing Microsoft 365: New capabilities and pricing update](https://www.microsoft.com/en-us/copilot/blog/2025/12/04/advancing-microsoft-365-new-capabilities-and-pricing-update/), December 4, 2025, updated March 18, 2026: announcement of the July 1, 2026 price change, Copilot Chat features
-- Microsoft Germany, [Microsoft 365 Enterprise plans and pricing, German page](https://www.microsoft.com/de-de/microsoft-365/enterprise/microsoft365-plans-and-pricing), read October 1, 2026: E3 €37.78, E5 €58.13, Agent 365 €13.00
+- Microsoft Germany, [Microsoft 365 Enterprise plans and pricing, German page](https://www.microsoft.com/de-de/microsoft-365/enterprise/microsoft365-plans-and-pricing), read October 2, 2026: E3 €37.78, E5 €58.13, Agent 365 €13.00
 - Microsoft Germany, German pages for [Business Basic (plan comparison)](https://www.microsoft.com/de-de/microsoft-365/business/microsoft-365-plans-and-pricing), [Business Standard](https://www.microsoft.com/de-de/microsoft-365/business/microsoft-365-business-standard), and [Business Premium](https://www.microsoft.com/de-de/microsoft-365/business/microsoft-365-business-premium), read October 1, 2026: €6.07, €12.13, and €19.06
 - Microsoft Licensing, [Microsoft 365 Pricing and Packaging Updates](https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates), February 16, 2026: old and new base plan prices, effective date
 - Microsoft Licensing, [Microsoft 365 Packaging and Pricing Updates Public FAQ](https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates-FAQ), March 24, 2026: Copilot excluded, E7 unchanged, prices kept until renewal
@@ -325,5 +326,13 @@ The price list only tells you what you could pay. What you actually pay depends 
 - Microsoft, [Microsoft 365 E7 for Enterprise](https://www.microsoft.com/en-us/microsoft-365/enterprise/e7) and [German page](https://www.microsoft.com/de-de/microsoft-365/enterprise/e7), read October 1, 2026: $99.00 and €91.92 prices, E5 at $60.00 and €58.13, metered agents footnote
 - Microsoft Copilot Blog, [Copilot Cowork is now generally available](https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/), June 16, 2026: general availability, credit billing, example task costs, grace period, off by default
 - Microsoft Learn, [What's new in Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/whats-new), last updated September 25, 2026: model change at launch
-- Microsoft Learn, [September 2026 announcements – Partner Center](https://learn.microsoft.com/en-us/partner-center/announcements/2026-september), September 2026: pay-as-you-go default for new CSP Copilot Business licenses from November 2, 2026
+- Microsoft Learn, [October 2026 announcements – Partner Center](https://learn.microsoft.com/en-us/partner-center/announcements/2026-october), last updated October 1, 2026: pay-as-you-go default for new CSP Copilot Business licenses moved to December 1, 2026, default limit of 4,000 credits per user per month, markets where it starts later
+- Microsoft SharePoint Blog, [What's new in Copilot in SharePoint: October 2026](https://techcommunity.microsoft.com/blog/spblog/what%E2%80%99s-new-in-copilot-in-sharepoint-october-2026/4535423), October 1, 2026: general availability from September 30, 2026, image generation and editing, advanced autofill, and site analytics use Copilot Credits
+
+## Changelog
+
+| Date | Change |
+|---|---|
+| October 2, 2026 | Rev1. Renamed to "Understanding Microsoft Copilot Licensing - Rev1" and described as a living series. Partner (CSP) pay-as-you-go default moved from November 2 to December 1, 2026, with a default limit of 4,000 credits per user per month and a later start in Germany and other markets. Added the Copilot in SharePoint features that use credits. Sources moved to the Copilot Studio Licensing Guide (October 2026) and the Copilot Credits Guide (September 2026). Prices re-checked on the US and German pages: no changes. Removed the series intro at the top. |
+| October 3, 2026 | First published. Prices checked against Microsoft's US and German pages on October 1, 2026. |
 

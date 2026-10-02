@@ -1,13 +1,13 @@
 ---
 layout: post
 canonical_url: https://holgerimbery.blog/agent-finops-microsoft-ecosystem
-title: Agent FinOps in the Microsoft Ecosystem - Where the Costs Show Up and How to Control Them
-description: Part two of the series on Copilot and agent costs. Where Copilot, Cowork, Copilot Studio, and Foundry agents show their costs, which controls actually stop spending, how to charge costs back, and what Microsoft has announced for October 2026.
+title: "Agent FinOps in the Microsoft Ecosystem - Rev1"
+description: "Part two of a short, but living series on Copilot and agent costs. Where Copilot, Cowork, Copilot Studio, and Foundry agents show their costs, which controls actually stop spending, how to charge costs back, and what Microsoft has announced for October 2026."
 date: 26-10-10
 author: admin
 slug: agent-finops-microsoft-ecosystem
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/sasun-bughdaryan-Z6fNpLI_-mc-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@sasun1990?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sasun Bughdaryan</a> on <a href="https://unsplash.com/photos/hands-protectively-holding-an-orange-piggy-bank-Z6fNpLI_-mc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/immo-wegmann-lLRm3S-7Kfw-unsplash.jpg
+image_caption: "Photo by <a href=\"https://unsplash.com/@tinkerman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Immo Wegmann</a> on <a href=\"https://unsplash.com/photos/silver-and-gold-round-coins-lLRm3S-7Kfw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>"
 tags:
   - agent365
   - agentfinops
@@ -25,7 +25,10 @@ toc: true
 ---
 
 {: .q-left }
-> This is the second post in the series on Copilot and agent costs. [Part one](https://holgerimbery.blog/copilot-pricing-licenses-and-credits) was the price list: the Copilot license for everyday AI, and Copilot Credits for agentic work. This post is about what happens after you buy. Agent costs show up in four places - Copilot, Cowork, Copilot Studio, and Foundry - spread over three consoles, and each one has different controls. For each, I cover where you see the cost, what actually stops spending, and how to bring it down. Everything comes from Microsoft's own pages, checked at the end of September 2026.
+> This is the second post in the series on Copilot and agent costs. [Part one](https://holgerimbery.blog/copilot-pricing-licenses-and-credits) was the price list: the Copilot license for everyday AI, and Copilot Credits for agentic work. This post is about what happens after you buy. Agent costs show up in four places - Copilot, Cowork, Copilot Studio, and Foundry - spread over three consoles, and each one has different controls. For each, I cover where you see the cost, what actually stops spending, and how to bring it down. Everything comes from Microsoft's own pages, checked at the end of September 2026. Microsoft has announced changes for Copilot Studio in October, and I'll update this post once they're documented.
+
+{: .note }
+This is a living article. I check it against Microsoft's documentation, pricing pages, and announcements at the start of every month and update it when something changes. The changelog at the end lists every change.
 
 ## What FinOps means when you run agents
 
@@ -380,4 +383,12 @@ In October, check Microsoft's list of services covered by usage-based billing. W
 - Microsoft Learn, [FinOps toolkit overview](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/finops-toolkit-overview), last updated 11 February 2026: toolkit parts and monthly releases
 - Microsoft Learn, [FinOps hubs overview](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview), last updated 1 April 2026: components, benefits, cost estimate, permissions, `msexports` rule
 - Microsoft Learn, [Configure AI agents for FinOps hubs](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/configure-ai), last updated 18 May 2026: agent on top of a hub, 24-hour exports
-- Previous article in this series: [Copilot Pricing After 25 September 2026 - The License for Everyday AI, Credits for Agentic Work](https://holgerimbery.blog/copilot-pricing-licenses-and-credits)
+- Previous article in this series: [Understanding Microsoft Copilot Licensing - Rev1](https://holgerimbery.blog/copilot-pricing-licenses-and-credits)
+
+**Four open conflicts as of publication:** where cost management lives ("Agent 365" or Copilot > Cost management), whether Code and Managed Runtime are covered yet, whether Copilot Studio is managed in the Microsoft 365 or Power Platform admin center, and whether users can see their usage history. Check each one in your own tenant.
+
+## Changelog
+
+| Date | Change |
+|---|---|
+| October 10, 2026 | Rev1. First published as part two of the living series. Facts checked against Microsoft's pages at the end of September 2026. |
