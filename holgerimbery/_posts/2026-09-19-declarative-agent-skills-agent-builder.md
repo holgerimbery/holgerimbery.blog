@@ -17,7 +17,7 @@ tags:
   - microsoft365
   - promptlibrary
   - skills
-featured: true
+featured: false
 toc: true
 ---
 
