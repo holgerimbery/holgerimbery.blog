@@ -25,8 +25,7 @@ toc: true
 ---
 
 {: .q-left }
-> This is the second post in the series on Copilot and agent costs. [Part one](https://holgerimbery.blog/copilot-pricing-licenses-and-credits) was the price list: the Copilot license for everyday AI, and Copilot Credits for agentic work. This post is about what happens after you buy. Agent costs show up in four places (Copilot, Cowork, Copilot Studio, and Foundry), spread over three consoles, and each one has different controls. For each, I cover where you see the cost, what actually stops spending, and how to bring it down. Everything comes from Microsoft's own pages, last checked on October 6, 2026. Microsoft has announced changes for Copilot Studio in October, and I'll update this post once they're documented.
-
+> This is the second post in the series on Copilot and agent costs. [Part one](https://holgerimbery.blog/copilot-pricing-licenses-and-credits) was the price list: the Copilot license for everyday AI, and Copilot Credits for agentic work. This post is about what happens after you buy. Agent costs show up in four places (Copilot, Cowork, Copilot Studio, and Foundry), spread over three consoles, and each one has different controls. For each, I cover where you see the cost, what actually stops spending, and how to bring it down. Everything comes from Microsoft's own pages.
 {: .note }
 This is a living article. I check it against Microsoft's documentation, pricing pages, and announcements at the start of every month and update it when something changes. The changelog at the end lists every change.
 
