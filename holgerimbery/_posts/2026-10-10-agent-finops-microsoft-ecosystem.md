@@ -7,7 +7,7 @@ date: 26-10-10
 author: admin
 slug: agent-finops-microsoft-ecosystem
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/immo-wegmann-lLRm3S-7Kfw-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@tinkerman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Immo Wegmann</a> on <a href="https://unsplash.com/photos/silver-and-gold-round-coins-lLRm3S-7Kfw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+image_caption: ""
 tags:
   - agent365
   - agentfinops
