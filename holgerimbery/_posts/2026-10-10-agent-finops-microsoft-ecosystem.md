@@ -6,7 +6,7 @@ description: Part two of a short, living series on Copilot and agent costs. Wher
 date: 26-10-10
 author: admin
 slug: agent-finops-microsoft-ecosystem
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/immo-wegmann-lLRm3S-7Kfw-unsplash.jpg
+image: /images/2026/10/sasun-bughdaryan-5AmcgCr8N1Y-unsplash.jpg
 image_caption: ""
 tags:
   - agent365
