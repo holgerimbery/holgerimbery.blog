@@ -17,7 +17,7 @@ featured: false
 toc: true
 ---
 {: .caution }
-Heads up: Technology moves fast. Parts of this article may no longer reflect current features or best practices.
+Important: This article reflects an earlier solution design and is retained as a reference for historical and educational purposes. For new implementations, Teams Phone Agents should be considered the natural successor and preferred approach.
 
 {: .q-left }
 > **Summary Lede** 
