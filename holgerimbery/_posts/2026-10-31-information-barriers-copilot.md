@@ -1,13 +1,13 @@
 ---
 layout: post
 canonical_url: https://holgerimbery.blog/information-barriers-copilot
-title: "Information Barriers and Copilot - The Control Nobody Checks"
-description: "Information Barriers shape what Copilot can find before any sensitivity label or DLP policy is involved. Here is where they hold, where agents step around them, and what to put in place for the gaps."
-date: 26-10-17
+title: Information Barriers and Copilot - The Control Nobody Checks
+description: Information Barriers shape what Copilot can find before any sensitivity label or DLP policy is involved. Here is where they hold, where agents step around them, and what to put in place for the gaps.
+date: 31-10-30
 author: admin
 slug: information-barriers-copilot
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/09/shane-monarc-RH-lqMBPYiM-unsplash.jpg
-image_caption: "Photo by <a href=\"https://unsplash.com/@calowaii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Shane Monarc</a> on <a href=\"https://unsplash.com/photos/wire-fence-on-grassy-hill-RH-lqMBPYiM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>"
+image_caption: Photo by <a href="https://unsplash.com/@calowaii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shane Monarc</a> on <a href="https://unsplash.com/photos/wire-fence-on-grassy-hill-RH-lqMBPYiM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
   - agentbuilder
   - compliance
