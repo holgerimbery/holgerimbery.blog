@@ -2,7 +2,7 @@
 layout: post
 canonical_url: https://holgerimbery.blog/copilot-studio-agent-accounts
 title: "Agents With Their Own Accounts: What Changes When Copilot Studio Agents Stop Borrowing Your Identity"
-description: Microsoft's October 15, 2026 announcement gives Copilot Studio agents their own accounts, shared business process memory, and triggers. I argue that each of these agents should be treated like a service account with a job description, and that organizations should decide early which agents they want to own.
+description: Microsoft's October 15, 2026 announcement gives Copilot Studio agents their own accounts, shared business process memory, and triggers. I argue that organizations should treat each agent like a service account with a job description and decide early which agents they want to own.
 date: 26-10-17
 author: admin
 slug: copilot-studio-agent-accounts
@@ -24,40 +24,40 @@ toc: true
 ---
 
 {: .q-left }
-> On October 15, 2026, Microsoft announced agent accounts, business process memory, and triggers for Copilot Studio. This is less about what these agents can do and more at what they are: a new kind of principal in your tenant, with its own credentials and memory. 
+> On October 15, 2026, Microsoft announced agent accounts, business process memory, and triggers for Copilot Studio. This is less about what these agents can do and more about what they are: a new kind of principal in your tenant, with its own credentials and memory. 
 
 ## Introduction
 
-In my customer projects, Copilot Studio discussions tend to end up at the same question: whose identity does the agent use when it does something? So far the honest answer has been "it depends", and that becomes a problem once agents run recurring processes and keep working when nobody is looking.
+In my customer projects, Copilot Studio discussions tend to come back to the same question: whose identity does the agent use when it does something? So far the honest answer has been "it depends", and that becomes a problem once agents run recurring processes so that they keep working when nobody is looking.
 
-I think an agent with its own account should be treated as a new principal, much closer to a service account than to a product feature. In practice that means giving each agent a job description, with scoped permissions, a named human owner, clear limits for its memory, a budget, and a plan for retiring it. If you cannot write that down, I would not give the agent an account yet. Keep in mind that Microsoft is rolling these features out through the Frontier program, which is early access, so details may still change.
+I think an agent with its own account should be treated as a new principal, much closer to a service account than to a product feature. In practice, that means giving each agent a job description, scoped permissions, a named human owner, clear memory limits, a budget, and a plan for retiring it. If you cannot write that down, I would not give the agent an account yet. Keep in mind that Microsoft is rolling these features out through the Frontier program, which is early access, so details may still change.
 
 ## What Microsoft announced
 
 The announcement is a [Microsoft Copilot Blog post](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/delegate-shared-business-processes-to-agents-that-are-more-persistent-and-proactive-with-microsoft-copilot-studio/) by Jason Moore, Vice President of Product for Microsoft Copilot Studio, published October 15, 2026. It describes managed agents that belong to the organization and persist beyond any one person's role or tenure.
 
-**Agent accounts.** Microsoft says agent accounts let agents work in Microsoft 365 with their own credentials, "similar to how any person would". People can reach the agent in Microsoft Teams and Outlook, @mention it in comments in Word, Excel, and PowerPoint, and hand it tasks that it continues between their interactions. Accounts also let agents work with other agents, tools, apps, and services using their own approved credentials and scoped permissions, without relying on any individual user's or maker's credentials. Work is attributed to the agent, and administrators can scope access and manage the lifecycle of these agents.
+**Agent accounts.** Microsoft says agent accounts let agents work in Microsoft 365 with their own credentials, "similar to how any person would". People can reach the agent in Microsoft Teams and Outlook, @mention it in comments in Word, Excel, and PowerPoint, and hand it tasks that it continues between their interactions. Accounts also let agents work with other agents, tools, apps, and services using their own approved credentials and scoped permissions, without relying on any individual user's or maker's credentials. Work is attributed to the agent, and administrators can scope access and manage the agents' lifecycle.
 
-**Business process memory.** Microsoft says this memory carries users' preferences and business process context into each new cycle of a process. Anything about the process that one person tells the agent becomes a shared resource for everyone else. Makers guide how the retained context is used through instructions, and they decide which business records and policies are authoritative.
+**Business process memory.** Microsoft says this memory carries users' preferences and business process context into each new process cycle. Anything one person tells the agent about the process becomes a shared resource for everyone else. Makers guide how the retained context is used through instructions, and they decide which business records and policies are authoritative.
 
-**Triggers in the GitHub Copilot harness.** Any agent built on the GitHub Copilot harness can be started by an external signal, such as an email, or on a set cadence, without an additional prompt.
+**Triggers in the GitHub Copilot harness. **** Any agent built on the GitHub Copilot harness can be started by an external signal, such as an email, or on a set cadence, without an additional prompt.
 
-Microsoft also says that additional access policies, quality, cost management, and lifecycle controls specific to these agents are planned for the coming months. Agent refinements and a browser-enabled cloud computer for agents are also described as coming.
+Microsoft also says it plans to add access policies, quality, cost management, and lifecycle controls specific to these agents in the coming months. Microsoft also says agent refinements and a browser-enabled cloud computer for agents are coming.
 
 {: .warning }
 Neither the announcement nor the what's new page covers licensing, pricing, regional availability, or retention for agent accounts or business process memory. Please check these points in your own tenant before you plan anything.
 
 ## Why it matters
 
-When an agent runs on the **user's credentials**, it sees only what that user can see. This is safe, but it is awkward for shared processes, because the result depends on who happened to ask.
+When an agent runs on the **user's credentials**, it sees only what that user can see. This is safe, but awkward for shared processes because the result depends on who asked.
 
 When an agent runs on the **maker's credentials**, it works for everyone but acts as one person. I have seen this go wrong more than once. The maker changes role, a connection breaks, and a process stops without anyone noticing. Or the audit log shows a named employee doing things that person never did.
 
 When an agent runs on a **shared service account**, attribution stays blurred. If several agents share one, nobody can tell which agent did what.
 
-Agent accounts address all three cases. My reading is that they give org-owned agents a much clearer, platform-supported answer to the question of who did what. That helps with audits, incident response, and German works councils, who will want to know that agent activity cannot be mistaken for employee activity.
+Agent accounts address all three cases. My reading is that they give org-owned agents a much clearer, platform-supported answer to who did what. That helps with audits, incident response, and German works councils, who will want to know that agent activity cannot be mistaken for employee activity.
 
-There is a second change. An agent that you can email and @mention behaves like a colleague, so users will treat it like one. They will tell it things in passing, expect it to remember, and assume that someone is responsible for it. Every one of these expectations needs a governance answer.
+There is a second change. An agent you can email and @mention behaves like a colleague, so users will treat it like one. They will tell it things in passing, expect it to remember, and assume that someone is responsible for it. Every one of these expectations needs a governance answer.
 
 The third change comes from triggers. Nobody has to start the agent anymore, so it can run at 03:00 on a Sunday because an email arrived. Risk and cost are no longer tied to office hours, and your monitoring should reflect that.
 
@@ -65,9 +65,9 @@ The third change comes from triggers. Nobody has to start the agent anymore, so 
 
 ### Agent accounts and Microsoft Entra Agent ID
 
-How do agent accounts relate to the Microsoft Entra Agent ID that Copilot Studio already creates? Here I separate what is documented from what is not.
+How do agent accounts relate to the Microsoft Entra Agent ID that Copilot Studio already creates? Here, I separate what is documented from what isn't.
 
-The [What's new in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new) page says that starting in July 2026, Copilot Studio automatically creates a Microsoft Entra Agent ID for every new agent, and you can no longer opt out at the environment level. The [Microsoft Entra Agent IDs for Copilot Studio agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-use-entra-agent-identities) page explains that connector permissions are attached to the agent identity as API permissions, that admins can target them with Conditional Access, and that deleting an agent also deletes its Agent ID. That page states that it describes agents powered by the standard harness, and the [App registration, agent identities, and authentication](https://learn.microsoft.com/en-us/microsoft-copilot-studio/govern-agents-identities-overview) page says the timing of Agent ID provisioning depends on the harness. The same page describes Entra Agent IDs as service principals with an "Agent" subtype and says that no one in your tenant, including tenant administrators, can generate tokens with the agent identity.
+The [What's new in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new) page says that starting in July 2026, Copilot Studio automatically creates a Microsoft Entra Agent ID for every new agent, and you can no longer opt out at the environment level. The [Microsoft Entra Agent IDs for Copilot Studio agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-use-entra-agent-identities) page explains that connector permissions are attached to the agent identity as API permissions, that admins can target them with Conditional Access, and that deleting an agent also deletes its Agent ID. That page says it describes agents powered by the standard harness, and the [App registration, agent identities, and authentication](https://learn.microsoft.com/en-us/microsoft-copilot-studio/govern-agents-identities-overview) page says Agent ID provisioning timing depends on the harness. The same page describes Entra Agent IDs as service principals with an "Agent" subtype and says that no one in your tenant, including tenant administrators, can generate tokens with the agent identity.
 
 The October 15 post does not say whether an agent account is built on the Entra Agent ID, sits next to it, or is something else. It also does not say whether an agent account needs a license, has a mailbox in the usual sense, or shows up as a user object. The [Agent 365 identity integration page](https://learn.microsoft.com/en-us/microsoft-agent-365/builder/identity) refers to Agent 365 identity concepts such as agentic users, but I have not found any Microsoft statement that links them to Copilot Studio agent accounts.
 
@@ -78,7 +78,7 @@ Microsoft's pages give different dates for this change: March 18, 2026 on a Micr
 
 ### Credentials move from people to agents
 
-With borrowed credentials, the agent's access was inherited from a person. With agent accounts, someone has to design it. In my experience the first permission list is almost always too broad, because the maker lists everything the process might ever need. I prefer to derive permissions from the process steps: for each step, which system it touches and whether it reads or writes. Grant that, and review it after the first few cycles.
+With borrowed credentials, the agent's access was inherited from a person. With agent accounts, someone has to design it. In my experience, the first permission list is almost always too broad, because the maker lists everything the process might ever need. I prefer to derive permissions from the process steps: for each step, which system it touches and whether it reads or writes. Grant that, and review it after the first few cycles.
 
 ### Memory changes the data model
 
@@ -94,13 +94,13 @@ Triggers make the agent event-driven, which raises the usual questions. What hap
 
 ### A named human owner, not just a sponsor
 
-According to the identity documentation, Copilot Studio adds the agent owner to the Entra Agent ID as a sponsor with limited permissions, for "governance traceability" and "accountability for agent lifecycle". That is a sensible default, but the maker is rarely the person who owns the business process. I would record both, plus a deputy.
+According to the identity documentation, Copilot Studio adds the agent owner to the Entra Agent ID as a sponsor with limited permissions for "governance traceability" and "accountability for agent lifecycle." That is a sensible default, but the maker is rarely the person who owns the business process. I would record both, plus a deputy.
 
 ### Shared memory, retention, and the right to be forgotten
 
-I expect the hardest discussions here, at least in the EU. People will tell the agent things about other people, for example "Don't send the forecast to Martin before Thursday, he's on leave." That is personal data under the GDPR, about someone who never talked to the agent.
+I expect the hardest discussions here, at least in the EU. People will tell the agent things about other people, for example, "Don't send the forecast to Martin before Thursday; he's on leave." That is personal data under the GDPR, about someone who never talked to the agent.
 
-The sources do not say where business process memory is stored, how long it is kept, whether Microsoft Purview retention and eDiscovery cover it, or how a single entry can be found and deleted. If someone makes an erasure request under Article 17 or an access request under Article 15, you need to be able to say what the agent remembers about that person. Until Microsoft documents this, I would use instructions to keep personal data out of memory, tell users clearly that the memory is shared, and involve the data protection officer before the pilot starts. In many cases a data protection impact assessment will be appropriate.
+The sources don't say where business process memory is stored, how long it is kept, whether Microsoft Purview retention and eDiscovery cover it, or how to find and delete a single entry. If someone makes an erasure request under Article 17 or an access request under Article 15, you need to be able to say what the agent remembers about that person. Until Microsoft documents this, I would use instructions to keep personal data out of memory, tell users clearly that the memory is shared, and involve the data protection officer before the pilot starts. In many cases, a data protection impact assessment will be appropriate.
 
 {: .caution }
 Do not assume that business process memory follows the retention and deletion rules of Teams chats or Exchange mail. Microsoft has not documented this. Treat it as an open question and check it before any personal data reaches the agent.
@@ -109,17 +109,17 @@ Do not assume that business process memory follows the retention and deletion ru
 
 The what's new page for August 2026 says that agents, workflows, and apps powered by the GitHub Copilot harness use usage-based billing measured in Copilot Credits. Triggers are part of that harness. My reading is that every triggered run can therefore consume credits, even when no person is involved.
 
-The failure modes are familiar: a mail loop between two agents, or a five-minute test schedule nobody changed back. Microsoft says that cost management controls for these agents are planned, which suggests they are not all available yet. Until they are, I would use the agent usage estimator before going live and review consumption per agent every week. I wrote about the wider cost picture in my [October 10, 2026 article on agent FinOps](https://holgerimbery.blog/agent-finops-microsoft-ecosystem).
+The failure modes are familiar: a mail loop between two agents, or a five-minute test schedule nobody changed back. Microsoft says cost-management controls for these agents are planned, which suggests they aren't all available yet. Until they are, I would use the agent usage estimator before going live and review consumption per agent every week. I wrote about the wider cost picture in my [October 10, 2026 article on agent FinOps](https://holgerimbery.blog/agent-finops-microsoft-ecosystem).
 
 ### Lifecycle and retirement
 
-These agents are meant to outlive the projects that built them, so I would set a review date when each agent is created. If the owner does not confirm that the agent is still needed, switch off the triggers first, then remove the permissions, then delete the agent. The documentation confirms that deleting an agent deletes its Entra Agent ID. Whether it also removes the agent account and its business process memory is not documented yet, so test this during a pilot.
+These agents are meant to outlive the projects that built them, so I would set a review date when each agent is created. If the owner doesn't confirm the agent is still needed, switch off the triggers first, then remove permissions, then delete the agent. The documentation confirms that deleting an agent deletes its Entra Agent ID. The documentation doesn't yet confirm whether it also removes the agent account and its business process memory, so test this during a pilot.
 
 ## Practical recommendations
 
 ### Pick the right processes first
 
-Microsoft suggests starting with one shared business process, and I agree. Good candidates are **stable**, **clearly owned**, and **recurring**, and mistakes in them are **visible and easy to reverse**. Weekly reporting, triage of incoming contracts, and collecting status updates before a steering meeting are typical examples.
+Microsoft suggests starting with one shared business process, and I agree. Good candidates are **stable**, **clearly owned**, and **recurring**, and mistakes in them are **visible and easy to reverse**. Typical examples include weekly reporting, triaging incoming contracts, and collecting status updates before a steering meeting.
 
 I would avoid processes with unclear ownership, processes that touch special categories of personal data, one-off projects, and anything where the agent would make a final decision with legal effect on a person. In Microsoft's example, the finance team keeps authority over allocations and spending. I would treat that as a rule for every org-owned agent.
 
