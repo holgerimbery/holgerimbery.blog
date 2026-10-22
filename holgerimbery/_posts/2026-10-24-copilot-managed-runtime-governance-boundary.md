@@ -3,7 +3,7 @@ layout: post
 canonical_url: https://holgerimbery.blog/copilot-managed-runtime-governance-boundary
 title: Copilot Managed Runtime - The Runtime Becomes the Governance Boundary
 description: "Microsoft now hosts the code that Copilot and other AI tools build. For architects, that moves governance from the build tool to the runtime. Here is what that changes, what it does not solve, and what to design before the first AI-built app goes viral."
-date: 26-10-24
+date: 26-11-07
 author: admin
 slug: copilot-managed-runtime-governance-boundary
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/khaleelah-ajibola-3TlpZl0_Y5w-unsplash.jpg
