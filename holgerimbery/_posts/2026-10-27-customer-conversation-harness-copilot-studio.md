@@ -26,7 +26,7 @@ toc: true
 
 ## Introduction
 
-For most of the past year, my architecture talks about Copilot Studio started with the model. Which one should we use, how fast is it, and what does it cost? That question is still there, but it now comes second. Everything in Copilot Studio runs on a harness. Microsoft's Learn article describes it as "a runtime that exists between the two", meaning between your agent design and the model. Since October 21, 2026 there are three of them: the GitHub Copilot harness, the standard harness, and the new Customer Conversation harness.
+For most of the past year, lots of Copilot Studio related discussions started with questions around the model. Which one should we use, how fast is it, and what does it cost? That question is still there, but it now comes second. Everything in Copilot Studio runs on a harness. Microsoft's Learn article describes it as "a runtime that exists between the two", meaning between your agent design and the model. Since October 21, 2026 there are three of them: the GitHub Copilot harness, the standard harness, and the new Customer Conversation harness. 
 
 My view is that the third harness is a sensible split. A customer on the phone does not need an agent that plans its own way through ten tools. They need a reliable answer, a quick identity check, and an easy way to reach a person. Building that on a runtime made for open-ended reasoning never fit very well. But a separate harness also comes with its own memory model, its own billing, and its own controls. So the first decision is now "which harness", and in my experience that choice is much harder to undo than a model choice.
 
