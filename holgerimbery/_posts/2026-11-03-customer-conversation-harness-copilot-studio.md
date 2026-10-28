@@ -3,7 +3,7 @@ layout: post
 canonical_url: https://holgerimbery.blog/customer-conversation-harness-copilot-studio
 title: "A Third Harness for Customer Conversations: What Changes for Contact Center Agents in Copilot Studio"
 description: Copilot Studio now has three harnesses, and the new Customer Conversation harness is built for voice and chat with customers. What it means for architecture, memory, biometrics, escalation, cost, and governance.
-date: 26-10-30
+date: 26-11-03
 author: admin
 slug: customer-conversation-harness-copilot-studio
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/christina-wocintechchat-com-m-eF7HN40WbAQ-unsplash.jpg
@@ -77,11 +77,11 @@ Choosing a harness is now the first architecture decision, and it affects much m
 
 The table leads to three practical points.
 
-First, the multi-agent setup fits how contact centers already work. Most service teams route calls by topic, such as billing, orders, or technical issues. One sub-agent per topic, each with its own escalation path, follows the same logic. The documentation makes a useful distinction here. A sub-agent shares configuration, deployment, and ALM with its primary agent. A connected agent, for example one hosted in Azure AI Foundry, keeps its own configuration and ALM. I would choose between them based on who owns what. If one team owns the whole service experience, use sub-agents. If the billing department wants to own and release its own agent, connect it.
+**First**, the multi-agent setup fits how contact centers already work. Most service teams route calls by topic, such as billing, orders, or technical issues. One sub-agent per topic, each with its own escalation path, follows the same logic. The documentation makes a useful distinction here. A sub-agent shares configuration, deployment, and ALM with its primary agent. A connected agent, for example one hosted in Azure AI Foundry, keeps its own configuration and ALM. I would choose between them based on who owns what. If one team owns the whole service experience, use sub-agents. If the billing department wants to own and release its own agent, connect it.  
 
-Second, voice works differently from chat. Learn states that "Speech channels don't support end-user sign-in", so knowledge sources that require the end user's credentials only work in chat. In practice, any answer that depends on who the caller is must come from a tool that runs after an identity check. It cannot come from knowledge sources that check user permissions. Plan for this from day one.
+**Second**, voice works differently from chat. Learn states that "Speech channels don't support end-user sign-in", so knowledge sources that require the end user's credentials only work in chat. In practice, any answer that depends on who the caller is must come from a tool that runs after an identity check. It cannot come from knowledge sources that check user permissions. Plan for this from day one.
 
-Third, treat the harness choice as permanent. I have not found anything in Microsoft's material about moving an agent between harnesses, so I treat a change as a rebuild. One related point I get asked about: the GitHub Copilot harness is a Copilot Studio framework, not the GitHub Copilot service, and Microsoft states that customer data is not sent to that service.
+**Third**, treat the harness choice as permanent. I have not found anything in Microsoft's material about moving an agent between harnesses, so I treat a change as a rebuild. One related point I get asked about: the GitHub Copilot harness is a Copilot Studio framework, not the GitHub Copilot service, and Microsoft states that customer data is not sent to that service.
 
 ## Governance implications
 
