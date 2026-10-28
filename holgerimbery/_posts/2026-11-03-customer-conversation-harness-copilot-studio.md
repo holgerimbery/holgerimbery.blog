@@ -22,11 +22,11 @@ toc: true
 ---
 
 {: .q-left }
-> On October 21, 2026, Microsoft added a third runtime to Copilot Studio. This one is built for the customers who call or chat with your company. In this article I explain what the Customer Conversation harness is and how it compares to the GitHub Copilot and standard harnesses. I also share what I would decide about memory, biometrics, escalation, and cost before a real caller ever talks to it.
+> On October 21, 2026, Microsoft added a third runtime to Copilot Studio. This one is built for the customers who call or chat with your company. In this article I explain what the Customer Conversation harness is and how it compares to the Microsoft Copilot and standard harnesses. I also share what I would decide about memory, biometrics, escalation, and cost before a real caller ever talks to it.
 
 ## Introduction
 
-For most of the past year, lots of Copilot Studio related discussions started with questions around the model. Which one should we use, how fast is it, and what does it cost? That question is still there, but it now comes second. Everything in Copilot Studio runs on a harness. Microsoft's Learn article describes it as "a runtime that exists between the two", meaning between your agent design and the model. Since October 21, 2026 there are three of them: the GitHub Copilot harness, the standard harness, and the new Customer Conversation harness. 
+For most of the past year, lots of Copilot Studio related discussions started with questions around the model. Which one should we use, how fast is it, and what does it cost? That question is still there, but it now comes second. Everything in Copilot Studio runs on a harness. Microsoft's Learn article describes it as "a runtime that exists between the two", meaning between your agent design and the model. Since October 21, 2026 there are three of them: the Microsoft Copilot harness, the standard harness, and the new Customer Conversation harness. 
 
 My view is that the third harness is a sensible split. A customer on the phone does not need an agent that plans its own way through ten tools. They need a reliable answer, a quick identity check, and an easy way to reach a person. Building that on a runtime made for open-ended reasoning never fit very well. But a separate harness also comes with its own memory model, its own billing, and its own controls. So the first decision is now "which harness", and in my experience that choice is much harder to undo than a model choice.
 
@@ -40,7 +40,7 @@ An agent on this harness is called a Customer Assist Agent. Microsoft says the h
 
 Two prebuilt tools are specific to contact centers. Escalate passes the conversation to Teams Phone, to Email, or to Customer Engagement. For the live agent route, Microsoft says the agent "sends the entire conversation to the engagement hub", so the human picks up with full context. Biometric Authentication verifies voice callers. Learn calls it the integration point for the biometric authentication and fraud detection capabilities in the Contact Center Intelligence portal.
 
-Memory on this harness is its own feature, separate from memory on the GitHub Copilot harness. It stores structured context in a fixed schema. It covers short-term context only, keeps it for 30 days, and is turned on or off with one switch at the agent level. When a shared contact identifier is configured, context from a phone call is available in the customer's next chat, and the other way around.
+Memory on this harness is its own feature, separate from memory on the Microsoft Copilot harness. It stores structured context in a fixed schema. It covers short-term context only, keeps it for 30 days, and is turned on or off with one switch at the agent level. When a shared contact identifier is configured, context from a phone call is available in the customer's next chat, and the other way around.
 
 Billing is usage-based in Copilot Credits, and building, testing, and evaluating can consume credits too. The Power Platform admin documentation says consumption depends on complexity and modality (digital, GenAI voice, or premium voice). It also states that this usage "isn't covered by a user's Microsoft 365 Copilot license." Voice Biometrics adds 6 credits per enrollment or authentication interaction, and Microsoft's estimator assumes two such interactions per voice conversation, so 12 extra credits.
 
@@ -64,7 +64,7 @@ One last point is naming. The Copilot Studio articles refer to the Microsoft Con
 
 Choosing a harness is now the first architecture decision, and it affects much more than how the agent reasons. This is the decision table I use with customers. It is based on Microsoft's own comparison, and the last row adds my own rule of thumb.
 
-| Criterion | GitHub Copilot harness | Customer Conversation harness | Standard harness |
+| Criterion | Microsoft Copilot harness | Customer Conversation harness | Standard harness |
 |---|---|---|---|
 | Built for | Complex, multi-step business processes | Customers over voice and chat | Rule-based agents and structured conversations |
 | How it works | Reasons through a goal step by step | Primary agent with sub-agents that escalate | Follows the topics and rules you define |
@@ -81,7 +81,7 @@ The table leads to three practical points.
 
 **Second**, voice works differently from chat. Learn states that "Speech channels don't support end-user sign-in", so knowledge sources that require the end user's credentials only work in chat. In practice, any answer that depends on who the caller is must come from a tool that runs after an identity check. It cannot come from knowledge sources that check user permissions. Plan for this from day one.
 
-**Third**, treat the harness choice as permanent. I have not found anything in Microsoft's material about moving an agent between harnesses, so I treat a change as a rebuild. One related point I get asked about: the GitHub Copilot harness is a Copilot Studio framework, not the GitHub Copilot service, and Microsoft states that customer data is not sent to that service.
+**Third**, treat the harness choice as permanent. I have not found anything in Microsoft's material about moving an agent between harnesses, so I treat a change as a rebuild. One related point I get asked about: the Microsoft Copilot harness is a Copilot Studio framework, not the Microsoft Copilot service, and Microsoft states that customer data is not sent to that service.
 
 ## Governance implications
 
@@ -122,4 +122,4 @@ I think the Customer Conversation harness is the right idea. Customer service ha
 - Microsoft Learn, [Prebuilt contact center tools (Customer Conversation) (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/tools-prebuilt-customer-conversation), updated October 21, 2026: Escalate to Teams Phone, Email, or Customer Engagement, Biometric Authentication, Microsoft Contact Center Intelligence portal
 - Microsoft Learn, [Memory (Customer Conversation) (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/memory-overview-customer-conversation), updated October 21, 2026: structured schema, custom parameter limits, 30-day retention, agent-level switch, cross-channel continuity, phone number identification on speech
 - Microsoft Learn, [Manage costs for agents powered by the Customer Conversation harness](https://learn.microsoft.com/en-us/power-platform/admin/manage-usage-customer-conversation-harness), updated October 21, 2026: modalities, Voice Biometrics credits, estimator assumptions, cost controls, shared prepaid capacity with Microsoft 365 experiences
-- Microsoft Learn, [Harnesses in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview), updated October 22, 2026: definition of a harness, the three harnesses and their comparison, GitHub Copilot harness data handling
+- Microsoft Learn, [Harnesses in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview), updated October 22, 2026: definition of a harness, the three harnesses and their comparison, Microsoft Copilot harness data handling
