@@ -27,14 +27,14 @@ menu_settings:
         title: "Topics"
       - url: "/updates/"
         title: "Updates"
-    - title: "About"
+    - title: "About this blog"
       url: "/about/"
 #    - title: "Sponsors"
 #      url: "https://github.com/sponsors/holgerimbery"
 #    - title: "Pigeon Post"
 #      url: "https://holgerimbery.github.io/PigeonPost/"
-    - title: "My Page"
-      url: "https://instruo365.de"
+    - title: "Profile & Talks"
+      url: "https://instruo365.de/about/"
 #    - title: "mate Project"
 #      url: "https://www.mate365.app"
 #    - title: "Legal"
@@ -90,7 +90,7 @@ about:
   about_image: "/images/01.jpg"
   about_image_alt: Holger Imbery
   about_button_text: Meet me
-  about_button_link: "/about/"
+  about_button_link: "https://instruo365.de/about/"
 
 
 #-------------------------------

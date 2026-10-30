@@ -1,18 +1,18 @@
 ---
 layout: page
-title: About Me
+title: About this blog
 description: Sharing field notes, lessons learned, and practical perspectives from building AI solutions in the Microsoft ecosystem.
 permalink: /about/
 image: /images/01.jpg
 image_caption: null
-canonical_url: https://holgerimbery.blog/
+canonical_url: https://holgerimbery.blog/about/
 slug: ""
 ---
 
 
 **Welcome to my blog** — a place to share insights, experiences, and lessons learned from building AI solutions in the Microsoft ecosystem.
 
-I’m a Microsoft MVP, Principal Architect, and technology enthusiast focused on agentic AI, intelligent agents, and enterprise AI solutions. Using Microsoft Copilot Studio, Azure AI Foundry, the Power Platform, and Azure services, I work with organizations to design and implement AI systems that are practical, secure, scalable, and aligned with business goals.
+I’m Holger Imbery, a Microsoft MVP and Principal Architect focused on agentic AI and enterprise AI solutions. For my full biography, professional profile, and talks, visit [Profile & Talks on instruo365.de](https://instruo365.de/about/).
 
 This blog is a collection of field notes from that journey. You'll find architectural patterns, implementation approaches, technology deep dives, lessons learned, and observations from real-world projects. My goal is not to provide definitive answers, but to share experiences that can help others navigate the rapidly evolving AI landscape.
 

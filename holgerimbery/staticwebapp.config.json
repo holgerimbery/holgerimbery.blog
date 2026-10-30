@@ -1,4 +1,16 @@
 {
+    "routes": [
+      {
+        "route": "/impressum",
+        "redirect": "https://instruo365.de/impressum/",
+        "statusCode": 301
+      },
+      {
+        "route": "/impressum/",
+        "redirect": "https://instruo365.de/impressum/",
+        "statusCode": 301
+      }
+    ],
     "responseOverrides": {
       "404": {
         "rewrite": "/404.html"

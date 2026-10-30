@@ -54,6 +54,7 @@ jobs:
           path: holgerimbery/_site
 
   deploy:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'schedule')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
