@@ -72,3 +72,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cp-accent); out
   border-radius: 1rem; box-shadow: var(--cp-shadow);
 }
 .authors .authors__link { color: var(--cp-text); &:hover { color: var(--cp-accent); } }
+
+/* TermsFeed cookie banner */
+.termsfeed-com---nb, .termsfeed-com---pc-dialog { font-family: inherit; }
+.termsfeed-com---palette-light .cc-nb-okagree,
+.termsfeed-com---palette-light .cc-cp-foot-save {
+  background: var(--cp-accent); color: var(--cp-accent-fg); border-radius: 0.625rem; font-weight: 750;
+}
+.termsfeed-com---palette-light .cc-nb-reject,
+.termsfeed-com---palette-light .cc-nb-changep {
+  background: var(--cp-surface); color: var(--cp-text); border: 1px solid var(--cp-border-strong); border-radius: 0.625rem; font-weight: 750;
+}
