@@ -83,3 +83,15 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cp-accent); out
 .termsfeed-com---palette-light .cc-nb-changep {
   background: var(--cp-surface); color: var(--cp-text); border: 1px solid var(--cp-border-strong); border-radius: 0.625rem; font-weight: 750;
 }
+
+@media (max-width: $desktop) {
+  .header .header__inner { flex-wrap: nowrap; gap: 1rem; }
+  .header .logo { min-width: 0; flex: 1; }
+  .header .logo__link { font-size: 18px; line-height: 1.2; }
+  .header .hamburger { flex-shrink: 0; }
+  .main-nav { background: var(--cp-surface); border: 1px solid var(--cp-border); box-shadow: var(--cp-shadow); }
+}
+
+@media (max-width: 767px) {
+  .section.featured-post { padding-left: 12px; padding-right: 12px; }
+}
