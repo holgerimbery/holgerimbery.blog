@@ -56,3 +56,19 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cp-accent); out
 .header .dropdown-toggle:hover, .header .dropdown-menu a:hover { color: var(--cp-accent); }
 .header .main-nav .nav__item.dropdown .dropdown-toggle { color: var(--cp-text); }
 .header .main-nav .nav__item.dropdown .dropdown-toggle:hover { color: var(--cp-accent); }
+
+.logo-footer__link, .section__title a, .section__head a.title { color: var(--cp-text); }
+.logo-footer__link { font-weight: 800; }
+
+.form__input {
+  border: 1px solid var(--cp-border); background: var(--cp-surface); color: var(--cp-text);
+  &:focus { border-color: var(--cp-accent); outline: 2px solid var(--cp-accent-soft); }
+}
+
+.contact__link { color: var(--cp-text); &:hover { color: var(--cp-accent); } }
+
+.authors .authors__info {
+  border: 1px solid var(--cp-border); border-top: 4px solid var(--cp-accent);
+  border-radius: 1rem; box-shadow: var(--cp-shadow);
+}
+.authors .authors__link { color: var(--cp-text); &:hover { color: var(--cp-accent); } }
