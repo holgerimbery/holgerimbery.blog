@@ -6,7 +6,7 @@
 $base-spacing-unit: 16px;
 
 // Border radius
-$global-radius: 22px;
+$global-radius: 16px;
 
 // Transition
 $global-transition: all .2s;
@@ -19,12 +19,12 @@ $base-font-size: 18px;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;
-$base-font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-font-family: "Segoe UI", "Segoe UI Variable", "Segoe UI Web", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 $base-line-height: 1.6;
 
 // Headings
 $heading-font-weight: 700;
-$heading-font-family: "Source Serif 4", 'Times New Roman', Georgia, serif;
+$heading-font-family: "Segoe UI", "Segoe UI Variable", "Segoe UI Web", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 
 $font-size-h1: 36px;
 $font-size-h2: 28px;
