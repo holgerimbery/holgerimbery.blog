@@ -83,7 +83,7 @@
   border-radius: 24px;
   background: linear-gradient(
     180deg,
-    color-mix(in srgb, var(--primary-color) 10%, var(--background-color)) 0%,
+    color-mix(in srgb, var(--primary-color) 5%, var(--background-color)) 0%,
     var(--background-color) 100%
   );
   box-shadow: 0 16px 40px -28px rgba(0, 0, 0, 0.35);
@@ -104,7 +104,7 @@
 :root[dark] .section.featured-post {
   background: linear-gradient(
     180deg,
-    color-mix(in srgb, var(--primary-color) 16%, var(--background-alt-color)) 0%,
+    color-mix(in srgb, var(--primary-color) 6%, var(--background-alt-color)) 0%,
     var(--background-alt-color) 100%
   );
 }
