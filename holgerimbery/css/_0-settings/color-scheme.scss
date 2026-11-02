@@ -40,6 +40,33 @@
   --callout-caution: #fae6e6;
 
   --syntax-highlighting-background: var(--light-gray);
+
+  /* instruo365 design tokens */
+  --cp-bg: #f7f4ef; --cp-bg-elevated: #fcfbf8; --cp-surface: #ffffff; --cp-surface-soft: #f5f5f5;
+  --cp-border: #dedede; --cp-border-strong: #919191;
+  --cp-text: #242424; --cp-text-muted: #5c5c5c; --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b; --cp-accent-hover: #9a1a41; --cp-accent-soft: rgba(177,31,75,.08); --cp-accent-fg: #fff;
+  --cp-link: #0078d4; --cp-shadow: 0 18px 48px rgba(0,0,0,.12);
+  --cp-panel: rgba(255,255,255,.86); --cp-panel-strong: rgba(255,255,255,.96); --cp-highlight: rgba(177,31,75,.12);
+
+  --cp-accent-text: var(--cp-accent);
+  --primary-color: var(--cp-accent);
+  --background-color: var(--cp-bg);
+  --background-alt-color: var(--cp-surface);
+  --background-alt-color-2: var(--cp-surface-soft);
+  --text-color: var(--cp-text);
+  --text-alt-color: var(--cp-text-muted);
+  --heading-font-color: var(--cp-text);
+  --link-color: var(--cp-link);
+  --link-color-hover: var(--cp-accent);
+  --button-color: var(--cp-accent-fg);
+  --button-background-color: var(--cp-accent);
+  --button-background-hover: var(--cp-accent-hover);
+  --border-color: var(--cp-border);
+  --border-alt-color: var(--cp-surface);
+  --th-color: var(--cp-surface-soft);
+  --tr-color: var(--cp-surface-soft);
+  --syntax-highlighting-background: var(--cp-surface-soft);
 }
 
 :root[dark] {
@@ -81,4 +108,29 @@
   --callout-caution: #5d1414;
 
   --syntax-highlighting-background: var(--dark);
+
+  --cp-bg: #3d3b3a; --cp-bg-elevated: #343231; --cp-surface: #292929; --cp-surface-soft: #2e2e2e;
+  --cp-border: #474747; --cp-border-strong: #5f5f5f;
+  --cp-text: #dedede; --cp-text-muted: #919191; --cp-text-soft: #b0b0b0;
+  --cp-link: #4da6ff; --cp-shadow: 0 18px 48px rgba(0,0,0,.32);
+  --cp-panel: rgba(41,41,41,.72); --cp-panel-strong: rgba(41,41,41,.96);
+
+  --cp-accent-text: #ee7a9b;
+  --primary-color: var(--cp-accent);
+  --background-color: var(--cp-bg);
+  --background-alt-color: var(--cp-surface);
+  --background-alt-color-2: var(--cp-surface-soft);
+  --text-color: var(--cp-text);
+  --text-alt-color: var(--cp-text-muted);
+  --heading-font-color: var(--cp-text);
+  --link-color: var(--cp-link);
+  --link-color-hover: var(--cp-text);
+  --button-color: var(--cp-accent-fg);
+  --button-background-color: var(--cp-accent);
+  --button-background-hover: var(--cp-accent-hover);
+  --border-color: var(--cp-border);
+  --border-alt-color: var(--cp-border);
+  --th-color: var(--cp-surface);
+  --tr-color: var(--cp-surface);
+  --syntax-highlighting-background: var(--cp-surface);
 }
