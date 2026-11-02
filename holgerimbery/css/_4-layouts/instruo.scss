@@ -210,3 +210,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cp-accent); out
     tbody tr:last-child td { border-bottom: 0; }
   }
 }
+
+/* Author card below the article: neutral text, accent on hover */
+.card-author .card-author__link, .card-author .card-author__name a { color: var(--cp-text); &:hover { color: var(--cp-accent-text); } }
+.post__author .post__author__name { color: var(--cp-text); &:hover { color: var(--cp-accent-text); } }
