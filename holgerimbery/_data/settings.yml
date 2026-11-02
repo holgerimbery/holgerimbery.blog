@@ -57,7 +57,7 @@ hero:
   enable: true
   hero_title: Where Curiosity Meets Practice
   hero_description: | 
-    Notes from the trenches of real projects. What worked, what didn't, and why — no marketing spin.
+    Notes from real projects. What worked, what didn't, and why — no marketing spin.
 
 hero_authors:
   enable: false
