@@ -10,7 +10,9 @@
             <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
             <img class="logo__image__dark" src="{{ site.baseurl }}{{ site.data.settings.logo_dark }}" alt="{{ site.data.settings.title }}">
           {% else %}
-            {{ site.data.settings.title }}
+            {% assign title_parts = site.data.settings.title | split: ' - ' %}
+            <span class="logo__name">{{ title_parts[0] }}</span>
+            {% if title_parts.size > 1 %}<span class="logo__tagline">{{ title_parts[1] }}</span>{% endif %}
           {% endif %}
           </a>
         </div>
