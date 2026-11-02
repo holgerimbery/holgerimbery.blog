@@ -5,3 +5,4 @@ _site
 .DS_Store
 .original-theme/
 .ruby-lsp
+images/generated/

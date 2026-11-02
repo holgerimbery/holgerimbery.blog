@@ -17,10 +17,28 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+          working-directory: holgerimbery
+      - name: Optimize images
+        uses: ./.github/actions/optimize-images
+      - name: Test image rendering
+        run: bundle exec ruby ../test/image_dimensions_test.rb
+        working-directory: holgerimbery
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        working-directory: holgerimbery
+        env:
+          JEKYLL_ENV: production
+      - name: Verify built images
+        run: python test/verify_generated_images.py
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -30,9 +48,10 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "./holgerimbery" # App source code path
+          app_location: "./holgerimbery/_site" # Prebuilt site
           api_location: "" # Api source code path - optional
-          output_location: "_site" # Built app content directory - optional
+          output_location: ""
+          skip_app_build: true
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:

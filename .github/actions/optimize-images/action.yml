@@ -1,0 +1,26 @@
+name: Optimize site images
+description: Generate and cache responsive WebP variants before Jekyll reads the site.
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+        cache: pip
+        cache-dependency-path: requirements-images.txt
+    - name: Install image dependencies
+      shell: bash
+      run: python -m pip install -r requirements-images.txt
+    - name: Restore generated images
+      uses: actions/cache@v4
+      with:
+        path: holgerimbery/images/generated
+        key: images-${{ runner.os }}-${{ hashFiles('requirements-images.txt', 'scripts/optimize_images.py') }}-${{ hashFiles('holgerimbery/images/**') }}
+        restore-keys: |
+          images-${{ runner.os }}-${{ hashFiles('requirements-images.txt', 'scripts/optimize_images.py') }}-
+    - name: Test image pipeline
+      shell: bash
+      run: python -m unittest discover -s test -p test_optimize_images.py
+    - name: Generate responsive images
+      shell: bash
+      run: python scripts/optimize_images.py

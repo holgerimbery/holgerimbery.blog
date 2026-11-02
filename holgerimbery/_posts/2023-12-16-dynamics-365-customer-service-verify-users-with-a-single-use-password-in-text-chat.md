@@ -78,7 +78,7 @@ The user´s name, the email address (for returning/registered customers), and th
     * Verify the code using another flow, "Validate the code."
         
 
-![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/8fbe48fe-ee9f-40ce-9707-59942328b1cb.png"left")
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clq80jcqw000i08ju3yew0dvp.md/8fbe48fe-ee9f-40ce-9707-59942328b1cb.png)
 
 ### Flow 1: generate verification code
 

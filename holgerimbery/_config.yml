@@ -54,3 +54,5 @@ defaults:
 
 sass:
   style: compressed
+
+image_optimization: true
