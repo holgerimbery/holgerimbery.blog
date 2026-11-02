@@ -148,3 +148,34 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cp-accent); out
   .header .logo__name { font-size: 1.15rem; }
   .header .logo__tagline { font-size: .75rem; }
 }
+
+/* Callouts: panel with accent bar and per-type icon */
+.post__content {
+  .note, .tip, .important, .warning, .caution {
+    --co: #2f7fb8;
+    background: color-mix(in srgb, var(--co) 8%, var(--cp-surface));
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem 1rem 3.25rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    border: 1px solid color-mix(in srgb, var(--co) 25%, transparent);
+    border-left: 4px solid var(--co);
+    border-radius: 12px;
+    color: var(--cp-text);
+
+    > :first-child { margin-top: 0; }
+    > :last-child { margin-bottom: 0; }
+
+    &::after {
+      top: 1rem;
+      left: 1.1rem;
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+  }
+  .note      { --co: #2f7fb8; &::after { content: "\2139\FE0F"; } }
+  .tip       { --co: #2e8b57; &::after { content: "\1F4A1"; } }
+  .important { --co: var(--cp-accent); &::after { content: "\2757"; } }
+  .warning   { --co: #d38a1c; &::after { content: "\26A0\FE0F"; } }
+  .caution   { --co: #c0392b; &::after { content: "\1F6D1"; } }
+}
