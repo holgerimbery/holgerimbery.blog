@@ -165,7 +165,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // LazyLoad Images
   ======================= */
   var lazyLoadInstance = new LazyLoad({
-    elements_selector: ".lazy"
+    elements_selector: ".lazy",
+    cancel_on_exit: false
   })
 
 
@@ -176,14 +177,37 @@ document.addEventListener("DOMContentLoaded", function() {
   imageLink = document.querySelectorAll(".page__content a img, .post__content a img, .gallery__image a img");
 
   if (imageLink) {
-    for (const i = 0; i < imageLink.length; i++) imageLink[i].parentNode.classList.add("image-link");
+    for (const i = 0; i < imageLink.length; i++) imageLink[i].closest("a").classList.add("image-link");
     for (const i = 0; i < imageLink.length; i++) imageLink[i].classList.add("no-lightense");
   };
 
   if (lightense) {
     Lightense(".page__content img:not(.no-lightense), .post__content img:not(.no-lightense), .gallery__image img:not(.no-lightense)", {
     padding: 60,
-    offset: 30
+    offset: 30,
+    beforeShow: function (state) {
+      const picture = state.target.closest("picture");
+      if (picture && state.target.dataset.originalSrc) {
+        picture.querySelectorAll("source").forEach(source => {
+          source.dataset.zoomSrcset = source.getAttribute("srcset");
+          source.removeAttribute("srcset");
+          source.removeAttribute("data-srcset");
+        });
+        state.target.src = state.target.dataset.originalSrc;
+      }
+    },
+    afterHide: function (state) {
+      const picture = state.target.closest("picture");
+      if (picture) {
+        picture.querySelectorAll("source[data-zoom-srcset]").forEach(source => {
+          source.setAttribute("srcset", source.dataset.zoomSrcset);
+          if (state.target.classList.contains("lazy")) {
+            source.setAttribute("data-srcset", source.dataset.zoomSrcset);
+          }
+          delete source.dataset.zoomSrcset;
+        });
+      }
+    }
     });
   };
 
@@ -217,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
           grid.appendChild(fragment);
           
           // Re-initialize LazyLoad for new images
-          new LazyLoad({ elements_selector: ".lazy" });
+          new LazyLoad({ elements_selector: ".lazy", cancel_on_exit: false });
           
           pagination_next_page_number++;
           if (pagination_next_page_number > pagination_available_pages_number) {

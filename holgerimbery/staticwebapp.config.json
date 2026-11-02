@@ -1,6 +1,12 @@
 {
     "routes": [
       {
+        "route": "/images/generated/*",
+        "headers": {
+          "Cache-Control": "public, max-age=31536000, immutable"
+        }
+      },
+      {
         "route": "/impressum",
         "redirect": "https://instruo365.de/impressum/",
         "statusCode": 301

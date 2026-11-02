@@ -123,4 +123,97 @@ class ImageDimensionsTest < Minitest::Test
     markup = '{"image": "<img src=\"/images/example%20image.png\">"}'
     assert_equal markup, render(markup, extension: ".json").output
   end
+
+  def enable_optimization
+    directory = File.join(@source, "images", "generated")
+    FileUtils.mkdir_p(directory)
+    variants = [80, 160, 400, 800].map do |width|
+      name = "/images/generated/example-#{width}.webp"
+      File.write(File.join(@source, name.delete_prefix("/")), "fixture")
+      { "path" => name, "width" => width, "height" => (width.to_f * @height / @width).round, "bytes" => 7 }
+    end
+    manifest = { "images" => { "/images/example image.png" => {
+      "width" => @width, "height" => @height, "variants" => variants
+    } } }
+    FileUtils.mkdir_p(File.join(directory, ".metadata"))
+    File.write(File.join(directory, ".metadata", "manifest.json"), JSON.generate(manifest))
+    @site.config["image_optimization"] = true
+    @processor = Jekyll::ImageDimensions.new(@site)
+  end
+
+  def test_responsive_picture_preserves_loading_and_uses_local_original
+    enable_optimization
+    raw = "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/example%20image.png"
+    html = Nokogiri::HTML5.parse(render(%(<a class="article__image"><img class="lazy" src="#{raw}" data-src="#{raw}" loading="eager" fetchpriority="high"></a>)).output)
+    image = html.at_css("picture img")
+    source = html.at_css("picture source")
+    assert_equal "/images/example%20image.png", image["src"]
+    assert_equal image["src"], image["data-src"]
+    assert_equal image["src"], image["data-original-src"]
+    assert_equal "eager", image["loading"]
+    assert_equal "high", image["fetchpriority"]
+    assert_equal "image/webp", source["type"]
+    assert_includes source["srcset"], "/images/generated/example-400.webp 400w"
+    refute_includes source["srcset"], " 80w"
+    assert_equal source["srcset"], source["data-srcset"]
+    assert_includes source["sizes"], "410px"
+  end
+
+  def test_avatar_variants_and_baseurl
+    @site.baseurl = "/blog"
+    enable_optimization
+    html = Nokogiri::HTML5.parse(render('<img src="/images/example%20image.png" width="40" height="40">').output)
+    source = html.at_css("source")
+    assert_equal "40px", source["sizes"]
+    assert_includes source["srcset"], "/blog/images/generated/example-80.webp 80w"
+    assert_includes source["srcset"], "/blog/images/generated/example-160.webp 160w"
+    refute_includes source["srcset"], " 400w"
+    assert_equal "/blog/images/example%20image.png", html.at_css("img")["src"]
+    assert_equal "40", html.at_css("img")["width"]
+  end
+
+  def test_content_sizes_and_wide_fragment
+    enable_optimization
+    html = Nokogiri::HTML5.parse(render('<div class="post"><img src="/images/example%20image.png#wide"></div>').output)
+    assert_equal "100vw", html.at_css("source")["sizes"]
+    assert html.at_css("img")["src"].end_with?("#wide")
+    html = Nokogiri::HTML5.parse(render('<div class="post"><img src="/images/example%20image.png"></div>').output)
+    assert_includes html.at_css("source")["sizes"], "720px"
+  end
+
+  def test_existing_picture_and_srcset_are_not_replaced
+    enable_optimization
+    markup = '<picture><source srcset="custom.webp"><img src="/images/example%20image.png" width="40" height="40"></picture>'
+    assert_equal markup, render(markup).output
+    markup = '<img src="/images/example%20image.png" srcset="custom.png 800w" width="40" height="40">'
+    assert_equal markup, render(markup).output
+  end
+
+  def test_missing_manifest_and_variant_fail_clearly
+    @site.config["image_optimization"] = true
+    assert_raises(Jekyll::Errors::FatalException) { Jekyll::ImageDimensions.new(@site) }
+    enable_optimization
+    File.delete(File.join(@source, "images", "generated", "example-800.webp"))
+    assert_raises(Jekyll::Errors::FatalException) { render('<img src="/images/example%20image.png">') }
+  end
+
+  def test_external_image_does_not_inherit_the_previous_images_manifest
+    enable_optimization
+    markup = '<img src="/images/example%20image.png"><img src="https://example.com/image.jpg" width="100" height="100">'
+    html = Nokogiri::HTML5.parse(render(markup).output)
+    assert_equal 1, html.css("picture").size
+    assert_equal "https://example.com/image.jpg", html.css("img").last["src"]
+  end
+
+  def test_article_screenshots_keep_originals_but_card_images_are_optimized
+    enable_optimization
+    markup = '<div class="post__content"><img src="/images/example%20image.png"></div>'
+    html = Nokogiri::HTML5.parse(render(markup).output)
+    assert_empty html.css("picture")
+    assert_equal "/images/example%20image.png", html.at_css("img")["src"]
+    assert_equal @width.to_s, html.at_css("img")["width"]
+    assert_empty @processor.used_variants
+    render('<a class="article__image"><img src="/images/example%20image.png"></a>')
+    assert_includes @processor.used_variants, "/images/generated/example-800.webp"
+  end
 end
