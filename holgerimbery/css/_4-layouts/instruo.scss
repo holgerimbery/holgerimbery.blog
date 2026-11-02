@@ -140,7 +140,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cp-accent); out
 
 /* Two-line logo: name on top, tagline below */
 .logo__link, .logo-footer__link { display: inline-flex; flex-direction: column; gap: .15rem; text-decoration: none; }
-.logo__name { font-size: 1.5rem; font-weight: 800; line-height: 1.1; letter-spacing: -0.5px; }
+.logo__name { font-size: 1.5rem; font-weight: 800; line-height: 1.1; letter-spacing: -0.035em; text-transform: uppercase; color: var(--cp-text); }
+.logo__name span { color: var(--cp-accent); }
 .logo__tagline { font-size: .85rem; font-weight: 500; line-height: 1.2; letter-spacing: 0; color: var(--cp-text-muted); }
 .logo-footer__link .logo__name { font-size: 1.35rem; }
 @media (max-width: $desktop) {
