@@ -179,3 +179,31 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cp-accent); out
   .warning   { --co: #d38a1c; &::after { content: "\26A0\FE0F"; } }
   .caution   { --co: #c0392b; &::after { content: "\1F6D1"; } }
 }
+
+/* Code blocks and tables share the callout panel look */
+.post__content {
+  .highlight, div.highlighter-rouge {
+    margin: 1.5rem 0;
+    border: 1px solid var(--cp-border);
+    border-radius: 12px;
+    background: var(--cp-surface);
+    overflow: hidden;
+    pre { padding: 1rem 1.25rem; margin: 0; background: transparent; line-height: 1.55; }
+  }
+  div.highlighter-rouge .highlight { margin: 0; border: 0; border-radius: 0; }
+
+  table {
+    margin: 1.5rem 0;
+    border: 1px solid var(--cp-border);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--cp-surface);
+
+    th, td { padding: .7rem 1rem; border: 0; border-bottom: 1px solid var(--cp-border); }
+    th { background: var(--cp-surface-soft); font-size: .95rem; }
+    tr, tr:nth-child(even) { background: transparent; }
+    tbody tr:last-child td { border-bottom: 0; }
+  }
+}
