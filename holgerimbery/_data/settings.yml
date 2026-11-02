@@ -84,9 +84,10 @@ recommended:
 about:
   enable: true
   about_title: Hello, I’m Holger
-  about_subtitle: Microsoft MVP & MCT • principal architect - agentic AI | Copilot Studio | Copilot | power platform | azure
+  about_subtitle: I connect enterprise AI architecture with practical implementation, and share what I learn along the way.
   about_description: |
-
+I'm a Principal Architect at NTT DATA, Microsoft MVP and Microsoft Certified Trainer (MCT), based in Berlin. My work focuses on agentic AI, intelligent automation, and the Microsoft ecosystem.
+I help organizations move from promising demonstrations to secure, scalable, well-governed solutions. That means connecting technology choices with business processes, enterprise data, operational ownership, and measurable outcomes.
   about_image: "/images/01.jpg"
   about_image_alt: Holger Imbery
   about_button_text: About me
