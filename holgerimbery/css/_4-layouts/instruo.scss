@@ -133,9 +133,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cp-accent); out
 }
 
 /* Featured block: stretch cards to equal height within each row */
-.featured-post .row, .author .row { align-items: stretch; }
-.featured-post .row > .col, .author .row > .col { display: flex; flex-direction: column; margin-bottom: 32px; }
-.featured-post .row > .col > .article, .author .row > .col > .article { flex: 1; margin-bottom: 0; }
+.featured-post .row, .author .row, .related-posts .section__inner > .row { align-items: stretch; }
+.featured-post .row > .col, .author .row > .col, .related-posts .section__inner > .row > .col { display: flex; flex-direction: column; margin-bottom: 32px; }
+.featured-post .row > .col > .article, .author .row > .col > .article, .related-posts .section__inner > .row > .col > .article { flex: 1; margin-bottom: 0; }
 
 /* Author page: black social icons */
 .author .author__social .author__social__item { color: var(--cp-text); &:hover { color: var(--cp-accent-text); } }
