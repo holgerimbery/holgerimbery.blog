@@ -90,7 +90,7 @@ On the Create Generative Answers node, select Edit under Data Sources.
 
 Edit the connection to the Azure OpenAI Service.
 
-![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/24979867-c793-4e9e-8a90-f6ae6e975036.png"left")
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/cllt3vjv5000g09mnfrj04ucn.md/24979867-c793-4e9e-8a90-f6ae6e975036.png)
 
 Once you have finished entering sources, close the menu. Be sure to save any changes made to your topic.
 

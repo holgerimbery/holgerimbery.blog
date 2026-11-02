@@ -164,6 +164,11 @@ img,
   vertical-align: middle;
 }
 
+/* Translation flags are injected after the Jekyll build. */
+.gtranslate_wrapper .gt_float_switcher img {
+  aspect-ratio: 1;
+}
+
 img,
 .lightense-wrap,
 .gallery {

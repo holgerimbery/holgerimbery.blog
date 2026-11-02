@@ -9,6 +9,26 @@ License:
 MIT for the code and for the rest: [CC-BY-ND-NC](https://creativecommons.org/licenses/by-nc-nd/4.0/)   
 SPDX-License-Identifier: MIT AND CC-BY-ND-NC
 
+## Image dimensions
+
+The Jekyll plugin in `holgerimbery/_plugins/image_dimensions.rb` adds missing
+`width` and `height` attributes to rendered HTML images, including Markdown
+article images. It reads the local image's intrinsic dimensions at build time
+and caches them for that build. URLs on this site and raw GitHub URLs under
+this repository's `main/holgerimbery/` path resolve to local files; the build
+does not download remote images.
+
+Existing explicit dimensions, loading priorities, responsive `height: auto`,
+and CSS image crops are preserved. Dynamically injected translation flags
+reserve their square aspect ratio in CSS. For externally hosted images or missing
+assets, supply explicit dimensions; the build logs a warning rather than
+guessing an aspect ratio. This reserves layout space before images load,
+reducing layout shifts, not image download sizes.
+
+From `holgerimbery`, run `bundle exec ruby ../test/image_dimensions_test.rb`
+and `bundle exec jekyll build`. The deployment workflows run Jekyll with
+custom plugins enabled, so dimensions are present in the initial HTML.
+
 ## Shared profile and legal pages
 
 holgerimbery.blog remains a separate publishing platform. Articles and their URLs

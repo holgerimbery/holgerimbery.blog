@@ -64,7 +64,7 @@ Figure 3: enable features
 
 If the customer asks for a handover from the voice bot to a live agent, the agent will see the full transcript after taking the call, even with the customer's sentiment. If you use the "private message to agent" feature of the Power Virtual agents, relevant data from the chat with the bot are summarized.
 
-![Figure 4: Transcript in agent desktop](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/f046b892-4cff-4f1e-b517-559c413de64f.webp)
+![Figure 4: Transcript in agent desktop](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clejxxccl02pl9invf4ts678x.md/f046b892-4cff-4f1e-b517-559c413de64f.png)
 
 Figure 4: Transcript in agent desktop
 

@@ -8,3 +8,9 @@ gem "base64"
 gem "logger"
 gem "bigdecimal"
 gem "ostruct"
+gem "fastimage", "~> 2.3"
+gem "nokogiri", "~> 1.18"
+
+group :test do
+  gem "minitest", "~> 5.0"
+end
