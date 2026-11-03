@@ -55,10 +55,19 @@ End Microsoft Clarity -->
   <script>
     const colorScheme = "{{ site.data.settings.color_scheme }}";
     const requestedTheme = new URLSearchParams(window.location.search).get("scoutTheme");
+    let savedTheme;
+    try {
+      savedTheme = window.localStorage.getItem("theme");
+    } catch (error) {
+      console.warn("Unable to read the saved theme preference.", error);
+    }
+    const preferredTheme = savedTheme === "light" || savedTheme === "dark"
+      ? savedTheme
+      : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     const theme = requestedTheme === "light" || requestedTheme === "dark"
       ? requestedTheme
       : colorScheme === "auto"
-        ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+        ? preferredTheme
         : colorScheme;
 
     if (theme === "dark") {

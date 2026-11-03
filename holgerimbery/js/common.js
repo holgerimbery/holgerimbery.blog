@@ -106,6 +106,11 @@ document.addEventListener("DOMContentLoaded", function() {
       html.classList.add('dark-mode');
       document.documentElement.setAttribute("dark", "");
     }
+    try {
+      window.localStorage.setItem("theme", html.classList.contains('dark-mode') ? "dark" : "light");
+    } catch (error) {
+      console.warn("Unable to save the theme preference.", error);
+    }
   }
 
 
