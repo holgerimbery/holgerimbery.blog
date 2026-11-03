@@ -20,7 +20,7 @@ tags:
   - microsoft365copilot
   - microsoftfoundry
   - powerplatform
-featured: true
+featured: false
 toc: true
 ---
 
