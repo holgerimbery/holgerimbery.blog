@@ -19,7 +19,7 @@ tags:
   - identity
   - memory
   - triggers
-featured: true
+featured: false
 toc: true
 ---
 
