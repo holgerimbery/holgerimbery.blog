@@ -1,13 +1,13 @@
 ---
 layout: post
 canonical_url: https://holgerimbery.blog/agent-finops-microsoft-ecosystem
-title: Agent FinOps in the Microsoft Ecosystem - Rev1
-description: Part two of a short, living series on Copilot and agent costs. Where Microsoft 365 Copilot services, Copilot Studio, and Foundry agents show their costs, which controls stop spending, and how to build chargeback across three admin experiences.
-date: 26-10-10
+title: "Agent FinOps in the Microsoft Ecosystem - Rev2"
+description: "A living article on Copilot and agent costs. Where Copilot, Cowork, Copilot Studio, and Foundry agents show their costs, which controls actually stop spending, how to charge costs back, and what Microsoft has changed recently."
+date: 26-11-03
 author: admin
 slug: agent-finops-microsoft-ecosystem
-image: /images/2026/10/sasun-bughdaryan-5AmcgCr8N1Y-unsplash.jpg
-image_caption: ""
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/immo-wegmann-lLRm3S-7Kfw-unsplash.jpg
+image_caption: "Photo by <a href=\"https://unsplash.com/@tinkerman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Immo Wegmann</a> on <a href=\"https://unsplash.com/photos/silver-and-gold-round-coins-lLRm3S-7Kfw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>"
 tags:
   - agent365
   - agentfinops
@@ -24,10 +24,8 @@ featured: true
 toc: true
 ---
 
-{: .q-left }
-> This is the second post in the series on Copilot and agent costs. [Part one](https://holgerimbery.blog/copilot-pricing-licenses-and-credits) was the price list: the Copilot license for everyday AI, and Copilot Credits for agentic work. This post is about what happens after you buy. Agent costs show up in four places (Copilot, Cowork, Copilot Studio, and Foundry), spread over three consoles, and each one has different controls. For each, I cover where you see the cost, what stops spending, and how to reduce it. Everything comes from Microsoft's own pages.
 {: .note }
-This is a rapidly changing topic. The architecture, governance patterns, and FinOps recommendations in this article are relatively stable, while service coverage, billing experiences, and reports continue to evolve across Microsoft 365, Copilot Studio, and Foundry. I check Microsoft's documentation, pricing pages, and announcements at the start of every month. Validate operational details in your own tenant before you establish governance or chargeback processes. The changelog at the end lists every change.
+This is a living article. I update it at the start of every month when Microsoft's documentation, pricing pages, or announcements change. The changelog at the end lists every change.
 
 ## What FinOps means when you run agents
 
@@ -37,7 +35,7 @@ That works well for cloud costs, because they have a clear unit: an hour of a vi
 
 So you keep the three habits and count something else. A useful number is the cost of one agent session. A better one, if you can get it, is the cost of one result: one ticket solved, one document checked, one invoice cleared. Finance can work with that.
 
-Three things make agents cost more than normal cloud services.
+Three things make agents harder than normal cloud costs.
 
 * **Costs can start before you go live.** On one Copilot Studio harness, building, previewing, and testing an agent already use credits.
 * **Without a person in the loop, nothing slows an agent down.** Costs then follow how often the agent is triggered, not how many people use it.
@@ -52,32 +50,32 @@ Three things make agents cost more than normal cloud services.
 | Copilot Studio | Copilot Credits per agent action | Power Platform admin center | Yes, a monthly limit per agent |
 | Foundry agents | Model tokens, tools, storage, compute | Azure Cost Management | No, budgets only warn |
 
-Credit use for the first three comes from a single pool per tenant. Foundry is billed through Azure and is completely separate.
+Credit use in the first three comes out of one pool per tenant. Foundry is billed through Azure and is completely separate.
 
 ## Copilot and Cowork: the Microsoft 365 admin center
 
 ### Where it is and what it covers
 
-The cost screen for Copilot Credits is in the Microsoft 365 admin center under **Copilot > Cost management**. Microsoft's [usage-based billing overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits) (updated September 25, 2026) calls it "a centralized place to govern and monitor AI experiences". You can see usage by spending policy, user, group, agent, service, and funding source.
+The cost screen for Copilot Credits is in the Microsoft 365 admin center under **Copilot > Cost management**. Microsoft's [usage-based billing overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits) (updated October 30, 2026) calls it "a centralized place to govern and monitor AI experiences". You can see usage by spending policy, user, group, agent, service, and funding source.
 
-The scope is broader than it was when this article was first drafted. Microsoft's usage-based billing overview now lists Microsoft 365 Copilot Cowork, advanced work in SharePoint, advanced work in OneDrive, the Work IQ API for custom apps and agents, Copilot Managed Runtime, and Teams Phone Agent. Microsoft says it will add more agents and services over time.
-
-Copilot Studio is still different. Microsoft's management page directs Copilot Studio customers to Copilot Studio pay-as-you-go, and the comparison page says that Power Platform and Copilot Studio usage details are managed in the Power Platform admin center. In other words, the common currency is expanding, but the administration experience has not fully converged.
+The list of covered services grew in October. The overview now names Cowork, advanced work in SharePoint and in OneDrive, the Work IQ API, Copilot Managed Runtime, Teams Phone Agent, and Code. Copilot Studio is a special case. You can [move it here](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs) for chosen environments or agents, but you don't have to: "Copilot Studio environment and agent policies are opt-in". Until you do, the Power Platform admin center stays in charge. More on that under recent changes below.
 
 Before any of this can run, someone has to switch it on. The Configuration tab is where you turn on usage-based billing, pick how you pay (pay-as-you-go, pre-purchase, or capacity packs), and link an Azure subscription. The [USL and UBB page](https://learn.microsoft.com/en-us/microsoft-365/copilot/user-subscription-license-usage-based-billing) is clear: "Admins must set up a billing policy before a user can use" these experiences.
 
 ### How spending policies work
 
-Spending policies are the main control. The rules are simple once you read them, but a few surprise people.
+Spending policies are the main control. The rules are simple once you've read them, but a few of them surprise people.
 
-* Policies can apply to the tenant, to groups, or to users. You can add individual users only through security groups.
+* Policies can apply to the tenant, to groups, or to users. Individual users can only be added through security groups.
 * The default policy sets the tenant limit. Every other policy has its own limit and "doesn't inherit the tenant-level limit."
 * If a user is in several policies, only one applies: the one with the highest per-user limit, then the largest policy limit, then the newest. "The chosen policy applies in full and settings from other policies aren't combined."
 * When a user reaches the limit, "they lose access to agents and services for the rest of the month". Moving them to another group doesn't help: "Moving a user between groups or spending policies doesn't reset the user's consumption."
 * Policies cap spending. They "don't reserve or allocate Copilot Credits".
+* A policy can now cover people (users and groups) or resources (agents and environments). Resource-based policies are how Copilot Studio comes in. When both could apply, "a policy for the agent or its environment takes precedence over a policy for the person using the agent."
+* Microsoft sets a floor for user limits: "Set at least 2,000 credits per user per month". A policy below that minimum can't be saved.
 * For Cowork, a policy can also limit which AI models people can use. Microsoft calls these "model profiles": a saved set of at least two models that you attach to a policy. They are "currently available only for Copilot Cowork".
 * Credits are used in a fixed order: capacity packs first, then the pre-purchase plan, then pay-as-you-go.
-* You can change a policy's billing method later. This used to be impossible. Since the [setup page](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-copilot-credits-setup) was updated on October 2, 2026, it says: "Changing the billing method doesn't require you to delete and recreate the policy." Scope, limits, alerts, and services stay the same.
+* You can change a policy's billing method later. This used to be impossible. Since the [setup page](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-copilot-credits-setup) was updated on October 2, 2026, it says: "Changing the billing method doesn't require you to delete and recreate the policy." Scope, limits, alerts, and services stay as they are.
 
 For Cowork, a spending policy does more than cap money. The [Cowork admin page](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance) says: "A spending policy is an access control, not only a budget." If someone isn't in a policy, they can't use Cowork.
 
@@ -86,13 +84,17 @@ The setting "Auto-apply new services" is on by default. Every new service Micros
 
 ### Who can do what
 
-The [setup page](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-copilot-credits-setup) splits the work across roles, which helps if finance and IT share the job. Microsoft changed this on October 2, 2026: AI and License admins can now edit policies but can no longer create them.
+The [setup page](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-copilot-credits-setup) splits the work across roles, which helps if finance and IT share the job. Microsoft changed this on October 2, 2026: the AI and License admins can now edit policies, but no longer create them.
 
 | Role | What they can do |
 |---|---|
 | Global admin, Billing admin | Turn on usage-based billing, add and change billing methods |
 | AI admin, License admin | Edit spending policies, limits, alerts, and billing methods, but not create new policies |
 | AI Reader, Global Reader | Read-only access, good for finance |
+
+For Copilot Studio, the [Copilot Studio cost page](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs) suggests giving Power Platform admins the AI Administrator role and environment admins the AI Reader role. Makers need no new role. An existing Power Platform role doesn't turn into a Microsoft 365 role by itself.
+
+There is also an API now. The [Copilot Cost Management API](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/cost-management/overview) in Microsoft Graph can read the credit balance and create, change, and delete spending policies. It's in beta, and Microsoft says: "Use of these APIs in production applications is not supported." It works in credits only and leaves out prices and invoices.
 
 ### What users see
 
@@ -109,29 +111,30 @@ The admin center figures are not your bill. The [monitoring page](https://learn.
 
 ### How to keep costs down
 
-**Decide license or pay-per-use for each group, with real numbers.** For licensed users, employee-facing agent use in Copilot Chat, Teams, and SharePoint is largely free (see part one for the exceptions). For heavy agent users, a license can be cheaper than credits. For light users, it's the other way round. This is a buying decision, and it makes the biggest difference to your bill.
+**Decide license or pay-per-use for each group, with real numbers.** For licensed users, employee-facing agent use in Copilot Chat, Teams, and SharePoint is largely free (see [Understanding Microsoft Copilot Licensing](https://holgerimbery.blog/copilot-pricing-licenses-and-credits) for the exceptions). For heavy agent users a license can be cheaper than credits. For light users it's the other way round. This is a buying decision, and it makes the biggest difference to your bill.
 
-**Turn on per-user limits from day one.** Cowork work has no natural end. If someone finds it useful, they'll use it more next week.
+**Turn on per-user limits from day one.** Cowork work has no natural end. Someone who finds it useful will use it more next week.
 
 **Use approvals instead of raising everyone's limit.** Each request for more credits shows you what people really need.
 
 **Set one policy per Entra group.** Then you can compare groups and see which team uses far more than the others.
 
-**Review the billing method and Auto-apply setting together.** Microsoft now allows supported administrators to change billing methods without deleting and recreating the policy. Auto-apply remains enabled by default, so decide deliberately whether newly supported services should inherit each policy.
+**Get the billing method right the first time**, and decide on Auto-apply before Microsoft adds the next service.
 
 ## Copilot Studio: the Power Platform admin center
 
-Part one covers the credit rates for each agent action. Here I only repeat what you need to control them.
+The credit rates for each agent action are in [Understanding Microsoft Copilot Licensing](https://holgerimbery.blog/copilot-pricing-licenses-and-credits). Here I only repeat what you need to control them.
 
 ### When the meter starts
 
-The [harnesses overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview) (updated October 1, 2026) says: "The harness you use affects the billing, features, and capabilities of what you build."
+The [harnesses overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview) (updated October 22, 2026) says: "The harness you use affects the billing, features, and capabilities of what you build."
 
 | Harness | What it's for | When charging starts |
 |---|---|---|
 | Standard | Agents with topics and agent flows | When the agent is used, at the standard rates |
 | Copilot Chat | Copilot Chat extended with your own knowledge | Billed per use, or included in the Copilot license |
 | GitHub Copilot | Multi-step agents that reason and work with documents | With your first build action, before anyone publishes |
+| Customer Conversation | Voice and chat agents that serve customers, with handover to a person | Billed in credits, per use |
 
 The GitHub Copilot harness "charges credits from the moment you start building", according to the [billing overview for that harness](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/billing-credit-overview) (updated September 28, 2026). Previewing, testing, and creating evaluations all use credits. Credits cover model tokens, tools (including knowledge and MCP servers), and the harness itself. Places people assume are free aren't either: "Developer environments and trial environments move to usage-based billing September 1, 2026."
 
@@ -152,21 +155,23 @@ In the Power Platform admin center, go to **Licensing > Products > Copilot Studi
 
 If you pay as you go, a billing plan links environments to an Azure subscription and creates a Power Platform account resource there. It's hidden in the Azure portal by default; choose "View hidden types" to find it.
 
-One limit matters for chargeback. For the GitHub Copilot harness, Microsoft [says](https://learn.microsoft.com/en-us/power-platform/admin/manage-usage-github-copilot-harness): "Discrete costs aren't attributed to individual makers or end users." You see costs per environment and per agent, not per person.
+One limit matters for chargeback. Microsoft's [page on GitHub Copilot harness costs](https://learn.microsoft.com/en-us/power-platform/admin/manage-usage-github-copilot-harness) (updated October 14, 2026) says credits are charged to the environment where the agent runs, "not to the individual makers or users who run agents." You see costs per environment and per agent, not per person.
 
 ### What stops spending
 
-**Per-agent limits.** Each agent can have a monthly credit limit, with the status "Within limit", "Nearing limit", or "Over limit". With the hard stop on, "The agent is automatically turned off once it hits the defined limit." Azure budgets won't do it: they "send notifications but don't stop Copilot Studio consumption."
+**Per-agent limits.** Each agent can have a monthly credit limit, with the status "Within limit", "Nearing limit", or "Over limit". With the hard stop on, "The agent is automatically turned off once it hits the defined limit." This is the setting to rely on when money matters. Azure budgets won't do it: they "send notifications but don't stop Copilot Studio consumption."
 
-**The 125% rule on prepaid capacity.** "Enforcement is triggered when a tenant reaches 125% of their prepaid capacity." Custom agents are then switched off, and users see "This agent is currently unavailable. It has reached its usage limit." Agent flows behave differently: once prepaid capacity is fully used, the agent keeps answering, but new flow runs are blocked. So an agent can look fine while part of its work has stopped. An email goes to the tenant admin.
+**The 125% rule on prepaid capacity.** "Enforcement is triggered when a tenant reaches 125% of their prepaid capacity." Custom agents are then switched off, and users see "This agent is currently unavailable. It has reached its usage limit." Agent flows behave differently: once prepaid capacity is fully used, new flow runs are blocked while the agent keeps answering. So an agent can look fine while part of its work has stopped. An email goes to the tenant admin.
 
-**Pay-as-you-go has no cutoff.** Extra use is billed to Azure: "With pay-as-you-go, enforcement doesn't apply"—no outage, but no ceiling either. Choose which risk you'd rather have.
+**If you move an environment to the Microsoft 365 admin center.** Then "The environment's Power Platform admin center capacity allocation and linked billing plan no longer apply." The spending policy takes over, and it can set a per-agent limit too. Microsoft's example is a 10,000-credit policy with a 1,000-credit limit per agent. If you remove the environment from the policy, the old Power Platform settings apply again on their own.
+
+**Pay-as-you-go has no cutoff.** Extra use is billed to Azure: "With pay-as-you-go, enforcement doesn't apply". No outage, but no ceiling either. Choose which risk you'd rather have.
 
 ### How to keep costs down
 
 **Look at how often agents ground in company data.** Grounding costs 10 credits, a classic answer 1. An agent that searches SharePoint or Exchange on every turn costs about ten times as much as a simple one. This is often the biggest number in a Copilot Studio estimate, and often the easiest to cut.
 
-**Choose the right harness.** The GitHub Copilot harness is right for real multi-step work, and it charges you to build as well as to run. Use the Standard harness when you don't need it.
+**Choose the right harness.** The GitHub Copilot harness is right for real multi-step work, and it charges you to build as well as to run. Use the Standard harness where that isn't needed.
 
 **Set a monthly limit with a hard stop on every production agent.**
 
@@ -176,9 +181,9 @@ One limit matters for chargeback. For the GitHub Copilot harness, Microsoft [say
 
 ## One credit pool, two admin centers, one Azure bill
 
-This is easy to miss because each side describes it differently.
+This is easy to miss because each side describes it in different words.
 
-Credits are pooled for the whole tenant. Credits you assign to environments in the Power Platform admin center come from the same pool Cowork and the Work IQ API use. The Microsoft 365 admin page says this "reduces the prepaid capacity available for Cowork and Work IQ API services". What the Microsoft 365 admin center shows as available is what you bought minus what's already been given to environments.
+Credits are pooled for the whole tenant. Credits you assign to environments in the Power Platform admin center come out of the same pool that Cowork and the Work IQ API use. The Microsoft 365 admin page says this "reduces the prepaid capacity available for Cowork and Work IQ API services". What the Microsoft 365 admin center shows as available is what you bought minus what's already been given to environments.
 
 So two teams take from one pool, usually without talking to each other. If your Power Platform admin hands out a lot of capacity, your Microsoft 365 admin sees available credits drop for no obvious reason. Put both people in the same monthly review.
 
@@ -193,7 +198,7 @@ Azure adds a third view. According to the [page comparing the two views](https:/
 
 ### What you pay for
 
-Foundry works the opposite way to Copilot Studio. A single credit hides an entire workflow behind one number. Foundry charges every resource separately, which is harder to forecast but much easier to assign to a team.
+Foundry works the opposite way to Copilot Studio. A credit hides a whole workflow behind one number. Foundry charges every resource separately, which is harder to forecast but much easier to assign to a team.
 
 The [Foundry Agent Service pricing page](https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/) says there is "no additional charge for creating or running Foundry-native agents using prompts and workflows". You pay for what the agent uses.
 
@@ -206,62 +211,60 @@ The [Foundry Agent Service pricing page](https://azure.microsoft.com/en-us/prici
 | Hosted agents (Agent Framework, LangGraph) | The container compute they run on, per hour |
 | Fabric, SharePoint, Bing grounding, Foundry IQ, Logic Apps connectors | Charged separately, on top of tokens |
 
-The [cost planning page](https://learn.microsoft.com/en-us/azure/foundry/concepts/manage-costs) (updated August 27, 2026) adds three things that catch teams in the second month:
+The [cost planning page](https://learn.microsoft.com/en-us/azure/foundry/concepts/manage-costs) (updated October 22, 2026) adds three things that catch teams in the second month:
 
-* Fine-tuning is charged three times, for training, hosting, and inference. A fine-tuned deployment costs money as long as it exists, even if nobody uses it.
+* Fine-tuning is charged three times, for training, hosting, and inference. A fine-tuned deployment costs money while it exists, even if nobody uses it.
 * Failed calls aren't automatically free: "HTTP status codes alone don't determine whether usage is billed."
 * There's no emergency brake. OpenAI offers hard spending limits; Azure OpenAI "doesn't currently provide this functionality."
 
 ### Where you see the cost
 
-**Azure Cost Management and the invoice are the billing records.** Azure OpenAI sits inside the wider Cognitive Services group, so filter by service tier. Meters are named `model-name-GUID`. Partner and community models show up at the resource group level, and some under "Global resources", so look at the whole resource group, not only the Foundry resource.
+**Azure Cost Management is the official record.** Azure OpenAI sits inside the wider Cognitive Services group, so filter by service tier. Meters are named `model-name-GUID`. Partner and community models show up at resource group level, and some under "Global resources", so look at the whole resource group, not only the Foundry resource.
 
-**The Foundry portal shows estimates.** There's an estimated cost per project and in the agent list. Use it for quick checks, and use Cost Management and the invoice for real numbers. The estimates leave out prompt agents, non-Foundry agents, and provisioned throughput.
+**The Foundry portal shows estimates.** There's an estimated cost per project and in the agent list. Use it for quick estimates, and use Cost Management and the invoice for real numbers. The estimates leave out prompt agents, non-Foundry agents, and provisioned throughput.
 
-**Anomaly alerts are slower than agents.** Azure compares each day with a forecast based on the last 60 days, and "Anomaly detection runs 36 hours after the end of the day (UTC)". Alert rules work only per subscription; you get five per subscription, and each alert email is sent once for normal workloads, which is fine. For an agent stuck in a loop, the money is gone before the alert arrives.
+**Anomaly alerts are slower than agents.** Azure compares each day with a forecast based on the last 60 days, and "Anomaly detection runs 36 hours after the end of the day (UTC)". Alert rules work only per subscription, you get five per subscription, and each alert email is sent once. For normal workloads that's fine. For an agent stuck in a loop, the money is gone before the alert arrives.
 
 ### How to keep costs down
 
-**Match the deployment type to the work.** Standard pay-per-token for development and uneven traffic. Provisioned throughput for steady production that needs predictable speed, but you can't pause it: "Billing stops only when the deployment is deleted." Provisioned quota is shared across supported models in a region and deployment type. If you buy a reservation, create the deployments first, then buy. A reservation doesn't guarantee capacity.
+**Match the deployment type to the work.** Standard pay-per-token for development and uneven traffic. Provisioned throughput for steady production that needs predictable speed, but you can't pause it: "Billing stops only when the deployment is deleted." Provisioned quota is shared across supported models in a region and deployment type. If you buy a reservation, create the deployments first and buy after. A reservation doesn't guarantee capacity.
 
 **Move bulk work to Batch.** Jobs that can wait up to 24 hours run at "50% less cost than global standard". It's the most overlooked discount for bulk summarizing and classifying.
 
-**Use prompt caching, and check both sides.** Cached input is cheaper on Standard deployments and up to 100% cheaper on provisioned ones. On GPT-5.6 models and newer, writing to the cache can cost extra. The prompt needs at least 1,024 tokens with an identical start, and caches aren't shared between Azure subscriptions.
+**Use prompt caching, and watch both sides.** Cached input is cheaper on Standard deployments and up to 100% cheaper on provisioned ones. On GPT-5.6 models and newer, writing to the cache can cost extra. The prompt needs at least 1,024 tokens with an identical start, and caches aren't shared between Azure subscriptions.
 
-**Treat the model router mode as a cost setting.** Balanced picks cheaper models that stay within about 1 to 2% of the best quality. Cost mode allows about 5-6%. Quality mode ignores cost. The smallest model behind it limits the router's usable context window.
+**Treat the model router mode as a cost setting.** Balanced picks cheaper models that stay within about 1 to 2% of the best quality. Cost mode allows about 5 to 6%. Quality mode ignores cost. The usable context window is limited by the smallest model behind the router.
 
-## What has landed, and what is still unclear
+## Recent changes to cost management
 
-Microsoft's September 25 announcement described expanding cost management beyond Cowork and the Work IQ API. Some of that expansion is now documented.
+On September 25 Microsoft [announced](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/) that cost management will cover more services:
 
-<table>
-<tr><th>Capability</th><th>Status as of October 10, 2026</th></tr>
-<tr><td>Copilot Managed Runtime in Cost management</td><td>Documented as a supported service in Microsoft 365 Cost management</td></tr>
-<tr><td>Advanced work in SharePoint and OneDrive</td><td>Documented as supported services; a Microsoft Copilot license is required</td></tr>
-<tr><td>Teams Phone Agent</td><td>Documented as a supported service</td></tr>
-<tr><td>Custom approval workflows for credit requests</td><td>Available through request policies</td></tr>
-<tr><td>Model profiles</td><td>Available for Cowork spending policies</td></tr>
-<tr><td>Automatic coverage for newly supported services</td><td>Available and enabled by default through Auto-apply new services</td></tr>
-<tr><td>Copilot Studio in Microsoft 365 Cost management</td><td>Not listed as a supported service in the Microsoft 365 Cost management overview; detailed usage management remains in the Power Platform admin center</td></tr>
-<tr><td>Spending-policy API</td><td>Announced, but I couldn't find public API documentation</td></tr>
-</table>
+> Cost management in Agent 365 is expanding beyond Cowork and Work IQ APIs to include Code and Copilot Managed Runtime, with support for agents built in Microsoft Copilot Studio planned for October.
+>
+> <cite>Official Microsoft Blog, September 25, 2026</cite>
 
-The key change isn't that everything has moved into one console. It hasn't. Microsoft 365 Cost management now governs more services, including Copilot Managed Runtime, but Copilot Studio still has its own operational controls and reporting in the Power Platform admin center.
+It has now arrived, as an opt-in. Since October 30, 2026, [Manage Copilot Studio costs in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs) explains how. You create a resource-based spending policy for specific agents, specific environments, or all environments. A policy for environments also covers "apps and workflows deployed in those environments". Changes can take up to 12 minutes to apply. In the Power Platform admin center, the capacity and agent screens show a note when an environment or agent is managed from the Microsoft 365 side.
 
-A note on the name. Microsoft's announcement described these capabilities as FinOps for AI in Agent 365. The operational documentation places the supported controls under **Copilot > Cost management** in the Microsoft 365 admin center. I treat Agent 365 as the broader governance direction and Cost management as the place where the documented settings live today.
+My advice: start with one test environment, as Microsoft also suggests. "All environments" moves every environment at once, including new ones, and switches off their Power Platform allocations and billing plans.
 
-### What still isn't fully clear
+A note on the name. The blog calls it "cost management in Agent 365". Agent 365 has been generally available since May 1, 2026, at $15 per user (€13.00 on Microsoft's German page) or included in E7, and it's managed in the admin center under **Agents**. But on Microsoft's documentation pages, cost management sits under **Copilot > Cost management**, and the [Agent 365 service description](https://learn.microsoft.com/en-us/office365/servicedescriptions/microsoft-agent-365/microsoft-agent-365) (updated October 1, 2026) still lists no cost features. I read "Agent 365" here as the name of the direction, and the Copilot area of the admin center as the place where you actually find the settings.
 
-Microsoft's current pages don't clearly answer:
+The same post announced more controls. Here is where each one stands as of November 1, 2026:
 
-- whether all Copilot Studio harnesses will eventually appear directly in Microsoft 365 Cost management;
-- whether per-agent limits and environment allocation will remain exclusively in the Power Platform admin center;
-- how user- and group-scoped spending policies would apply to autonomous Copilot Studio agents;
-- whether Copilot Studio capacity management will eventually converge with Microsoft 365 spending policies;
-- whether Azure billing will expose more granular service separation for Cowork, Copilot Managed Runtime, and Copilot Studio;
-- when a public API for spending-policy management will be documented.
+| Announced | Status |
+|---|---|
+| Code and Copilot Managed Runtime in cost management | Done. Both are on Learn's list of covered services (updated October 30, 2026), together with Teams Phone Agent and advanced work in SharePoint and OneDrive |
+| Copilot Studio agents | Documented on October 30, 2026, as an opt-in for chosen agents or environments |
+| Managing spending policies through an API | Documented as a beta API in Microsoft Graph; not supported for production use yet |
+| Sending credit requests to your own approval workflow | Already available and documented |
+| Choosing model families per user group, which also limits what Auto picks | Partly there: "model profiles" in spending policies, for Cowork only |
+| Users see usage, remaining credits, and history in Copilot | Remaining credits yes; history not yet |
+| Insights on which Cowork tasks pay off | Available in the [Insights consumption dashboard](https://learn.microsoft.com/en-us/viva/insights/org-team-insights/ai-cost-dashboard), for Cowork and the Work IQ API only |
 
-Auto-apply deserves special attention. It is enabled by default, and Microsoft's documentation now explicitly tells administrators to review whether automatic coverage is appropriate. If you want finance or platform owners to approve each new paid service first, turn it off for those policies.
+Policies for autonomous agents and unlicensed users follow the agent or environment, "rather than the identity of the person using it". And an agent that hits its limit doesn't fall back to the user's own policy.
+
+{: .important }
+Before you move any Copilot Studio environment, decide who owns its spending policy and assign the roles above. A policy for "All environments" also catches every environment created later. Keep Auto-apply in mind too: it adds new Microsoft services, such as Teams Phone Agent, to your broad policies without anyone deciding it should.
 
 ## How to charge costs back
 
@@ -291,11 +294,11 @@ The [FinOps toolkit](https://learn.microsoft.com/en-us/cloud-computing/finops/to
 
 [FinOps hubs](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview) are Microsoft's "virtual command centers for leaders throughout the organization to report on, monitor, and optimize cost". Deploying one gives you a Data Lake Storage account, Data Factory for loading, Key Vault, and optionally Azure Data Explorer or Microsoft Fabric for analysis. The benefits that matter for agents: reporting across separate tenants, discount savings for EA and MCA accounts (where Foundry reservations show up), fast year-over-year queries, the FOCUS cost format, and room to add your own business data.
 
-Microsoft publishes the cost: from $120 a month plus about $10 a month per $1 million of spend monitored. Most of that is the analysis engine: about $120 for a single-node Data Explorer cluster, or $300 for F2 Fabric capacity. Without either, it's about $5 per $1 million monitored for a small and large agent estate. For a small one, start with the workbooks and reports.
+Microsoft publishes the cost: from $120 a month plus about $10 a month per $1 million of spend monitored. Most of that is the analysis engine: about $120 for a single-node Data Explorer cluster, or $300 for F2 Fabric capacity. Without either, it's about $5 per $1 million monitored. For a large agent estate that's small. For a small one, start with the workbooks and reports.
 
 ### What a hub doesn't see on its own
 
-A hub loads Cost Management exports, so it sees what Azure bills. That covers all of Foundry and Copilot Studio if you pay as you go. It doesn't cover capacity packs (which Azure doesn't show) or the per-user and per-policy detail in the Microsoft 365 admin center. So the realistic target is three feeds, not one screen:
+A hub loads Cost Management exports, so it sees what Azure bills. That covers all of Foundry, and Copilot Studio if you pay as you go. It doesn't cover capacity packs, which Azure doesn't show, or the per-user and per-policy detail from the Microsoft 365 admin center. So the realistic target is three feeds, not one screen:
 
 | Feed | What it covers | How it gets into the hub |
 |---|---|---|
@@ -334,16 +337,14 @@ This order is mine, not Microsoft's. It starts with what pays off fastest and le
 6. **Build a hub when several teams need the same data**, then add the Power Platform and Microsoft 365 feeds.
 7. **Add business numbers, then an agent on top.**
 
-Steps one to four cost time, not money. Steps five to seven are engineering with a real bill. Teams often jump to step six because it's the fun part, then find out months later that their agents have great reporting but still no limits or owners.
-
-In October, check Microsoft's list of services covered by usage-based billing. When Copilot Studio shows up there, this post gets an update.
+Steps one to four cost time, not money. Steps five to seven are engineering with a real bill. Teams often jump to step six because it's the fun part, and find out months later that they have great reporting for agents that still have no limits and no owners.
 
 ## Sources
 
 - Official Microsoft Blog, [Introducing the new Copilot with Home, Code and Autopilot](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/), September 25, 2026: the cost management expansion, Copilot Studio planned for October, the other announced controls
-- Microsoft Learn, [Usage-Based Billing and Cost Management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits), last updated September 25, 2026: where cost management is, which services it covers, Auto-apply on by default
-- Microsoft Learn, [Managing AI experiences enabled by usage-based billing](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits), last updated October 2, 2026: spending policy rules, which policy wins, model profiles, the shared pool
-- Microsoft Learn, [Set up usage-based billing for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-copilot-credits-setup), last updated October 2, 2026: roles, billing method can be changed, order of credit use, Auto-apply advice, tenant limit not inherited
+- Microsoft Learn, [Usage-Based Billing and Cost Management for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits), last updated October 30, 2026: where cost management is, which services it covers, Auto-apply on by default
+- Microsoft Learn, [Managing AI experiences enabled by usage-based billing](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits), last updated October 2, 2026: spending policy rules, 2,000-credit minimum per user, which policy wins, model profiles, the shared pool
+- Microsoft Learn, [Set up usage-based billing for Copilot Credits](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-copilot-credits-setup), last updated October 28, 2026: roles, billing method can be changed, order of credit use, Auto-apply advice, tenant limit not inherited
 - Microsoft Learn, [Monitor Copilot Credit spending](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-copilot-credits-monitor-spending): refresh times, credit requests, custom request policies
 - Microsoft Learn, [View Copilot Credit consumption in the Microsoft 365 admin center and on your Azure bill](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-compare-dashboard-views), last updated September 25, 2026: one Azure service name, capacity packs missing from Azure, reconciliation, service tags
 - Microsoft Learn, [Understanding the user subscription license (USL) and usage-based billing (UBB)](https://learn.microsoft.com/en-us/microsoft-365/copilot/user-subscription-license-usage-based-billing), last updated September 25, 2026: billing policy required, more user views coming
@@ -351,9 +352,11 @@ In October, check Microsoft's list of services covered by usage-based billing. W
 - Microsoft Learn, [Manage Copilot Cowork for your organization](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance), last updated September 14, 2026: spending policy as access control
 - Microsoft Learn, [Microsoft Copilot Agents usage report (Preview)](https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/microsoft-365-copilot-agents-new), last updated August 18, 2026: what the adoption report shows and leaves out
 - Microsoft, [Microsoft Copilot Plans and Pricing: Enterprise](https://www.microsoft.com/en-us/copilot/pricing/enterprise), read September 29, 2026: employee-facing and API footnotes, Azure subscription for agents
-- Microsoft Learn, [Harnesses in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview), last updated October 1, 2026: the three harnesses and how they're billed
+- Microsoft Learn, [Harnesses in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview), last updated October 22, 2026: the harnesses and how they're billed, Customer Conversation harness
+- Microsoft Learn, [Manage Copilot Studio costs in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs), last updated October 30, 2026: opt-in move, resource-based policies, per-agent limits, roles, policy order, fallback to Power Platform settings
+- Microsoft Learn, [Microsoft 365 Copilot Cost Management API overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/api/admin-settings/cost-management/overview), read November 1, 2026: beta API for spending policies and credit balances
 - Microsoft Learn, [Overview of usage-based billing for the GitHub Copilot harness](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/billing-credit-overview), last updated September 28, 2026: charging from the first build action, what credits cover
-- Microsoft Learn, [Manage costs for agents powered by the GitHub Copilot harness](https://learn.microsoft.com/en-us/power-platform/admin/manage-usage-github-copilot-harness), last updated August 28, 2026: no per-user attribution, budgets don't stop use, developer and trial environments, the environment group rule
+- Microsoft Learn, [Manage costs for agents powered by the GitHub Copilot harness](https://learn.microsoft.com/en-us/power-platform/admin/manage-usage-github-copilot-harness), last updated October 14, 2026: no per-user attribution, budgets don't stop use, developer and trial environments, the environment group rule
 - Microsoft Learn, [Billing rates and management: Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-messages-management), last updated August 3, 2026: reasoning surcharge, flow trigger rule, computer use, Power Automate flows, the 125% rule
 - Microsoft Learn, [Manage Copilot Credits and capacity for Copilot Studio](https://learn.microsoft.com/en-us/power-platform/admin/manage-copilot-studio-copilot-credits-capacity), last updated October 2, 2026: reports, data retention, per-agent limits and hard stop, environment allocation
 - Microsoft Learn, [Set up a pay-as-you-go plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-set-up), last updated December 16, 2025: billing plans, the hidden Power Platform account resource, tagging it for cost allocation
@@ -364,7 +367,7 @@ In October, check Microsoft's list of services covered by usage-based billing. W
 - Microsoft Learn, [How to use the Consumption Dashboard in Insights](https://learn.microsoft.com/en-us/viva/insights/org-team-insights/ai-cost-dashboard), last updated September 8, 2026: Cowork and Work IQ consumption in Insights
 - Microsoft Copilot Blog, [Copilot Managed Runtime public preview](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-where-you-want-run-with-confidence-now-microsoft-hosts-and-manages-the-code-created-by-copilot/), September 25, 2026: Managed Runtime in public preview
 - Microsoft Azure, [Foundry Agent Service pricing](https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/), read September 29, 2026: no charge for Foundry-native agents, tool prices, hosted agents
-- Microsoft Learn, [Plan and manage costs for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/concepts/manage-costs), last updated August 27, 2026: fine-tuning, failed calls, no hard limits, meter names, portal estimates, project tag chargeback
+- Microsoft Learn, [Plan and manage costs for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/concepts/manage-costs), last updated October 22, 2026: fine-tuning, failed calls, no hard limits, meter names, portal estimates, project tag chargeback
 - Microsoft Learn, [Provisioned throughput billing and cost management](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput-billing), last updated May 26, 2026: no pause, shared quota, reservation order
 - Microsoft Learn, [Getting started with Azure OpenAI batch deployments](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/batch), last updated June 5, 2026: 50% less than global standard
 - Microsoft Learn, [Prompt caching with Azure OpenAI](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/prompt-caching), last updated August 11, 2026: read discounts, write charges, 1,024-token rule
@@ -375,12 +378,11 @@ In October, check Microsoft's list of services covered by usage-based billing. W
 - Microsoft Learn, [FinOps toolkit overview](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/finops-toolkit-overview), last updated February 11, 2026: toolkit parts and monthly releases
 - Microsoft Learn, [FinOps hubs overview](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/finops-hubs-overview), last updated April 1, 2026: components, benefits, cost estimate, permissions, `msexports` rule
 - Microsoft Learn, [Configure AI agents for FinOps hubs](https://learn.microsoft.com/en-us/cloud-computing/finops/toolkit/hubs/configure-ai), last updated May 18, 2026: agent on top of a hub, 24-hour exports
-- Previous article in this series: [Understanding Microsoft Copilot Licensing - Rev1](https://holgerimbery.blog/copilot-pricing-licenses-and-credits)
-
-**Open boundaries as of publication:** Microsoft 365 Cost management now documents Managed Runtime and several additional services, while Copilot Studio usage details remain managed in the Power Platform admin center. Microsoft branding, billing, and administrative experiences are still converging, so check your own tenant before turning an announcement into a governance design.
+- Related article: [Understanding Microsoft Copilot Licensing](https://holgerimbery.blog/copilot-pricing-licenses-and-credits)
 
 ## Changelog
 
 | Date | Change |
 |---|---|
-| October 10, 2026 | Updated Microsoft 365 Cost Management coverage to include Copilot Managed Runtime, advanced work in SharePoint and OneDrive, and Teams Phone Agent; replaced the forward-looking October section with current status and open boundaries; clarified that Copilot Studio usage details remain in the Power Platform admin center; refreshed policy-role and billing-method guidance. |
+| November 3, 2026 | Rev2. Removed the intro quote and the series wording, and made the section on recent changes general. Copilot Studio cost management can now move to the Microsoft 365 admin center as an opt-in: added resource-based policies, per-agent limits, roles, and what happens to Power Platform allocations. Code, Copilot Managed Runtime, Teams Phone Agent, and advanced SharePoint and OneDrive work are now on the list of managed services. Added the 2,000-credit minimum per user, the beta Cost Management API, and the Customer Conversation harness. Updated the October status table. Removed the lists of open questions and of Microsoft pages that disagree. |
+| October 10, 2026 | Rev1. First published as part two of the living series. |
