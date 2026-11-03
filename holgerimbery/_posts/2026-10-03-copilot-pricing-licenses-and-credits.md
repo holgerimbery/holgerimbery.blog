@@ -3,7 +3,7 @@ layout: post
 canonical_url: https://holgerimbery.blog/copilot-pricing-licenses-and-credits
 title: "Understanding Microsoft Copilot Licensing - Rev2"
 description: "A living article on what Copilot costs. What the Copilot license costs, how Copilot Credits work, which features use them, and what Microsoft has announced next."
-date: 26-11-03
+date: 26-11-01
 author: admin
 slug: copilot-pricing-licenses-and-credits
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/10/immo-wegmann-lLRm3S-7Kfw-unsplash.jpg
