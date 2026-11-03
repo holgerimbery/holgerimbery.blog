@@ -19,7 +19,7 @@ tags:
   - governance
   - m365copilot
   - powerplatform
-featured: true
+featured: false
 toc: true
 ---
 
