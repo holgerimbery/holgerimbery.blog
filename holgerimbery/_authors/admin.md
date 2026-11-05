@@ -16,7 +16,6 @@ bluesky: https://bsky.app/profile/holger.imbery.name
 github: https://github.com/holgerimbery/
 devto: https://dev.to/holgerimbery
 medium: https://holgerimbery.medium.com
-hashnode: https://holgerimbery.hashnode.dev
 sessionize: https://sessionize.com/holgerimbery/
 canonical_url: https://holgerimbery.blog/
 ---
