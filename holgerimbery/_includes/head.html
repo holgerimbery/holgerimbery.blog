@@ -53,23 +53,34 @@ End Microsoft Clarity -->
 
   {% include google-analytics.html %}
   <script>
-    {% if site.data.settings.color_scheme == "auto" %}
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.setAttribute("dark", "");
-      document.documentElement.classList.add('dark-mode');
+    const colorScheme = "{{ site.data.settings.color_scheme }}";
+    const requestedTheme = new URLSearchParams(window.location.search).get("scoutTheme");
+    let savedTheme;
+    try {
+      savedTheme = window.localStorage.getItem("theme");
+    } catch (error) {
+      console.warn("Unable to read the saved theme preference.", error);
     }
-    {% elsif site.data.settings.color_scheme == "light" %}
-      document.documentElement.setAttribute("light", "");
-      document.documentElement.classList.add('light-mode');
-    {% elsif site.data.settings.color_scheme == "dark" %}
+    const preferredTheme = savedTheme === "light" || savedTheme === "dark"
+      ? savedTheme
+      : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const theme = requestedTheme === "light" || requestedTheme === "dark"
+      ? requestedTheme
+      : colorScheme === "auto"
+        ? preferredTheme
+        : colorScheme;
+
+    if (theme === "dark") {
       document.documentElement.setAttribute("dark", "");
       document.documentElement.classList.add('dark-mode');
-    {% else %}
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.setAttribute("dark", "");
-      document.documentElement.classList.add('dark-mode');
+    } else {
+      document.documentElement.removeAttribute("dark");
+      document.documentElement.classList.remove('dark-mode');
+      if (colorScheme === "light" && requestedTheme !== "dark") {
+        document.documentElement.setAttribute("light", "");
+        document.documentElement.classList.add('light-mode');
+      }
     }
-    {% endif %}
   </script>
 
   <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">

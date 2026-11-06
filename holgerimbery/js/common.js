@@ -101,12 +101,15 @@ document.addEventListener("DOMContentLoaded", function() {
   function darkMode() {
     if (html.classList.contains('dark-mode')) {
       html.classList.remove('dark-mode');
-      localStorage.removeItem("theme");
       document.documentElement.removeAttribute("dark");
     } else {
       html.classList.add('dark-mode');
-      localStorage.setItem("theme", "dark");
       document.documentElement.setAttribute("dark", "");
+    }
+    try {
+      window.localStorage.setItem("theme", html.classList.contains('dark-mode') ? "dark" : "light");
+    } catch (error) {
+      console.warn("Unable to save the theme preference.", error);
     }
   }
 
