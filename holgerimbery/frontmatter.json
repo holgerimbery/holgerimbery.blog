@@ -72,6 +72,11 @@
           "title": "toc",
           "name": "toc",
           "type": "boolean"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
         }
       ]
     }
