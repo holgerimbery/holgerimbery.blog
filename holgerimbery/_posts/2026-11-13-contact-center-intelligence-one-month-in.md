@@ -2,7 +2,7 @@
 layout: post
 title: "Contact Center Intelligence one month in: what to prepare before the GA dates"
 description: Reflections on Contact Center Intelligence one month after the preview, and what architects should prepare before the general availability dates.
-date: 2026-11-11
+date: 2026-11-13
 author: Holger Imbery
 tags:
     - Contact Center
