@@ -41,14 +41,14 @@ So I am not going to tell you whether Claude is good or bad. I want to show you 
 The announcement is a post on the Microsoft Copilot Blog by Charles Lamanna, dated November 5, 2026: [Bringing Claude models in Microsoft Copilot into the EU Data Boundary](https://www.microsoft.com/en-us/copilot/blog/2026/11/05/bringing-claude-models-in-microsoft-copilot-into-the-eu-data-boundary/). These are the points you need for planning:
 
 * **Timing.** By the end of 2026, Claude models in Microsoft Copilot will be available in the EU Data Boundary for customers in the EU and EFTA.
-* **Scope.** This covers the Copilot experiences, including Copilot Cowork.
+* **Scope.** This covers Copilot experiences, including Copilot Cowork.
 * **Where Claude is used today.** Claude already powers experiences in Copilot Chat, the Microsoft 365 apps, Cowork, and Copilot Code.
 * **Existing users.** Customers who already use Claude do not need to do anything. Processing moves on its own once it is available.
 * **Default.** The setting is off by default in the EU and EFTA.
 * **Control.** Admins can turn it on for all users or for selected groups in the Microsoft 365 admin center.
 * **Residency.** The post also says that Microsoft offers in-country data residency for Copilot in 10 EU and EFTA countries.
 
-Now the gap. The Microsoft Learn page [Anthropic models in Copilot apps](https://learn.microsoft.com/en-us/copilot/implement/copilot-anthropic-apps) was last updated on November 3, 2026. It still says that Anthropic models process data outside the EU Data Boundary today. The two sources do not contradict each other. The blog describes where things will be "by the end of 2026". The Learn page describes how things are today. Right now, both are correct.
+Now the gap. The Microsoft Learn page [Anthropic models in Copilot apps](https://learn.microsoft.com/en-us/copilot/implement/copilot-anthropic-apps) was last updated on November 3, 2026. It still says that Anthropic models process data outside the EU Data Boundary today. The two sources do not contradict each other. The blog describes how things will work "by the end of 2026." The Learn page describes how things work today. Right now, both are correct.
 
 {: .warning }
 Until Microsoft confirms that the move is done, turning on Claude in an EU or EFTA tenant still means processing outside the EU Data Boundary. Plan around the date the change goes live, not the date it was announced.
