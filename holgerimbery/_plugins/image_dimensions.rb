@@ -61,6 +61,33 @@ module Jekyll
         if entry && !screenshot && !entry["variants"].empty? && !image["srcset"] && !image.ancestors("picture").any?
           add_responsive_sources(image, entry, path, source)
           changed = true
+        elsif path && !image["srcset"] && !image.ancestors("picture").any?
+          local_source = local_asset_url(path, source)
+          if image["src"] != local_source || (image["data-src"] && image["data-src"] != local_source)
+            image["src"] = local_source
+            image["data-src"] = local_source if image["data-src"]
+            changed = true
+          end
+        end
+      end
+      html.css('meta[name="twitter:image:src"], meta[property="og:image"], meta[name="image"]').each do |meta|
+        source = meta["content"]
+        path = image_path(source, document.url)
+        next unless path
+
+        meta["content"] = @origin.to_s + local_asset_url(path, source)
+        changed = true
+      end
+      pinterest = html.at_css("a.share__pinterest")
+      image_meta = html.at_css('meta[property="og:image"]')
+      if pinterest && image_meta && image_meta["content"].start_with?("#{@origin}#{@baseurl}/images/")
+        link = Addressable::URI.parse(pinterest["href"])
+        query = link.query_values
+        if query && query["media"]
+          query["media"] = image_meta["content"]
+          link.query_values = query
+          pinterest["href"] = link.to_s
+          changed = true
         end
       end
       document.output = html.to_html if changed
@@ -108,6 +135,14 @@ module Jekyll
 
     def asset_url(path)
       @baseurl + Addressable::URI.escape(path)
+    end
+
+    def local_asset_url(path, source)
+      uri = Addressable::URI.parse(source)
+      url = asset_url(local_url(path))
+      url += "?#{uri.query}" if uri.query
+      url += "##{uri.fragment}" if uri.fragment
+      url
     end
 
     def add_responsive_sources(image, entry, path, source)

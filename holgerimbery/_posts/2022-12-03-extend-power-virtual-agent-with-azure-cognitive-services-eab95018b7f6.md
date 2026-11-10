@@ -85,7 +85,7 @@ Figure 5: Add URL of FAQs
 
 Language Studio will now import your FAQs into the project and gives you single and multiturn Question and Answer pairs.
 
-![Figure 6: Question and Answer pairs in Knowledge Base](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/_armxwuhi.jpg)
+![Figure 6: Question and Answer pairs in Knowledge Base](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/clb7zhrzm000n08lcher16dpp.md/armxwuhi.jpg)
 
 Figure 6: Question and Answer pairs in Knowledge Base
 
