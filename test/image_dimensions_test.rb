@@ -72,6 +72,28 @@ class ImageDimensionsTest < Minitest::Test
     assert_dimensions('<img src="placeholder.gif" data-src="/images/example%20image.png">')
   end
 
+  def test_repository_images_use_local_assets_when_optimization_is_disabled
+    source = "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/example%20image.png?version=1#wide"
+    html = Nokogiri::HTML5.parse(render(%(<img class="lazy" src="#{source}" data-src="#{source}">)).output)
+    image = html.at_css("img")
+
+    assert_equal "/images/example%20image.png?version=1#wide", image["src"]
+    assert_equal image["src"], image["data-src"]
+    assert_equal @width.to_s, image["width"]
+    assert_equal @height.to_s, image["height"]
+  end
+
+  def test_repository_images_in_social_metadata_use_local_assets
+    source = "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/example%20image.png"
+    pinterest = "http://pinterest.com/pin/create/button/?url=https://holgerimbery.blog/article&amp;media=https://holgerimbery.blog#{source}&amp;description=Example"
+    markup = %(<meta property="og:image" content="#{source}"><a class="share__pinterest" href="#{pinterest}">Share</a>)
+    html = Nokogiri::HTML5.parse(render(markup).output)
+
+    assert_equal "https://holgerimbery.blog/images/example%20image.png", html.at_css("meta")["content"]
+    link = Addressable::URI.parse(html.at_css("a.share__pinterest")["href"])
+    assert_equal "https://holgerimbery.blog/images/example%20image.png", link.query_values["media"]
+  end
+
   def test_invalid_dimensions_are_replaced
     assert_dimensions('<img src="/images/example%20image.png" width="100%" height="0">')
   end

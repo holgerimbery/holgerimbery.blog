@@ -3,6 +3,7 @@
 import argparse
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 
 class ImageAudit(HTMLParser):
@@ -19,6 +20,10 @@ class ImageAudit(HTMLParser):
                 attributes.get(key, "").isdigit() and int(attributes[key]) > 0
                 for key in ("width", "height")
             ), f"Missing image dimensions: {attributes}"
+            source = urlsplit(attributes.get("src", ""))
+            if not source.netloc and source.path.startswith("/images/"):
+                image_path = self.destination / unquote(source.path).lstrip("/")
+                assert image_path.is_file(), f"Missing local image: {attributes['src']}"
 
 
 def verify(destination):
