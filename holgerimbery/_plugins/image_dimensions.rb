@@ -6,13 +6,15 @@ require "set"
 
 module Jekyll
   class ImageDimensions
-    RAW_IMAGE_PREFIX = "/holgerimbery/holgerimbery.blog/main/holgerimbery/".freeze
+    RAW_IMAGE_PATH_PREFIX = "/holgerimbery/holgerimbery.blog/main/holgerimbery/".freeze
+    RAW_IMAGE_URL_PREFIX = "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/".freeze
     attr_reader :used_variants
 
     def initialize(site)
       @root = File.expand_path(site.source)
       @origin = Addressable::URI.parse(site.config.fetch("url"))
       @baseurl = site.baseurl.to_s.sub(%r{/$}, "")
+      @image_optimization = site.config["image_optimization"]
       @sizes = {}
       @warned = {}
       @used_variants = Set.new
@@ -61,11 +63,15 @@ module Jekyll
         if entry && !screenshot && !entry["variants"].empty? && !image["srcset"] && !image.ancestors("picture").any?
           add_responsive_sources(image, entry, path, source)
           changed = true
-        elsif path && !image["srcset"] && !image.ancestors("picture").any?
-          local_source = local_asset_url(path, source)
-          if image["src"] != local_source || (image["data-src"] && image["data-src"] != local_source)
-            image["src"] = local_source
-            image["data-src"] = local_source if image["data-src"]
+        elsif path && (!@image_optimization || (!image["srcset"] && !image.ancestors("picture").any?))
+          asset_source = if @image_optimization
+                           local_asset_url(path, source)
+                         else
+                           repository_asset_url(path, source)
+                         end
+          if image["src"] != asset_source || (image["data-src"] && image["data-src"] != asset_source)
+            image["src"] = asset_source
+            image["data-src"] = asset_source if image["data-src"]
             changed = true
           end
         end
@@ -75,12 +81,12 @@ module Jekyll
         path = image_path(source, document.url)
         next unless path
 
-        meta["content"] = @origin.to_s + local_asset_url(path, source)
+        meta["content"] = repository_asset_url(path, source)
         changed = true
       end
       pinterest = html.at_css("a.share__pinterest")
       image_meta = html.at_css('meta[property="og:image"]')
-      if pinterest && image_meta && image_meta["content"].start_with?("#{@origin}#{@baseurl}/images/")
+      if pinterest && image_meta && image_meta["content"].start_with?(RAW_IMAGE_URL_PREFIX)
         link = Addressable::URI.parse(pinterest["href"])
         query = link.query_values
         if query && query["media"]
@@ -111,8 +117,8 @@ module Jekyll
       return if source.to_s.empty?
 
       uri = Addressable::URI.join("#{@origin}#{@baseurl}#{page_url}", source)
-      path = if uri.host == "raw.githubusercontent.com" && uri.path.start_with?(RAW_IMAGE_PREFIX)
-               uri.path.delete_prefix(RAW_IMAGE_PREFIX)
+      path = if uri.host == "raw.githubusercontent.com" && uri.path.start_with?(RAW_IMAGE_PATH_PREFIX)
+               uri.path.delete_prefix(RAW_IMAGE_PATH_PREFIX)
              elsif uri.host == @origin.host && uri.scheme == @origin.scheme && uri.port == @origin.port
                local_path = uri.path
                local_path = local_path.delete_prefix(@baseurl) if !@baseurl.empty? && local_path.start_with?("#{@baseurl}/")
@@ -140,6 +146,15 @@ module Jekyll
     def local_asset_url(path, source)
       uri = Addressable::URI.parse(source)
       url = asset_url(local_url(path))
+      url += "?#{uri.query}" if uri.query
+      url += "##{uri.fragment}" if uri.fragment
+      url
+    end
+
+    def repository_asset_url(path, source)
+      uri = Addressable::URI.parse(source)
+      relative_path = path.delete_prefix("#{@root}#{File::SEPARATOR}").tr("\\", "/")
+      url = RAW_IMAGE_URL_PREFIX + Addressable::URI.escape(relative_path)
       url += "?#{uri.query}" if uri.query
       url += "##{uri.fragment}" if uri.fragment
       url
@@ -216,6 +231,8 @@ Jekyll::Hooks.register :site, :post_render do |site|
   documents.each { |document| dimensions.process(document) }
   site.static_files.reject! do |file|
     relative = file.relative_path.tr("\\", "/")
-    relative.start_with?("/images/generated/") && !dimensions.used_variants.include?(relative)
+    unused_variant = relative.start_with?("/images/generated/") && !dimensions.used_variants.include?(relative)
+    repository_image = !site.config["image_optimization"] && relative.start_with?("/images/")
+    unused_variant || repository_image
   end
 end

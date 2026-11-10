@@ -51,7 +51,7 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Verify built images
+      - name: Verify image references and deployment size
         run: python ../test/verify_generated_images.py --destination _site
 
       - name: Upload Pages artifact
