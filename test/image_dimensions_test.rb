@@ -159,6 +159,20 @@ class ImageDimensionsTest < Minitest::Test
     assert_includes source["sizes"], "410px"
   end
 
+  def test_disabled_optimization_uses_original_asset_even_with_a_stale_manifest
+    enable_optimization
+    @site.config["image_optimization"] = false
+    @processor = Jekyll::ImageDimensions.new(@site)
+    html = Nokogiri::HTML5.parse(render('<img src="/images/example%20image.png">').output)
+    image = html.at_css("img")
+
+    assert_empty html.css("picture")
+    assert_equal "/images/example%20image.png", image["src"]
+    assert_equal @width.to_s, image["width"]
+    assert_equal @height.to_s, image["height"]
+    assert_empty @processor.used_variants
+  end
+
   def test_avatar_variants_and_baseurl
     @site.baseurl = "/blog"
     enable_optimization
