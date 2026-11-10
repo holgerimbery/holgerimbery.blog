@@ -27,8 +27,6 @@ jobs:
           ruby-version: "3.4"
           bundler-cache: true
           working-directory: holgerimbery
-      - name: Optimize images
-        uses: ./.github/actions/optimize-images
       - name: Test image rendering
         run: bundle exec ruby ../test/image_dimensions_test.rb
         working-directory: holgerimbery

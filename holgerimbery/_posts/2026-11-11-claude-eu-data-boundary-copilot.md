@@ -3,7 +3,7 @@ layout: post
 canonical_url: https://holgerimbery.blog/claude-eu-data-boundary-copilot
 title: "Claude Inside the EU Data Boundary: What Changes for European Copilot Tenants and What Does Not"
 description: "Microsoft is moving Claude processing in Microsoft Copilot into the EU Data Boundary by the end of 2026. Why that removes the strongest blocker for European tenants, why the decision still belongs to you, and how architects, DPOs, admins, and works councils should run it."
-date: 26-11-11
+date: 2026-11-10
 author: admin
 slug: claude-eu-data-boundary-copilot
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/11/alexandre-lallemand-Pcs3mOL14Sk-unsplash.jpg

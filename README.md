@@ -9,7 +9,7 @@ License:
 MIT for the code and for the rest: [CC-BY-ND-NC](https://creativecommons.org/licenses/by-nc-nd/4.0/)   
 SPDX-License-Identifier: MIT AND CC-BY-ND-NC
 
-## Responsive images and dimensions
+## Image dimensions and original assets
 
 The Jekyll plugin in `holgerimbery/_plugins/image_dimensions.rb` adds missing
 `width` and `height` attributes to rendered HTML images, including Markdown
@@ -18,54 +18,27 @@ and caches them for that build. URLs on this site and raw GitHub URLs under
 this repository's `main/holgerimbery/` path resolve to local files; the build
 does not download remote images.
 
-`scripts/optimize_images.py` generates content-hashed WebP variants at widths
-80, 160, 400, 800, 1,200 and 1,600 pixels without upscaling or modifying originals.
-JPEG photos use quality 80; PNG screenshots and existing WebP images use
-lossless encoding to avoid additional compression artifacts. A variant is
-published only when smaller than its original. Animated images are preserved.
+Image optimization is disabled. Builds use the original assets in
+`holgerimbery/images/` without generating WebP variants or rewriting image
+sources. Existing explicit dimensions, loading priorities, responsive
+`height: auto`, and CSS image crops are preserved. For externally hosted images
+or missing assets, supply explicit dimensions; the build logs a warning rather
+than guessing an aspect ratio.
 
-The initial rollout wraps photos, article cards, and avatars in `<picture>`
-with WebP `srcset` sources and `sizes`. PNG/WebP screenshots in article/page
-content and galleries retain their original files and receive dimensions only.
-This keeps screenshot quality unchanged and the deployment within Azure Static
-Web Apps' 500 MB per-environment limit. The original JPEG/PNG remains the
-fallback, served from the blog rather than raw GitHub. Image zoom loads the
-original on demand. Existing hand-authored `<picture>` and `srcset` are not
-replaced. Generated files and their manifest live in the ignored
-`holgerimbery/images/generated/` directory; unchanged inputs reuse cached
-variants. Old content-hashed variants are removed on the next generation run.
-Only variants actually referenced by rendered HTML are copied into `_site`;
-unused variants and private build metadata are not deployed. Azure gives
-generated images a one-year immutable cache policy. The post-build audit checks
-the image references, dimensions, metadata exclusion, and deployment size.
+Dynamically injected translation flags reserve their square aspect ratio in CSS.
 
-Existing explicit dimensions, loading priorities, responsive `height: auto`,
-and CSS image crops are preserved. Dynamically injected translation flags
-reserve their square aspect ratio in CSS. For externally hosted images or missing
-assets, supply explicit dimensions; the build logs a warning rather than
-guessing an aspect ratio.
-
-For local builds, install Python 3.10+ and the pinned image dependency, then run
-these commands from the repository root (activate a Python virtual environment
-first if needed):
+For local builds, run these commands from the repository root:
 
 ```powershell
-python -m pip install -r requirements-images.txt
-python -m unittest discover -s test -p test_optimize_images.py
-python scripts\optimize_images.py
 Set-Location holgerimbery
 bundle install
 bundle exec ruby ..\test\image_dimensions_test.rb
 bundle exec jekyll build
-python ..\test\verify_generated_images.py --destination _site
 ```
 
-Run the image generator again after adding or replacing images, before running
-Jekyll. A missing manifest fails the build with an actionable error. All three
-deployment workflows use the shared `.github/actions/optimize-images` action
-to generate and cache variants before building Jekyll, including scheduled
-publication and future/draft previews. The container build command also
-generates variants before serving.
+The deployment workflows and container build use the existing image assets as
+is, without installing image-processing dependencies or generating variants.
+The post-build audit still checks image dimensions and deployment payload size.
 Build that container from the repository root with
 `docker build -f holgerimbery/containerfile -t holgerimbery-blog .`.
 

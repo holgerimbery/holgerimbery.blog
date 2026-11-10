@@ -21,7 +21,11 @@ module Jekyll
         raise Jekyll::Errors::FatalException,
               "Generate image variants first: python ../scripts/optimize_images.py --source ."
       end
-      @images = File.file?(manifest) ? JSON.parse(File.read(manifest)).fetch("images") : {}
+      @images = if site.config["image_optimization"] && File.file?(manifest)
+                  JSON.parse(File.read(manifest)).fetch("images")
+                else
+                  {}
+                end
     end
 
     def process(document)

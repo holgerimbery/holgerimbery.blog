@@ -27,9 +27,6 @@ jobs:
           bundler-cache: true
           working-directory: ./holgerimbery
       
-      - name: Optimize images
-        uses: ./.github/actions/optimize-images
-
       - name: Test image rendering
         run: bundle exec ruby ../test/image_dimensions_test.rb
         working-directory: holgerimbery
@@ -65,8 +62,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_HILL_0809FD603 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "close"
-
-
 
 
 
