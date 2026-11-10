@@ -58,7 +58,13 @@ class ImageDimensionsTest < Minitest::Test
 
   def test_existing_dimensions_and_loading_attributes_are_preserved
     markup = '<img src="/images/example%20image.png" width="40" height="40" loading="eager" fetchpriority="high">'
-    assert_equal markup, render(markup).output
+    image = Nokogiri::HTML5.parse(render(markup).output).at_css("img")
+    assert_equal "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/example%20image.png",
+                 image["src"]
+    assert_equal "40", image["width"]
+    assert_equal "40", image["height"]
+    assert_equal "eager", image["loading"]
+    assert_equal "high", image["fetchpriority"]
   end
 
   def test_partial_dimensions_preserve_the_aspect_ratio
@@ -72,26 +78,33 @@ class ImageDimensionsTest < Minitest::Test
     assert_dimensions('<img src="placeholder.gif" data-src="/images/example%20image.png">')
   end
 
-  def test_repository_images_use_local_assets_when_optimization_is_disabled
+  def test_repository_images_use_raw_github_assets_when_optimization_is_disabled
     source = "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/example%20image.png?version=1#wide"
     html = Nokogiri::HTML5.parse(render(%(<img class="lazy" src="#{source}" data-src="#{source}">)).output)
     image = html.at_css("img")
 
-    assert_equal "/images/example%20image.png?version=1#wide", image["src"]
+    assert_equal source, image["src"]
     assert_equal image["src"], image["data-src"]
     assert_equal @width.to_s, image["width"]
     assert_equal @height.to_s, image["height"]
   end
 
-  def test_repository_images_in_social_metadata_use_local_assets
+  def test_local_images_use_raw_github_assets_when_optimization_is_disabled
+    html = Nokogiri::HTML5.parse(render('<img src="/images/example%20image.png?version=1#wide">').output)
+
+    assert_equal "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/example%20image.png?version=1#wide",
+                 html.at_css("img")["src"]
+  end
+
+  def test_repository_images_in_social_metadata_use_raw_github_assets
     source = "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/example%20image.png"
-    pinterest = "http://pinterest.com/pin/create/button/?url=https://holgerimbery.blog/article&amp;media=https://holgerimbery.blog#{source}&amp;description=Example"
-    markup = %(<meta property="og:image" content="#{source}"><a class="share__pinterest" href="#{pinterest}">Share</a>)
+    pinterest = "http://pinterest.com/pin/create/button/?url=https://holgerimbery.blog/article&amp;media=https://holgerimbery.blog/images/example%20image.png&amp;description=Example"
+    markup = %(<meta property="og:image" content="/images/example%20image.png"><a class="share__pinterest" href="#{pinterest}">Share</a>)
     html = Nokogiri::HTML5.parse(render(markup).output)
 
-    assert_equal "https://holgerimbery.blog/images/example%20image.png", html.at_css("meta")["content"]
+    assert_equal source, html.at_css("meta")["content"]
     link = Addressable::URI.parse(html.at_css("a.share__pinterest")["href"])
-    assert_equal "https://holgerimbery.blog/images/example%20image.png", link.query_values["media"]
+    assert_equal source, link.query_values["media"]
   end
 
   def test_invalid_dimensions_are_replaced
@@ -189,7 +202,8 @@ class ImageDimensionsTest < Minitest::Test
     image = html.at_css("img")
 
     assert_empty html.css("picture")
-    assert_equal "/images/example%20image.png", image["src"]
+    assert_equal "https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/example%20image.png",
+                 image["src"]
     assert_equal @width.to_s, image["width"]
     assert_equal @height.to_s, image["height"]
     assert_empty @processor.used_variants

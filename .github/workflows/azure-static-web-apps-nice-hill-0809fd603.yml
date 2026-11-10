@@ -35,7 +35,7 @@ jobs:
         run: bundle exec jekyll build --future --drafts
         working-directory: ./holgerimbery
       
-      - name: Verify built images
+      - name: Verify image references and deployment size
         run: python test/verify_generated_images.py
 
       - name: Deploy to Azure Static Web Apps
@@ -62,7 +62,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_HILL_0809FD603 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "close"
-
 
 
 

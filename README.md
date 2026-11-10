@@ -20,11 +20,13 @@ does not download remote images.
 
 Image optimization is disabled. Builds use the original assets in
 `holgerimbery/images/` without generating WebP variants. References to images
-in the repository are served from their local `/images/` paths rather than raw
-GitHub URLs. Existing explicit dimensions, loading priorities, responsive
-`height: auto`, and CSS image crops are preserved. For externally hosted images
-or missing assets, supply explicit dimensions; the build logs a warning rather
-than guessing an aspect ratio.
+in the repository are served from `raw.githubusercontent.com`. Keep this
+repository public so those image URLs remain accessible. The original images
+are used for build-time dimensions but excluded from deployment artifacts,
+reducing the Pages upload size. Existing explicit dimensions, loading
+priorities, responsive `height: auto`, and CSS image crops are preserved. For
+externally hosted images or missing assets, supply explicit dimensions; the
+build logs a warning rather than guessing an aspect ratio.
 
 Dynamically injected translation flags reserve their square aspect ratio in CSS.
 
@@ -39,7 +41,8 @@ bundle exec jekyll build
 
 The deployment workflows and container build use the existing image assets as
 is, without installing image-processing dependencies or generating variants.
-The post-build audit checks image dimensions and deployment payload size. The
+The post-build audit checks image dimensions, repository image references, and
+deployment payload size. The
 GitHub Pages artifact is retained for one day, the minimum supported retention.
 Build that container from the repository root with
 `docker build -f holgerimbery/containerfile -t holgerimbery-blog .`.

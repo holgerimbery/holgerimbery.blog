@@ -3,7 +3,7 @@
 import argparse
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import urlsplit
 
 
 class ImageAudit(HTMLParser):
@@ -20,10 +20,10 @@ class ImageAudit(HTMLParser):
                 attributes.get(key, "").isdigit() and int(attributes[key]) > 0
                 for key in ("width", "height")
             ), f"Missing image dimensions: {attributes}"
-            source = urlsplit(attributes.get("src", ""))
-            if not source.netloc and source.path.startswith("/images/"):
-                image_path = self.destination / unquote(source.path).lstrip("/")
-                assert image_path.is_file(), f"Missing local image: {attributes['src']}"
+            for key in ("src", "data-src"):
+                source = urlsplit(attributes.get(key, ""))
+                if not source.netloc and "/images/" in source.path:
+                    raise AssertionError(f"Repository image was not externalized: {attributes[key]}")
 
 
 def verify(destination):
@@ -32,11 +32,13 @@ def verify(destination):
     assert pages, f"No HTML pages in {destination}"
     for path in pages:
         audit.feed(path.read_text(encoding="utf-8-sig"))
-    assert not list((destination / "images" / "generated").glob("*.json")), "Build cache metadata is public"
-    assert not (destination / "images" / "generated" / ".metadata").exists(), "Build cache metadata is public"
+    image_directory = destination / "images"
+    image_files = list(image_directory.rglob("*")) if image_directory.exists() else []
+    assert not any(path.is_file() for path in image_files), "Repository image files must not be copied into the deployment artifact"
     size = sum(path.stat().st_size for path in destination.rglob("*") if path.is_file())
     assert size <= 500_000_000, f"Built site exceeds Azure's 500 MB environment limit: {size:,} bytes"
     print(f"Verified dimensions for {audit.images} images across {len(pages)} HTML pages.")
+    print("Repository images are served from GitHub and excluded from the deployment artifact.")
     print(f"Deployment payload: {size / 1_000_000:.1f} MB / 500 MB.")
 
 
