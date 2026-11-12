@@ -17,7 +17,7 @@ tags:
   - governance
   - harness
   - voice
-featured: true
+featured: false
 toc: true
 ---
 

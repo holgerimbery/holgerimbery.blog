@@ -20,7 +20,7 @@ tags:
   - eudataboundary
   - governance
   - microsoft365
-featured: true
+featured: false
 toc: true
 ---
 {: .q-left }
