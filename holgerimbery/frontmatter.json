@@ -94,6 +94,14 @@
     {
       "path": "[[workspace]]/_pages",
       "title": "pages"
+    },
+    {
+      "title": "_posts",
+      "path": "[[workspace]]/holgerimbery/_posts"
+    },
+    {
+      "title": "_pages",
+      "path": "[[workspace]]/holgerimbery/_pages"
     }
   ],
   "frontMatter.content.mediaFolders": [
@@ -156,5 +164,7 @@
     }
   },
   "frontMatter.git.enabled": true,
-  "frontMatter.git.commitMessage": "Synced by Front Matter {{hour24}}:{{minute}}"
+  "frontMatter.git.commitMessage": "Synced by Front Matter {{hour24}}:{{minute}}",
+  "frontMatter.framework.id": "jekyll",
+  "frontMatter.content.publicFolder": "assets"
 }
