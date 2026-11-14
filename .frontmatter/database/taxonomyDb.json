@@ -34,6 +34,7 @@
       "applicationlifecyclemanagement",
       "architecture",
       "archive",
+      "arm64",
       "authentication",
       "autoattendant",
       "automation",
@@ -96,6 +97,7 @@
       "frontierfirm",
       "gdpr",
       "genesys",
+      "githubcopilot",
       "githubcopilotharness",
       "governance",
       "harness",
@@ -105,6 +107,7 @@
       "knowledgemanagement",
       "licensing",
       "llm",
+      "localai",
       "localinference",
       "longrunningprocesses",
       "lowcode",
@@ -152,6 +155,8 @@
       "standardharness",
       "statetables",
       "subscription",
+      "surface",
+      "surfacelaptopultra",
       "teamsphone",
       "teamstoolkit",
       "techhint",
@@ -168,8 +173,11 @@
       "voicechannel",
       "vscode",
       "webchat",
+      "windowsml",
+      "windowsonarm",
       "workflows",
-      "workiq"
+      "workiq",
+      "wsl"
     ]
   }
 }
