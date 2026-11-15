@@ -2,7 +2,7 @@
 layout: post
 canonical_url: https://holgerimbery.blog/surface-laptop-ultra-local-ai-developer-setup
 title: "Local AI Development with the Surface Laptop Ultra"
-description: "How I set up a 128 GB Surface Laptop Ultra as a developer workstation for local AI, with the GitHub Copilot app, its local Windows ML models, WSL 2, and Foundry Local, and why I still use cloud models for the hard problems. This is about one developer's laptop, not about local AI in the data center."
+description: "Cloud AI is powerful, but every prompt costs tokens, your code leaves the building, and nothing works without a network. A laptop that runs a strong coding model on its own GPU removes all three limits for everyday work. You can experiment freely, keep sensitive code and data on your own machine, and still use cloud models when a task really needs them."
 date: 26-11-17
 author: admin
 slug: surface-laptop-ultra-local-ai-developer-setup
@@ -470,7 +470,7 @@ The results on my laptop, with llama.cpp build 12387:
 | Model | File size | Reading the prompt | Writing the answer | Reading, 16K context | Writing, 16K context |
 |---|---|---|---|---|---|
 | Flint NVFP4 (39.8B parameters, NVFP4) | 21.3 GB | 2,750 tokens/s | 107 tokens/s | 2,424 tokens/s | 88 tokens/s |
-| MAI Code 1.1 Flash (137.9B parameters, 2-bit) | 52.4 GB | 1,386 tokens/s | 77 tokens/s | 1,236 tokens/s | 66 tokens/s |
+| MAI Code 1.1 Flash (137.9B parameters, about 3.3 bits on average) | 52.4 GB | 1,386 tokens/s | 77 tokens/s | 1,236 tokens/s | 66 tokens/s |
 
 The `backend` column showed **CUDA** for every test, so the GPU did all the work.
 
@@ -479,7 +479,7 @@ How I read these numbers:
 * **Writing the answer** is the speed you notice. Both models write far faster than I can read. 66 tokens per second for a model with almost 138 billion parameters is more than I expected from a laptop.
 * **Reading the prompt** decides how long you wait before the answer starts. At over 1,200 tokens per second, MAI Code 1.1 Flash reads a 16,000 token context in about 13 seconds.
 * **Long context slows things down, but not much.** With 16,000 tokens in the context, writing got about 15% slower for MAI Code 1.1 Flash and about 18% slower for Flint NVFP4.
-* **The GitHub Copilot app ships MAI Code 1.1 Flash as a 2-bit version.** That is how a 138B model fits in 52 GB. Very low bits can cost some quality, which is one more reason I keep the hard problems for cloud models.
+* **MAI Code 1.1 Flash is heavily compressed.** Microsoft shrank it from about 276 GB at 16-bit to 53 GB with mixed precision, about 3.3 bits per weight on average. Most of the model uses about 2 bits per weight, some parts about 4. llama-bench labels the file "Q2_K", which undersells it. Microsoft reports only a small quality loss: 70.8% on SWE-Bench Verified for the local version against 72.6% for the cloud version. I still keep the hard problems for the bigger cloud models.
 
 `llama-bench` does not count the time for splitting text into tokens and for sampling, so real answers in the app are a little slower. These are my numbers on my laptop. Other drivers, llama.cpp builds, or power settings will give different results.
 
@@ -760,6 +760,8 @@ Now that everything is set up, this is my advice. Start with the GitHub Copilot 
 - GitHub Docs, [About GitHub Copilot Fusion](https://docs.github.com/en/copilot/concepts/models/copilot-fusion), accessed November 14, 2026: Fusion as a model router and orchestrator, local models only in Fusion Standard, custom agents as the alternative
 - GitHub Docs, [Creating and using custom agents for GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-custom-agents-for-cli), accessed November 14, 2026: `.agent.md` files, user and project folders, `/agent`, handing work to a custom agent
 - llama.cpp on GitHub, [llama-bench README](https://github.com/ggml-org/llama.cpp/blob/master/tools/llama-bench/README.md), accessed November 14, 2026: prompt processing and text generation tests, `-d` for context depth, results in tokens per second, tokenization and sampling not included
+- Microsoft Foundry on Windows Blog, [Advancing the Quality-Efficiency Frontier for Coding AI on Windows PCs](https://devblogs.microsoft.com/foundry-on-windows/coding-ai-on-windows-pcs-quality-efficiency/), November 4, 2026: MAI Code 1.1 Flash compressed from 276 GB to 53 GB (3.31 bits per weight), mixed precision, 51 tokens per second at 120K context on RTX Spark
+- Microsoft AI, [MAI Code 1.1 Flash](https://microsoft.ai/models/mai-code-1-flash/), accessed November 14, 2026: on-device and cloud benchmark results
 - GitHub Docs, [Custom agents configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration), accessed November 14, 2026: the `model` property
 - GitHub Docs, [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions), accessed November 14, 2026: `.github/copilot-instructions.md` and which `AGENTS.md` wins
 - Microsoft Learn, [Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business](https://learn.microsoft.com/en-us/training/modules/surface-laptop-ultra-business/), accessed November 14, 2026: training module with a unit on Foundry Local on this laptop
