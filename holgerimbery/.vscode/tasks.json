@@ -6,7 +6,8 @@
         {
             "label": "upgit",
             "type": "shell",
-            "command": "../../upgit -c C:\\Users\\HolgerImbery\\AppData\\Roaming\\upgit\\config.toml --clipboard --output clipboard --format markdown"
+            "command": "../../upgit -c C:\\Users\\HolgerImbery\\AppData\\Roaming\\upgit\\config.toml --clipboard --output clipboard --format markdown",
+            "problemMatcher": []
         }
     ]
 }

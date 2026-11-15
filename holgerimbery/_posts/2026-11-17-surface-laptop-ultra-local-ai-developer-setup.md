@@ -40,8 +40,6 @@ Unified memory means the CPU and the GPU use the same memory. That is why a lapt
 
 The second point shaped almost every choice I made. This is a Windows on Arm laptop. It is not a normal Intel or AMD laptop with an NVIDIA graphics card. Windows can run most x64 apps on Arm through emulation (Microsoft calls it Prism). But Microsoft's documentation says "emulation only supports user mode code and doesn't support drivers". So any tool that needs a driver or talks to the GPU directly must have a real Arm64 version. Many CUDA install guides assume an x64 machine, so I read every guide carefully before I followed it.
 
-<!-- SCREENSHOT: System > About showing the RTX Spark N1X and Installed RAM 128 GB (64 GB usable) -->
-
 ## My setup at a glance
 
 After a few evenings of testing, I settled on a mix of local and cloud tools:
@@ -82,13 +80,12 @@ I set the laptop up from scratch. I did not restore a backup from my old machine
 
 **What I installed.** I chose **Custom installation** to see the parts. The graphics driver is always installed. I left **PhysX System Software** and **HD Audio Driver** ticked. PhysX is mostly for games but does no harm, and the HD Audio driver sends sound to monitors over HDMI or DisplayPort. I left **Clean installation** unticked, because it resets all NVIDIA settings and profiles, including the GPU memory share from Step 2. I only use it if a driver causes problems. After a restart, `nvidia-smi` in PowerShell shows the driver version.
 
-<!-- SCREENSHOT: NVIDIA app Drivers page with the RTX Spark Studio Driver 621.24 and the Custom installation options -->
 
 **Security.** The laptop is a Secured-core PC with TPM 2.0 and BitLocker. In **Windows Security > Device security** I checked that Secure Boot, the TPM, and core isolation were on. Then I turned on BitLocker and saved the recovery key somewhere other than the laptop.
 
 **Power mode.** In **Settings > System > Power & battery** I use **Balanced** for normal work. When I am plugged in and running models, builds, or containers, I switch to **Best performance**.
 
-<!-- SCREENSHOT: Windows Security > Device security -->
+
 
 AI work is slower on battery. The New Stack measured about 20% to 25% less speed on battery, and The Neuron measured about 14% less. These numbers come from reviewers, not from Microsoft. My rule: long agent sessions and large models only when the charger is plugged in.
 
@@ -108,9 +105,7 @@ The GPU can use more than its own share, though. Under **Performance > GPU**, Ta
 
 For daily work I keep the 64/64 split. I only change it for a session with a very large model. Since only reviewers mention this setting, treat it with care until Microsoft or NVIDIA documents it.
 
-<!-- SCREENSHOT: Task Manager Performance > Memory showing Hardware reserved -->
 
-<!-- SCREENSHOT: Task Manager Performance > GPU showing Dedicated and Shared GPU memory -->
 
 ### Disk space
 
@@ -277,7 +272,6 @@ wsl -d Ubuntu-24.04 -- bash -c "free -g; nproc"
 
 `nproc` should show 16, and `free -g` a total of about 39 GB. The WSL Settings app shows the same values under **Memory and processor**. If it still shows about 32 GB, 20 processors, and 8 GB swap, WSL did not read your file. You can also set the values directly in the WSL Settings app, which writes the same file for you.
 
-<!-- SCREENSHOT: WSL Settings app, Memory and processor, after the change -->
 
 My rule: 40 GB by default. If I give the GPU less memory in the NVIDIA app, Windows gets more, and I can raise WSL to match. I always leave Windows at least 24 GB.
 
@@ -309,7 +303,7 @@ The app also has an Autopilot mode. I do not use it on this laptop yet. While I 
 
 I only choose **Current checkout** when I want the agent to change my own working copy.
 
-<!-- SCREENSHOT: New session dialog with Environment, Workspace, and Mode -->
+
 
 ## Step 6: Turning on the local models in the GitHub Copilot app
 
@@ -358,7 +352,6 @@ setx LLAMACPP_SERVER_PATH "$env:LOCALAPPDATA\Programs\llama.cpp\<build>-cuda-13.
 
 After setting the variable, restart the GitHub Copilot app, VS Code Insiders, and the GitHub Copilot CLI so they see it.
 
-<!-- SCREENSHOT: llama-server --list-devices showing the RTX Spark GPU -->
 
 ### Smart App Control blocks llama.cpp
 
@@ -386,7 +379,7 @@ In the app:
 
 Two more settings are in the **Experimental** section. **Windows ML local models** (under **Agents**) turns the feature on or off. **Local model auto routing** lets Copilot Fusion use local models.
 
-<!-- SCREENSHOT: Settings > Model providers > Windows ML with downloaded models -->
+
 
 ### Picking the model myself or letting Copilot Fusion choose
 
@@ -483,7 +476,7 @@ How I read these numbers:
 
 `llama-bench` does not count the time for splitting text into tokens and for sampling, so real answers in the app are a little slower. These are my numbers on my laptop. Other drivers, llama.cpp builds, or power settings will give different results.
 
-<!-- SCREENSHOT: llama-bench results for Flint NVFP4 and MAI Code 1.1 Flash -->
+
 
 ## Step 7: Foundry Local as my second model runner
 
@@ -734,7 +727,7 @@ Then I tested the local AI path from start to finish:
 7. Watch the GPU and shared memory graphs in Task Manager.
 8. Turn the network back on and test Copilot Fusion with Fusion Standard on its own.
 
-<!-- SCREENSHOT: Task Manager GPU graph during a local session -->
+
 
 Now that everything is set up, this is my advice. Start with the GitHub Copilot app and its local Windows ML models. Do Linux and Python work in WSL 2. Add Foundry Local for your own apps. Ollama and other community tools are optional. I have not installed them. If you add them, first check that they use the GPU. With 128 GB, a 30B to 35B MoE model at 4-bit gives the best mix of quality and speed for daily work. Use 70B and larger models only for tests with the charger plugged in. Keep cloud models for the problems where a correct answer matters most.
 
