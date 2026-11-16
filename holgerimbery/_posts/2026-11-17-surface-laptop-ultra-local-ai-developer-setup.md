@@ -24,17 +24,17 @@ toc: true
 ---
 
 {: .q-left }
-> In [Building On-Prem AI Agents with Azure Local, Foundry Local, and Microsoft Agent Framework](https://holgerimbery.blog/building-on-prem-ai-agents-with-azure-local-foundry-local-and-microsoft-agent-framework) I ran AI models in the data center. This article is about something else: a developer workstation. Below I describe how I set up a Surface Laptop Ultra with 128 GB of memory for local AI development, and why I made each choice. Before and during the setup I read a lot of documentation and articles. Some came from Microsoft, GitHub, NVIDIA, and Docker. Others came from reviewers and other developers. This article is what I took from all of that, together with what I saw on my that laptop. I also compare my setup with what others have published about the same laptop, and I point out where the official documents and the hands-on reports do not agree.
+> In [Building On-Prem AI Agents with Azure Local, Foundry Local, and Microsoft Agent Framework](https://holgerimbery.blog/building-on-prem-ai-agents-with-azure-local-foundry-local-and-microsoft-agent-framework) I ran AI models in the data center. This article is about something else: a developer workstation. Below I describe how I set up a Surface Laptop Ultra with 128 GB of memory for local AI development, and why I made each choice. Before and during the setup, I read a lot of documentation and articles. Some came from Microsoft, GitHub, NVIDIA, and Docker. Others came from reviewers and other developers. This article is what I took from all of that, together with what I saw on that laptop. I also compare my setup with what others have published about the same laptop, and I point out where the official documents and hands-on reports don't agree.
 
 {: .note }
 This article is about setting up one developer's workstation. It does not replace a Foundry Local or Azure Local setup in the data center, and it is not a guide for serving models to a team or to production apps. I use the laptop to write, test, and try out AI code on my own. When something needs to run for other people, it moves to the data center or the cloud.
 
 {: .important }
-I wrote this article just before Microsoft Ignite 2026, which runs from November 17 to 20, 2026, in San Francisco. At its Windows event in October, Microsoft said more local AI features for Microsoft Copilot on Windows are on the way, and it invited readers to Ignite to learn more. Some steps here may change after Ignite. I plan to update the article once the announcements are out.
+I wrote this article just before Microsoft Ignite 2026, which runs from November 17 to 20, 2026, in San Francisco. At its Windows event in October, Microsoft said more local AI features for Microsoft Copilot on Windows are on the way, and it invited readers to Ignite to learn more. Some of these details may change after Ignite. I plan to update the article once the announcements are out.
 
 ## Why this laptop is different
 
-Until now, my laptops did very little AI work themselves. They sent prompts to the cloud and showed the answers. The Surface Laptop Ultra can run large models on its own. Microsoft's tech specs list an "NVIDIA RTX Spark N1X" chip with up to a 6144-core GPU and a 20-core CPU, and up to 128 GB of LPDDR5x unified memory. On the product page Microsoft says CUDA speeds up "local agent workflows powered by models up to 120B parameters".
+Until now, my laptops did very little AI work themselves. They sent prompts to the cloud and showed the answers. The Surface Laptop Ultra can run large models on its own. Microsoft's tech specs list an "NVIDIA RTX Spark N1X" chip with up to a 6144-core GPU and a 20-core CPU, and up to 128 GB of LPDDR5x unified memory. On the product page, Microsoft says CUDA speeds up "local agent workflows powered by models up to 120B parameters".
 
 Unified memory means the CPU and the GPU use the same memory. That is why a laptop can load a model this big. But it also means you do not get 128 GB just for the GPU. Windows, the code editor, the browser, WSL, the model, and the memory the model needs for long prompts all share the same 128 GB.
 
@@ -47,7 +47,7 @@ After a few evenings of testing, I settled on a mix of local and cloud tools:
 1. **Windows 11** runs the drivers, the security features, and the GPU.
 2. **The GitHub Copilot app** is where I do most of my work, with its local Windows ML models.
 3. **WSL 2 with Ubuntu 24.04** is for Linux work and for Python with CUDA.
-4. **Arm64 versions of my tools** wherever they exist. I use emulation only when there is no Arm64 version.
+4. **Arm64 versions of my tools** wherever they exist. I use emulation only when no ARM64 version exists.
 5. **Cloud models in the GitHub Copilot app** for big, hard, or security-related problems.
 6. **Foundry Local** is my second local model runner, for my own apps and tests. Connecting it to the GitHub Copilot app is optional.
 7. **Ollama** is optional. I have not installed it. If you want it, check first that it really uses the GPU.
@@ -55,7 +55,7 @@ After a few evenings of testing, I settled on a mix of local and cloud tools:
 The order is on purpose. I start with what Microsoft and GitHub built and documented for this hardware. Then I add other tools one at a time and test each one before I rely on it.
 
 {: .note }
-Two different apps have "Copilot" in their name, and both show up in this article. **The GitHub Copilot app** is GitHub's desktop app for coding agents. It is the one with the local Windows ML models, and it is the center of this setup. **The Microsoft 365 Copilot app** (Microsoft now calls it Microsoft Copilot) is for email, meetings, documents, and Cowork. It runs in Microsoft's cloud and does not use local models today. When I write about local models, worktrees, or agent sessions, I always mean the GitHub Copilot app.
+Two different apps have "Copilot" in their name, and both show up in this article. **The GitHub Copilot app** is GitHub's desktop app for coding agents. It is the one with the local Windows ML models, and it is the center of this setup. **The Microsoft 365 Copilot app** (now called Microsoft Copilot) is for email, meetings, documents, and Cowork. It runs in Microsoft's cloud and does not use local models today. When I write about local models, worktrees, or agent sessions, I always mean the GitHub Copilot app.
 
 | Part | What I use | Why |
 |---|---|---|
@@ -72,22 +72,22 @@ I set the laptop up from scratch. I did not restore a backup from my old machine
 
 **Power.** Microsoft Support recommends "a minimum 115W of power" and a USB-C cable that "supports 5 amps". Microsoft's 140 W adapter gives 28 volts at 5 amps. The tech specs say this adapter only ships in some countries, so check what is in your box. I always use the 140 W adapter when I run models. A weaker dock or charger can slow the laptop down, or it may not charge at all under heavy load.
 
-**Updates.** I ran Windows Update again and again, with a restart each time, until no updates were left. The tech specs say Surface firmware and drivers come through Windows Update. Then I opened **Settings > Windows Update > Advanced options > Optional updates** and installed every driver update listed there. Microsoft's Surface support page recommends installing all optional updates and checking that all drivers named "Surface" are installed. The Surface app shows the same update status under **Help & support**.
+**Updates.** I ran Windows Update again and again, restarting each time, until no updates were left. The tech specs say Surface firmware and drivers come through Windows Update. Then I opened **Settings > Windows Update > Advanced options > Optional updates** and installed every driver update listed there. Microsoft's Surface support page recommends installing all optional updates and checking that all drivers named "Surface" are installed. The Surface app shows the same update status under **Help & support**.
 
 **NVIDIA driver.** Windows Update brings the Surface driver package, but NVIDIA releases newer graphics drivers on its own schedule. So I installed the NVIDIA app and used its **Drivers** page to get the latest RTX Spark driver. NVIDIA released the first one, version 617.42, on October 16, 2026, and says you can install it "from the NVIDIA app or our website". If you use the website, pick the RTX Spark driver. A normal GeForce driver for x64 laptops will not install, because drivers on this laptop must be native Arm64.
 
-**Game Ready or Studio.** The NVIDIA app offers two types of driver for RTX Spark: a Game Ready driver and a Studio driver. When I set up the laptop, both had the same version (621.24, released November 12, 2026). NVIDIA says that all its drivers "provide full features and application support" for games and creative apps. Game Ready is for gamers who want support for new games on launch day. Studio is for people who care most about stability. Neither type has anything extra for AI or CUDA. I picked the Studio driver, because this is a work machine and I prefer fewer, better tested updates over game updates. You can switch between the two types in the NVIDIA app at any time.
+**Game Ready or Studio.** The NVIDIA app offers two types of drivers for RTX Spark: a Game Ready driver and a Studio driver. When I set up the laptop, both had the same version (621.24, released November 12, 2026). NVIDIA says that all its drivers "provide full features and application support" for games and creative apps. Game Ready is for gamers who want support for new games on launch day. Studio is for people who care most about stability. Neither type has anything extra for AI or CUDA. I picked the Studio driver because this is a work machine and I prefer fewer, better-tested updates over game updates. You can switch between the two types in the NVIDIA app at any time.
 
-**What I installed.** I chose **Custom installation** to see the parts. The graphics driver is always installed. I left **PhysX System Software** and **HD Audio Driver** ticked. PhysX is mostly for games but does no harm, and the HD Audio driver sends sound to monitors over HDMI or DisplayPort. I left **Clean installation** unticked, because it resets all NVIDIA settings and profiles, including the GPU memory share from Step 2. I only use it if a driver causes problems. After a restart, `nvidia-smi` in PowerShell shows the driver version.
+**What I installed.** I chose **Custom installation** to see the parts. The graphics driver is always installed. I left **PhysX System Software** and **HD Audio Driver** ticked. PhysX is mostly for games but does no harm, and the HD Audio driver sends sound to monitors over HDMI or DisplayPort. I left **Clean installation** unticked because it resets all NVIDIA settings and profiles, including the GPU memory share from Step 2. I only use it if a driver causes problems. After a restart, `nvidia-smi` in PowerShell shows the driver version.
 
 
-**Security.** The laptop is a Secured-core PC with TPM 2.0 and BitLocker. In **Windows Security > Device security** I checked that Secure Boot, the TPM, and core isolation were on. Then I turned on BitLocker and saved the recovery key somewhere other than the laptop.
+**Security.** The laptop is a Secured-core PC with TPM 2.0 and BitLocker. In **Windows Security > Device security**, I checked that Secure Boot, the TPM, and core isolation were on. Then I turned on BitLocker and saved the recovery key somewhere other than the laptop.
 
 **Power mode.** In **Settings > System > Power & battery** I use **Balanced** for normal work. When I am plugged in and running models, builds, or containers, I switch to **Best performance**.
 
 
 
-AI work is slower on battery. The New Stack measured about 20% to 25% less speed on battery, and The Neuron measured about 14% less. These numbers come from reviewers, not from Microsoft. My rule: long agent sessions and large models only when the charger is plugged in.
+AI work is slower on battery. The New Stack measured about 20% to 25% slower on battery, and The Neuron measured about 14% slower. These numbers come from reviewers, not from Microsoft. My rule: long agent sessions and large models only when the charger is plugged in.
 
 ## Step 2: Plan memory and disk space
 
@@ -101,7 +101,7 @@ The GPU can use more than its own share, though. Under **Performance > GPU**, Ta
 
 That room shrinks during a session. Microsoft explains that the memory a model uses to keep track of its context grows as an agent reads files and gets tool results. Microsoft measured a peak of 75.5 GB for MAI Code 1.1 Flash at the full 256K context. That is more than the 62.5 GB the GPU has of its own, so a very long session borrows memory from Windows. A model that loads fine at the start of a task can still run short of memory later.
 
-* **The GPU share** can be changed in the NVIDIA app. I know this from reviewers, not from Microsoft. StorageReview tested with the same 64/64 split, which gave the GPU about 62.5 GB. maruhana raised the GPU share to 95.5 GB for large models and got a stability warning at the highest setting. A bigger GPU share means less memory for Windows and WSL, and the other way round.
+* **The GPU share** can be changed in the NVIDIA app. I know this from reviewers, not from Microsoft. StorageReview tested with the same 64/64 split, which gave the GPU about 62.5 GB. maruhana raised the GPU share to 95.5 GB for large models and got a stability warning at the highest setting. A bigger GPU share means less memory for Windows and WSL, and vice versa.
 * **WSL** gets a fixed limit (see Step 4). With 64 GB for Windows, I give WSL 40 GB.
 * **The GitHub Copilot app** has a slider called **Maximum % system memory to use** for its local models. I set it so that Windows and my other tools always keep at least 24 GB to 32 GB.
 
@@ -111,7 +111,7 @@ For daily work I keep the 64/64 split. I only change it for a session with a ver
 
 ### Disk space
 
-My laptop has the 1 TB drive. Windows shows it as about 931 GB, and that space runs out faster than you think once you keep a few models around. I split it with folders, not partitions:
+My laptop has a 1 TB drive. Windows shows it as about 931 GB, and that space runs out faster than you think once you keep a few models around. I split it with folders, not partitions:
 
 | Size | Use |
 |---|---|
@@ -120,7 +120,7 @@ My laptop has the 1 TB drive. Windows shows it as about 931 GB, and that space r
 | About 350 GB | Local models |
 | At least 150 GB free | Model conversion, Docker files, temporary files, updates |
 
-Models fill a disk fast. The GitHub Copilot app alone needs 60 GB of free space for MAI Code 1.1 Flash and 23 GB for Flint NVFP4, so the two built-in models take almost a quarter of my model budget before I add anything else. Many models also come in several compressed versions (called quantizations), and keeping a few of each adds up quickly. With 1 TB I keep only one version of each model and delete models I have not used for a few weeks. I keep all my models in one folder, which makes it easy to see what takes up space. If you add Ollama later, its `OLLAMA_MODELS` environment variable lets you point it to the same place.
+Models fill a disk fast. The GitHub Copilot app alone needs 60 GB of free space for MAI Code 1.1 Flash and 23 GB for Flint NVFP4, so the two built-in models take almost a quarter of my model budget before I add anything else. Many models also come in several compressed versions (called quantizations), and keeping a few of each adds up quickly. With 1 TB, I keep only one version of each model and delete models I have not used for a few weeks. I keep all my models in one folder, which makes it easy to see what takes up space. If you add Ollama later, its `OLLAMA_MODELS` environment variable lets you point it to the same place.
 
 I do not use extra partitions. Folders are easier to resize and back up, and BitLocker protects the whole drive anyway.
 
@@ -161,9 +161,9 @@ winget install --id Microsoft.DotNet.SDK.10 --architecture arm64
 winget install --id Microsoft.365Copilot
 ```
 
-The Microsoft 365 Copilot app is the one exception to the flag. Its winget package has a single installer for all types of Windows, so the Arm64 filter does not apply. You can also install it from the Microsoft Store.
+The Microsoft 365 Copilot app is the one exception to the flag. Its winget package has a single installer for all Windows versions, so the Arm64 filter does not apply. You can also install it from the Microsoft Store.
 
-To check that an app really runs as Arm64, open Task Manager, go to **Details**, right-click a column header, choose **Select columns**, and turn on **Architecture**. Every app should show ARM64. If one shows x64, it runs under emulation, and I look for an Arm64 version.
+To check that an app really runs as ARM64, open Task Manager, go to **Details**, right-click a column header, choose **Select columns**, and turn on **Architecture**. Every app should show ARM64. If one shows x64, it runs under emulation, and I look for an ARM64 version.
 
 maruhana got a certificate error from the Microsoft Store source when he installed Python. He fixed it by adding `-s winget` to the command. I did not see that error, but it is good to know.
 
@@ -190,7 +190,7 @@ C:\Dev\
   datasets\
 ```
 
-I never put passwords, API keys, or production data into a repository. I keep them in Windows Credential Manager, in environment variables, in `.env` files that are listed in `.gitignore`, or in a secrets manager.
+I never put passwords, API keys, or production data into a repository. I keep them in Windows Credential Manager, environment variables, `.env` files listed in `.gitignore`, or a secrets manager.
 
 ## Step 4: WSL 2 for Linux work
 
@@ -206,7 +206,7 @@ wsl --set-default-version 2
 wsl --list --verbose
 ```
 
-I run `wsl --list --online` first to get the exact name of the Ubuntu version from the current list. After a restart I created my Ubuntu user and installed the basic tools. From here on, the `bash` commands run in the Ubuntu terminal, not in PowerShell. I open it with `wsl -d Ubuntu-24.04` or from the Start menu:
+I run `wsl --list --online` first to get the exact name of the Ubuntu version from the current list. After a restart, I created my Ubuntu user and installed the basic tools. From here on, I run `bash` commands in the Ubuntu terminal, not in PowerShell. I open it with `wsl -d Ubuntu-24.04` or from the Start menu:
 
 ```bash
 sudo apt update
@@ -220,7 +220,7 @@ sudo apt install -y \
 git lfs install
 ```
 
-Next I turned on systemd, and I stopped WSL from adding the Windows search path to Linux. Both settings are in the WSL documentation. This also runs in the Ubuntu terminal:
+Next, I enabled systemd and stopped WSL from adding the Windows search path to Linux. Both settings are in the WSL documentation. This also runs in the Ubuntu terminal:
 
 ```bash
 sudo tee /etc/wsl.conf >/dev/null <<'EOF'
@@ -232,7 +232,7 @@ appendWindowsPath=false
 EOF
 ```
 
-`appendWindowsPath=false` keeps Windows programs out of the Linux search path. That keeps Linux tools clean, but it also means Linux no longer finds `code-insiders`. I found that out when `code-insiders .` stopped working. So I add only the VS Code Insiders folder back, again in the Ubuntu terminal. Replace `<your Windows user name>` with yours:
+`appendWindowsPath=false` keeps Windows programs out of the Linux search path. That keeps Linux tools clean, but it also means Linux no longer finds `code-insiders`. I found that out when `code-insiders .` stopped working. So I added only the VS Code Insiders folder back, again in the Ubuntu terminal. Replace `<your Windows user name>` with yours:
 
 ```bash
 echo 'export PATH="$PATH:/mnt/c/Users/<your Windows user name>/AppData/Local/Programs/Microsoft VS Code Insiders/bin"' >> ~/.bashrc
@@ -272,7 +272,7 @@ wsl --shutdown
 wsl -d Ubuntu-24.04 -- bash -c "free -g; nproc"
 ```
 
-`nproc` should show 16, and `free -g` a total of about 39 GB. The WSL Settings app shows the same values under **Memory and processor**. If it still shows about 32 GB, 20 processors, and 8 GB swap, WSL did not read your file. You can also set the values directly in the WSL Settings app, which writes the same file for you.
+`nproc` should show 16, and `free -g` should show a total of about 39 GB. The WSL Settings app shows the same values under **Memory and processor**. If it still shows about 32 GB, 20 processors, and 8 GB swap, WSL did not read your file. You can also set the values directly in the WSL Settings app, which writes the same file for you.
 
 
 My rule: 40 GB by default. If I give the GPU less memory in the NVIDIA app, Windows gets more, and I can raise WSL to match. I always leave Windows at least 24 GB.
@@ -287,11 +287,11 @@ gh repo clone OWNER/REPOSITORY
 code-insiders .
 ```
 
-Building under `/mnt/c` works, but it is slower, because every file access crosses from Linux to Windows. It can also cause problems with file permissions and with tools that watch for file changes.
+Building under `/mnt/c` works, but it is slower because every file access crosses from Linux to Windows. It can also cause problems with file permissions and with tools that watch for file changes.
 
 ## Step 5: The GitHub Copilot app
 
-The GitHub Copilot app is the center of my setup. GitHub says the app lets you "run multiple isolated agent sessions simultaneously, each with a dedicated git worktree and branch". This is the feature I care about most. Several agents can work at the same time, and none of them touches my own copy of the code or the work of another agent.
+The GitHub Copilot app is the center of my setup. GitHub says the app lets you "run multiple isolated agent sessions simultaneously, each with a dedicated git worktree and branch". This is the feature I care about most. Several agents can work at the same time, and none of them touches my copy of the code or another agent's work.
 
 I downloaded the app from GitHub and signed in. If you use Copilot Business or Copilot Enterprise, GitHub says the app policy "must remain enabled". It is on by default. If the app does not work in your company, ask your admin whether it was turned off.
 
@@ -326,12 +326,12 @@ The 96 GB requirement is the reason I bought the 128 GB model. On a 64 GB laptop
 
 ### Installing llama.cpp for Arm64 with CUDA
 
-The local models in the GitHub Copilot app run on llama.cpp, so you install that first. GitHub's guide says to take the "Windows CUDA 13.4 ARM64 build" from the llama.cpp releases page at `https://github.com/ggml-org/llama.cpp/releases`. Newer llama.cpp releases now ship CUDA 13.5 instead, so I took the newest release (any build from b11803 on works) and downloaded the two files listed under **Windows arm64 (CUDA 13)**:
+The local models in the GitHub Copilot app run on llama.cpp, so you install that first. GitHub's guide says to take the "Windows CUDA 13.4 ARM64 build" from the llama.cpp releases page at `https://github.com/ggml-org/llama.cpp/releases`. Newer llama.cpp releases now ship CUDA 13.5 instead, so I took the newest release (any build from b11803 onward works) and downloaded the two files listed under **Windows arm64 (CUDA 13)**:
 
 * the llama.cpp package, named like `llama-<build>-bin-win-cuda-13.5-arm64.zip`
 * the CUDA runtime files, named like `cudart-llama-bin-win-cuda-13.5-arm64.zip`
 
-Do not take the `x64` files, or the `cpu`, `vulkan`, or `opencl-adreno` versions for Arm64. Before you start, run `nvidia-smi` and check that **CUDA Version** in the top right is 13.5 or higher.
+Do not use the `x64` files, or the `cpu`, `vulkan`, or `opencl-adreno` versions for Arm64. Before you start, run `nvidia-smi` and check that **CUDA Version** in the top right is 13.5 or higher.
 
 GitHub's guide uses Command Prompt. I work in PowerShell, where `%LOCALAPPDATA%` does not work. My first `mkdir` created a folder literally called `%LOCALAPPDATA%` in the wrong place. In PowerShell, create the folder like this, using your build number:
 
@@ -359,14 +359,14 @@ After setting the variable, restart the GitHub Copilot app, VS Code Insiders, an
 
 My first test failed. Windows showed a "Bad Image" message saying `mtmd.dll` "is either not designed to run on Windows or it contains an error", with error status 0xc0e90002. The file was fine. The Code Integrity log (**Event Viewer > Applications and Services Logs > Microsoft > Windows > CodeIntegrity > Operational**) had an event 3077 for the same file, with the policy ID {0283AC0F-FFF1-49AE-ADA1-8A933130CAD6}. That is Smart App Control, which was on by default on my new laptop.
 
-Smart App Control blocks programs that Microsoft's cloud service does not know and that have no valid signature. The llama.cpp builds are not signed, and new ones come out several times a day, so they are never known. Microsoft's FAQ is clear that "there is currently no way to bypass Smart App Control protection for individual apps". You either keep it on or turn it off.
+Smart App Control blocks programs that Microsoft's cloud service does not know about and that have no valid signature. The llama.cpp builds are not signed, and new ones come out several times a day, so they are never known. Microsoft's FAQ is clear: "there is currently no way to bypass Smart App Control protection for individual apps." You either keep it on or turn it off.
 
 This is a security decision, and you should make it yourself (or leave it to your IT department on a work device):
 
 * **Keep Smart App Control on.** The built-in local models in the GitHub Copilot app will not work. Cloud models and Foundry Local still do.
 * **Turn it off** in **Windows Security > App & browser control > Smart App Control settings**. Windows then stops checking unknown, unsigned programs before they run. Microsoft Defender keeps working. Recent Windows updates let you turn Smart App Control back on later without reinstalling Windows, but it will block llama.cpp again as soon as it is on.
 
-I turned it off. This laptop is my developer workstation, and I install developer tools on it all the time that are unsigned. Microsoft itself says that Smart App Control may not be "a great experience" for developers. In return I am more careful about what I download, I only take llama.cpp from its official GitHub releases page, and I keep Microsoft Defender on.
+I turned it off. This laptop is my developer workstation, and I install developer tools on it all the time that are unsigned. Microsoft itself says that Smart App Control may not be "a great experience" for developers. In return, I am more careful about what I download; I only take llama.cpp from its official GitHub releases page, and I keep Microsoft Defender on.
 
 ### Adding the Windows ML provider
 
@@ -385,20 +385,20 @@ Two more settings are in the **Experimental** section. **Windows ML local models
 
 ### Picking the model myself or letting Copilot Fusion choose
 
-GitHub calls Copilot Fusion "an intelligent runtime model router and orchestrator". Microsoft's announcement for local models calls the same routing **Auto**, so you may see both names. In plain words, it decides which model handles each request. When you select **Copilot Fusion** with the **Fusion Standard** level, the app sends simple tasks to MAI Code 1.1 Flash and harder tasks to cloud models. Only MAI Code 1.1 Flash works with Fusion. Flint NVFP4 you have to pick yourself.
+GitHub calls Copilot Fusion "an intelligent runtime model router and orchestrator". Microsoft's announcement for local models calls the same routing **Auto**, so you may see both names. In plain words, it decides which model handles each request. When you select **Copilot Fusion** with the **Fusion Standard** level, the app sends simple tasks to MAI Code 1.1 Flash and harder tasks to cloud models. Only MAI Code 1.1 Flash works with Fusion. Flint NVFP4, you have to pick yourself.
 
 I use both ways:
 
-* **I pick the local model myself** when the work must stay on my laptop, or when I am offline. GitHub says a local model lets you "use Copilot offline and avoid consuming GitHub AI Credits". Microsoft adds a limit: local inference "does not make the session offline". Sign-in, remote tools, and remote MCP servers still need the network. The model runs on my laptop, but the session around it does not always.
+* **I pick the local model myself** when the work must stay on my laptop, or when I am offline. GitHub says a local model lets you "use Copilot offline and avoid consuming GitHub AI Credits". Microsoft adds a limit: local inference "does not make the session offline". Sign-in, remote tools, and remote MCP servers still need the network. The model runs on my laptop, but the surrounding session does not always.
 * **I use Fusion Standard** for normal work when I am online and fine with harder tasks going to the cloud.
 
 Fusion is not an offline mode. It sends some tasks to cloud models on purpose. When data must stay on the laptop, I select the local model myself.
 
 ### A custom agent for the local model
 
-There is no setting that tells Fusion to prefer local models. GitHub offers another way, which it describes "as an alternative to Copilot Fusion": a custom agent that is tied to one model. This is useful when only one part of a task should run on the local model, for example writing tests for code that handles customer data, while the rest of the session uses Fusion or a cloud model.
+There is no setting that tells Fusion to prefer local models. GitHub offers another way, which it describes "as an alternative to Copilot Fusion": a custom agent that is tied to one model. This is useful when only one part of a task should run on the local model, for example, writing tests for code that handles customer data, while the rest of the session uses Fusion or a cloud model.
 
-A custom agent is a Markdown file that ends in `.agent.md`. GitHub documents custom agents for the GitHub Copilot CLI, and the Fusion page points to that guide. A file in `$env:USERPROFILE\.copilot\agents` works in every repository. A file in `.github\agents` in a repository works only there. This creates a personal agent in PowerShell 7:
+A custom agent is a Markdown file that ends in `.agent.md`. GitHub documents custom agents for the GitHub Copilot CLI, and the Fusion page points to that guide. A file in `$env:USERPROFILE\.copilot\agents` works in every repository. A file in `.github\agents` in a repository works only in that repository. This creates a personal agent in PowerShell 7:
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.copilot\agents"
@@ -418,7 +418,7 @@ The `model` line does the work. GitHub describes it as the "model to use when th
 After a restart of the GitHub Copilot CLI, there are two ways to use the agent:
 
 * **For the whole session:** enter `/agent` and select **local-coder**. Then the whole session runs on the local model.
-* **For one part of a task:** write it in the prompt, for example "Use the local-coder agent to write the tests for src/billing". The main session then hands this part to the agent.
+* **For one part of a task:** write it in the prompt, for example, "Use the local-coder agent to write the tests for src/billing". The main session then hands this part to the agent.
 
 The second way has a catch. The main session still reads your prompt and decides what to hand over. If the main session runs on a cloud model, your prompt and the context it passes on go to the cloud first. So when data must stay on the laptop, I select the agent for the whole session or pick the local model myself.
 
@@ -438,7 +438,7 @@ GitHub warns against using a downloaded local model in more than one Copilot too
 | Security design reviews | | Yes |
 | Tasks that need a lot of context | | Yes |
 
-Local is better for privacy, cost, and speed of response. Cloud is better when a correct answer matters more than those three.
+Local is better for privacy, cost, and response speed. Cloud is better when a correct answer matters more than those three.
 
 ### How fast the local models are on my laptop
 
@@ -472,9 +472,9 @@ The `backend` column showed **CUDA** for every test, so the GPU did all the work
 How I read these numbers:
 
 * **Writing the answer** is the speed you notice. Both models write far faster than I can read. 66 tokens per second for a model with almost 138 billion parameters is more than I expected from a laptop.
-* **Reading the prompt** decides how long you wait before the answer starts. At over 1,200 tokens per second, MAI Code 1.1 Flash reads a 16,000 token context in about 13 seconds.
+* **Reading the prompt** decides how long you wait before the answer starts. At over 1,200 tokens per second, MAI Code 1.1 Flash reads a 16,000-token context in about 13 seconds.
 * **Long context slows things down, but not much.** With 16,000 tokens in the context, writing got about 15% slower for MAI Code 1.1 Flash and about 18% slower for Flint NVFP4.
-* **MAI Code 1.1 Flash is heavily compressed.** Microsoft shrank it from about 276 GB at 16-bit to 53 GB with mixed precision, about 3.3 bits per weight on average. Most of the model uses about 2 bits per weight, some parts about 4. llama-bench labels the file "Q2_K", which undersells it. Microsoft reports only a small quality loss: 70.8% on SWE-Bench Verified for the local version against 72.6% for the cloud version. On Terminal-Bench 2.1 the local version even scored higher, 66.29% against 62.9%. I still keep the hard problems for the bigger cloud models.
+* **MAI Code 1.1 Flash is heavily compressed.** Microsoft shrank it from about 276 GB at 16-bit to 53 GB with mixed precision, about 3.3 bits per weight on average. Most of the model uses about 2 bits per weight, with some parts at about 4. llama-bench labels the file "Q2_K", which undersells it. Microsoft reports only a small quality loss: 70.8% on SWE-Bench Verified for the local version, compared with 72.6% for the cloud version. On Terminal-Bench 2.1, the local version even scored higher, 66.29% against 62.9%. I still keep the hard problems for the bigger cloud models.
 * **Microsoft's own numbers go further.** Microsoft measured reading speeds of 923.5 tokens per second at 64K context and 769.8 at 128K on this laptop, with a peak memory use of 75.5 GB at the full 256K context. My 1,236 tokens per second at 16K fits that curve. Microsoft's test also used speculative decoding, where a small helper model suggests tokens and the main model checks them. `llama-bench` does not do this, so the app may write answers faster than my test shows.
 
 `llama-bench` does not count the time for splitting text into tokens and for sampling, so real answers in the app are a little slower. These are my numbers on my laptop. Other drivers, llama.cpp builds, or power settings will give different results.
@@ -483,7 +483,7 @@ How I read these numbers:
 
 ## Step 7: Foundry Local as my second model runner
 
-The local models in the GitHub Copilot app are only for the GitHub Copilot app. For my own apps and tests I wanted a separate model runner with a standard API. I picked Foundry Local. It comes from Microsoft and offers an OpenAI-compatible API. Microsoft Learn also has a training module for this laptop, "Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business", with a unit on Foundry Local. I used Foundry Local in my on-premises agent article too, so I already knew how it works. Here it plays a smaller role. On the laptop it only serves my own tests and prototypes. It is not a stand-in for a shared Foundry Local server in the data center.
+The local models in the GitHub Copilot app are only for the GitHub Copilot app. For my own apps and tests, I wanted a separate model runner with a standard API. I picked Foundry Local. It comes from Microsoft and offers an OpenAI-compatible API. Microsoft Learn also has a training module for this laptop, "Understand local AI and high-performance workflows with Microsoft Surface Laptop Ultra for Business", with a unit on Foundry Local. I used Foundry Local in my on-premises agent article too, so I already knew how it works. Here it plays a smaller role. On the laptop, it only serves my own tests and prototypes. It is not a stand-in for a shared Foundry Local server in the data center.
 
 To install and check it:
 
@@ -501,11 +501,11 @@ Foundry Local picks a new port every time it starts. To keep the address the sam
 foundry server start --port <port>
 ```
 
-My own apps always talk to the model through this local API. That way the app does not depend on one tool. Later I can switch to another runner, such as Ollama, or to a cloud model without rewriting the app.
+My own apps always talk to the model through this local API. That way, the app does not depend on one tool. Later I can switch to another runner, such as Ollama, or to a cloud model without rewriting the app.
 
 ### Optional: connecting Foundry Local to the GitHub Copilot app
 
-You do not have to connect Foundry Local to the GitHub Copilot app, and for daily coding I do not use it there. The GitHub Copilot app already has its own local models through the Windows ML provider, and those are the stronger choice on this laptop. The Foundry Local catalog has small and mid-size models, while the larger 30B to 35B MoE models run through llama.cpp. Both runners also share the same GPU memory, so running both at the same time only gets in the way.
+You don't have to connect Foundry Local to the GitHub Copilot app, and I don't use it there for daily coding. The GitHub Copilot app already has its own local models through the Windows ML provider, and those are the stronger choice on this laptop. The Foundry Local catalog has small and mid-size models, while the larger 30B to 35B MoE models run through llama.cpp. Both runners also share the same GPU memory, so running both at the same time only gets in the way.
 
 There are two cases where the connection is useful:
 
@@ -549,11 +549,11 @@ To connect Ollama to the GitHub Copilot app:
 * Base URL: `http://localhost:11434`
 * Model: the exact name from `ollama list`
 
-One more limit. A test on DGX Spark (a related NVIDIA machine, not this laptop) found that Ollama was no faster with eight requests at once than with one. It handles requests one after another. For one developer that is fine. For a local service that several agents use at the same time, it is a problem.
+One more limit. A test on DGX Spark (a related NVIDIA machine, not this laptop) found that Ollama was no faster with eight requests at once than with one. It handles requests one after another. For one developer, that is fine. For a local service that several agents use at the same time, it is a problem.
 
 ## Which model sizes fit in 128 GB
 
-All parts share the same memory, so I choose model size by what is left after Windows, my tools, and the model's working memory. My guide:
+All parts share the same memory, so I choose model size based on what's left after Windows, my tools, and the model's working memory. My guide:
 
 | Model size | What I use it for | How it runs |
 |---|---|---|
@@ -597,7 +597,7 @@ docker info
 docker run --rm hello-world
 ```
 
-Arm images work best. An `amd64` image has to run under emulation. It can be slow, or it can fail if it needs low-level parts of the system.
+ARM images work best. An `amd64` image has to run under emulation. It can be slow, or it can fail if it needs low-level system access.
 
 Docker documents GPU support for "a Windows machine with an NVIDIA GPU" with WSL 2. The page says nothing about Arm64. I found no official statement that GPU containers work on Windows on Arm, so I treat this as untested. Only after normal containers worked did I check the GPU from WSL:
 
@@ -612,7 +612,7 @@ If you try a CUDA container, use an image with an `arm64` tag. Many older CUDA e
 
 NVIDIA's CUDA on WSL guide says the Windows driver "is the only driver you need to install". It also says: "Do not install any Linux display driver in WSL." I followed this exactly. The only NVIDIA driver is the one in Windows.
 
-Inside WSL I use a separate virtual environment for each project:
+Inside WSL, I use a separate virtual environment for each project:
 
 ```bash
 mkdir -p ~/src/ai-lab && cd ~/src/ai-lab
@@ -621,13 +621,13 @@ source .venv/bin/activate
 python -m pip install --upgrade pip setuptools wheel
 ```
 
-Before I install PyTorch, CUDA tools, TensorRT-LLM, vLLM, or llama.cpp, I check four things. Is there a Linux Arm64 version? Does it support this GPU? Does it match the CUDA version of my driver? Do its other parts work on Arm64? I never copy a normal x64 CUDA install script onto this laptop.
+Before I install PyTorch, CUDA tools, TensorRT-LLM, vLLM, or llama.cpp, I check four things. Is there a Linux Arm64 version? Does it support this GPU? Does it match my driver's CUDA version? Do its other parts work on Arm64? I never copy a normal x64 CUDA install script onto this laptop.
 
-Why WSL for Python, and not Windows itself? Because PyTorch with CUDA on Windows on Arm is still unclear. NVIDIA's developer forum post for RTX Spark mentions a CUDA 13.4 PyTorch build from NVIDIA's package index. A few days later, maruhana found no Windows on Arm CUDA version on the official PyTorch download pages. He had to build PyTorch himself, which took about an hour. Inside WSL, the normal Linux PyTorch used the GPU right away. That made the choice easy for me. I use Python on Windows for scripts and small tools. All model work happens in WSL.
+Why WSL for Python, and not Windows itself? Because PyTorch with CUDA on Windows on ARM is still unclear. NVIDIA's developer forum post for RTX Spark mentions a CUDA 13.4 PyTorch build from NVIDIA's package index. A few days later, maruhana found no Windows on ARM CUDA version on the official PyTorch download pages. He had to build PyTorch himself, which took about an hour. Inside WSL, the normal Linux PyTorch used the GPU right away. That made the choice easy for me. I use Python on Windows for scripts and small tools. All model work happens in WSL.
 
 ## Instructions for coding agents in each repository
 
-Local models are smaller than cloud models, so clear instructions help them even more. In each repository I add:
+Local models are smaller than cloud models, so clear instructions help them even more. In each repository, I add:
 
 ```text
 .github/
@@ -690,8 +690,8 @@ Before writing this, I read what others published about running local AI on the 
 | Source | What they did | What I learned |
 |---|---|---|
 | The New Stack | Unsloth Studio, Ollama, Hermes Agent on Windows, 64 GB | Battery costs 20% to 25% speed, fans are loud, MoE models are fast |
-| The Neuron | Unsloth Desktop on Windows, 128 GB, models up to 120B MoE | A 120B MoE model is usable, battery costs about 14% speed |
-| StorageReview | Arm64 llama.cpp and Ollama on CUDA, Codex CLI as agent | Ollama uses the GPU, the agent slows down the rest of the laptop |
+| The Neuron | Unsloth Desktop on Windows, 128 GB, models up to 120B MoE | A 120B MoE model is usable; battery costs about 14% speed |
+| StorageReview | Arm64 llama.cpp and Ollama on CUDA, Codex CLI as agent | Ollama uses the GPU; the agent slows down the rest of the laptop |
 | Tom's Hardware | llama.cpp built from source, timed full agent tasks | Agent tasks finished faster than on an M5 Max MacBook Pro |
 | PCMag | MLPerf Client on 64 GB | Some benchmark tools do not support Arm yet |
 | maruhana (Zenn) | Fresh setup, more memory for the GPU, PyTorch in WSL 2 | Check GPU use for every tool before you rely on it |
@@ -805,4 +805,4 @@ Now that everything is set up, this is my advice. Start with the GitHub Copilot 
 - **Not first-party, different hardware.** NVIDIA Developer Forums, [Measured inference benchmarks on a single DGX Spark](https://forums.developer.nvidia.com/t/measured-inference-benchmarks-on-a-single-dgx-spark-same-harness-across-ollama-llama-cpp-and-vllm-notes-data-published/379766), August 10, 2026: Ollama does not handle parallel requests together
 - Earlier article on this blog: [Building On-Prem AI Agents with Azure Local, Foundry Local, and Microsoft Agent Framework](https://holgerimbery.blog/building-on-prem-ai-agents-with-azure-local-foundry-local-and-microsoft-agent-framework), April 11, 2026
 
-**Two open questions at the time of writing:** First, Ollama's development documentation says Windows on Arm does not have the extra acceleration libraries. But NVIDIA lists Ollama for Windows on Arm, and two hands-on reports saw it use the GPU. Second, NVIDIA's forum mentions a CUDA PyTorch build for Windows on Arm. But a few days later, an independent developer found no such version on the official PyTorch download pages. Test both on your own laptop before you rely on them.
+**Two open questions at the time of writing:** First, Ollama's development documentation says Windows on Arm lacks the extra acceleration libraries. But NVIDIA lists Ollama for Windows on Arm, and two hands-on reports saw it use the GPU. Second, NVIDIA's forum mentions a CUDA PyTorch build for Windows on Arm. But a few days later, an independent developer found no such version on the official PyTorch download pages. Test both on your own laptop before you rely on them.
