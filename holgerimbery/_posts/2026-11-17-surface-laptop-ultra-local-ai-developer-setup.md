@@ -2,7 +2,7 @@
 layout: post
 canonical_url: https://holgerimbery.blog/surface-laptop-ultra-local-ai-developer-setup
 title: "Local AI Development with the Surface Laptop Ultra"
-description: "Cloud AI is powerful, but every prompt costs tokens, your code leaves the building, and nothing works without a network. A laptop that runs a strong coding model on its own GPU removes all three limits for everyday work. You can experiment freely, keep sensitive code and data on your own machine, and still use cloud models when a task really needs them."
+description: "Cloud AI is powerful, but every prompt costs tokens and your code leaves the building. A laptop that runs capable coding models on its own GPU changes that for everyday work. This setup runs the coding agent in a hybrid way: local coding models for daily development, cloud models when a task really needs them. And the numbers come from real measurements on the laptop, not from PowerPoint benchmarks."
 date: 26-11-17
 author: admin
 slug: surface-laptop-ultra-local-ai-developer-setup
