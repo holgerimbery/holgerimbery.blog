@@ -24,14 +24,14 @@ toc: true
 ---
 
 {: .q-left }
-> Ignite 2026 took place from November 17 to 20 in San Francisco and online, and the Book of News is long again. Most of it is about Azure, Foundry, security, and Windows, and very little of it mentions customer service by name. Still, when I read it with my customer service and process glasses on, a lot of it changes how I would design a service organization today. This article is my reading of it. I wrote it for the people who decide where the money goes and for the people who have to build what was decided, because after this Ignite those two groups need to talk to each other more than before.
+> Ignite 2026 takes/took place from November 17 to 20 in San Francisco and online, and the Book of News is long again. Most of it is about Azure, Foundry, security, and Windows, and very little of it mentions customer service by name. Still, when I read it with my customer service and process glasses on, a lot of it changes how I would design a service organization today. This article is my reading of it. I wrote it for the people who decide where the money goes and for the people who have to build what was decided, because after this Ignite those two groups need to talk to each other more than before.
 
 {: .note }
 I wrote this article on November 19, while Ignite is still running. More sessions and announcements will follow until the event closes on November 20. I will update the article after that, so it gives you the full picture.
 
 ## Key announcements and their status
 
-These are the announcements I think matter for customer service and process work, together with the status Microsoft gave them.
+These are the announcements I think matter for customer service and process work, along with the status Microsoft provided.
 
 | Announcement | Status at Ignite | Why I care |
 |---|---|---|
@@ -47,15 +47,15 @@ These are the announcements I think matter for customer service and process work
 | Agent 365 Cost Management and Business Analytics | Preview and Frontier | Control over usage-based AI cost |
 | Dynamics 365 Activate | CRM generally available, ERP private preview | Help with moving off Salesforce or SAP ECC |
 
-In short, the question is no longer whether we can build a good service agent on Microsoft technology. The questions now are which runtime it should use, what it is allowed to know, whose identity it acts under, and who pays for it.
+In short, the question is no longer whether we can build a good service agent on Microsoft technology. The questions now are which runtime it should use, what it can know, whose identity it acts under, and who pays for it.
 
 ## Copilot, Microsoft IQ, and Agent 365 around Dynamics 365
 
-Jeff Teper's Ignite post for Dynamics 365 explains the thinking better than the Book of News does. He says business applications now need three things: an intelligent user experience, context, and governance. His phrase for the first one is that "Copilot is the front door to your business, and plugins teach it how you work". Microsoft IQ supplies the context, Agent 365 supplies the control, and Dynamics 365 sits underneath as what Microsoft now calls the "agentic system of record".
+Jeff Teper's Ignite post for Dynamics 365 explains the thinking better than the Book of News does. He says business applications now need three things: an intelligent user experience, context, and governance. His phrase for the first is that "Copilot is the front door to your business, and plugins teach it how you work." Microsoft IQ supplies the context, Agent 365 supplies the control, and Dynamics 365 sits underneath as what Microsoft now calls the "agentic system of record".
 
-For contact centers this is a familiar structure. We always had channels, an interaction layer, knowledge, a system of record, and some kind of oversight. What changed is that every one of those layers now has AI in it that can act, not only suggest.
+For contact centers, this is a familiar structure. We always had channels, an interaction layer, knowledge, a system of record, and some kind of oversight. What changed is that every one of those layers now has AI in it that can act, not just suggest.
 
-I like the direction. A service representative who can read a case history and draft a reply from Teams or Copilot does not need to jump between three applications. What I keep an eye on is the system of record. When an agent changes a case from outside Dynamics 365, the business rules, the audit trail, and the permissions still have to apply. Microsoft says they do, through review checkpoints and existing permissions, and that is the first thing I would want to see working in a real tenant.
+I like the direction. A service representative who can read a case history and draft a reply in Teams or Copilot doesn't need to jump between three applications. What I keep an eye on is the system of record. When an agent changes a case outside Dynamics 365, the business rules, audit trail, and permissions still have to apply. Microsoft says they do, through review checkpoints and existing permissions, and that is the first thing I would want to see working in a real tenant.
 
 ## Microsoft Contact Center Intelligence
 
