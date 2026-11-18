@@ -18,7 +18,7 @@ and caches them for that build. URLs on this site and raw GitHub URLs under
 this repository's `main/holgerimbery/` path resolve to local files; the build
 does not download remote images.
 
-Image optimization is disabled. Builds use the original assets in
+The `optimize-images` composite action is commented out. Builds use the original assets in
 `holgerimbery/images/` without generating WebP variants. References to images
 in the repository are served from `raw.githubusercontent.com`. Keep this
 repository public so those image URLs remain accessible. The original images
