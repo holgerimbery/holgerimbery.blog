@@ -677,11 +677,12 @@ From then on, every new session in that project can read and write its own worki
 
 The sandbox has limits. Shell commands, local MCP servers, and language servers run inside it. The app's own file tools are only checked by Copilot itself, not by Windows, and remote MCP servers are outside the sandbox. So I keep both: the sandbox and the rules above.
 
-<!-- SCREENSHOT: Project settings with Sandbox new sessions turned on -->
 
 My first prompt in a new repository never changes anything:
 
-> Analyze this repository without modifying files. Identify the build system, runtime dependencies, test commands, architectural boundaries, and security-sensitive areas. Propose a `copilot-instructions.md` and wait for my approval before writing it.
+```
+Analyze this repository without modifying files. Identify the build system, runtime dependencies, test commands, architectural boundaries, and security-sensitive areas. Propose a `copilot-instructions.md` and wait for my approval before writing it.
+```
 
 ## How others set up the same laptop
 
