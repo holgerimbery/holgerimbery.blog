@@ -12,5 +12,5 @@ gem "fastimage", "~> 2.3"
 gem "nokogiri", "~> 1.18"
 
 group :test do
-  gem "minitest", "~> 5.0"
+  gem "minitest", "~> 6.1"
 end
