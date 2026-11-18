@@ -41,11 +41,27 @@ bundle exec jekyll build
 
 The deployment workflows and container build use the existing image assets as
 is, without installing image-processing dependencies or generating variants.
+An isolated CI job installs `requirements-images.txt` and tests the image tools
+with Python 3.15 without generating site assets. Pillow is pinned to a patched
+release; update it with Python requirement syntax (`==`), not Ruby's `~>`.
 The post-build audit checks image dimensions, repository image references, and
 deployment payload size. The
 GitHub Pages artifact is retained for one day, the minimum supported retention.
 Build that container from the repository root with
 `docker build -f holgerimbery/containerfile -t holgerimbery-blog .`.
+
+## CI dependencies and updates
+
+Workflows use `ubuntu-latest` and Ruby 3.4. Third-party actions are pinned to
+release commit SHAs; Dependabot checks Actions, Ruby gems, Python requirements,
+and the dev container weekly. GitHub Pages deployment credentials are scoped
+to the deploy job, and Azure deployments skip fork pull requests.
+
+Commit `holgerimbery/Gemfile.lock` after resolving gem changes with Bundler.
+Do not put version constraints such as `~>` in its resolved gem versions.
+From `holgerimbery`, use `bundle update addressable` to update that gem and its
+required dependencies, then run the image-rendering tests and Jekyll build
+shown above.
 
 ## Shared profile and legal pages
 
