@@ -7,7 +7,7 @@ date: 26-11-19
 author: admin
 slug: ignite-2026-customer-service-process-architecture
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/11/roman-kraft-_Zua2hyvTBk-unsplash.jpg
-image_caption: Photo by <a href="https://unsplash.com/@iamromankraft?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Roman Kraft</a> on <a href="https://unsplash.com/photos/man-sitting-on-bench-reading-newspaper-_Zua2hyvTBk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>"
+image_caption: "Photo by <a href=\"https://unsplash.com/@iamromankraft?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\">Roman Kraft</a> on <a href=\"https://unsplash.com/photos/man-sitting-on-bench-reading-newspaper-_Zua2hyvTBk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\">Unsplash</a>"
 tags:
   - agent365
   - ccaas
@@ -24,7 +24,7 @@ toc: true
 ---
 
 {: .q-left }
-> Ignite 2026 takes/took place from November 17 to 20 in San Francisco and online, and the Book of News is long again. Most of it is about Azure, Foundry, security, and Windows, and very little of it mentions customer service by name. Still, when I read it with my customer service and process glasses on, a lot of it changes how I would design a service organization today. This article is my reading of it. I wrote it for the people who decide where the money goes and for the people who have to build what was decided, because after this Ignite those two groups need to talk to each other more than before.
+> Ignite 2026 takes place from November 17 to 20 in San Francisco and online, and the Book of News is long again. Most of it is about Azure, Foundry, security, and Windows, and very little of it mentions customer service by name. Still, when I read it with my customer service and process glasses on, a lot of it changes how I would design a service organization today. This article is my reading of it. I wrote it for the people who decide where the money goes and for the people who have to build what was decided, because after this Ignite those two groups need to talk to each other more than before.
 
 {: .note }
 I wrote this article on November 19, while Ignite is still running. More sessions and announcements will follow until the event closes on November 20. I will update the article after that, so it gives you the full picture.
@@ -36,7 +36,7 @@ These are the announcements I think matter for customer service and process work
 | Announcement | Status at Ignite | Why I care |
 |---|---|---|
 | Microsoft Contact Center Intelligence (CCI) | Generally available | Microsoft AI on top of the contact center you already run |
-| Customer Conversation harness in Copilot Studio | Preview (since October) | A builder made for customer-facing voice and chat agents |
+| Customer Conversation harness in Copilot Studio | Generally available (preview since October) | A builder made for customer-facing voice and chat agents |
 | Microsoft Copilot harness in Copilot Studio | Generally available | The natural home for longer process agents |
 | Dynamics 365 Customer Service plugin in Copilot | Generally available | Case work can happen in Copilot, with a review step |
 | Microsoft IQ | Generally available, some parts preview | The shared context your agents will read from |
@@ -59,15 +59,23 @@ I like the direction. A service representative who can read a case history and d
 
 ## Microsoft Contact Center Intelligence
 
-Microsoft introduced Contact Center Intelligence in public preview on October 21, 2026, and at Ignite Teper wrote that it "is now generally available".
+Microsoft introduced Contact Center Intelligence in public preview on October 21, 2026. At Ignite, Teper wrote that it "is now generally available", and on November 18 Omar Aftab followed with a full general availability announcement.
 
 The idea is simple. Microsoft took the AI built into Dynamics 365 Contact Center and made it work with other contact center platforms through what the October post called "an open connector". You keep your telephony, routing, and agent desktop. You add Microsoft's agents, quality management, and analytics on top.
 
 According to the Microsoft Learn "What's new" page, updated November 17, 2026, the generally available scope covers integrations with supported CCaaS platforms (with initial guidance for Genesys Cloud and a universal connector for others), quality and operational insights, voice biometric authentication, and the reuse of agents built in Copilot Studio together with extension through Foundry. The October launch also mentioned a Service Operations Agent as "coming soon". It does not appear in the November list, so I would not count on it yet.
 
-Until now, when a customer asked me how to get Microsoft's contact center AI, the honest answer was usually "move to Dynamics 365 Contact Center". For an organization in the middle of a long contract with another vendor, that answer ended the conversation. Now the AI layer and the contact center platform are two separate decisions. Teper says it plainly: many organizations "don't have time to replace their existing contact center infrastructure".
+The November 18 announcement adds several points that matter for planning:
 
-It also adds a new integration point to the architecture. Between your CCaaS platform and CCI you now pass live audio or messages, events, customer context, and handoffs to people. I would want clear answers on what your platform actually exposes to the connector, how a handoff keeps its context so the customer does not have to start over, where recordings, transcripts, and voiceprints are stored, and which system has the final word on quality scores when both your vendor and CCI can evaluate a conversation.
+* **Partnerships with Avaya, Cisco, and Five9.** Microsoft says it is working directly with these vendors "to build and maintain out-of-the-box connectors". The open connector stays available for every other platform.
+* **Handoff to people.** Agents handle self-service on your existing voice and digital channels and then hand off to representatives who keep working in the desktop they know. According to Microsoft, context and voice authentication carry over when a call moves to a representative.
+* **A new speech model.** CCI will offer Microsoft AI Realtime 1, a speech-to-speech model, and Microsoft says its own labs built smaller models tuned for service work such as quality assurance.
+* **Governance from the first minute.** Every agent built in CCI appears in the Agent 365 registry as soon as a maker names it, before it is published.
+* **A path to Dynamics 365 Contact Center.** Microsoft describes the later move from CCI to Dynamics 365 Contact Center as a seamless upgrade.
+
+Until now, when a customer asked me how to get Microsoft's contact center AI, the honest answer was usually "move to Dynamics 365 Contact Center". For an organization in the middle of a long contract with another vendor, that answer ended the conversation. Now the AI layer and the contact center platform are two separate decisions. Teper says it plainly: many organizations "don't have time to replace their existing contact center infrastructure". The vendor partnerships make this more concrete. If you run Avaya, Cisco, or Five9, you can expect a maintained connector instead of building the integration yourself.
+
+It also adds a new integration point to the architecture. Between your CCaaS platform and CCI you now pass live audio or messages, events, customer context, and handoffs to people. I would want clear answers on what your platform actually exposes to the connector, whether the handoff really keeps its context in your setup so the customer does not have to start over, where recordings, transcripts, and voiceprints are stored, and which system has the final word on quality scores when both your vendor and CCI can evaluate a conversation.
 
 {: .important }
 Voice biometrics is now part of a generally available offer. Biometric data used to identify a person is special category data under GDPR. Bring your data protection officer in before the first pilot, not after it.
@@ -76,13 +84,13 @@ Voice biometrics is now part of a generally available offer. Biometric data used
 
 Every agent in Copilot Studio runs on a harness. Microsoft Learn describes the harness as the runtime between your agent design and the model. It decides when the model is called, what context it gets, and which tools it uses.
 
-The Customer Conversation harness went into public preview in October. Omar Aftab described it as "a purpose-built harness and builder specifically designed to create powerful conversational agents for customer engagement". What makes it interesting for service is the way it is put together. One agent handles both voice and chat, so a customer can move from the website to the phone without losing context. The agent can be a team of specialist sub-agents, each with its own knowledge and tools, and Microsoft says that at general availability each of them will also be able to use its own model. Pro-code agents built in Foundry can join that team, and Microsoft IQ is available to all of them.
+The Customer Conversation harness went into public preview in October, and Jason Moore's Copilot Studio post from November 18 says it is now generally available. Omar Aftab described it as "a purpose-built harness and builder specifically designed to create powerful conversational agents for customer engagement". What makes it interesting for service is the way it is put together. One agent handles both voice and chat, so a customer can move from the website to the phone without losing context. The agent can be a team of specialist sub-agents, each with its own knowledge and tools. In October Microsoft said each sub-agent would be able to use its own model at general availability. The November 18 CCI announcement now lists this as "coming soon", so it did not arrive with general availability. Pro-code agents built in Foundry can join that team, and Microsoft IQ is available to all of them.
 
 The part I like most is that generative and scripted behavior live side by side. A skill can be left to the model, or it can follow a fixed topic step by step. In a regulated contact center that is exactly what you need. You let the model handle the open "my bill looks wrong" conversation, and you script the identity check and the payment word for word.
 
 Two practical notes from Microsoft Learn. You can start building in Copilot Studio or in the CCI portal, but only the portal connects the agent to a live contact center. And agents on this harness are billed in Copilot Credits.
 
-In my view, this is the first time Microsoft treats the customer conversation as its own design problem instead of a variation of an internal assistant. I would build with it now to learn, but I would hold back a large rollout until general availability, mostly because per-agent model choice arrives then and it changes the cost picture.
+In my view, this is the first time Microsoft treats the customer conversation as its own design problem instead of a variation of an internal assistant. With general availability, it is ready for production pilots. I would still keep the first rollout narrow. Per-agent model choice is not there yet, and it will change the cost picture once it arrives.
 
 ## The three harnesses in Copilot Studio
 
@@ -98,7 +106,7 @@ This is roughly how I explain the choice in customer workshops:
 | Example | Internal help desk | Accounts payable exceptions | Billing hotline with a payment step |
 | Billing | Included with some licenses, or consumption | Copilot Credits | Copilot Credits |
 
-Microsoft published numbers comparing the Microsoft Copilot harness with the standard one. In Teper's post, multitool performance rose from 87.0% to 98.9% and input tokens per task fell by 45%. The renaming post reports pass rates 10.8 percentage points higher with an OpenAI model and 22.1 points higher with an Anthropic model. These come from Microsoft's own evaluations. I take them as a sign of direction, not as a promise for your process.
+Microsoft published numbers comparing the Microsoft Copilot harness with the standard one. In Teper's post, multitool performance rose from 87.0% to 98.9% and input tokens per task fell by 45%. The renaming post reports pass rates 10.8 percentage points higher with an OpenAI model and 22.1 points higher with an Anthropic model. These come from Microsoft's own evaluations. I take them as a sign of direction, not as a promise for your process. A customer example from Jason Moore's November 18 post is more useful to me: by adding a Copilot Studio agent to its finance automation, Asurion raised touchless invoice processing from less than 20% to more than 70%.
 
 There is also a preview that upgrades a standard agent to the Microsoft Copilot harness. It carries over instructions, tools, and prompts, rebuilds topics as skills or workflows, and gives you a report of what moved and what did not. Useful, but try it on a few agents before you trust it with a whole estate.
 
@@ -119,7 +127,7 @@ From the business side, this helps with the work that happens around a conversat
 
 In process digitalization there is often a gap between a person starting a workflow and the system running it on its own. These announcements help close it.
 
-Teper wrote that Agent Accounts enter public preview in December 2026, together with memory and triggers. An agent with its own account gets a Microsoft Entra ID, a mailbox, and a presence in Teams, according to Microsoft Learn. People can hand it work in a document, by email, or in Teams, and it keeps going. Business process memory, announced in October, means that a detail one colleague explains to the agent becomes shared context for everyone else using it. Triggers start the agent when something happens, such as a new email or a new SharePoint item, and the Book of News adds a Work IQ "listen" capability in preview so agents can react to new messages or business events. Work IQ also gets finer policies and human approval options in preview.
+Teper wrote that Agent Accounts enter public preview in December 2026, together with memory and triggers, and Jason Moore confirmed the December date on November 18. The accounts give Copilot Studio agents managed credentials and access to approved resources. An agent with its own account gets a Microsoft Entra ID, a mailbox, and a presence in Teams, according to Microsoft Learn. People can hand it work in a document, by email, or in Teams, and it keeps going. Business process memory, announced in October, means that a detail one colleague explains to the agent becomes shared context for everyone else using it. Triggers start the agent when something happens, such as a new email or a new SharePoint item, and the Book of News adds a Work IQ "listen" capability in preview so agents can react to new messages or business events. Work IQ also gets finer policies and human approval options in preview.
 
 Together, this lets you design a process in which an agent is a named participant. Think of a complaints mailbox owned by an agent. It reads each complaint, opens a case, asks for missing details, and passes the case to a person when the rules say so. Its actions are logged under its own name, not under the maker's account, which is a big step forward for audit.
 
@@ -149,6 +157,8 @@ Copilot Managed Runtime is generally available. It hosts and governs apps built 
 
 For process teams the more interesting news is the developer story. The first version of Agents and Workflows in Copilot Managed Runtime lets developers build Copilot Studio agents and workflows locally, work on them with their own tools, publish with the CLI, and keep them under version control in GitHub. Apps that need a database or storage can also use Fabric as their backend.
 
+Jason Moore's November 18 post adds more for teams that build together. Agent sharing is generally available, so several makers can work on the same agent in Copilot Studio. Command-line tools and Copilot Studio MCP are in public preview, so developers and their AI assistants can work with Copilot Studio components from their own tools. Business users can also start agents and workflows in natural language from Copilot Cowork or Copilot Code, in public preview, and those agents land in Copilot Studio where IT can govern them.
+
 This helps speed, but it also creates a support risk. The line between "a tracker someone built over lunch" and "a business application" is getting very thin. That is good for speed. It is bad for whoever has to support it two years later. I would set some simple rules early: who may publish, which data backends are allowed, and when an app has to move into a proper solution with an owner.
 
 ## Windows 365 for Agents
@@ -165,7 +175,7 @@ A busy contact center makes thousands of small decisions every hour. Which inten
 
 Microsoft-Decision-1.1 is generally available in Foundry, and the Book of News describes it as built for "routing, classification, prioritization, verification and workflow control". It returns confidence scores, so an application can hand the case to a person or a larger model when it is unsure. Microsoft already uses it to route requests in Copilot and to set reasoning effort in Cowork.
 
-It is not a contact center product, but it fits contact center design well. A small model that makes the quick call, a larger model for the hard cases, and the confidence score as a clear rule for when a human steps in. That is a pattern I want to try for intent detection and case classification.
+It is not a contact center product, but it fits contact center design well. A small model that makes the quick call, a larger model for the hard cases, and the confidence score as a clear rule for when a human steps in. That is a pattern I want to try for intent detection and case classification. Copilot Studio is moving the same way. According to Jason Moore, the classify node in workflows now uses a decision-scoring model by default, for scenarios like email triage and routing.
 
 ## Governance and security for agents
 
@@ -210,7 +220,7 @@ If you run a contact center platform from another vendor, the journey should go 
 
 While you build, make three decisions properly, because they will shape everything that follows. Decide which knowledge a customer-facing agent may read and which stays internal. Decide who owns the agent on the business side and what it must hand over to a person. And decide how the usage cost is measured and charged, so you can put AI cost per resolved contact next to the number your service leaders already track. Get your data protection officer involved early if voice or biometrics are part of the journey.
 
-Use the Customer Conversation harness in that pilot to learn, but keep the larger rollout for general availability. The same goes for Agent Accounts and the cost tooling, which are still in preview or Frontier.
+The Customer Conversation harness is now generally available, so it can carry that pilot. I would keep the scope narrow until per-agent model choice arrives, because it changes the cost per conversation. Agent Accounts and the cost tooling are still in preview or Frontier, so treat them as things to test, not to build on yet.
 
 In my view, this Ignite is less about one big product and more about the pieces finally fitting together for customer service. The organizations that get value first will not be the ones with the most agents. They will be the ones that treated knowledge, ownership, and cost as design decisions from the first day.
 
@@ -220,6 +230,8 @@ In my view, this Ignite is less about one big product and more about the pieces 
 - Microsoft Dynamics 365 Blog, Jeff Teper, [Microsoft Ignite 2026: Introducing Dynamics 365 in Copilot](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/), November 17, 2026: the three-part frame of experience, context, and governance; Customer Service plugin general availability; Microsoft Copilot harness general availability and evaluation figures; Agent Accounts public preview in December 2026; CCI general availability; Dynamics 365 integration with Work IQ; Activate figures
 - Microsoft Copilot Blog, Jared Spataro, [Copilot at Microsoft Ignite: Expanding what's possible with intelligence built for work](https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/), November 17, 2026: 13 customer service skills, review before commit, Autopilot identity and named manager, Agent 365 Business Analytics
 - Microsoft Learn, [What's new in Microsoft Contact Center Intelligence](https://learn.microsoft.com/en-us/contact-center-intelligence/implement/whats-new-contact-center-intelligence), last updated November 17, 2026: CCI capabilities generally available in November 2026, including Genesys Cloud guidance, universal connector, quality insights, biometric authentication, and Copilot Studio agent reuse
+- Microsoft Dynamics 365 Blog, Omar Aftab, [Microsoft Contact Center Intelligence now generally available: Transform customer interactions](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/microsoft-contact-center-intelligence-now-generally-available-transform-customer-interactions/), November 18, 2026: CCI general availability; partnerships with Avaya, Cisco, and Five9; Microsoft AI Realtime 1; per-agent model choice "coming soon"; context and voice authentication carried over in handoff; Agent 365 registry on creation; upgrade path to Dynamics 365 Contact Center
+- Microsoft Copilot Blog, Jason Moore, [Build and manage business processes with Microsoft Copilot Studio](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-and-manage-business-processes-with-microsoft-copilot-studio/), November 18, 2026: Customer Conversation harness general availability; agent accounts public preview in December 2026; Asurion example; classify node with decision-scoring model; agent sharing general availability; command-line tools and Copilot Studio MCP preview; agent and workflow creation from Cowork and Code preview
 - Microsoft Dynamics 365 Blog, Darya Mazandarany, [Microsoft Contact Center Intelligence: Transforming customer experience at agentic speed](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/10/21/microsoft-contact-center-intelligence-transforming-customer-experience-at-agentic-speed/), October 21, 2026: CCI public preview launch, open connector, three agents, Service Operations Agent "coming soon"
 - Microsoft Community Hub, Omar Aftab, [Introducing the customer conversation harness in Microsoft Copilot Studio](https://techcommunity.microsoft.com/blog/copilot-studio-blog/introducing-the-customer-conversation-harness-in-microsoft-copilot-studio/4563954), October 21, 2026: harness design, sub-agents, generative and deterministic skills, per-agent model at GA, Foundry and Microsoft IQ integration, billing dispute example
 - Microsoft Learn, [Harnesses in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview): definition of a harness, the three harnesses, Copilot Credits for the Microsoft Copilot and Customer Conversation harnesses
