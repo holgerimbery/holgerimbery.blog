@@ -195,7 +195,7 @@ For mixed estates this is good news, because you do not have to pick one CRM to 
 
 This is my own simplified picture of a customer service organization on the Microsoft stack after Ignite. It is not a Microsoft diagram.
 
-![](/images/2026/11/cs-agent-architecture-flowchart.png)
+![](https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/11/cs-agent-architecture-flowchart.png)
 
 
 The customer side and the employee side now run on different harnesses, but they share one context layer and one set of controls. If they end up reading different knowledge or following different rules, customers will feel it.
