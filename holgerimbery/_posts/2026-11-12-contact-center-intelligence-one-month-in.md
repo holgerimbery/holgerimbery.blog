@@ -15,7 +15,7 @@ tags:
     - Governance
 canonical_url: https://holgerimbery.blog/contact-center-intelligence-month-prepare-ga-dates
 slug: contact-center-intelligence-month-prepare-ga-dates
-featured: true
+featured: false
 toc: true
 image_caption: Photo by <a href="https://unsplash.com/@machec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Petr Macháček</a> on <a href="https://unsplash.com/photos/black-and-brown-headset-near-laptop-computer-BeVGrXEktIk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/11/petr-machacek-BeVGrXEktIk-unsplash.jpg
