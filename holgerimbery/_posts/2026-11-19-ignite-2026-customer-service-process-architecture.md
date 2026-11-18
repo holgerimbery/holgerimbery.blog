@@ -195,33 +195,8 @@ For mixed estates this is good news, because you do not have to pick one CRM to 
 
 This is my own simplified picture of a customer service organization on the Microsoft stack after Ignite. It is not a Microsoft diagram.
 
-```text
-Customers (voice, chat, messaging, email)
-        |
-Contact center platform (Dynamics 365 Contact Center or existing CCaaS)
-        |                     \
-        |                      Contact Center Intelligence (CCI)
-        |                      * Customer Assist Agent
-        |                      * Quality Assurance Agent
-        |                      * Voice biometrics
-        |
-Customer Conversation harness agents (Copilot Studio / CCI portal)
-        |            \
-        |             Escalation to human representatives
-        |
-Employees and process agents
-* Copilot and Cowork with the Customer Service plugin
-* Microsoft Copilot harness agents with Agent Accounts and triggers
-* Apps and workflows on Copilot Managed Runtime
-        |
-Context: Microsoft IQ (Work IQ, Fabric IQ, Foundry IQ, Web IQ)
-        |
-Systems of record: Dynamics 365, other CRM, ERP, legacy apps
-(legacy screens via Windows 365 for Agents)
+![](/images/2026/11/cs-agent-architecture-flowchart.png)
 
-Around everything: Agent 365, Entra Agent ID, Purview, Defender,
-Agent 365 Cost Management
-```
 
 The customer side and the employee side now run on different harnesses, but they share one context layer and one set of controls. If they end up reading different knowledge or following different rules, customers will feel it.
 
