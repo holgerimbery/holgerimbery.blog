@@ -9,7 +9,7 @@ gem "logger"
 gem "bigdecimal"
 gem "ostruct"
 gem "fastimage", "~> 2.3"
-gem "nokogiri", "~> 1.18"
+gem "nokogiri", "~> 1.19"
 
 group :test do
   gem "minitest", "~> 5.0"
