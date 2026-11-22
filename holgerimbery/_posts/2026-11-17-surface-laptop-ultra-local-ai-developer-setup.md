@@ -19,7 +19,7 @@ tags:
   - windowsml
   - windowsonarm
   - wsl
-featured: true
+featured: false
 toc: true
 ---
 
