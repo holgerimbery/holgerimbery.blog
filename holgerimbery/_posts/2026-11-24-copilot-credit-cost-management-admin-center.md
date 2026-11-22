@@ -21,11 +21,11 @@ toc: true
 ---
 
 {: .q-left }
-> In [Agent FinOps in the Microsoft Ecosystem](https://holgerimbery.blog/agent-finops-microsoft-ecosystem) I described how hard it is to see what agents really cost. The October Copilot Studio update, published on November 4, 2026, adds the first piece that looks like a real meter. This article covers what Microsoft announced, what it does not tell us yet, and how I would set it up with customers.
+> In [Agent FinOps in the Microsoft Ecosystem](https://holgerimbery.blog/agent-finops-microsoft-ecosystem) I described how hard it is to see what agents really cost. The October Copilot Studio update, published on November 4, 2026, adds the first piece that looks like a real meter. This article covers what Microsoft announced, what it still doesn't tell us, and how I would set it up with customers.
 
 ## Introduction
 
-For most of this year, agent cost work in my projects looked the same. We had an estimate from planning, a billing view in one portal, a usage view in another, and a spreadsheet that tried to connect them. When a business owner asked what their agent cost last month, the honest answer was "give me a day".
+For most of this year, agent cost work in my projects looked the same. We had an estimate from planning, a billing view in one portal, a usage view in another, and a spreadsheet that tried to connect them. When a business owner asked what their agent cost last month, the honest answer was, "Give me a day."
 
 The October update to Copilot Studio changes that in two places. Makers can see Copilot Credits while they build. Admins get a central view with spending limits and alerts in the Microsoft 365 admin center. I think this is the start of real agent FinOps in the Microsoft stack. It is still a preview, and a limit only works if a named person owns the budget behind it and reads the alerts.
 
@@ -52,11 +52,11 @@ The post does not say when the feature will be generally available. It does not 
 
 Agent costs are hard because they do not follow licenses. A Microsoft 365 Copilot license is a fixed price per user. Copilot Credits follow behavior: how often people use an agent, how long the conversations run, which tools it calls, and how many workflow runs happen at night when nobody is watching.
 
-Until now, our tools were mostly for planning, such as estimators and licensing guides. They do not tell you that a workflow started looping on Tuesday. A central view with trends and remaining capacity helps after go-live, where most of the money is spent.
+Until now, our tools were mostly for planning, such as estimators and licensing guides. They do not tell you that a workflow started looping on Tuesday. A central view with trends and remaining capacity helps after go-live, when most of the money is spent.
 
 The maker side matters just as much, in my view. In workshops, makers almost never think about cost, because they cannot see it. When credit use appears next to the test pane, it becomes part of design. A maker sees that one node in a workflow uses most of the credits per run and asks whether that step needs a model at all.
 
-I would push back on one part of Microsoft's framing, though. The post says makers can find ways to cut costs before deployment. Test traffic is not production traffic. Makers test with short, clean questions. Real users paste long emails, ask follow-ups, and retry when they do not like an answer. In my experience, credits seen in testing are a lower bound, not a forecast. Use them to compare design options, not to set the budget.
+I would push back on one part of Microsoft's framing, though. The post says makers can cut costs before deployment. Test traffic is not production traffic. Makers test with short, clean questions. Real users paste long emails, ask follow-ups, and retry when they do not like an answer. In my experience, credits seen in testing are a lower bound, not a forecast. Use them to compare design options, not to set the budget.
 
 ## Architecture implications
 
@@ -69,11 +69,11 @@ The main design question is which kind of limit fits which kind of agent.
 
 User-based limits make sense where a person starts each piece of work. Cowork is the clearest case. A group-level limit stops a few heavy users from using a whole department's budget.
 
-Agent-based limits make sense where no single user drives the cost. An agent that runs on triggers, a nightly workflow, or a customer-facing agent built on the new customer conversation harness all fall into this group. Here a user limit does not help, because the "user" is a schedule or an external customer.
+Agent-based limits make sense where no single user drives the cost. Agents that run on triggers, nightly workflows, or customer-facing agents built on the new customer conversation harness all fall into this group. Here, a user limit doesn't help, because the "user" is a schedule or an external customer.
 
-The catch is the scope. Microsoft says agent-based limits work at environment level. As I read it, every agent and workflow in that environment shares the limit. That makes environment design a cost decision. If a high-volume customer agent sits in the same environment as twenty small team agents, one limit covers all of them, and the busy one can use up the room the others need. My recommendation is to give each high-volume or business-critical agent its own environment, or at least a small group of agents that share one budget owner. That adds admin effort, but less than explaining why an agent stopped because of somebody else's usage.
+The catch is the scope. Microsoft says agent-based limits work at the environment level. As I read it, every agent and workflow in that environment shares the limit. That makes environment design a cost decision. If a high-volume customer agent sits in the same environment as twenty small team agents, one limit covers all of them, and the busy one can use up the room the others need. My recommendation is to give each high-volume or business-critical agent its own environment, or at least a small group of agents that share one budget owner. That adds admin effort, but less than explaining why an agent stopped because of somebody else's usage.
 
-For a team agent that also calls workflows, I would set both kinds of limit and accept some overlap.
+For a team agent that also calls workflows, I would set both kinds of limits and accept some overlap.
 
 ## Governance implications
 
@@ -87,7 +87,7 @@ The first governance question is ownership, and the feature does not answer it f
 
 My answer is a split. IT owns the controls and the environment layout. The business owner owns the budget number for each agent or group, and gets the alerts. A FinOps function, where one exists, owns the reporting rhythm and the rules for changing limits.
 
-The second question is what happens when a limit is reached. Microsoft has not said this in the post. We do not know if a user sees a clear message, if a workflow fails or waits, or if an agent stops in the middle of a conversation. Until that is documented, I treat a limit as a possible outage. For a team agent, a stop is annoying. For a customer-facing agent, it is a service incident. For a nightly workflow, it may be a failed run nobody notices.
+The second question is what happens when a limit is reached. Microsoft has not said this in the post. We do not know whether a user sees a clear message, a workflow fails or waits, or an agent stops in the middle of a conversation. Until that is documented, I treat a limit as a possible outage. For a team agent, a stop is annoying. For a customer-facing agent, it is a service incident. For a nightly workflow, it may be a failed run nobody notices.
 
 So I am skeptical that limits alone give control. A limit with no owner and no plan only moves the problem from Finance to the help desk.
 
