@@ -23,7 +23,7 @@ toc: true
 ---
 
 {: .q-left }
-> Autopilot is the first Microsoft 365 agent that keeps working when you are not looking at it. Microsoft gave it an identity, a manager, scoped access, and its own audit trail. That covers the technology. It does not answer who decides what it may do, what it must confirm, and who reads its work afterwards. This article argues that you should onboard Autopilot like a new hire, and shows what that looks like in practice.
+> Autopilot is the first Microsoft 365 agent that keeps working when you are not looking at it. Microsoft gave it an identity, a manager, scoped access, and its own audit trail. That covers the technology. It doesn't answer who decides what it may do, what it must confirm, or who reads its work afterward. This article argues that you should onboard Autopilot like a new hire, and shows what that looks like in practice.
 
 ## Introduction
 
@@ -39,17 +39,17 @@ The [Microsoft Copilot Blog post by Jared Spataro](https://www.microsoft.com/en-
 
 Home has one composer powered by Auto. Auto picks the model and the effort level for a task, and for bigger jobs it may suggest moving the work from Chat to Cowork. Inside Home sits Today, a view across mail, calendar, Teams threads, meetings, and tasks that prepares drafts and follow-ups for you. Today is in private preview in the Copilot app and Outlook.
 
-Workspaces, described as "the evolution of Copilot Notebooks", is a shared space where people and agents work toward a common goal. It is available in Frontier. Copilot Code lets people describe an app, a dashboard, or a desktop widget and have Copilot build it. Those apps run on Copilot Managed Runtime, "with every app visible and managed in the Microsoft 365 admin center".
+Workspaces, described as "the evolution of Copilot Notebooks", are a shared space where people and agents work toward a common goal. It is available in Frontier. Copilot Code lets people describe an app, a dashboard, or a desktop widget and have Copilot build it. Those apps run on Copilot Managed Runtime, "with every app visible and managed in the Microsoft 365 admin center".
 
-Then Autopilot. Microsoft calls it "a trusted autonomous agent that is personal to you, always on". It "lives in your tenant and has its own identity, memory, and tools". It shows up in Teams, Outlook, chats, channels, and documents, and you can @mention it. The example in the post is a full supplier review process, from schedule and workback plan to meetings, follow-ups, and reaching out to stakeholders for updates.
+Then Autopilot. Microsoft calls it "a trusted autonomous agent that is personal to you, always on". It "lives in your tenant and has its own identity, memory, and tools". It shows up in Teams, Outlook, chats, channels, and documents, and you can @mention it. The example in the post covers the full supplier review process, from scheduling and the workback plan to meetings, follow-ups, and reaching out to stakeholders for updates.
 
-The controls are stated in three sentences that every IT architect should read twice. "Each Autopilot has its own Microsoft Entra Agent ID and a named manager. IT can scope its access and block it anytime. Its sign-ins and actions are logged under its own name." It works within existing permissions, users decide what work it takes on, and it "can check with you before key actions".
+The controls are stated in three sentences that every IT architect should read twice. "Each Autopilot has its own Microsoft Entra Agent ID and a named manager. IT can scope its access and block it at any time. Its sign-ins and actions are logged under its own name." It works within existing permissions, users decide what work it takes on, and it "can check with you before key actions".
 
 On the commercial side, Microsoft describes a per-user subscription plus a usage-based consumption model for the hardest tasks, and says it will move more capability into the subscription over time. The post also says nearly 80% of the Fortune 500 use Cowork. That is a vendor statement, and I treat it as one.
 
 ## Why it matters
 
-The easiest way to see the change is to look at the four ways of working that the new Copilot now covers. Microsoft frames them as asking, handing off, building, and following through. I find it more useful to look at them by risk, because the risk profile is very different for each.
+The easiest way to see the change is to look at the four ways of working that the new Copilot now covers. Microsoft frames them as asking, handing off, building, and following through. I find it more useful to look at them by risk, because the risk profile differs for each.
 
 | Work mode | Experience | Who starts each step | Typical risk | Main control |
 |---|---|---|---|---|
@@ -66,7 +66,7 @@ I also want to challenge part of Microsoft's framing here. Autopilot is called "
 
 ## Architecture implications
 
-The good news first. Autopilot is not a side system. It sits on Entra, inside the tenant, with its own Microsoft Entra Agent ID. For architects this means the agent can be treated as a first-class identity: it can be scoped, blocked, and tracked in sign-in logs like any other identity.
+The good news first. Autopilot is not a side system. It sits on Entra, inside the tenant, with its own Microsoft Entra Agent ID. For architects, this means the agent can be treated as a first-class identity: scoped, blocked, and tracked in sign-in logs like any other identity.
 
 The less comfortable part is "within existing permissions". Microsoft presents this as a safety feature, and in a clean tenant it is. Most tenants I see are not. Old Teams with broad membership, sites shared with "everyone except external users", forgotten mailbox delegations. A human rarely notices them. An always-on agent that watches channels and reads context will find them. So I would not read "existing permissions" as reassurance. I would read it as a reason to finish the permission cleanup you probably postponed during the first Copilot rollout.
 
@@ -74,13 +74,13 @@ The announcement does not say exactly how an Autopilot's permissions relate to i
 
 Memory is the second point. Autopilot "has its own identity, memory, and tools". Memory across weeks keeps the thread of a supplier review. It also lets information travel between tasks in ways a user may not expect. I would want to know how that memory is retained, where it is stored, and what happens to it when the agent is retired. The post does not cover that either.
 
-Cost is the third point. Microsoft describes a subscription plus a usage-based model for the hardest tasks. The post does not say where Autopilot falls in that model. An agent that runs recurring work without a prompt is, by design, an agent that consumes capacity without a prompt. Before scaling, I want real pilot consumption figures, not an estimate.
+Cost is the third point. Microsoft describes a subscription-plus, usage-based model for the hardest tasks. The post does not say where Autopilot falls in that model. An agent that runs recurring work without a prompt is, by design, an agent that consumes capacity without a prompt. Before scaling, I want real pilot consumption figures, not an estimate.
 
-Finally, Workspaces and Code add more actors. Workspaces puts people and agents in one shared space, and Code creates apps that live on Copilot Managed Runtime. Together they mean your tenant will soon hold agents, apps, and shared spaces created by business users. Admin center visibility for apps is a good start. Decide early who owns that inventory.
+Finally, Workspaces and Code add more actors. Workspaces put people and agents in one shared space, and Code creates apps that live on Copilot Managed Runtime. Together, they mean your tenant will soon hold agents, apps, and shared spaces created by business users. Admin center visibility for apps is a good start. Decide early who owns that inventory.
 
 ## Governance implications
 
-Here is where the new-hire comparison becomes practical. When someone joins a team, four things usually happen. They get a role description, they get access to what they need and no more, they learn which decisions they may make alone, and their manager checks their work for the first weeks. Autopilot needs the same four things.
+Here is where the new-hire comparison becomes practical. When someone joins a team, four things usually happen. They get a role description, access to what they need and no more, learn which decisions they can make alone, and have their manager check their work for the first few weeks. Autopilot needs the same four things.
 
 **The role.** Write one short paragraph for each Autopilot: what work it does, for whom, and in which channels. "Runs the quarterly supplier review for the procurement team" is a role. "Helps Anna with her work" is not.
 
@@ -92,7 +92,7 @@ Here is where the new-hire comparison becomes practical. When someone joins a te
 
 Now the named manager. This is the part I find most promising and least defined. Microsoft says each Autopilot has a named manager. It does not say what that person must do. In my view, the named manager is accountable for the agent's role description, approves changes to its scope, reviews its activity on a fixed rhythm, is the contact when someone complains about it, and decides when it is retired. If your organization cannot name a person willing to do that, you are not ready for that Autopilot.
 
-The second assumption I would challenge is the audit story. "Logged under its own name" is a real improvement. Security teams can see that the agent signed in and acted, and they can separate its actions from those of the human. That answers "who did this". It does not answer "why did it do this", "who asked it to", or "was this within its role". The log records actions, not intent or instructions. For that you still need the role description and the manager review. Audit tells you what happened. Management tells you whether it should have happened.
+The second assumption I would challenge is the audit story. "Logged under its own name" is a real improvement. Security teams can see that the agent signed in and acted, and they can separate its actions from the human's. That answers "who did this". It does not answer "why did it do this", "who asked it to", or "was this within its role". The log records actions, not intent or instructions. For that, you still need the role description and the manager review. Audit tells you what happened. Management tells you whether it should have happened.
 
 Offboarding belongs here too. When the owner of an Autopilot changes jobs, what happens to the agent, its memory, and its open tasks? IT can block an Autopilot at any time, which is good. But blocking is an emergency control. You also need a normal way to hand over or retire an agent, the same way you hand over a mailbox.
 
@@ -102,7 +102,7 @@ Autopilot is rolling out to Frontier first, which gives you a natural pilot phas
 
 1. **Pick two to three real processes, not volunteers.** Choose recurring, well-understood work such as a supplier review, a weekly status collection, or follow-ups after a project meeting. Avoid starting with a group of enthusiasts who will each invent their own use.
 2. **Write a role card for every Autopilot.** One paragraph with purpose, channels, allowed actions, actions that need confirmation, and actions that are not allowed. Store it where the named manager and IT can both find it.
-3. **Name a manager who accepts the job.** The named manager should be a person close to the work, not the IT admin by default. Agree on what that role involves before the agent starts.
+3. **Name a manager who accepts the job.** The named manager should be someone close to the work, not the IT admin by default. Agree on what that role involves before the agent starts.
 4. **Clean up permissions in the pilot scope first.** Review the Teams, sites, and mailboxes the pilot users can reach. Fix the obvious oversharing before an agent starts reading it.
 5. **Define key actions and make confirmation the default.** Start with confirmation on all external messages and group communication. Remove confirmation only where the manager has seen enough good results.
 6. **Connect the audit trail to someone who reads it.** Make sure the agent's sign-ins and actions reach your security monitoring, and agree on a weekly review by the named manager against the role card.
