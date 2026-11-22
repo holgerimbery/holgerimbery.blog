@@ -26,9 +26,6 @@ toc: true
 {: .q-left }
 > Ignite 2026 ran from November 17 to 20 in San Francisco and online, and the Book of News was long again. Most of it was about Azure, Foundry, security, and Windows, and very little of it mentioned customer service by name. Still, when I read it with my customer service and process glasses on, a lot of it changes how I would design a service organization today. Now that the event is over, this article is my review of the week. I wrote it for the people who decide where the money goes and for the people who build what was decided. After this Ignite, those two groups need to talk to each other more than before.
 
-{: .note }
-I first wrote this article on November 19, while Ignite was still running, and updated it on November 20, the last day of the event. This version turns it into a review after the event. It adds a summary of the week, my main takeaways, Microsoft's new tools for improving agents in production, and a note on what migration decisions mean for agents.
-
 ## Key announcements and their status
 
 These are the announcements I think matter for customer service and process work, along with the status Microsoft provided.
