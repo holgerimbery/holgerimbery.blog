@@ -95,8 +95,6 @@ The third point is billing. Capacity packs, P3, and pay-as-you-go suit different
 
 ## Practical recommendations
 
-Here is what I would do in the next 30 to 90 days.
-
 1. **Name a budget owner for each production agent.** If nobody wants to own the budget, question whether the agent should stay in production.
 2. **Review your environment layout with cost in mind.** Move high-volume and customer-facing agents into their own environments before you set agent-based limits.
 3. **Start with alerts, not hard limits.** Watch the trends for a few weeks so your limits reflect real usage and not guesses.
