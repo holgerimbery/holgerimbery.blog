@@ -98,7 +98,7 @@ Offboarding belongs here too. When the owner of an Autopilot changes jobs, what 
 
 ## Practical recommendations
 
-Autopilot is rolling out to Frontier first, which gives you a natural pilot phase. Here is what I would do with it.
+Autopilot is rolling out to Frontier first, which gives you a natural pilot phase. 
 
 1. **Pick two to three real processes, not volunteers.** Choose recurring, well-understood work such as a supplier review, a weekly status collection, or follow-ups after a project meeting. Avoid starting with a group of enthusiasts who will each invent their own use.
 2. **Write a role card for every Autopilot.** One paragraph with purpose, channels, allowed actions, actions that need confirmation, and actions that are not allowed. Store it where the named manager and IT can both find it.
