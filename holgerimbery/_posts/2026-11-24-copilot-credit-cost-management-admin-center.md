@@ -16,7 +16,7 @@ tags:
   - governance
   - m365admincenter
   - microsoft365
-featured: false
+featured: true
 toc: true
 ---
 
