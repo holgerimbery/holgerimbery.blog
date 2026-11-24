@@ -29,11 +29,11 @@ toc: true
 
 ## The hardware: NVIDIA RTX Spark
 
-NVIDIA and Microsoft announced RTX Spark on May 31, 2026, at NVIDIA GTC Taipei during Computex. NVIDIA calls it a superchip. It combines an NVIDIA Blackwell RTX GPU with 6,144 CUDA cores and fifth generation Tensor Cores with FP4 support, and a 20 core NVIDIA Grace CPU. The two are connected through NVLink-C2C. MediaTek worked with NVIDIA on the CPU design.
+NVIDIA and Microsoft announced RTX Spark on May 31, 2026, at NVIDIA GTC Taipei during Computex. NVIDIA calls it a superchip. It combines an NVIDIA Blackwell RTX GPU with 6,144 CUDA cores and fifth-generation Tensor Cores with FP4 support, and a 20-core NVIDIA Grace CPU. The two are connected through NVLink-C2C. MediaTek worked with NVIDIA on the CPU design.
 
 NVIDIA rates the chip at up to 1 petaflop of FP4 AI performance (with sparsity) and up to 128 GB of unified memory. Microsoft says it can run models with up to 120B parameters locally. RTX Spark PCs also join the Copilot+ PC category, with an NPU next to the GPU.
 
-The CPU is Arm. So these are Windows on Arm laptops, like the Snapdragon based Surface devices of the last few years, but with a much stronger GPU and far more memory. Microsoft says it tuned Windows for the chip. The changes include better scheduling across all 20 cores, the Microsoft Power and Thermal Framework, a higher limit on how much system memory the GPU can use, better handling of large memory pages, and a Prism emulator tuned for the chip so x64 apps keep running.
+The CPU is Arm. So these are Windows on Arm laptops, like the Snapdragon-based Surface devices of the last few years, but with a much stronger GPU and far more memory. Microsoft says it tuned Windows for the chip. The changes include better scheduling across all 20 cores, the Microsoft Power and Thermal Framework, a higher limit on how much system memory the GPU can use, better handling of large memory pages, and a Prism emulator tuned for the chip so x64 apps keep running.
 
 NVIDIA lists devices from Microsoft Surface, ASUS, Dell, HP, Lenovo, and MSI, with Acer and GIGABYTE to follow. Microsoft opened pre-orders for Surface Laptop Ultra and the Surface RTX Spark Dev Box on October 7, 2026.
 
@@ -51,9 +51,9 @@ I use one machine for everything in this article: my own Surface Laptop Ultra wi
 | OS | Windows 11 Pro |
 | Device class | Copilot+ PC, Secured-core PC |
 
-Microsoft's store lists the version with the 6,144 core GPU and 20 core CPU from $3,699.99. The 128 GB option sits at the top of the range.
+Microsoft's store lists the version with the 6,144-core GPU and 20-core CPU from $3,699.99. The 128 GB option sits at the top of the range.
 
-I bought the 128 GB model for one reason. The GitHub Copilot app needs at least 96 GB of free memory (RAM and GPU combined) for its local model MAI Code 1.1 Flash. On a 64 GB laptop, that model does not run.
+I bought the 128 GB model for one reason. The GitHub Copilot app needs at least 96 GB of free memory (RAM and GPU combined) to run its local model, MAI Code 1.1 Flash. On a 64 GB laptop, that model does not run.
 
 ### How the 128 GB is split on my laptop
 
@@ -85,8 +85,8 @@ Model names look cryptic, but most of them are built from the same few parts. Ta
 
 What this means in practice:
 
-* **Memory** comes from total parameters times bits per weight. A 120B model at 4 bit needs about 60 GB for its weights alone.
-* **Writing speed** depends mostly on how many weights are read for each token. That is why MoE models are fast. The New Stack measured about 40 tokens per second for Gemma 4 26B-A4B (MoE) at 8 bit, and 8 to 9 tokens per second for the dense Qwen 3.8 27B at 8 bit, on a 64 GB laptop.
+* **Memory** comes from total parameters times bits per weight. A 120B model at 4-bit needs about 60 GB for its weights alone.
+* **Writing speed** depends mostly on how many weights are read for each token. That is why MoE models are fast. The New Stack measured about 40 tokens per second for Gemma 4 26B-A4B (MoE) at 8-bit, and 8 to 9 tokens per second for the dense Qwen 3.8 27B at 8-bit, on a 64 GB laptop.
 * **Reading the prompt** depends on GPU compute. Low precision formats such as FP8 and FP4 run faster on the Tensor Cores of the RTX Spark GPU.
 * **Fewer bits** save memory and add speed, but cost some quality. MAI Code 1.1 Flash runs at about 3.3 bits per weight on average, and Microsoft reports 70.8 percent on SWE-Bench Verified for it, against 72.6 percent for the cloud version. llama-bench labels the file "Q2_K", which undersells it, because some parts use about 4 bits.
 * **Context length** is often missing from the name, but long context needs extra memory. Microsoft measured a peak of 75.5 GB for MAI Code 1.1 Flash at the full 256K context.
@@ -101,7 +101,7 @@ On top of the model weights come the memory for long context, the app, and Windo
 |---|---|---|
 | 7B to 14B, 4 bit or FP8/NVFP4 | Code completion, tests, docs, short agent tasks | Easily |
 | 20B to 35B, 4 bit | My daily local coding agent | Best mix of quality and speed |
-| 60B to 70B, 4 bit | Harder problems, more context | Works, but slower and uses a lot of memory |
+| 60B to 70B, 4-bit | Harder problems, more context | Works, but slower and uses a lot of memory |
 | 100B to 120B, heavily compressed | Tests | Possible, but not for all day use |
 | Large models at full precision | Training, research | Not a good fit for this laptop |
 
@@ -109,7 +109,7 @@ Because MoE models are fast for their size, a 30B to 35B MoE model is my daily c
 
 ## What Windows ML is
 
-Microsoft Learn describes Windows ML as "the unified and high-performance local AI inferencing framework for Windows, powered by ONNX Runtime." In plain words, it is the Windows supported copy of ONNX Runtime, the open source engine that runs models in the ONNX format. On top of that, Windows delivers and updates the parts that are specific to each chip.
+Microsoft Learn describes Windows ML as "the unified and high-performance local AI inferencing framework for Windows, powered by ONNX Runtime." In plain words, it is the Windows-supported copy of ONNX Runtime, the open-source engine that runs models in the ONNX format. On top of that, Windows delivers and updates the parts that are specific to each chip.
 
 Windows ML became generally available on September 23, 2025. Microsoft first showed it at Build 2025.
 
@@ -135,13 +135,13 @@ These are the EPs that Microsoft Learn lists for Windows ML 2.x:
 
 The vendor EPs are downloaded on demand on Windows 11 version 24H2 (build 26100) or later.
 
-Since October 7, 2026, Windows ML also runs GGUF models through llama.cpp. GGUF is the file format most open models use in the llama.cpp community. Microsoft added a Text Generation API that takes GGUF and ONNX language models and picks the right engine. It also offers an OpenAI compatible local endpoint. The GGUF support, the Text Generation API, a Speech Recognition API, and a new Windows ML Runtime API are all labeled experimental.
+Since October 7, 2026, Windows ML also runs GGUF models through llama.cpp. GGUF is the file format most open models use in the llama.cpp community. Microsoft added a Text Generation API that takes GGUF and ONNX language models and picks the right engine. It also offers an OpenAI-compatible local endpoint. The GGUF support, the Text Generation API, a Speech Recognition API, and a new Windows ML Runtime API are all labeled experimental.
 
 ## TensorRT for RTX in Windows ML
 
 On NVIDIA hardware, the ONNX path in Windows ML uses the TensorRT for RTX execution provider. TensorRT is NVIDIA's inference optimizer. It was built for data center GPUs, and TensorRT for RTX is the version NVIDIA rebuilt for PCs.
 
-**Compiling on the device.** TensorRT for RTX builds the final engine for the exact GPU on the user's PC, in seconds. NVIDIA says these device specific engines can be up to 20 percent faster than generic ones.
+**Compiling on the device.** TensorRT for RTX builds the final engine for the exact GPU on the user's PC, in seconds. NVIDIA says these device-specific engines can be up to 20 percent faster than generic ones.
 
 **FP4 and FP8.** It uses FP8 and FP4 on the Tensor Cores. That matters on RTX Spark, because the 1 petaflop figure is an FP4 number, and smaller number formats need less memory.
 
@@ -181,17 +181,17 @@ The backend showed CUDA for every test, so the GPU did all the work.
 
 Both models write faster than I can read. 66 tokens per second for a model with almost 138 billion parameters is more than I expected from a laptop. At over 1,200 tokens per second, MAI Code 1.1 Flash reads a 16,000 token context in about 13 seconds. With 16,000 tokens in the context, writing got about 15 percent slower for MAI Code 1.1 Flash and about 18 percent slower for Flint NVFP4.
 
-MAI Code 1.1 Flash is heavily compressed. Microsoft shrank it from about 276 GB at 16 bit to about 53 GB, about 3.3 bits per weight on average. Microsoft reports 70.8 percent on SWE-Bench Verified for the local version, against 72.6 percent for the cloud version. I still keep hard problems for the larger cloud models.
+MAI Code 1.1 Flash is heavily compressed. Microsoft shrank it from about 276 GB at 16-bit to about 53 GB, about 3.3 bits per weight on average. Microsoft reports 70.8 percent on SWE-Bench Verified for the local version, against 72.6 percent for the cloud version. I still keep hard problems for the larger cloud models.
 
 These are my numbers on my laptop. Other drivers, llama.cpp builds, or power settings give different results. Reviewers measured 14 to 25 percent lower AI speed on battery, so I run long sessions only with the charger plugged in.
 
 ### Smart App Control and llama.cpp
 
-My first test failed. Windows showed a "Bad Image" message for a llama.cpp file. The Code Integrity log showed that Smart App Control had blocked it. Smart App Control was on by default on my new laptop. It blocks programs that Microsoft's cloud service does not know and that have no valid signature. The llama.cpp builds are not signed, and new ones come out several times a day.
+My first test failed. Windows showed a "Bad Image" message for a llama.cpp file. The Code Integrity log showed that Smart App Control had blocked it. Smart App Control was on by default on my new laptop. It blocks programs that Microsoft's cloud service doesn't recognize and that have no valid signature. The llama.cpp builds are not signed, and new ones come out several times a day.
 
 Microsoft's FAQ says "there is currently no way to bypass Smart App Control protection for individual apps." It is on or off. I turned it off, because this laptop is my developer workstation. In return, I only take llama.cpp from its official GitHub releases page, and I keep Microsoft Defender on.
 
-This matters for anyone who plans local AI on managed devices. With Smart App Control on, the local models in the GitHub Copilot app do not run. Foundry Local and cloud models still work.
+This matters for anyone planning to run local AI on managed devices. With Smart App Control on, the local models in the GitHub Copilot app do not run. Foundry Local and cloud models still work.
 
 ## Why Windows ML suits RTX Spark laptops
 
@@ -199,17 +199,17 @@ After a few weeks with the laptop, these are the reasons I build on Windows ML.
 
 ### 1. RTX Spark is a new platform
 
-RTX Spark puts an Arm CPU and a full NVIDIA GPU together. Most AI code on Windows was written for x64 with an NVIDIA or AMD graphics card, or for Arm with a Qualcomm NPU. I saw on my own laptop what that means. Many CUDA install guides assume x64, emulation does not cover drivers, and every tool that talks to the GPU needs a real Arm64 version. NVIDIA's own porting guide lists the steps: check dependencies for Arm64, pick a porting strategy, build, test, and check "the NVIDIA and CUDA software paths used by your application."
+RTX Spark pairs an Arm CPU with a full NVIDIA GPU. Most AI code on Windows was written for x64 with an NVIDIA or AMD graphics card, or for Arm with a Qualcomm NPU. I saw what that means on my own laptop. Many CUDA install guides assume x64; emulation does not cover drivers, and every tool that talks to the GPU needs a real Arm64 version. NVIDIA's own porting guide lists the steps: check dependencies for Arm64, pick a porting strategy, build, test, and check "the NVIDIA and CUDA software paths used by your application."
 
 With Windows ML, Microsoft and NVIDIA own the engine and the NVIDIA provider. My app calls the same API on an RTX Spark laptop, a Snapdragon laptop, and an Intel desktop with a GeForce card. The app still has to be built for Arm64, but I do not port an inference engine.
 
 ### 2. One app build for a mixed fleet
 
-Few companies will buy only RTX Spark laptops. A typical fleet has Intel and AMD laptops, some Snapdragon Copilot+ PCs, a few workstations with RTX cards, and now some RTX Spark devices for developers and creators. Microsoft's GA announcement says Windows ML supports different hardware "without multiple app builds." It also says that not shipping runtimes and EPs saves "tens to hundreds of megabytes" in app size. An app can set a policy, for example prefer the GPU for speed or prefer the NPU for battery life, and let the runtime choose.
+Few companies will buy only RTX Spark laptops. A typical fleet has Intel and AMD laptops, some Snapdragon Copilot+ PCs, a few workstations with RTX cards, and now some RTX Spark devices for developers and creators. Microsoft's GA announcement says Windows ML supports different hardware "without multiple app builds." It also says that not shipping runtimes and EPs saves "tens to hundreds of megabytes" in app size. An app can set a policy, for example, prefer the GPU for speed or prefer the NPU for battery life, and let the runtime choose.
 
 ### 3. Unified memory needs a runtime that keeps data on the GPU
 
-The large shared memory only helps if the runtime does not copy data back and forth all the time. The ONNX Runtime device APIs in Windows ML let an app keep inputs and outputs on the GPU. NVIDIA's copy time numbers come from exactly this pattern. The new Windows ML Runtime API (experimental) adds "zero-copy paths" for images, video frames, audio, and text.
+Large shared memory only helps if the runtime doesn't copy data back and forth all the time. The ONNX Runtime device APIs in Windows ML let an app keep inputs and outputs on the GPU. NVIDIA's copy time numbers come from exactly this pattern. The new Windows ML Runtime API (experimental) adds "zero-copy paths" for images, video frames, audio, and text.
 
 ### 4. Updates arrive without an app release
 
@@ -217,7 +217,7 @@ TensorRT for RTX and the RTX Spark drivers change often. On my laptop, NVIDIA re
 
 ### 5. Tools for the full path from model to app
 
-Microsoft's October 7, 2026 update for Windows ML names RTX Spark and Surface Laptop Ultra directly. It adds the GGUF support, the task APIs, the Runtime API, and the Windows ML CLI. The CLI analyzes, optimizes, quantizes, compiles, and benchmarks a model for a chosen EP. Microsoft's example targets `nv_tensorrt_rtx`:
+Microsoft's October 7, 2026 update for Windows ML names RTX Spark and Surface Laptop Ultra directly. It adds GGUF support, the task APIs, the Runtime API, and the Windows ML CLI. The CLI analyzes, optimizes, quantizes, compiles, and benchmarks a model for a chosen EP. Microsoft's example targets `nv_tensorrt_rtx`:
 
 ```powershell
 winml analyze -m .\resnet18.onnx --device gpu --ep nv_tensorrt_rtx
@@ -237,7 +237,7 @@ torch.onnx.export         ->  portable ONNX model
 winml analyze/build/perf  ->  model prepared for nv_tensorrt_rtx
         |
         v
-Windows ML in the app     ->  TensorRT for RTX on RTX Spark,
+Windows ML in the app     ->  TensorRT for RTX on RTX Spark
                               QNN on Snapdragon, OpenVINO on Intel
 ```
 
@@ -245,7 +245,7 @@ Windows ML in the app     ->  TensorRT for RTX on RTX Spark,
 
 Foundry Local is the other Microsoft option for local AI on this laptop, and I use both. They are related, but they do different jobs.
 
-**What Foundry Local is.** Microsoft describes it as "an end-to-end local AI solution for shipping applications that run entirely on your device." It includes an SDK for C#, C++, JavaScript, Rust, and Python, a curated catalog of models, model download and caching, and automatic hardware selection. The catalog has chat models such as GPT OSS, Qwen, DeepSeek, Mistral, and Phi, and Whisper for speech to text. Models are versioned, so an app can pin a version. Foundry Local offers an OpenAI compatible API and an optional local web server. It runs on Windows, macOS on Apple silicon, and Linux, and needs no Azure subscription.
+**What Foundry Local is.** Microsoft describes it as "an end-to-end local AI solution for shipping applications that run entirely on your device." It includes an SDK for C#, C++, JavaScript, Rust, and Python; a curated catalog of models; model download and caching; and automatic hardware selection. The catalog includes chat models such as GPT OSS, Qwen, DeepSeek, Mistral, and Phi, as well as Whisper for speech-to-text. Models are versioned, so an app can pin a version. Foundry Local offers an OpenAI-compatible API and an optional local web server. It runs on Windows, macOS on Apple Silicon, and Linux, and needs no Azure subscription.
 
 **How the two connect.** On Windows, the package `Microsoft.AI.Foundry.Local.WinML` uses Windows ML execution providers for acceleration, and inference runs through ONNX Runtime. Learn says a model can resolve to "a CUDA variant on NVIDIA." So on my laptop, Foundry Local sits on top of the same runtime layer that Windows ML provides. The choice is between a ready model service and direct control over the runtime.
 
@@ -264,11 +264,11 @@ Foundry Local is the other Microsoft option for local AI on this laptop, and I u
 
 ### How I use Foundry Local on this laptop
 
-In my setup, Foundry Local is the second model runner. The GitHub Copilot app uses its own Windows ML models. For my own apps and tests, I wanted a separate runner with a standard API, so I picked Foundry Local. My apps always talk to the model through its OpenAI compatible API. That way the app does not depend on one tool, and I can switch to another runner or a cloud model later without rewriting the app.
+In my setup, Foundry Local is the second model runner. The GitHub Copilot app uses its own Windows ML models. For my own apps and tests, I wanted a separate runner with a standard API, so I picked Foundry Local. My apps always talk to the model through its OpenAI-compatible API. That way, the app does not depend on one tool, and I can switch to another runner or a cloud model later without rewriting the app.
 
 Two things I learned while setting it up. The current command to check the service is `foundry server status`, while some older Microsoft pages still say `foundry service status`. And Foundry Local picks a new port every time it starts, so I set the port myself with `foundry server start --port <port>`.
 
-I do not use Foundry Local for daily coding in the GitHub Copilot app. The Foundry Local catalog has small and mid size models, and the larger 30B to 35B MoE models run through llama.cpp. Microsoft says the catalog is "intentionally curated," and that its models are "small enough to distribute to end users." That makes sense for an app that must also run on a 16 GB Copilot+ PC. It also means the catalog does not try to fill a 128 GB laptop. Microsoft says Foundry Local is not meant "for general-purpose model experimentation."
+I do not use Foundry Local for daily coding in the GitHub Copilot app. The Foundry Local catalog has small and mid-size models, and the larger 30B to 35B MoE models run through llama.cpp. Microsoft says the catalog is "intentionally curated," and that its models are "small enough to distribute to end users." That makes sense for an app that must also run on a 16 GB Copilot+ PC. It also means the catalog does not try to fill a 128 GB laptop. Microsoft says Foundry Local is not meant "for general-purpose model experimentation."
 
 Microsoft also describes Foundry Local as "lightweight, single-user inference," not a server. That fits a laptop. On my laptop, Foundry Local and the Copilot app models share the same GPU memory, so I do not run both at the same time.
 
@@ -276,7 +276,7 @@ Foundry Local is also my fallback. If the Copilot app models do not run, for exa
 
 ### When I use which
 
-I use Foundry Local when the job is a known open chat or speech model inside an app, and when the same app should also run on smaller PCs or on a Mac. I use Windows ML directly when I need a model that is not in the catalog, a larger model that only the 128 GB laptop can hold, a model that is not a chat model (image, audio, or a custom classifier), or control over how TensorRT for RTX runs it. Some apps will use both, for example Foundry Local for a general assistant and Windows ML for a custom vision model.
+I use Foundry Local when the job is a known open chat or speech model inside an app, and when the same app should also run on smaller PCs or on a Mac. I use Windows ML directly when I need a model that isn't in the catalog, a larger model that only the 128 GB laptop can hold, a model that isn't a chat model (image, audio, or a custom classifier), or control over how TensorRT for RTX runs it. Some apps will use both, for example, Foundry Local for a general assistant and Windows ML for a custom vision model.
 
 ## Gaps in Windows ML on RTX Spark
 
@@ -284,23 +284,23 @@ These are the gaps I see on my laptop today.
 
 **Many new parts are experimental.** The Text Generation API, the Speech Recognition API, GGUF support, and the Runtime API are labeled experimental. Microsoft asks developers to "review the supported scenarios and known limitations before relying on them in production." The stable part is the ONNX Runtime core with its EPs. The local models in the GitHub Copilot app are in public preview.
 
-**No NVIDIA NPU provider is listed.** The Surface Laptop Ultra tech specs list an NVIDIA NPU, and Microsoft says RTX Spark PCs join the Copilot+ PC category. The table on Microsoft Learn that maps chips to EPs (last updated November 10, 2026) lists NPU providers only for Intel, Qualcomm, and AMD. So Windows ML apps on RTX Spark run on the GPU or the CPU. The GPU is fast, but it is not the low power path that an NPU gives on other Copilot+ PCs.
+**No NVIDIA NPU provider is listed.** The Surface Laptop Ultra tech specs list an NVIDIA NPU, and Microsoft says RTX Spark PCs join the Copilot+ PC category. The table on Microsoft Learn that maps chips to EPs (last updated November 10, 2026) lists NPU providers only for Intel, Qualcomm, and AMD. So Windows ML apps on RTX Spark run on the GPU or the CPU. The GPU is fast, but it is not the low-power path that an NPU gives on other Copilot+ PCs.
 
 **The NVIDIA EP requirements do not name RTX Spark.** The Windows ML execution providers page states the requirement for NvTensorRtRtx as "NVIDIA GeForce RTX 30XX and above" with a minimum driver and CUDA version. It does not name RTX Spark or Arm64. Microsoft's launch post and NVIDIA's porting page both point to TensorRT for RTX on RTX Spark.
 
-**Smart App Control blocks llama.cpp.** As described above, the GGUF path through llama.cpp does not run while Smart App Control is on. On company devices, this is a decision for IT.
+**Smart App Control blocks llama.cpp.** As described above, the GGUF path through llama.cpp does not run while Smart App Control is on. On company devices, this is an IT decision.
 
 **Model work is still the developer's job.** Learn says: "Windows ML handles execution provider distribution, not model optimization." Models still need to be converted, quantized, and tested.
 
 **The first start can be slow.** Learn warns that compiling for an EP can turn into a "multi-second (or even multi-minute) cold start." Microsoft's answer is to precompile and cache the model.
 
-**Memory runs short in long sessions.** Microsoft measured a peak of 75.5 GB for MAI Code 1.1 Flash at the full 256K context. That is more than the 62.5 GB the GPU has of its own on my laptop, so a very long session borrows memory from Windows. A model that loads fine at the start of a task can run short later.
+**Memory runs short in long sessions.** Microsoft measured a peak of 75.5 GB for MAI Code 1.1 Flash at the full 256K context. That is more than the 62.5 GB the GPU has on my laptop, so a very long session borrows memory from Windows. A model that loads fine at the start of a task can run short later.
 
 **EP license terms apply.** Each EP comes with its vendor's license. For TensorRT for RTX, that means NVIDIA's software license terms.
 
 ## Other options on RTX Spark
 
-Windows ML and Foundry Local are not the only ways to run AI on this laptop. RTX Spark brings the NVIDIA stack to Windows on Arm, and that opens several other paths.
+Windows ML and Foundry Local are not the only ways to run AI on this laptop. RTX Spark brings the NVIDIA stack to Windows on Arm, opening several other paths.
 
 ### Windows AI APIs
 
@@ -308,11 +308,11 @@ These are built-in models and task APIs that ship with Windows. They need very l
 
 ### TensorRT for RTX SDK directly
 
-An app can skip Windows ML and use NVIDIA's TensorRT for RTX SDK. It has C++ and Python APIs, its own ONNX parser, and a command line tool. It offers every NVIDIA setting, for example engines without weights that load the weights later. The app then runs only on NVIDIA, the developer ships and updates the library, and every other PC in the fleet needs a separate path. This fits apps that only make sense on NVIDIA hardware, like high end video or 3D tools.
+An app can skip Windows ML and use NVIDIA's TensorRT for RTX SDK. It has C++ and Python APIs, its own ONNX parser, and a command-line tool. It offers every NVIDIA setting, for example, engines without weights that load the weights later. The app then runs only on NVIDIA; the developer ships and updates the library, and every other PC in the fleet needs a separate path. This fits apps that only make sense on NVIDIA hardware, like high-end video or 3D tools.
 
 ### CUDA and PyTorch in WSL
 
-This is where model work happens: training, fine-tuning, and testing. Microsoft's October post says NVIDIA publishes CUDA enabled PyTorch packages for Windows Arm64. When I set up my laptop, the picture was less clear. maruhana, a developer who wrote about the same laptop, found no Windows on Arm CUDA version on the official PyTorch download pages and built PyTorch himself. Inside WSL, the normal Linux PyTorch used the GPU right away.
+This is where model work happens: training, fine-tuning, and testing. Microsoft's October post says NVIDIA publishes CUDA-enabled PyTorch packages for Windows on Arm64. When I set up my laptop, the picture was less clear. Maruhana, a developer who wrote about the same laptop, found no Windows on Arm CUDA version on the official PyTorch download pages and built PyTorch himself. Inside WSL, the normal Linux PyTorch used the GPU right away.
 
 So on my laptop, all model work happens in WSL 2 with Ubuntu 24.04. NVIDIA's CUDA on WSL guide says the Windows driver "is the only driver you need to install," so I install no NVIDIA driver inside Linux. I give WSL 40 GB of the 64 GB that Windows has. This is a developer setup, not a way to ship features in Windows apps. The result of the model work moves to Windows ML as an ONNX or GGUF file.
 
@@ -320,11 +320,11 @@ So on my laptop, all model work happens in WSL 2 with Ubuntu 24.04. NVIDIA's CUD
 
 llama.cpp is the small C and C++ engine behind much of the open model community. NVIDIA lists it for Windows on Arm, and Microsoft says it worked with NVIDIA on llama.cpp speed, including CUDA graphs, NVFP4, and speculative decoding. On my laptop, llama.cpp is already in use because the GitHub Copilot app needs it. It is also the fastest way to try a new open model on the day it comes out.
 
-Ollama wraps llama.cpp in an easy local server. I have not installed it. The information is mixed. NVIDIA lists Ollama for Windows on Arm, and two hands-on reports saw it use the GPU on this laptop. But Ollama's own development documentation says "Windows ARM does not support additional acceleration libraries at this time." Before I download large models into it, I want to see with `ollama ps` that it really uses the GPU.
+Ollama wraps llama.cpp in an easy-to-use local server. I have not installed it. The information is mixed. NVIDIA lists Ollama for Windows on Arm, and two hands-on reports saw it use the GPU on this laptop. But Ollama's own development documentation says "Windows ARM does not support additional acceleration libraries at this time." Before I download large models into it, I want to see with `ollama ps` that it really uses the GPU.
 
 ### Self-bundled ONNX Runtime
 
-An app can ship the open source ONNX Runtime and pick EPs itself. It then loses the automatic EP download and updates. The "bring your own EP" option in Windows ML covers most of the same need inside the supported Windows stack.
+An app can ship the open-source ONNX Runtime and pick EPs itself. It then loses the automatic EP download and updates. The "bring your own EP" option in Windows ML covers most of the same need inside the supported Windows stack.
 
 ### DirectML and WebGPU
 
@@ -336,7 +336,7 @@ Docker Desktop for Windows on Arm is marked Early Access by Docker. Docker docum
 
 ### The cloud
 
-Microsoft Foundry and Azure stay the place for frontier models, large jobs, and shared services. In the GitHub Copilot app I use cloud models for architecture across several repositories, hard bugs, large migrations, security reviews, and tasks that need a lot of context. Microsoft's own Surface page talks about reserving the cloud for larger AI workloads.
+Microsoft Foundry and Azure stay the place for frontier models, large jobs, and shared services. In the GitHub Copilot app, I use cloud models for architecture across several repositories, hard bugs, large migrations, security reviews, and tasks that need a lot of context. Microsoft's own Surface page talks about reserving the cloud for larger AI workloads.
 
 ## All options in one table
 
@@ -354,13 +354,13 @@ Microsoft Foundry and Azure stay the place for frontier models, large jobs, and 
 
 ## What this means for IT and architects
 
-For IT, the Surface Laptop Ultra is a Copilot+ PC and a Secured-core PC, managed like any other Windows 11 device. Windows ML is a Windows part, its EPs are certified by Microsoft, and Foundry Local models can be pinned to a version. That is easier to manage than a separate Python environment with its own CUDA build for every app. Smart App Control is the point to decide early, because the llama.cpp path does not work while it is on.
+For IT, the Surface Laptop Ultra is a Copilot+ PC and a Secured-core PC, managed like any other Windows 11 device. Windows ML is a Windows part; its EPs are certified by Microsoft, and Foundry Local models can be pinned to a version. That is easier to manage than a separate Python environment with its own CUDA build for every app. Smart App Control is the point to decide early, because the llama.cpp path does not work while it is on.
 
 For architects, the change is in cost and data. Local inference avoids per-token charges and keeps data on the device. On my laptop, a 138B parameter coding model writes 66 tokens per second with 16,000 tokens of context. That changes which work can stay off the cloud. These laptops are expensive, though, and most people will not get one. AI features still need to work on a normal Copilot+ PC or in the cloud. The 128 GB laptop then simply does more of the work locally.
 
 ## What I use and what comes next
 
-On my laptop, Windows ML is the base for local AI. The GitHub Copilot app runs MAI Code 1.1 Flash and Flint NVFP4 through its Windows ML provider for daily coding. Foundry Local is my second runner for my own apps and prototypes, and my fallback when the Copilot app models do not run. Model work, PyTorch, and CUDA run in WSL. Hard problems still go to cloud models. Ollama and GPU containers stay out until I have seen them use the GPU on Windows on Arm.
+On my laptop, Windows ML is the base for local AI. The GitHub Copilot app runs MAI Code 1.1 Flash and Flint NVFP4 through its Windows ML provider for daily coding. Foundry Local is my second choice for my own apps and prototypes, and my fallback when the Copilot app models don't run. Model work, PyTorch, and CUDA run in WSL. Hard problems still go to cloud models. Ollama and GPU containers stay out until I have seen them use the GPU on Windows on ARM.
 
 Next, I will take one of my apps that runs on a Foundry Local catalog model and build the same feature with a larger model through Windows ML on this laptop. Then I will compare quality, speed, and memory use side by side, and test the ONNX path with TensorRT for RTX against the GGUF path with llama.cpp.
 
@@ -376,7 +376,7 @@ Next, I will take one of my apps that runs on a Foundry Local catalog model and 
 - Microsoft Learn, [What is Windows ML?](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/overview), last updated November 13, 2026: definition, shared runtime, x64 and Arm64, same ONNX APIs, system requirements
 - Microsoft Learn, [Windows ML execution providers](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/supported-execution-providers): EP list, download on demand, NvTensorRtRtx requirements, DirectML legacy, WebGPU experimental
 - Microsoft Learn, [Accelerate AI models with Windows ML](https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/accelerate-ai-models), last updated November 10, 2026: EP definition, bring your own EP, chip to EP table, cold start, model optimization
-- Microsoft Learn, [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local), last updated October 22, 2026: Foundry Local definition, SDKs, curated catalog, about 20 MB runtime, OpenAI compatible API, single user, platforms
+- Microsoft Learn, [What is Foundry Local?](https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local), last updated October 22, 2026: Foundry Local definition, SDKs, curated catalog, about 20 MB runtime, OpenAI-compatible API, single user, platforms
 - Microsoft Learn, [Get started with Foundry Local](https://learn.microsoft.com/en-us/windows/ai/foundry-local/get-started), last updated September 21, 2026: WinML package, hardware variants, Phi Silica and Aion Instruct
 - Windows Developer Blog, [Windows ML is generally available](https://blogs.windows.com/windowsdeveloper/2025/09/23/windows-ml-is-generally-available-empowering-developers-to-scale-local-ai-across-windows-devices/), September 23, 2025: GA date, one app build, app size, device policies
 - Microsoft Foundry on Windows Blog, [AI Development on Windows: from PyTorch and llama.cpp to Windows ML](https://devblogs.microsoft.com/foundry-on-windows/build-on-winml-oct-7-26/), October 7, 2026: GGUF and llama.cpp in Windows ML, task APIs, Runtime API, Windows ML CLI, PyTorch on Windows Arm64, experimental status
