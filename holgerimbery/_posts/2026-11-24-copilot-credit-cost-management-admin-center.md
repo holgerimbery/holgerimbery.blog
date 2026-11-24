@@ -6,7 +6,7 @@ description: "Microsoft now offers one place to watch and cap Copilot Credit spe
 date: 26-11-24
 author: admin
 slug: copilot-credit-cost-management-admin-center
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery//images/2026/11/micheile-henderson-ZVprbBmT8QA-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/11/micheile-henderson-ZVprbBmT8QA-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@micheile?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">micheile henderson</a> on <a href="https://unsplash.com/photos/green-plant-in-clear-glass-vase-ZVprbBmT8QA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
 tags:
   - agentfinops
