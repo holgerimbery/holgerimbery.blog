@@ -6,7 +6,7 @@ description: "How Windows ML works on the new NVIDIA RTX Spark laptops, how it c
 date: 26-11-25
 author: admin
 slug: windows-ml-nvidia-rtx-spark
-image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery//images/2026/11/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg
+image: https://raw.githubusercontent.com/holgerimbery/holgerimbery.blog/main/holgerimbery/images/2026/11/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg
 image_caption: Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kevin Ku</a> on <a href="https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
 tags:
   - foundrylocal
